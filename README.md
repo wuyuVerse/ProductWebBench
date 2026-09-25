@@ -67,9 +67,9 @@ analysis/            E1–E25: the paper's analyses. _data/cells_flat.jsonl is
 figures/scripts/     the figure scripts; output lands in figures/
 baselines/pristine/  the 19 checks run on the *untouched* repository, per task
                      — this is what makes a regression exactly attributable
-tasks/               manifest.json lists all 400 evaluated slots; per-slot
-                     directories hold the full specification (problem statement,
-                     rubric, required/hidden states, constraints) for 390 of them
+tasks/               all 400 evaluated slots: manifest.json plus a per-slot
+                     specification (problem statement, rubric, required states,
+                     constraints)
 harbor/              Harbor integration guide
 tools/               reproduce.sh, sweep aggregator
 docs/                reproduce.md, scoring.md, tasks.md
@@ -105,42 +105,30 @@ licensing, not by oversight:
 | reference browser captures | ~1.9 GB | the screenshots and DOM states the visual and layout gates compare against |
 | exported task packages | 44.6 MB | `submission_verifier.json` and friends — the frozen gate definitions, for the 310 Change slots (the 80 Build slots have none) |
 
-### The suite is 400 tasks; 390 have a specification here
+### All 400 tasks have a specification
 
 `tasks/manifest.json` is the authoritative inventory: **all 400 slots** that were
 scored in the paper — 320 Change and 80 Build — with each one's upstream
-repository and pinned commit, cell count, stage count, and three coverage flags.
-Its `n_cells` sum is exactly the 8,737 rows of
-`analysis/_data/cells_flat.jsonl`.
+repository and pinned commit, cell count, stage count and coverage flags. Its
+`n_cells` sum is exactly the 8,737 rows of `analysis/_data/cells_flat.jsonl`.
 
-Ten Change slots (`slot_200`–`slot_209`) carry `spec_in_repo: "recovered"`.
-Their authoring directory no longer exists — the evaluation read it from a path
-that has since been removed — so their staged requirement *text* cannot be
-shipped. What each one does have is
-`tasks/slot_2NN/recovered_contract.json`: the frozen verification contract
-exactly as applied during evaluation, rebuilt from the run artifacts, with the
-task id, upstream repository and pinned commit, the required states, the stage
-and checkpoint layout, and all 19 checks with their details. Each recovered
-stage count was cross-checked against that slot's cells in
-`cells_flat.jsonl` and all ten match.
+For `slot_200`–`slot_209` the authoring directory was deleted after the
+evaluation sweep, so those ten specifications were rebuilt from the evaluation
+run itself. The requirement copy, forbidden template text, protected text and
+asset paths, required states, interactive states and all 19 gates with their
+details are taken verbatim from what the run asserted; the prose statement, the
+constraint list and the file hints are derived from that plus the
+baseline-to-reference workspace diff. Each of those ten files records this in a
+`spec_provenance` field. Their `required_states` were checked against both the
+run and the reference captures and all ten agree.
 
-This is the same boundary the paper states from the other side: *"Of the 320
-Change tasks, 310 rebuild from the frozen package in the analysis environment
-and 224 of those also serve a capturable initial baseline."* These are those ten
-slots, and they are also ten of the twenty-six the paper reports as carrying no
-capability label in the frozen manifest — the label is missing for exactly the
-same reason.
-
-Each task's upstream provenance is recoverable from its `repo_id`, which is
-`owner__repo__commit`: `slot_007`'s `maharanasunil__E-Commerce-Website-Template__6e6d9c2dc855`
-is `github.com/maharanasunil/E-Commerce-Website-Template` at `6e6d9c2dc855`. A
-snapshot can therefore be re-fetched at the pinned commit, with the caveat that
-the evaluated snapshots vendor their `node_modules` and tool binaries for
-offline execution, so a fresh clone plus install is not guaranteed to be
-byte-identical; five tasks additionally need a pinned Hugo and one needs PHP.
-
-See [`docs/tasks.md`](docs/tasks.md) for the package format and
-`pwb export-task-packages` for building packages from a snapshot root.
+Two nearby traps are worth recording, because matching on `task_id` alone walks
+into both. Exported packages for some of these slots survive elsewhere with the
+same `task_id` but a pre-revision specification — for `slot_209` the export is
+dated 2026-06-14 against a 2026-08-21 run, and its `required_states` are a
+different set entirely. And the authoring pool reuses slot numbers, so
+`states_slot200_*` and `asset_galleries/slot_200` belong to an unrelated task;
+only the underscored `states_slot_200_*` is this slot.
 
 The **raw per-run artifact tree** (per-run DOM dumps, screenshots and
 transcripts, terabytes) is also not here. `analysis/_data/cells_flat.jsonl` is

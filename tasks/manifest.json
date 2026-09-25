@@ -1,7 +1,7 @@
 {
  "suite": "ProductWebBench",
  "n_tasks": 400,
- "note": "The locked evaluation suite: every slot scored in the paper. spec_in_repo is true for 390 slots carrying the full task specification. slot_200-209 are \"recovered\": their authoring directory was deleted after the sweep, so recovered_contract.json carries the frozen verification contract exactly as applied at evaluation time, taken from the run itself.",
+ "note": "The locked evaluation suite: every slot scored in the paper. All 400 carry a task specification. For slot_200-209 the authoring directory was deleted after the sweep and the specification was rebuilt from the evaluation run itself; each of those files records its own spec_provenance, and their required_states were verified against both the run and the reference captures.",
  "tasks": [
   {
    "slot": "slot_001",
@@ -2599,7 +2599,7 @@
    "commit": "3d230b0f89a1",
    "n_cells": 22,
    "n_stages": 7,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2612,7 +2612,7 @@
    "commit": "ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
    "n_cells": 22,
    "n_stages": 7,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2625,7 +2625,7 @@
    "commit": "a8e2a6f4ee2f",
    "n_cells": 21,
    "n_stages": 6,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2638,7 +2638,7 @@
    "commit": "b73e93597963",
    "n_cells": 22,
    "n_stages": 4,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2651,7 +2651,7 @@
    "commit": "1a684deb0bd5",
    "n_cells": 22,
    "n_stages": 7,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2664,7 +2664,7 @@
    "commit": "545f89eb26e09",
    "n_cells": 22,
    "n_stages": 7,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2677,7 +2677,7 @@
    "commit": "676834f55c86",
    "n_cells": 22,
    "n_stages": 7,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2690,7 +2690,7 @@
    "commit": "2677889a6f23",
    "n_cells": 22,
    "n_stages": 6,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2703,7 +2703,7 @@
    "commit": "05583c6dae8e",
    "n_cells": 22,
    "n_stages": 6,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
@@ -2716,7 +2716,7 @@
    "commit": "cb755fd82c64",
    "n_cells": 22,
    "n_stages": 5,
-   "spec_in_repo": "recovered",
+   "spec_in_repo": true,
    "frozen_package": false,
    "pristine_baseline": false
   },
