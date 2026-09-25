@@ -1,36 +1,36 @@
 {
   "build": {
     "command": "npx @11ty/eleventy",
-    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
     "duration_sec": 2.469,
     "exit_code": 0,
-    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/build.stderr.log",
-    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/build.stdout.log",
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/build.stdout.log",
     "timed_out": false
   },
   "capture": {
-    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/capture_config.json",
-    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
     "duration_sec": 19.249,
     "exit_code": 0,
-    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/capture.stderr.log",
-    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/capture.stdout.log",
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/logs/capture.stdout.log",
     "timed_out": false
   },
   "dev_server": {
-    "command": "python3 /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/static_server.py --directory _site 3100 --bind 127.0.0.1",
+    "command": "python3 productwebbench/tools/static_server.py --directory _site 3100 --bind 127.0.0.1",
     "message": "HTTP 200",
     "port": 3100,
     "ready": true
   },
   "failure_stage": null,
-  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_206/workspace/11ty__eleventy-base-blog__676834f55c86",
   "quality_pass": true,
   "repo_id": "11ty__eleventy-base-blog__676834f55c86",
   "skip_build": false,
   "skip_install": false,
-  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/state_capture.json",
-  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86",
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_206/states/11ty__eleventy-base-blog__676834f55c86",
   "status": "passed"
 }
 
