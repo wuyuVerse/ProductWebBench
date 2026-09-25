@@ -1,7 +1,7 @@
 {
  "suite": "ProductWebBench",
  "n_tasks": 400,
- "note": "The locked evaluation suite: every slot scored in the paper. spec_in_repo is true for 391 slots carrying the full task specification. slot_200-208 are \"recovered\": their authoring directory was deleted after the sweep, so recovered_contract.json carries the frozen verification contract as applied at evaluation time (task id, repo and pinned commit, required states, stage layout, all 19 checks with details) but not the staged requirement prose.",
+ "note": "The locked evaluation suite: every slot scored in the paper. spec_in_repo is true for 390 slots carrying the full task specification. slot_200-209 are \"recovered\": their authoring directory was deleted after the sweep, so recovered_contract.json carries the frozen verification contract exactly as applied at evaluation time, taken from the run itself.",
  "tasks": [
   {
    "slot": "slot_001",
@@ -2716,10 +2716,9 @@
    "commit": "cb755fd82c64",
    "n_cells": 22,
    "n_stages": 5,
-   "spec_in_repo": true,
+   "spec_in_repo": "recovered",
    "frozen_package": false,
-   "pristine_baseline": false,
-   "restored_from": "exported task package"
+   "pristine_baseline": false
   },
   {
    "slot": "slot_210",
