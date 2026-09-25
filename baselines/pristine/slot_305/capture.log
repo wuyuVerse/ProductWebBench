@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_305/states/Milosian__blog-template__010573e86462/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_305/workspace/Milosian__blog-template__010573e86462/blog-template-010573e864624e45644d327a85bbe7e9898694c5",
+    "duration_sec": 165.807,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_305/states/Milosian__blog-template__010573e86462/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_305/states/Milosian__blog-template__010573e86462/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3700 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_305/workspace/Milosian__blog-template__010573e86462/blog-template-010573e864624e45644d327a85bbe7e9898694c5",
+  "quality_pass": true,
+  "repo_id": "Milosian__blog-template__010573e86462",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_305/states/Milosian__blog-template__010573e86462/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_305/states/Milosian__blog-template__010573e86462",
+  "status": "passed"
+}
+
+--STDERR--

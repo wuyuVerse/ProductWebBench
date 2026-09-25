@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_249/workspace/houmahani__codrops-depth-gallery__28190e0920df/codrops-depth-gallery",
+    "duration_sec": 4.692,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_249/workspace/houmahani__codrops-depth-gallery__28190e0920df/codrops-depth-gallery",
+    "duration_sec": 178.013,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_249/workspace/houmahani__codrops-depth-gallery__28190e0920df/codrops-depth-gallery",
+  "quality_pass": true,
+  "repo_id": "houmahani__codrops-depth-gallery__28190e0920df",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_249/states/houmahani__codrops-depth-gallery__28190e0920df",
+  "status": "passed"
+}
+
+--STDERR--

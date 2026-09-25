@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_049/workspace/luluwux__Portfolio-V2__2cafd5b777f7/luluwux__Portfolio-V2__2cafd5b777f7",
+    "duration_sec": 4.298,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_049/workspace/luluwux__Portfolio-V2__2cafd5b777f7/luluwux__Portfolio-V2__2cafd5b777f7",
+    "duration_sec": 52.325,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_049/workspace/luluwux__Portfolio-V2__2cafd5b777f7/luluwux__Portfolio-V2__2cafd5b777f7",
+  "quality_pass": true,
+  "repo_id": "luluwux__Portfolio-V2__2cafd5b777f7",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_049/states/luluwux__Portfolio-V2__2cafd5b777f7",
+  "status": "passed"
+}
+
+--STDERR--

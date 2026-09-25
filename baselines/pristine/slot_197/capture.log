@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_197/states/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_197/workspace/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/chatgpt-demo-03b47a79d901325a812a03a5d6b12049a6005a6c",
+    "duration_sec": 37.502,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_197/states/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_197/states/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_197/workspace/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/chatgpt-demo-03b47a79d901325a812a03a5d6b12049a6005a6c/node_modules/astro/astro.js dev --host 127.0.0.1 --port 7890",
+    "message": "HTTP 200",
+    "port": 7890,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_197/workspace/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/chatgpt-demo-03b47a79d901325a812a03a5d6b12049a6005a6c",
+  "quality_pass": true,
+  "repo_id": "anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_197/states/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_197/states/anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c",
+  "status": "passed"
+}
+
+--STDERR--

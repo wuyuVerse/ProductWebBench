@@ -1,0 +1,32 @@
+{
+ "slot": 156,
+ "repo_id": "codrops__ExpandingGridItemAnimation__af38df3e4f5d",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": false,
+  "action_history": false,
+  "screenshot_files": true,
+  "no_horizontal_overflow": true,
+  "completion_text_signals": false,
+  "visible_text_signals": false,
+  "state_url_signals": true,
+  "regression_text_signals": false,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": false,
+  "visual_regression": false,
+  "console_errors": true,
+  "dom_assertions": false,
+  "interaction_assertions": false
+ },
+ "capture_status": "passed",
+ "build_fallback": false,
+ "gates_passed": 10,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 128.4
+}

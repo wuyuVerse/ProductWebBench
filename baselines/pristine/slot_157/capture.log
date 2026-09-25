@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_157/workspace/steven-tey__weathergpt__dabf3866fcf6/weathergpt-dabf3866fcf61db3dae3f00bdd2666f2a92f4775",
+    "duration_sec": 32.406,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_157/workspace/steven-tey__weathergpt__dabf3866fcf6/weathergpt-dabf3866fcf61db3dae3f00bdd2666f2a92f4775",
+    "duration_sec": 76.409,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 4300",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_157/workspace/steven-tey__weathergpt__dabf3866fcf6/weathergpt-dabf3866fcf61db3dae3f00bdd2666f2a92f4775",
+  "quality_pass": true,
+  "repo_id": "steven-tey__weathergpt__dabf3866fcf6",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_157/states/steven-tey__weathergpt__dabf3866fcf6",
+  "status": "passed"
+}
+
+--STDERR--

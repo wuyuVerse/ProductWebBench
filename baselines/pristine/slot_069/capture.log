@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_069/workspace/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/auto-annotated-portfolio",
+    "duration_sec": 50.434,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_069/workspace/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/auto-annotated-portfolio",
+    "duration_sec": 132.895,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3500",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_069/workspace/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/auto-annotated-portfolio",
+  "quality_pass": true,
+  "repo_id": "netlify-templates__auto-annotated-portfolio__dd15f5ece3f4",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_069/states/netlify-templates__auto-annotated-portfolio__dd15f5ece3f4",
+  "status": "passed"
+}
+
+--STDERR--

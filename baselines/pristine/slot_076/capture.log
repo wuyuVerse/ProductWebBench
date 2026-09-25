@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_076/workspace/StartBootstrap__startbootstrap-creative__b1762d8c690a/startbootstrap-creative-b1762d8c690a2379c078c776dc0830bdd81c6f55",
+    "duration_sec": 12.84,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_076/workspace/StartBootstrap__startbootstrap-creative__b1762d8c690a/startbootstrap-creative-b1762d8c690a2379c078c776dc0830bdd81c6f55",
+    "duration_sec": 103.449,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_076/workspace/StartBootstrap__startbootstrap-creative__b1762d8c690a/startbootstrap-creative-b1762d8c690a2379c078c776dc0830bdd81c6f55",
+  "quality_pass": true,
+  "repo_id": "StartBootstrap__startbootstrap-creative__b1762d8c690a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_076/states/StartBootstrap__startbootstrap-creative__b1762d8c690a",
+  "status": "passed"
+}
+
+--STDERR--

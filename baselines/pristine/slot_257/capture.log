@@ -1,0 +1,35 @@
+{
+  "build": {
+    "command": "corepack yarn build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_257/workspace/epicmaxco__vuestic-admin__9c5b44f3674d/vuestic-admin-9c5b44f3674d4c3e7ad01cc043d5331cee953c49",
+    "duration_sec": 64.715,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_257/workspace/epicmaxco__vuestic-admin__9c5b44f3674d/vuestic-admin-9c5b44f3674d4c3e7ad01cc043d5331cee953c49",
+    "duration_sec": 180.01,
+    "exit_code": null,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d/logs/capture.stdout.log",
+    "timed_out": true
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3700 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": "capture",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_257/workspace/epicmaxco__vuestic-admin__9c5b44f3674d/vuestic-admin-9c5b44f3674d4c3e7ad01cc043d5331cee953c49",
+  "repo_id": "epicmaxco__vuestic-admin__9c5b44f3674d",
+  "skip_build": false,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_257/states/epicmaxco__vuestic-admin__9c5b44f3674d",
+  "status": "failed"
+}
+
+--STDERR--

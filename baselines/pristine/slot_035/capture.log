@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_035/workspace/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/maucariapacom-church-starter-120721c2afd1c2b17d2d4bb4838bac09afe5ba2a",
+    "duration_sec": 30.804,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_035/workspace/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/maucariapacom-church-starter-120721c2afd1c2b17d2d4bb4838bac09afe5ba2a",
+    "duration_sec": 102.334,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_035/workspace/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/maucariapacom-church-starter-120721c2afd1c2b17d2d4bb4838bac09afe5ba2a",
+  "quality_pass": true,
+  "repo_id": "MauCariApa-com__maucariapacom-church-starter__120721c2afd1",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_035/states/MauCariApa-com__maucariapacom-church-starter__120721c2afd1",
+  "status": "passed"
+}
+
+--STDERR--

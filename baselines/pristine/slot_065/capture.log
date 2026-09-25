@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "corepack pnpm build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_065/workspace/dianprata__nuxt-shadcn-dashboard__54988681e50f/nuxt-shadcn-dashboard-54988681e50feaa4935828882da93faff06cf042",
+    "duration_sec": 236.759,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_065/workspace/dianprata__nuxt-shadcn-dashboard__54988681e50f/nuxt-shadcn-dashboard-54988681e50feaa4935828882da93faff06cf042",
+    "duration_sec": 43.726,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node .output/server/index.mjs",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_065/workspace/dianprata__nuxt-shadcn-dashboard__54988681e50f/nuxt-shadcn-dashboard-54988681e50feaa4935828882da93faff06cf042",
+  "quality_pass": true,
+  "repo_id": "dianprata__nuxt-shadcn-dashboard__54988681e50f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_065/states/dianprata__nuxt-shadcn-dashboard__54988681e50f",
+  "status": "passed"
+}
+
+--STDERR--

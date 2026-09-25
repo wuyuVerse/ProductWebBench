@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "corepack yarn build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_137/workspace/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/tailwind-nextjs-starter-blog",
+    "duration_sec": 113.686,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_137/workspace/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/tailwind-nextjs-starter-blog",
+    "duration_sec": 64.311,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory out 3900 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3900,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_137/workspace/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/tailwind-nextjs-starter-blog",
+  "quality_pass": true,
+  "repo_id": "timlrx__tailwind-nextjs-starter-blog__b45bef66b40c",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_137/states/timlrx__tailwind-nextjs-starter-blog__b45bef66b40c",
+  "status": "passed"
+}
+
+--STDERR--

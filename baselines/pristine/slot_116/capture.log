@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_116/states/AndrewJBateman__angular-website-example__6cae24f1bd75/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_116/workspace/AndrewJBateman__angular-website-example__6cae24f1bd75/angular-website-example-6cae24f1bd75e6fb69b155b039941bf9ed0c8b15",
+    "duration_sec": 56.81,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_116/states/AndrewJBateman__angular-website-example__6cae24f1bd75/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_116/states/AndrewJBateman__angular-website-example__6cae24f1bd75/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_116/workspace/AndrewJBateman__angular-website-example__6cae24f1bd75/angular-website-example-6cae24f1bd75e6fb69b155b039941bf9ed0c8b15",
+  "quality_pass": true,
+  "repo_id": "AndrewJBateman__angular-website-example__6cae24f1bd75",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_116/states/AndrewJBateman__angular-website-example__6cae24f1bd75/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_116/states/AndrewJBateman__angular-website-example__6cae24f1bd75",
+  "status": "passed"
+}
+
+--STDERR--

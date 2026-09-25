@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_195/workspace/CodeVinayak__Portfolio-v2__4543048dbd01/Portfolio-v2-4543048dbd0179950879182b4cbfe6c228a775d7",
+    "duration_sec": 41.302,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_195/workspace/CodeVinayak__Portfolio-v2__4543048dbd01/Portfolio-v2-4543048dbd0179950879182b4cbfe6c228a775d7",
+    "duration_sec": 110.429,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory build 3300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_195/workspace/CodeVinayak__Portfolio-v2__4543048dbd01/Portfolio-v2-4543048dbd0179950879182b4cbfe6c228a775d7",
+  "quality_pass": true,
+  "repo_id": "CodeVinayak__Portfolio-v2__4543048dbd01",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_195/states/CodeVinayak__Portfolio-v2__4543048dbd01",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use ProductWebBench, please cite the paper."
+title: "ProductWebBench: Scoring Frontend Coding Agents on Website Continuity"
+authors:
+  - name: "The ProductWebBench Authors"
+type: software
+license: MIT
+repository-code: "https://github.com/OWNER/productwebbench"
+preferred-citation:
+  type: conference-paper
+  title: "ProductWebBench: Scoring Frontend Coding Agents on Website Continuity"
+  authors:
+    - name: "The ProductWebBench Authors"
+  collection-title: "International Conference on Learning Representations (ICLR)"
+  year: 2027

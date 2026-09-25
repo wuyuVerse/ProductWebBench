@@ -1,0 +1,41 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "productwebbench"
+version = "1.0.0"
+description = "A benchmark that scores frontend coding agents on website continuity, not just on whether the requested target got built."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+keywords = ["benchmark", "coding-agents", "frontend", "web", "regression", "llm"]
+classifiers = [
+  "Intended Audience :: Science/Research",
+  "Programming Language :: Python :: 3",
+  "Topic :: Software Development :: Testing",
+]
+dependencies = [
+  "jsonschema>=4.0",
+  "numpy>=1.24",
+  "pillow>=10.0",
+  "opencv-python-headless>=4.8",
+]
+
+[project.optional-dependencies]
+# Regenerating the paper's tables and figures.
+analysis = ["matplotlib>=3.7", "scipy>=1.10"]
+dev = ["pytest>=7.4", "ruff>=0.4"]
+
+[project.scripts]
+pwb = "productwebbench.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["productwebbench*"]
+
+[tool.setuptools.package-data]
+productwebbench = ["**/*.json", "**/*.js", "**/*.toml", "**/*.md"]
+
+[tool.ruff]
+line-length = 110
+target-version = "py310"

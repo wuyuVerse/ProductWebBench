@@ -1,0 +1,35 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_123/workspace/NextJSTemplates__solid-nextjs__8e48747b93fb/solid-nextjs-8e48747b93fbaf5c4beb04aaaf4efe70da94e98b",
+    "duration_sec": 31.494,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_123/workspace/NextJSTemplates__solid-nextjs__8e48747b93fb/solid-nextjs-8e48747b93fbaf5c4beb04aaaf4efe70da94e98b",
+    "duration_sec": 180.012,
+    "exit_code": null,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb/logs/capture.stdout.log",
+    "timed_out": true
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 4100",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": "capture",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_123/workspace/NextJSTemplates__solid-nextjs__8e48747b93fb/solid-nextjs-8e48747b93fbaf5c4beb04aaaf4efe70da94e98b",
+  "repo_id": "NextJSTemplates__solid-nextjs__8e48747b93fb",
+  "skip_build": false,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_123/states/NextJSTemplates__solid-nextjs__8e48747b93fb",
+  "status": "failed"
+}
+
+--STDERR--

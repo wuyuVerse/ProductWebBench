@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_093/states/StartBootstrap__startbootstrap-landing-page__247a46a2503c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_093/workspace/StartBootstrap__startbootstrap-landing-page__247a46a2503c/StartBootstrap__startbootstrap-landing-page__247a46a2503c",
+    "duration_sec": 153.924,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_093/states/StartBootstrap__startbootstrap-landing-page__247a46a2503c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_093/states/StartBootstrap__startbootstrap-landing-page__247a46a2503c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run dev -- --host 127.0.0.1 --port 4300",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_093/workspace/StartBootstrap__startbootstrap-landing-page__247a46a2503c/StartBootstrap__startbootstrap-landing-page__247a46a2503c",
+  "quality_pass": true,
+  "repo_id": "StartBootstrap__startbootstrap-landing-page__247a46a2503c",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_093/states/StartBootstrap__startbootstrap-landing-page__247a46a2503c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_093/states/StartBootstrap__startbootstrap-landing-page__247a46a2503c",
+  "status": "passed"
+}
+
+--STDERR--

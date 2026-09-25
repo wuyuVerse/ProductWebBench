@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_032/workspace/treefarmstudio__odyssey-theme__d191e5715a25/odyssey-theme-d191e5715a2519e25be4629b933189c421b30a1a",
+    "duration_sec": 12.989,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_032/workspace/treefarmstudio__odyssey-theme__d191e5715a25/odyssey-theme-d191e5715a2519e25be4629b933189c421b30a1a",
+    "duration_sec": 127.303,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3800 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_032/workspace/treefarmstudio__odyssey-theme__d191e5715a25/odyssey-theme-d191e5715a2519e25be4629b933189c421b30a1a",
+  "quality_pass": true,
+  "repo_id": "treefarmstudio__odyssey-theme__d191e5715a25",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_032/states/treefarmstudio__odyssey-theme__d191e5715a25",
+  "status": "passed"
+}
+
+--STDERR--

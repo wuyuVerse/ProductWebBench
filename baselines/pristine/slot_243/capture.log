@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_243/workspace/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/astro-multilingual-portfolio-template-87a89e7a56c101953e06db5d3e401c41f1a7756b",
+    "duration_sec": 28.77,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_243/workspace/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/astro-multilingual-portfolio-template-87a89e7a56c101953e06db5d3e401c41f1a7756b",
+    "duration_sec": 65.431,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3900 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3900,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_243/workspace/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/astro-multilingual-portfolio-template-87a89e7a56c101953e06db5d3e401c41f1a7756b",
+  "quality_pass": true,
+  "repo_id": "nicremo__astro-multilingual-portfolio-template__87a89e7a56c1",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_243/states/nicremo__astro-multilingual-portfolio-template__87a89e7a56c1",
+  "status": "passed"
+}
+
+--STDERR--

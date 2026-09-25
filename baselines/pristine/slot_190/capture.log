@@ -1,0 +1,27 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_190/states/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_190/workspace/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733/Ecommrece-frontend-template-html-css-js-c32c01698733176138862dde2bedf07d9c6cf06a",
+    "duration_sec": 180.009,
+    "exit_code": null,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_190/states/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_190/states/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733/logs/capture.stdout.log",
+    "timed_out": true
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4400,
+    "ready": true
+  },
+  "failure_stage": "capture",
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_190/workspace/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733/Ecommrece-frontend-template-html-css-js-c32c01698733176138862dde2bedf07d9c6cf06a",
+  "repo_id": "RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733",
+  "skip_build": false,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_190/states/RitanshRajput__Ecommrece-frontend-template-html-css-js__c32c01698733",
+  "status": "failed"
+}
+
+--STDERR--

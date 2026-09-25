@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_225/workspace/mesinkasir__astronot-with-astro__8ea6534d5276/astronot-with-astro-8ea6534d52769a9da25280bdca42ee9f443d3bdf",
+    "duration_sec": 6.728,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_225/workspace/mesinkasir__astronot-with-astro__8ea6534d5276/astronot-with-astro-8ea6534d52769a9da25280bdca42ee9f443d3bdf",
+    "duration_sec": 47.722,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3700 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_225/workspace/mesinkasir__astronot-with-astro__8ea6534d5276/astronot-with-astro-8ea6534d52769a9da25280bdca42ee9f443d3bdf",
+  "quality_pass": true,
+  "repo_id": "mesinkasir__astronot-with-astro__8ea6534d5276",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_225/states/mesinkasir__astronot-with-astro__8ea6534d5276",
+  "status": "passed"
+}
+
+--STDERR--

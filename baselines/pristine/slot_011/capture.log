@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_011/workspace/sreerag-rajan__developer-portfolio__edf50b5e1ef1/developer-portfolio-edf50b5e1ef1a29f1ba5aa5f58f7886fa00855e1",
+    "duration_sec": 43.819,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_011/workspace/sreerag-rajan__developer-portfolio__edf50b5e1ef1/developer-portfolio-edf50b5e1ef1a29f1ba5aa5f58f7886fa00855e1",
+    "duration_sec": 167.25,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory build 3300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_011/workspace/sreerag-rajan__developer-portfolio__edf50b5e1ef1/developer-portfolio-edf50b5e1ef1a29f1ba5aa5f58f7886fa00855e1",
+  "quality_pass": true,
+  "repo_id": "sreerag-rajan__developer-portfolio__edf50b5e1ef1",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_011/states/sreerag-rajan__developer-portfolio__edf50b5e1ef1",
+  "status": "passed"
+}
+
+--STDERR--

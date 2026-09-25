@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "corepack yarn build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_252/workspace/codebayu__template-portfolio__109c4fd0a502/template-portfolio-109c4fd0a50208082225211c7675503d1ac41da1",
+    "duration_sec": 8.377,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_252/workspace/codebayu__template-portfolio__109c4fd0a502/template-portfolio-109c4fd0a50208082225211c7675503d1ac41da1",
+    "duration_sec": 40.926,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_252/workspace/codebayu__template-portfolio__109c4fd0a502/template-portfolio-109c4fd0a50208082225211c7675503d1ac41da1",
+  "quality_pass": true,
+  "repo_id": "codebayu__template-portfolio__109c4fd0a502",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_252/states/codebayu__template-portfolio__109c4fd0a502",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,32 @@
+{
+ "slot": 139,
+ "repo_id": "website-templates__simple-product_responsive-template__29953ee814fa",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": true,
+  "action_history": true,
+  "screenshot_files": true,
+  "no_horizontal_overflow": false,
+  "completion_text_signals": true,
+  "visible_text_signals": true,
+  "state_url_signals": true,
+  "regression_text_signals": true,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": true,
+  "visual_regression": false,
+  "console_errors": false,
+  "dom_assertions": false,
+  "interaction_assertions": true
+ },
+ "capture_status": "passed",
+ "build_fallback": false,
+ "gates_passed": 15,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 69.9
+}

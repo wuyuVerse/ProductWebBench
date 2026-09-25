@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_124/workspace/spacemadev__Tailstore__63cabcff851b/Tailstore-63cabcff851bdfa019187b1f6345a0cdc45467d5",
+    "duration_sec": 9.369,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_124/workspace/spacemadev__Tailstore__63cabcff851b/Tailstore-63cabcff851bdfa019187b1f6345a0cdc45467d5",
+    "duration_sec": 68.808,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_124/workspace/spacemadev__Tailstore__63cabcff851b/Tailstore-63cabcff851bdfa019187b1f6345a0cdc45467d5",
+  "quality_pass": true,
+  "repo_id": "spacemadev__Tailstore__63cabcff851b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_124/states/spacemadev__Tailstore__63cabcff851b",
+  "status": "passed"
+}
+
+--STDERR--

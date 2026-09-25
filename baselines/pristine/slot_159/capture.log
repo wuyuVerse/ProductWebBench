@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_159/workspace/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/nuxt-starter",
+    "duration_sec": 51.867,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_159/workspace/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/nuxt-starter",
+    "duration_sec": 50.747,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node .output/server/index.mjs",
+    "message": "HTTP 200",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_159/workspace/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/nuxt-starter",
+  "quality_pass": true,
+  "repo_id": "netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_159/states/netlify-templates__nuxt-starter__5de4ee6a0867fcb21a9dc9de92aeaf8ff2a0d6d3",
+  "status": "passed"
+}
+
+--STDERR--

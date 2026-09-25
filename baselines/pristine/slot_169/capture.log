@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_169/states/demo007x__golang-blog__359c4a9ed062/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_169/workspace/demo007x__golang-blog__359c4a9ed062/golang-blog-359c4a9ed0622c7a9cf192c042f89089fafd01ad/static/editor",
+    "duration_sec": 64.053,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_169/states/demo007x__golang-blog__359c4a9ed062/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_169/states/demo007x__golang-blog__359c4a9ed062/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory docs 3900 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3900,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_169/workspace/demo007x__golang-blog__359c4a9ed062/golang-blog-359c4a9ed0622c7a9cf192c042f89089fafd01ad/static/editor",
+  "quality_pass": true,
+  "repo_id": "demo007x__golang-blog__359c4a9ed062",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_169/states/demo007x__golang-blog__359c4a9ed062/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_169/states/demo007x__golang-blog__359c4a9ed062",
+  "status": "passed"
+}
+
+--STDERR--

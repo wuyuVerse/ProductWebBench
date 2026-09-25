@@ -1,0 +1,17 @@
+{
+  "dev_server": {
+    "command": "corepack pnpm -C docs run dev",
+    "message": "<urlopen error [Errno 111] Connection refused>",
+    "port": 4500,
+    "ready": false
+  },
+  "failure_stage": "dev_server",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_191/workspace/antfu__vite-plugin-pwa__05670fc15e1dc717c847c806e1d46794cdd4cddc/vite-plugin-pwa-05670fc15e1dc717c847c806e1d46794cdd4cddc",
+  "repo_id": "antfu__vite-plugin-pwa__05670fc15e1dc717c847c806e1d46794cdd4cddc",
+  "skip_build": true,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_191/states/antfu__vite-plugin-pwa__05670fc15e1dc717c847c806e1d46794cdd4cddc",
+  "status": "failed"
+}
+
+--STDERR--

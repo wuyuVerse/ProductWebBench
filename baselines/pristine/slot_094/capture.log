@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_094/states/frivizn__news-website-template__4ed6892d8c1f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_094/workspace/frivizn__news-website-template__4ed6892d8c1f/news-website-template-4ed6892d8c1f2fa726443280d77d4f19f898f277",
+    "duration_sec": 92.38,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_094/states/frivizn__news-website-template__4ed6892d8c1f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_094/states/frivizn__news-website-template__4ed6892d8c1f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_094/workspace/frivizn__news-website-template__4ed6892d8c1f/news-website-template-4ed6892d8c1f2fa726443280d77d4f19f898f277",
+  "quality_pass": true,
+  "repo_id": "frivizn__news-website-template__4ed6892d8c1f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_094/states/frivizn__news-website-template__4ed6892d8c1f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_094/states/frivizn__news-website-template__4ed6892d8c1f",
+  "status": "passed"
+}
+
+--STDERR--

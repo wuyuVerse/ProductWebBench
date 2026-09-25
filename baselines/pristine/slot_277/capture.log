@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_277/states/preetsuthar17__discord-bot-website-template__8604fad976fb/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_277/workspace/preetsuthar17__discord-bot-website-template__8604fad976fb/discord-bot-website-template-8604fad976fb23b4943b9c6cdbde79f03895f20e",
+    "duration_sec": 174.991,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_277/states/preetsuthar17__discord-bot-website-template__8604fad976fb/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_277/states/preetsuthar17__discord-bot-website-template__8604fad976fb/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_277/workspace/preetsuthar17__discord-bot-website-template__8604fad976fb/discord-bot-website-template-8604fad976fb23b4943b9c6cdbde79f03895f20e/node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 4100",
+    "message": "HTTP 404",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_277/workspace/preetsuthar17__discord-bot-website-template__8604fad976fb/discord-bot-website-template-8604fad976fb23b4943b9c6cdbde79f03895f20e",
+  "quality_pass": true,
+  "repo_id": "preetsuthar17__discord-bot-website-template__8604fad976fb",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_277/states/preetsuthar17__discord-bot-website-template__8604fad976fb/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_277/states/preetsuthar17__discord-bot-website-template__8604fad976fb",
+  "status": "passed"
+}
+
+--STDERR--

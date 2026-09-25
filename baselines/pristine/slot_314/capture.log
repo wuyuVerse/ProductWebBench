@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_314/states/naxeem__raalhu-blog__8ac01818efeb/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_314/workspace/naxeem__raalhu-blog__8ac01818efeb/raalhu-blog-8ac01818efeb56efb5f29002b8736f4e0f7efcab",
+    "duration_sec": 49.139,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_314/states/naxeem__raalhu-blog__8ac01818efeb/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_314/states/naxeem__raalhu-blog__8ac01818efeb/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_314/workspace/naxeem__raalhu-blog__8ac01818efeb/raalhu-blog-8ac01818efeb56efb5f29002b8736f4e0f7efcab",
+  "quality_pass": true,
+  "repo_id": "naxeem__raalhu-blog__8ac01818efeb",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_314/states/naxeem__raalhu-blog__8ac01818efeb/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_314/states/naxeem__raalhu-blog__8ac01818efeb",
+  "status": "passed"
+}
+
+--STDERR--

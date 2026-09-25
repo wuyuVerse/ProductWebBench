@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_050/workspace/themefisher__godocs-bulma__7ec287748456/godocs-bulma-7ec2877484566da813573a39c8f1ff87feaa7d26",
+    "duration_sec": 12.183,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_050/workspace/themefisher__godocs-bulma__7ec287748456/godocs-bulma-7ec2877484566da813573a39c8f1ff87feaa7d26",
+    "duration_sec": 154.698,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_050/workspace/themefisher__godocs-bulma__7ec287748456/godocs-bulma-7ec2877484566da813573a39c8f1ff87feaa7d26",
+  "quality_pass": true,
+  "repo_id": "themefisher__godocs-bulma__7ec287748456",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_050/states/themefisher__godocs-bulma__7ec287748456",
+  "status": "passed"
+}
+
+--STDERR--

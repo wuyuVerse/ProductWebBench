@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_143/states/langgptai__aurora-landing__85062040af45/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_143/workspace/langgptai__aurora-landing__85062040af45/aurora-landing-85062040af450064d447369938a956cf423a3fac",
+    "duration_sec": 59.319,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_143/states/langgptai__aurora-landing__85062040af45/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_143/states/langgptai__aurora-landing__85062040af45/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_143/workspace/langgptai__aurora-landing__85062040af45/aurora-landing-85062040af450064d447369938a956cf423a3fac/node_modules/.pnpm/next@15.0.3_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/bin/next dev --turbopack --hostname 127.0.0.1 --port 4500",
+    "message": "HTTP 500",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": "capture_quality",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_143/workspace/langgptai__aurora-landing__85062040af45/aurora-landing-85062040af450064d447369938a956cf423a3fac",
+  "quality_pass": false,
+  "repo_id": "langgptai__aurora-landing__85062040af45",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_143/states/langgptai__aurora-landing__85062040af45/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_143/states/langgptai__aurora-landing__85062040af45",
+  "status": "failed"
+}
+
+--STDERR--

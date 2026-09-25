@@ -1,0 +1,30 @@
+{
+ "slot": 36,
+ "repo_id": "mirsazzathossain__mirsazzathossain.me__444ad85fc691",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": false,
+  "action_history": false,
+  "screenshot_files": true,
+  "no_horizontal_overflow": false,
+  "completion_text_signals": false,
+  "visible_text_signals": false,
+  "state_url_signals": true,
+  "regression_text_signals": true,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": false,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": true,
+  "visual_regression": false,
+  "console_errors": true,
+  "dom_assertions": false,
+  "interaction_assertions": false
+ },
+ "gates_passed": 10,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 75.1
+}

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_146/workspace/ttntm__astro-landing-page__cc5b255a79e8/astro-landing-page",
+    "duration_sec": 5.977,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_146/workspace/ttntm__astro-landing-page__cc5b255a79e8/astro-landing-page",
+    "duration_sec": 63.798,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_146/workspace/ttntm__astro-landing-page__cc5b255a79e8/astro-landing-page",
+  "quality_pass": true,
+  "repo_id": "ttntm__astro-landing-page__cc5b255a79e8",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_146/states/ttntm__astro-landing-page__cc5b255a79e8",
+  "status": "passed"
+}
+
+--STDERR--

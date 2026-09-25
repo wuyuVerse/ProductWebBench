@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_215/states/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_215/workspace/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/Portfolio-Website-Using-HTML-CSS-and-JavaScript-180e18abdc7f5087ca6661e9ada2785b197321e9",
+    "duration_sec": 143.998,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_215/states/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_215/states/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_215/workspace/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/Portfolio-Website-Using-HTML-CSS-and-JavaScript-180e18abdc7f5087ca6661e9ada2785b197321e9",
+  "quality_pass": true,
+  "repo_id": "AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_215/states/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_215/states/AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f",
+  "status": "passed"
+}
+
+--STDERR--

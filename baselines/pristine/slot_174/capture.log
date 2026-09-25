@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_174/states/mdrathik__nuxtjs-tailwind-blog__303d827594bf/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_174/workspace/mdrathik__nuxtjs-tailwind-blog__303d827594bf/nuxtjs-tailwind-blog",
+    "duration_sec": 93.025,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_174/states/mdrathik__nuxtjs-tailwind-blog__303d827594bf/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_174/states/mdrathik__nuxtjs-tailwind-blog__303d827594bf/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_174/workspace/mdrathik__nuxtjs-tailwind-blog__303d827594bf/nuxtjs-tailwind-blog/node_modules/.pnpm/nuxt@3.21.8_@parcel+watcher@2.5.6_@vue+compiler-sfc@3.5.39_cac@6.7.14_db0@0.3.4_esbuild_3f2d72af83848607405ea6bcc334cec3/node_modules/nuxt/bin/nuxt.mjs dev --host 127.0.0.1 --port 4400",
+    "message": "HTTP 200",
+    "port": 4400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_174/workspace/mdrathik__nuxtjs-tailwind-blog__303d827594bf/nuxtjs-tailwind-blog",
+  "quality_pass": true,
+  "repo_id": "mdrathik__nuxtjs-tailwind-blog__303d827594bf",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_174/states/mdrathik__nuxtjs-tailwind-blog__303d827594bf/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_174/states/mdrathik__nuxtjs-tailwind-blog__303d827594bf",
+  "status": "passed"
+}
+
+--STDERR--

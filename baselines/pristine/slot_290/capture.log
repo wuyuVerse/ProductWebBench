@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_290/states/dli__flow__02884f0231fd/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_290/workspace/dli__flow__02884f0231fd",
+    "duration_sec": 67.209,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_290/states/dli__flow__02884f0231fd/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_290/states/dli__flow__02884f0231fd/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3800 --bind 127.0.0.1 --directory scratchpad/solver_panel/output_pristine/slot_290/workspace/dli__flow__02884f0231fd",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_290/workspace/dli__flow__02884f0231fd",
+  "quality_pass": true,
+  "repo_id": "dli__flow__02884f0231fd",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_290/states/dli__flow__02884f0231fd/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_290/states/dli__flow__02884f0231fd",
+  "status": "passed"
+}
+
+--STDERR--

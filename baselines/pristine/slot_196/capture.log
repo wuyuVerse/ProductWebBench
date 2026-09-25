@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_196/workspace/piotrkulpinski__kulpinski.dev__fbfe6eae137b/kulpinski.dev-fbfe6eae137bf134d3930539a6f950abe9735967",
+    "duration_sec": 17.715,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_196/workspace/piotrkulpinski__kulpinski.dev__fbfe6eae137b/kulpinski.dev-fbfe6eae137bf134d3930539a6f950abe9735967",
+    "duration_sec": 59.697,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4321 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4321,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_196/workspace/piotrkulpinski__kulpinski.dev__fbfe6eae137b/kulpinski.dev-fbfe6eae137bf134d3930539a6f950abe9735967",
+  "quality_pass": true,
+  "repo_id": "piotrkulpinski__kulpinski.dev__fbfe6eae137b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_196/states/piotrkulpinski__kulpinski.dev__fbfe6eae137b",
+  "status": "passed"
+}
+
+--STDERR--

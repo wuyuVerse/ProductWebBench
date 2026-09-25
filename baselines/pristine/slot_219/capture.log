@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_219/states/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_219/workspace/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/smart-home-1834c4539c48c1c00628f6033526f10f5f75e60d",
+    "duration_sec": 70.807,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_219/states/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_219/states/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_219/workspace/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/smart-home-1834c4539c48c1c00628f6033526f10f5f75e60d/node_modules/.pnpm/next@15.2.4_react-dom@19.2.7_react@19.2.7__react@19.2.7/node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3100",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_219/workspace/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/smart-home-1834c4539c48c1c00628f6033526f10f5f75e60d",
+  "quality_pass": true,
+  "repo_id": "themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_219/states/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_219/states/themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d",
+  "status": "passed"
+}
+
+--STDERR--

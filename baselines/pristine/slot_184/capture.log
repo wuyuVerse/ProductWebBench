@@ -1,0 +1,17 @@
+{
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_184/workspace/nuxt-ui-templates__changelog__93d7de050ef83ae303668f5e08559cb21653404b/changelog-93d7de050ef83ae303668f5e08559cb21653404b/node_modules/.pnpm/nuxt@4.4.6_@babel+plugin-syntax-jsx@7.28.6_@babel+core@7.29.0__@babel+plugin-syntax-typ_d50634f2f6543795eca565d6e6b64341/node_modules/nuxt/bin/nuxt.mjs dev --host 127.0.0.1 --port 3800",
+    "message": "timed out",
+    "port": 3800,
+    "ready": false
+  },
+  "failure_stage": "dev_server",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_184/workspace/nuxt-ui-templates__changelog__93d7de050ef83ae303668f5e08559cb21653404b/changelog-93d7de050ef83ae303668f5e08559cb21653404b",
+  "repo_id": "nuxt-ui-templates__changelog__93d7de050ef83ae303668f5e08559cb21653404b",
+  "skip_build": true,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_184/states/nuxt-ui-templates__changelog__93d7de050ef83ae303668f5e08559cb21653404b",
+  "status": "failed"
+}
+
+--STDERR--

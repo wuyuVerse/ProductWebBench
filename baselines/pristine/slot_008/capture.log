@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_008/workspace/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/free-nextjs-admin-dashboard-d3526b35fb7e579a4585129fe6eaa47f54ec9a0b",
+    "duration_sec": 26.325,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_008/workspace/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/free-nextjs-admin-dashboard-d3526b35fb7e579a4585129fe6eaa47f54ec9a0b",
+    "duration_sec": 72.841,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3800",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_008/workspace/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/free-nextjs-admin-dashboard-d3526b35fb7e579a4585129fe6eaa47f54ec9a0b",
+  "quality_pass": true,
+  "repo_id": "TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_008/states/TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_233/workspace/cruip__tailwind-dashboard-template__173f64183e3f/tailwind-dashboard-template-173f64183e3f5488e8e22d3a3f6a8de75bf63d7a",
+    "duration_sec": 8.408,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_233/workspace/cruip__tailwind-dashboard-template__173f64183e3f/tailwind-dashboard-template-173f64183e3f5488e8e22d3a3f6a8de75bf63d7a",
+    "duration_sec": 149.304,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_233/workspace/cruip__tailwind-dashboard-template__173f64183e3f/tailwind-dashboard-template-173f64183e3f5488e8e22d3a3f6a8de75bf63d7a",
+  "quality_pass": true,
+  "repo_id": "cruip__tailwind-dashboard-template__173f64183e3f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_233/states/cruip__tailwind-dashboard-template__173f64183e3f",
+  "status": "passed"
+}
+
+--STDERR--

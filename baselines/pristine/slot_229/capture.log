@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_229/workspace/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/tailadmin-free-tailwind-dashboard-template-2fc65676619a9d79a21cee2cc4a6fe79fedf3b68",
+    "duration_sec": 9.718,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_229/workspace/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/tailadmin-free-tailwind-dashboard-template-2fc65676619a9d79a21cee2cc4a6fe79fedf3b68",
+    "duration_sec": 178.416,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory src 4100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_229/workspace/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/tailadmin-free-tailwind-dashboard-template-2fc65676619a9d79a21cee2cc4a6fe79fedf3b68",
+  "quality_pass": true,
+  "repo_id": "TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_229/states/TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a",
+  "status": "passed"
+}
+
+--STDERR--

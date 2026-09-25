@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_026/states/wrappixel__materialpro-react-lite__b275f960b24a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_026/workspace/wrappixel__materialpro-react-lite__b275f960b24a/materialpro-react-lite-b275f960b24a3fd6fbcc8232e7cdd231bc582dda/package",
+    "duration_sec": 92.208,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_026/states/wrappixel__materialpro-react-lite__b275f960b24a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_026/states/wrappixel__materialpro-react-lite__b275f960b24a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_026/workspace/wrappixel__materialpro-react-lite__b275f960b24a/materialpro-react-lite-b275f960b24a3fd6fbcc8232e7cdd231bc582dda/package/node_modules/vite/bin/vite.js --host 127.0.0.1 --port 4000",
+    "message": "HTTP 200",
+    "port": 4000,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_026/workspace/wrappixel__materialpro-react-lite__b275f960b24a/materialpro-react-lite-b275f960b24a3fd6fbcc8232e7cdd231bc582dda/package",
+  "quality_pass": true,
+  "repo_id": "wrappixel__materialpro-react-lite__b275f960b24a",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_026/states/wrappixel__materialpro-react-lite__b275f960b24a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_026/states/wrappixel__materialpro-react-lite__b275f960b24a",
+  "status": "passed"
+}
+
+--STDERR--

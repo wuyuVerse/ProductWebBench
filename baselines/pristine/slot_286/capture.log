@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_286/states/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_286/workspace/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/startbootstrap-clean-blog-jekyll-1f8996f010afdbdebfbb36c27858e62e3373f34a",
+    "duration_sec": 132.508,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_286/states/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_286/states/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "bundle exec jekyll serve --host 0.0.0.0 --port ${PORT:-4000} --skip-initial-build",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_286/workspace/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/startbootstrap-clean-blog-jekyll-1f8996f010afdbdebfbb36c27858e62e3373f34a",
+  "quality_pass": true,
+  "repo_id": "StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_286/states/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_286/states/StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af",
+  "status": "passed"
+}
+
+--STDERR--

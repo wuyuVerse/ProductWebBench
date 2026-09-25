@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_130/workspace/hymhub__css-to-tailwind__2defeb68332a/hymhub__css-to-tailwind__2defeb68332a",
+    "duration_sec": 3.586,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_130/workspace/hymhub__css-to-tailwind__2defeb68332a/hymhub__css-to-tailwind__2defeb68332a",
+    "duration_sec": 43.266,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_130/workspace/hymhub__css-to-tailwind__2defeb68332a/hymhub__css-to-tailwind__2defeb68332a",
+  "quality_pass": true,
+  "repo_id": "hymhub__css-to-tailwind__2defeb68332a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_130/states/hymhub__css-to-tailwind__2defeb68332a",
+  "status": "passed"
+}
+
+--STDERR--

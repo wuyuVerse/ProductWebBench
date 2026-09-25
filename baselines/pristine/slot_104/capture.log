@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_104/workspace/juliangarnier__anime__308c09346ffc/anime",
+    "duration_sec": 29.464,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_104/workspace/juliangarnier__anime__308c09346ffc/anime",
+    "duration_sec": 138.43,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3800 --bind 127.0.0.1 --directory scratchpad/solver_panel/output_pristine/slot_104/workspace/juliangarnier__anime__308c09346ffc/anime",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_104/workspace/juliangarnier__anime__308c09346ffc/anime",
+  "quality_pass": true,
+  "repo_id": "juliangarnier__anime__308c09346ffc",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_104/states/juliangarnier__anime__308c09346ffc",
+  "status": "passed"
+}
+
+--STDERR--

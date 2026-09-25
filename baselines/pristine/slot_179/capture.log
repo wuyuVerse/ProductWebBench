@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_179/workspace/nicdun__astro-tech-blog__b519529c8810/astro-tech-blog-b519529c8810990bca59af4043aaebc4f5a42bf2",
+    "duration_sec": 7.857,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_179/workspace/nicdun__astro-tech-blog__b519529c8810/astro-tech-blog-b519529c8810990bca59af4043aaebc4f5a42bf2",
+    "duration_sec": 21.617,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_179/workspace/nicdun__astro-tech-blog__b519529c8810/astro-tech-blog-b519529c8810990bca59af4043aaebc4f5a42bf2",
+  "quality_pass": true,
+  "repo_id": "nicdun__astro-tech-blog__b519529c8810",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_179/states/nicdun__astro-tech-blog__b519529c8810",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_132/states/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_132/workspace/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c",
+    "duration_sec": 55.527,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_132/states/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_132/states/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_132/workspace/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c",
+  "quality_pass": true,
+  "repo_id": "HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_132/states/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_132/states/HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_087/workspace/thekamalkashyap__blogging-website-template__2d5a38c260db/blogging-website-template-2d5a38c260dbc69ef2dbee941633042bd6ad7a50",
+    "duration_sec": 84.964,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_087/workspace/thekamalkashyap__blogging-website-template__2d5a38c260db/blogging-website-template-2d5a38c260dbc69ef2dbee941633042bd6ad7a50",
+    "duration_sec": 109.134,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_087/workspace/thekamalkashyap__blogging-website-template__2d5a38c260db/blogging-website-template-2d5a38c260dbc69ef2dbee941633042bd6ad7a50/node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3700",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_087/workspace/thekamalkashyap__blogging-website-template__2d5a38c260db/blogging-website-template-2d5a38c260dbc69ef2dbee941633042bd6ad7a50",
+  "quality_pass": true,
+  "repo_id": "thekamalkashyap__blogging-website-template__2d5a38c260db",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_087/states/thekamalkashyap__blogging-website-template__2d5a38c260db",
+  "status": "passed"
+}
+
+--STDERR--

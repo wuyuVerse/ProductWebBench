@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_118/workspace/vercel-labs__markdown-to-agents__4bcca00493f8/markdown-to-agents-4bcca00493f804b154394ac90f7025d886870717",
+    "duration_sec": 71.36,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_118/workspace/vercel-labs__markdown-to-agents__4bcca00493f8/markdown-to-agents-4bcca00493f804b154394ac90f7025d886870717",
+    "duration_sec": 34.96,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3600",
+    "message": "HTTP 200",
+    "port": 3600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_118/workspace/vercel-labs__markdown-to-agents__4bcca00493f8/markdown-to-agents-4bcca00493f804b154394ac90f7025d886870717",
+  "quality_pass": true,
+  "repo_id": "vercel-labs__markdown-to-agents__4bcca00493f8",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_118/states/vercel-labs__markdown-to-agents__4bcca00493f8",
+  "status": "passed"
+}
+
+--STDERR--

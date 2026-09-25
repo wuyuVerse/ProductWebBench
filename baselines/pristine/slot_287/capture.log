@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_287/states/m-i-n-a-r__sparky-portfolio__37305c467657/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_287/workspace/m-i-n-a-r__sparky-portfolio__37305c467657/sparky-portfolio-37305c4676574ef577b8a550417ad6e1c65c570c",
+    "duration_sec": 143.643,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_287/states/m-i-n-a-r__sparky-portfolio__37305c467657/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_287/states/m-i-n-a-r__sparky-portfolio__37305c467657/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_287/workspace/m-i-n-a-r__sparky-portfolio__37305c467657/sparky-portfolio-37305c4676574ef577b8a550417ad6e1c65c570c",
+  "quality_pass": true,
+  "repo_id": "m-i-n-a-r__sparky-portfolio__37305c467657",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_287/states/m-i-n-a-r__sparky-portfolio__37305c467657/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_287/states/m-i-n-a-r__sparky-portfolio__37305c467657",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_151/workspace/AkberJag__portfolio-template__c863458abdec/portfolio-template-c863458abdec6b967018af020cd1f876d095cca9/frontend",
+    "duration_sec": 18.626,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_151/workspace/AkberJag__portfolio-template__c863458abdec/portfolio-template-c863458abdec6b967018af020cd1f876d095cca9/frontend",
+    "duration_sec": 87.323,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_151/workspace/AkberJag__portfolio-template__c863458abdec/portfolio-template-c863458abdec6b967018af020cd1f876d095cca9/frontend/node_modules/vite/bin/vite.js --host 127.0.0.1 --port 3700",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_151/workspace/AkberJag__portfolio-template__c863458abdec/portfolio-template-c863458abdec6b967018af020cd1f876d095cca9/frontend",
+  "quality_pass": true,
+  "repo_id": "AkberJag__portfolio-template__c863458abdec",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_151/states/AkberJag__portfolio-template__c863458abdec",
+  "status": "passed"
+}
+
+--STDERR--

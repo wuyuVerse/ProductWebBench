@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_246/workspace/uzzii-21__astro-portfolio__8a4f4be9cf73/astro-portfolio-8a4f4be9cf730100e2c5a4fc097af914f7b2c503",
+    "duration_sec": 5.835,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_246/workspace/uzzii-21__astro-portfolio__8a4f4be9cf73/astro-portfolio-8a4f4be9cf730100e2c5a4fc097af914f7b2c503",
+    "duration_sec": 62.958,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_246/workspace/uzzii-21__astro-portfolio__8a4f4be9cf73/astro-portfolio-8a4f4be9cf730100e2c5a4fc097af914f7b2c503",
+  "quality_pass": true,
+  "repo_id": "uzzii-21__astro-portfolio__8a4f4be9cf73",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_246/states/uzzii-21__astro-portfolio__8a4f4be9cf73",
+  "status": "passed"
+}
+
+--STDERR--

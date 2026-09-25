@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_310/states/datastax__ragbot-starter__fc0e279dbb79/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_310/workspace/datastax__ragbot-starter__fc0e279dbb79/ragbot-starter-fc0e279dbb79565e400d0b18b0d7f2b645461e75",
+    "duration_sec": 44.637,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_310/states/datastax__ragbot-starter__fc0e279dbb79/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_310/states/datastax__ragbot-starter__fc0e279dbb79/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_310/workspace/datastax__ragbot-starter__fc0e279dbb79/ragbot-starter-fc0e279dbb79565e400d0b18b0d7f2b645461e75/node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 4200",
+    "message": "HTTP 200",
+    "port": 4200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_310/workspace/datastax__ragbot-starter__fc0e279dbb79/ragbot-starter-fc0e279dbb79565e400d0b18b0d7f2b645461e75",
+  "quality_pass": true,
+  "repo_id": "datastax__ragbot-starter__fc0e279dbb79",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_310/states/datastax__ragbot-starter__fc0e279dbb79/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_310/states/datastax__ragbot-starter__fc0e279dbb79",
+  "status": "passed"
+}
+
+--STDERR--

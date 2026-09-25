@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_173/states/sachinchoolur__lightgallery__417b23189bad/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_173/workspace/sachinchoolur__lightgallery__417b23189bad/lightGallery-417b23189bad2991a8865c10cb3de6457f1fa548/site",
+    "duration_sec": 163.452,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_173/states/sachinchoolur__lightgallery__417b23189bad/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_173/states/sachinchoolur__lightgallery__417b23189bad/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory . 4300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_173/workspace/sachinchoolur__lightgallery__417b23189bad/lightGallery-417b23189bad2991a8865c10cb3de6457f1fa548/site",
+  "quality_pass": true,
+  "repo_id": "sachinchoolur__lightgallery__417b23189bad",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_173/states/sachinchoolur__lightgallery__417b23189bad/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_173/states/sachinchoolur__lightgallery__417b23189bad",
+  "status": "passed"
+}
+
+--STDERR--

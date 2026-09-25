@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_266/workspace/withastro__blog-tutorial-demo__0859a3ea85f3/blog-tutorial-demo-0859a3ea85f35325c0a292f9b3131824ef95ee38",
+    "duration_sec": 3.019,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_266/workspace/withastro__blog-tutorial-demo__0859a3ea85f3/blog-tutorial-demo-0859a3ea85f35325c0a292f9b3131824ef95ee38",
+    "duration_sec": 51.514,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_266/workspace/withastro__blog-tutorial-demo__0859a3ea85f3/blog-tutorial-demo-0859a3ea85f35325c0a292f9b3131824ef95ee38",
+  "quality_pass": true,
+  "repo_id": "withastro__blog-tutorial-demo__0859a3ea85f3",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_266/states/withastro__blog-tutorial-demo__0859a3ea85f3",
+  "status": "passed"
+}
+
+--STDERR--

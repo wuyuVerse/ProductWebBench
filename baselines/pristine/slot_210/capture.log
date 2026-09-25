@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_210/states/codrops__InteractivePoints__8419b6377dba/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_210/workspace/codrops__InteractivePoints__8419b6377dba",
+    "duration_sec": 32.538,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_210/states/codrops__InteractivePoints__8419b6377dba/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_210/states/codrops__InteractivePoints__8419b6377dba/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3800 --bind 127.0.0.1 --directory scratchpad/solver_panel/output_pristine/slot_210/workspace/codrops__InteractivePoints__8419b6377dba",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_210/workspace/codrops__InteractivePoints__8419b6377dba",
+  "quality_pass": true,
+  "repo_id": "codrops__InteractivePoints__8419b6377dba",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_210/states/codrops__InteractivePoints__8419b6377dba/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_210/states/codrops__InteractivePoints__8419b6377dba",
+  "status": "passed"
+}
+
+--STDERR--

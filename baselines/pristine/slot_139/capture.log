@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_139/states/website-templates__simple-product_responsive-template__29953ee814fa/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_139/workspace/website-templates__simple-product_responsive-template__29953ee814fa/simple-product_responsive-template",
+    "duration_sec": 65.775,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_139/states/website-templates__simple-product_responsive-template__29953ee814fa/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_139/states/website-templates__simple-product_responsive-template__29953ee814fa/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_139/workspace/website-templates__simple-product_responsive-template__29953ee814fa/simple-product_responsive-template",
+  "quality_pass": true,
+  "repo_id": "website-templates__simple-product_responsive-template__29953ee814fa",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_139/states/website-templates__simple-product_responsive-template__29953ee814fa/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_139/states/website-templates__simple-product_responsive-template__29953ee814fa",
+  "status": "passed"
+}
+
+--STDERR--

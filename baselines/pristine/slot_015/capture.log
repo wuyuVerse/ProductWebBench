@@ -1,0 +1,35 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_015/workspace/shaqdeff__Portfolio-Template__2a4c920125f1/Portfolio-Template-2a4c920125f1e177e887a854dcd37adf992a9b6b",
+    "duration_sec": 28.79,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_015/workspace/shaqdeff__Portfolio-Template__2a4c920125f1/Portfolio-Template-2a4c920125f1e177e887a854dcd37adf992a9b6b",
+    "duration_sec": 180.01,
+    "exit_code": null,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1/logs/capture.stdout.log",
+    "timed_out": true
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": "capture",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_015/workspace/shaqdeff__Portfolio-Template__2a4c920125f1/Portfolio-Template-2a4c920125f1e177e887a854dcd37adf992a9b6b",
+  "repo_id": "shaqdeff__Portfolio-Template__2a4c920125f1",
+  "skip_build": false,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_015/states/shaqdeff__Portfolio-Template__2a4c920125f1",
+  "status": "failed"
+}
+
+--STDERR--

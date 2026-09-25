@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_072/states/themewagon__iPortfolio__7a983e5865b5/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_072/workspace/themewagon__iPortfolio__7a983e5865b5",
+    "duration_sec": 74.93,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_072/states/themewagon__iPortfolio__7a983e5865b5/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_072/states/themewagon__iPortfolio__7a983e5865b5/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3800 --bind 127.0.0.1 --directory scratchpad/solver_panel/output_pristine/slot_072/workspace/themewagon__iPortfolio__7a983e5865b5",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_072/workspace/themewagon__iPortfolio__7a983e5865b5",
+  "quality_pass": true,
+  "repo_id": "themewagon__iPortfolio__7a983e5865b5",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_072/states/themewagon__iPortfolio__7a983e5865b5/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_072/states/themewagon__iPortfolio__7a983e5865b5",
+  "status": "passed"
+}
+
+--STDERR--

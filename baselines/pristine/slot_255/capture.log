@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_255/workspace/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/webgl-distortion-bulge-effect",
+    "duration_sec": 5.238,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_255/workspace/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/webgl-distortion-bulge-effect",
+    "duration_sec": 163.945,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_255/workspace/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/webgl-distortion-bulge-effect",
+  "quality_pass": true,
+  "repo_id": "Robpayot__webgl-distortion-bulge-effect__f5fd2420f989",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_255/states/Robpayot__webgl-distortion-bulge-effect__f5fd2420f989",
+  "status": "passed"
+}
+
+--STDERR--

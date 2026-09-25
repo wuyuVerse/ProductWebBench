@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_022/workspace/CloudCannon__sendit-astro-template__35f7fddc5c3f/sendit-astro-template-35f7fddc5c3f645c1381958ed5b676600f95a270",
+    "duration_sec": 10.169,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_022/workspace/CloudCannon__sendit-astro-template__35f7fddc5c3f/sendit-astro-template-35f7fddc5c3f645c1381958ed5b676600f95a270",
+    "duration_sec": 306.697,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_022/workspace/CloudCannon__sendit-astro-template__35f7fddc5c3f/sendit-astro-template-35f7fddc5c3f645c1381958ed5b676600f95a270",
+  "quality_pass": true,
+  "repo_id": "CloudCannon__sendit-astro-template__35f7fddc5c3f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_022/states/CloudCannon__sendit-astro-template__35f7fddc5c3f",
+  "status": "passed"
+}
+
+--STDERR--

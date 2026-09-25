@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_165/workspace/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/vue-agency-landing-page-template-e48b179ba405ce2b1afc88f68930e7213cfcab95",
+    "duration_sec": 16.73,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_165/workspace/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/vue-agency-landing-page-template-e48b179ba405ce2b1afc88f68930e7213cfcab95",
+    "duration_sec": 73.618,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_165/workspace/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/vue-agency-landing-page-template-e48b179ba405ce2b1afc88f68930e7213cfcab95",
+  "quality_pass": true,
+  "repo_id": "ryanbalieiro__vue-agency-landing-page-template__e48b179ba405",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_165/states/ryanbalieiro__vue-agency-landing-page-template__e48b179ba405",
+  "status": "passed"
+}
+
+--STDERR--

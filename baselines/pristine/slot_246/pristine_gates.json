@@ -1,0 +1,32 @@
+{
+ "slot": 246,
+ "repo_id": "uzzii-21__astro-portfolio__8a4f4be9cf73",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": true,
+  "action_history": true,
+  "screenshot_files": true,
+  "no_horizontal_overflow": false,
+  "completion_text_signals": true,
+  "visible_text_signals": true,
+  "state_url_signals": true,
+  "regression_text_signals": true,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": true,
+  "visual_regression": true,
+  "console_errors": true,
+  "dom_assertions": false,
+  "interaction_assertions": true
+ },
+ "capture_status": "passed",
+ "build_fallback": false,
+ "gates_passed": 17,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 74.2
+}

@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_166/states/cruip__tailwind-landing-page-template__909e38e3249a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_166/workspace/cruip__tailwind-landing-page-template__909e38e3249a/cruip__tailwind-landing-page-template__909e38e3249a",
+    "duration_sec": 102.085,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_166/states/cruip__tailwind-landing-page-template__909e38e3249a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_166/states/cruip__tailwind-landing-page-template__909e38e3249a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_166/workspace/cruip__tailwind-landing-page-template__909e38e3249a/cruip__tailwind-landing-page-template__909e38e3249a/node_modules/vite/bin/vite.js --host 127.0.0.1 --port 3600",
+    "message": "HTTP 200",
+    "port": 3600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_166/workspace/cruip__tailwind-landing-page-template__909e38e3249a/cruip__tailwind-landing-page-template__909e38e3249a",
+  "quality_pass": true,
+  "repo_id": "cruip__tailwind-landing-page-template__909e38e3249a",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_166/states/cruip__tailwind-landing-page-template__909e38e3249a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_166/states/cruip__tailwind-landing-page-template__909e38e3249a",
+  "status": "passed"
+}
+
+--STDERR--

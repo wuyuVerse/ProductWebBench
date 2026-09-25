@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_042/states/OSSPhilippines__freefolio__40c32f8d765a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_042/workspace/OSSPhilippines__freefolio__40c32f8d765a/freefolio-40c32f8d765a67b177f8bd5b901fb4352fcb9759",
+    "duration_sec": 105.942,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_042/states/OSSPhilippines__freefolio__40c32f8d765a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_042/states/OSSPhilippines__freefolio__40c32f8d765a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4000 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4000,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_042/workspace/OSSPhilippines__freefolio__40c32f8d765a/freefolio-40c32f8d765a67b177f8bd5b901fb4352fcb9759",
+  "quality_pass": true,
+  "repo_id": "OSSPhilippines__freefolio__40c32f8d765a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_042/states/OSSPhilippines__freefolio__40c32f8d765a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_042/states/OSSPhilippines__freefolio__40c32f8d765a",
+  "status": "passed"
+}
+
+--STDERR--

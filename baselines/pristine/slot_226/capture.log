@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_226/states/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_226/workspace/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/Diva_Jewellery_Shop_website_template-db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02",
+    "duration_sec": 55.844,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_226/states/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_226/states/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3800 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_226/workspace/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/Diva_Jewellery_Shop_website_template-db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02",
+  "quality_pass": true,
+  "repo_id": "argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_226/states/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_226/states/argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02",
+  "status": "passed"
+}
+
+--STDERR--

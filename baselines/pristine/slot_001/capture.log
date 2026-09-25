@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "corepack yarn build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_001/workspace/mh-rafi__react-landing__f21968d75253/react-landing-f21968d75253e65ff886fb7dc2a1fad058b11c57",
+    "duration_sec": 83.767,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_001/workspace/mh-rafi__react-landing__f21968d75253/react-landing-f21968d75253e65ff886fb7dc2a1fad058b11c57",
+    "duration_sec": 237.34,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory build 3000 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3000,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_001/workspace/mh-rafi__react-landing__f21968d75253/react-landing-f21968d75253e65ff886fb7dc2a1fad058b11c57",
+  "quality_pass": true,
+  "repo_id": "mh-rafi__react-landing__f21968d75253",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_001/states/mh-rafi__react-landing__f21968d75253",
+  "status": "passed"
+}
+
+--STDERR--

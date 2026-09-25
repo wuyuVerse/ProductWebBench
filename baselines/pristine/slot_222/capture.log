@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_222/workspace/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/tailwindcss-invoice-dashboard-2eb6f6d84d6045e340f8a75773a1559c6f2e7709",
+    "duration_sec": 2.413,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_222/workspace/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/tailwindcss-invoice-dashboard-2eb6f6d84d6045e340f8a75773a1559c6f2e7709",
+    "duration_sec": 43.413,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_222/workspace/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/tailwindcss-invoice-dashboard-2eb6f6d84d6045e340f8a75773a1559c6f2e7709",
+  "quality_pass": true,
+  "repo_id": "mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_222/states/mazyar1128__tailwindcss-invoice-dashboard__2eb6f6d84d60",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,32 @@
+{
+ "slot": 119,
+ "repo_id": "codrops__InteractiveColoringConcept__92cc1956c004",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": true,
+  "action_history": true,
+  "screenshot_files": true,
+  "no_horizontal_overflow": true,
+  "completion_text_signals": false,
+  "visible_text_signals": false,
+  "state_url_signals": true,
+  "regression_text_signals": true,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": true,
+  "visual_regression": true,
+  "console_errors": true,
+  "dom_assertions": false,
+  "interaction_assertions": false
+ },
+ "capture_status": "passed",
+ "build_fallback": false,
+ "gates_passed": 15,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 62.8
+}

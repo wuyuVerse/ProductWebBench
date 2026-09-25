@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_128/workspace/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/startbootstrap-stylish-portfolio-a658eb7130db599f69572384ef2dd6221757f028",
+    "duration_sec": 4.572,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_128/workspace/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/startbootstrap-stylish-portfolio-a658eb7130db599f69572384ef2dd6221757f028",
+    "duration_sec": 90.229,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_128/workspace/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/startbootstrap-stylish-portfolio-a658eb7130db599f69572384ef2dd6221757f028",
+  "quality_pass": true,
+  "repo_id": "StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_128/states/StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db",
+  "status": "passed"
+}
+
+--STDERR--

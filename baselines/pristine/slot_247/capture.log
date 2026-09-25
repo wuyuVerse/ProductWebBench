@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_247/states/surjithctly__astroship__1a844c57df3a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_247/workspace/surjithctly__astroship__1a844c57df3a/astroship",
+    "duration_sec": 29.175,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_247/states/surjithctly__astroship__1a844c57df3a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_247/states/surjithctly__astroship__1a844c57df3a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_247/workspace/surjithctly__astroship__1a844c57df3a/astroship/node_modules/astro/astro.js dev --host 127.0.0.1 --port 4300",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_247/workspace/surjithctly__astroship__1a844c57df3a/astroship",
+  "quality_pass": true,
+  "repo_id": "surjithctly__astroship__1a844c57df3a",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_247/states/surjithctly__astroship__1a844c57df3a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_247/states/surjithctly__astroship__1a844c57df3a",
+  "status": "passed"
+}
+
+--STDERR--

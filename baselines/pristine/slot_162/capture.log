@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_162/workspace/fiduswriter__Simple-DataTables__6bd573d9fe15/simple-datatables-6bd573d9fe15b37965a5e2b50d88a2990f2ad900",
+    "duration_sec": 15.03,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_162/workspace/fiduswriter__Simple-DataTables__6bd573d9fe15/simple-datatables-6bd573d9fe15b37965a5e2b50d88a2990f2ad900",
+    "duration_sec": 145.165,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_162/workspace/fiduswriter__Simple-DataTables__6bd573d9fe15/simple-datatables-6bd573d9fe15b37965a5e2b50d88a2990f2ad900",
+  "quality_pass": true,
+  "repo_id": "fiduswriter__Simple-DataTables__6bd573d9fe15",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_162/states/fiduswriter__Simple-DataTables__6bd573d9fe15",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_004/workspace/creativetimofficial__notus-svelte__86099d192955/notus-svelte-86099d1929551e25f25aea1c32c944e75bda0517",
+    "duration_sec": 19.574,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_004/workspace/creativetimofficial__notus-svelte__86099d192955/notus-svelte-86099d1929551e25f25aea1c32c944e75bda0517",
+    "duration_sec": 120.769,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory public 3400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_004/workspace/creativetimofficial__notus-svelte__86099d192955/notus-svelte-86099d1929551e25f25aea1c32c944e75bda0517",
+  "quality_pass": true,
+  "repo_id": "creativetimofficial__notus-svelte__86099d192955",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_004/states/creativetimofficial__notus-svelte__86099d192955",
+  "status": "passed"
+}
+
+--STDERR--

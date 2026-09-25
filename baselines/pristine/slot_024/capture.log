@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_024/workspace/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/Personal-Website-Template-aeb8aa466bdbb6e38af7215f8a7b1125df50eaca",
+    "duration_sec": 24.55,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_024/workspace/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/Personal-Website-Template-aeb8aa466bdbb6e38af7215f8a7b1125df50eaca",
+    "duration_sec": 63.458,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory build 3800 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3800,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_024/workspace/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/Personal-Website-Template-aeb8aa466bdbb6e38af7215f8a7b1125df50eaca",
+  "quality_pass": true,
+  "repo_id": "KoustubhSahu__Personal-Website-Template__aeb8aa466bdb",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_024/states/KoustubhSahu__Personal-Website-Template__aeb8aa466bdb",
+  "status": "passed"
+}
+
+--STDERR--

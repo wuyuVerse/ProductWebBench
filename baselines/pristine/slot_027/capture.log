@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_027/workspace/TailGrids__play-astro__c2f876904c9b/play-astro-c2f876904c9b135a80074d3465360b7111ebd16b",
+    "duration_sec": 44.849,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_027/workspace/TailGrids__play-astro__c2f876904c9b/play-astro-c2f876904c9b135a80074d3465360b7111ebd16b",
+    "duration_sec": 131.923,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_027/workspace/TailGrids__play-astro__c2f876904c9b/play-astro-c2f876904c9b135a80074d3465360b7111ebd16b",
+  "quality_pass": true,
+  "repo_id": "TailGrids__play-astro__c2f876904c9b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_027/states/TailGrids__play-astro__c2f876904c9b",
+  "status": "passed"
+}
+
+--STDERR--

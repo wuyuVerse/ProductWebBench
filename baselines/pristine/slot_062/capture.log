@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_062/workspace/aross2010__web-portfolio__bbcaedaf1c9a/web-portfolio-bbcaedaf1c9a681177df5b9476721d34dc4fda31",
+    "duration_sec": 94.361,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_062/workspace/aross2010__web-portfolio__bbcaedaf1c9a/web-portfolio-bbcaedaf1c9a681177df5b9476721d34dc4fda31",
+    "duration_sec": 164.687,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 4400",
+    "message": "HTTP 200",
+    "port": 4400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_062/workspace/aross2010__web-portfolio__bbcaedaf1c9a/web-portfolio-bbcaedaf1c9a681177df5b9476721d34dc4fda31",
+  "quality_pass": true,
+  "repo_id": "aross2010__web-portfolio__bbcaedaf1c9a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_062/states/aross2010__web-portfolio__bbcaedaf1c9a",
+  "status": "passed"
+}
+
+--STDERR--

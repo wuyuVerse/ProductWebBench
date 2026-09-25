@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_176/workspace/codrops__astro-shop-view-transitions__0b431f92e10c/astro-shop-view-transitions",
+    "duration_sec": 8.835,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_176/workspace/codrops__astro-shop-view-transitions__0b431f92e10c/astro-shop-view-transitions",
+    "duration_sec": 52.485,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_176/workspace/codrops__astro-shop-view-transitions__0b431f92e10c/astro-shop-view-transitions",
+  "quality_pass": true,
+  "repo_id": "codrops__astro-shop-view-transitions__0b431f92e10c",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_176/states/codrops__astro-shop-view-transitions__0b431f92e10c",
+  "status": "passed"
+}
+
+--STDERR--

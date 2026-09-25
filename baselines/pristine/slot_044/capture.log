@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_044/states/PaulleDemon__awesome-landing-pages__e98eb80c593b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_044/workspace/PaulleDemon__awesome-landing-pages__e98eb80c593b/awesome-landing-pages-e98eb80c593b8cd28d1f39556ccdda160a932581",
+    "duration_sec": 112.024,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_044/states/PaulleDemon__awesome-landing-pages__e98eb80c593b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_044/states/PaulleDemon__awesome-landing-pages__e98eb80c593b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_044/workspace/PaulleDemon__awesome-landing-pages__e98eb80c593b/awesome-landing-pages-e98eb80c593b8cd28d1f39556ccdda160a932581",
+  "quality_pass": true,
+  "repo_id": "PaulleDemon__awesome-landing-pages__e98eb80c593b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_044/states/PaulleDemon__awesome-landing-pages__e98eb80c593b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_044/states/PaulleDemon__awesome-landing-pages__e98eb80c593b",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_131/workspace/StartBootstrap__startbootstrap-modern-business__7d297106cbda/startbootstrap-modern-business-7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+    "duration_sec": 4.573,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_131/workspace/StartBootstrap__startbootstrap-modern-business__7d297106cbda/startbootstrap-modern-business-7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+    "duration_sec": 66.568,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_131/workspace/StartBootstrap__startbootstrap-modern-business__7d297106cbda/startbootstrap-modern-business-7d297106cbda2f04db4696752fcdb5b4dc9cd936",
+  "quality_pass": true,
+  "repo_id": "StartBootstrap__startbootstrap-modern-business__7d297106cbda",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_131/states/StartBootstrap__startbootstrap-modern-business__7d297106cbda",
+  "status": "passed"
+}
+
+--STDERR--

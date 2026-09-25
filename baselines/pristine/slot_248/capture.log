@@ -1,0 +1,17 @@
+{
+  "dev_server": {
+    "command": "npm run dev -- --hostname 127.0.0.1 --port 4400",
+    "message": "<urlopen error [Errno 111] Connection refused>",
+    "port": 4400,
+    "ready": false
+  },
+  "failure_stage": "dev_server",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_248/workspace/babaohuang__GeminiProChat__8d91364bc295/babaohuang__GeminiProChat__8d91364bc295",
+  "repo_id": "babaohuang__GeminiProChat__8d91364bc295",
+  "skip_build": true,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_248/states/babaohuang__GeminiProChat__8d91364bc295",
+  "status": "failed"
+}
+
+--STDERR--

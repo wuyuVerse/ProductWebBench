@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_250/workspace/puikinsh__Adminator-admin-dashboard__7879cb48714b/Adminator-admin-dashboard-7879cb48714b2b7469f8ec06b738979967f0d781",
+    "duration_sec": 19.616,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_250/workspace/puikinsh__Adminator-admin-dashboard__7879cb48714b/Adminator-admin-dashboard-7879cb48714b2b7469f8ec06b738979967f0d781",
+    "duration_sec": 146.747,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_250/workspace/puikinsh__Adminator-admin-dashboard__7879cb48714b/Adminator-admin-dashboard-7879cb48714b2b7469f8ec06b738979967f0d781",
+  "quality_pass": true,
+  "repo_id": "puikinsh__Adminator-admin-dashboard__7879cb48714b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_250/states/puikinsh__Adminator-admin-dashboard__7879cb48714b",
+  "status": "passed"
+}
+
+--STDERR--

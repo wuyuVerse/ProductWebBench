@@ -1,0 +1,35 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_298/workspace/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf",
+    "duration_sec": 0.265,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_298/workspace/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf",
+    "duration_sec": 180.008,
+    "exit_code": null,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/logs/capture.stdout.log",
+    "timed_out": true
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4600 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4600,
+    "ready": true
+  },
+  "failure_stage": "capture",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_298/workspace/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf",
+  "repo_id": "ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf",
+  "skip_build": false,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_298/states/ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf",
+  "status": "failed"
+}
+
+--STDERR--

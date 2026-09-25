@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_021/workspace/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b",
+    "duration_sec": 4.567,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_021/workspace/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b",
+    "duration_sec": 49.647,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_021/workspace/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b",
+  "quality_pass": true,
+  "repo_id": "sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_021/states/sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b",
+  "status": "passed"
+}
+
+--STDERR--

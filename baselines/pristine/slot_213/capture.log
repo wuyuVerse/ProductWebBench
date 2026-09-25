@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_213/workspace/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a",
+    "duration_sec": 0.916,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_213/workspace/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a",
+    "duration_sec": 55.973,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_213/workspace/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a",
+  "quality_pass": true,
+  "repo_id": "Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_213/states/Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a",
+  "status": "passed"
+}
+
+--STDERR--

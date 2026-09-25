@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_231/workspace/RyanFitzgerald__devportfolio__852d650fb0a8/devportfolio-852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7",
+    "duration_sec": 4.12,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_231/workspace/RyanFitzgerald__devportfolio__852d650fb0a8/devportfolio-852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7",
+    "duration_sec": 57.616,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4300 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_231/workspace/RyanFitzgerald__devportfolio__852d650fb0a8/devportfolio-852d650fb0a8cf0c98f874af5a56a0a9b7d7d4b7",
+  "quality_pass": true,
+  "repo_id": "RyanFitzgerald__devportfolio__852d650fb0a8",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_231/states/RyanFitzgerald__devportfolio__852d650fb0a8",
+  "status": "passed"
+}
+
+--STDERR--

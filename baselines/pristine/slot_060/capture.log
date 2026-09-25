@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_060/states/creativetimofficial__argon-design-system__eea29c587e6a/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_060/workspace/creativetimofficial__argon-design-system__eea29c587e6a/argon-design-system-eea29c587e6a2cddcde4549724b122e30a21b6d4",
+    "duration_sec": 45.643,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_060/states/creativetimofficial__argon-design-system__eea29c587e6a/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_060/states/creativetimofficial__argon-design-system__eea29c587e6a/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4200 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4200,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_060/workspace/creativetimofficial__argon-design-system__eea29c587e6a/argon-design-system-eea29c587e6a2cddcde4549724b122e30a21b6d4",
+  "quality_pass": true,
+  "repo_id": "creativetimofficial__argon-design-system__eea29c587e6a",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_060/states/creativetimofficial__argon-design-system__eea29c587e6a/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_060/states/creativetimofficial__argon-design-system__eea29c587e6a",
+  "status": "passed"
+}
+
+--STDERR--

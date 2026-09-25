@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_171/states/satnaing__astro-paper__3dd4bd54da8d/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_171/workspace/satnaing__astro-paper__3dd4bd54da8d/astro-paper",
+    "duration_sec": 85.161,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_171/states/satnaing__astro-paper__3dd4bd54da8d/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_171/states/satnaing__astro-paper__3dd4bd54da8d/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_171/workspace/satnaing__astro-paper__3dd4bd54da8d/astro-paper/node_modules/.pnpm/astro@6.3.3_@types+node@24.12.2_jiti@2.6.1_lightningcss@1.32.0_rollup@4.60.2_yaml@2.8.3/node_modules/astro/bin/astro.mjs dev --host 127.0.0.1 --port 4100",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_171/workspace/satnaing__astro-paper__3dd4bd54da8d/astro-paper",
+  "quality_pass": true,
+  "repo_id": "satnaing__astro-paper__3dd4bd54da8d",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_171/states/satnaing__astro-paper__3dd4bd54da8d/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_171/states/satnaing__astro-paper__3dd4bd54da8d",
+  "status": "passed"
+}
+
+--STDERR--

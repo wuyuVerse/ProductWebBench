@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_267/workspace/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/Davis-Personal-Portfolio-ReactJs-Template-fd611139277698efd5a4d2f2d17f4989206cc33c",
+    "duration_sec": 4.796,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_267/workspace/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/Davis-Personal-Portfolio-ReactJs-Template-fd611139277698efd5a4d2f2d17f4989206cc33c",
+    "duration_sec": 109.427,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_267/workspace/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/Davis-Personal-Portfolio-ReactJs-Template-fd611139277698efd5a4d2f2d17f4989206cc33c",
+  "quality_pass": true,
+  "repo_id": "codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_267/states/codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776",
+  "status": "passed"
+}
+
+--STDERR--

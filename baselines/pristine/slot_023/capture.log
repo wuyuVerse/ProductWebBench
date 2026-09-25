@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_023/workspace/getastrothemes__folex-lite-astro__593ac98d858d/folex-lite-astro-593ac98d858d057a15a96252df475d8cf185d4e5",
+    "duration_sec": 23.43,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_023/workspace/getastrothemes__folex-lite-astro__593ac98d858d/folex-lite-astro-593ac98d858d057a15a96252df475d8cf185d4e5",
+    "duration_sec": 95.492,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3700 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3700,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_023/workspace/getastrothemes__folex-lite-astro__593ac98d858d/folex-lite-astro-593ac98d858d057a15a96252df475d8cf185d4e5",
+  "quality_pass": true,
+  "repo_id": "getastrothemes__folex-lite-astro__593ac98d858d",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_023/states/getastrothemes__folex-lite-astro__593ac98d858d",
+  "status": "passed"
+}
+
+--STDERR--

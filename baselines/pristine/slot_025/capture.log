@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_025/workspace/uilibrary__matx-react__94c37b0c682c/matx-react-94c37b0c682c7d56110b8540943a9368bca25633",
+    "duration_sec": 53.903,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_025/workspace/uilibrary__matx-react__94c37b0c682c/matx-react-94c37b0c682c7d56110b8540943a9368bca25633",
+    "duration_sec": 57.422,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 3900 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3900,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_025/workspace/uilibrary__matx-react__94c37b0c682c/matx-react-94c37b0c682c7d56110b8540943a9368bca25633",
+  "quality_pass": true,
+  "repo_id": "uilibrary__matx-react__94c37b0c682c",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_025/states/uilibrary__matx-react__94c37b0c682c",
+  "status": "passed"
+}
+
+--STDERR--

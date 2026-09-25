@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_186/workspace/Adrinlol__landy-react-template__8c3aa8bfc8fd/landy-react-template",
+    "duration_sec": 32.542,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_186/workspace/Adrinlol__landy-react-template__8c3aa8bfc8fd/landy-react-template",
+    "duration_sec": 84.803,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory build 4000 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4000,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_186/workspace/Adrinlol__landy-react-template__8c3aa8bfc8fd/landy-react-template",
+  "quality_pass": true,
+  "repo_id": "Adrinlol__landy-react-template__8c3aa8bfc8fd",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_186/states/Adrinlol__landy-react-template__8c3aa8bfc8fd",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,32 @@
+{
+ "slot": 18,
+ "repo_id": "NextAdminHQ__nextjs-admin-dashboard__8913468e1d00",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": true,
+  "action_history": true,
+  "screenshot_files": true,
+  "no_horizontal_overflow": true,
+  "completion_text_signals": false,
+  "visible_text_signals": false,
+  "state_url_signals": true,
+  "regression_text_signals": false,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": true,
+  "visual_regression": false,
+  "console_errors": false,
+  "dom_assertions": false,
+  "interaction_assertions": false
+ },
+ "capture_status": "passed",
+ "build_fallback": true,
+ "gates_passed": 12,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 161.9
+}

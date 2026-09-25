@@ -1,0 +1,32 @@
+{
+ "slot": 255,
+ "repo_id": "Robpayot__webgl-distortion-bulge-effect__f5fd2420f989",
+ "gates": {
+  "required_states": true,
+  "state_artifacts": true,
+  "state_quality": false,
+  "action_history": false,
+  "screenshot_files": true,
+  "no_horizontal_overflow": false,
+  "completion_text_signals": false,
+  "visible_text_signals": false,
+  "state_url_signals": true,
+  "regression_text_signals": true,
+  "forbidden_text_patterns": true,
+  "image_alt_signals": true,
+  "asset_path_signals": true,
+  "exact_asset_path_signals": true,
+  "visual_anchor_similarity": false,
+  "visual_regression": false,
+  "console_errors": false,
+  "dom_assertions": false,
+  "interaction_assertions": false
+ },
+ "capture_status": "passed",
+ "build_fallback": false,
+ "gates_passed": 9,
+ "gates_total": 19,
+ "capture_rc": 0,
+ "verify_rc": 0,
+ "secs": 173.3
+}

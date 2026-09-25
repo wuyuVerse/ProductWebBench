@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_045/workspace/mattverse__what-i-love__b1fe48034d3f/what-i-love/35-portfolio",
+    "duration_sec": 35.886,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_045/workspace/mattverse__what-i-love__b1fe48034d3f/what-i-love/35-portfolio",
+    "duration_sec": 77.296,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 4300",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_045/workspace/mattverse__what-i-love__b1fe48034d3f/what-i-love/35-portfolio",
+  "quality_pass": true,
+  "repo_id": "mattverse__what-i-love__b1fe48034d3f",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_045/states/mattverse__what-i-love__b1fe48034d3f",
+  "status": "passed"
+}
+
+--STDERR--

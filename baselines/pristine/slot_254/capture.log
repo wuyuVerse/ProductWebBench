@@ -1,0 +1,17 @@
+{
+  "dev_server": {
+    "command": "node scratchpad/solver_panel/output_pristine/slot_254/workspace/shuding__nextra-docs-template__7178f3676d2b/nextra-docs-template/node_modules/.pnpm/next@13.5.11_react-dom@18.3.1_react@18.3.1__react@18.3.1/node_modules/next/dist/bin/next dev --hostname 127.0.0.1 --port 3400",
+    "message": "<urlopen error [Errno 111] Connection refused>",
+    "port": 3400,
+    "ready": false
+  },
+  "failure_stage": "dev_server",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_254/workspace/shuding__nextra-docs-template__7178f3676d2b/nextra-docs-template",
+  "repo_id": "shuding__nextra-docs-template__7178f3676d2b",
+  "skip_build": true,
+  "skip_install": true,
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_254/states/shuding__nextra-docs-template__7178f3676d2b",
+  "status": "failed"
+}
+
+--STDERR--

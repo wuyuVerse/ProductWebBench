@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_081/workspace/robertobirijnr__Starbucks__9f891982488b/Starbucks-9f891982488be990f7fd47ad637fb54514114907",
+    "duration_sec": 11.238,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_081/workspace/robertobirijnr__Starbucks__9f891982488b/Starbucks-9f891982488be990f7fd47ad637fb54514114907",
+    "duration_sec": 157.716,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_081/workspace/robertobirijnr__Starbucks__9f891982488b/Starbucks-9f891982488be990f7fd47ad637fb54514114907",
+  "quality_pass": true,
+  "repo_id": "robertobirijnr__Starbucks__9f891982488b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_081/states/robertobirijnr__Starbucks__9f891982488b",
+  "status": "passed"
+}
+
+--STDERR--

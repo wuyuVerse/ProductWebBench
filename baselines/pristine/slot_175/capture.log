@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_175/workspace/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/Dorota1997__react-frontend-dev-portfolio__befb05c7704d",
+    "duration_sec": 0.365,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_175/workspace/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/Dorota1997__react-frontend-dev-portfolio__befb05c7704d",
+    "duration_sec": 56.868,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4500 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_175/workspace/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/Dorota1997__react-frontend-dev-portfolio__befb05c7704d",
+  "quality_pass": true,
+  "repo_id": "Dorota1997__react-frontend-dev-portfolio__befb05c7704d",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_175/states/Dorota1997__react-frontend-dev-portfolio__befb05c7704d",
+  "status": "passed"
+}
+
+--STDERR--

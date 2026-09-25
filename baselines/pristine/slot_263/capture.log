@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_263/states/importantimport__urara__2bc7a3abaa8e/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_263/workspace/importantimport__urara__2bc7a3abaa8e/urara-2bc7a3abaa8ea612131e00333e597e8a7c8f9e06",
+    "duration_sec": 95.325,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_263/states/importantimport__urara__2bc7a3abaa8e/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_263/states/importantimport__urara__2bc7a3abaa8e/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "corepack pnpm dev --host 127.0.0.1 --port 4300",
+    "message": "HTTP 200",
+    "port": 4300,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_263/workspace/importantimport__urara__2bc7a3abaa8e/urara-2bc7a3abaa8ea612131e00333e597e8a7c8f9e06",
+  "quality_pass": true,
+  "repo_id": "importantimport__urara__2bc7a3abaa8e",
+  "skip_build": true,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_263/states/importantimport__urara__2bc7a3abaa8e/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_263/states/importantimport__urara__2bc7a3abaa8e",
+  "status": "passed"
+}
+
+--STDERR--

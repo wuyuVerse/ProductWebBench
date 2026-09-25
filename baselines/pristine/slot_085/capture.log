@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "corepack yarn build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_085/workspace/Cveinnt__LiveTerm__1f2e543bdbfa/LiveTerm-1f2e543bdbfacaff0585a3f338d4fec215553250",
+    "duration_sec": 41.225,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_085/workspace/Cveinnt__LiveTerm__1f2e543bdbfa/LiveTerm-1f2e543bdbfacaff0585a3f338d4fec215553250",
+    "duration_sec": 47.348,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "npm run start -- --hostname 127.0.0.1 --port 3500",
+    "message": "HTTP 200",
+    "port": 3500,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_085/workspace/Cveinnt__LiveTerm__1f2e543bdbfa/LiveTerm-1f2e543bdbfacaff0585a3f338d4fec215553250",
+  "quality_pass": true,
+  "repo_id": "Cveinnt__LiveTerm__1f2e543bdbfa",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_085/states/Cveinnt__LiveTerm__1f2e543bdbfa",
+  "status": "passed"
+}
+
+--STDERR--

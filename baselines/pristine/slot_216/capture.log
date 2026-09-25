@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_216/states/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_216/workspace/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/plain-free-bootstrap-admin-template-dcb30e2bce6c9f12e833ebb220b3cb218597f12e",
+    "duration_sec": 86.568,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_216/states/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_216/states/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 4400 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4400,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_216/workspace/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/plain-free-bootstrap-admin-template-dcb30e2bce6c9f12e833ebb220b3cb218597f12e",
+  "quality_pass": true,
+  "repo_id": "PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_216/states/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_216/states/PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c",
+  "status": "passed"
+}
+
+--STDERR--

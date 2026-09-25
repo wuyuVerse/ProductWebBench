@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_059/workspace/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/Fashion-eCommerce-Shop-in-React-aa49a544241bcb393d9e6d96c1b27ed43ec388dd",
+    "duration_sec": 15.992,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/logs/build.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node productwebbench/tools/playwright_capture.js scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/capture_config.json",
+    "cwd": "scratchpad/solver_panel/output_pristine/slot_059/workspace/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/Fashion-eCommerce-Shop-in-React-aa49a544241bcb393d9e6d96c1b27ed43ec388dd",
+    "duration_sec": 62.84,
+    "exit_code": 0,
+    "stderr_path": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/logs/capture.stderr.log",
+    "stdout_path": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 productwebbench/tools/static_server.py --directory dist 4100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 4100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "scratchpad/solver_panel/output_pristine/slot_059/workspace/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/Fashion-eCommerce-Shop-in-React-aa49a544241bcb393d9e6d96c1b27ed43ec388dd",
+  "quality_pass": true,
+  "repo_id": "Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b",
+  "skip_build": false,
+  "skip_install": true,
+  "state_capture": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b/state_capture.json",
+  "states_dir": "scratchpad/solver_panel/output_pristine/slot_059/states/Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b",
+  "status": "passed"
+}
+
+--STDERR--
