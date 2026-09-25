@@ -57,8 +57,9 @@ tasks/               all 400 evaluated slots: manifest.json, a per-slot
                      specification (problem statement, rubric, required states,
                      constraints), the frozen per-stage assertion spec, and the
                      Build acceptance record for slots 506-585
-baselines/pristine/  the 19 checks run on the *untouched* repository, per task
-                     — this is what makes a regression exactly attributable
+baselines/pristine/  the 19 checks run on the *untouched* repository, for all
+                     320 Change slots — this is what makes a regression exactly
+                     attributable
 results/             cells_flat.jsonl: one row per (task, model, leg) evaluated
                      cell, 8,737 rows — the scores reported in the paper
 harbor/              Harbor integration guide
@@ -93,7 +94,7 @@ licensing, not by oversight:
 |---|---|---|
 | repository snapshots | GB | the runnable site handed to the agent, one per task |
 | reference browser captures | ~1.9 GB | the screenshots and DOM states the visual and layout gates compare against |
-| exported task packages | 44.6 MB | `submission_verifier.json` and friends — the frozen gate definitions, for the 310 Change slots (the 80 Build slots have none) |
+| exported task packages | 44.6 MB | `submission_verifier.json` and friends — the frozen gate definitions for the Change slots (the 80 Build slots have none) |
 
 ### All 400 tasks have a specification
 

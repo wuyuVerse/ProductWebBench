@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/workspace/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
+    "duration_sec": 50.69,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/logs/build.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/capture_config.json",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/workspace/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
+    "duration_sec": 27.218,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/logs/capture.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "node .output/server/index.mjs",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/workspace/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
+  "quality_pass": true,
+  "repo_id": "nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
+  "skip_build": false,
+  "skip_install": false,
+  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1/state_capture.json",
+  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_201/states/nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
+  "status": "passed"
+}
+
+--STDERR--

@@ -1,0 +1,28 @@
+{
+  "capture": {
+    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/states/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963/capture_config.json",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/workspace/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
+    "duration_sec": 15.142,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/states/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963/logs/capture.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/states/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3100 --bind 127.0.0.1 --directory /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/workspace/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/workspace/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
+  "quality_pass": true,
+  "repo_id": "Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
+  "skip_build": false,
+  "skip_install": false,
+  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/states/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963/state_capture.json",
+  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_203/states/Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
+  "status": "passed"
+}
+
+--STDERR--

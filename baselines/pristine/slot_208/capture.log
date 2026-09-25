@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/states/SamwitAdhikary__Ecommerce__05583c6dae8e/capture_config.json",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/workspace/SamwitAdhikary__Ecommerce__05583c6dae8e",
+    "duration_sec": 40.947,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/states/SamwitAdhikary__Ecommerce__05583c6dae8e/logs/capture.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/states/SamwitAdhikary__Ecommerce__05583c6dae8e/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/workspace/SamwitAdhikary__Ecommerce__05583c6dae8e",
+  "quality_pass": true,
+  "repo_id": "SamwitAdhikary__Ecommerce__05583c6dae8e",
+  "skip_build": false,
+  "skip_install": false,
+  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/states/SamwitAdhikary__Ecommerce__05583c6dae8e/state_capture.json",
+  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_208/states/SamwitAdhikary__Ecommerce__05583c6dae8e",
+  "status": "passed"
+}
+
+--STDERR--

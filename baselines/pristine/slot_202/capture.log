@@ -1,0 +1,29 @@
+{
+  "capture": {
+    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/states/technext__pizza__a8e2a6f4ee2f/capture_config.json",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/workspace/technext__pizza__a8e2a6f4ee2f",
+    "duration_sec": 84.626,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/states/technext__pizza__a8e2a6f4ee2f/logs/capture.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/states/technext__pizza__a8e2a6f4ee2f/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 -m http.server 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "install_skipped_reason": "static_site_can_be_served_without_node_install",
+  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/workspace/technext__pizza__a8e2a6f4ee2f",
+  "quality_pass": true,
+  "repo_id": "technext__pizza__a8e2a6f4ee2f",
+  "skip_build": false,
+  "skip_install": false,
+  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/states/technext__pizza__a8e2a6f4ee2f/state_capture.json",
+  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_202/states/technext__pizza__a8e2a6f4ee2f",
+  "status": "passed"
+}
+
+--STDERR--

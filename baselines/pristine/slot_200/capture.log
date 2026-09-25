@@ -1,0 +1,37 @@
+{
+  "build": {
+    "command": "npm run build",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/workspace/mearashadowfax__ScrewFast__3d230b0f89a1",
+    "duration_sec": 7.028,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/logs/build.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/logs/build.stdout.log",
+    "timed_out": false
+  },
+  "capture": {
+    "command": "node /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/playwright_capture.js /volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/capture_config.json",
+    "cwd": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/workspace/mearashadowfax__ScrewFast__3d230b0f89a1",
+    "duration_sec": 69.595,
+    "exit_code": 0,
+    "stderr_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/logs/capture.stderr.log",
+    "stdout_path": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/logs/capture.stdout.log",
+    "timed_out": false
+  },
+  "dev_server": {
+    "command": "python3 /volume/pt-coder/users/jjwu/MultiModel/productwebbench/tools/static_server.py --directory dist 3100 --bind 127.0.0.1",
+    "message": "HTTP 200",
+    "port": 3100,
+    "ready": true
+  },
+  "failure_stage": null,
+  "project_root": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/workspace/mearashadowfax__ScrewFast__3d230b0f89a1",
+  "quality_pass": true,
+  "repo_id": "mearashadowfax__ScrewFast__3d230b0f89a1",
+  "skip_build": false,
+  "skip_install": false,
+  "state_capture": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1/state_capture.json",
+  "states_dir": "/volume/pt-coder/users/jjwu/MultiModel/scratchpad/solver_panel/output_pristine/slot_200/states/mearashadowfax__ScrewFast__3d230b0f89a1",
+  "status": "passed"
+}
+
+--STDERR--
