@@ -1,0 +1,310 @@
+{
+  "asset_path_signals": [
+    "yield_ahead"
+  ],
+  "asset_path_states": [
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "completion_states": [
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "completion_text_signals": [
+    "Trace the docs to the real repository files",
+    "Open the docs background sign",
+    "Compare the vector source icon",
+    "Scan the browser favicon tile",
+    "Read the runtime README",
+    "Study the transform README",
+    "Finish at the preset README"
+  ],
+  "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+  ],
+  "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map",
+    "desktop_comparison_open"
+  ],
+  "dom_assertions": [
+    {
+      "min_count": 1,
+      "state": "desktop_asset_map",
+      "tag": "h1"
+    },
+    {
+      "min_count": 1,
+      "state": "desktop_asset_map",
+      "tag": "section"
+    },
+    {
+      "min_count": 6,
+      "state": "desktop_asset_map",
+      "tag": "h3"
+    },
+    {
+      "min_count": 6,
+      "state": "desktop_asset_map",
+      "tag": "img"
+    },
+    {
+      "min_count": 1,
+      "state": "desktop_asset_map",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "desktop_asset_map",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "desktop_asset_map",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_asset_map",
+      "tag": "h1"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_asset_map",
+      "tag": "section"
+    },
+    {
+      "min_count": 6,
+      "state": "mobile_asset_map",
+      "tag": "h3"
+    },
+    {
+      "min_count": 6,
+      "state": "mobile_asset_map",
+      "tag": "img"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_asset_map",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_asset_map",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "mobile_asset_map",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_asset_map",
+      "tag": "h1"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_asset_map",
+      "tag": "section"
+    },
+    {
+      "min_count": 6,
+      "state": "tablet_asset_map",
+      "tag": "h3"
+    },
+    {
+      "min_count": 6,
+      "state": "tablet_asset_map",
+      "tag": "img"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_asset_map",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_asset_map",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "tablet_asset_map",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    },
+    {
+      "min_count": 1,
+      "state": "desktop_home",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "desktop_home",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "desktop_home",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_home",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "mobile_home",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "mobile_home",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_home",
+      "tag": "nav"
+    },
+    {
+      "min_count": 1,
+      "state": "tablet_home",
+      "tag": "footer"
+    },
+    {
+      "class_contains": "nav-link",
+      "min_count": 1,
+      "state": "tablet_home",
+      "tag": "a",
+      "text_contains": "Asset Map"
+    }
+  ],
+  "enforce_console_errors": true,
+  "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "Lorem ipsum"
+  ],
+  "interaction_states": [
+    "desktop_comparison_open"
+  ],
+  "max_console_errors": 0,
+  "mean_luminance_tolerance": 95,
+  "min_asset_path_signals": 1,
+  "min_canvas_screenshot_bytes": 5000,
+  "min_completion_text_signals": 7,
+  "min_image_count": 0,
+  "min_palette_overlap": 1,
+  "min_screenshot_bytes": 5000,
+  "min_text_length": 300,
+  "min_visible_text_signals": 5,
+  "overflow_tolerance_px": 24,
+  "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map",
+    "desktop_comparison_open"
+  ],
+  "reference_text_signals": [
+    "Trace the docs to the real repository files",
+    "Open the docs background sign",
+    "Compare the vector source icon",
+    "Scan the browser favicon tile",
+    "Read the runtime README"
+  ],
+  "regression_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_comparison_open"
+  ],
+  "regression_text_signals": [
+    "get serious about ES6 generator functions",
+    "Regenerator",
+    "Traceur",
+    "Input:",
+    "Output:",
+    "An open-source project from Facebook"
+  ],
+  "require_all_completion_signals": true,
+  "require_all_visible_text_signals": true,
+  "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+  ],
+  "responsive_states": [
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map",
+    "desktop_comparison_open"
+  ],
+  "task_id": "dev_facebook__regenerator__cb755fd82c64__docs_asset_map",
+  "text_signal_states": [
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "visible_text_signals": [
+    "Trace the docs to the real repository files",
+    "Open the docs background sign",
+    "Compare the vector source icon",
+    "Scan the browser favicon tile",
+    "Read the runtime README"
+  ],
+  "visible_text_states": [
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map"
+  ],
+  "visual_anchor_states": [
+    "desktop_home",
+    "desktop_asset_map"
+  ]
+}

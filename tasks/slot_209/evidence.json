@@ -1,0 +1,101 @@
+{
+  "console_message_count": 0,
+  "has_state_capture": true,
+  "missing_required_states": [],
+  "quality_pass": true,
+  "repo_id": "facebook__regenerator__cb755fd82c64",
+  "states": [
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/screenshot.png",
+      "state_id": "desktop_home"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/screenshot.png",
+      "state_id": "mobile_home"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/screenshot.png",
+      "state_id": "tablet_home"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/screenshot.png",
+      "state_id": "desktop_asset_map"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/screenshot.png",
+      "state_id": "mobile_asset_map"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/screenshot.png",
+      "state_id": "tablet_asset_map"
+    },
+    {
+      "a11y": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/a11y.json",
+      "actions": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/actions.json",
+      "boxes": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/boxes.json",
+      "console": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/console.json",
+      "crops": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/crops.json",
+      "dom": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/dom.html",
+      "metrics": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/metrics.json",
+      "network": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/network.json",
+      "quality": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/quality.json",
+      "screenshot": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/screenshot.png",
+      "state_id": "desktop_comparison_open"
+    }
+  ],
+  "task_id": "dev_facebook__regenerator__cb755fd82c64__docs_asset_map"
+}

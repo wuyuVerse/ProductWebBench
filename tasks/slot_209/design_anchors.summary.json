@@ -1,0 +1,884 @@
+{
+  "component_crops": [
+    {
+      "crop_count": 3,
+      "kinds": {
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/component_crops/heading_00.png",
+          "rect": {
+            "height": 37,
+            "width": 924,
+            "x": 258,
+            "y": 78
+          },
+          "size_bytes": 9482,
+          "text": "Let’s get serious about ES6 generator functions."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/component_crops/heading_01.png",
+          "rect": {
+            "height": 28,
+            "width": 442,
+            "x": 258,
+            "y": 524
+          },
+          "size_bytes": 3513,
+          "text": "Input:\nreport a bug"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/component_crops/heading_02.png",
+          "rect": {
+            "height": 28,
+            "width": 442,
+            "x": 740,
+            "y": 524
+          },
+          "size_bytes": 4594,
+          "text": "Output:\ncontrol-return to run"
+        }
+      ],
+      "state_id": "desktop_home"
+    },
+    {
+      "crop_count": 2,
+      "kinds": {
+        "heading": 2
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/component_crops/heading_00.png",
+          "rect": {
+            "height": 74,
+            "width": 600,
+            "x": 258,
+            "y": 78
+          },
+          "size_bytes": 4446,
+          "text": "Let’s get serious about ES6 generator functions."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/component_crops/heading_01.png",
+          "rect": {
+            "height": 28,
+            "width": 280,
+            "x": 258,
+            "y": 669
+          },
+          "size_bytes": 995,
+          "text": "Input:\nreport a bug"
+        }
+      ],
+      "state_id": "mobile_home"
+    },
+    {
+      "crop_count": 3,
+      "kinds": {
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/component_crops/heading_00.png",
+          "rect": {
+            "height": 74,
+            "width": 600,
+            "x": 258,
+            "y": 78
+          },
+          "size_bytes": 10183,
+          "text": "Let’s get serious about ES6 generator functions."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/component_crops/heading_01.png",
+          "rect": {
+            "height": 28,
+            "width": 280,
+            "x": 258,
+            "y": 669
+          },
+          "size_bytes": 3443,
+          "text": "Input:\nreport a bug"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/component_crops/heading_02.png",
+          "rect": {
+            "height": 56,
+            "width": 280,
+            "x": 578,
+            "y": 669
+          },
+          "size_bytes": 4336,
+          "text": "Output:\ncontrol-return to run"
+        }
+      ],
+      "state_id": "tablet_home"
+    },
+    {
+      "crop_count": 6,
+      "kinds": {
+        "card": 3,
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/heading_00.png",
+          "rect": {
+            "height": 37,
+            "width": 924,
+            "x": 258,
+            "y": 113
+          },
+          "size_bytes": 7403,
+          "text": "Trace the docs to the real repository files."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/heading_01.png",
+          "rect": {
+            "height": 17,
+            "width": 263,
+            "x": 275,
+            "y": 361
+          },
+          "size_bytes": 3075,
+          "text": "Open the docs background sign"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/heading_02.png",
+          "rect": {
+            "height": 17,
+            "width": 263,
+            "x": 588,
+            "y": 361
+          },
+          "size_bytes": 2873,
+          "text": "Compare the vector source icon"
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/card_00.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 275,
+            "y": 265
+          },
+          "size_bytes": 5580,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/card_01.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 588,
+            "y": 265
+          },
+          "size_bytes": 3331,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/component_crops/card_02.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 902,
+            "y": 265
+          },
+          "size_bytes": 8388,
+          "text": ""
+        }
+      ],
+      "state_id": "desktop_asset_map"
+    },
+    {
+      "crop_count": 6,
+      "kinds": {
+        "card": 3,
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/heading_00.png",
+          "rect": {
+            "height": 74,
+            "width": 338,
+            "x": 26,
+            "y": 129
+          },
+          "size_bytes": 13775,
+          "text": "Trace the docs to the real repository files."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/heading_01.png",
+          "rect": {
+            "height": 17,
+            "width": 304,
+            "x": 43,
+            "y": 486
+          },
+          "size_bytes": 3101,
+          "text": "Open the docs background sign"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/heading_02.png",
+          "rect": {
+            "height": 17,
+            "width": 304,
+            "x": 43,
+            "y": 687
+          },
+          "size_bytes": 3037,
+          "text": "Compare the vector source icon"
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/card_00.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 390
+          },
+          "size_bytes": 5580,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/card_01.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 591
+          },
+          "size_bytes": 3331,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/component_crops/card_02.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 792
+          },
+          "size_bytes": 5412,
+          "text": ""
+        }
+      ],
+      "state_id": "mobile_asset_map"
+    },
+    {
+      "crop_count": 6,
+      "kinds": {
+        "card": 3,
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/heading_00.png",
+          "rect": {
+            "height": 37,
+            "width": 782,
+            "x": 26,
+            "y": 129
+          },
+          "size_bytes": 11091,
+          "text": "Trace the docs to the real repository files."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/heading_01.png",
+          "rect": {
+            "height": 17,
+            "width": 748,
+            "x": 43,
+            "y": 377
+          },
+          "size_bytes": 3240,
+          "text": "Open the docs background sign"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/heading_02.png",
+          "rect": {
+            "height": 17,
+            "width": 748,
+            "x": 43,
+            "y": 563
+          },
+          "size_bytes": 3172,
+          "text": "Compare the vector source icon"
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/card_00.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 281
+          },
+          "size_bytes": 5590,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/card_01.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 467
+          },
+          "size_bytes": 3284,
+          "text": ""
+        },
+        {
+          "kind": "card",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/component_crops/card_02.png",
+          "rect": {
+            "height": 84,
+            "width": 84,
+            "x": 43,
+            "y": 653
+          },
+          "size_bytes": 8388,
+          "text": ""
+        }
+      ],
+      "state_id": "tablet_asset_map"
+    },
+    {
+      "crop_count": 3,
+      "kinds": {
+        "heading": 3
+      },
+      "samples": [
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/component_crops/heading_00.png",
+          "rect": {
+            "height": 37,
+            "width": 924,
+            "x": 258,
+            "y": 78
+          },
+          "size_bytes": 9482,
+          "text": "Let’s get serious about ES6 generator functions."
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/component_crops/heading_01.png",
+          "rect": {
+            "height": 28,
+            "width": 442,
+            "x": 258,
+            "y": 666
+          },
+          "size_bytes": 3513,
+          "text": "Input:\nreport a bug"
+        },
+        {
+          "kind": "heading",
+          "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/component_crops/heading_02.png",
+          "rect": {
+            "height": 28,
+            "width": 442,
+            "x": 740,
+            "y": 666
+          },
+          "size_bytes": 4594,
+          "text": "Output:\ncontrol-return to run"
+        }
+      ],
+      "state_id": "desktop_comparison_open"
+    }
+  ],
+  "has_design_anchors": true,
+  "missing_design_states": [],
+  "repo_id": "facebook__regenerator__cb755fd82c64",
+  "sample_counts": {
+    "buttons": 11,
+    "cards": 12,
+    "headings": 12,
+    "nav_items": 11
+  },
+  "screenshots": [
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0017,
+      "file_bytes": 213071,
+      "height": 900,
+      "light_pixel_ratio": 0.8465,
+      "mean_luminance": 240.64,
+      "mean_rgb": "#f1f0f0",
+      "palette": [
+        {
+          "count": 43812,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 3756,
+          "hex": "#b8b6bc"
+        },
+        {
+          "count": 2802,
+          "hex": "#8b808a"
+        },
+        {
+          "count": 2777,
+          "hex": "#dfd9cb"
+        },
+        {
+          "count": 2358,
+          "hex": "#f1f1f1"
+        },
+        {
+          "count": 1372,
+          "hex": "#fbfbfb"
+        },
+        {
+          "count": 612,
+          "hex": "#feffff"
+        },
+        {
+          "count": 111,
+          "hex": "#fffffb"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_home/screenshot.png",
+      "state_id": "desktop_home",
+      "width": 1440
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0152,
+      "file_bytes": 64611,
+      "height": 844,
+      "light_pixel_ratio": 0.8247,
+      "mean_luminance": 234.69,
+      "mean_rgb": "#eeeae5",
+      "palette": [
+        {
+          "count": 44066,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 3615,
+          "hex": "#a19d99"
+        },
+        {
+          "count": 2948,
+          "hex": "#5f393e"
+        },
+        {
+          "count": 2453,
+          "hex": "#e5ce80"
+        },
+        {
+          "count": 2407,
+          "hex": "#e6eaec"
+        },
+        {
+          "count": 769,
+          "hex": "#faffff"
+        },
+        {
+          "count": 711,
+          "hex": "#fffffb"
+        },
+        {
+          "count": 631,
+          "hex": "#fcf7e6"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_home/screenshot.png",
+      "state_id": "mobile_home",
+      "width": 390
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0053,
+      "file_bytes": 217413,
+      "height": 1112,
+      "light_pixel_ratio": 0.8015,
+      "mean_luminance": 235.42,
+      "mean_rgb": "#ecebeb",
+      "palette": [
+        {
+          "count": 39065,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 5182,
+          "hex": "#b5b3bb"
+        },
+        {
+          "count": 3615,
+          "hex": "#867b84"
+        },
+        {
+          "count": 3447,
+          "hex": "#f2f2f3"
+        },
+        {
+          "count": 3315,
+          "hex": "#e1dbcb"
+        },
+        {
+          "count": 1886,
+          "hex": "#fbfbfb"
+        },
+        {
+          "count": 704,
+          "hex": "#fdffff"
+        },
+        {
+          "count": 386,
+          "hex": "#fffffb"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_home/screenshot.png",
+      "state_id": "tablet_home",
+      "width": 834
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0027,
+      "file_bytes": 125876,
+      "height": 900,
+      "light_pixel_ratio": 0.9131,
+      "mean_luminance": 245.8,
+      "mean_rgb": "#f7f5f3",
+      "palette": [
+        {
+          "count": 46155,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 2666,
+          "hex": "#f6f6f5"
+        },
+        {
+          "count": 2589,
+          "hex": "#ded1ab"
+        },
+        {
+          "count": 2246,
+          "hex": "#94796f"
+        },
+        {
+          "count": 2112,
+          "hex": "#fafaf9"
+        },
+        {
+          "count": 1197,
+          "hex": "#fdfdfd"
+        },
+        {
+          "count": 597,
+          "hex": "#feffff"
+        },
+        {
+          "count": 38,
+          "hex": "#fffff9"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_asset_map/screenshot.png",
+      "state_id": "desktop_asset_map",
+      "width": 1440
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0238,
+      "file_bytes": 80621,
+      "height": 844,
+      "light_pixel_ratio": 0.8064,
+      "mean_luminance": 231.24,
+      "mean_rgb": "#ebe6df",
+      "palette": [
+        {
+          "count": 37799,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 5645,
+          "hex": "#cfbd84"
+        },
+        {
+          "count": 4692,
+          "hex": "#fdfdfc"
+        },
+        {
+          "count": 4263,
+          "hex": "#69463e"
+        },
+        {
+          "count": 3471,
+          "hex": "#edeeed"
+        },
+        {
+          "count": 846,
+          "hex": "#fbf2d2"
+        },
+        {
+          "count": 465,
+          "hex": "#fffffa"
+        },
+        {
+          "count": 419,
+          "hex": "#fbffff"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/mobile_asset_map/screenshot.png",
+      "state_id": "mobile_asset_map",
+      "width": 390
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0069,
+      "file_bytes": 114359,
+      "height": 1112,
+      "light_pixel_ratio": 0.9021,
+      "mean_luminance": 243.88,
+      "mean_rgb": "#f5f3f0",
+      "palette": [
+        {
+          "count": 42996,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 3658,
+          "hex": "#f6f6f6"
+        },
+        {
+          "count": 3025,
+          "hex": "#e5dbb8"
+        },
+        {
+          "count": 2760,
+          "hex": "#937867"
+        },
+        {
+          "count": 2510,
+          "hex": "#f8f9f9"
+        },
+        {
+          "count": 2032,
+          "hex": "#fcfcfc"
+        },
+        {
+          "count": 524,
+          "hex": "#feffff"
+        },
+        {
+          "count": 95,
+          "hex": "#fffff8"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/tablet_asset_map/screenshot.png",
+      "state_id": "tablet_asset_map",
+      "width": 834
+    },
+    {
+      "available": true,
+      "dark_pixel_ratio": 0.0017,
+      "file_bytes": 230579,
+      "height": 900,
+      "light_pixel_ratio": 0.8255,
+      "mean_luminance": 238.52,
+      "mean_rgb": "#efeeee",
+      "palette": [
+        {
+          "count": 42257,
+          "hex": "#ffffff"
+        },
+        {
+          "count": 4337,
+          "hex": "#b3b2b8"
+        },
+        {
+          "count": 3180,
+          "hex": "#898088"
+        },
+        {
+          "count": 2936,
+          "hex": "#dcd7cb"
+        },
+        {
+          "count": 2585,
+          "hex": "#efefef"
+        },
+        {
+          "count": 1528,
+          "hex": "#fafafa"
+        },
+        {
+          "count": 617,
+          "hex": "#feffff"
+        },
+        {
+          "count": 160,
+          "hex": "#fffffb"
+        }
+      ],
+      "path": "data/sitecontinuum/states_slot_209_reference/facebook__regenerator__cb755fd82c64/desktop_comparison_open/screenshot.png",
+      "state_id": "desktop_comparison_open",
+      "width": 1440
+    }
+  ],
+  "state_ids": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_asset_map",
+    "mobile_asset_map",
+    "tablet_asset_map",
+    "desktop_comparison_open"
+  ],
+  "state_summaries": [
+    {
+      "button_samples": 3,
+      "card_samples": 0,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 3,
+      "nav_samples": 3,
+      "state_id": "desktop_home"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 0,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 3,
+      "nav_samples": 3,
+      "state_id": "mobile_home"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 0,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 3,
+      "nav_samples": 3,
+      "state_id": "tablet_home"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 6,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 7,
+      "nav_samples": 3,
+      "state_id": "desktop_asset_map"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 6,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 7,
+      "nav_samples": 3,
+      "state_id": "mobile_asset_map"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 6,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 7,
+      "nav_samples": 3,
+      "state_id": "tablet_asset_map"
+    },
+    {
+      "button_samples": 3,
+      "card_samples": 0,
+      "has_design": true,
+      "has_metrics": true,
+      "heading_samples": 3,
+      "nav_samples": 3,
+      "state_id": "desktop_comparison_open"
+    }
+  ],
+  "task_id": "dev_facebook__regenerator__cb755fd82c64__docs_asset_map",
+  "top_tokens": {
+    "background_colors": [],
+    "font_families": [
+      {
+        "count": 100,
+        "value": "sans-serif"
+      }
+    ],
+    "font_sizes": [
+      {
+        "count": 42,
+        "value": "14px"
+      },
+      {
+        "count": 25,
+        "value": "16px"
+      },
+      {
+        "count": 18,
+        "value": "15px"
+      },
+      {
+        "count": 8,
+        "value": "24px"
+      },
+      {
+        "count": 7,
+        "value": "32px"
+      }
+    ],
+    "font_weights": [
+      {
+        "count": 67,
+        "value": "400"
+      },
+      {
+        "count": 33,
+        "value": "700"
+      }
+    ],
+    "radii": [
+      {
+        "count": 82,
+        "value": "0px"
+      },
+      {
+        "count": 18,
+        "value": "6px"
+      }
+    ],
+    "shadows": [
+      {
+        "count": 18,
+        "value": "rgba(0, 0, 0, 0.06) 0px 8px 22px 0px"
+      }
+    ],
+    "text_colors": []
+  }
+}
