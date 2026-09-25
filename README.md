@@ -19,7 +19,7 @@ continuity check** — a blank route, horizontal overflow, console errors — an
 ## Install
 
 ```bash
-git clone https://github.com/OWNER/productwebbench && cd productwebbench
+git clone https://github.com/wuyuVerse/ProductWebBench && cd ProductWebBench
 python3 -m pip install -e ".[analysis]"
 ```
 

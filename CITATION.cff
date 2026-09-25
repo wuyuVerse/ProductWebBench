@@ -5,7 +5,7 @@ authors:
   - name: "The ProductWebBench Authors"
 type: software
 license: MIT
-repository-code: "https://github.com/OWNER/productwebbench"
+repository-code: "https://github.com/wuyuVerse/ProductWebBench"
 preferred-citation:
   type: conference-paper
   title: "ProductWebBench: Scoring Frontend Coding Agents on Website Continuity"
