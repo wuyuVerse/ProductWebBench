@@ -47,9 +47,3 @@ jobs:
           cis = json.load(open("analysis/E25_pristine_regression/clustered_cis.json"))
           print("ok: 8737 cells, e25 4881 rows, class_a 66 / class_b 56 / both 16 / union 106")
           PY
-
-      - name: Upload regenerated figures
-        uses: actions/upload-artifact@v4
-        with:
-          name: figures
-          path: figures/*.pdf
