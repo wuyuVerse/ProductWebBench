@@ -67,9 +67,9 @@ analysis/            E1–E25: the paper's analyses. _data/cells_flat.jsonl is
 figures/scripts/     the figure scripts; output lands in figures/
 baselines/pristine/  the 19 checks run on the *untouched* repository, per task
                      — this is what makes a regression exactly attributable
-tasks/               full task specifications (problem statement, rubric,
-                     required/hidden states, constraints) for 390 of the 400
-                     slots: 310/320 Change + 80/80 Build
+tasks/               manifest.json lists all 400 evaluated slots; per-slot
+                     directories hold the full specification (problem statement,
+                     rubric, required/hidden states, constraints) for 390 of them
 harbor/              Harbor integration guide
 tools/               reproduce.sh, sweep aggregator
 docs/                reproduce.md, scoring.md, tasks.md
@@ -104,6 +104,25 @@ licensing, not by oversight:
 | repository snapshots | GB | the runnable site handed to the agent, one per task |
 | reference browser captures | ~1.9 GB | the screenshots and DOM states the visual and layout gates compare against |
 | exported task packages | 44.6 MB | `submission_verifier.json` and friends — the frozen gate definitions, for the 310 Change slots (the 80 Build slots have none) |
+
+### The suite is 400 tasks; 390 have a specification here
+
+`tasks/manifest.json` is the authoritative inventory: **all 400 slots** that were
+scored in the paper — 320 Change and 80 Build — with each one's upstream
+repository and pinned commit, cell count, stage count, and three coverage flags.
+Its `n_cells` sum is exactly the 8,737 rows of
+`analysis/_data/cells_flat.jsonl`.
+
+Ten Change slots (`slot_200`–`slot_209`) carry `spec_in_repo: false`. They were
+evaluated like every other task, and their runs are in the cell cache, but their
+authoring package is not on hand, so this repository cannot ship their staged
+requirements. The paper states the same boundary from the other side: *"Of the
+320 Change tasks, 310 rebuild from the frozen package in the analysis
+environment and 224 of those also serve a capturable initial baseline."* Those
+are the same ten slots, and they are also ten of the twenty-six slots the paper
+reports as carrying no capability label. The manifest still records their
+upstream repository and commit, so they are identifiable even without the
+package.
 
 Each task's upstream provenance is recoverable from its `repo_id`, which is
 `owner__repo__commit`: `slot_007`'s `maharanasunil__E-Commerce-Website-Template__6e6d9c2dc855`
