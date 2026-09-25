@@ -15,8 +15,8 @@ figures/*.pdf
 figures/png/
 
 # local run output
-runs/
-out/
+/runs/
+/out/
 *.log
 !baselines/pristine/*/capture.log
 
