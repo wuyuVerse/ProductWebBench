@@ -46,5 +46,9 @@ were run on the untouched repository before the agent started.
 
 The conservative non-completion family: blank route, horizontal overflow,
 console errors, protected-copy changes, asset-path breakage, visual anchors,
-capture completeness, screenshots. `visual_regression` is excluded — see the
-comment at the top of `analysis/E25_pristine_regression/compute_e25.py` for why.
+capture completeness, screenshots.
+
+`visual_regression` is excluded from this family. The gate compares against a
+reference render without controlling the scroll offset, so a local recapture of
+a reference workspace fails it while passing the other eighteen. Excluding it
+costs nothing: every cell that fails it also fails another gate.

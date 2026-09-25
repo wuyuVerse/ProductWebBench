@@ -23,8 +23,6 @@ dependencies = [
 ]
 
 [project.optional-dependencies]
-# Regenerating the paper's tables and figures.
-analysis = ["matplotlib>=3.7", "scipy>=1.10"]
 dev = ["pytest>=7.4", "ruff>=0.4"]
 
 [project.scripts]

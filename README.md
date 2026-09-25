@@ -20,33 +20,19 @@ continuity check** — a blank route, horizontal overflow, console errors — an
 
 ```bash
 git clone https://github.com/wuyuVerse/ProductWebBench && cd ProductWebBench
-python3 -m pip install -e ".[analysis]"
+python3 -m pip install -e .
 ```
 
 Python ≥ 3.10. Runtime deps are `jsonschema`, `numpy`, `pillow` and
-`opencv-python-headless`; the `analysis` extra adds `matplotlib` and `scipy`.
-Actually *running* agents against tasks additionally needs Node, Chromium and
-(for a handful of tasks) Hugo and PHP — see [`harbor/README.md`](harbor/README.md).
-
-## Reproduce every number in the paper
-
-```bash
-bash tools/reproduce.sh          # → 36 ok, 0 failed, 9 skipped
-python3 analysis/check_paper_numbers.py   # → 58 passed, 0 failed
-```
-
-This regenerates every table and figure from the frozen evaluation cache
-(`analysis/_data/cells_flat.jsonl`, 8,737 cells). No model API calls, no
-browser. The nine skips are explicitly reported with reasons — four upstream
-scripts need the raw per-run capture tree, five are argument-taking utilities.
-See [`docs/reproduce.md`](docs/reproduce.md), which also lists the invariants a
-successful run must satisfy.
+`opencv-python-headless`. Actually *running* agents against tasks additionally
+needs Node, Chromium and (for a handful of tasks) Hugo and PHP — see
+[`harbor/README.md`](harbor/README.md).
 
 ## Run an agent
 
 ```bash
 pwb validate-tasks tasks                           # schema-check all 400 frozen tasks
-pwb export-harbor-tasks --output-root out/harbor   # → 400 Harbor task dirs
+pwb export-harbor-tasks --out out/harbor           # → 400 Harbor task dirs
 
 pwb verify-submission \
   --tasks tasks/slot_007/task.jsonl \
@@ -67,19 +53,17 @@ productwebbench/     the benchmark package (task construction, capture,
                      evaluation, 19-gate verifier, Harbor adapter)
   _vendor/verifier/  six verifier primitives vendored so a checkout is
                      self-contained
-analysis/            E1–E25: the paper's analyses. _data/cells_flat.jsonl is
-                     the evaluation cache every number derives from.
-figures/scripts/     the figure scripts; output lands in figures/
-tables/              regenerates the main results table (Table 1) from the cache
-baselines/pristine/  the 19 checks run on the *untouched* repository, per task
-                     — this is what makes a regression exactly attributable
 tasks/               all 400 evaluated slots: manifest.json, a per-slot
                      specification (problem statement, rubric, required states,
                      constraints), the frozen per-stage assertion spec, and the
                      Build acceptance record for slots 506-585
+baselines/pristine/  the 19 checks run on the *untouched* repository, per task
+                     — this is what makes a regression exactly attributable
+results/             cells_flat.jsonl: one row per (task, model, leg) evaluated
+                     cell, 8,737 rows — the scores reported in the paper
 harbor/              Harbor integration guide
-tools/               reproduce.sh, sweep aggregator
-docs/                reproduce.md, scoring.md, tasks.md
+tools/               sweep aggregator
+docs/                scoring.md, tasks.md
 ```
 
 ## Scoring in one line
@@ -97,10 +81,9 @@ the whole trajectory rather than at its endpoint.
 
 ## What you can and cannot do with this repository
 
-**You can** reproduce every number, table and figure in the paper
-(`bash tools/reproduce.sh`), read the full specification of all 400 tasks, and read
-and extend the benchmark code — the construction pipeline, the 19-gate
-verifier, the scoring, and the Harbor adapter.
+**You can** read the full specification of all 400 tasks, read the scores every
+one of them received, and read and extend the benchmark code — the construction
+pipeline, the 19-gate verifier, the scoring, and the Harbor adapter.
 
 **You cannot yet run an agent on the 400 tasks from this repository alone.**
 Three pieces are missing, and they are missing because of size and third-party
@@ -117,7 +100,7 @@ licensing, not by oversight:
 `tasks/manifest.json` is the authoritative inventory: **all 400 slots** that were
 scored in the paper — 320 Change and 80 Build — with each one's upstream
 repository and pinned commit, cell count, stage count and coverage flags. Its
-`n_cells` sum is exactly the 8,737 rows of `analysis/_data/cells_flat.jsonl`.
+`n_cells` sum is exactly the 8,737 rows of `results/cells_flat.jsonl`.
 
 Every slot ships the frozen record the sweep scored it against: the task
 statement and rubric in `task.jsonl`, the gate definitions in
@@ -127,9 +110,8 @@ carry their `build_acceptance_*.json`. `pwb validate-tasks tasks` schema-checks
 all 400 in one pass.
 
 The **raw per-run artifact tree** (per-run DOM dumps, screenshots and
-transcripts, terabytes) is also not here. `analysis/_data/cells_flat.jsonl` is
-the distilled form, and the four upstream scripts that produced it are shipped
-so the derivation is auditable.
+transcripts, terabytes) is not here either; `results/cells_flat.jsonl` is the
+distilled form, one row per evaluated cell.
 
 ## Citation
 

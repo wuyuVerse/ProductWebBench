@@ -1,19 +1,13 @@
-.PHONY: install reproduce figures analyses catalog verify test lint clean
+.PHONY: install validate export verify test lint clean
 
-install:            ## editable install with the analysis extras
-	python3 -m pip install -e ".[analysis,dev]"
+install:            ## editable install
+	python3 -m pip install -e ".[dev]"
 
-reproduce:          ## regenerate every paper number and figure from the cache
-	bash tools/reproduce.sh
+validate:           ## schema-check all 400 frozen tasks
+	pwb validate-tasks tasks
 
-analyses:
-	bash tools/reproduce.sh analyses
-
-figures:
-	bash tools/reproduce.sh figures
-
-catalog:            ## list the 400 frozen tasks
-	pwb catalog
+export:             ## export the suite as Harbor task directories: make export OUT=path
+	pwb export-harbor-tasks --out "$(OUT)"
 
 verify:             ## re-verify a submission directory: make verify SUB=path/to/run
 	pwb verify-submission --submission "$(SUB)"
@@ -25,4 +19,4 @@ lint:
 	ruff check productwebbench
 
 clean:
-	rm -rf figures/*.pdf figures/png __pycache__ .pytest_cache .ruff_cache
+	rm -rf __pycache__ .pytest_cache .ruff_cache
