@@ -110,7 +110,7 @@ TASK_DIR="$(cd "$(dirname "${{BASH_SOURCE[0]}}")/.." && pwd)"
 mkdir -p "$OUT" /logs/verifier
 export SITECONTINUUM_VERIFY_OUT="$OUT"
 
-python3 -m sitecontinuum capture-states {repo_id} \\
+python3 -m productwebbench capture-states {repo_id} \\
   --workspace-root "$ROOT" \\
   --output-root "$OUT/states" \\
   --state-plan "$TASK_DIR/state_plan.json" \\
@@ -120,7 +120,7 @@ python3 -m sitecontinuum capture-states {repo_id} \\
   --capture-timeout "${{SITECONTINUUM_CAPTURE_TIMEOUT:-360}}" \\
   --no-server-lock
 
-python3 -m sitecontinuum verify-submission \\
+python3 -m productwebbench verify-submission \\
   --tasks "$TASK_DIR/task.jsonl" \\
   --specs "$TASK_DIR/submission_spec.normalized.json" \\
   --states-root "$OUT/states" \\

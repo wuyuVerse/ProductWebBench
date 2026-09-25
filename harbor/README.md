@@ -83,9 +83,15 @@ emitter beside `harbor_adapter.py`.
 
 ## Known naming legacy
 
-`harbor_adapter.task_name()` prefixes exported task names with
-`sitecontinuum/`, and `task.toml` carries `author_name = "SiteContinuum
-authors"`. `sitecontinuum` was this benchmark's working name. The strings are
-left as-is so exports stay byte-identical to the ones scored in the paper; if
-you want `productwebbench/` instead, change `task_name` and the `[metadata]`
-block in `productwebbench/evaluation/adapters/harbor_adapter.py` and re-export.
+`sitecontinuum` was this benchmark's working name and it still appears in two
+places that do not affect execution: `harbor_adapter.task_name()` prefixes
+exported task names with `sitecontinuum/`, and `task.toml` carries
+`author_name = "SiteContinuum authors"`. Both are left as-is so exports stay
+byte-identical to the ones scored in the paper. To switch them to
+`productwebbench/`, change `task_name` and the `[metadata]` block in
+`productwebbench/evaluation/adapters/harbor_adapter.py` and re-export.
+
+The generated `tests/test.sh` used to invoke `python3 -m sitecontinuum`, which
+cannot resolve — the installed module is `productwebbench`. That is fixed; if
+you have task directories exported before this commit, re-export them or patch
+the two `python3 -m` lines in each `tests/test.sh`.

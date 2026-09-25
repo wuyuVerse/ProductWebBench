@@ -47,7 +47,7 @@ from .regimes.construction import trajectory_run as construction_trajectory_run
 
 
 def build_parser() -> argparse.ArgumentParser:
-    parser = argparse.ArgumentParser(prog="sitecontinuum")
+    parser = argparse.ArgumentParser(prog="pwb")
     subparsers = parser.add_subparsers(dest="command", required=True)
 
     catalog_parser = subparsers.add_parser("catalog", help="Build repo manifest from zipped repos.")
