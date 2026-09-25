@@ -1,0 +1,218 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Abhay557__Discord-Bot-Website__86f789217c45__bot_command_starter_flow",
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_features",
+    "desktop_services",
+    "desktop_commands",
+    "desktop_commands_explorer",
+    "desktop_commands_search_help",
+    "desktop_command_invite_open",
+    "mobile_commands",
+    "mobile_nav_open"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_commands",
+    "mobile_nav_open"
+   ],
+   "regression_states": [
+    "desktop_initial",
+    "desktop_commands"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_commands"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_commands"
+   ],
+   "interaction_states": [
+    "desktop_commands_explorer",
+    "desktop_commands_search_help",
+    "desktop_command_invite_open",
+    "mobile_nav_open"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_commands"
+   ],
+   "completion_text_signals": [
+    "Bot Setup Flow",
+    "Command Starter Flow",
+    "Command Explorer",
+    "Invite Bot",
+    "Pick Commands",
+    "Test /help",
+    "Search /help",
+    "Open /invite",
+    "Ready for Server"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 9,
+   "visible_text_signals": [
+    "Bot Setup Flow",
+    "Command Explorer"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_text_signals": [
+    "Commands",
+    "Invite",
+    "Login"
+   ],
+   "asset_path_signals": [
+    "img.svg",
+    "logo.png"
+   ],
+   "min_asset_path_signals": 1,
+   "forbidden_text_patterns": [
+    "[Your Bot]",
+    "Your Bot",
+    "Write Here About Your",
+    "We are provide the best",
+    "We currently services",
+    "Feature 1",
+    "Feature 2",
+    "Feature 3",
+    "Partner 1",
+    "Advanced Discord Bot Website",
+    "Lorem ipsum"
+   ],
+   "min_image_count": 0,
+   "min_text_length": 200,
+   "overflow_tolerance_px": 24,
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_features",
+    "desktop_services",
+    "desktop_commands",
+    "desktop_commands_explorer",
+    "desktop_commands_search_help",
+    "desktop_command_invite_open",
+    "mobile_commands",
+    "mobile_nav_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_commands",
+     "mobile_commands",
+     "desktop_commands_explorer"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_commands_explorer",
+     "changed_from": "desktop_commands",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "explorer-readout",
+      "text_contains": "Showing 3 of 9",
+      "min_count": 1
+     }
+    }
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "explorer-title",
+     "text_contains": "Command Explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "explorer-chip",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "explorer-readout",
+     "text_contains": "Showing 9 of 9",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "input",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "h2",
+     "min_count": 5
+    },
+    {
+     "state": "mobile_commands",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_commands",
+     "tag": "input",
+     "min_count": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,215 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_withastro__docs__ea8c27b30d25__guide_asset_path_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_images_guide",
+    "desktop_channel_pre",
+    "desktop_channel_beta",
+    "desktop_cms_guide",
+    "desktop_deploy_guide",
+    "desktop_integrations_guide",
+    "desktop_content_collections",
+    "mobile_images_guide"
+   ],
+   "text_signal_states": [
+    "desktop_images_guide",
+    "desktop_cms_guide",
+    "desktop_deploy_guide",
+    "desktop_content_collections"
+   ],
+   "reference_text_signals": [
+    "On this guide",
+    "Where to store images",
+    "Deployment",
+    "Content Collections"
+   ],
+   "visible_text_states": [
+    "desktop_images_guide"
+   ],
+   "visible_text_signals": [
+    "On this guide",
+    "Getting started"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_channel_beta"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_images_guide"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "logos/"
+   ],
+   "asset_path_states": [
+    "desktop_cms_guide",
+    "desktop_deploy_guide"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_images_guide",
+    "desktop_channel_pre",
+    "desktop_channel_beta",
+    "desktop_cms_guide",
+    "desktop_deploy_guide",
+    "desktop_integrations_guide",
+    "desktop_content_collections",
+    "mobile_images_guide"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_images_guide",
+    "desktop_channel_pre",
+    "desktop_channel_beta",
+    "desktop_cms_guide",
+    "desktop_deploy_guide",
+    "desktop_integrations_guide",
+    "desktop_content_collections",
+    "mobile_images_guide"
+   ],
+   "completion_states": [
+    "desktop_images_guide"
+   ],
+   "completion_text_signals": [
+    "On this guide",
+    "Getting started",
+    "In Astro files",
+    "From a CMS",
+    "Reading: Stable channel"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_images_guide",
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Where to store images",
+    "Why Astro?"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "PLACEHOLDER",
+    "undefined%",
+    "NaNpx"
+   ],
+   "visual_anchor_states": [
+    "desktop_images_guide",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_images_guide",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cms_guide",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_images_guide",
+     "tag": "nav",
+     "text_contains": "On this guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cms_guide",
+     "tag": "nav",
+     "text_contains": "On this guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deploy_guide",
+     "tag": "nav",
+     "text_contains": "On this guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_content_collections",
+     "tag": "nav",
+     "text_contains": "On this guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_images_guide",
+     "text_contains": "Getting started",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_images_guide",
+     "text_contains": "Reading: Stable channel",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_channel_beta",
+     "changed_from": "desktop_channel_pre",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Reading: Beta channel",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_images_guide",
+     "desktop_channel_pre"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   }
+  }
+ ]
+}

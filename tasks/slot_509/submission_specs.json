@@ -1,0 +1,126 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_netlify-templates__remix-admin-template__8cbcd36d592a__changelog",
+   "reference_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "submission_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_changelog"
+   ],
+   "completion_text_signals": [
+    "Changelog",
+    "Recent releases",
+    "Version",
+    "Added"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_changelog"
+   ],
+   "visible_text_signals": [],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_changelog"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_changelog"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_changelog"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_changelog"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "supabase"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_changelog",
+     "tag": "h1",
+     "text_contains": "Changelog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "h2",
+     "text_contains": "Recent releases",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "h3",
+     "text_contains": "Version 2.4.0",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "h3",
+     "text_contains": "Version",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "p",
+     "text_contains": "newest",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_changelog"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_changelog"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

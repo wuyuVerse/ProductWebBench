@@ -1,0 +1,406 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ImageToContent__b4bbdc7b1809__mineral_gallery_path_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_path",
+    "mobile_path",
+    "tablet_path",
+    "desktop_path_family"
+   ],
+   "text_signal_states": [
+    "desktop_path",
+    "mobile_path",
+    "tablet_path"
+   ],
+   "reference_text_signals": [
+    "Mineral Path",
+    "Mineral families",
+    "Open Andesite preview",
+    "Compare Batholith texture",
+    "Scan Pumicite surface"
+   ],
+   "visible_text_states": [
+    "desktop_path",
+    "mobile_path",
+    "tablet_path"
+   ],
+   "visible_text_signals": [
+    "Mineral Path",
+    "Mineral families",
+    "Open Andesite preview",
+    "Compare Batholith texture",
+    "Scan Pumicite surface"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 5,
+   "interaction_states": [
+    "desktop_path_family"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_path_family",
+     "changed_from": "desktop_path",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "mineral-filter",
+      "text_contains": "Showing 3 of 6 · Volcanic",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_path",
+    "tablet_path"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    ".jpg"
+   ],
+   "asset_path_states": [
+    "desktop_path",
+    "mobile_path",
+    "tablet_path"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "min_screenshot_bytes": 5000,
+   "min_canvas_screenshot_bytes": 5000,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_path",
+    "mobile_path",
+    "tablet_path",
+    "desktop_path_family"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "use.typekit.net"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_path",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_path",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_path",
+     "class_contains": "mineral-filter",
+     "text_contains": "Mineral families",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path",
+     "class_contains": "path-card__title",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_path",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_path",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_path",
+     "class_contains": "mineral-filter",
+     "text_contains": "Mineral families",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_path",
+     "class_contains": "path-card__title",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_path",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_path",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_path",
+     "class_contains": "mineral-filter",
+     "text_contains": "Mineral families",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_path",
+     "class_contains": "path-card__title",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_path",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path_family",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path_family",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path_family",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path_family",
+     "class_contains": "mineral-filter",
+     "text_contains": "Mineral families",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_path_family",
+     "class_contains": "path-card__title",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_path_family",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Mineral Path",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_path",
+     "mobile_path",
+     "desktop_path_family"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.45
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_path",
+    "mobile_path",
+    "tablet_path",
+    "desktop_path_family"
+   ],
+   "completion_states": [
+    "desktop_path",
+    "mobile_path",
+    "tablet_path"
+   ],
+   "completion_text_signals": [
+    "Mineral Path",
+    "Mineral families",
+    "Open Andesite preview",
+    "Compare Batholith texture",
+    "Scan Pumicite surface",
+    "Read Oligoclase notes",
+    "Study Mordenite fibres",
+    "Finish at Stishovite"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home"
+   ],
+   "regression_text_signals": [
+    "Andesite",
+    "Batholith",
+    "Stishovite",
+    "Image to Content Page Transition"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_path",
+    "mobile_path",
+    "tablet_path",
+    "desktop_path_family"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "Lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_path",
+    "desktop_path_family"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,223 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_technext__cleaning-company__74aa2d8cbc39__services_finder_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "mobile_services",
+    "desktop_index",
+    "desktop_about",
+    "desktop_services_interior_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_services"
+   ],
+   "reference_text_signals": [
+    "Cleaning",
+    "Browse our services",
+    "Office Cleaning",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_services"
+   ],
+   "visible_text_signals": [
+    "Cleaning",
+    "Browse our services"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_services_interior_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_services"
+   ],
+   "asset_path_signals": [
+    "images/",
+    ".jpg"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_services"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_index"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "mobile_services",
+    "desktop_index",
+    "desktop_about",
+    "desktop_services_interior_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Cleaning",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Browse our services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index",
+     "text_contains": "Browse our services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Browse our services",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_services",
+     "mobile_services"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_services_interior_filter",
+     "changed_from": "desktop_services",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Interior",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "mobile_services",
+    "desktop_index",
+    "desktop_about",
+    "desktop_services_interior_filter"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_services",
+    "desktop_index",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Cleaning",
+    "Browse our services",
+    "Office Cleaning",
+    "Window Cleaning",
+    "Showing"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Cleaning",
+    "Services",
+    "Pricing"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_services",
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "Lorem ipsum",
+    "TODO:"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "css/svc.css",
+     "js/svc.js",
+     "services.html",
+     "index.html",
+     "about.html"
+    ],
+    "should_preserve": [
+     "css/style.css",
+     "css/bootstrap.min.css",
+     "js/main.js",
+     "pricing.html",
+     "contact.html"
+    ]
+   }
+  }
+ ]
+}

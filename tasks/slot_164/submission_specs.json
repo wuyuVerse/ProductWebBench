@@ -1,0 +1,238 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_hhhrrrttt222111__developer-portfolio__fbb3b053a617__drawer_state_landing_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_drawer_open",
+    "mobile_drawer_open",
+    "desktop_skills",
+    "desktop_projects",
+    "desktop_filter_stack",
+    "desktop_projects_route",
+    "mobile_projects",
+    "desktop_blog_route"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "desktop_projects_route",
+    "desktop_blog_route"
+   ],
+   "reference_text_signals": [
+    "Sable Okonkwo",
+    "Filter by stack",
+    "Ferrite Audio Engine",
+    "Showing all 8 projects"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Sable Okonkwo",
+    "Realtime Audio Systems Engineer"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_stack"
+   ],
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_projects"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "static/media"
+   ],
+   "asset_signal_states": [
+    "desktop_initial"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "no_horizontal_overflow_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_drawer_open",
+    "mobile_drawer_open",
+    "desktop_skills",
+    "desktop_projects",
+    "desktop_filter_stack",
+    "desktop_projects_route",
+    "mobile_projects",
+    "desktop_blog_route"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_drawer_open",
+    "mobile_drawer_open",
+    "desktop_skills",
+    "desktop_projects",
+    "desktop_filter_stack",
+    "desktop_projects_route",
+    "mobile_projects",
+    "desktop_blog_route"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "desktop_projects_route",
+    "desktop_blog_route"
+   ],
+   "completion_text_signals": [
+    "Sable Okonkwo",
+    "Realtime Audio Systems Engineer",
+    "Filter by stack",
+    "Showing all 8 projects",
+    "Ferrite Audio Engine",
+    "Spectral Loupe"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "regression_text_signals": [
+    "Sable Okonkwo",
+    "Projects",
+    "Filter by stack"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "desktop_projects_route",
+    "desktop_blog_route"
+   ],
+   "forbidden_text_patterns": [
+    "Jane Doe",
+    "Employee Management",
+    "Railway Tracking",
+    "Android Patient Tracker",
+    "Car Pooling System",
+    "SCRAPING BILLBOARD AND IMDB",
+    "Web Developer",
+    "Lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 0.35,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "min_screenshot_bytes": 1000,
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "desktop_filter_stack",
+     "mobile_projects"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "regression_visual_states": [
+    "desktop_projects",
+    "desktop_filter_stack",
+    "mobile_projects"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_route",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Filter by stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Showing all 8 projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_route",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_route",
+     "text_contains": "Filter by stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_route",
+     "text_contains": "Showing all 8 projects",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_stack",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 8",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

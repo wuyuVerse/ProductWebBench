@@ -1,0 +1,185 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_themesberg__flowbite-admin-dashboard__229df7ff2580__catalog_asset_layout",
+      "reference_states": [
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_users",
+        "desktop_settings",
+        "desktop_dashboard",
+        "desktop_products_vue"
+      ],
+      "submission_states": [
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_users",
+        "desktop_settings",
+        "desktop_dashboard",
+        "desktop_products_vue"
+      ],
+      "interaction_states": [
+        "desktop_products_vue"
+      ],
+      "completion_states": [
+        "desktop_products"
+      ],
+      "completion_text_signals": [
+        "Showing 24 of 24",
+        "Angular",
+        "Vue.js",
+        "Svelte",
+        "All products"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_products"
+      ],
+      "visible_text_signals": [
+        "Angular",
+        "Vue.js",
+        "Svelte"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_products"
+      ],
+      "regression_text_signals": [
+        "All products",
+        "Showing"
+      ],
+      "forbidden_states": [
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_users",
+        "desktop_settings",
+        "desktop_dashboard",
+        "desktop_products_vue"
+      ],
+      "forbidden_text_patterns": [
+        "TODO",
+        "pf broken",
+        "FIXME"
+      ],
+      "responsive_states": [
+        "mobile_products"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_screenshot_bytes": 8000,
+      "asset_signal_states": [
+        "desktop_products"
+      ],
+      "asset_path_signals": [
+        "/images/"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_products"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_users",
+        "desktop_settings",
+        "desktop_dashboard",
+        "desktop_products_vue"
+      ],
+      "console_error_allowlist": [
+        "favicon",
+        "buttons.github.io",
+        "flowbite.com",
+        "githubusercontent",
+        "vercel.app",
+        "google",
+        "gstatic",
+        "apexcharts",
+        "api.github.com",
+        "github.com/repos"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_settings",
+          "text_contains": "Vue.js",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Showing 24 of 24",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "React JS",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Angular",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Vue.js",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Svelte",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_products"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_products_vue",
+          "changed_from": "desktop_products",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 6 of 24",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_products",
+        "desktop_dashboard"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

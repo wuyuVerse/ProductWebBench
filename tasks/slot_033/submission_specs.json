@@ -1,0 +1,240 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_edoardolunardi__infinite-canvas__528d811a39ea__curated_canvas_navigator",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_after_navigation"
+   ],
+   "text_signal_states": [
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Curated canvas navigator",
+    "Baroque portraits"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Curated canvas navigator",
+    "Baroque portraits",
+    "Dutch landscapes"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_after_navigation"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "min_canvas_screenshot_bytes": 120000,
+   "canvas_screenshot_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_after_navigation"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow_states": [
+    "mobile_initial"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_after_navigation"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "GL Driver Message",
+    "ReadPixels",
+    "WebGL-0x"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "navigator__index-item",
+     "min_count": 4
+    },
+    {
+     "state": "tablet_initial",
+     "class_contains": "navigator__index-item",
+     "min_count": 4
+    },
+    {
+     "state": "mobile_initial",
+     "class_contains": "navigator__index-item",
+     "min_count": 4
+    },
+    {
+     "state": "tablet_initial",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_initial",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_after_navigation",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_after_navigation",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_after_navigation",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_after_navigation",
+     "class_contains": "navigator--baroque-portraits",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "desktop_after_navigation"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_after_navigation",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "tag": "p",
+      "text_contains": "Navigating Baroque portraits",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_after_navigation"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial"
+   ],
+   "completion_text_signals": [
+    "Curated canvas navigator",
+    "Baroque portraits",
+    "Dutch landscapes",
+    "Still life",
+    "Religious scenes"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "interaction_completion_states": [
+    "desktop_after_navigation"
+   ],
+   "interaction_completion_signals": [
+    "Navigating Baroque portraits"
+   ],
+   "min_interaction_completion_signals": 1,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Infinite Canvas",
+    "Article",
+    "GitHub"
+   ],
+   "forbidden_text_patterns": [
+    "overflow-x:hidden fix",
+    "clip to hide overflow",
+    "hardened strip",
+    "Coming soon",
+    "Cheatsheet"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_after_navigation"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

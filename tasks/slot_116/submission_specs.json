@@ -1,0 +1,258 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_AndrewJBateman__angular-website-example__6cae24f1bd75__launch_readiness_rail",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_about",
+    "mobile_about",
+    "desktop_services",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_footer_services",
+    "tablet_footer_home",
+    "toggle_ready_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "reference_text_signals": [
+    "Northwind Studio",
+    "Launch readiness",
+    "Draft copy",
+    "Readiness view"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "visible_text_signals": [
+    "Northwind Studio",
+    "Launch readiness"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_ready_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_about",
+    "mobile_footer_home"
+   ],
+   "asset_path_signals": [
+    "assets/img",
+    "logo",
+    "banner"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_about",
+    "mobile_about",
+    "desktop_services",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_footer_services",
+    "tablet_footer_home",
+    "toggle_ready_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "class_contains": "ready-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_about",
+     "class_contains": "ready-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_services",
+     "class_contains": "ready-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "text_contains": "Launch readiness",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_about",
+     "text_contains": "Launch readiness",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_services",
+     "text_contains": "Launch readiness",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_footer_home",
+     "mobile_footer_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_ready_home",
+     "changed_from": "desktop_footer_home",
+     "require_interaction": true,
+     "dom": {
+      "id": "ready-mode-readout",
+      "text_contains": "shipping",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_about",
+    "mobile_about",
+    "desktop_services",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_footer_services",
+    "tablet_footer_home",
+    "toggle_ready_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_about",
+    "desktop_services",
+    "desktop_footer_home"
+   ],
+   "completion_text_signals": [
+    "Northwind Studio",
+    "Launch readiness",
+    "Draft copy",
+    "Go live",
+    "Readiness view"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Northwind Studio",
+    "Launch readiness"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_about",
+    "desktop_services"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "Bateman Industries",
+    "REPLACE_ME",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/app/footer/footer.component.ts",
+     "src/app/readiness/ready-mode.ts",
+     "src/app/readiness/ready-rail-leg.css"
+    ],
+    "should_preserve": [
+     "src/app/app.component.html",
+     "src/app/navmenu/navmenu.component.html",
+     "src/index.html"
+    ]
+   }
+  }
+ ]
+}

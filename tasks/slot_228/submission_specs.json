@@ -1,0 +1,203 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_kaberikram__Interactive-Styling-Canvas__5ca0c3c347ff__styling_canvas_experience_workflow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_wardrobe",
+    "mobile_wardrobe",
+    "desktop_lookbook",
+    "mobile_lookbook",
+    "tablet_lookbook",
+    "desktop_filter_relaxed"
+   ],
+   "text_signal_states": [
+    "desktop_wardrobe",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Fit the look",
+    "RatwardScissor-T",
+    "AnimalCollective-T",
+    "Interactive Styling UI"
+   ],
+   "visible_text_states": [
+    "desktop_wardrobe"
+   ],
+   "visible_text_signals": [
+    "Fit the look",
+    "RatwardScissor-T"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_relaxed"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_wardrobe",
+    "mobile_lookbook"
+   ],
+   "asset_path_signals": [
+    "assets/",
+    "Product.png"
+   ],
+   "asset_path_states": [
+    "desktop_wardrobe"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_wardrobe"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 20000,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_wardrobe",
+    "mobile_wardrobe",
+    "desktop_lookbook",
+    "mobile_lookbook",
+    "tablet_lookbook",
+    "desktop_filter_relaxed"
+   ],
+   "console_error_allowlist": [
+    "favicon"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "shirt",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_wardrobe",
+     "min_count": 6,
+     "tag": "h3"
+    },
+    {
+     "state": "desktop_wardrobe",
+     "text_contains": "RatwardScissor-T",
+     "min_count": 1,
+     "tag": "h3"
+    },
+    {
+     "state": "desktop_lookbook",
+     "min_count": 6,
+     "tag": "h3"
+    },
+    {
+     "state": "tablet_lookbook",
+     "min_count": 6,
+     "tag": "h3"
+    },
+    {
+     "state": "mobile_lookbook",
+     "min_count": 6,
+     "tag": "h3"
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_wardrobe",
+     "mobile_wardrobe"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_relaxed",
+     "changed_from": "desktop_wardrobe",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_wardrobe",
+    "mobile_wardrobe",
+    "desktop_lookbook",
+    "mobile_lookbook",
+    "tablet_lookbook",
+    "desktop_filter_relaxed"
+   ],
+   "completion_states": [
+    "desktop_wardrobe",
+    "desktop_lookbook",
+    "desktop_filter_relaxed"
+   ],
+   "completion_text_signals": [
+    "Fit the look",
+    "RatwardScissor-T",
+    "AnimalCollective-T",
+    "Ratphex-T",
+    "Relaxed"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "tablet_home"
+   ],
+   "regression_text_signals": [
+    "Interactive Styling UI"
+   ],
+   "forbidden_states": [
+    "desktop_wardrobe",
+    "mobile_wardrobe"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "Lorem ipsum",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

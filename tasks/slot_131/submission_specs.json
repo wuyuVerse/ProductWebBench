@@ -1,0 +1,257 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-modern-business__7d297106cbda__cross_page_cta_regression_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing_annual",
+    "desktop_pricing_monthly_back",
+    "desktop_faq",
+    "mobile_faq",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_nav_open"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_pricing_default"
+   ],
+   "reference_text_signals": [
+    "Larkspur",
+    "Pay as you grow",
+    "Billing",
+    "Choose plan"
+   ],
+   "visible_text_states": [
+    "desktop_pricing_default"
+   ],
+   "visible_text_signals": [
+    "Billing: Monthly",
+    "Choose plan"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_pricing_annual",
+    "mobile_pricing_annual",
+    "desktop_pricing_monthly_back",
+    "mobile_nav_open"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "mobile_pricing_annual",
+    "mobile_faq"
+   ],
+   "asset_path_signals": [
+    "assets/img/ph-600x400-343a40-6c757d.svg",
+    "assets/img/",
+    "dummyimage.com",
+    ".svg"
+   ],
+   "asset_signal_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pricing_default"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing_annual",
+    "desktop_pricing_monthly_back",
+    "desktop_faq",
+    "mobile_faq",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_nav_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "planrail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "class_contains": "planrail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "text_contains": "Every kit, insured",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_faq",
+     "class_contains": "planrail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_faq",
+     "text_contains": "Every kit, insured",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_faq",
+     "class_contains": "planrail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing_default",
+     "mobile_pricing_default"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_annual",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_pricing_annual",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "$86",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing_annual",
+    "desktop_pricing_monthly_back",
+    "desktop_faq",
+    "mobile_faq",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_nav_open"
+   ],
+   "completion_states": [
+    "desktop_pricing_default",
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "Pay as you grow",
+    "Billing",
+    "Choose plan",
+    "Monthly",
+    "Larkspur"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Larkspur"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "desktop_faq"
+   ],
+   "forbidden_text_patterns": [
+    "yourdomain",
+    "TODO",
+    "PLACEHOLDER",
+    "sitecontinuum removed"
+   ]
+  }
+ ]
+}

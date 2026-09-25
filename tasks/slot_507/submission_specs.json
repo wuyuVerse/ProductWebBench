@@ -1,0 +1,138 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_creativetimofficial__material-tailwind-dashboard-react__721f312c444e__about",
+   "reference_states": [
+    "desktop_about",
+    "mobile_about"
+   ],
+   "submission_states": [
+    "desktop_about",
+    "mobile_about"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "About Nexus Analytics",
+    "Our Mission",
+    "Meet the Team"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_about"
+   ],
+   "visible_text_signals": [
+    "Our Mission"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_about"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_about"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_about"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_about",
+    "mobile_about"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "nepcha",
+    "creative-tim",
+    "font-awesome",
+    "fontawesome",
+    "api.github.com",
+    "github"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_about",
+     "text_contains": "About Nexus Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Our Mission",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "What We Do",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "By the Numbers",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Meet the Team",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Our Values",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Start a free trial",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_about"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_about"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 2
+  }
+ ]
+}

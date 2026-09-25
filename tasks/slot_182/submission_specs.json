@@ -1,0 +1,245 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_JastinXyz__discord-bot-landing-page-web__913428649cd4__starter_commands_component",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_commands",
+    "mobile_commands",
+    "tablet_commands",
+    "desktop_commands_explorer",
+    "mobile_nav_open",
+    "desktop_filter_session"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_commands"
+   ],
+   "reference_text_signals": [
+    "Tidecaller",
+    "Command explorer",
+    "Command catalog",
+    "Schedule the session"
+   ],
+   "visible_text_states": [
+    "desktop_home_explorer"
+   ],
+   "visible_text_signals": [
+    "Command explorer",
+    "Schedule the session"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_session"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_home_explorer",
+    "mobile_commands",
+    "tablet_commands"
+   ],
+   "asset_path_signals": [
+    "assets/img/relaunch_day.svg",
+    "assets/img/features1.svg"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_home_explorer"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_filter_session"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "fa-solid-900.woff2",
+    "fa-brands-400.woff2",
+    "fa-regular-400.woff2",
+    "assets/webfonts/"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Tidecaller",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Command explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "nav-link",
+     "text_contains": "Command catalog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "nav-link",
+     "text_contains": "Command catalog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "cmd-card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_commands",
+     "text_contains": "Schedule the session",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands_explorer",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands_explorer",
+     "text_contains": "Browse Tidecaller",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_explorer",
+     "mobile_home_explorer"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_session",
+     "changed_from": "desktop_home_explorer",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 \u00b7 Session",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_commands",
+    "mobile_commands",
+    "tablet_commands",
+    "desktop_commands_explorer",
+    "mobile_nav_open",
+    "desktop_filter_session"
+   ],
+   "completion_states": [
+    "desktop_home_explorer",
+    "desktop_commands"
+   ],
+   "completion_text_signals": [
+    "Command explorer",
+    "Browse Tidecaller",
+    "Schedule the session",
+    "Roll dice",
+    "Command catalog",
+    "Showing all 8 commands"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_home_explorer"
+   ],
+   "regression_text_signals": [
+    "Tidecaller",
+    "Features",
+    "Servers"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_commands",
+    "desktop_commands_explorer"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "lorem ipsum",
+    "{{"
+   ]
+  }
+ ]
+}

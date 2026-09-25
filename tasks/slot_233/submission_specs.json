@@ -1,0 +1,241 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_cruip__tailwind-dashboard-template__173f64183e3f__revenue_journey_layout",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "mobile_seg",
+    "desktop_seg_growth",
+    "desktop_growth_route",
+    "desktop_revenue_route",
+    "mobile_sidebar_open"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_seg_growth"
+   ],
+   "reference_text_signals": [
+    "Segment focus",
+    "Showing",
+    "All segments",
+    "Growth",
+    "Retention",
+    "Revenue"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_seg_growth",
+    "desktop_growth_route",
+    "desktop_revenue_route"
+   ],
+   "visible_text_signals": [
+    "Segment focus",
+    "Showing",
+    "Growth",
+    "Revenue"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_seg_growth",
+    "mobile_sidebar_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_seg_growth",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_seg",
+    "mobile_sidebar_open"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/assets/",
+    "user-"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "desktop_seg_growth",
+     "mobile_seg"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "All segments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Growth",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Retention",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Revenue",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Segment focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_growth_route",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_revenue_route",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_growth_route",
+     "text_contains": "Segment focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_revenue_route",
+     "text_contains": "Segment focus",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_sidebar_open",
+     "tag": "a",
+     "text_contains": "Dashboard",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "mobile_seg",
+    "desktop_seg_growth",
+    "desktop_growth_route",
+    "desktop_revenue_route",
+    "mobile_sidebar_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_seg_growth"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_screenshot_bytes": 6000,
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "mobile_seg",
+    "desktop_seg_growth",
+    "desktop_growth_route",
+    "desktop_revenue_route",
+    "mobile_sidebar_open"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_seg_growth",
+    "desktop_growth_route",
+    "desktop_revenue_route"
+   ],
+   "completion_text_signals": [
+    "Segment focus",
+    "Showing",
+    "All segments",
+    "Growth",
+    "Retention",
+    "Revenue"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "mobile_home",
+    "mobile_sidebar_open"
+   ],
+   "regression_text_signals": [
+    "Dashboard",
+    "Segment focus"
+   ],
+   "forbidden_text_patterns": [
+    "TODO segment focus",
+    "placeholder segment",
+    "fake segment screenshot",
+    "external segment widget",
+    "backend segment service",
+    "dummy filter control",
+    "coming soon segment",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

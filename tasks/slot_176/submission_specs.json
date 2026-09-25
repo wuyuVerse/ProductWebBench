@@ -1,0 +1,182 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__astro-shop-view-transitions__0b431f92e10c__collection_context_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_product_detail",
+    "mobile_product_detail",
+    "desktop_recommendations",
+    "desktop_collection_everyday"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_product_detail"
+   ],
+   "reference_text_signals": [
+    "Astro Shop",
+    "Shop the collection",
+    "Everyday",
+    "Statement",
+    "Haryo Setyadi"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Astro Shop",
+    "Shop the collection",
+    "Everyday"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_collection_everyday"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_collection_everyday",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 4 shirts \u00b7 Everyday",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/products/"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_product_detail"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_product_detail",
+    "mobile_product_detail",
+    "desktop_recommendations",
+    "desktop_collection_everyday"
+   ],
+   "console_error_allowlist": [
+    "favicon"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Shop the collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_product_detail",
+     "text_contains": "Shop the collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_detail",
+     "tag": "button",
+     "text_contains": "Add to cart",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_recommendations",
+     "text_contains": "Shop the collection",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "mobile_initial"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_product_detail",
+    "mobile_product_detail",
+    "desktop_recommendations",
+    "desktop_collection_everyday"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_collection_everyday"
+   ],
+   "completion_text_signals": [
+    "Shop the collection",
+    "Everyday",
+    "Statement",
+    "Under $100",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Astro Shop"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "TODO",
+    "placeholder text",
+    "Coming soon"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_product_detail"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

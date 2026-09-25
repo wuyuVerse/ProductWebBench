@@ -1,0 +1,201 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ParticleEffectsButtons__f9f96d558104__particle_sequence_rehearsal_section",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "desktop_finder_commerce",
+    "desktop_rehearsal",
+    "mobile_rehearsal",
+    "tablet_rehearsal"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "reference_text_signals": [
+    "Emberkit",
+    "Button library",
+    "Add to cart",
+    "Rehearsal"
+   ],
+   "visible_text_states": [
+    "desktop_finder"
+   ],
+   "visible_text_signals": [
+    "Button library",
+    "Add to cart"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_finder_commerce"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_rehearsal",
+    "tablet_rehearsal"
+   ],
+   "asset_path_signals": [
+    "img/rehearsal/"
+   ],
+   "asset_path_states": [
+    "desktop_rehearsal"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_screenshot_bytes": 6000,
+   "min_canvas_screenshot_bytes": 40000,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "desktop_finder_commerce",
+    "desktop_rehearsal",
+    "mobile_rehearsal",
+    "tablet_rehearsal"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "img/rehearsal"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_finder",
+     "class_contains": "finder__title",
+     "text_contains": "Button library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "finder__card-name",
+     "min_count": 12
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "finder__card-name",
+     "text_contains": "Add to cart",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "finder__chip",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_rehearsal",
+     "class_contains": "finder__title",
+     "text_contains": "Button library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rehearsal",
+     "class_contains": "finder__card-name",
+     "min_count": 12
+    },
+    {
+     "state": "desktop_rehearsal",
+     "class_contains": "finder__chip",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "nav-link",
+     "text_contains": "Rehearsal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rehearsal",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_finder_commerce",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "finder__readout",
+      "text_contains": "Showing 3 of 12",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "desktop_finder_commerce",
+    "desktop_rehearsal",
+    "mobile_rehearsal",
+    "tablet_rehearsal"
+   ],
+   "completion_states": [
+    "desktop_finder",
+    "desktop_finder_commerce",
+    "desktop_rehearsal"
+   ],
+   "completion_text_signals": [
+    "Button library",
+    "Add to cart",
+    "Commerce",
+    "Messaging",
+    "Rehearsal"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_rehearsal"
+   ],
+   "regression_text_signals": [
+    "Send",
+    "Upload",
+    "Add to cart"
+   ],
+   "forbidden_states": [
+    "desktop_finder"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "REPLACE_ME",
+    "{{",
+    "Cheatsheet",
+    "TODO"
+   ]
+  }
+ ]
+}

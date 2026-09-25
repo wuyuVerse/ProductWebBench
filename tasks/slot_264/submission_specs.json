@@ -1,0 +1,255 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__AudioVisualizers__feac3eaeffe9__cross_page_demo_state_memory",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_state_memory",
+    "desktop_demo3_transition",
+    "desktop_demo5_transition",
+    "mobile_demo3_transition",
+    "tablet_state_memory",
+    "desktop_direct_demo2",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression",
+    "desktop_pin_toggle"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_state_memory"
+   ],
+   "reference_text_signals": [
+    "Visualizer state memory",
+    "Current demo",
+    "Audio source",
+    "Cross-page memory active"
+   ],
+   "visible_text_states": [
+    "desktop_state_memory"
+   ],
+   "visible_text_signals": [
+    "Visualizer state memory",
+    "Current demo"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_pin_toggle"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_demo3_transition",
+    "mobile_canvas_regression"
+   ],
+   "asset_path_signals": [
+    "audio/DEMO_1.mp3"
+   ],
+   "asset_path_states": [
+    "desktop_state_memory"
+   ],
+   "asset_signal_states": [
+    "desktop_state_memory"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_state_memory"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_canvas_screenshot_bytes": 2000,
+   "canvas_screenshot_states": [
+    "desktop_initial",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_state_memory",
+    "desktop_demo3_transition",
+    "desktop_demo5_transition",
+    "mobile_demo3_transition",
+    "tablet_state_memory",
+    "desktop_direct_demo2",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression",
+    "desktop_pin_toggle"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "min_count": 5
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_canvas_regression",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_direct_demo2",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "state-memory--demo1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_direct_demo2",
+     "class_contains": "state-memory--demo2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo3_transition",
+     "class_contains": "state-memory--demo3",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_canvas_regression",
+     "class_contains": "state-memory--demo4",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo5_transition",
+     "class_contains": "state-memory--demo5",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_direct_demo2",
+     "text_contains": "Visualizer state memory",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_canvas_regression",
+     "text_contains": "Visualizer state memory",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "desktop_direct_demo2",
+     "desktop_canvas_regression"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_pin_toggle",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Pinned: Demo 1",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_state_memory",
+    "desktop_demo3_transition",
+    "desktop_demo5_transition",
+    "mobile_demo3_transition",
+    "tablet_state_memory",
+    "desktop_direct_demo2",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression",
+    "desktop_pin_toggle"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_state_memory"
+   ],
+   "completion_text_signals": [
+    "Visualizer state memory",
+    "Current demo",
+    "Audio source",
+    "Cross-page memory active",
+    "Pinned:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_canvas_regression",
+    "desktop_direct_demo2"
+   ],
+   "regression_text_signals": [
+    "Creative Audio Visualizers",
+    "Demo 1",
+    "Demo 2",
+    "Demo 5"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "forbidden_text_patterns": [
+    "undefined",
+    "REPLACE_ME",
+    "{{",
+    "NaN"
+   ]
+  }
+ ]
+}

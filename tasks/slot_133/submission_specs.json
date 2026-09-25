@@ -1,0 +1,250 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_facebook__create-react-app__6254386531d2__starter_docs_path_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_starter_path",
+    "tablet_starter_path",
+    "mobile_starter_path",
+    "desktop_track_setup",
+    "desktop_getting_started",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_starter_path",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Starter Path",
+    "Reading track",
+    "Create the project",
+    "Ship it"
+   ],
+   "visible_text_states": [
+    "desktop_starter_path"
+   ],
+   "visible_text_signals": [
+    "Reading track",
+    "Create the project"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_track_setup",
+    "mobile_menu_open"
+   ],
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_starter_path",
+    "tablet_starter_path",
+    "mobile_starter_path"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/logo"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_starter_path"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_starter_path",
+    "tablet_starter_path",
+    "mobile_starter_path",
+    "desktop_track_setup",
+    "desktop_getting_started",
+    "mobile_menu_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_starter_path",
+     "mobile_starter_path",
+     "desktop_track_setup"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_track_setup",
+     "changed_from": "desktop_starter_path",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 4 milestones",
+      "min_count": 1
+     }
+    }
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_starter_path",
+     "tag": "h1",
+     "text_contains": "Starter Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "text_contains": "Reading track",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "text_contains": "All milestones",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "text_contains": "Create the project",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "text_contains": "Ship it",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "text_contains": "Showing 4 of 4 milestones",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_starter_path",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_starter_path",
+     "tag": "h1",
+     "text_contains": "Starter Path",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_starter_path",
+     "text_contains": "Create the project",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "text_contains": "Reading track",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "text_contains": "All milestones",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "text_contains": "Starter Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "tag": "a",
+     "text_contains": "Starter Path",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "tag": "a",
+     "text_contains": "Starter Path",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_starter_path",
+    "tablet_starter_path",
+    "mobile_starter_path",
+    "desktop_track_setup",
+    "desktop_getting_started",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_starter_path",
+    "desktop_track_setup"
+   ],
+   "completion_text_signals": [
+    "Reading track",
+    "Create the project",
+    "Understand the layout",
+    "Add styles and assets",
+    "Ship it"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Create React App",
+    "Docs",
+    "Get Started"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Cheatsheet",
+    "TODO"
+   ],
+   "visual_anchor_states": [
+    "desktop_starter_path",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

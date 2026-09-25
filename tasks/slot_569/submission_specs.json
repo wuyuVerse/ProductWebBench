@@ -1,0 +1,123 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_ekmas__stellar__6bb6fb599a58__guides",
+   "reference_states": [
+    "desktop_guides",
+    "mobile_guides",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_guides",
+    "mobile_guides"
+   ],
+   "interaction_states": [
+    "desktop_guides_open"
+   ],
+   "completion_states": [
+    "desktop_guides"
+   ],
+   "completion_text_signals": [
+    "Guides",
+    "Popular topics",
+    "Frequently asked questions",
+    "How do I deploy"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_guides"
+   ],
+   "visible_text_signals": [
+    "Guides",
+    "Popular topics"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_guides"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_guides"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_guides"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_guides"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_guides",
+    "mobile_guides"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_guides", "tag": "h1", "text_contains": "Guides", "min_count": 1},
+    {"state": "desktop_guides", "tag": "p", "text_contains": "step-by-step guides", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h2", "text_contains": "Popular topics", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h2", "text_contains": "Frequently asked questions", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h3", "text_contains": "Getting started", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h3", "text_contains": "How do I deploy", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h3", "text_contains": "configure the sidebar", "min_count": 1},
+    {"state": "desktop_guides", "tag": "h2", "text_contains": "Stellar", "min_count": 1},
+    {"state": "desktop_guides", "tag": "button", "text_contains": "Search", "min_count": 1},
+    {"state": "desktop_home", "tag": "h2", "text_contains": "Stellar", "min_count": 1},
+    {"state": "desktop_home", "tag": "button", "text_contains": "Search", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_guides"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_guides_open",
+     "require_interaction": true,
+     "changed_from": "desktop_guides",
+     "dom": {
+      "tag": "p",
+      "text_contains": "dist folder",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_guides"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

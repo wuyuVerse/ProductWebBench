@@ -1,0 +1,271 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_viandwi24__nuxt3-awesome-starter__8316aadf692c__reading_path_rail_repair",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_docs",
+    "mobile_docs",
+    "desktop_about",
+    "mobile_about",
+    "desktop_setting",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_docs",
+    "desktop_footer_setting",
+    "toggle_mode_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "reference_text_signals": [
+    "Nuxt 3 Awesome Starter",
+    "component library",
+    "Browse the component library",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "visible_text_signals": [
+    "Nuxt 3 Awesome Starter",
+    "component library"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_mode_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_docs",
+    "mobile_about",
+    "mobile_footer_home"
+   ],
+   "asset_path_signals": [
+    "docs-logo"
+   ],
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_docs",
+    "desktop_about"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_docs",
+    "desktop_about"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 1,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_docs",
+    "mobile_docs",
+    "desktop_about",
+    "mobile_about",
+    "desktop_setting",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_docs",
+    "desktop_footer_setting",
+    "toggle_mode_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "cdn.tailwindcss.com"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "text_contains": "Components Page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "About the docs",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_setting",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "text_contains": "component library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_docs",
+     "text_contains": "component library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_setting",
+     "text_contains": "component library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "text_contains": "Browse the component library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_docs",
+     "text_contains": "Browse the component library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_setting",
+     "text_contains": "Browse the component library",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_footer_home",
+     "mobile_footer_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_mode_home",
+     "changed_from": "desktop_footer_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 8 \u00b7 Forms",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_docs",
+    "mobile_docs",
+    "desktop_about",
+    "mobile_about",
+    "desktop_setting",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_docs",
+    "desktop_footer_setting",
+    "toggle_mode_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_docs",
+    "desktop_about",
+    "desktop_footer_home"
+   ],
+   "completion_text_signals": [
+    "Nuxt 3 Awesome Starter",
+    "component library",
+    "Browse the component library",
+    "Components Page",
+    "Showing"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Nuxt 3 Awesome Starter",
+    "starter template",
+    "components"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_docs",
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "YOUR_ACCESS_KEY_HERE",
+    "REPLACE_ME",
+    "{{",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "components/layouts/Page/Footer.vue",
+     "components/layouts/Page/DocsRail.vue",
+     "plugins/docs-mode.client.js"
+    ],
+    "should_preserve": [
+     "app/pages/about.vue",
+     "app/pages/docs/components.vue",
+     "app/pages/setting.vue",
+     "components/layouts/Page/Navbar.vue",
+     "layouts/page.vue"
+    ]
+   }
+  }
+ ]
+}

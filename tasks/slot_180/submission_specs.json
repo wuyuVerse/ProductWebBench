@@ -1,0 +1,244 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_RSurya99__nefa__2714a64e2ee8b6ccf7efbc8a6d551f5188c8ec06__access_ladder_tier_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_markets",
+    "desktop_pricing",
+    "mobile_markets",
+    "mobile_pricing",
+    "desktop_ladder_home",
+    "mobile_ladder_home",
+    "toggle_tier_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_markets"
+   ],
+   "reference_text_signals": [
+    "Nefa",
+    "Market access ladder",
+    "Institutional",
+    "Access tier"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_ladder_home"
+   ],
+   "visible_text_signals": [
+    "Market access ladder",
+    "Institutional"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_tier_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_ladder_home",
+    "mobile_markets"
+   ],
+   "asset_path_signals": [
+    "/_nuxt/img/nefa",
+    "/_nuxt/img/hero-image",
+    "/_nuxt/img/"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_markets",
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 12000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_markets",
+    "desktop_pricing",
+    "mobile_markets",
+    "mobile_pricing",
+    "desktop_ladder_home",
+    "mobile_ladder_home",
+    "toggle_tier_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_markets",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Market access ladder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_markets",
+     "text_contains": "Market access ladder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Market access ladder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_markets",
+     "text_contains": "Institutional",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Institutional",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_ladder_home",
+     "mobile_ladder_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_tier_home",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Access tier: Pro",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_markets",
+    "desktop_pricing",
+    "mobile_markets",
+    "mobile_pricing",
+    "desktop_ladder_home",
+    "mobile_ladder_home",
+    "toggle_tier_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_markets",
+    "desktop_pricing",
+    "desktop_ladder_home"
+   ],
+   "completion_text_signals": [
+    "Nefa",
+    "Market access ladder",
+    "Institutional",
+    "Access tier",
+    "Prime"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Crypto",
+    "Get Started",
+    "Access tier"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_markets",
+    "desktop_pricing"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "REPLACE_ME",
+    "TODO",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "layouts/default.vue",
+     "components/AccessLadder.vue",
+     "plugins/tier-switch.client.js"
+    ],
+    "should_preserve": [
+     "pages/index.vue",
+     "pages/markets.vue",
+     "pages/pricing.vue",
+     "components/base/Navbar.vue",
+     "components/base/Footer.vue"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,219 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_Kirilbt__interactive-map__b84b9e49d0ea__venue_asset_deeplink_repair",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_museums_filter",
+        "desktop_mcba_deeplink",
+        "desktop_arcadia_deeplink"
+      ],
+      "text_signal_states": [
+        "desktop_initial"
+      ],
+      "reference_text_signals": [
+        "Venue wayfinding",
+        "All venues",
+        "Museums",
+        "MCBA",
+        "Le Nabi",
+        "Lumen"
+      ],
+      "visible_text_states": [
+        "desktop_initial"
+      ],
+      "visible_text_signals": [
+        "Venue wayfinding",
+        "MCBA",
+        "Showing 6 of 6"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_museums_filter"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_museums_filter",
+          "changed_from": "desktop_initial",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 3 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_initial",
+          "desktop_museums_filter"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "responsive_states": [
+        "tablet_initial",
+        "mobile_initial"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 60,
+      "min_image_count": 0,
+      "overflow_tolerance_px": 24,
+      "min_canvas_screenshot_bytes": 40000,
+      "canvas_screenshot_states": [
+        "desktop_initial",
+        "desktop_mcba_deeplink"
+      ],
+      "min_screenshot_bytes": 40000,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_museums_filter",
+        "desktop_mcba_deeplink",
+        "desktop_arcadia_deeplink"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h2",
+          "text_contains": "Venue wayfinding",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Showing 6 of 6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "MCBA",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "h2",
+          "text_contains": "Venue wayfinding",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "text_contains": "MCBA",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "h2",
+          "text_contains": "Venue wayfinding",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "text_contains": "MCBA",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_mcba_deeplink",
+          "tag": "h2",
+          "text_contains": "Venue wayfinding",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_mcba_deeplink",
+          "text_contains": "MCBA",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_arcadia_deeplink",
+          "tag": "h2",
+          "text_contains": "Venue wayfinding",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_arcadia_deeplink",
+          "text_contains": "MCBA",
+          "min_count": 1
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_museums_filter",
+        "desktop_mcba_deeplink",
+        "desktop_arcadia_deeplink"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_museums_filter"
+      ],
+      "completion_text_signals": [
+        "Venue wayfinding",
+        "MCBA",
+        "Arcadia Restaurant",
+        "Lumen",
+        "Museums"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Mouse Controls",
+        "View Code",
+        "kiril.ch"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Placeholder",
+        "placeholder text"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_mcba_deeplink"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

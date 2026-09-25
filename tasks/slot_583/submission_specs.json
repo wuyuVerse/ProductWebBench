@@ -1,0 +1,127 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_kizivat__saas-kit__b953870ee448__entitlements",
+   "reference_states": [
+    "desktop_entitlements",
+    "mobile_entitlements"
+   ],
+   "submission_states": [
+    "desktop_entitlements",
+    "mobile_entitlements"
+   ],
+   "interaction_states": [
+    "desktop_entitlements_toggled",
+    "desktop_entitlements_persist"
+   ],
+   "completion_states": [
+    "desktop_entitlements"
+   ],
+   "completion_text_signals": [
+    "Feature Entitlements",
+    "entitlements enabled",
+    "Save entitlement plan"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_entitlements"
+   ],
+   "visible_text_signals": [
+    "Feature Entitlements",
+    "entitlements enabled"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_contact"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_entitlements"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_entitlements"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_entitlements"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_entitlements",
+    "mobile_entitlements"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_entitlements", "tag": "h1", "text_contains": "Feature Entitlements", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "h2", "text_contains": "entitlements enabled", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "h3", "text_contains": "Advanced analytics", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "h3", "text_contains": "SSO & SAML", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "h3", "text_contains": "Audit logs", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "h3", "text_contains": "API access", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "button", "text_contains": "Hide Free column", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "button", "text_contains": "Show all columns", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "button", "text_contains": "On", "min_count": 3},
+    {"state": "desktop_entitlements", "text_contains": "Save entitlement plan", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "a", "text_contains": "Home", "min_count": 1},
+    {"state": "desktop_entitlements", "tag": "a", "text_contains": "Contact", "min_count": 1},
+    {"state": "desktop_contact", "tag": "a", "text_contains": "Home", "min_count": 1},
+    {"state": "desktop_contact", "tag": "a", "text_contains": "Contact", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_entitlements"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_entitlements_toggled",
+     "require_interaction": true,
+     "changed_from": "desktop_entitlements",
+     "dom": {"tag": "h2", "text_contains": "8 entitlements enabled", "min_count": 1}
+    },
+    {
+     "state": "desktop_entitlements_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_entitlements",
+     "dom": {"tag": "h2", "text_contains": "8 entitlements enabled", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_entitlements"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

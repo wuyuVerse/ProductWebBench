@@ -1,0 +1,248 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_nuxt-ui-templates__portfolio__265fa1c11e91__availability_focus_rail",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "desktop_about",
+        "desktop_blog",
+        "desktop_speaking",
+        "mobile_projects",
+        "desktop_home_advising"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_image_count": 0,
+      "min_screenshot_bytes": 6000,
+      "overflow_tolerance_px": 24,
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_projects"
+      ],
+      "reference_text_signals": [
+        "Availability & focus",
+        "Open to new work",
+        "Booking new projects",
+        "Design systems",
+        "Overlap with EU & US-East"
+      ],
+      "visible_text_states": [
+        "desktop_initial"
+      ],
+      "visible_text_signals": [
+        "Open to new work",
+        "Availability"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_home_advising"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_home_advising",
+          "changed_from": "desktop_initial",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Advising · Ongoing",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_projects"
+      ],
+      "asset_signal_states": [
+        "desktop_initial"
+      ],
+      "asset_path_signals": [
+        "/img/",
+        "/_ipx/"
+      ],
+      "min_asset_path_signals": 0,
+      "visual_regression": {
+        "states": [
+          "desktop_initial",
+          "mobile_initial"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "text_contains": "Open to new work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Open to new work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Open to new work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Open to new work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_speaking",
+          "text_contains": "Open to new work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Status",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Response",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Focus Area",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Time Zone",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Consulting",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Full-time",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Advising",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Availability",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "nav",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "desktop_about",
+        "desktop_blog",
+        "desktop_speaking",
+        "mobile_projects",
+        "desktop_home_advising"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_speaking"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "desktop_about",
+        "desktop_blog",
+        "desktop_speaking",
+        "mobile_projects",
+        "desktop_home_advising"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_projects"
+      ],
+      "completion_text_signals": [
+        "Availability & focus",
+        "Open to new work",
+        "Booking new projects",
+        "Design systems",
+        "Overlap with EU & US-East"
+      ],
+      "require_all_completion_signals": false,
+      "min_completion_text_signals": 3,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Home"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "desktop_about",
+        "desktop_blog",
+        "desktop_speaking",
+        "mobile_projects",
+        "desktop_home_advising"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "Duis aute"
+      ]
+    }
+  ]
+}

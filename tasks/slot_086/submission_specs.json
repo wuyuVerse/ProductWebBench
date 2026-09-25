@@ -1,0 +1,247 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Temitayo-spec__Raft-Landing-Page__6aba4ee8e855__card_launch_asset_system",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_offers",
+    "desktop_freedom_banner",
+    "desktop_future_cards",
+    "desktop_plans_default",
+    "desktop_plans_yearly",
+    "desktop_plans_monthly_back",
+    "mobile_plans_yearly",
+    "desktop_intro_cards",
+    "desktop_faq_footer",
+    "mobile_offers",
+    "mobile_future_cards",
+    "mobile_faq_footer"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_plans_default",
+    "desktop_faq_footer"
+   ],
+   "reference_text_signals": [
+    "members card",
+    "Pick a bench plan",
+    "Shared workshop",
+    "Kestrel Makers Union",
+    "Solo bench"
+   ],
+   "visible_text_states": [
+    "desktop_plans_default"
+   ],
+   "visible_text_signals": [
+    "Pick a bench plan",
+    "Shared workshop"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plans_yearly",
+    "desktop_plans_monthly_back",
+    "mobile_plans_yearly"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_plans_yearly",
+    "mobile_offers",
+    "mobile_future_cards",
+    "mobile_faq_footer"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "_next/static/media"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_intro_cards"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_offers",
+    "desktop_freedom_banner",
+    "desktop_future_cards",
+    "desktop_plans_default",
+    "desktop_plans_yearly",
+    "desktop_plans_monthly_back",
+    "mobile_plans_yearly",
+    "desktop_intro_cards",
+    "desktop_faq_footer",
+    "mobile_offers",
+    "mobile_future_cards",
+    "mobile_faq_footer"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_plans_default",
+     "text_contains": "Pick a bench plan",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans_default",
+     "tag": "h3",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_offers",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_faq_footer",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_faq_footer",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_faq_footer",
+     "text_contains": "Billing:",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_offers",
+    "desktop_freedom_banner",
+    "desktop_future_cards",
+    "desktop_plans_default",
+    "desktop_plans_yearly",
+    "desktop_plans_monthly_back",
+    "mobile_plans_yearly",
+    "desktop_intro_cards",
+    "desktop_faq_footer",
+    "mobile_offers",
+    "mobile_future_cards",
+    "mobile_faq_footer"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_plans_default",
+    "desktop_faq_footer"
+   ],
+   "completion_text_signals": [
+    "Pick a bench plan",
+    "Solo bench",
+    "Shared workshop",
+    "Makers union",
+    "Kestrel Makers Union",
+    "Choose"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_plans_default"
+   ],
+   "regression_text_signals": [
+    "members card",
+    "Pick a bench plan"
+   ],
+   "forbidden_text_patterns": [
+    "future of banking",
+    "Financial Freedom",
+    "Your Financial",
+    "Financial Future",
+    "Elevate Your Financial",
+    "Happy RAFT User",
+    "Raft Corp",
+    "Next-Gen Cards",
+    "Lorem Ipsum",
+    "Lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_plans_default"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "visual_regression": {
+    "states": [
+     "desktop_plans_yearly",
+     "mobile_plans_yearly"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_yearly",
+     "changed_from": "desktop_plans_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "two months on us",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_plans_yearly",
+     "changed_from": "desktop_plans_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "£290/yr",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

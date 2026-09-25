@@ -1,0 +1,210 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_RiadhAdrani__slick-portfolio-svelte__4b2a94869a37__availability_next_step_component",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_nav_open",
+        "desktop_dark_theme",
+        "desktop_projects",
+        "desktop_projects_focus",
+        "mobile_projects",
+        "desktop_skills"
+      ],
+      "text_signal_states": [
+        "desktop_projects",
+        "desktop_initial"
+      ],
+      "reference_text_signals": [
+        "Project focus",
+        "Projects",
+        "Web App",
+        "Showing 6 of 6"
+      ],
+      "visible_text_states": [
+        "desktop_projects"
+      ],
+      "visible_text_signals": [
+        "Project focus",
+        "Web App"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_projects_focus"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_projects",
+        "tablet_initial"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "/logos"
+      ],
+      "asset_path_states": [
+        "desktop_projects"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_nav_open",
+        "desktop_dark_theme",
+        "desktop_projects",
+        "desktop_projects_focus",
+        "mobile_projects",
+        "desktop_skills"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "cdn.tailwindcss.com"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "All work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Showing 6 of 6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_skills",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Project focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Project focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_skills",
+          "text_contains": "Project focus",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_projects",
+          "mobile_projects"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_projects_focus",
+          "changed_from": "desktop_projects",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_nav_open",
+        "desktop_dark_theme",
+        "desktop_projects",
+        "desktop_projects_focus",
+        "mobile_projects",
+        "desktop_skills"
+      ],
+      "completion_states": [
+        "desktop_projects",
+        "desktop_initial"
+      ],
+      "completion_text_signals": [
+        "Project focus",
+        "Web App",
+        "Template",
+        "Tooling",
+        "Showing 6 of 6"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_projects",
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Projects",
+        "Skills"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Cheatsheet"
+      ],
+      "visual_anchor_states": [
+        "desktop_projects",
+        "desktop_initial"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

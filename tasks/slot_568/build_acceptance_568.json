@@ -1,0 +1,45 @@
+{
+ "slot": 568,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_library",
+   "dom_len": 1753,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "afa137a14d4b62ac47d15341139f9c4e",
+    "reference": "bcbdba72bf3ef3cb65f73f851db563cc",
+    "bad": "796f964628edfe766a69eefe5cc45b72"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 25,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "codexfelis__paws-template__3be3cde37587",
+ "capability": "Build",
+ "capability_is_build": true
+}

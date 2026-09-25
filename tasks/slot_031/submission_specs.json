@@ -1,0 +1,266 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_getastrothemes__lumio-lite-astro__0c515c9ad5a7__ai_service_proof_system",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_features_about",
+    "desktop_process",
+    "desktop_home_services",
+    "desktop_contact",
+    "desktop_services_list",
+    "mobile_services_list",
+    "desktop_service_detail",
+    "desktop_service_detail_mid",
+    "mobile_service_detail",
+    "desktop_planner_services",
+    "mobile_planner_services",
+    "desktop_planner_home",
+    "desktop_planner_detail",
+    "planner_filter_engineering"
+   ],
+   "text_signal_states": [
+    "desktop_planner_services",
+    "desktop_planner_home"
+   ],
+   "reference_text_signals": [
+    "Plan your engagement",
+    "AI Readiness Review",
+    "Workflow Automation",
+    "Adoption Enablement"
+   ],
+   "visible_text_states": [
+    "desktop_planner_services",
+    "desktop_planner_home"
+   ],
+   "visible_text_signals": [
+    "Plan your engagement",
+    "AI Readiness Review"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "planner_filter_engineering"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_services_list",
+    "mobile_service_detail",
+    "mobile_planner_services"
+   ],
+   "asset_path_signals": [
+    "_astro/",
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_planner_services"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_services_list"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_features_about",
+    "desktop_process",
+    "desktop_home_services",
+    "desktop_contact",
+    "desktop_services_list",
+    "mobile_services_list",
+    "desktop_service_detail",
+    "desktop_service_detail_mid",
+    "mobile_service_detail",
+    "desktop_planner_services",
+    "mobile_planner_services",
+    "desktop_planner_home",
+    "desktop_planner_detail",
+    "planner_filter_engineering"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "web-share",
+    "Unrecognized feature"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services_list",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_service_detail",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_services",
+     "class_contains": "service-planner__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_home",
+     "class_contains": "service-planner__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_detail",
+     "class_contains": "service-planner__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_services",
+     "class_contains": "service-planner__card-name",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_planner_home",
+     "class_contains": "service-planner__card-name",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_planner_detail",
+     "class_contains": "service-planner__card-name",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_planner_services",
+     "text_contains": "Plan your engagement",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_home",
+     "text_contains": "Plan your engagement",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_detail",
+     "text_contains": "Plan your engagement",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_planner_services",
+     "mobile_planner_services"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "planner_filter_engineering",
+     "changed_from": "desktop_planner_services",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "2 of 5",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_features_about",
+    "desktop_process",
+    "desktop_home_services",
+    "desktop_contact",
+    "desktop_services_list",
+    "mobile_services_list",
+    "desktop_service_detail",
+    "desktop_service_detail_mid",
+    "mobile_service_detail",
+    "desktop_planner_services",
+    "mobile_planner_services",
+    "desktop_planner_home",
+    "desktop_planner_detail",
+    "planner_filter_engineering"
+   ],
+   "completion_states": [
+    "desktop_planner_services",
+    "desktop_planner_home"
+   ],
+   "completion_text_signals": [
+    "Plan your engagement",
+    "AI Readiness Review",
+    "Workflow Automation",
+    "Data Platform Engineering",
+    "Adoption Enablement"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_services_list"
+   ],
+   "regression_text_signals": [
+    "Services"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "Cheatsheet"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/layouts/components/global/ServiceProofRail.astro"
+    ],
+    "should_preserve": [
+     "src/layouts/components/global/Footer.astro",
+     "src/layouts/components/global/header/Header.astro",
+     "src/pages/[...lang]/services/[single].astro",
+     "src/content/services/english"
+    ]
+   }
+  }
+ ]
+}

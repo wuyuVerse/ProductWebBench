@@ -1,0 +1,277 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_withastro__blog-tutorial-demo__0859a3ea85f3__editorial_flow_utility",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_blog_flow",
+    "tablet_blog_flow",
+    "mobile_blog_flow",
+    "desktop_tag_index",
+    "desktop_tag_astro_flow",
+    "desktop_latest_post",
+    "desktop_about_regression",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_theme_toggle",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "reference_text_signals": [
+    "Home Page",
+    "From the reading room",
+    "Astro",
+    "Room light"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_footer_home"
+   ],
+   "visible_text_signals": [
+    "Home Page",
+    "From the reading room"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_theme_toggle",
+    "mobile_menu_open"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_blog_flow",
+    "mobile_blog_flow",
+    "mobile_footer_home"
+   ],
+   "asset_path_signals": [
+    "post-images",
+    "posts/post-4",
+    "tags/astro",
+    "about"
+   ],
+   "asset_path_states": [
+    "desktop_latest_post",
+    "desktop_tag_astro_flow",
+    "desktop_about_regression"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_tag_index",
+    "desktop_latest_post"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_blog_flow",
+    "tablet_blog_flow",
+    "mobile_blog_flow",
+    "desktop_tag_index",
+    "desktop_tag_astro_flow",
+    "desktop_latest_post",
+    "desktop_about_regression",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_theme_toggle",
+    "mobile_menu_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_latest_post",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_latest_post",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_regression",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "class_contains": "reading-room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_flow",
+     "class_contains": "reading-room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_about",
+     "class_contains": "reading-room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tag_astro_flow",
+     "class_contains": "reading-room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_home",
+     "text_contains": "From the reading room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_flow",
+     "text_contains": "From the reading room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_about",
+     "text_contains": "From the reading room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tag_astro_flow",
+     "text_contains": "From the reading room",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_footer_home",
+     "mobile_footer_home"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.6,
+      "max_color_delta_e": 65
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_theme_toggle",
+     "changed_from": "desktop_footer_home",
+     "require_interaction": true,
+     "dom": {
+      "id": "room-light-readout",
+      "text_contains": "lamplight",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_blog_flow",
+    "tablet_blog_flow",
+    "mobile_blog_flow",
+    "desktop_tag_index",
+    "desktop_tag_astro_flow",
+    "desktop_latest_post",
+    "desktop_about_regression",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_about",
+    "desktop_theme_toggle",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_latest_post",
+    "desktop_about_regression",
+    "desktop_footer_home"
+   ],
+   "completion_text_signals": [
+    "Home Page",
+    "From the reading room",
+    "Astro",
+    "My Fourth Blog Post",
+    "Room light"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_about_regression"
+   ],
+   "regression_text_signals": [
+    "My awesome blog subtitle",
+    "Astro",
+    "About Me"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_latest_post",
+    "desktop_about_regression"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "REPLACE_ME",
+    "{{",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/Footer.astro",
+     "src/components/ReadingRoom.astro",
+     "src/scripts/room-light.js"
+    ],
+    "should_preserve": [
+     "src/pages/blog.astro",
+     "src/pages/tags/index.astro",
+     "src/pages/tags/[tag].astro",
+     "src/layouts/BaseLayout.astro",
+     "src/utils/posts.ts"
+    ]
+   }
+  }
+ ]
+}

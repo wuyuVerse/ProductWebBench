@@ -1,0 +1,247 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_technext__sulfer-multipage-business-html5-template__fdb18c6512c2__service_inquiry_handoff",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_portfolio",
+        "mobile_portfolio",
+        "tablet_portfolio",
+        "portfolio_filter"
+      ],
+      "text_signal_states": [
+        "desktop_portfolio"
+      ],
+      "reference_text_signals": [
+        "Selected work",
+        "Showing",
+        "All",
+        "Web",
+        "Branding",
+        "Print"
+      ],
+      "visible_text_states": [
+        "desktop_portfolio"
+      ],
+      "visible_text_signals": [
+        "Selected work",
+        "Showing"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "portfolio_filter"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "portfolio_filter",
+          "changed_from": "desktop_portfolio",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 3 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_portfolio",
+        "mobile_portfolio",
+        "tablet_portfolio",
+        "portfolio_filter"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 6,
+      "asset_path_signals": [
+        "asset/images"
+      ],
+      "asset_path_states": [
+        "desktop_portfolio"
+      ],
+      "min_asset_path_signals": 1,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_portfolio",
+        "mobile_portfolio",
+        "tablet_portfolio",
+        "portfolio_filter"
+      ],
+      "console_error_allowlist": [
+        "favicon"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "text_contains": "Selected work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "Selected work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "All",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "Web",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "Branding",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "Print",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "Showing",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "text_contains": "of 6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_portfolio",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "tag": "h4",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_portfolio",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_portfolio",
+          "tag": "header",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_home",
+          "tag": "section",
+          "min_count": 3
+        },
+        {
+          "state": "mobile_home",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "mobile_portfolio",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "tablet_portfolio",
+          "tag": "img",
+          "min_count": 6
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_portfolio",
+          "mobile_portfolio"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_portfolio",
+        "mobile_portfolio",
+        "tablet_portfolio",
+        "portfolio_filter"
+      ],
+      "completion_states": [
+        "desktop_portfolio"
+      ],
+      "completion_text_signals": [
+        "Selected work",
+        "Showing",
+        "All",
+        "Web",
+        "Branding"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_portfolio",
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Sulfur",
+        "Portfolio"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "portfolio-3.html"
+      ],
+      "visual_anchor_states": [
+        "desktop_portfolio",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "min_screenshot_bytes": 6000
+    }
+  ]
+}

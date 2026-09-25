@@ -1,0 +1,293 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_ByteGrad__portfolio-website__063ec660e1ed__project_inquiry_flow_implementation",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "desktop_filter_frontend",
+    "desktop_route_work",
+    "desktop_route_stack"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_work"
+   ],
+   "reference_text_signals": [
+    "Ricardo",
+    "Selected work",
+    "CorpComment",
+    "rmtDev",
+    "Word Analytics",
+    "Ledger Sync",
+    "Palette API"
+   ],
+   "visible_text_states": [
+    "desktop_work"
+   ],
+   "visible_text_signals": [
+    "Selected work",
+    "CorpComment",
+    "rmtDev",
+    "Word Analytics"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_filter_frontend"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_frontend",
+     "changed_from": "desktop_work",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_work"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "corpcomment",
+    "rmtdev",
+    "wordanalytics"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "desktop_filter_frontend",
+    "desktop_route_work",
+    "desktop_route_stack"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "preloaded using link preload"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "text_contains": "Frontend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "text_contains": "Full-stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "text_contains": "Backend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "CorpComment",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "rmtDev",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Word Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Ledger Sync",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Palette API",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Focus Timer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_work",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_work",
+     "tag": "button",
+     "text_contains": "Frontend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_work",
+     "tag": "button",
+     "text_contains": "Full-stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_work",
+     "tag": "button",
+     "text_contains": "Backend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_work",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_stack",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_stack",
+     "tag": "button",
+     "text_contains": "Frontend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_stack",
+     "tag": "button",
+     "text_contains": "Full-stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_stack",
+     "tag": "button",
+     "text_contains": "Backend",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_stack",
+     "text_contains": "Selected work",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_work",
+     "mobile_work",
+     "desktop_filter_frontend"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "desktop_filter_frontend",
+    "desktop_route_work",
+    "desktop_route_stack"
+   ],
+   "completion_states": [
+    "desktop_work",
+    "desktop_filter_frontend"
+   ],
+   "completion_text_signals": [
+    "Selected work",
+    "CorpComment",
+    "rmtDev",
+    "Word Analytics",
+    "Ledger Sync"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Ricardo",
+    "My projects",
+    "Contact"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "Project goes here",
+    "TODO project"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_work"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

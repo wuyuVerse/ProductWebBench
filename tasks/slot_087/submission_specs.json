@@ -1,0 +1,254 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_thekamalkashyap__blogging-website-template__2d5a38c260db__reading_guide_page",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_search_next",
+    "desktop_tags",
+    "desktop_tag_next",
+    "desktop_about",
+    "desktop_post_code",
+    "desktop_post_images",
+    "desktop_reading_guide_route",
+    "mobile_tags",
+    "mobile_reading_guide_route",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "desktop_guide_prefilter",
+    "desktop_guide_filtered"
+   ],
+   "text_signal_states": [
+    "desktop_reading_guide_route",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Reading Guide",
+    "Learning Tracks",
+    "Next.js Foundations"
+   ],
+   "visible_text_states": [
+    "desktop_reading_guide_route"
+   ],
+   "visible_text_signals": [
+    "Reading Guide",
+    "Learning Tracks"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_guide_filtered"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_guide_filtered",
+     "changed_from": "desktop_guide_prefilter",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 1 track",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_reading_guide_route",
+    "mobile_tags",
+    "mobile_home_rail"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "static/images"
+   ],
+   "asset_path_states": [
+    "desktop_post_images",
+    "desktop_about"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_search_next",
+    "desktop_tags",
+    "desktop_tag_next",
+    "desktop_about",
+    "desktop_post_code",
+    "desktop_post_images",
+    "desktop_reading_guide_route",
+    "mobile_tags",
+    "mobile_reading_guide_route",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "desktop_guide_prefilter",
+    "desktop_guide_filtered"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home_rail",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tags",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reading_guide_route",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_tags",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reading_guide_route",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Reading Guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reading_guide_route",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reading_guide_route",
+     "tag": "h3",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_reading_guide_route",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_reading_guide_route",
+     "tag": "h3",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Reading Guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "header",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_rail",
+     "mobile_home_rail"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_reading_guide_route",
+    "desktop_initial"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_search_next",
+    "desktop_tags",
+    "desktop_tag_next",
+    "desktop_about",
+    "desktop_post_code",
+    "desktop_post_images",
+    "desktop_reading_guide_route",
+    "mobile_tags",
+    "mobile_reading_guide_route",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "desktop_guide_prefilter",
+    "desktop_guide_filtered"
+   ],
+   "completion_states": [
+    "desktop_reading_guide_route",
+    "desktop_initial"
+   ],
+   "completion_text_signals": [
+    "Reading Guide",
+    "Learning Tracks",
+    "Next.js Foundations",
+    "Tailwind CSS",
+    "Continue your reading path"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_tags"
+   ],
+   "regression_text_signals": [
+    "Blogs",
+    "Tags",
+    "About"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "cheatsheet",
+    "CHEATSHEET"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

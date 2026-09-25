@@ -1,0 +1,139 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_adminmart__Modernize-vuejs-free__96f58edc24f8__pricing",
+   "reference_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "submission_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_pricing"
+   ],
+   "completion_text_signals": [
+    "Pricing Plans",
+    "Professional",
+    "Most Popular",
+    "Enterprise"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_pricing"
+   ],
+   "visible_text_signals": [
+    "Pricing Plans"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_pricing"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_pricing"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_pricing"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_pricing"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "googleapis"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Starter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Professional",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Enterprise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "button",
+     "text_contains": "Get Started",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "button",
+     "text_contains": "Upgrade Now",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "button",
+     "text_contains": "Contact Sales",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "storage",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

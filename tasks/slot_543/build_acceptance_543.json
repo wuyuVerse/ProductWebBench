@@ -1,0 +1,45 @@
+{
+ "slot": 543,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_orders",
+   "dom_len": 4999,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "07eeec84de8497fd9ce9cde8de1fae5f",
+    "reference": "3305cd8b4cb5383ad29e6f82317f0115",
+    "bad": "95b847911d0b069263f0cda326e82a95"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 18,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "AdityaKumawat97__react-e-commerce-website__2e46ab9cbc36",
+ "capability": "Build",
+ "capability_is_build": true
+}

@@ -1,0 +1,45 @@
+{
+ "slot": 578,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_cohorts",
+   "dom_len": 534,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "3778bce1d52599687f6d9eb2b31e2474",
+    "reference": "a8ce415696db080e4df45bbe94c976ba",
+    "bad": "8205c42bee87348b87ed4690d87c6f17"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 22,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "technext__v-dashboard__1d6fd95f5454",
+ "capability": "Build",
+ "capability_is_build": true
+}

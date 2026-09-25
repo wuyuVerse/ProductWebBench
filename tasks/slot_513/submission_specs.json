@@ -1,0 +1,138 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_codebucks27__react-portfolio-final__4bf80b1fc931__press",
+   "reference_states": [
+    "desktop_press",
+    "mobile_press"
+   ],
+   "submission_states": [
+    "desktop_press",
+    "mobile_press"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_press"
+   ],
+   "completion_text_signals": [],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 0,
+   "visible_text_states": [
+    "desktop_press"
+   ],
+   "visible_text_signals": [],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_press"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_press"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_press"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_press"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_press",
+    "mobile_press"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_press",
+     "tag": "h1",
+     "text_contains": "Press",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "h2",
+     "text_contains": "Media",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "p",
+     "text_contains": "Selected features",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "h3",
+     "text_contains": "TechCrunch",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "h3",
+     "text_contains": "Smashing Magazine",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "h3",
+     "text_contains": "CSS Weekly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_press",
+     "tag": "a",
+     "text_contains": "Read coverage",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_press",
+     "tag": "button",
+     "text_contains": "Download Press Kit",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_press"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_press"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

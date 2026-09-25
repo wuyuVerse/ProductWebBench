@@ -1,0 +1,269 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Robpayot__webgl-distortion-bulge-effect__f5fd2420f989__card_shader_continuity_hud",
+   "reference_states": [
+    "desktop_demo1_initial",
+    "tablet_demo1_initial",
+    "mobile_demo1_initial",
+    "desktop_demo1_filter",
+    "desktop_demo2_initial",
+    "tablet_demo2_initial",
+    "mobile_demo2_initial",
+    "desktop_demo2_hover"
+   ],
+   "text_signal_states": [
+    "desktop_demo1_initial"
+   ],
+   "reference_text_signals": [
+    "Card texture browser",
+    "Landscapes",
+    "WebGL Bulge Effect",
+    "Demo 1",
+    "Demo 2"
+   ],
+   "visible_text_states": [
+    "desktop_demo1_initial"
+   ],
+   "visible_text_signals": [
+    "Card texture browser",
+    "Showing 8 of 8"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_demo1_filter",
+    "desktop_demo2_hover"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_demo1_filter",
+     "changed_from": "desktop_demo1_initial",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "hud__readout",
+      "text_contains": "Showing 3 of 8",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "desktop_demo1_initial",
+    "tablet_demo1_initial",
+    "mobile_demo1_initial",
+    "desktop_demo2_initial",
+    "tablet_demo2_initial",
+    "mobile_demo2_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_canvas_screenshot_bytes": 20000,
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow_states": [
+    "mobile_demo1_initial",
+    "mobile_demo2_initial"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_demo1_initial",
+    "tablet_demo1_initial",
+    "mobile_demo1_initial",
+    "desktop_demo1_filter",
+    "desktop_demo2_initial",
+    "tablet_demo2_initial",
+    "mobile_demo2_initial",
+    "desktop_demo2_hover"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "gl driver message",
+    "webgl",
+    "GL Driver Message",
+    "ReadPixels"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "h2",
+     "text_contains": "Card texture browser",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "button",
+     "class_contains": "hud__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "li",
+     "class_contains": "hud__chip",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo1_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_demo1_initial",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_demo1_initial",
+     "tag": "button",
+     "class_contains": "hud__tab",
+     "min_count": 4
+    },
+    {
+     "state": "tablet_demo1_initial",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2_initial",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2_initial",
+     "tag": "h2",
+     "text_contains": "Card texture browser",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2_initial",
+     "tag": "button",
+     "class_contains": "hud__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_demo2_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_demo2_initial",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_demo2_initial",
+     "tag": "button",
+     "class_contains": "hud__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_demo1_filter",
+     "tag": "section",
+     "class_contains": "hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2_hover",
+     "tag": "canvas",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_demo1_initial",
+     "mobile_demo1_initial"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "regression_states": [
+    "desktop_demo1_initial"
+   ],
+   "regression_text_signals": [
+    "WebGL Bulge Effect",
+    "Read the tutorial",
+    "Demo 1",
+    "Demo 2"
+   ],
+   "submission_states": [
+    "desktop_demo1_initial",
+    "tablet_demo1_initial",
+    "mobile_demo1_initial",
+    "desktop_demo1_filter",
+    "desktop_demo2_initial",
+    "tablet_demo2_initial",
+    "mobile_demo2_initial",
+    "desktop_demo2_hover"
+   ],
+   "completion_states": [
+    "desktop_demo1_initial",
+    "mobile_demo1_initial"
+   ],
+   "completion_text_signals": [
+    "Card texture browser",
+    "All",
+    "Portraits",
+    "Landscapes",
+    "Abstract",
+    "Showing 8 of 8"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "forbidden_text_patterns": [
+    "overflow-x:hidden fix",
+    "clip to hide overflow",
+    "hardened hud",
+    "Coming soon strip",
+    "TODO texture browser"
+   ],
+   "visual_anchor_states": [
+    "desktop_demo1_initial",
+    "desktop_demo1_filter"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

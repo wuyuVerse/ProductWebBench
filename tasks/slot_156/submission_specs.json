@@ -1,0 +1,240 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ExpandingGridItemAnimation__af38df3e4f5d__stateful_detail_flow_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_filter_bar",
+    "mobile_filter_bar",
+    "desktop_mark_intro",
+    "desktop_mark_gridfoot",
+    "desktop_mark_related",
+    "mobile_mark_intro",
+    "desktop_grid_hover",
+    "desktop_marble_open",
+    "mobile_marble_open",
+    "desktop_marble_zoom",
+    "desktop_marble_closed",
+    "desktop_space_open",
+    "desktop_filter_anagama"
+   ],
+   "text_signal_states": [
+    "desktop_filter_bar",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Kiln & Cinder",
+    "Ember Vessel",
+    "Firing collection"
+   ],
+   "visible_text_states": [
+    "desktop_filter_bar"
+   ],
+   "visible_text_signals": [
+    "Firing collection"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_filter_anagama"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_filter_bar",
+    "mobile_mark_intro",
+    "tablet_initial"
+   ],
+   "asset_path_signals": [
+    "img/1.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_filter_bar"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_canvas_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_filter_bar",
+    "mobile_filter_bar",
+    "desktop_mark_intro",
+    "desktop_mark_gridfoot",
+    "desktop_mark_related",
+    "mobile_mark_intro",
+    "desktop_grid_hover",
+    "desktop_marble_open",
+    "mobile_marble_open",
+    "desktop_marble_zoom",
+    "desktop_marble_closed",
+    "desktop_space_open",
+    "desktop_filter_anagama"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_filter_bar",
+     "text_contains": "Firing collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_filter_bar",
+     "text_contains": "Anagama",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_filter_bar",
+     "text_contains": "Ash glaze",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_filter_bar",
+     "text_contains": "Reduction",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_filter_bar",
+     "text_contains": "Salt & soda",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_mark_intro",
+     "text_contains": "Firing collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_mark_related",
+     "text_contains": "Firing collection",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_mark_intro",
+     "text_contains": "Firing collection",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_filter_bar",
+     "mobile_filter_bar",
+     "desktop_filter_anagama"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_anagama",
+     "changed_from": "desktop_filter_bar",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 10 pieces",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_filter_bar",
+    "mobile_filter_bar",
+    "desktop_mark_intro",
+    "desktop_mark_gridfoot",
+    "desktop_mark_related",
+    "mobile_mark_intro",
+    "desktop_grid_hover",
+    "desktop_marble_open",
+    "mobile_marble_open",
+    "desktop_marble_zoom",
+    "desktop_marble_closed",
+    "desktop_space_open",
+    "desktop_filter_anagama"
+   ],
+   "completion_states": [
+    "desktop_filter_bar",
+    "desktop_filter_anagama"
+   ],
+   "completion_text_signals": [
+    "Firing collection",
+    "Anagama",
+    "Ash glaze",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_marble_open",
+    "desktop_marble_closed"
+   ],
+   "regression_text_signals": [
+    "Ember Vessel",
+    "Roan Emberly",
+    "Add to cart"
+   ],
+   "forbidden_states": [
+    "desktop_filter_bar",
+    "mobile_filter_bar"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "REPLACE_ME",
+    "coming soon",
+    "TODO",
+    "{{"
+   ]
+  }
+ ]
+}

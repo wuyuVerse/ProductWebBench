@@ -1,0 +1,45 @@
+{
+ "slot": 542,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_wishlist",
+   "dom_len": 1697,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "3ea50922cc732ca7562375921a8d5046",
+    "reference": "2bdf238e42ec59a639a68e795c873e64",
+    "bad": "8809522e48bbddf798a57d282c0c7437"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 14,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b",
+ "capability": "Build",
+ "capability_is_build": true
+}

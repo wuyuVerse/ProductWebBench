@@ -1,0 +1,45 @@
+{
+ "slot": 567,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_reading",
+   "dom_len": 5686,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "65b8f2d82c998563d07c11f08a7ad16c",
+    "reference": "de62d1d29e2c9c390fb5d5df05485157",
+    "bad": "3a4524f1f81d0c2db9c69d4ab6d4e4e1"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 21,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "sohamvsonar__portfolio-websitev1__fbdd5c78c6e2",
+ "capability": "Build",
+ "capability_is_build": true
+}

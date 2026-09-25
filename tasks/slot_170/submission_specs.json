@@ -1,0 +1,289 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_akella__webGLImageTransitions__498d8fb48426__transition_state_layer_restyle",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deck",
+        "tablet_deck",
+        "mobile_deck",
+        "desktop_demo2",
+        "desktop_demo6",
+        "desktop_demo8",
+        "desktop_article",
+        "desktop_cycle_click"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deck",
+        "tablet_deck",
+        "mobile_deck",
+        "desktop_demo2",
+        "desktop_demo6",
+        "desktop_demo8",
+        "desktop_article",
+        "desktop_cycle_click"
+      ],
+      "completion_states": [
+        "desktop_deck",
+        "mobile_deck"
+      ],
+      "completion_text_signals": [
+        "TRANSITION CONTINUITY",
+        "Transition state deck",
+        "Loaded source set",
+        "Source queue: img/img11.jpg, img/img12.jpg, img/img13.jpg",
+        "Frames held in loop: 3",
+        "Active demo route: demo 1"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "visible_text_states": [
+        "desktop_deck"
+      ],
+      "visible_text_signals": [
+        "TRANSITION CONTINUITY",
+        "Transition state deck",
+        "Source queue: img/img11.jpg, img/img12.jpg, img/img13.jpg"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_demo2",
+        "desktop_demo6",
+        "desktop_article"
+      ],
+      "regression_text_signals": [
+        "WebGL Image Transitions",
+        "Demo"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deck",
+        "tablet_deck",
+        "mobile_deck",
+        "desktop_demo2",
+        "desktop_demo6",
+        "desktop_demo8",
+        "desktop_article",
+        "desktop_cycle_click"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "dummy content",
+        "placeholder rail",
+        "coming soon",
+        "todo overflow",
+        "placeholder-source"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_deck",
+        "tablet_deck"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 3,
+      "min_screenshot_bytes": 10000,
+      "min_canvas_screenshot_bytes": 10000,
+      "asset_signal_states": [
+        "desktop_deck"
+      ],
+      "asset_path_signals": [
+        "img/img11.jpg",
+        "img/img12.jpg"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_initial",
+        "mobile_deck"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deck",
+        "tablet_deck",
+        "mobile_deck",
+        "desktop_demo2",
+        "desktop_demo6",
+        "desktop_demo8",
+        "desktop_article",
+        "desktop_cycle_click"
+      ],
+      "console_error_allowlist": [
+        "_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_deck",
+          "class_contains": "transition-deck--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deck",
+          "tag": "h2",
+          "text_contains": "Transition state deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deck",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_deck",
+          "tag": "button",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_deck",
+          "class_contains": "transition-deck--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_deck",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "tablet_deck",
+          "class_contains": "transition-deck--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "class_contains": "transition-deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2",
+          "class_contains": "transition-deck--demo2",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2",
+          "text_contains": "Transition state deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo6",
+          "class_contains": "transition-deck--demo6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo6",
+          "text_contains": "Transition state deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo8",
+          "class_contains": "transition-deck--demo8",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo6",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo8",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_article",
+          "tag": "h2",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_article",
+          "tag": "p",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_article",
+          "tag": "img",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_deck"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_cycle_click",
+          "changed_from": "desktop_deck",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Queued source: img/img12.jpg",
+            "min_count": 1
+          }
+        }
+      ],
+      "interaction_states": [
+        "desktop_cycle_click"
+      ],
+      "submission_states_interaction": [
+        "desktop_cycle_click"
+      ],
+      "visual_anchor_states": [
+        "desktop_deck",
+        "desktop_initial"
+      ],
+      "mean_luminance_tolerance": 120,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6
+    }
+  ]
+}

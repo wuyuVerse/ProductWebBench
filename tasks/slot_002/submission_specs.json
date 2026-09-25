@@ -1,0 +1,262 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themeselection__materio-bootstrap-html-laravel-admin-template-free__d19dd1e98919__trend_metrics",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_dashboard_cards",
+    "desktop_dispatch_rail",
+    "desktop_basic_cards",
+    "desktop_buttons",
+    "desktop_account_settings",
+    "mobile_sidebar_open",
+    "mobile_dispatch_rail",
+    "desktop_rail_afternoon",
+    "desktop_rail_night"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_dashboard_cards",
+    "desktop_account_settings",
+    "mobile_sidebar_open",
+    "desktop_dispatch_rail"
+   ],
+   "reference_text_signals": [
+    "Work Orders",
+    "Fleet Utilization",
+    "Jobs by Region",
+    "Operator Profile",
+    "Operations",
+    "Shift dispatch cadence",
+    "Active dispatch window:"
+   ],
+   "visible_text_states": [
+    "desktop_dashboard_cards",
+    "desktop_dispatch_rail"
+   ],
+   "visible_text_signals": [
+    "Work Orders",
+    "Fleet Utilization",
+    "Shift dispatch cadence"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_rail_afternoon",
+    "desktop_rail_night",
+    "mobile_sidebar_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_rail_afternoon",
+     "changed_from": "desktop_dispatch_rail",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active dispatch window: Afternoon",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_rail_night",
+     "changed_from": "desktop_dispatch_rail",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active dispatch window: Night",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_sidebar_open",
+    "mobile_dispatch_rail"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img"
+   ],
+   "asset_path_states": [
+    "desktop_dashboard_cards",
+    "desktop_account_settings"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_dispatch_rail",
+     "mobile_dispatch_rail",
+     "desktop_rail_afternoon",
+     "desktop_rail_night"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard_cards",
+     "text_contains": "Work Orders",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard_cards",
+     "text_contains": "Fleet Utilization",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard_cards",
+     "text_contains": "Jobs by Region",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_account_settings",
+     "text_contains": "Operator Profile",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_account_settings",
+     "tag": "input",
+     "min_count": 4
+    },
+    {
+     "state": "mobile_sidebar_open",
+     "text_contains": "Operations",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_rail",
+     "text_contains": "Shift dispatch cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_basic_cards",
+     "text_contains": "Shift dispatch cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_buttons",
+     "text_contains": "Shift dispatch cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_basic_cards",
+     "class_contains": "dispatch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_buttons",
+     "class_contains": "dispatch-rail",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_dashboard_cards",
+    "desktop_dispatch_rail",
+    "desktop_basic_cards",
+    "desktop_buttons",
+    "desktop_account_settings",
+    "mobile_sidebar_open",
+    "mobile_dispatch_rail",
+    "desktop_rail_afternoon",
+    "desktop_rail_night"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_dispatch_rail"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_dashboard_cards",
+    "desktop_dispatch_rail",
+    "desktop_basic_cards",
+    "desktop_buttons",
+    "desktop_account_settings",
+    "mobile_sidebar_open",
+    "mobile_dispatch_rail",
+    "desktop_rail_afternoon",
+    "desktop_rail_night"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_dashboard_cards",
+    "desktop_account_settings",
+    "mobile_sidebar_open",
+    "desktop_dispatch_rail",
+    "desktop_rail_afternoon",
+    "desktop_rail_night"
+   ],
+   "completion_text_signals": [
+    "Work Orders",
+    "Fleet Utilization",
+    "Jobs by Region",
+    "Operator Profile",
+    "Operations",
+    "Shift dispatch cadence",
+    "Active dispatch window: Afternoon",
+    "Active dispatch window: Night"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "mobile_sidebar_open"
+   ],
+   "regression_text_signals": [
+    "Ternpoint Ops"
+   ],
+   "forbidden_text_patterns": [
+    "Zipcar",
+    "Bitbank",
+    "Aviato",
+    "Sales by Countries",
+    "ThemeSelection"
+   ]
+  }
+ ]
+}

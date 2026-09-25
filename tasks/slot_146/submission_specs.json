@@ -1,0 +1,246 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_ttntm__astro-landing-page__cc5b255a79e8__launch_readiness_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "desktop_plans_annual",
+    "desktop_imprint",
+    "desktop_privacy",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_plans"
+   ],
+   "reference_text_signals": [
+    "Tidewatch",
+    "Coverage plans",
+    "Billing: Monthly",
+    "Single Berth",
+    "Harbour"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Tidewatch",
+    "See the surge"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plans_annual",
+    "mobile_menu_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_plans",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-tiers__readout",
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_plans",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-tiers__readout",
+      "text_contains": "2 months free",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_plans",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-tiers__price",
+      "text_contains": "/yr",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_plans_annual",
+     "mobile_plans"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_plans"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_plans"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "desktop_plans_annual",
+    "desktop_imprint",
+    "desktop_privacy",
+    "mobile_menu_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "plan-tiers__card",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "plan-tiers__title",
+     "text_contains": "Coverage plans",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "plan-tiers__readout",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "plan-rail--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_imprint",
+     "class_contains": "plan-rail--imprint",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_imprint",
+     "class_contains": "plan-rail__title",
+     "text_contains": "Coverage plans",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_privacy",
+     "class_contains": "plan-rail--privacy",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_privacy",
+     "class_contains": "plan-rail__title",
+     "text_contains": "Coverage plans",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "desktop_plans_annual",
+    "desktop_imprint",
+    "desktop_privacy",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_plans",
+    "desktop_plans_annual"
+   ],
+   "completion_text_signals": [
+    "Coverage plans",
+    "Billing: Monthly",
+    "Single Berth",
+    "Harbour",
+    "Port Network"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "About",
+    "Features",
+    "Tidewatch"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Launch readiness",
+    "Gauges linked",
+    "Drill coverage"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

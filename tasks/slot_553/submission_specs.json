@@ -1,0 +1,152 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_incluud__accessible-astro-starter__1a957e9b2a01__resources",
+   "reference_states": [
+    "desktop_resources",
+    "mobile_resources"
+   ],
+   "submission_states": [
+    "desktop_resources",
+    "mobile_resources"
+   ],
+   "interaction_states": [
+    "desktop_resources_tooling"
+   ],
+   "completion_states": [
+    "desktop_resources"
+   ],
+   "completion_text_signals": [
+    "Resources",
+    "Curated for accessible builds",
+    "Guidelines",
+    "WCAG 2.2"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_resources"
+   ],
+   "visible_text_signals": [
+    "Curated for accessible builds"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_resources"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_resources"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_resources"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_resources"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_resources",
+    "mobile_resources"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_resources",
+     "tag": "h1",
+     "text_contains": "Resources",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "h2",
+     "text_contains": "Curated for accessible builds",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "h3",
+     "text_contains": "Guidelines",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "h3",
+     "text_contains": "WCAG 2.2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "a",
+     "text_contains": "View accessible components",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "a",
+     "text_contains": "Home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_resources",
+     "tag": "button",
+     "text_contains": "Tooling",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_resources"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_resources_tooling",
+     "require_interaction": true,
+     "changed_from": "desktop_resources",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "axe DevTools",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_resources"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

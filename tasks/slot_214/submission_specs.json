@@ -1,0 +1,272 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_leogodoyllg__News-Website-Template__8d631e5b4ca8__reader_signal_filter_component",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_signal_component",
+    "mobile_signal_component",
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "desktop_all_reset",
+    "mobile_transit_filter",
+    "desktop_cards_regression",
+    "desktop_about",
+    "desktop_article",
+    "mobile_about"
+   ],
+   "text_signal_states": [
+    "desktop_signal_component",
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "desktop_all_reset",
+    "mobile_signal_component",
+    "mobile_transit_filter"
+   ],
+   "reference_text_signals": [
+    "READER SIGNAL FILTER",
+    "Reader signal controls",
+    "All stories",
+    "Transit",
+    "Infrastructure",
+    "Culture"
+   ],
+   "visible_text_states": [
+    "desktop_signal_component",
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "mobile_transit_filter"
+   ],
+   "visible_text_signals": [
+    "Reader signal controls",
+    "Showing 3 stories",
+    "Transit",
+    "Infrastructure"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "desktop_all_reset",
+    "mobile_transit_filter"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "mobile_signal_component",
+    "mobile_transit_filter",
+    "mobile_about"
+   ],
+   "asset_path_signals": [
+    "img/articles/ent1.jpg",
+    "img/articles/tech1.jpg",
+    "img/articles/sports1.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_cards_regression"
+   ],
+   "min_asset_path_signals": 3,
+   "asset_signal_states": [
+    "desktop_cards_regression"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_cards_regression"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_signal_component",
+    "mobile_signal_component",
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "desktop_all_reset",
+    "mobile_transit_filter",
+    "desktop_cards_regression",
+    "desktop_about",
+    "desktop_article",
+    "mobile_about"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "signal-controls",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cards_regression",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "signal-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "class_contains": "signal-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "class_contains": "signal-rail",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_about",
+     "class_contains": "signal-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "READER SIGNAL RAIL",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "text_contains": "READER SIGNAL RAIL",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_signal_component",
+     "mobile_signal_component"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_transit_filter",
+     "changed_from": "desktop_signal_component",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "signal-status",
+      "text_contains": "Showing 3 stories",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_signal_component",
+    "mobile_signal_component",
+    "desktop_transit_filter",
+    "desktop_infrastructure_filter",
+    "desktop_all_reset",
+    "mobile_transit_filter",
+    "desktop_cards_regression",
+    "desktop_about",
+    "desktop_article",
+    "mobile_about"
+   ],
+   "completion_states": [
+    "desktop_signal_component",
+    "desktop_transit_filter"
+   ],
+   "completion_text_signals": [
+    "Reader signal controls",
+    "READER SIGNAL FILTER",
+    "Transit",
+    "Infrastructure",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_about",
+    "desktop_article"
+   ],
+   "regression_text_signals": [
+    "Cinder",
+    "Home",
+    "About",
+    "Editors Picks"
+   ],
+   "forbidden_states": [
+    "desktop_signal_component",
+    "desktop_transit_filter",
+    "mobile_signal_component"
+   ],
+   "forbidden_text_patterns": [
+    "zombie",
+    "vampire",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{",
+    "Lorem ipsum"
+   ]
+  }
+ ]
+}

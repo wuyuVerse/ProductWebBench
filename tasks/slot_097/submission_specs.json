@@ -1,0 +1,256 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__AmbientCanvasBackgrounds__56580245c946__canvas_chrome_readability_restyle",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_eddy",
+    "mobile_eddy",
+    "desktop_relay",
+    "desktop_pin_initial",
+    "desktop_pin_toggle"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_eddy",
+    "desktop_relay"
+   ],
+   "reference_text_signals": [
+    "Halcyon Signals",
+    "generative signal fields",
+    "Field Notes",
+    "Drift"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_eddy",
+    "desktop_relay"
+   ],
+   "visible_text_signals": [
+    "Halcyon Signals",
+    "generative signal fields"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_pin_toggle"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_eddy"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_eddy"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 60,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_screenshot_bytes": 5000,
+   "min_canvas_screenshot_bytes": 5000,
+   "canvas_screenshot_states": [
+    "desktop_home",
+    "desktop_eddy",
+    "desktop_relay"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_eddy",
+    "mobile_eddy",
+    "desktop_relay",
+    "desktop_pin_initial",
+    "desktop_pin_toggle"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "p",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "p",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Drift",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_eddy",
+     "tag": "a",
+     "text_contains": "Eddy",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_relay",
+     "tag": "a",
+     "text_contains": "Relay",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_eddy",
+     "tag": "a",
+     "text_contains": "Drift",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_relay",
+     "tag": "a",
+     "text_contains": "Drift",
+     "min_count": 2
+    },
+    {
+     "state": "mobile_eddy",
+     "tag": "a",
+     "text_contains": "Drift",
+     "min_count": 2
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "desktop_eddy",
+     "desktop_relay"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_pin_toggle",
+     "changed_from": "desktop_pin_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Tracking: Drift",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_eddy",
+    "mobile_eddy",
+    "desktop_relay",
+    "desktop_pin_initial",
+    "desktop_pin_toggle"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_eddy",
+    "desktop_relay"
+   ],
+   "completion_text_signals": [
+    "Halcyon Signals",
+    "ambient sound-design studio",
+    "generative signal fields",
+    "Field Notes",
+    "Commissions",
+    "Drift",
+    "Cadence",
+    "Relay"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "desktop_home",
+    "desktop_eddy"
+   ],
+   "regression_text_signals": [
+    "Halcyon Signals"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_eddy",
+    "mobile_eddy",
+    "desktop_relay",
+    "desktop_pin_initial",
+    "desktop_pin_toggle"
+   ],
+   "forbidden_text_patterns": [
+    "Ambient Canvas Backgrounds",
+    "Codrops",
+    "codrops",
+    "Previous Demo",
+    "Aurora",
+    "Swirl",
+    "Coalesce",
+    "Pipeline",
+    "tympanus",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

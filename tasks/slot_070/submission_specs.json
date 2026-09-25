@@ -1,0 +1,237 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_devmamunur__Babsa-Business-And-Agency-HTML-Template__f5c1465b8112__pricing_contact_state_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_coverage",
+    "mobile_coverage",
+    "desktop_pricing",
+    "desktop_team",
+    "desktop_contact",
+    "desktop_pricing_page",
+    "desktop_contact_page",
+    "mobile_pricing_page",
+    "desktop_lane_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_coverage"
+   ],
+   "reference_text_signals": [
+    "Northwind Freight Systems",
+    "Freight coverage",
+    "Lanes tracked",
+    "Freight lanes covered"
+   ],
+   "visible_text_states": [
+    "desktop_coverage"
+   ],
+   "visible_text_signals": [
+    "Freight coverage",
+    "Freight lanes covered"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_lane_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_coverage",
+    "mobile_pricing_page"
+   ],
+   "asset_path_signals": [
+    "images/logo"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_team"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_coverage",
+    "mobile_coverage",
+    "desktop_pricing",
+    "desktop_team",
+    "desktop_contact",
+    "desktop_pricing_page",
+    "desktop_contact_page",
+    "mobile_pricing_page",
+    "desktop_lane_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "Freight coverage",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "Lanes tracked",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "Carrier connections",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "On-time delivery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "Regions served",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coverage",
+     "text_contains": "Freight lanes covered",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_page",
+     "text_contains": "Regional lane",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact_page",
+     "text_contains": "Regional lane",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_page",
+     "text_contains": "Freight lanes covered",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact_page",
+     "text_contains": "Freight lanes covered",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_coverage",
+     "mobile_coverage",
+     "desktop_pricing_page"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_lane_filter",
+     "changed_from": "desktop_coverage",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Regional lane",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_coverage",
+    "mobile_coverage",
+    "desktop_pricing",
+    "desktop_team",
+    "desktop_contact",
+    "desktop_pricing_page",
+    "desktop_contact_page",
+    "mobile_pricing_page",
+    "desktop_lane_filter"
+   ],
+   "completion_states": [
+    "desktop_coverage",
+    "desktop_pricing_page"
+   ],
+   "completion_text_signals": [
+    "Freight coverage",
+    "Lanes tracked",
+    "On-time delivery",
+    "Freight lanes covered",
+    "Showing:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_pricing",
+    "desktop_team",
+    "desktop_contact"
+   ],
+   "regression_text_signals": [
+    "Northwind Freight Systems",
+    "Regional",
+    "Growth",
+    "Enterprise"
+   ],
+   "forbidden_states": [
+    "desktop_coverage",
+    "mobile_coverage"
+   ],
+   "forbidden_text_patterns": [
+    "Babsa",
+    "Web Design",
+    "Silver",
+    "Golden",
+    "Platinum",
+    "demo@gmail.com",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

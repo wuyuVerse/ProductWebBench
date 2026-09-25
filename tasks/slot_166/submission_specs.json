@@ -1,0 +1,272 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_cruip__tailwind-landing-page-template__909e38e3249a__asset_pipeline_registry",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_logo_constellation",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing",
+    "desktop_signin_pricing",
+    "desktop_signup_pricing",
+    "desktop_signin",
+    "desktop_signup"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_signin"
+   ],
+   "reference_text_signals": [
+    "One shared component library",
+    "Design Tokens",
+    "ships everywhere at once",
+    "Loomlet workspace"
+   ],
+   "visible_text_states": [
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_pricing_default"
+   ],
+   "visible_text_signals": [
+    "Loomlet keeps every surface",
+    "Priya Raman",
+    "Simple pricing that grows"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_pricing"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 150,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/planet",
+    "images/logo",
+    "images/large-testimonial"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_logo_constellation",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing",
+    "desktop_signin_pricing",
+    "desktop_signup_pricing",
+    "desktop_signin",
+    "desktop_signup"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_logo_constellation",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_pricing_default",
+    "desktop_pricing_annual",
+    "mobile_pricing",
+    "desktop_signin_pricing",
+    "desktop_signup_pricing",
+    "desktop_signin",
+    "desktop_signup"
+   ],
+   "completion_states": [
+    "desktop_logo_constellation",
+    "desktop_planet_assets",
+    "desktop_testimonial_cta",
+    "desktop_signin",
+    "desktop_pricing_default"
+   ],
+   "completion_text_signals": [
+    "Trusted by design and engineering",
+    "Design Tokens",
+    "Live Documentation",
+    "ships everywhere at once",
+    "Simple pricing that grows"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "One shared component library",
+    "Loomlet"
+   ],
+   "forbidden_text_patterns": [
+    "website builder",
+    "Instant Analytics",
+    "Mary Sullivan",
+    "CTO at Microsoft",
+    "efficiently together",
+    "Simple has simplified",
+    "Create your next project with Simple",
+    "Create Next App"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_planet_assets"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "interaction_states": [
+    "desktop_pricing_annual"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_annual",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_pricing_annual",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "$290",
+      "min_count": 1
+     }
+    }
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_logo_constellation",
+     "tag": "h2",
+     "text_contains": "Trusted by design and engineering",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planet_assets",
+     "tag": "h2",
+     "text_contains": "Loomlet keeps every surface",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planet_assets",
+     "tag": "h3",
+     "text_contains": "Design Tokens",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planet_assets",
+     "tag": "h3",
+     "text_contains": "Live Documentation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonial_cta",
+     "tag": "p",
+     "text_contains": "ships everywhere at once",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonial_cta",
+     "tag": "span",
+     "text_contains": "Priya Raman",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signin",
+     "tag": "h1",
+     "text_contains": "Loomlet workspace",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signup",
+     "tag": "h1",
+     "text_contains": "Loomlet workspace",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planet_assets",
+     "tag": "article",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_signin",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signup",
+     "tag": "input",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_pricing_default",
+     "text_contains": "Simple pricing that grows",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signin_pricing",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signup_pricing",
+     "text_contains": "Billing:",
+     "min_count": 1
+    }
+   ]
+  }
+ ]
+}

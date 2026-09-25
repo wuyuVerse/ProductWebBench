@@ -1,0 +1,214 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_mattverse__what-i-love__b1fe48034d3f__motion_archive_casebook",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_work_grid",
+        "mobile_work_grid",
+        "desktop_filter_post",
+        "desktop_good_time",
+        "desktop_reflective",
+        "tablet_good_time",
+        "mobile_good_time"
+      ],
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_work_grid"
+      ],
+      "reference_text_signals": [
+        "Matt Park Archive",
+        "Motion Archive Casebook",
+        "Selected experiments",
+        "Good Time",
+        "Reflective Cube"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "desktop_work_grid"
+      ],
+      "visible_text_signals": [
+        "Motion Archive Casebook",
+        "Selected experiments",
+        "Good Time"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_filter_post"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_filter_post",
+          "changed_from": "desktop_work_grid",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "7 of 18 experiments",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_work_grid"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "good-time.mp4",
+        "reflective-cube.mp4"
+      ],
+      "asset_path_states": [
+        "desktop_work_grid"
+      ],
+      "min_asset_path_signals": 1,
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_work_grid",
+        "mobile_work_grid",
+        "desktop_filter_post",
+        "desktop_good_time",
+        "desktop_reflective",
+        "tablet_good_time",
+        "mobile_good_time"
+      ],
+      "completion_states": [
+        "desktop_work_grid",
+        "desktop_filter_post"
+      ],
+      "completion_text_signals": [
+        "Selected experiments",
+        "Good Time",
+        "Reflective Cube",
+        "Dithered Waves"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 4,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Motion Archive Casebook"
+      ],
+      "forbidden_text_patterns": [
+        "Curator's Compass",
+        "Curator",
+        "Lens: All studies",
+        "Lens: Case-study picks",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "cream",
+        "amber band"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_work_grid",
+          "mobile_work_grid"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          }
+        }
+      },
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_work_grid"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "min_canvas_screenshot_bytes": 5000,
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_work_grid",
+          "text_contains": "Selected experiments",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_work_grid",
+          "text_contains": "Good Time",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_good_time",
+          "text_contains": "Selected experiments",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_reflective",
+          "text_contains": "Selected experiments",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_good_time",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_good_time",
+          "tag": "p",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_reflective",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_reflective",
+          "tag": "p",
+          "min_count": 3
+        }
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_work_grid",
+        "mobile_work_grid",
+        "desktop_filter_post",
+        "desktop_good_time",
+        "desktop_reflective",
+        "tablet_good_time",
+        "mobile_good_time"
+      ],
+      "console_error_allowlist": [
+        "_vercel",
+        "favicon",
+        "gtag",
+        "gtm",
+        "google-analytics",
+        "analytics",
+        "insights",
+        "typekit",
+        "use.typekit.net",
+        ".mp4"
+      ]
+    }
+  ]
+}

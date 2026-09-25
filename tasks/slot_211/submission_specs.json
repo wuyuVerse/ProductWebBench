@@ -1,0 +1,293 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themewagon__dashmin__78ea7e6b7b00__route_recovery_regression_repair",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_dashboard",
+    "mobile_dashboard",
+    "desktop_widgets",
+    "desktop_forms",
+    "desktop_tables",
+    "desktop_charts",
+    "desktop_pulse_traffic",
+    "desktop_notifications_open",
+    "mobile_dashboard_sidebar",
+    "mobile_forms",
+    "desktop_signin"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_dashboard",
+    "mobile_dashboard",
+    "desktop_widgets",
+    "desktop_forms",
+    "desktop_tables",
+    "desktop_charts",
+    "desktop_pulse_traffic",
+    "desktop_notifications_open",
+    "mobile_dashboard_sidebar",
+    "mobile_forms",
+    "desktop_signin"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_dashboard",
+    "desktop_widgets",
+    "desktop_forms",
+    "desktop_tables",
+    "desktop_charts"
+   ],
+   "reference_text_signals": [
+    "Dashmin operations pulse board",
+    "OPERATIONS PULSE",
+    "Open tickets",
+    "Response SLA",
+    "Active users",
+    "Records synced"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_dashboard"
+   ],
+   "visible_text_signals": [
+    "Dashmin operations pulse board",
+    "Current view: Dashboard / Analytics"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_pulse_traffic",
+    "desktop_notifications_open",
+    "mobile_dashboard_sidebar"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_dashboard",
+    "tablet_initial",
+    "mobile_dashboard_sidebar",
+    "mobile_forms"
+   ],
+   "overflow_tolerance_px": 24,
+   "asset_path_signals": [
+    "css/pulseboard.css",
+    "img/user.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_dashboard"
+   ],
+   "min_asset_path_signals": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_dashboard",
+    "mobile_dashboard",
+    "desktop_widgets",
+    "desktop_forms",
+    "desktop_tables",
+    "desktop_charts",
+    "desktop_pulse_traffic",
+    "desktop_notifications_open",
+    "mobile_dashboard_sidebar",
+    "mobile_forms",
+    "desktop_signin"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "vendor/webfonts/",
+    "vendor/heebo/",
+    ".woff2",
+    ".woff",
+    ".ttf"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_dashboard"
+   ],
+   "completion_text_signals": [
+    "Dashmin operations pulse board",
+    "Open tickets",
+    "Response SLA",
+    "Active users",
+    "Records synced",
+    "Current view: Dashboard / Analytics"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_signin"
+   ],
+   "regression_text_signals": [
+    "DASHMIN",
+    "Dashboard",
+    "Today Sale"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_dashboard"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "visual_regression": {
+    "states": [
+     "desktop_dashboard",
+     "mobile_dashboard"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_dashboard",
+     "tag": "table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "tag": "table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "class_contains": "pulse-board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "text_contains": "Dashmin operations pulse board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_widgets",
+     "class_contains": "pulse-board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_widgets",
+     "text_contains": "Dashmin operations pulse board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_forms",
+     "class_contains": "pulse-board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_forms",
+     "text_contains": "Dashmin operations pulse board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "class_contains": "pulse-board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "text_contains": "Dashmin operations pulse board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "class_contains": "pulse-board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "text_contains": "Dashmin operations pulse board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "text_contains": "Current view: Dashboard / Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_widgets",
+     "text_contains": "Current view: Widgets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_forms",
+     "text_contains": "Current view: Forms",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "text_contains": "Current view: Tables",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "text_contains": "Current view: Charts",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_pulse_traffic",
+     "changed_from": "desktop_dashboard",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pulse-board__readout",
+      "text_contains": "Showing: Traffic metrics",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

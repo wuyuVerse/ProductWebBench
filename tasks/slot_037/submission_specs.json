@@ -1,0 +1,188 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_pavel-mazhuga__portfolio__8bfb23d26e46__lab_technique_finder",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_lab",
+    "tablet_lab",
+    "mobile_lab",
+    "desktop_lab_webgl"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_lab",
+    "desktop_projects"
+   ],
+   "reference_text_signals": [
+    "MAZHUGA",
+    "Explore the lab",
+    "Showing all 33 experiments",
+    "WebGPU",
+    "Particles"
+   ],
+   "visible_text_states": [
+    "desktop_lab",
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Explore the lab",
+    "Showing",
+    "Lab"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_lab_webgl"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_lab_webgl",
+     "changed_from": "desktop_lab",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 22 of 33",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_lab"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/static/img/lab/",
+    "/static/"
+   ],
+   "asset_path_states": [
+    "desktop_lab"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_lab",
+    "tablet_lab",
+    "mobile_lab",
+    "desktop_lab_webgl"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_lab",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_lab",
+     "text_contains": "Explore the lab",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Explore the lab",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Explore the lab",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_lab",
+     "mobile_lab"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_lab",
+    "tablet_lab",
+    "mobile_lab",
+    "desktop_lab_webgl"
+   ],
+   "completion_states": [
+    "desktop_lab",
+    "desktop_lab_webgl"
+   ],
+   "completion_text_signals": [
+    "Explore the lab",
+    "Showing",
+    "WebGL",
+    "WebGPU",
+    "Particles"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "MAZHUGA"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "TODO",
+    "placeholder text",
+    "Coming soon"
+   ],
+   "visual_anchor_states": [
+    "desktop_lab",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 6000
+  }
+ ]
+}

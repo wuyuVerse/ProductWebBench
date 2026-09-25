@@ -1,0 +1,269 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_sahrullahh__windzo__011c81f5fcfa__fulfilment_desk_strip",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_tables",
+        "mobile_tables",
+        "desktop_card",
+        "desktop_board_home",
+        "mobile_board_home",
+        "desktop_board_tables",
+        "desktop_board_card",
+        "tablet_board_home",
+        "filter_completed_home"
+      ],
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_board_home"
+      ],
+      "reference_text_signals": [
+        "Northmarket",
+        "Order fulfilment queue",
+        "Completed",
+        "Showing all 6 orders"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "desktop_board_home"
+      ],
+      "visible_text_signals": [
+        "Northmarket",
+        "Order fulfilment queue"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "filter_completed_home"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_tables",
+        "mobile_board_home",
+        "tablet_board_home"
+      ],
+      "asset_path_signals": [
+        "img/user",
+        "logo"
+      ],
+      "asset_path_states": [
+        "desktop_initial"
+      ],
+      "min_asset_path_signals": 1,
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_tables",
+        "desktop_card"
+      ],
+      "mean_luminance_tolerance": 120,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 80,
+      "min_image_count": 0,
+      "min_screenshot_bytes": 12000,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_tables",
+        "mobile_tables",
+        "desktop_card",
+        "desktop_board_home",
+        "mobile_board_home",
+        "desktop_board_tables",
+        "desktop_board_card",
+        "tablet_board_home",
+        "filter_completed_home"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "header",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_card",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_home",
+          "text_contains": "Order fulfilment queue",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_tables",
+          "text_contains": "Order fulfilment queue",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_card",
+          "text_contains": "Order fulfilment queue",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_tables",
+          "text_contains": "All orders",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_tables",
+          "text_contains": "In progress",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_tables",
+          "text_contains": "Cancelled",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_card",
+          "text_contains": "All orders",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_card",
+          "text_contains": "In progress",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_board_card",
+          "text_contains": "Cancelled",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_board_home",
+          "mobile_board_home"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "filter_completed_home",
+          "changed_from": "desktop_board_home",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 4 of 6 orders",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_tables",
+        "mobile_tables",
+        "desktop_card",
+        "desktop_board_home",
+        "mobile_board_home",
+        "desktop_board_tables",
+        "desktop_board_card",
+        "tablet_board_home",
+        "filter_completed_home"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_tables",
+        "desktop_card",
+        "desktop_board_home"
+      ],
+      "completion_text_signals": [
+        "Northmarket",
+        "Order fulfilment queue",
+        "Completed",
+        "In progress",
+        "Showing all 6 orders"
+      ],
+      "require_all_completion_signals": false,
+      "min_completion_text_signals": 4,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Dashboard",
+        "Total Sales",
+        "Latest Transactions"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "desktop_tables",
+        "desktop_card"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem Ipsum",
+        "lorem ipsum",
+        "Mohammad Sahrullah",
+        "Moh Sahrullah",
+        "Hi, Sahrul",
+        "Windzo Made by",
+        "REPLACE_ME",
+        "{{"
+      ],
+      "source_change_expectations": {
+        "must_touch_one_of": [
+          "src/components/OrderBoard.vue",
+          "src/txn-board-leg.css",
+          "src/board-surfaces.js"
+        ],
+        "should_preserve": [
+          "src/views/Dashboard.vue",
+          "src/views/tables.vue",
+          "src/components/Sidebar.vue",
+          "src/components/Header.vue",
+          "src/App.vue"
+        ]
+      }
+    }
+  ]
+}

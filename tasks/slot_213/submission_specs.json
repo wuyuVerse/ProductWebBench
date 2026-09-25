@@ -1,0 +1,234 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a__bot_handoff_layout",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_commands",
+    "mobile_commands",
+    "tablet_commands",
+    "desktop_commands_explorer",
+    "mobile_nav_open",
+    "desktop_filter_moderation"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_commands",
+    "desktop_home_explorer"
+   ],
+   "reference_text_signals": [
+    "Command catalog",
+    "Command explorer",
+    "Browse the bot",
+    "Show the help menu",
+    "Run the setup wizard"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_commands",
+    "desktop_commands_explorer"
+   ],
+   "visible_text_signals": [
+    "Command catalog",
+    "Command explorer",
+    "Show the help menu",
+    "Show server stats"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_moderation"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_home_explorer",
+    "mobile_commands",
+    "tablet_commands"
+   ],
+   "asset_path_signals": [
+    "img/commands/",
+    "img/img1",
+    "img/feature1"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_commands"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_commands"
+   ],
+   "mean_luminance_tolerance": 0.28,
+   "min_palette_overlap": 0.4,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "dom.html",
+    "metrics.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 3,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_filter_moderation"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "favicon",
+    "insights/script",
+    "gtm",
+    "google-analytics"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "nav-link",
+     "text_contains": "Command catalog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Command explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "cmd-card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_commands",
+     "text_contains": "Show the help menu",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "class_contains": "nav-link",
+     "text_contains": "Command catalog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands_explorer",
+     "class_contains": "command-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_commands_explorer",
+     "text_contains": "Browse the bot",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_explorer",
+     "mobile_home_explorer"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_moderation",
+     "changed_from": "desktop_home_explorer",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 \u00b7 Moderation",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_explorer",
+    "mobile_home_explorer",
+    "desktop_commands",
+    "mobile_commands",
+    "tablet_commands",
+    "desktop_commands_explorer",
+    "mobile_nav_open",
+    "desktop_filter_moderation"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_commands",
+    "desktop_commands_explorer"
+   ],
+   "completion_text_signals": [
+    "Command catalog",
+    "Command explorer",
+    "Show the help menu",
+    "Run the setup wizard",
+    "Invite the bot",
+    "Warn a member",
+    "Open a support ticket",
+    "Show server stats",
+    "Browse the bot"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Why [Your Bot]?",
+    "We are provide the best.",
+    "Feature 1",
+    "We currently services...",
+    "100.000 servers",
+    "Partners",
+    "Socmed"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_commands",
+    "desktop_commands_explorer"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home"
+   ]
+  }
+ ]
+}

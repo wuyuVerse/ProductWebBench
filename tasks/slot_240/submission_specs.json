@@ -1,0 +1,221 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_htmlstreamofficial__awesome-dashboard-ui-kit__16d3835ce5a6__asset_operations_layout",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_asset_layout",
+    "desktop_dispatch_board",
+    "mobile_dispatch_board",
+    "desktop_activity_grid",
+    "desktop_tables",
+    "desktop_profile",
+    "mobile_sidebar_open",
+    "desktop_dispatch_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_activity_grid",
+    "desktop_dispatch_board"
+   ],
+   "reference_text_signals": [
+    "DISPATCH OPERATIONS MAP",
+    "Active dispatch board",
+    "Dispatch Volume",
+    "North Quay coastal grid"
+   ],
+   "visible_text_states": [
+    "desktop_dispatch_board",
+    "desktop_activity_grid"
+   ],
+   "visible_text_signals": [
+    "Active dispatch board",
+    "DISPATCH OPERATIONS MAP",
+    "Preview assets mapped to active dispatch work"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_dispatch_open"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_dispatch_board"
+   ],
+   "asset_path_signals": [
+    "img-temp/800x500",
+    "img-temp/avatars"
+   ],
+   "asset_path_states": [
+    "desktop_activity_grid"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_profile"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 25000,
+   "min_canvas_screenshot_bytes": 25000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_asset_layout",
+    "desktop_dispatch_board",
+    "mobile_dispatch_board",
+    "desktop_activity_grid",
+    "desktop_tables",
+    "desktop_profile",
+    "mobile_sidebar_open",
+    "desktop_dispatch_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "u-sidebar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "text_contains": "Active dispatch board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "class_contains": "dispatch-card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "text_contains": "All active",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "text_contains": "Open",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "text_contains": "En route",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dispatch_board",
+     "text_contains": "Closed",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Crews on shift",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "text_contains": "Crews on shift",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "text_contains": "Crews on shift",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_dispatch_board",
+     "mobile_dispatch_board"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_dispatch_open",
+     "changed_from": "desktop_dispatch_board",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 6 dispatches",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_asset_layout",
+    "desktop_dispatch_board",
+    "mobile_dispatch_board",
+    "desktop_activity_grid",
+    "desktop_tables",
+    "desktop_profile",
+    "mobile_sidebar_open",
+    "desktop_dispatch_open"
+   ],
+   "completion_states": [
+    "desktop_dispatch_board",
+    "desktop_activity_grid"
+   ],
+   "completion_text_signals": [
+    "Active dispatch board",
+    "DISPATCH OPERATIONS MAP",
+    "Preview assets mapped to active dispatch work",
+    "Showing 6 of 6 dispatches",
+    "Crews on shift"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_activity_grid"
+   ],
+   "regression_text_signals": [
+    "Tidepool Ops operations overview",
+    "Dispatch Volume"
+   ],
+   "forbidden_states": [
+    "desktop_dispatch_board",
+    "desktop_initial"
+   ],
+   "forbidden_text_patterns": [
+    "Direct Mail Advertising",
+    "Advertising On A Budget",
+    "Affiliate Marketing Network",
+    "Deciphering Marketing Lingo",
+    "Total Budget",
+    "Total Income",
+    "Awesome Dashboard UI Kit",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

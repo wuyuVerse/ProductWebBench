@@ -1,0 +1,204 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_adminkit__adminkit__8bec770d0a93__report_queue_filter",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_queue",
+    "desktop_queue_resolved",
+    "mobile_queue",
+    "desktop_cards",
+    "desktop_forms",
+    "desktop_blank_regression",
+    "mobile_sidebar_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_queue"
+   ],
+   "reference_text_signals": [
+    "Dashboard",
+    "Report queue",
+    "Showing",
+    "reports"
+   ],
+   "visible_text_states": [
+    "desktop_queue"
+   ],
+   "visible_text_signals": [
+    "Report queue",
+    "Showing 8 of 8 reports"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_queue_resolved"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_queue"
+   ],
+   "asset_path_signals": [
+    "img/avatars"
+   ],
+   "asset_path_states": [
+    "desktop_queue"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_queue"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_queue",
+    "desktop_queue_resolved",
+    "mobile_queue",
+    "desktop_cards",
+    "desktop_forms",
+    "desktop_blank_regression",
+    "mobile_sidebar_open"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "fonts.googleapis",
+    "fonts.gstatic"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "sidebar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_queue",
+     "text_contains": "Report queue",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_queue",
+     "text_contains": "In review",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_queue",
+     "text_contains": "Resolved",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_cards",
+     "text_contains": "Report queue",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_forms",
+     "text_contains": "Report queue",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_queue",
+     "mobile_queue"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_queue_resolved",
+     "changed_from": "desktop_queue",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 8 reports · Resolved",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_queue",
+    "desktop_queue_resolved",
+    "mobile_queue",
+    "desktop_cards",
+    "desktop_forms",
+    "desktop_blank_regression",
+    "mobile_sidebar_open"
+   ],
+   "completion_states": [
+    "desktop_queue",
+    "desktop_cards",
+    "desktop_forms"
+   ],
+   "completion_text_signals": [
+    "Report queue",
+    "Open",
+    "In review",
+    "Resolved",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_blank_regression"
+   ],
+   "regression_text_signals": [
+    "Dashboard",
+    "AdminKit",
+    "Blank"
+   ],
+   "forbidden_states": [
+    "desktop_queue",
+    "mobile_queue"
+   ],
+   "forbidden_text_patterns": [
+    "lorem",
+    "REPLACE_ME",
+    "{{",
+    "TODO"
+   ]
+  }
+ ]
+}

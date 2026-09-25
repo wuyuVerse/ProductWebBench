@@ -1,0 +1,246 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_CloudCannon__sendit-astro-template__35f7fddc5c3f__pricing_plan_billing",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_billing_annual",
+    "mobile_billing_annual",
+    "desktop_billing_monthly_back",
+    "desktop_features_billing",
+    "mobile_features_billing",
+    "desktop_pricing_billing",
+    "mobile_pricing_billing",
+    "desktop_faq_open",
+    "mobile_nav_open"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_pricing_billing"
+   ],
+   "reference_text_signals": [
+    "Sendit",
+    "Beautiful web campaigns",
+    "Billing",
+    "Try This Free"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Billing: Monthly",
+    "Try This Free"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_billing_annual",
+    "desktop_billing_monthly_back",
+    "desktop_faq_open",
+    "mobile_nav_open"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home"
+   ],
+   "asset_path_signals": [
+    "images/hero/hero-image.avif",
+    "images/feature"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_faq_open"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_billing_annual",
+    "mobile_billing_annual",
+    "desktop_billing_monthly_back",
+    "desktop_features_billing",
+    "mobile_features_billing",
+    "desktop_pricing_billing",
+    "mobile_pricing_billing",
+    "desktop_faq_open",
+    "mobile_nav_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "allowfullscreen",
+    "player.vimeo.com"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "billing-plans--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "plan-card",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features_billing",
+     "class_contains": "billing-plans--features",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features_billing",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_features_billing",
+     "class_contains": "billing-plans--features",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_billing",
+     "class_contains": "billing-plans--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_billing",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_pricing_billing",
+     "class_contains": "billing-plans--pricing",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_billing_annual",
+     "mobile_billing_annual"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_billing_annual",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_billing_annual",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "$1990/yr",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_billing_annual",
+    "mobile_billing_annual",
+    "desktop_billing_monthly_back",
+    "desktop_features_billing",
+    "mobile_features_billing",
+    "desktop_pricing_billing",
+    "mobile_pricing_billing",
+    "desktop_faq_open",
+    "mobile_nav_open"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_pricing_billing"
+   ],
+   "completion_text_signals": [
+    "Beautiful web campaigns",
+    "Billing",
+    "Try This Free",
+    "Monthly",
+    "Sendit"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Sendit",
+    "Beautiful web campaigns"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_pricing_billing",
+    "mobile_home",
+    "desktop_faq_open"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "GrayGrids",
+    "yourdomain",
+    "example.com"
+   ]
+  }
+ ]
+}

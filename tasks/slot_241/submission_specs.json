@@ -1,0 +1,228 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-sb-admin-2__f0309881ef82__metric_card_rhythm_lock",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_cadence",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_charts",
+    "desktop_cards_route",
+    "desktop_buttons_route",
+    "mobile_sidebar_toggle"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_cadence",
+    "desktop_charts"
+   ],
+   "reference_text_signals": [
+    "Tidewatch Ops",
+    "Fleet Console",
+    "Fleet cadence",
+    "Monthly"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_cadence"
+   ],
+   "visible_text_signals": [
+    "Tidewatch Ops",
+    "Fleet Console",
+    "Buoys Reporting"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_cadence",
+    "tablet_cadence",
+    "mobile_sidebar_toggle"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "undraw_profile"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_cadence"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_cadence",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_charts",
+    "desktop_cards_route",
+    "desktop_buttons_route",
+    "mobile_sidebar_toggle"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "interaction_states": [
+    "desktop_cadence",
+    "mobile_sidebar_toggle"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_cadence",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 1 of 4 cards",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "mobile_cadence"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Fleet cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "button",
+     "text_contains": "Progress",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "span",
+     "class_contains": "badge-pill",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_cards_route",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cards_route",
+     "text_contains": "Fleet cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "text_contains": "Fleet cadence",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_buttons_route",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_cadence",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_charts",
+    "desktop_cards_route",
+    "desktop_buttons_route",
+    "mobile_sidebar_toggle"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_cadence"
+   ],
+   "completion_text_signals": [
+    "Tidewatch Ops",
+    "Fleet Console",
+    "Buoys Reporting",
+    "Fleet Uptime",
+    "Sensor Calibration",
+    "Maintenance Queue"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_cadence"
+   ],
+   "regression_text_signals": [
+    "Tidewatch Ops",
+    "Fleet Console"
+   ],
+   "forbidden_text_patterns": [
+    "SB Admin",
+    "Earnings (Monthly)",
+    "Earnings (Annual)",
+    "Pending Requests",
+    "Revenue Sources",
+    "Development Approach"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_cadence"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

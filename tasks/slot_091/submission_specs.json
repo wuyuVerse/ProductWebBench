@@ -1,0 +1,211 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_mckaywrigley__ai-code-translator__c7c9b71d6cbc__translator_snippet_library",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_library",
+    "mobile_home_library",
+    "desktop_filter_data",
+    "desktop_library",
+    "mobile_library",
+    "tablet_library",
+    "desktop_library_filter_web",
+    "desktop_guide",
+    "desktop_translate"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_home_library"
+   ],
+   "reference_text_signals": [
+    "Snippet library",
+    "Load a starter snippet",
+    "Showing all 8 snippets"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_home_library"
+   ],
+   "visible_text_signals": [
+    "Snippet library",
+    "Load a starter snippet",
+    "Showing all 8 snippets"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_data"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_home_library"
+   ],
+   "asset_path_signals": [
+    "/favicon.ico",
+    "/_next/"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_library"
+   ],
+   "min_asset_path_signals": 0,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_library"
+   ],
+   "mean_luminance_tolerance": 0.28,
+   "min_palette_overlap": 0.4,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "dom.html",
+    "metrics.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_library",
+    "mobile_home_library",
+    "desktop_filter_data",
+    "desktop_library",
+    "desktop_guide"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "favicon",
+    "insights/script",
+    "gtm",
+    "google-analytics"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "class_contains": "nav-link",
+     "text_contains": "Snippet library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "class_contains": "nav-link",
+     "text_contains": "Snippet library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "class_contains": "nav-link",
+     "text_contains": "Snippet library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "snippet-library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Snippet library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "class_contains": "snippet-library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "class_contains": "snippet-card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_library",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home_library",
+     "text_contains": "Load a starter snippet",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_library",
+     "mobile_home_library"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_data",
+     "changed_from": "desktop_home_library",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 \u00b7 Data",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_library",
+    "mobile_home_library",
+    "desktop_filter_data",
+    "desktop_library",
+    "mobile_library",
+    "tablet_library",
+    "desktop_library_filter_web",
+    "desktop_guide",
+    "desktop_translate"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_home_library"
+   ],
+   "completion_text_signals": [
+    "Snippet library",
+    "Load a starter snippet",
+    "Showing all 8 snippets"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "regression_states": [
+    "desktop_home",
+    "desktop_translate"
+   ],
+   "regression_text_signals": [
+    "AI Code Translator",
+    "Translate"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_home_library"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "lorem ipsum",
+    "TODO"
+   ]
+  }
+ ]
+}

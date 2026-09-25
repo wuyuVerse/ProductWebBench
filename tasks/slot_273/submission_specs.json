@@ -1,0 +1,245 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Ibaliqbal__grid-layout-transition__c0f44dba1bf8__layout_flow_guide",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_flow_guide",
+    "tablet_flow_guide",
+    "mobile_flow_guide",
+    "desktop_route_initial",
+    "desktop_route_guide",
+    "mobile_route_guide",
+    "desktop_dense_scan",
+    "desktop_full_read",
+    "desktop_wide_focus"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_flow_guide",
+    "tablet_flow_guide",
+    "mobile_flow_guide"
+   ],
+   "reference_text_signals": [
+    "Layout Flow Guide",
+    "01 Default 75% grid",
+    "02 Dense 50% scan",
+    "03 Full 100% read",
+    "04 Wide 150% focus",
+    "05 Filter + Stagger route"
+   ],
+   "visible_text_states": [
+    "desktop_flow_guide",
+    "mobile_flow_guide"
+   ],
+   "visible_text_signals": [
+    "Layout Flow Guide",
+    "Default 75% grid",
+    "Filter + Stagger route"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_wide_focus"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "tablet_flow_guide",
+    "mobile_flow_guide",
+    "mobile_route_guide"
+   ],
+   "asset_path_signals": [
+    "public/1.webp",
+    "public/"
+   ],
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_flow_guide"
+   ],
+   "min_asset_path_signals": 0,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_route_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_flow_guide",
+    "tablet_flow_guide",
+    "mobile_flow_guide",
+    "desktop_route_initial",
+    "desktop_route_guide",
+    "mobile_route_guide",
+    "desktop_dense_scan",
+    "desktop_full_read",
+    "desktop_wide_focus"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Layout Flow Guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_flow_guide",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Layout Flow Guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_flow_guide",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Default 75% grid",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_guide",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Default 75% grid",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_guide",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Layout Flow Guide",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_route_guide",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Layout Flow Guide",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_route_initial",
+     "tag": "nav",
+     "class_contains": "flowguide",
+     "text_contains": "Filter + Stagger route",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_flow_guide",
+     "mobile_flow_guide"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_wide_focus",
+     "changed_from": "desktop_flow_guide",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Current view: Wide 150% focus",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_flow_guide",
+    "tablet_flow_guide",
+    "mobile_flow_guide",
+    "desktop_route_initial",
+    "desktop_route_guide",
+    "mobile_route_guide",
+    "desktop_dense_scan",
+    "desktop_full_read",
+    "desktop_wide_focus"
+   ],
+   "completion_states": [
+    "desktop_flow_guide",
+    "desktop_route_guide"
+   ],
+   "completion_text_signals": [
+    "Layout Flow Guide",
+    "Default 75% grid",
+    "Dense 50% scan",
+    "Full 100% read",
+    "Wide 150% focus",
+    "Filter + Stagger route"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_route_initial",
+    "desktop_dense_scan"
+   ],
+   "regression_text_signals": [
+    "Grid",
+    "Layout Transition",
+    "GSAP"
+   ],
+   "forbidden_states": [
+    "desktop_flow_guide",
+    "mobile_flow_guide",
+    "desktop_route_guide"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "REPLACE_ME",
+    "coming soon",
+    "TODO",
+    "{{",
+    "cheatsheet"
+   ]
+  }
+ ]
+}

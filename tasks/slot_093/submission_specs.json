@@ -1,0 +1,247 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-landing-page__247a46a2503c__launch_proof_asset_band",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_yearly",
+    "mobile_pricing_yearly",
+    "desktop_pricing_page",
+    "desktop_contact_page"
+   ],
+   "text_signal_states": [
+    "desktop_pricing_default",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Liftgate",
+    "launch plan",
+    "Billing:",
+    "Growth",
+    "waitlist",
+    "referral"
+   ],
+   "visible_text_states": [
+    "desktop_pricing_default"
+   ],
+   "visible_text_signals": [
+    "Pick the launch plan",
+    "Monthly",
+    "Yearly",
+    "Growth",
+    "Starter"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_pricing_yearly",
+    "mobile_pricing_yearly"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_yearly",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-billing__readout",
+      "text_contains": "Billing: Yearly",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_pricing_yearly",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-billing__price",
+      "text_contains": "$890/yr",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing_yearly",
+     "mobile_pricing_yearly",
+     "desktop_pricing_default"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "mobile_pricing_yearly"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img",
+    "testimonials"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_yearly",
+    "mobile_pricing_yearly",
+    "desktop_pricing_page",
+    "desktop_contact_page"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "class_contains": "plan-billing__title",
+     "text_contains": "launch plan",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "class_contains": "plan-billing__plan-name",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_pricing_default",
+     "class_contains": "plan-billing__readout",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_page",
+     "class_contains": "plan-billing--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_page",
+     "class_contains": "plan-billing__plan-name",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_pricing_page",
+     "class_contains": "plan-billing__readout",
+     "text_contains": "Billing:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact_page",
+     "class_contains": "plan-billing--contact",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact_page",
+     "class_contains": "plan-billing__plan-name",
+     "min_count": 3
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "tablet_pricing_default",
+    "desktop_pricing_yearly",
+    "mobile_pricing_yearly",
+    "desktop_pricing_page",
+    "desktop_contact_page"
+   ],
+   "completion_states": [
+    "desktop_pricing_default"
+   ],
+   "completion_text_signals": [
+    "Pick the launch plan that fits your runway",
+    "Monthly",
+    "Yearly",
+    "Billing: Monthly",
+    "Starter",
+    "Growth",
+    "Scale"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Liftgate",
+    "Referral waitlist",
+    "What founders say",
+    "Features",
+    "Pricing"
+   ],
+   "forbidden_text_patterns": [
+    "Start Bootstrap Theme",
+    "Landing Page - Start Bootstrap",
+    "lorem ipsum",
+    "Your Website 2023"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pricing_default"
+   ]
+  }
+ ]
+}

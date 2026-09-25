@@ -1,0 +1,211 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_SamwitAdhikary__Ecommerce__05583c6dae8e__redstore_cart_state_handoff",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_menu",
+    "mobile_menu",
+    "desktop_about",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_menu_page",
+    "desktop_reservations_page",
+    "mobile_menu_page",
+    "desktop_menu_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_menu"
+   ],
+   "reference_text_signals": [
+    "Copperleaf Kitchen",
+    "Order the",
+    "Braised Short Rib",
+    "Reservations desk"
+   ],
+   "visible_text_states": [
+    "desktop_menu"
+   ],
+   "visible_text_signals": [
+    "Order the",
+    "Reservations desk"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_menu_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_menu",
+    "mobile_menu_page"
+   ],
+   "asset_path_signals": [
+    "images/logo"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_about"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_menu",
+    "mobile_menu",
+    "desktop_about",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_menu_page",
+    "desktop_reservations_page",
+    "mobile_menu_page",
+    "desktop_menu_filter"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_menu",
+     "text_contains": "Order the",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_menu",
+     "class_contains": "menu__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_menu",
+     "class_contains": "menu__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_menu_page",
+     "text_contains": "Reservations desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reservations_page",
+     "text_contains": "Reservations desk",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_menu",
+     "mobile_menu",
+     "desktop_menu_page"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_menu_filter",
+     "changed_from": "desktop_menu",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "menu__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_menu",
+    "mobile_menu",
+    "desktop_about",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_menu_page",
+    "desktop_reservations_page",
+    "mobile_menu_page",
+    "desktop_menu_filter"
+   ],
+   "completion_states": [
+    "desktop_menu",
+    "desktop_menu_page"
+   ],
+   "completion_text_signals": [
+    "Order the",
+    "Braised Short Rib",
+    "Reservations desk",
+    "Showing",
+    "Breakfast"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_about",
+    "desktop_blog",
+    "desktop_contact"
+   ],
+   "regression_text_signals": [
+    "Copperleaf Kitchen",
+    "Copperleaf",
+    "CONTACT"
+   ],
+   "forbidden_states": [
+    "desktop_menu",
+    "mobile_menu"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "Themefisher",
+    "Pancakes n' Such",
+    "rest@gmail.com",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,368 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_PaulleDemon__awesome-landing-pages__e98eb80c593b__template_showcase_hub",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_collections",
+    "mobile_collections",
+    "tablet_collections",
+    "desktop_collections_filter"
+   ],
+   "text_signal_states": [
+    "desktop_collections",
+    "tablet_collections",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Collections",
+    "SaaS",
+    "restaurant",
+    "portfolio",
+    "Best for"
+   ],
+   "visible_text_states": [
+    "desktop_collections"
+   ],
+   "visible_text_signals": [
+    "Collections",
+    "SaaS",
+    "apps"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_collections_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_collections_filter",
+     "changed_from": "desktop_collections",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "cov-readout",
+      "text_contains": "Showing: SaaS collections",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "mobile_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_collections",
+    "tablet_collections"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "screenshots"
+   ],
+   "asset_path_states": [
+    "desktop_collections"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_collections",
+    "mobile_collections",
+    "tablet_collections",
+    "desktop_collections_filter"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_collections",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collections",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_collections",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_collections",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Collections",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "div",
+     "class_contains": "cov-tile",
+     "text_contains": "Templates",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_collections",
+    "mobile_collections",
+    "tablet_collections",
+    "desktop_collections_filter"
+   ],
+   "completion_states": [
+    "desktop_collections",
+    "tablet_collections"
+   ],
+   "completion_text_signals": [
+    "SaaS",
+    "apps",
+    "restaurant",
+    "portfolio",
+    "real estate",
+    "law"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "SaaS",
+    "Collections"
+   ],
+   "forbidden_states": [
+    "desktop_collections",
+    "mobile_collections",
+    "tablet_collections"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_collections"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,231 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_m-i-n-a-r__sparky-portfolio__37305c467657__project_atlas_section",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_project_atlas",
+    "mobile_project_atlas",
+    "desktop_project_cards",
+    "desktop_late_projects",
+    "desktop_funfacts_regression",
+    "desktop_infos_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_lane_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_project_atlas"
+   ],
+   "reference_text_signals": [
+    "MY WORKS",
+    "All lanes",
+    "Design lane",
+    "Portfolio lanes"
+   ],
+   "visible_text_states": [
+    "desktop_project_atlas"
+   ],
+   "visible_text_signals": [
+    "Portfolio lanes",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_lane_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_project_atlas",
+    "mobile_footer_regression"
+   ],
+   "asset_path_signals": [
+    "images/profile.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_project_cards"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_project_atlas",
+    "mobile_project_atlas",
+    "desktop_project_cards",
+    "desktop_late_projects",
+    "desktop_funfacts_regression",
+    "desktop_infos_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_lane_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_project_atlas",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_project_atlas",
+     "text_contains": "MY WORKS",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_project_atlas",
+     "class_contains": "lane-filter-btn",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_project_atlas",
+     "class_contains": "works-card",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_project_atlas",
+     "text_contains": "Portfolio lanes",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_funfacts_regression",
+     "text_contains": "Portfolio lanes",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_regression",
+     "text_contains": "Portfolio lanes",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_project_atlas",
+     "desktop_project_cards",
+     "mobile_project_atlas"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_lane_filter",
+     "changed_from": "desktop_project_atlas",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 5 \u00b7 Design lane",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_project_atlas",
+    "mobile_project_atlas",
+    "desktop_project_cards",
+    "desktop_late_projects",
+    "desktop_funfacts_regression",
+    "desktop_infos_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_lane_filter"
+   ],
+   "completion_states": [
+    "desktop_project_atlas",
+    "desktop_funfacts_regression"
+   ],
+   "completion_text_signals": [
+    "MY WORKS",
+    "All lanes",
+    "Design lane",
+    "Portfolio lanes",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_infos_regression",
+    "desktop_footer_regression"
+   ],
+   "regression_text_signals": [
+    "Developer",
+    "MY WORKS",
+    "Fun facts",
+    "contact me"
+   ],
+   "forbidden_states": [
+    "desktop_project_atlas",
+    "mobile_project_atlas"
+   ],
+   "forbidden_text_patterns": [
+    "zombie",
+    "vampire",
+    "REPLACE_ME",
+    "undefined lane",
+    "{{"
+   ]
+  }
+ ]
+}

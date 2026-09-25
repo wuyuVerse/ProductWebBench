@@ -1,0 +1,179 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_ubaimutl__react-portfolio__470d81e4da37__testimonials",
+   "reference_states": [
+    "desktop_testimonials",
+    "mobile_testimonials"
+   ],
+   "submission_states": [
+    "desktop_testimonials",
+    "mobile_testimonials"
+   ],
+   "interaction_states": [
+    "desktop_testimonials_clients"
+   ],
+   "completion_states": [
+    "desktop_testimonials"
+   ],
+   "completion_text_signals": [
+    "Testimonials",
+    "What people say",
+    "Showing 6 testimonials",
+    "Clients",
+    "Mentors"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "visible_text_states": [
+    "desktop_testimonials"
+   ],
+   "visible_text_signals": [
+    "Testimonials",
+    "What people say",
+    "Showing 6 testimonials"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_testimonials"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_testimonials"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_testimonials"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_testimonials"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_testimonials",
+    "mobile_testimonials"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_testimonials",
+     "tag": "h1",
+     "text_contains": "Testimonials",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "h3",
+     "text_contains": "What people say",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "h3",
+     "text_contains": "Showing 6 testimonials",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "button",
+     "text_contains": "Clients",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "button",
+     "text_contains": "Colleagues",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "button",
+     "text_contains": "Mentors",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "a",
+     "text_contains": "JOHN",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_testimonials",
+     "tag": "p",
+     "text_contains": "Follow Me",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "JOHN",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "p",
+     "text_contains": "Follow Me",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_testimonials"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_testimonials_clients",
+     "require_interaction": true,
+     "changed_from": "desktop_testimonials",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Showing 2 testimonials",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_testimonials"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

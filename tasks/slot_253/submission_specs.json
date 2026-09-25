@@ -1,0 +1,196 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_uakp98__shoe_store__30f34c38ec75__shoe_fit_kit_asset_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_products",
+    "desktop_product_detail",
+    "desktop_fitlab",
+    "mobile_fitlab",
+    "tablet_fitlab",
+    "mobile_menu_open",
+    "desktop_fitlab_fit"
+   ],
+   "text_signal_states": [
+    "desktop_fitlab",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Fit Lab finder",
+    "Showing 6 of 6",
+    "All guides",
+    "Sizing"
+   ],
+   "visible_text_states": [
+    "desktop_fitlab"
+   ],
+   "visible_text_signals": [
+    "Fit Lab finder",
+    "Showing 6 of 6"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_fitlab_fit"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_fitlab",
+    "tablet_fitlab"
+   ],
+   "asset_path_signals": [
+    "images/product",
+    "images/logo"
+   ],
+   "asset_path_states": [
+    "desktop_fitlab"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_fitlab"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_products",
+    "desktop_product_detail",
+    "desktop_fitlab",
+    "mobile_fitlab",
+    "tablet_fitlab",
+    "mobile_menu_open",
+    "desktop_fitlab_fit"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fitlab",
+     "text_contains": "Fit Lab finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fitlab",
+     "tag": "div",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_fitlab",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_fitlab",
+     "text_contains": "Showing 6 of 6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "text_contains": "Fit Lab finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_detail",
+     "text_contains": "Fit Lab finder",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_fitlab",
+     "mobile_fitlab"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_fitlab_fit",
+     "changed_from": "desktop_fitlab",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Fit",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_products",
+    "desktop_product_detail",
+    "desktop_fitlab",
+    "mobile_fitlab",
+    "tablet_fitlab",
+    "mobile_menu_open",
+    "desktop_fitlab_fit"
+   ],
+   "completion_states": [
+    "desktop_fitlab"
+   ],
+   "completion_text_signals": [
+    "Fit Lab finder",
+    "All guides",
+    "Sizing",
+    "Showing 6 of 6"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_home",
+    "desktop_products",
+    "desktop_product_detail"
+   ],
+   "regression_text_signals": [
+    "Stride Range",
+    "Products"
+   ],
+   "forbidden_states": [
+    "desktop_fitlab"
+   ],
+   "forbidden_text_patterns": [
+    "Redstore",
+    "Apurba",
+    "Cheatsheet",
+    "REPLACE_ME",
+    "{{",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

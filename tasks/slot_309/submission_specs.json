@@ -1,0 +1,189 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_rajibchandrakarmaker__nion-admin__4bb302454e06__manifest_focus_status_filter",
+   "reference_states": [
+    "desktop_dashboard",
+    "tablet_dashboard",
+    "desktop_card",
+    "desktop_table",
+    "mobile_table",
+    "table_filter"
+   ],
+   "submission_states": [
+    "desktop_dashboard",
+    "tablet_dashboard",
+    "desktop_card",
+    "desktop_table",
+    "mobile_table",
+    "table_filter"
+   ],
+   "text_signal_states": [
+    "desktop_dashboard",
+    "desktop_table"
+   ],
+   "reference_text_signals": [
+    "Fathom Freight",
+    "Operations Overview",
+    "Freight Manifests",
+    "Manifest focus"
+   ],
+   "visible_text_states": [
+    "desktop_table"
+   ],
+   "visible_text_signals": [
+    "Manifest focus",
+    "Active Manifests"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "table_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "table_filter",
+     "changed_from": "desktop_table",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "manifocus",
+      "text_contains": "Showing 2 of 5 manifests",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_table"
+   ],
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_table",
+     "table_filter",
+     "mobile_table"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_table",
+     "class_contains": "manifocus",
+     "text_contains": "Manifest focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "class_contains": "manifocus",
+     "text_contains": "Manifest focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_card",
+     "class_contains": "manifocus",
+     "text_contains": "Manifest focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_table",
+     "tag": "h4",
+     "text_contains": "Freight Manifests",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_table",
+     "tag": "h6",
+     "text_contains": "Active Manifests",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "tag": "h4",
+     "text_contains": "Operations Overview",
+     "min_count": 1
+    }
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/"
+   ],
+   "asset_path_states": [
+    "desktop_dashboard"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_dashboard",
+    "tablet_dashboard",
+    "desktop_card",
+    "desktop_table",
+    "mobile_table",
+    "table_filter"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "completion_states": [
+    "desktop_table",
+    "desktop_dashboard"
+   ],
+   "completion_text_signals": [
+    "Manifest focus",
+    "Active Manifests",
+    "Freight Manifests",
+    "Operations Overview",
+    "Showing 5 of 5 manifests"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_dashboard",
+    "desktop_table"
+   ],
+   "regression_text_signals": [
+    "Operations",
+    "Dispatch Inbox",
+    "Manifests"
+   ],
+   "forbidden_text_patterns": [
+    "Network Performance",
+    "Do big things with Nion",
+    "Tiger Nixon",
+    "Envato Market",
+    "wonderful serenity"
+   ],
+   "visual_anchor_states": [
+    "desktop_table",
+    "desktop_dashboard"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

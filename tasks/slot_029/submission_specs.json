@@ -1,0 +1,249 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_Alvalens__Alvalens-porto-2-nextJs__20d64efb4b6f__project_case_showroom_repair",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "desktop_projects",
+        "tablet_projects",
+        "mobile_projects",
+        "desktop_projects_filter_web",
+        "desktop_about",
+        "mobile_about",
+        "desktop_project_detail"
+      ],
+      "text_signal_states": [
+        "desktop_projects"
+      ],
+      "reference_text_signals": [
+        "Work radar",
+        "Showing all 15 projects",
+        "Intervyou AI"
+      ],
+      "visible_text_states": [
+        "desktop_projects"
+      ],
+      "visible_text_signals": [
+        "Work radar",
+        "Showing all"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_projects_filter_web"
+      ],
+      "responsive_states": [
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_projects"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "min_screenshot_bytes": 6000,
+      "asset_path_signals": [
+        "image/projects"
+      ],
+      "asset_path_states": [
+        "desktop_projects",
+        "desktop_project_detail"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "desktop_projects",
+        "tablet_projects",
+        "mobile_projects",
+        "desktop_projects_filter_web",
+        "desktop_about",
+        "mobile_about",
+        "desktop_project_detail"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "h1",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "main",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h4",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "img",
+          "min_count": 8
+        },
+        {
+          "state": "desktop_about",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "tag": "h3",
+          "min_count": 10
+        },
+        {
+          "state": "desktop_project_detail",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_project_detail",
+          "tag": "h2",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_projects",
+          "class_contains": "work-radar__tab",
+          "text_contains": "Web Development",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "class_contains": "work-radar__eyebrow",
+          "text_contains": "Work radar",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "class_contains": "work-radar__eyebrow",
+          "text_contains": "Work radar",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "class_contains": "work-radar__tab",
+          "text_contains": "AI & ML",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_about",
+          "class_contains": "work-radar__eyebrow",
+          "text_contains": "Work radar",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_projects",
+          "desktop_projects_filter_web"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_projects_filter_web",
+          "changed_from": "desktop_projects",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "work-radar__readout",
+            "text_contains": "Showing 10 of 15",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "desktop_projects",
+        "tablet_projects",
+        "mobile_projects",
+        "desktop_projects_filter_web",
+        "desktop_about",
+        "mobile_about",
+        "desktop_project_detail"
+      ],
+      "completion_states": [
+        "desktop_projects"
+      ],
+      "completion_text_signals": [
+        "Work radar",
+        "All work",
+        "Web Development",
+        "AI & ML",
+        "Showing all 15 projects"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_projects"
+      ],
+      "regression_text_signals": [
+        "My Projects",
+        "Other Note Worthy Projects"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum"
+      ],
+      "visual_anchor_states": [
+        "desktop_projects",
+        "desktop_about"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

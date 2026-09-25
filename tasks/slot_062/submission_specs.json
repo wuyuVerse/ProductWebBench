@@ -1,0 +1,291 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_aross2010__web-portfolio__bbcaedaf1c9a__portfolio_layout_rhythm_repair",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_skills",
+        "desktop_projects",
+        "desktop_projects_lower",
+        "desktop_experience",
+        "desktop_contact",
+        "mobile_projects",
+        "mobile_projects_lower",
+        "mobile_contact",
+        "desktop_filter_web",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits",
+        "mobile_resume"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_link_count": 3,
+      "min_screenshot_bytes": 6000,
+      "overflow_tolerance_px": 24,
+      "text_signal_states": [
+        "desktop_projects",
+        "desktop_filter_web",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits",
+        "mobile_projects"
+      ],
+      "reference_text_signals": [
+        "Alex Ross",
+        "All",
+        "Connect",
+        "Duel",
+        "Experience",
+        "Featured work",
+        "Heat Check",
+        "Mobile",
+        "Projects",
+        "Pursuits",
+        "Resume",
+        "Showing",
+        "Skills",
+        "Spotter",
+        "Systems",
+        "Web",
+        "projects"
+      ],
+      "visible_text_states": [
+        "desktop_projects",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits"
+      ],
+      "visible_text_signals": [
+        "Featured work",
+        "Showing",
+        "Web",
+        "Resume",
+        "Pursuits"
+      ],
+      "require_all_visible_text_signals": false,
+      "min_visible_text_signals": 4,
+      "interaction_states": [
+        "desktop_filter_web"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_filter_web",
+          "changed_from": "desktop_projects",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "proj-browser__readout",
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_projects",
+        "mobile_projects_lower",
+        "mobile_contact",
+        "tablet_initial"
+      ],
+      "asset_signal_states": [
+        "desktop_projects_lower",
+        "desktop_skills"
+      ],
+      "asset_path_signals": [
+        "spotter",
+        "cinefind",
+        "typescript",
+        "react",
+        "next"
+      ],
+      "min_asset_path_signals": 3,
+      "visual_regression": {
+        "states": [
+          "desktop_projects",
+          "mobile_projects",
+          "desktop_filter_web"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "dom_assertions": [
+        {
+          "state": "desktop_home_browser",
+          "class_contains": "proj-browser__tab",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_resume",
+          "class_contains": "proj-browser__tab",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_pursuits",
+          "class_contains": "proj-browser__tab",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_resume",
+          "text_contains": "Featured work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_pursuits",
+          "text_contains": "Featured work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Featured work",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_resume",
+          "text_contains": "Resume",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_pursuits",
+          "text_contains": "Pursuits",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_skills",
+        "desktop_projects",
+        "desktop_projects_lower",
+        "desktop_experience",
+        "desktop_contact",
+        "mobile_projects",
+        "mobile_projects_lower",
+        "mobile_contact",
+        "desktop_filter_web",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits",
+        "mobile_resume"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_skills"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_skills",
+        "desktop_projects",
+        "desktop_projects_lower",
+        "desktop_experience",
+        "desktop_contact",
+        "mobile_projects",
+        "mobile_projects_lower",
+        "mobile_contact",
+        "desktop_filter_web",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits",
+        "mobile_resume"
+      ],
+      "completion_states": [
+        "desktop_projects",
+        "desktop_filter_web",
+        "desktop_home_browser",
+        "desktop_resume",
+        "desktop_pursuits",
+        "mobile_projects"
+      ],
+      "completion_text_signals": [
+        "Featured work",
+        "Showing",
+        "projects",
+        "All",
+        "Mobile",
+        "Web",
+        "Systems",
+        "Spotter",
+        "Heat Check",
+        "Duel",
+        "Resume",
+        "Pursuits"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 12,
+      "regression_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_skills",
+        "desktop_projects",
+        "desktop_experience",
+        "desktop_contact",
+        "desktop_resume",
+        "desktop_pursuits"
+      ],
+      "regression_text_signals": [
+        "Alex Ross",
+        "Projects",
+        "Skills",
+        "Experience",
+        "Connect",
+        "Featured work",
+        "Resume",
+        "Pursuits"
+      ],
+      "forbidden_text_patterns": [
+        "TODO filter",
+        "placeholder project",
+        "lorem ipsum",
+        "coming soon",
+        "fake stat",
+        "dummy project browser",
+        "remote projects service"
+      ]
+    }
+  ]
+}

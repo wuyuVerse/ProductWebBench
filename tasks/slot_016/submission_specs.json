@@ -1,0 +1,259 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_adminmart__MatDash-Nextjs-free__1e16965b0377__product_priority_board",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_board",
+    "mobile_board",
+    "desktop_pulse",
+    "mobile_pulse",
+    "desktop_table_rail",
+    "desktop_profile_rail",
+    "desktop_window_24h",
+    "desktop_revenue",
+    "desktop_activity",
+    "mobile_activity"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_board",
+    "mobile_board",
+    "desktop_pulse",
+    "mobile_pulse",
+    "desktop_table_rail",
+    "desktop_profile_rail",
+    "desktop_window_24h",
+    "desktop_revenue",
+    "desktop_activity",
+    "mobile_activity"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_pulse",
+    "desktop_table_rail"
+   ],
+   "reference_text_signals": [
+    "Product priority board",
+    "Cindershift",
+    "Operations pulse",
+    "Active incidents"
+   ],
+   "visible_text_states": [
+    "desktop_pulse"
+   ],
+   "visible_text_signals": [
+    "Operations pulse",
+    "Active incidents"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_window_24h"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_board",
+    "mobile_activity",
+    "tablet_home"
+   ],
+   "overflow_tolerance_px": 24,
+   "asset_path_signals": [
+    "/images/"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_revenue"
+   ],
+   "min_asset_path_signals": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_board",
+    "mobile_board",
+    "desktop_pulse",
+    "mobile_pulse",
+    "desktop_table_rail",
+    "desktop_profile_rail",
+    "desktop_window_24h",
+    "desktop_revenue",
+    "desktop_activity",
+    "mobile_activity"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_board"
+   ],
+   "completion_text_signals": [
+    "Product priority board",
+    "Open priorities",
+    "Shipping this week",
+    "Blocked items",
+    "Avg cycle time"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Revenue Forecast",
+    "Daily activities"
+   ],
+   "forbidden_text_patterns": [
+    "MatDash",
+    "adminmart",
+    "Check Pro Version",
+    "Get Pro",
+    "Live Preview",
+    "Checkout Pro Version",
+    "Nextjs Version",
+    "matdash-next-js",
+    "Hire Us"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pulse"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 1000,
+   "visual_regression": {
+    "states": [
+     "desktop_pulse",
+     "mobile_pulse"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h5",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h5",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_revenue",
+     "tag": "h5",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_activity",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_pulse",
+     "class_contains": "ops-pulse-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pulse",
+     "text_contains": "Operations pulse",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_table_rail",
+     "class_contains": "ops-pulse-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_table_rail",
+     "text_contains": "Operations pulse",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile_rail",
+     "class_contains": "ops-pulse-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile_rail",
+     "text_contains": "Operations pulse",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_table_rail",
+     "text_contains": "Revenue & inventory table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile_rail",
+     "text_contains": "Responder profile",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_window_24h",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Window: 24h rollup",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

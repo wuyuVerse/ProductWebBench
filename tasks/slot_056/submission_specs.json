@@ -1,0 +1,259 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_idangerous__website-templates__ed969d29b844__city_content_kit_component",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_journal",
+    "mobile_journal",
+    "tablet_journal",
+    "desktop_home_board",
+    "mobile_home_board",
+    "desktop_trailfilter"
+   ],
+   "text_signal_states": [
+    "desktop_journal",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Wander",
+    "Trail Journal",
+    "Larch Basin Loop at first light",
+    "Copper Ridge in a shoulder-season squall",
+    "offline map",
+    "logged by"
+   ],
+   "visible_text_states": [
+    "desktop_journal"
+   ],
+   "visible_text_signals": [
+    "Trail Journal",
+    "First-person write-ups",
+    "Real routes",
+    "Wander community"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_trailfilter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_trailfilter",
+     "changed_from": "desktop_home_board",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Near me",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_journal",
+    "mobile_home_board"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "i/star.png",
+    "star.png"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "dom_assertions": [
+    {
+     "state": "desktop_journal",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_journal",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Trail Journal",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_journal",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Trail Journal",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Trail Journal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_board",
+     "class_contains": "conditions-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "class_contains": "conditions-rail",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_journal",
+     "class_contains": "conditions-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_board",
+     "text_contains": "Live trail signals",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "text_contains": "Live trail signals",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_board",
+     "mobile_home_board"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_journal",
+    "mobile_journal",
+    "tablet_journal",
+    "desktop_home_board",
+    "mobile_home_board",
+    "desktop_trailfilter"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_journal",
+    "mobile_journal",
+    "tablet_journal",
+    "desktop_home_board",
+    "mobile_home_board",
+    "desktop_trailfilter"
+   ],
+   "completion_states": [
+    "desktop_journal"
+   ],
+   "completion_text_signals": [
+    "Larch Basin Loop at first light",
+    "Copper Ridge in a shoulder-season squall",
+    "Two easy river loops near town",
+    "Summit of Halden Fell before the heat",
+    "A quiet coastal traverse at low tide",
+    "Night walk to the old fire lookout"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Wander",
+    "trail",
+    "Features"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_journal",
+    "mobile_journal",
+    "tablet_journal",
+    "desktop_home_board",
+    "mobile_home_board",
+    "desktop_trailfilter"
+   ],
+   "forbidden_text_patterns": [
+    "Trail Journal Cheatsheet",
+    "Cheatsheet",
+    "Lorem ipsum",
+    "{{"
+   ],
+   "visual_anchor_states": [
+    "desktop_journal",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

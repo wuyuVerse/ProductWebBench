@@ -1,0 +1,263 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_developer-portal__website__2d25a8e2df36__fedora_docs_asset_layout",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_tech",
+    "mobile_tech",
+    "desktop_start",
+    "desktop_home_gettools"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_tech"
+   ],
+   "reference_text_signals": [
+    "On this page",
+    "Fedora Developer Portal",
+    "Languages & databases"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "The developer workstation you've been waiting for.",
+    "On this page"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_home_gettools"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_gettools",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "docs-onpage__readout",
+      "text_contains": "Reading: Get tools",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_tech"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "static/img"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_start"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_tech",
+    "mobile_tech",
+    "desktop_start",
+    "desktop_home_gettools"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "p",
+     "class_contains": "docs-onpage__eyebrow",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "p",
+     "class_contains": "docs-onpage__readout",
+     "text_contains": "Reading:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "min_count": 10
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "p",
+     "class_contains": "docs-onpage__eyebrow",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tech",
+     "tag": "p",
+     "class_contains": "docs-onpage__eyebrow",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tech",
+     "tag": "p",
+     "class_contains": "docs-onpage__readout",
+     "text_contains": "Reading:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tech",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tech",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_tech",
+     "tag": "p",
+     "class_contains": "docs-onpage__eyebrow",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_tech",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "tag": "p",
+     "class_contains": "docs-onpage__eyebrow",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "tag": "p",
+     "class_contains": "docs-onpage__readout",
+     "text_contains": "Reading:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "mobile_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_tech",
+    "mobile_tech",
+    "desktop_start",
+    "desktop_home_gettools"
+   ],
+   "completion_states": [
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "On this page",
+    "Reading:",
+    "Overview",
+    "Start a project",
+    "Deploy and distribute"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Start a project",
+    "Get tools"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "PLACEHOLDER",
+    "placeholder text",
+    "Coming soon"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_tech"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

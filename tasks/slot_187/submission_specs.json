@@ -1,0 +1,261 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_JustGoodUI__dante-astro-theme__54d86d9613af__editorial_cover_asset_rhythm",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_blog_optics",
+    "desktop_tags",
+    "desktop_projects",
+    "desktop_tag_web",
+    "desktop_post_top",
+    "desktop_about",
+    "desktop_projects_top"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_blog"
+   ],
+   "reference_text_signals": [
+    "Ledger & Lantern",
+    "The Reading Room",
+    "Optics",
+    "Showing all 14 entries"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_blog"
+   ],
+   "visible_text_signals": [
+    "Ledger & Lantern",
+    "The Reading Room"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_blog_optics"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_blog"
+   ],
+   "asset_path_signals": [
+    "_astro",
+    "blog/post-1",
+    "tags/web"
+   ],
+   "asset_path_states": [
+    "desktop_post_top",
+    "desktop_tag_web",
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_about",
+    "desktop_post_top"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_blog_optics",
+    "desktop_tags",
+    "desktop_projects",
+    "desktop_tag_web",
+    "desktop_post_top",
+    "desktop_about",
+    "desktop_projects_top"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post_top",
+     "tag": "article",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post_top",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "The Reading Room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "The Reading Room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "img",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_tags",
+     "text_contains": "The Reading Room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "The Reading Room",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tags",
+     "text_contains": "Optics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Optics",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_blog",
+     "mobile_blog"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_blog_optics",
+     "changed_from": "desktop_blog",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 5 of 14 \u00b7 Optics",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_blog_optics",
+    "desktop_tags",
+    "desktop_projects",
+    "desktop_tag_web",
+    "desktop_post_top",
+    "desktop_about",
+    "desktop_projects_top"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_blog",
+    "desktop_about",
+    "desktop_post_top"
+   ],
+   "completion_text_signals": [
+    "Ledger & Lantern",
+    "The Reading Room",
+    "Optics",
+    "Marisol Vance",
+    "Showing all 14 entries"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Ledger & Lantern",
+    "Marisol Vance"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_post_top",
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "Dante is a",
+    "lorem ipsum",
+    "Lorem ipsum",
+    "JustGoodUI",
+    "REPLACE_ME",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/ReadingRoom.astro",
+     "src/pages/blog/[...page].astro",
+     "public/reading-room.js"
+    ],
+    "should_preserve": [
+     "src/pages/index.astro",
+     "src/layouts/BaseLayout.astro",
+     "src/data/site-config.ts",
+     "src/components/Footer.astro"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,115 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_stackrole__gatsby-starter-foundation__0e6c2086f333__projects",
+   "reference_states": [
+    "desktop_projects",
+    "mobile_projects"
+   ],
+   "submission_states": [
+    "desktop_projects",
+    "mobile_projects"
+   ],
+   "interaction_states": [
+    "desktop_projects_design"
+   ],
+   "completion_states": [
+    "desktop_projects"
+   ],
+   "completion_text_signals": [
+    "Projects",
+    "Showing",
+    "Design"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_projects"
+   ],
+   "visible_text_signals": [
+    "Projects",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_projects"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_projects"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_projects"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_projects"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_projects",
+    "mobile_projects"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "google-analytics"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_projects", "tag": "h1", "text_contains": "Projects", "min_count": 1},
+    {"state": "desktop_projects", "tag": "button", "text_contains": "All", "min_count": 1},
+    {"state": "desktop_projects", "tag": "button", "text_contains": "Web", "min_count": 1},
+    {"state": "desktop_projects", "tag": "button", "text_contains": "Design", "min_count": 1},
+    {"state": "desktop_projects", "tag": "h3", "min_count": 6},
+    {"state": "desktop_projects", "tag": "p", "text_contains": "selection of recent", "min_count": 1},
+    {"state": "desktop_projects", "tag": "p", "text_contains": "Showing", "min_count": 1},
+    {"state": "desktop_projects", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_projects", "tag": "a", "text_contains": "Contact", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_projects_design",
+     "require_interaction": true,
+     "changed_from": "desktop_projects",
+     "dom": {"tag": "p", "text_contains": "Design projects", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

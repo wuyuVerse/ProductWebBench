@@ -1,0 +1,190 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_epicmaxco__vuestic-admin__9c5b44f3674d__project_focus_filter",
+   "repo_id": "epicmaxco__vuestic-admin__9c5b44f3674d",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_dashboard",
+    "desktop_users",
+    "projects_filter_completed",
+    "projects_filter_important",
+    "mobile_dashboard",
+    "desktop_projects_scrolled"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_dashboard",
+    "desktop_users",
+    "projects_filter_completed",
+    "projects_filter_important",
+    "mobile_dashboard",
+    "desktop_projects_scrolled"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_projects",
+    "mobile_dashboard"
+   ],
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "desktop_projects_scrolled"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Dashboard",
+    "Users",
+    "Projects"
+   ],
+   "interaction_states": [
+    "projects_filter_completed",
+    "projects_filter_important"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "projects_filter_completed",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pfocus__readout",
+      "text_contains": "Showing 5 of 20",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "projects_filter_important",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pfocus__readout",
+      "text_contains": "Showing 5 of 20",
+      "min_count": 1
+     }
+    }
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "pfocus__bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "pfocus__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "class_contains": "pfocus__bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "class_contains": "pfocus__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "class_contains": "pfocus__chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_projects",
+     "class_contains": "pfocus__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_dashboard",
+     "class_contains": "pfocus__bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_dashboard",
+     "class_contains": "pfocus__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_users",
+     "class_contains": "pfocus__bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_users",
+     "class_contains": "pfocus__title",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_dashboard",
+     "class_contains": "pfocus__bar",
+     "min_count": 1
+    }
+   ],
+   "completion_text_signals": [
+    "Project focus",
+    "All projects",
+    "In progress",
+    "Completed",
+    "Important",
+    "Archived",
+    "Planning"
+   ],
+   "min_completion_text_signals": 6,
+   "require_all_completion_signals": false,
+   "visible_text_signals": [
+    "Project focus",
+    "Showing"
+   ],
+   "visual_anchor_states": [
+    "desktop_projects",
+    "desktop_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "dom.html",
+    "metrics.json",
+    "boxes.json",
+    "crops.json",
+    "console.json",
+    "network.json",
+    "actions.json",
+    "quality.json"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_allowlist": [],
+   "asset_path_signals": [
+    "/fonts/",
+    "/assets/"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "TODO",
+    "FIXME"
+   ]
+  }
+ ]
+}

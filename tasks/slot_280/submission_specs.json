@@ -1,0 +1,317 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_lucaspulliese__next-ecommerce__c65309c9d6ee__capsule_asset_route_restyle",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_products_grid",
+        "desktop_product_detail",
+        "desktop_fit_relaxed",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "desktop_login_regression",
+        "tablet_products_catalog",
+        "mobile_capsule_home",
+        "mobile_products_catalog",
+        "mobile_menu_open"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 240,
+      "min_link_count": 3,
+      "min_screenshot_bytes": 25000,
+      "overflow_tolerance_px": 24,
+      "text_signal_states": [
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_product_detail",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "tablet_products_catalog",
+        "mobile_capsule_home"
+      ],
+      "reference_text_signals": [
+        "$89.99",
+        "Add to cart",
+        "Browse the same local product assets from collection to checkout.",
+        "Cart handoff keeps the selected product asset visible.",
+        "Catalog restyled around the original product assets.",
+        "Color and size required",
+        "Delivery",
+        "Delivery method",
+        "Description",
+        "E-Shop",
+        "Fit check for product #1",
+        "Log in",
+        "Men's Tops",
+        "New arrivals are now in!",
+        "One asset-led path from discovery to checkout.",
+        "Original image asset",
+        "Payment",
+        "Payment method",
+        "Payment route reuses the store's own delivery and card assets.",
+        "Product ID:",
+        "Products",
+        "Reviews",
+        "Sale",
+        "Sale of the summer collection",
+        "Sale price $89.99",
+        "Shipping and Payment",
+        "Shipping information",
+        "Shopping Cart",
+        "Show products:",
+        "Sort by:",
+        "Start the capsule route",
+        "Summer Capsule Route",
+        "T-Shirt Summer Vibes",
+        "Wallet",
+        "Why should you choose us?"
+      ],
+      "visible_text_states": [
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_product_detail",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "tablet_products_catalog",
+        "mobile_capsule_home"
+      ],
+      "visible_text_signals": [
+        "Summer Capsule Route",
+        "One asset-led path",
+        "Catalog restyled",
+        "Fit check for product #1",
+        "Cart handoff",
+        "Payment route",
+        "Original image asset"
+      ],
+      "require_all_visible_text_signals": false,
+      "min_visible_text_signals": 6,
+      "interaction_states": [
+        "desktop_fit_relaxed",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "mobile_menu_open"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_fit_relaxed",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Fit check for product #1",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_capsule_home",
+        "mobile_products_catalog",
+        "tablet_products_catalog",
+        "mobile_menu_open"
+      ],
+      "asset_signal_states": [
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_products_grid",
+        "desktop_product_detail",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff"
+      ],
+      "asset_path_signals": [
+        "images/featured-1.jpg",
+        "images/products/product-1.jpg",
+        "images/products/product-2.jpg",
+        "images/products/product-3.jpg",
+        "images/subscribe.jpg",
+        "images/logos/visa.png",
+        "images/logos/paypal.png",
+        "images/logos/dhl.svg"
+      ],
+      "min_asset_path_signals": 7,
+      "visual_regression": {
+        "states": [
+          "desktop_capsule_home",
+          "mobile_capsule_home",
+          "desktop_product_detail"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          }
+        }
+      },
+      "dom_assertions": [
+        {
+          "state": "desktop_capsule_home",
+          "text_contains": "One asset-led path from discovery to checkout.",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products_catalog",
+          "text_contains": "Catalog restyled around the original product assets.",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_product_detail",
+          "text_contains": "Fit check for product #1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_cart_handoff",
+          "text_contains": "Cart handoff keeps the selected product asset visible.",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_checkout_handoff",
+          "text_contains": "Payment route reuses the store's own delivery and card assets.",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "header",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_product_detail",
+          "text_contains": "Add to cart",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_products_grid",
+        "desktop_product_detail",
+        "desktop_fit_relaxed",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "desktop_login_regression",
+        "tablet_products_catalog",
+        "mobile_capsule_home",
+        "mobile_products_catalog",
+        "mobile_menu_open"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_login_regression"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_products_grid",
+        "desktop_product_detail",
+        "desktop_fit_relaxed",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "desktop_login_regression",
+        "tablet_products_catalog",
+        "mobile_capsule_home",
+        "mobile_products_catalog",
+        "mobile_menu_open"
+      ],
+      "completion_states": [
+        "desktop_capsule_home",
+        "desktop_products_catalog",
+        "desktop_product_detail",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "tablet_products_catalog",
+        "mobile_capsule_home"
+      ],
+      "completion_text_signals": [
+        "Summer Capsule Route",
+        "One asset-led path from discovery to checkout.",
+        "Start the capsule route",
+        "Catalog restyled around the original product assets.",
+        "Fit check for product #1",
+        "Cart handoff keeps the selected product asset visible.",
+        "Payment route reuses the store's own delivery and card assets.",
+        "Browse the same local product assets from collection to checkout.",
+        "Original image asset",
+        "Sale price $89.99",
+        "Color and size required",
+        "Payment",
+        "Wallet",
+        "Delivery"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 14,
+      "regression_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_products_catalog",
+        "desktop_products_grid",
+        "desktop_product_detail",
+        "desktop_cart_handoff",
+        "desktop_checkout_handoff",
+        "desktop_login_regression",
+        "mobile_menu_open"
+      ],
+      "regression_text_signals": [
+        "E-Shop",
+        "Products",
+        "Sale of the summer collection",
+        "New arrivals are now in!",
+        "Why should you choose us?",
+        "Men's Tops",
+        "Show products:",
+        "Sort by:",
+        "T-Shirt Summer Vibes",
+        "Product ID:",
+        "Sale",
+        "$89.99",
+        "Add to cart",
+        "Description",
+        "Reviews",
+        "Shopping Cart",
+        "Shipping and Payment",
+        "Shipping information",
+        "Payment method",
+        "Delivery method",
+        "Log in"
+      ],
+      "forbidden_text_patterns": [
+        "TODO capsule route",
+        "placeholder capsule",
+        "fake product screenshot",
+        "external stock image",
+        "dummy checkout asset",
+        "remote product service",
+        "coming soon capsule",
+        "lorem capsule flow"
+      ]
+    }
+  ]
+}

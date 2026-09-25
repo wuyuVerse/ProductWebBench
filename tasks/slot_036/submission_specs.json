@@ -1,0 +1,202 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_mirsazzathossain__mirsazzathossain.me__444ad85fc691__research_evidence_cards",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "mobile_menu_open",
+        "desktop_projects",
+        "desktop_pubs",
+        "tablet_pubs",
+        "mobile_pubs",
+        "desktop_pubs_radio"
+      ],
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_pubs",
+        "desktop_projects"
+      ],
+      "reference_text_signals": [
+        "Mir Sazzat Hossain",
+        "Research evidence",
+        "Radio Astro-ML",
+        "Publications",
+        "Selected Publications"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "desktop_pubs"
+      ],
+      "visible_text_signals": [
+        "Research evidence",
+        "Radio Astro-ML",
+        "Vision-Language"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_pubs_radio"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_pubs_radio",
+          "changed_from": "desktop_pubs",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 5 of 20",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_pubs"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "/images/",
+        "/files/"
+      ],
+      "asset_path_states": [
+        "desktop_initial",
+        "desktop_projects"
+      ],
+      "min_asset_path_signals": 1,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "mobile_menu_open",
+        "desktop_projects",
+        "desktop_pubs",
+        "tablet_pubs",
+        "mobile_pubs",
+        "desktop_pubs_radio"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "speed-insights"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Research evidence",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Research evidence",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_pubs",
+          "text_contains": "Research evidence",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_pubs",
+          "min_count": 6,
+          "tag": "h3"
+        },
+        {
+          "state": "desktop_pubs",
+          "text_contains": "R-MMA",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_pubs",
+          "mobile_pubs"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "mobile_menu_open",
+        "desktop_projects",
+        "desktop_pubs",
+        "tablet_pubs",
+        "mobile_pubs",
+        "desktop_pubs_radio"
+      ],
+      "completion_states": [
+        "desktop_pubs",
+        "desktop_pubs_radio"
+      ],
+      "completion_text_signals": [
+        "Research evidence",
+        "Radio Astro-ML",
+        "Vision-Language",
+        "Domain Adaptation",
+        "R-MMA"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Mir Sazzat Hossain"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "TODO",
+        "placeholder text",
+        "Coming soon"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_pubs"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

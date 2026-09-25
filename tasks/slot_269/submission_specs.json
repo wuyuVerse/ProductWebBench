@@ -1,0 +1,216 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_technext__massively__9b38cbb6635f__field_journal_topic_filter",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_stories",
+    "mobile_stories",
+    "desktop_generic",
+    "desktop_elements",
+    "mobile_generic",
+    "desktop_topic_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_stories"
+   ],
+   "reference_text_signals": [
+    "Fieldnote",
+    "Field journal",
+    "Field Notes",
+    "Systems",
+    "Practice"
+   ],
+   "visible_text_states": [
+    "desktop_stories"
+   ],
+   "visible_text_signals": [
+    "Field journal",
+    "Systems",
+    "Practice"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_topic_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_stories",
+    "mobile_generic"
+   ],
+   "asset_path_signals": [
+    "images/pic"
+   ],
+   "asset_path_states": [
+    "desktop_stories"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_stories"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_stories",
+    "mobile_stories",
+    "desktop_generic",
+    "desktop_elements",
+    "mobile_generic",
+    "desktop_topic_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_stories",
+     "class_contains": "storyfilter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_stories",
+     "class_contains": "storyfilter__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_stories",
+     "tag": "article",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_generic",
+     "class_contains": "storyfilter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_elements",
+     "class_contains": "storyfilter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_generic",
+     "text_contains": "FIELD JOURNAL",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_elements",
+     "text_contains": "FIELD JOURNAL",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_stories",
+     "mobile_stories"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_topic_filter",
+     "changed_from": "desktop_stories",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "storyfilter__readout",
+      "text_contains": "SHOWING 2 OF 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_stories",
+    "mobile_stories",
+    "desktop_generic",
+    "desktop_elements",
+    "mobile_generic",
+    "desktop_topic_filter"
+   ],
+   "completion_states": [
+    "desktop_stories",
+    "desktop_topic_filter"
+   ],
+   "completion_text_signals": [
+    "Field journal",
+    "Field Notes",
+    "Systems",
+    "Practice",
+    "Showing",
+    "All topics"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_generic"
+   ],
+   "regression_text_signals": [
+    "Fieldnote"
+   ],
+   "forbidden_states": [
+    "desktop_stories",
+    "mobile_stories"
+   ],
+   "forbidden_text_patterns": [
+    "Massively",
+    "Untitled",
+    "massive headline",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

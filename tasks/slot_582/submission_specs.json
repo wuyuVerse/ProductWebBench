@@ -1,0 +1,203 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_ivandi1980__ivandjoh-admin-panel__37a505740389__assignments",
+   "reference_states": [
+    "desktop_assignments",
+    "mobile_assignments",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_assignments",
+    "mobile_assignments"
+   ],
+   "interaction_states": [
+    "desktop_assignments_assigned",
+    "desktop_assignments_sorted_persist"
+   ],
+   "completion_states": [
+    "desktop_assignments"
+   ],
+   "completion_text_signals": [
+    "Task Assignments",
+    "Save board",
+    "Task queue"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_assignments"
+   ],
+   "visible_text_signals": [
+    "Task Assignments"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_assignments",
+    "desktop_home"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_assignments"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_assignments"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_assignments",
+    "mobile_assignments",
+    "desktop_home"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "iriset",
+    "iriset.in",
+    "profile.png"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_assignments",
+     "tag": "h1",
+     "text_contains": "Task Assignments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "button",
+     "text_contains": "Save board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "p",
+     "text_contains": "Assign an owner to each task",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "h2",
+     "text_contains": "0 assigned / 5 total",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "h3",
+     "text_contains": "Task queue",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "button",
+     "text_contains": "Sort by priority",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "text_contains": "Q3 delivery schedule",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "p",
+     "text_contains": "Unassigned",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "a",
+     "text_contains": "Dashboard",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "a",
+     "text_contains": "Users",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_assignments",
+     "tag": "a",
+     "text_contains": "Assignments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Dashboard",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Users",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_assignments"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_assignments_assigned",
+     "require_interaction": true,
+     "changed_from": "desktop_assignments",
+     "dom": {
+      "tag": "h2",
+      "text_contains": "1 assigned / 5 total",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_assignments_sorted_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_assignments",
+     "dom": {
+      "tag": "p",
+      "text_contains": "Ada",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_assignments"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

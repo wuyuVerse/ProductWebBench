@@ -1,0 +1,265 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_timlrx__tailwind-nextjs-starter-blog__b45bef66b40c__cross_page_reading_trail",
+   "reference_states": [
+    "desktop_blog",
+    "mobile_blog",
+    "tablet_blog",
+    "desktop_blog_guides",
+    "desktop_blog_releases",
+    "mobile_blog_component",
+    "desktop_tag",
+    "desktop_post",
+    "desktop_about"
+   ],
+   "text_signal_states": [
+    "desktop_blog",
+    "desktop_blog_guides"
+   ],
+   "reference_text_signals": [
+    "Browse the collection",
+    "Showing all 10 posts",
+    "KEEP READING"
+   ],
+   "visible_text_states": [
+    "desktop_blog"
+   ],
+   "visible_text_signals": [
+    "Browse the collection",
+    "Showing all 10 posts"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_blog_guides",
+    "desktop_blog_releases"
+   ],
+   "responsive_states": [
+    "desktop_blog",
+    "mobile_blog",
+    "tablet_blog",
+    "desktop_blog_guides",
+    "desktop_blog_releases",
+    "mobile_blog_component",
+    "desktop_tag",
+    "desktop_post",
+    "desktop_about"
+   ],
+   "asset_path_signals": [
+    "blog",
+    "tags"
+   ],
+   "asset_path_states": [
+    "desktop_blog",
+    "desktop_tag",
+    "desktop_post"
+   ],
+   "asset_signal_states": [
+    "desktop_blog",
+    "desktop_tag",
+    "desktop_post"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_blog",
+    "desktop_tag"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_link_count": 5,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_blog",
+    "mobile_blog",
+    "tablet_blog",
+    "desktop_blog_guides",
+    "desktop_blog_releases",
+    "mobile_blog_component",
+    "desktop_tag",
+    "desktop_post",
+    "desktop_about"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_tag",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tag",
+     "text_contains": "KEEP READING",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "text_contains": "KEEP READING",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "reading-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "topic-browser",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "topic-browser__tab",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "topic-browser__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "Browse the collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "h2",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_blog",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "text_contains": "Back to the blog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "text_contains": "Tags",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tag",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tag",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_blog",
+    "mobile_blog",
+    "tablet_blog",
+    "desktop_blog_guides",
+    "desktop_blog_releases",
+    "mobile_blog_component",
+    "desktop_tag",
+    "desktop_post",
+    "desktop_about"
+   ],
+   "completion_states": [
+    "desktop_blog"
+   ],
+   "completion_text_signals": [
+    "Browse the collection",
+    "Showing all 10 posts",
+    "KEEP READING",
+    "Guides"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "regression_states": [
+    "desktop_post",
+    "desktop_about"
+   ],
+   "regression_text_signals": [
+    "Tags",
+    "Back to the blog"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "REPLACE_ME",
+    "TODO",
+    "{{",
+    "undefined",
+    "[sitecontinuum removed completion signal]"
+   ]
+  }
+ ]
+}

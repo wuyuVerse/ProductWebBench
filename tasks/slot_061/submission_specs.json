@@ -1,0 +1,237 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_website-templates__simple-gallery_responsive-template__6f89dde86eb3__street_art_credit_card_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_gallery",
+    "mobile_gallery",
+    "desktop_gallery_grid",
+    "desktop_gallery_footer",
+    "mobile_gallery_footer",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_railside"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_gallery"
+   ],
+   "reference_text_signals": [
+    "Underline Mural Archive",
+    "Filter murals by district",
+    "Showing all 11 murals",
+    "Districts we walk"
+   ],
+   "visible_text_states": [
+    "desktop_gallery"
+   ],
+   "visible_text_signals": [
+    "Filter murals by district",
+    "Showing all 11 murals"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_railside"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_gallery",
+    "mobile_gallery_footer",
+    "mobile_collection"
+   ],
+   "asset_path_signals": [
+    "static/images/blocks/gallery"
+   ],
+   "asset_path_states": [
+    "desktop_gallery",
+    "desktop_gallery_grid"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_gallery",
+    "desktop_collection"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_gallery",
+    "mobile_gallery",
+    "desktop_gallery_grid",
+    "desktop_gallery_footer",
+    "mobile_gallery_footer",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_railside"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_gallery",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_gallery",
+     "class_contains": "dm__title",
+     "text_contains": "Filter murals by district",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_gallery",
+     "class_contains": "dm__tab",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_gallery",
+     "tag": "figure",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_gallery",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_gallery",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_gallery_footer",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_gallery",
+     "class_contains": "dm-rail--gallery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection",
+     "class_contains": "dm-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection",
+     "text_contains": "Districts we walk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection",
+     "class_contains": "dm__tab",
+     "min_count": 5
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_gallery",
+     "mobile_gallery",
+     "desktop_collection"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_railside",
+     "changed_from": "desktop_gallery",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "dm__readout",
+      "text_contains": "Showing 3 of 11 \u00b7 Railside",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_gallery",
+    "mobile_gallery",
+    "desktop_gallery_grid",
+    "desktop_gallery_footer",
+    "mobile_gallery_footer",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_railside"
+   ],
+   "completion_states": [
+    "desktop_gallery",
+    "desktop_collection"
+   ],
+   "completion_text_signals": [
+    "Filter murals by district",
+    "Districts we walk",
+    "Waterside",
+    "Railside",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_gallery_footer"
+   ],
+   "regression_text_signals": [
+    "Underline Mural Archive"
+   ],
+   "forbidden_text_patterns": [
+    "Some Awesome Street Art",
+    "AuthorName",
+    "My Awesome Street Art Gallery",
+    "Simple Gallery",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "{{",
+    "TODO"
+   ]
+  }
+ ]
+}

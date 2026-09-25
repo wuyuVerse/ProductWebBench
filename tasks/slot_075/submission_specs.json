@@ -1,0 +1,294 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_J0SUKE__X-Ray-Visualizer-Threejs__2f4bc3a6d9a0__xray_control_hud_section",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_layer_skeleton",
+    "desktop_expand_key",
+    "desktop_inspector",
+    "tablet_inspector",
+    "mobile_inspector"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_inspector"
+   ],
+   "reference_text_signals": [
+    "X-Ray Control HUD",
+    "X-Ray Layer",
+    "Skin",
+    "Skeleton",
+    "Both",
+    "Active layer",
+    "Shader Pipeline"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_inspector"
+   ],
+   "visible_text_signals": [
+    "X-Ray Layer",
+    "Active layer"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_layer_skeleton"
+   ],
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_initial",
+    "tablet_inspector",
+    "mobile_inspector"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_canvas_screenshot_bytes": 20000,
+   "min_screenshot_bytes": 20000,
+   "canvas_screenshot_states": [
+    "desktop_initial",
+    "desktop_inspector"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_layer_skeleton",
+    "desktop_expand_key",
+    "desktop_inspector",
+    "tablet_inspector",
+    "mobile_inspector"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_inspector"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_layer_skeleton",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_expand_key",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_inspector",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_inspector",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_inspector",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "xray-hud__chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_layer_skeleton",
+     "class_contains": "xray-hud__chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_layer_skeleton",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_layer_skeleton",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_expand_key",
+     "class_contains": "xray-hud__chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_expand_key",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_expand_key",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "xray-hud__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_inspector",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_inspector",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_inspector",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "tablet_inspector",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_inspector",
+     "class_contains": "xray-hud__tab",
+     "min_count": 3
+    },
+    {
+     "state": "mobile_inspector",
+     "class_contains": "xray-hud__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_inspector",
+     "text_contains": "Active layer",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_layer_skeleton",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "xray-hud__readout",
+      "text_contains": "Active layer: Skeleton",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "desktop_inspector"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_layer_skeleton",
+    "desktop_expand_key",
+    "desktop_inspector",
+    "tablet_inspector",
+    "mobile_inspector"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_inspector"
+   ],
+   "completion_text_signals": [
+    "X-Ray Control HUD",
+    "X-Ray Layer",
+    "Skin",
+    "Skeleton",
+    "Both",
+    "Active layer",
+    "Shader Pipeline",
+    "Postprocessing Chain"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_expand_key"
+   ],
+   "regression_text_signals": [
+    "X-Ray Control HUD",
+    "Sobel X-Ray Pass"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "PLACEHOLDER",
+    "undefined%",
+    "NaNpx"
+   ]
+  }
+ ]
+}

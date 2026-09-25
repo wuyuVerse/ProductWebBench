@@ -1,0 +1,257 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_nuxt-ui-templates__changelog__93d7de050ef83ae303668f5e08559cb21653404b__docs_reference_rail_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_quickstart",
+    "mobile_quickstart",
+    "desktop_deploy",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_quickstart",
+    "channel_toggle_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_rail_home"
+   ],
+   "reference_text_signals": [
+    "Overview",
+    "On this page",
+    "Getting started",
+    "Reading:"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_rail_home"
+   ],
+   "visible_text_signals": [
+    "Overview",
+    "On this page"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "channel_toggle_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_quickstart",
+    "mobile_rail_home"
+   ],
+   "asset_path_signals": [
+    "/guide/quickstart",
+    "/guide/deploy",
+    "/guide"
+   ],
+   "asset_path_states": [
+    "desktop_quickstart",
+    "desktop_deploy"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_quickstart",
+    "desktop_deploy"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_quickstart",
+    "mobile_quickstart",
+    "desktop_deploy",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_quickstart",
+    "channel_toggle_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "ungh.cc",
+    "gstatic"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "main",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Quickstart",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_quickstart",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deploy",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "docs-channel-picker",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "class_contains": "docs-spec-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_quickstart",
+     "class_contains": "docs-spec-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deploy",
+     "class_contains": "docs-spec-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_quickstart",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deploy",
+     "text_contains": "On this page",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail_home",
+     "mobile_rail_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "channel_toggle_home",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "docs-channel-picker__readout",
+      "text_contains": "Edge release channel",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_quickstart",
+    "mobile_quickstart",
+    "desktop_deploy",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_quickstart",
+    "channel_toggle_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_quickstart",
+    "desktop_deploy",
+    "desktop_rail_home"
+   ],
+   "completion_text_signals": [
+    "Overview",
+    "On this page",
+    "Getting started",
+    "Quickstart",
+    "Reading:"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Overview",
+    "Documentation",
+    "reference"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_quickstart",
+    "desktop_deploy"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "app/app.vue",
+     "app/components/DocsSpecRail.vue",
+     "app/components/DocsChannelPicker.vue"
+    ],
+    "should_preserve": [
+     "app/pages/index.vue",
+     "app/pages/guide/quickstart.vue",
+     "app/pages/guide/deploy.vue",
+     "app/components/AppLogo.vue",
+     "nuxt.config.ts"
+    ]
+   }
+  }
+ ]
+}

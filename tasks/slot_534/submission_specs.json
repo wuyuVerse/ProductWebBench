@@ -1,0 +1,61 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_themesberg__volt-react-dashboard__419e51539b8a__invoices",
+   "reference_states": ["desktop_invoices", "mobile_invoices"],
+   "submission_states": ["desktop_invoices", "mobile_invoices"],
+   "interaction_states": ["desktop_invoices_pending"],
+   "completion_states": ["desktop_invoices"],
+   "completion_text_signals": ["Invoices Overview", "All Invoices", "Northwind Traders"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_invoices"],
+   "visible_text_signals": ["Invoices Overview"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_invoices"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_invoices"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_invoices"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_invoices"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_invoices", "mobile_invoices"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts", "github", "api.github.com", "buttons.github.io", "doubleclick"],
+   "dom_assertions": [
+    {"state": "desktop_invoices", "tag": "h1", "text_contains": "Invoices Overview", "min_count": 1},
+    {"state": "desktop_invoices", "tag": "p", "text_contains": "Track billing status", "min_count": 1},
+    {"state": "desktop_invoices", "tag": "a", "text_contains": "All Invoices", "min_count": 1},
+    {"state": "desktop_invoices", "tag": "a", "text_contains": "Pending", "min_count": 1},
+    {"state": "desktop_invoices", "tag": "a", "text_contains": "Overdue", "min_count": 1},
+    {"state": "desktop_invoices", "text_contains": "All Invoices", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_invoices"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_invoices_pending",
+     "require_interaction": true,
+     "changed_from": "desktop_invoices",
+     "dom": {"text_contains": "Awaiting Payment", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_invoices"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 3
+  }
+ ]
+}

@@ -1,0 +1,154 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_AdityaKumawat97__react-e-commerce-website__2e46ab9cbc36__orders",
+   "reference_states": [
+    "desktop_orders",
+    "mobile_orders"
+   ],
+   "submission_states": [
+    "desktop_orders",
+    "mobile_orders",
+    "desktop_orders_processing"
+   ],
+   "interaction_states": [
+    "desktop_orders_processing"
+   ],
+   "completion_states": [
+    "desktop_orders"
+   ],
+   "completion_text_signals": [
+    "My Orders",
+    "All Orders",
+    "Track and review"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_orders"
+   ],
+   "visible_text_signals": [
+    "My Orders",
+    "All Orders",
+    "Processing"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_orders"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_orders"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_orders"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_orders"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_orders",
+    "mobile_orders"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_orders",
+     "tag": "h1",
+     "text_contains": "My Orders",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "button",
+     "text_contains": "Processing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "button",
+     "text_contains": "Delivered",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "button",
+     "text_contains": "Cancelled",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "h3",
+     "text_contains": "All Orders",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_orders",
+     "tag": "p",
+     "text_contains": "Track and review",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_orders"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_orders_processing",
+     "require_interaction": true,
+     "changed_from": "desktop_orders",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Processing Orders",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_orders"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

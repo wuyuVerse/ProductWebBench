@@ -1,0 +1,242 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_billalben__evara-ecommerce__b61966797826__cart_checkout_review_repair",
+   "reference_states": [
+    "desktop_shop",
+    "desktop_filter_footwear",
+    "mobile_shop",
+    "mobile_filter_footwear",
+    "desktop_shop_addcart",
+    "tablet_shop",
+    "desktop_index",
+    "desktop_details",
+    "desktop_cart"
+   ],
+   "text_signal_states": [
+    "desktop_shop"
+   ],
+   "reference_text_signals": [
+    "Browse the catalog",
+    "Showing 12 of 12",
+    "Trail Runner Sneakers"
+   ],
+   "visible_text_states": [
+    "desktop_shop"
+   ],
+   "visible_text_signals": [
+    "Browse the catalog",
+    "Shop"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_footwear",
+    "desktop_shop_addcart"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_footwear",
+     "changed_from": "desktop_shop",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "evarafinder__readout",
+      "text_contains": "Showing 3 of 12",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_shop_addcart",
+     "changed_from": "desktop_shop",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "cart-badge",
+      "text_contains": "Bag (1)",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_shop",
+    "mobile_filter_footwear",
+    "tablet_shop"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img"
+   ],
+   "asset_path_states": [
+    "desktop_shop",
+    "desktop_index"
+   ],
+   "min_asset_path_signals": 1,
+   "no_horizontal_overflow": true,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_shop",
+    "desktop_filter_footwear",
+    "mobile_shop",
+    "mobile_filter_footwear",
+    "desktop_shop_addcart",
+    "tablet_shop",
+    "desktop_index",
+    "desktop_details",
+    "desktop_cart"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_filter_footwear",
+     "mobile_filter_footwear"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_shop",
+     "class_contains": "evarafinder__bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "class_contains": "evarafinder__tab",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_shop",
+     "class_contains": "evarafinder__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index",
+     "class_contains": "cart-badge",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "class_contains": "cart-badge",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_details",
+     "class_contains": "cart-badge",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cart",
+     "class_contains": "cart-badge",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "img",
+     "min_count": 12
+    },
+    {
+     "state": "desktop_shop",
+     "class_contains": "product__item",
+     "min_count": 12
+    },
+    {
+     "state": "desktop_index",
+     "tag": "section",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_details",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cart",
+     "tag": "table",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_shop",
+    "desktop_filter_footwear",
+    "mobile_shop",
+    "mobile_filter_footwear",
+    "desktop_shop_addcart",
+    "tablet_shop",
+    "desktop_index",
+    "desktop_details",
+    "desktop_cart"
+   ],
+   "completion_states": [
+    "desktop_shop"
+   ],
+   "completion_text_signals": [
+    "Browse the catalog",
+    "Showing 12 of 12",
+    "All"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_shop"
+   ],
+   "regression_text_signals": [
+    "Home",
+    "Shop"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "TODO",
+    "Coming soon",
+    "Placeholder tile",
+    "Lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_shop",
+    "desktop_filter_footwear"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

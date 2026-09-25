@@ -1,0 +1,243 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_shuding__nextra-docs-template__7178f3676d2b__template_evidence_home_repair",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_about",
+    "desktop_advanced",
+    "desktop_another",
+    "desktop_finder",
+    "mobile_finder",
+    "finder_filter_guides"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "reference_text_signals": [
+    "Introduction",
+    "Browse guides by area",
+    "All areas",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "visible_text_signals": [
+    "Browse guides by area",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "finder_filter_guides"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_finder"
+   ],
+   "asset_path_signals": [
+    "/advanced",
+    "/another",
+    "/about"
+   ],
+   "asset_path_states": [
+    "desktop_advanced",
+    "desktop_another"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_about",
+    "desktop_another"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_about",
+    "desktop_advanced",
+    "desktop_another",
+    "desktop_finder",
+    "mobile_finder",
+    "finder_filter_guides"
+   ],
+   "console_error_allowlist": [
+    "favicon"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Introduction",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_advanced",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "gfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "text_contains": "Browse guides by area",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "gfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "class_contains": "gfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_advanced",
+     "class_contains": "gfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Browse guides by area",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_advanced",
+     "text_contains": "Browse guides by area",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "mobile_finder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "finder_filter_guides",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "gfinder__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_about",
+    "desktop_advanced",
+    "desktop_another",
+    "desktop_finder",
+    "mobile_finder",
+    "finder_filter_guides"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_finder",
+    "desktop_about",
+    "desktop_advanced"
+   ],
+   "completion_text_signals": [
+    "Introduction",
+    "Browse guides by area",
+    "All areas",
+    "Getting Started",
+    "Showing"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Introduction",
+    "Nextra",
+    "Browse guides by area"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_about",
+    "desktop_advanced"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "components/GuideFinder.tsx",
+     "components/guidefinder.module.css",
+     "pages/index.mdx",
+     "pages/about.mdx",
+     "pages/advanced.mdx"
+    ],
+    "should_preserve": [
+     "theme.config.tsx",
+     "pages/_meta.json",
+     "pages/another.mdx",
+     "next.config.js"
+    ]
+   }
+  }
+ ]
+}

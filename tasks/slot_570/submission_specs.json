@@ -1,0 +1,123 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_ekmas__minimal__2e2cd80bbec2__notes",
+   "reference_states": [
+    "desktop_notes",
+    "mobile_notes",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_notes",
+    "mobile_notes"
+   ],
+   "interaction_states": [
+    "desktop_notes_oldest"
+   ],
+   "completion_states": [
+    "desktop_notes"
+   ],
+   "completion_text_signals": [
+    "Notes",
+    "running log",
+    "Newest first",
+    "Streaming SSR in Astro"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_notes"
+   ],
+   "visible_text_signals": [
+    "Notes",
+    "running log"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_notes"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_notes"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_notes"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_notes"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_notes",
+    "mobile_notes"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_notes", "tag": "h1", "text_contains": "Notes", "min_count": 1},
+    {"state": "desktop_notes", "tag": "p", "text_contains": "running log", "min_count": 1},
+    {"state": "desktop_notes", "tag": "button", "text_contains": "Show oldest first", "min_count": 1},
+    {"state": "desktop_notes", "tag": "h3", "text_contains": "Newest first", "min_count": 1},
+    {"state": "desktop_notes", "tag": "h3", "text_contains": "Streaming SSR in Astro", "min_count": 1},
+    {"state": "desktop_notes", "tag": "a", "text_contains": "Tags", "min_count": 1},
+    {"state": "desktop_notes", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_notes", "tag": "footer", "text_contains": "Copyright", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Tags", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_home", "tag": "footer", "text_contains": "Copyright", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_notes"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_notes_oldest",
+     "require_interaction": true,
+     "changed_from": "desktop_notes",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Oldest first",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_notes"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,162 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_boussadjra__vitesse-react__343c03e3ae94__showcase",
+   "reference_states": [
+    "desktop_showcase",
+    "mobile_showcase",
+    "desktop_showcase_dashboards",
+    "desktop_about"
+   ],
+   "submission_states": [
+    "desktop_showcase",
+    "mobile_showcase",
+    "desktop_showcase_dashboards",
+    "desktop_about"
+   ],
+   "interaction_states": [
+    "desktop_showcase_dashboards"
+   ],
+   "completion_states": [
+    "desktop_showcase"
+   ],
+   "completion_text_signals": [
+    "Showing 6 projects",
+    "Nimbus Notes"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_showcase"
+   ],
+   "visible_text_signals": [
+    "Showcase",
+    "Real projects built with Vitesse React"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_showcase"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_showcase"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_showcase"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_showcase"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_showcase",
+    "mobile_showcase",
+    "desktop_showcase_dashboards",
+    "desktop_about"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_showcase",
+     "tag": "h1",
+     "text_contains": "Showcase",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "p",
+     "text_contains": "Real projects built with Vitesse React",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "h3",
+     "text_contains": "Showing 6 projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "h3",
+     "text_contains": "Nimbus Notes",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "h3",
+     "text_contains": "Pulse Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "button",
+     "text_contains": "Dashboards",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_showcase",
+     "tag": "button",
+     "text_contains": "English",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "button",
+     "text_contains": "English",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_showcase"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_showcase_dashboards",
+     "require_interaction": true,
+     "changed_from": "desktop_showcase",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Showing 2 projects",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_showcase"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

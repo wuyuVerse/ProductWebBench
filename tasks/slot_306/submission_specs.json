@@ -1,0 +1,247 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_ahmed-abd-alalim__ShopGrids__e1db1099b1c7__catalog_layout_contract_rail",
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 8,
+      "overflow_tolerance_px": 24,
+      "reference_overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_catalog_layout",
+        "tablet_catalog_layout",
+        "mobile_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression",
+        "desktop_add_to_cart"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6,
+      "min_screenshot_bytes": 9000,
+      "text_signal_states": [
+        "desktop_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression"
+      ],
+      "reference_text_signals": [
+        "Marlowe & Field",
+        "The Voyager Line",
+        "The Field Collection",
+        "Best of Marlowe & Field"
+      ],
+      "completion_states": [
+        "desktop_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression"
+      ],
+      "completion_text_signals": [
+        "Marlowe & Field",
+        "The Voyager Line",
+        "The Field Collection",
+        "Weekender Bags",
+        "Everyday Carry",
+        "Leather Holdalls",
+        "Best of Marlowe & Field",
+        "Field Journal",
+        "Customer Care",
+        "The Marlowe Standard",
+        "Your basket"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 11,
+      "visible_text_states": [
+        "desktop_catalog_layout",
+        "mobile_catalog_layout"
+      ],
+      "visible_text_signals": [
+        "Best of Marlowe & Field",
+        "The Marlowe promise",
+        "Made to be carried for a lifetime"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression"
+      ],
+      "regression_text_signals": [
+        "Marlowe & Field"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "desktop_catalog_layout",
+        "mobile_catalog_layout"
+      ],
+      "forbidden_text_patterns": [
+        "ShopGrids",
+        "Autumn Jackets",
+        "Men Bags Collection",
+        "New Collection",
+        "New Sellers",
+        "Our Statistics",
+        "Latest News",
+        "Discovery Now",
+        "Happy Custemers",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "via.placeholder",
+        "placehold.co",
+        "unsplash.com",
+        "pexels.com"
+      ],
+      "asset_signal_states": [
+        "desktop_product_grid_regression"
+      ],
+      "asset_path_signals": [
+        "assets/images/products/Sellers_1.png",
+        "assets/images/products/Sellers_2.png",
+        "assets/images/products/Sellers_3.png",
+        "assets/images/products/Sellers_4.png"
+      ],
+      "min_asset_path_signals": 4,
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_catalog_layout",
+        "mobile_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_catalog_layout",
+        "tablet_catalog_layout",
+        "mobile_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression",
+        "desktop_add_to_cart"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_catalog_layout",
+          "tag": "aside",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_catalog_layout",
+          "tag": "h2",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_collection_footer_regression",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_product_grid_regression",
+          "tag": "img",
+          "min_count": 8
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Bag (",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_catalog_layout",
+          "text_contains": "Bag (",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_collection_footer_regression",
+          "text_contains": "Bag (",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_catalog_layout",
+          "mobile_catalog_layout"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_states": [
+        "desktop_add_to_cart"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_add_to_cart",
+          "changed_from": "desktop_catalog_layout",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "fieldcart-badge",
+            "text_contains": "Bag (1)",
+            "min_count": 1
+          }
+        }
+      ],
+      "min_canvas_screenshot_bytes": 9000,
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_catalog_layout",
+        "tablet_catalog_layout",
+        "mobile_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression",
+        "desktop_add_to_cart"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_catalog_layout",
+        "tablet_catalog_layout",
+        "mobile_catalog_layout",
+        "desktop_product_grid_regression",
+        "desktop_collection_footer_regression",
+        "desktop_add_to_cart"
+      ]
+    }
+  ]
+}

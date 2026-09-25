@@ -1,0 +1,226 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_argha-paul-2002__Diva_Jewellery_Shop_website_template__db8a52a7ca21a34aae5049fc66e8a65e5c4d8a02__product_grid_filter_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "mobile_products",
+    "desktop_shop_grid",
+    "mobile_shop_grid",
+    "desktop_campaign",
+    "desktop_about",
+    "desktop_shop_gold"
+   ],
+   "text_signal_states": [
+    "desktop_shop_grid",
+    "desktop_products"
+   ],
+   "reference_text_signals": [
+    "Shop the collection",
+    "Showing",
+    "Gold",
+    "Diamond"
+   ],
+   "visible_text_states": [
+    "desktop_shop_grid",
+    "desktop_products"
+   ],
+   "visible_text_signals": [
+    "Shop the collection",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_shop_gold"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_products",
+    "mobile_shop_grid"
+   ],
+   "asset_path_signals": [
+    "images/products/",
+    "images/",
+    ".webp"
+   ],
+   "asset_path_states": [
+    "desktop_shop_grid",
+    "desktop_products"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_shop_grid",
+    "desktop_products",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "mobile_products",
+    "desktop_shop_grid",
+    "mobile_shop_grid",
+    "desktop_campaign",
+    "desktop_about",
+    "desktop_shop_gold"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "gstatic"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "navbar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop_grid",
+     "text_contains": "Gold",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_campaign",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop_grid",
+     "text_contains": "Showing",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_shop_grid",
+     "mobile_shop_grid"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_shop_gold",
+     "changed_from": "desktop_shop_grid",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 9 of 16",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "mobile_products",
+    "desktop_shop_grid",
+    "mobile_shop_grid",
+    "desktop_campaign",
+    "desktop_about",
+    "desktop_shop_gold"
+   ],
+   "completion_states": [
+    "desktop_shop_grid",
+    "desktop_products",
+    "desktop_campaign",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Shop the collection",
+    "Showing",
+    "Gold",
+    "Bag"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "HOME",
+    "PRODUCTS",
+    "CONTACT"
+   ],
+   "forbidden_states": [
+    "desktop_shop_grid",
+    "desktop_products"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "products.html",
+     "CSS/diva-shop.reference.css",
+     "CSS/diva-shop.common.css"
+    ],
+    "should_preserve": [
+     "index.html",
+     "CSS/index.css",
+     "CSS/products.css"
+    ]
+   }
+  }
+ ]
+}

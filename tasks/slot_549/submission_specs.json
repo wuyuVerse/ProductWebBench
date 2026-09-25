@@ -1,0 +1,162 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_Kiran1689__Kiran1689.github.io__ae16d35c4604__achievements",
+   "reference_states": [
+    "desktop_achievements",
+    "mobile_achievements"
+   ],
+   "submission_states": [
+    "desktop_achievements",
+    "mobile_achievements"
+   ],
+   "interaction_states": [
+    "desktop_achievements_certifications"
+   ],
+   "completion_states": [
+    "desktop_achievements"
+   ],
+   "completion_text_signals": [
+    "Achievements",
+    "All Achievements",
+    "AWS Certified Cloud Practitioner"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_achievements"
+   ],
+   "visible_text_signals": [
+    "All Achievements",
+    "AWS Certified Cloud Practitioner"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_achievements"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_achievements"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_achievements"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_achievements"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_achievements",
+    "mobile_achievements"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "iconify.design",
+    "canvasjs",
+    "animejs",
+    "anime.js"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_achievements",
+     "tag": "h1",
+     "text_contains": "Achievements",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "h3",
+     "text_contains": "All Achievements",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "button",
+     "text_contains": "Certifications",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "button",
+     "text_contains": "Hackathons",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "button",
+     "text_contains": "Awards",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_achievements",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_achievements",
+     "text_contains": "Hackathon",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_achievements"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_achievements_certifications",
+     "require_interaction": true,
+     "changed_from": "desktop_achievements",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Certifications",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_achievements"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,259 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_SubhanRaj__News-Website-Template__b1a9ef4f6c24__news_image_semantic_repair",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_tideboard",
+    "mobile_tideboard",
+    "desktop_fleet_filter",
+    "desktop_weather_filter",
+    "desktop_all_desks_reset",
+    "mobile_fleet_filter",
+    "desktop_article",
+    "mobile_article",
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "text_signal_states": [
+    "desktop_tideboard",
+    "desktop_fleet_filter",
+    "desktop_weather_filter",
+    "desktop_all_desks_reset",
+    "mobile_tideboard",
+    "mobile_fleet_filter"
+   ],
+   "reference_text_signals": [
+    "Harbor Ledger",
+    "HARBOR TIDE BOARD",
+    "All desks",
+    "Harbourfront",
+    "Fleet",
+    "Weather watch"
+   ],
+   "visible_text_states": [
+    "desktop_tideboard",
+    "desktop_fleet_filter",
+    "mobile_fleet_filter"
+   ],
+   "visible_text_signals": [
+    "Wrackline Harbor desks",
+    "Showing 1 desk",
+    "Fleet"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_fleet_filter",
+    "desktop_weather_filter",
+    "desktop_all_desks_reset",
+    "mobile_fleet_filter"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "mobile_tideboard",
+    "mobile_fleet_filter",
+    "mobile_article",
+    "mobile_archive"
+   ],
+   "asset_path_signals": [
+    "img/"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "asset_signal_states": [
+    "desktop_home"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_article"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 600,
+   "min_image_count": 6,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_tideboard",
+    "mobile_tideboard",
+    "desktop_fleet_filter",
+    "desktop_weather_filter",
+    "desktop_all_desks_reset",
+    "mobile_fleet_filter",
+    "desktop_article",
+    "mobile_article",
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "vercel web analytics"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_article",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "tide-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "class_contains": "tide-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "class_contains": "tide-rail",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_archive",
+     "class_contains": "tide-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "text_contains": "HARBOR TIDE BOARD",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "text_contains": "HARBOR TIDE BOARD",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "p",
+     "text_contains": "Independent coastal journalism",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_tideboard",
+     "mobile_tideboard"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_fleet_filter",
+     "changed_from": "desktop_tideboard",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "tide-status",
+      "text_contains": "Showing 1 desk",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_tideboard",
+    "mobile_tideboard",
+    "desktop_fleet_filter",
+    "desktop_weather_filter",
+    "desktop_all_desks_reset",
+    "mobile_fleet_filter",
+    "desktop_article",
+    "mobile_article",
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_tideboard",
+    "desktop_fleet_filter",
+    "desktop_article",
+    "desktop_archive"
+   ],
+   "completion_text_signals": [
+    "Harbor Ledger",
+    "Wrackline Harbor desks",
+    "Fleet",
+    "Ten hard lessons the lifeboat crews",
+    "Independent coastal journalism"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_article",
+    "desktop_archive"
+   ],
+   "regression_text_signals": [
+    "Harbor Ledger"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_article",
+    "desktop_archive"
+   ],
+   "forbidden_text_patterns": [
+    "NewsEdge",
+    "Designed by RadiusTheme",
+    "10 Hdrenaline fuelled activities",
+    "Eagle Spotting in Alaska"
+   ]
+  }
+ ]
+}

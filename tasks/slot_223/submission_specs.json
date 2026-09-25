@@ -1,0 +1,201 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_hbollon__portfolio-vuejs__174ec803c440__project_grid_category_filter",
+   "reference_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_projects_filter",
+    "desktop_footer",
+    "desktop_skills",
+    "mobile_contact"
+   ],
+   "text_signal_states": [
+    "desktop_projects",
+    "desktop_projects_filter"
+   ],
+   "reference_text_signals": [
+    "Showing 7 of 7",
+    "Showing 2 of 7"
+   ],
+   "visible_text_states": [
+    "desktop_projects"
+   ],
+   "visible_text_signals": [
+    "MY PROJECTS",
+    "Showing 7 of 7"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_projects_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_projects_filter",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 7",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/img/projects",
+    "gyroball",
+    "urba"
+   ],
+   "asset_path_states": [
+    "desktop_projects"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_projects_filter",
+    "desktop_footer",
+    "desktop_skills",
+    "mobile_contact"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_projects",
+     "tag": "section",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "text_contains": "Video Game",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Showing 7 of 7",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h3",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_footer",
+     "text_contains": "Project categories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "text_contains": "Video Game",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Project categories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_skills",
+     "tag": "img",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_projects_filter",
+    "desktop_footer",
+    "desktop_skills",
+    "mobile_contact"
+   ],
+   "completion_states": [
+    "desktop_projects"
+   ],
+   "completion_text_signals": [
+    "MY PROJECTS",
+    "Showing 7 of 7",
+    "GYRO'BALL",
+    "Project categories"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_skills"
+   ],
+   "regression_text_signals": [
+    "HUGO BOLLON",
+    "SKILLS"
+   ],
+   "forbidden_text_patterns": [],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

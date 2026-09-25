@@ -1,0 +1,45 @@
+{
+ "slot": 581,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_allocations",
+   "dom_len": 6948,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "4fda07062edb4d401c2641d48cc26d37",
+    "reference": "cad72f71fd88d42da9dd729f259a3e23",
+    "bad": "b65539d1e5f0855f0567a1dd77359f4f"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 16,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "dunky11__react-saas-template__3fff0ba1ebd1",
+ "capability": "Build",
+ "capability_is_build": true
+}

@@ -19,6 +19,14 @@ gate from being satisfiable by doing nothing.
 `tasks/slot_*/task.jsonl` — the per-task metadata the analyses need: required
 and hidden state counts, required content, suggested files, stage plan shape.
 
+`tasks/slot_*/submission_specs.json` — the frozen per-stage assertion spec:
+the `dom_assertions` and `interaction_assertions` each stage is graded against.
+The interactive-vs-static split reported in the appendix is read from this
+file rather than inferred from which gates happened to fail.
+
+`tasks/slot_5*/build_acceptance_*.json` — the Build acceptance record for the
+80 long-horizon slots.
+
 The **repository snapshots and reference captures are not in this repository.**
 They are large, and they embed third-party sites under their own licences.
 `pwb catalog` lists what a full task package contains, and

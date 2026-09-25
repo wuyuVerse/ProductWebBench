@@ -1,0 +1,238 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_davidfaure__horizontal-parallax-gallery-codrops__49c3ead7b70b__asset_sequence_cue_strip",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_warm_filter",
+    "mobile_warm_filter",
+    "desktop_webgl",
+    "mobile_webgl"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "mobile_finder"
+   ],
+   "reference_text_signals": [
+    "Portrait finder",
+    "Showing",
+    "Warm",
+    "Cool",
+    "Neon"
+   ],
+   "visible_text_states": [
+    "desktop_finder",
+    "mobile_finder"
+   ],
+   "visible_text_signals": [
+    "Portrait finder",
+    "Warm"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_warm_filter",
+    "mobile_warm_filter"
+   ],
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_finder",
+    "mobile_warm_filter"
+   ],
+   "canvas_screenshot_states": [
+    "desktop_webgl",
+    "mobile_webgl"
+   ],
+   "min_canvas_screenshot_bytes": 30000,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 60,
+   "min_image_count": 3,
+   "asset_path_signals": [
+    "1.webp",
+    "2.webp",
+    "10.webp"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "mobile_finder"
+   ],
+   "min_asset_path_signals": 3,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_warm_filter",
+    "mobile_warm_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "cdn.tailwindcss.com",
+    "ReadPixels",
+    "GL Driver Message"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "pfind__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Portrait finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "pfind__tab",
+     "min_count": 4
+    },
+    {
+     "state": "mobile_initial",
+     "class_contains": "pfind__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_webgl",
+     "class_contains": "pfind__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_webgl",
+     "text_contains": "Portrait finder",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_webgl",
+     "class_contains": "pfind__tab",
+     "min_count": 4
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_warm_filter",
+    "mobile_warm_filter",
+    "desktop_webgl",
+    "mobile_webgl"
+   ],
+   "completion_states": [
+    "desktop_finder",
+    "mobile_finder"
+   ],
+   "completion_text_signals": [
+    "Portrait finder",
+    "Showing",
+    "Warm",
+    "Cool",
+    "Neon"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial"
+   ],
+   "regression_text_signals": [
+    "Horizontal Parallax Gallery"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "sitecontinuum removed",
+    "TODO",
+    "placeholder text"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_finder"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "desktop_warm_filter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_warm_filter",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pfind__readout",
+      "text_contains": "Showing 3 of 10",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "mobile_warm_filter",
+     "changed_from": "mobile_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pfind__readout",
+      "text_contains": "Showing 3 of 10",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

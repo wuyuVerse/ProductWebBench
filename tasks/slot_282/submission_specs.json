@@ -1,0 +1,243 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_robin-dela__hover-effect__1938cbff22a0__hover_transition_workflow_panel",
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_gallery_all",
+        "tablet_gallery_stills",
+        "desktop_gallery_stills"
+      ],
+      "interaction_states": [
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "mobile_gallery_stills"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 40,
+      "overflow_tolerance_px": 24,
+      "mean_luminance_tolerance": 100,
+      "min_palette_overlap": 1,
+      "min_screenshot_bytes": 6000,
+      "min_canvas_screenshot_bytes": 6000,
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "completion_text_signals": [
+        "Shader gallery",
+        "All shaders",
+        "Stills",
+        "Displacement",
+        "Showing",
+        "New York stills",
+        "Button displacement"
+      ],
+      "min_completion_text_signals": 7,
+      "require_all_completion_signals": true,
+      "regression_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "regression_text_signals": [
+        "MY BUTTON",
+        "PREVIOUS",
+        "NEXT"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "forbidden_text_patterns": [
+        "remove WebGL",
+        "static screenshot only",
+        "delete MY BUTTON",
+        "replace hover-effect",
+        "generic hover dashboard",
+        "remove original canvases"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_gallery_all",
+        "desktop_gallery_stills",
+        "desktop_gallery_displacement",
+        "tablet_gallery_stills",
+        "mobile_gallery_stills",
+        "desktop_next_carousel",
+        "desktop_hover_ny"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "THREE.WebGLProgram",
+        "VALIDATE_STATUS",
+        "reading 'trim'",
+        "Shader Error"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "figure",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_gallery_all",
+          "class_contains": "gallery-filter",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_gallery_all",
+          "text_contains": "Shader gallery",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "class_contains": "gallery-filter",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_hover_ny",
+          "tag": "canvas",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_gallery_stills",
+          "class_contains": "gallery-filter--stills",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_gallery_stills",
+          "text_contains": "Shader gallery",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_gallery_displacement",
+          "class_contains": "gallery-filter--displacement",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_gallery_displacement",
+          "text_contains": "Shader gallery",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_gallery_stills",
+          "desktop_gallery_all",
+          "mobile_gallery_stills"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_gallery_stills",
+          "changed_from": "desktop_gallery_all",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "gallery-filter__readout",
+            "text_contains": "Showing 3 of 6",
+            "min_count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_ixartz__Astro-boilerplate__59205bc6cf56__snippets",
+   "reference_states": [
+    "desktop_snippets",
+    "mobile_snippets",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_snippets",
+    "mobile_snippets"
+   ],
+   "interaction_states": [
+    "desktop_snippets_ts"
+   ],
+   "completion_states": [
+    "desktop_snippets"
+   ],
+   "completion_text_signals": [
+    "Code Snippets",
+    "Debounce a function",
+    "Showing all 6 snippets",
+    "Browse by language"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_snippets"
+   ],
+   "visible_text_signals": [
+    "Code",
+    "copy-paste"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_snippets"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_snippets"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_snippets"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_snippets"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_snippets",
+    "mobile_snippets"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_snippets", "tag": "h1", "text_contains": "Snippets", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "p", "text_contains": "copy-paste", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "button", "text_contains": "TypeScript", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "button", "text_contains": "CSS", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "button", "text_contains": "Shell", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "h3", "text_contains": "Debounce a function", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "h3", "text_contains": "Showing all 6 snippets", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "a", "text_contains": "Blogs", "min_count": 1},
+    {"state": "desktop_snippets", "tag": "a", "text_contains": "CreativeDesignsGuru", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Blogs", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "CreativeDesignsGuru", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_snippets"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_snippets_ts",
+     "require_interaction": true,
+     "changed_from": "desktop_snippets",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "TypeScript snippets",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_snippets"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,151 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_coreui__coreui-free-vue-admin-template__974ba0e3c30f__profile",
+   "reference_states": [
+    "desktop_profile",
+    "mobile_profile"
+   ],
+   "submission_states": [
+    "desktop_profile",
+    "mobile_profile"
+   ],
+   "interaction_states": [
+    "desktop_profile_activity"
+   ],
+   "completion_states": [
+    "desktop_profile"
+   ],
+   "completion_text_signals": [
+    "Jordan Avery",
+    "Account details",
+    "Top skills"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_profile"
+   ],
+   "visible_text_signals": [
+    "Top skills"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_profile"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_profile"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_profile"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_profile"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_profile",
+    "mobile_profile"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_profile",
+     "tag": "h3",
+     "text_contains": "Jordan Avery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "button",
+     "text_contains": "Overview",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "button",
+     "text_contains": "Activity",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "button",
+     "text_contains": "Settings",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "button",
+     "text_contains": "Edit profile",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "h3",
+     "text_contains": "About",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "p",
+     "text_contains": "cross-functional product teams",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_profile"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_profile_activity",
+     "require_interaction": true,
+     "changed_from": "desktop_profile",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Recent activity",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_profile"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

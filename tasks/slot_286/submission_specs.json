@@ -1,0 +1,267 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af__editorial_dispatch_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_posts_filter",
+    "mobile_posts_filter",
+    "desktop_posts_science",
+    "desktop_about_rail",
+    "desktop_home_rail",
+    "desktop_single_post_regression",
+    "mobile_home"
+   ],
+   "text_signal_states": [
+    "desktop_posts_filter",
+    "desktop_home_rail",
+    "desktop_about_rail"
+   ],
+   "reference_text_signals": [
+    "Filter dispatches by topic",
+    "The Dispatch Desk",
+    "The Fathom Dispatch",
+    "Exploration",
+    "Science",
+    "Reflection"
+   ],
+   "visible_text_states": [
+    "desktop_posts_filter",
+    "desktop_posts_science"
+   ],
+   "visible_text_signals": [
+    "Filter dispatches by topic",
+    "All",
+    "Exploration",
+    "Science"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_posts_science"
+   ],
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_posts_filter",
+    "mobile_home"
+   ],
+   "asset_path_signals": [
+    "img/posts/",
+    ".jpg"
+   ],
+   "asset_path_states": [
+    "desktop_single_post_regression"
+   ],
+   "min_asset_path_signals": 1,
+   "asset_signal_states": [
+    "desktop_single_post_regression"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_posts_filter"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_posts_filter",
+    "mobile_posts_filter",
+    "desktop_posts_science",
+    "desktop_about_rail",
+    "desktop_home_rail",
+    "desktop_single_post_regression",
+    "mobile_home"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_posts_filter",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_posts_filter",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_posts_filter",
+     "class_contains": "dispatch-filter__tabs",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_posts_filter",
+     "class_contains": "dispatch-filter__card",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_posts_filter",
+     "text_contains": "Filter dispatches by topic",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_rail",
+     "class_contains": "dispatch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_rail",
+     "text_contains": "The Dispatch Desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_rail",
+     "class_contains": "dispatch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_rail",
+     "text_contains": "The Dispatch Desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_posts_filter",
+     "class_contains": "dispatch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_posts_filter",
+     "text_contains": "The Dispatch Desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_single_post_regression",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_posts_filter",
+     "mobile_posts_filter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_posts_science",
+     "changed_from": "desktop_posts_filter",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "dispatch-filter__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_posts_filter",
+    "mobile_posts_filter",
+    "desktop_posts_science",
+    "desktop_about_rail",
+    "desktop_home_rail",
+    "desktop_single_post_regression",
+    "mobile_home"
+   ],
+   "completion_states": [
+    "desktop_posts_filter",
+    "desktop_posts_science"
+   ],
+   "completion_text_signals": [
+    "Filter dispatches by topic",
+    "All",
+    "Exploration",
+    "Science",
+    "Reflection",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_single_post_regression",
+    "desktop_home_rail"
+   ],
+   "regression_text_signals": [
+    "The Fathom Dispatch",
+    "Posted by",
+    "The Dispatch Desk"
+   ],
+   "forbidden_states": [
+    "desktop_posts_filter",
+    "desktop_posts_science"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "REPLACE_ME",
+    "undefined",
+    "{{",
+    "}}",
+    "{%",
+    "%}"
+   ]
+  }
+ ]
+}

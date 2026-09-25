@@ -1,0 +1,72 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_themesberg__volt-react-dashboard__419e51539b8a__reconciliation",
+   "reference_states": ["desktop_reconciliation", "mobile_reconciliation"],
+   "submission_states": ["desktop_reconciliation", "mobile_reconciliation"],
+   "interaction_states": ["desktop_reconciliation_matched", "desktop_reconciliation_persist"],
+   "completion_states": ["desktop_reconciliation"],
+   "completion_text_signals": ["Reconciliation", "Bank Transactions", "Ledger Entries", "ACME Payroll"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": ["desktop_reconciliation"],
+   "visible_text_signals": ["Reconciliation"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_transactions"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_reconciliation"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_reconciliation"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_reconciliation"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_reconciliation", "mobile_reconciliation"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts", "github", "buttons.github.io", "doubleclick", "googletagmanager"],
+   "dom_assertions": [
+    {"state": "desktop_reconciliation", "text_contains": "Reconciliation", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "p", "text_contains": "Match incoming bank transactions", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "h3", "text_contains": "Bank Transactions", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "h3", "text_contains": "Ledger Entries", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "h3", "text_contains": "Matched Pairs", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "button", "text_contains": "Match Selected", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "button", "text_contains": "ACME Payroll", "min_count": 1},
+    {"state": "desktop_reconciliation", "tag": "button", "text_contains": "Salaries May", "min_count": 1},
+    {"state": "desktop_reconciliation", "text_contains": "Page 1 of 2", "min_count": 1},
+    {"state": "desktop_reconciliation", "text_contains": "No pairs matched yet", "min_count": 1},
+    {"state": "desktop_transactions", "tag": "p", "text_contains": "Your web analytics dashboard template", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_reconciliation"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_reconciliation_matched",
+     "require_interaction": true,
+     "changed_from": "desktop_reconciliation",
+     "dom": {"tag": "button", "text_contains": "Unmatch", "min_count": 1}
+    },
+    {
+     "state": "desktop_reconciliation_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_reconciliation",
+     "dom": {"tag": "button", "text_contains": "Unmatch", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_reconciliation"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

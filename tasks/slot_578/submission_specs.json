@@ -1,0 +1,114 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_technext__v-dashboard__1d6fd95f5454__cohorts",
+   "reference_states": [
+    "desktop_cohorts",
+    "mobile_cohorts",
+    "desktop_dashboard"
+   ],
+   "submission_states": [
+    "desktop_cohorts",
+    "mobile_cohorts",
+    "desktop_dashboard"
+   ],
+   "interaction_states": [
+    "desktop_cohorts_weekly_sorted"
+   ],
+   "completion_states": [
+    "desktop_cohorts"
+   ],
+   "completion_text_signals": [
+    "Cohort Retention",
+    "Monthly cohorts",
+    "Day 30"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 0,
+   "visible_text_states": [
+    "desktop_cohorts"
+   ],
+   "visible_text_signals": [
+    "Cohort Retention"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_cohorts"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_cohorts"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_cohorts"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_cohorts"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_cohorts",
+    "mobile_cohorts",
+    "desktop_dashboard"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_cohorts", "tag": "h3", "text_contains": "Cohort Retention", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "p", "text_contains": "Track how each", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "button", "text_contains": "Weekly", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "button", "text_contains": "Monthly", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "button", "text_contains": "Quarterly", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "button", "text_contains": "Sort by Day-30 retention", "min_count": 1},
+    {"state": "desktop_cohorts", "text_contains": "Monthly cohorts", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "a", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_cohorts", "tag": "a", "text_contains": "Tables", "min_count": 1},
+    {"state": "desktop_dashboard", "tag": "a", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_dashboard", "tag": "a", "text_contains": "Tables", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_cohorts"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {"state": "desktop_cohorts_weekly_sorted", "require_interaction": true, "changed_from": "desktop_cohorts", "dom": {"text_contains": "Weekly cohorts", "min_count": 1}}
+   ],
+   "visual_anchor_states": [
+    "desktop_cohorts"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,226 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_website-templates__portfolio_one-page-template__0fe7fdcc579c__project_fit_flow_extension",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_filter_web",
+    "desktop_work",
+    "desktop_studio"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_link_count": 3,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_projects",
+    "desktop_filter_web",
+    "desktop_work",
+    "desktop_studio"
+   ],
+   "reference_text_signals": [
+    "About",
+    "All work",
+    "Brand identity",
+    "Editorial",
+    "Marisol Vega",
+    "Packaging",
+    "Projects",
+    "Selected work",
+    "Services",
+    "Showing",
+    "The studio",
+    "Wayfinding",
+    "Web design",
+    "of 8"
+   ],
+   "visible_text_states": [
+    "desktop_projects",
+    "desktop_filter_web",
+    "desktop_work"
+   ],
+   "visible_text_signals": [
+    "Showing",
+    "All work",
+    "Web design",
+    "Selected work",
+    "Projects"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_web"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_web",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "fit-readout",
+      "text_contains": "Showing 1 of 8",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_projects",
+    "tablet_home",
+    "tablet_projects"
+   ],
+   "asset_signal_states": [
+    "desktop_projects",
+    "desktop_work"
+   ],
+   "asset_path_signals": [
+    "projects/1.jpg",
+    "projects/2.jpg",
+    "projects/",
+    "images/"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "mobile_projects",
+     "desktop_filter_web"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_work",
+     "class_contains": "fit-strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "class_contains": "fit-chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_studio",
+     "class_contains": "fit-strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio",
+     "class_contains": "fit-chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "fit-strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "class_contains": "fit-readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_filter_web",
+    "desktop_work",
+    "desktop_studio"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_projects"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_filter_web",
+    "desktop_work",
+    "desktop_studio"
+   ],
+   "completion_states": [
+    "desktop_projects",
+    "desktop_filter_web"
+   ],
+   "completion_text_signals": [
+    "Showing",
+    "of 8",
+    "All work",
+    "Web design"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_home",
+    "desktop_work",
+    "desktop_studio"
+   ],
+   "regression_text_signals": [
+    "Marisol Vega",
+    "Projects",
+    "Brand identity",
+    "Packaging",
+    "Wayfinding"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "coming soon",
+    "TODO filter",
+    "placeholder project",
+    "dummy discipline",
+    "fake stat"
+   ]
+  }
+ ]
+}

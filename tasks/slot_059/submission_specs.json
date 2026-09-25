@@ -1,0 +1,301 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b__catalog_asset_fallback_interaction",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_home_filtered",
+    "mobile_home_filtered",
+    "desktop_home_added",
+    "desktop_shop",
+    "desktop_product",
+    "desktop_cart"
+   ],
+   "text_signal_states": [
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "AURELIA",
+    "Our Collection",
+    "All pieces"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_home_filtered"
+   ],
+   "visible_text_signals": [
+    "AURELIA",
+    "Bag (0)",
+    "Our Collection"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_home_filtered",
+    "desktop_home_added"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_home_filtered"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/assets/"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_shop"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_home_filtered",
+    "mobile_home_filtered",
+    "desktop_home_added",
+    "desktop_shop",
+    "desktop_product",
+    "desktop_cart"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "All pieces",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Special Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Luxury Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Summer Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Unique Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Bag (",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "All pieces",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Special Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Luxury Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Summer Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Unique Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Our Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Bag (",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "All pieces",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Special Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Luxury Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Summer Edition",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Unique Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Our Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Bag (",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cart",
+     "text_contains": "Bag (",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_filtered",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 5 of 18",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_home_added",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Bag (1)",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_filtered",
+     "mobile_home_filtered"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_home_filtered",
+    "mobile_home_filtered",
+    "desktop_home_added",
+    "desktop_shop",
+    "desktop_product",
+    "desktop_cart"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_home_filtered"
+   ],
+   "completion_text_signals": [
+    "Our Collection",
+    "All pieces",
+    "Luxury Collection",
+    "Summer Edition",
+    "Add to bag"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "AURELIA",
+    "Our Collection"
+   ],
+   "forbidden_text_patterns": [
+    "FASHION",
+    "Discover the Best",
+    "Vite + React + TS",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "via.placeholder"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_home_filtered"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

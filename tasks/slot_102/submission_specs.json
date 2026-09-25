@@ -1,0 +1,260 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ProductGridLayout__45e7db3d10c6__product_option_state_component",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_prints",
+    "mobile_filter_prints"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "mobile_home"
+   ],
+   "reference_text_signals": [
+    "Shop by collection",
+    "Everyday tees",
+    "Statement prints",
+    "Cosy layers",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Shop by collection",
+    "Statement prints"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_prints"
+   ],
+   "responsive_states": [
+    "tablet_home",
+    "mobile_home",
+    "mobile_collection",
+    "mobile_filter_prints"
+   ],
+   "asset_path_signals": [
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_filter_prints"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 6,
+   "min_screenshot_bytes": 10000,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_home",
+    "mobile_collection",
+    "mobile_filter_prints"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_prints",
+    "mobile_filter_prints"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "collectionfilter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "collectionfilter__chip",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "collectionfilter__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Shop by collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "cbp-pgcard",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "collectionfocus--header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "collectionfocus--filter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "3 collections",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection",
+     "class_contains": "collectionfilter__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection",
+     "text_contains": "Showing 6 of 6",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_collection",
+     "mobile_collection"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_prints",
+     "changed_from": "desktop_collection",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "collectionfilter__readout",
+      "text_contains": "Showing 2 of 6 \u00b7 Statement prints",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_prints",
+    "mobile_filter_prints"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "mobile_home"
+   ],
+   "completion_text_signals": [
+    "Shop by collection",
+    "Everyday tees",
+    "Statement prints",
+    "Cosy layers",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_filter_prints"
+   ],
+   "regression_text_signals": [
+    "Responsive Product Grid Layout"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_collection",
+    "mobile_collection",
+    "desktop_filter_prints",
+    "mobile_filter_prints"
+   ],
+   "forbidden_text_patterns": [
+    "filter broken",
+    "TODO",
+    "Lorem ipsum placeholder",
+    "undefined",
+    "{{"
+   ]
+  }
+ ]
+}

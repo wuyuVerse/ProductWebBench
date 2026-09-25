@@ -1,0 +1,271 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_ita-design-system__eleventy-libdoc__7f64be7a84a2__route_context_restyle",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_guide",
+    "desktop_config",
+    "desktop_blog",
+    "desktop_post",
+    "desktop_search",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_rail_before",
+    "desktop_release_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_guide",
+    "desktop_config",
+    "desktop_blog",
+    "desktop_post"
+   ],
+   "reference_text_signals": [
+    "Tideglass",
+    "Installation",
+    "Configuration",
+    "Release Notes",
+    "Tideglass 2.1"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_rail",
+    "desktop_release_filter"
+   ],
+   "visible_text_signals": [
+    "Tideglass",
+    "Route context",
+    "Release Notes"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_release_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_rail"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "tideglass-hero-chart"
+   ],
+   "asset_path_states": [
+    "desktop_post"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_rail"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_guide",
+    "desktop_config",
+    "desktop_blog",
+    "desktop_post",
+    "desktop_search",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_rail_before",
+    "desktop_release_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_guide",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_config",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "route-context-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "class_contains": "route-context-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_config",
+     "class_contains": "route-context-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "route-context-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "class_contains": "route-context-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "text_contains": "Route context",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "Route context",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail",
+     "mobile_rail"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_release_filter",
+     "changed_from": "desktop_rail_before",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Release Notes route",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_guide",
+    "desktop_config",
+    "desktop_blog",
+    "desktop_post",
+    "desktop_search",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_rail_before",
+    "desktop_release_filter"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_guide",
+    "desktop_config",
+    "desktop_blog",
+    "desktop_post"
+   ],
+   "completion_text_signals": [
+    "Tideglass",
+    "Installation",
+    "Configuration",
+    "Release Notes",
+    "Tideglass 2.1"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Tideglass"
+   ],
+   "forbidden_text_patterns": [
+    "Hello World",
+    "Hello Page",
+    "Hello Child",
+    "Hello Post",
+    "My Project Title",
+    "John Doe",
+    "Lorem ipsum",
+    "{{",
+    "TODO",
+    "undefined"
+   ]
+  }
+ ]
+}

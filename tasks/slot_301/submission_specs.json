@@ -1,0 +1,239 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__GridLayoutScrollableContent__a953a79b07b6__selected_works_index_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_selected_works_index",
+    "tablet_selected_works_index",
+    "mobile_selected_works_index",
+    "desktop_ledger_index",
+    "mobile_ledger_index",
+    "desktop_grid_footer",
+    "mobile_grid_footer",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_work_open",
+    "mobile_first_work_open",
+    "desktop_case_footer",
+    "desktop_content_scroll_regression",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "text_signal_states": [
+    "desktop_selected_works_index",
+    "desktop_ledger_index"
+   ],
+   "reference_text_signals": [
+    "Survey Plate Index",
+    "Wren Halloway",
+    "Survey lens",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_ledger_index"
+   ],
+   "visible_text_signals": [
+    "Survey lens",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plate_lens"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_selected_works_index",
+    "mobile_ledger_index",
+    "mobile_grid_footer",
+    "mobile_first_work_open"
+   ],
+   "asset_path_signals": [
+    "img/1.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_selected_works_index"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_selected_works_index"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_selected_works_index",
+    "tablet_selected_works_index",
+    "mobile_selected_works_index",
+    "desktop_ledger_index",
+    "mobile_ledger_index",
+    "desktop_grid_footer",
+    "mobile_grid_footer",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_work_open",
+    "mobile_first_work_open",
+    "desktop_case_footer",
+    "desktop_content_scroll_regression",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_selected_works_index",
+     "text_contains": "Survey Plate Index",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_selected_works_index",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_ledger_index",
+     "class_contains": "plate-lens",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_ledger_index",
+     "text_contains": "Survey lens",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_grid_footer",
+     "text_contains": "Survey lens",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_case_footer",
+     "text_contains": "Survey lens",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_ledger_index",
+     "mobile_ledger_index"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_plate_lens",
+     "changed_from": "desktop_selected_works_index",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 6 of 12",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_selected_works_index",
+    "tablet_selected_works_index",
+    "mobile_selected_works_index",
+    "desktop_ledger_index",
+    "mobile_ledger_index",
+    "desktop_grid_footer",
+    "mobile_grid_footer",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_work_open",
+    "mobile_first_work_open",
+    "desktop_case_footer",
+    "desktop_content_scroll_regression",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "completion_states": [
+    "desktop_ledger_index",
+    "desktop_grid_footer"
+   ],
+   "completion_text_signals": [
+    "Survey lens",
+    "Showing",
+    "All plates",
+    "Coast plates",
+    "of 12"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_first_work_open",
+    "desktop_close_back_to_grid"
+   ],
+   "regression_text_signals": [
+    "Wren Halloway",
+    "Field Cartography",
+    "Field notes from the survey"
+   ],
+   "forbidden_states": [
+    "desktop_ledger_index",
+    "mobile_ledger_index"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "REPLACE_ME",
+    "coming soon",
+    "TODO",
+    "{{"
+   ]
+  }
+ ]
+}

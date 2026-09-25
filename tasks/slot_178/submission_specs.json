@@ -1,0 +1,247 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_JosephASG__codrops-cinematic-scroll-animations__7a56d1fdc120__cinematic_field_notes_section",
+   "reference_states": [
+    "desktop_home",
+    "desktop_director",
+    "desktop_chapter_pick",
+    "desktop_chapter_ascent",
+    "desktop_chapter_skyline",
+    "desktop_demo2",
+    "tablet_home",
+    "mobile_home",
+    "mobile_director"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "desktop_director",
+    "desktop_chapter_pick",
+    "desktop_chapter_ascent",
+    "desktop_chapter_skyline",
+    "desktop_demo2",
+    "tablet_home",
+    "mobile_home",
+    "mobile_director"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_director"
+   ],
+   "completion_text_signals": [
+    "Scene director",
+    "Codrops Cinematic",
+    "Frames",
+    "Chapters",
+    "Runtime",
+    "Now cueing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "visible_text_states": [
+    "desktop_director"
+   ],
+   "visible_text_signals": [
+    "Scene director",
+    "Now cueing",
+    "All chapters"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_home",
+    "desktop_director"
+   ],
+   "regression_text_signals": [
+    "Demo 1",
+    "Demo 2",
+    "Tutorial"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_director",
+    "desktop_chapter_pick",
+    "desktop_chapter_ascent",
+    "desktop_chapter_skyline",
+    "desktop_demo2",
+    "tablet_home",
+    "mobile_home",
+    "mobile_director"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "dummy content",
+    "placeholder rail",
+    "coming soon",
+    "todo overflow",
+    "sitecontinuum removed"
+   ],
+   "responsive_states": [
+    "tablet_home",
+    "mobile_home",
+    "mobile_director",
+    "desktop_home"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_home",
+    "mobile_director"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "min_canvas_screenshot_bytes": 20000,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "desktop_director",
+    "desktop_chapter_pick",
+    "desktop_chapter_ascent",
+    "desktop_chapter_skyline",
+    "desktop_demo2",
+    "tablet_home",
+    "mobile_home",
+    "mobile_director"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "GL Driver Message",
+    "GPU stall",
+    "ReadPixels",
+    "typekit",
+    "tympanus"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "class_contains": "director",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "text_contains": "Scene director",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_director",
+     "text_contains": "Frames",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "text_contains": "Chapters",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "text_contains": "Runtime",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_director",
+     "text_contains": "Motion",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Scene director",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "text_contains": "Scene director",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "text_contains": "Now cueing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_director"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_chapter_pick",
+     "changed_from": "desktop_director",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Now cueing: Opening",
+      "min_count": 1
+     }
+    }
+   ],
+   "interaction_states": [
+    "desktop_chapter_pick"
+   ],
+   "submission_states_interaction": [
+    "desktop_chapter_pick"
+   ],
+   "visual_anchor_states": [
+    "desktop_director",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6
+  }
+ ]
+}

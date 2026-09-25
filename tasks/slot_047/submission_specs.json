@@ -1,0 +1,242 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_ashutosh1919__masterPortfolio__33b04a568a92__impact_case_studies_page",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_impact_route",
+        "desktop_impact_filter",
+        "mobile_impact_route",
+        "tablet_impact_route",
+        "desktop_projects"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_image_count": 0,
+      "min_screenshot_bytes": 6000,
+      "overflow_tolerance_px": 24,
+      "text_signal_states": [
+        "desktop_impact_route"
+      ],
+      "reference_text_signals": [
+        "Impact Case Studies",
+        "Focus by discipline"
+      ],
+      "visible_text_states": [
+        "desktop_impact_route"
+      ],
+      "visible_text_signals": [
+        "Impact Case Studies",
+        "Focus by discipline"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_impact_filter"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_impact_filter",
+          "changed_from": "desktop_impact_route",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_impact_route",
+        "tablet_impact_route"
+      ],
+      "asset_signal_states": [
+        "desktop_home"
+      ],
+      "asset_path_signals": [
+        "skills/",
+        ".png"
+      ],
+      "min_asset_path_signals": 1,
+      "visual_regression": {
+        "states": [
+          "desktop_impact_route",
+          "mobile_impact_route"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "dom_assertions": [
+        {
+          "state": "desktop_impact_route",
+          "class_contains": "discipline-filter",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_impact_route",
+          "class_contains": "discipline-filter",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "class_contains": "discipline-filter",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_impact_route",
+          "text_contains": "Focus by discipline",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Focus by discipline",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_impact_route",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_impact_route",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "mobile_impact_route",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "tablet_impact_route",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_impact_route",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Impact",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_impact_route",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Impact",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Impact",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Impact",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Impact",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_impact_route",
+        "desktop_impact_filter",
+        "mobile_impact_route",
+        "tablet_impact_route",
+        "desktop_projects"
+      ],
+      "visual_anchor_states": [
+        "desktop_impact_route",
+        "mobile_impact_route"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_impact_route",
+        "desktop_impact_filter",
+        "mobile_impact_route",
+        "tablet_impact_route",
+        "desktop_projects"
+      ],
+      "completion_states": [
+        "desktop_impact_route"
+      ],
+      "completion_text_signals": [
+        "Impact Case Studies",
+        "Focus by discipline"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 2,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Home",
+        "Education",
+        "Experience",
+        "Projects"
+      ],
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_impact_route",
+        "desktop_impact_filter",
+        "mobile_impact_route",
+        "tablet_impact_route",
+        "desktop_projects"
+      ],
+      "forbidden_text_patterns": [
+        "Impact Cheatsheet",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "Woops"
+      ]
+    }
+  ]
+}

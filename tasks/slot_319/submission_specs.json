@@ -1,0 +1,228 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_farideghbali__startup-website-template__7905fbcba5c1__trial_handoff_component",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_features",
+    "mobile_features",
+    "desktop_tour",
+    "desktop_pricing_regression",
+    "desktop_contact_regression",
+    "desktop_features_build"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_features",
+    "mobile_features",
+    "desktop_tour",
+    "desktop_pricing_regression",
+    "desktop_contact_regression",
+    "desktop_features_build"
+   ],
+   "text_signal_states": [
+    "desktop_features",
+    "desktop_tour"
+   ],
+   "reference_text_signals": [
+    "Feature focus",
+    "Showing 6 of 6",
+    "Main Features",
+    "Feature Tour"
+   ],
+   "visible_text_states": [
+    "desktop_features"
+   ],
+   "visible_text_signals": [
+    "Feature focus",
+    "Showing 6 of 6"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "completion_states": [
+    "desktop_features",
+    "desktop_features_build"
+   ],
+   "completion_text_signals": [
+    "Feature focus",
+    "All features",
+    "Build",
+    "Design",
+    "Support"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_pricing_regression",
+    "desktop_contact_regression"
+   ],
+   "regression_text_signals": [
+    "Affordable Pricing",
+    "Start Free Trial",
+    "Open a Ticket"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/team-workflow.png",
+    "img/help-video-bg.png",
+    "img/logo-light.svg"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_features"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_features",
+    "mobile_features",
+    "desktop_tour",
+    "desktop_pricing_regression",
+    "desktop_contact_regression",
+    "desktop_features_build"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "help-video.mp4"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_features",
+     "mobile_features"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_states": [
+    "desktop_features_build"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_features_build",
+     "changed_from": "desktop_features",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 6 \u00b7 Build",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_features"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_features",
+     "text_contains": "Feature focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tour",
+     "tag": "button",
+     "text_contains": "Build",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tour",
+     "tag": "button",
+     "text_contains": "Design",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tour",
+     "tag": "button",
+     "text_contains": "Support",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_tour",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features",
+     "class_contains": "features-box",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_tour",
+     "class_contains": "features-box",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_features",
+     "tag": "button",
+     "text_contains": "Build",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features",
+     "tag": "button",
+     "text_contains": "Design",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features",
+     "tag": "button",
+     "text_contains": "Support",
+     "min_count": 1
+    }
+   ],
+   "forbidden_text_patterns": []
+  }
+ ]
+}

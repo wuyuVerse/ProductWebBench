@@ -1,0 +1,219 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_biazo__codrops-add-to-cart__237fa79f3fd4__cart_state_strip",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_ceramics",
+    "desktop_lookbook",
+    "desktop_cart_badge",
+    "desktop_cart_open",
+    "desktop_quantity_plus",
+    "desktop_remove_empty",
+    "tablet_cart_open",
+    "mobile_cart_open"
+   ],
+   "text_signal_states": [
+    "desktop_shopfilter",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Shop by collection",
+    "Showing 6 of 6",
+    "Add to cart",
+    "Ceramics"
+   ],
+   "visible_text_states": [
+    "desktop_shopfilter",
+    "desktop_lookbook"
+   ],
+   "visible_text_signals": [
+    "Shop by collection",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_shopfilter_ceramics"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_shopfilter_ceramics",
+     "changed_from": "desktop_shopfilter",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "shopfilter__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_shopfilter",
+    "tablet_cart_open",
+    "mobile_cart_open"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "product-01-cover"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_shopfilter"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_ceramics",
+    "desktop_lookbook",
+    "desktop_cart_badge",
+    "desktop_cart_open",
+    "desktop_quantity_plus",
+    "desktop_remove_empty",
+    "tablet_cart_open",
+    "mobile_cart_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "use.typekit.net"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_shopfilter",
+     "class_contains": "shopfilter__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_shopfilter",
+     "text_contains": "Shop by collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_lookbook",
+     "class_contains": "shopfilter__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_lookbook",
+     "text_contains": "Shop by collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "button",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_cart_open",
+     "tag": "aside",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_cart_open",
+     "tag": "aside",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_shopfilter",
+     "mobile_shopfilter",
+     "desktop_shopfilter_ceramics"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_ceramics",
+    "desktop_lookbook",
+    "desktop_cart_badge",
+    "desktop_cart_open",
+    "desktop_quantity_plus",
+    "desktop_remove_empty",
+    "tablet_cart_open",
+    "mobile_cart_open"
+   ],
+   "completion_states": [
+    "desktop_shopfilter",
+    "desktop_shopfilter_ceramics",
+    "desktop_lookbook"
+   ],
+   "completion_text_signals": [
+    "Shop by collection",
+    "Showing 6 of 6 \u00b7 All collections",
+    "Showing 2 of 6 \u00b7 Ceramics"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_shopfilter",
+    "desktop_cart_open"
+   ],
+   "regression_text_signals": [
+    "Add to cart",
+    "Cart",
+    "Checkout"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "STATE CONTINUITY STRIP",
+    "Basket resting"
+   ],
+   "visual_anchor_states": [
+    "desktop_shopfilter",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

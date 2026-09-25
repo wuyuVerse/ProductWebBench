@@ -1,0 +1,45 @@
+{
+ "slot": 582,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_assignments",
+   "dom_len": 776,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "2eb60743abfbdbc6999eca17dff2ef43",
+    "reference": "0ff49bbae38f0bf28ab5e8c5b823b4e9",
+    "bad": "32d18f0f162f264b7275e2d6c8b9ef41"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 22,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "ivandi1980__ivandjoh-admin-panel__37a505740389",
+ "capability": "Build",
+ "capability_is_build": true
+}

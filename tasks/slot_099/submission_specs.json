@@ -1,0 +1,209 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_technext__CloudAgency__59a3ad7971d6__pricing_contact_flow_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "desktop_portfolio_web",
+    "mobile_portfolio",
+    "desktop_blog"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "reference_text_signals": [
+    "Halyard & Co.",
+    "portfolio",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Halyard & Co.",
+    "a brand & packaging design studio"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "completion_text_signals": [
+    "Halyard & Co.",
+    "portfolio",
+    "Showing 6 of 6",
+    "Selected work"
+   ],
+   "min_completion_text_signals": 2,
+   "require_all_completion_signals": false,
+   "regression_text_signals": [
+    "portfolio",
+    "pricing",
+    "contact",
+    "testimonial"
+   ],
+   "regression_text_states": [
+    "desktop_home"
+   ],
+   "interaction_states": [
+    "desktop_portfolio_web"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_portfolio"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "desktop_portfolio_web",
+    "mobile_portfolio",
+    "desktop_blog"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "folio__tab",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "folio__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "folio__card-name",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "folio-rail__title",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "folio-rail__chip",
+     "min_count": 5
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "desktop_portfolio_web",
+    "mobile_portfolio",
+    "desktop_blog"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "forbidden_text_patterns": [
+    "Cloud Agency",
+    "a digital studio",
+    "create your own slogan",
+    "themewagon",
+    "your website link",
+    "blabla parkway"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio",
+     "desktop_portfolio_web",
+     "mobile_portfolio"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_web",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "folio__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

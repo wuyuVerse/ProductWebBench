@@ -1,0 +1,261 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_TailGrids__play-astro__c2f876904c9b__ai_launch_readiness_site",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_pricing",
+    "desktop_rail_blog",
+    "desktop_rail_contact",
+    "launch_focus_toggle"
+   ],
+   "text_signal_states": [
+    "desktop_rail_home",
+    "desktop_rail_pricing"
+   ],
+   "reference_text_signals": [
+    "Launch readiness track",
+    "Discovery",
+    "AI Pilot",
+    "Launch Review"
+   ],
+   "visible_text_states": [
+    "desktop_rail_home",
+    "desktop_rail_pricing"
+   ],
+   "visible_text_signals": [
+    "Launch readiness track",
+    "Discovery"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "launch_focus_toggle"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_pricing",
+    "mobile_rail_home"
+   ],
+   "asset_path_signals": [
+    "assets/hero",
+    "assets/logo"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_rail_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_pricing",
+    "desktop_rail_blog",
+    "desktop_rail_contact",
+    "launch_focus_toggle"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "class_contains": "launch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_pricing",
+     "class_contains": "launch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_blog",
+     "class_contains": "launch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_contact",
+     "class_contains": "launch-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "class_contains": "launch-rail__chip",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_rail_pricing",
+     "class_contains": "launch-rail__chip",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_rail_home",
+     "text_contains": "Launch readiness track",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_pricing",
+     "text_contains": "Launch readiness track",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_blog",
+     "text_contains": "Launch readiness track",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_contact",
+     "text_contains": "Launch readiness track",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail_home",
+     "mobile_rail_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "launch_focus_toggle",
+     "changed_from": "desktop_rail_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "pilot cohort",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_blog",
+    "desktop_contact",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_rail_pricing",
+    "desktop_rail_blog",
+    "desktop_rail_contact",
+    "launch_focus_toggle"
+   ],
+   "completion_states": [
+    "desktop_rail_home",
+    "desktop_rail_pricing"
+   ],
+   "completion_text_signals": [
+    "Launch readiness track",
+    "Discovery",
+    "Workflow Map",
+    "AI Pilot",
+    "Launch Review"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_pricing"
+   ],
+   "regression_text_signals": [
+    "Pricing",
+    "PLAY"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "Cheatsheet"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/LaunchReadinessRail.astro"
+    ],
+    "should_preserve": [
+     "src/components/layout/Header.astro",
+     "src/components/Pricingsection.astro",
+     "src/pages/contact.astro",
+     "src/content/blog"
+    ]
+   }
+  }
+ ]
+}

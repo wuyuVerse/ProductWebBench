@@ -1,0 +1,213 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_said7388__developer-portfolio__5f8cd8e94dac__case_studies",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_case_studies",
+    "tablet_case_studies",
+    "mobile_case_studies",
+    "desktop_filter_backend",
+    "mobile_filter_backend",
+    "desktop_skills",
+    "desktop_blog"
+   ],
+   "text_signal_states": [
+    "desktop_case_studies",
+    "desktop_filter_backend",
+    "desktop_blog"
+   ],
+   "reference_text_signals": [
+    "Selected case studies",
+    "AI Financial Assistant Platform",
+    "Multilingual Travel Marketplace",
+    "AI Real Estate Suite",
+    "Telemetry Ingestion Service",
+    "See related project"
+   ],
+   "visible_text_states": [
+    "desktop_case_studies",
+    "desktop_filter_backend"
+   ],
+   "visible_text_signals": [
+    "AI Financial Assistant Platform",
+    "Telemetry Ingestion Service",
+    "Selected case studies"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_backend"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_backend",
+     "changed_from": "desktop_case_studies",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "2 of 6 case studies",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_case_studies",
+    "tablet_case_studies"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/image/crefin",
+    "/image/travel",
+    "/image/real-estate"
+   ],
+   "asset_path_states": [
+    "desktop_case_studies",
+    "desktop_filter_backend"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_case_studies",
+    "tablet_case_studies",
+    "mobile_case_studies",
+    "desktop_filter_backend",
+    "mobile_filter_backend",
+    "desktop_skills",
+    "desktop_blog"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "dev.to"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_case_studies",
+     "class_contains": "cs-filter__title",
+     "text_contains": "Selected case studies",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_case_studies",
+     "text_contains": "See related project",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_case_studies",
+     "text_contains": "AI Financial Assistant Platform",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "class_contains": "cs-filter__title",
+     "text_contains": "Selected case studies",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_case_studies",
+     "mobile_case_studies",
+     "desktop_filter_backend",
+     "mobile_filter_backend"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "desktop_case_studies",
+    "tablet_case_studies",
+    "mobile_case_studies",
+    "desktop_filter_backend",
+    "mobile_filter_backend",
+    "desktop_skills",
+    "desktop_blog"
+   ],
+   "completion_states": [
+    "desktop_case_studies"
+   ],
+   "completion_text_signals": [
+    "Selected case studies",
+    "AI Financial Assistant Platform",
+    "Multilingual Travel Marketplace",
+    "AI Real Estate Suite",
+    "Telemetry Ingestion Service"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_projects",
+    "desktop_skills"
+   ],
+   "regression_text_signals": [
+    "PROJECTS",
+    "Skills"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "your company",
+    "coming soon",
+    "TODO",
+    "placeholder"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_case_studies"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

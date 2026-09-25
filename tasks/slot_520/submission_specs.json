@@ -1,0 +1,133 @@
+{
+  "tasks": [
+    {
+      "task_id": "build_creativetimofficial__material-tailwind-dashboard-react__721f312c444e__roadmap",
+      "reference_states": [
+        "desktop_roadmap",
+        "mobile_roadmap"
+      ],
+      "submission_states": [
+        "desktop_roadmap",
+        "mobile_roadmap"
+      ],
+      "interaction_states": [],
+      "completion_states": [
+        "desktop_roadmap"
+      ],
+      "completion_text_signals": [
+        "Shipping Now",
+        "Up Next",
+        "Exploring Later"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 3,
+      "visible_text_states": [
+        "desktop_roadmap"
+      ],
+      "visible_text_signals": [
+        "Product Roadmap"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 1,
+      "regression_states": [
+        "desktop_roadmap"
+      ],
+      "regression_text_signals": [],
+      "forbidden_states": [
+        "desktop_roadmap"
+      ],
+      "forbidden_text_patterns": [
+        "TODO",
+        "FIXME",
+        "404",
+        "Not Found"
+      ],
+      "responsive_states": [
+        "mobile_roadmap"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "dom.html",
+        "console.json"
+      ],
+      "min_text_length": 120,
+      "min_screenshot_bytes": 8000,
+      "asset_signal_states": [],
+      "asset_path_signals": [],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_roadmap"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_roadmap",
+        "mobile_roadmap"
+      ],
+      "console_error_allowlist": [
+        "favicon",
+        "google",
+        "gstatic",
+        "fonts",
+        "cloudflare",
+        "cdnjs",
+        "fontawesome",
+        "creative-tim",
+        "nepcha",
+        "api.github.com",
+        "github"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_roadmap",
+          "tag": "h2",
+          "text_contains": "Product Roadmap",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_roadmap",
+          "tag": "h3",
+          "text_contains": "Unified Global Search",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_roadmap",
+          "tag": "h3",
+          "text_contains": "Real-time Team Collaboration",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_roadmap",
+          "tag": "h3",
+          "text_contains": "Native Mobile Application",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_roadmap",
+          "tag": "button",
+          "text_contains": "Request a Feature",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_roadmap"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          }
+        }
+      },
+      "interaction_assertions": [],
+      "visual_anchor_states": [
+        "desktop_roadmap"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

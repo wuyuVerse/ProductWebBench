@@ -1,0 +1,60 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_cruip__tailwind-dashboard-template__173f64183e3f__settings",
+   "reference_states": ["desktop_settings", "mobile_settings"],
+   "submission_states": ["desktop_settings", "mobile_settings"],
+   "interaction_states": ["desktop_settings_notifications"],
+   "completion_states": ["desktop_settings"],
+   "completion_text_signals": ["Account Settings", "Personal Information", "My Account"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_settings"],
+   "visible_text_signals": ["Personal Information"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_settings"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_settings"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_settings"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_settings"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_settings", "mobile_settings"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts"],
+   "dom_assertions": [
+    {"state": "desktop_settings", "tag": "h1", "text_contains": "Account Settings", "min_count": 1},
+    {"state": "desktop_settings", "tag": "button", "text_contains": "My Account", "min_count": 1},
+    {"state": "desktop_settings", "tag": "button", "text_contains": "Notifications", "min_count": 1},
+    {"state": "desktop_settings", "tag": "button", "text_contains": "Billing", "min_count": 1},
+    {"state": "desktop_settings", "text_contains": "Personal Information", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_settings"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_settings_notifications",
+     "require_interaction": true,
+     "changed_from": "desktop_settings",
+     "dom": {"text_contains": "Notification Preferences", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_settings"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

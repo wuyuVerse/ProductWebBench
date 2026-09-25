@@ -1,0 +1,239 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_cullenwebber__three-html-to-canvas__bad1a7c78c5b__projection_content_asset_repair",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_console",
+        "mobile_console",
+        "desktop_stage_pick",
+        "desktop_mid_scroll",
+        "desktop_deep_scroll",
+        "mobile_scroll"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_console",
+        "mobile_console",
+        "desktop_stage_pick",
+        "desktop_mid_scroll",
+        "desktop_deep_scroll",
+        "mobile_scroll"
+      ],
+      "completion_states": [
+        "desktop_console",
+        "desktop_initial"
+      ],
+      "completion_text_signals": [
+        "Projection console",
+        "HTML to Canvas",
+        "CanvasTexture",
+        "model.glb",
+        "Lenis",
+        "Full pipeline"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "visible_text_states": [
+        "desktop_console"
+      ],
+      "visible_text_signals": [
+        "Projection console",
+        "DOM raster",
+        "Inspecting"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_console"
+      ],
+      "regression_text_signals": [
+        "Projection console",
+        "HTML to Canvas"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_console",
+        "mobile_console",
+        "desktop_stage_pick",
+        "desktop_mid_scroll",
+        "desktop_deep_scroll",
+        "mobile_scroll"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "dummy content",
+        "placeholder rail",
+        "coming soon",
+        "todo overflow",
+        "sitecontinuum removed"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_initial",
+        "mobile_console",
+        "mobile_scroll"
+      ],
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_initial",
+        "mobile_console",
+        "mobile_scroll"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 40,
+      "min_image_count": 0,
+      "min_screenshot_bytes": 6000,
+      "min_canvas_screenshot_bytes": 4500,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_console",
+        "mobile_console",
+        "desktop_stage_pick",
+        "desktop_mid_scroll",
+        "desktop_deep_scroll",
+        "mobile_scroll"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com",
+        "GL Driver Message",
+        "GPU stall due to ReadPixels"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_console",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_console",
+          "class_contains": "proj-console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_console",
+          "tag": "h2",
+          "text_contains": "Projection console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_console",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_console",
+          "class_contains": "proj-console__tile",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_mid_scroll",
+          "class_contains": "proj-console--mid",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_mid_scroll",
+          "text_contains": "Projection console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deep_scroll",
+          "class_contains": "proj-console--deep",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deep_scroll",
+          "text_contains": "Projection console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "class_contains": "proj-console--entry",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_console"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_stage_pick",
+          "changed_from": "desktop_console",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "proj-console__readout",
+            "text_contains": "Inspecting: DOM raster",
+            "min_count": 1
+          }
+        }
+      ],
+      "interaction_states": [
+        "desktop_stage_pick"
+      ],
+      "submission_states_interaction": [
+        "desktop_stage_pick"
+      ],
+      "visual_anchor_states": [
+        "desktop_console",
+        "desktop_initial"
+      ],
+      "mean_luminance_tolerance": 120,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6
+    }
+  ]
+}

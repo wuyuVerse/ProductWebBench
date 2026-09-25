@@ -1,0 +1,232 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__FilterableProductGrid__3cc6094fc922__curated_filter_showcase_section",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_home_filter",
+    "mobile_home_filter",
+    "desktop_filter_jackets",
+    "desktop_curated",
+    "tablet_curated",
+    "mobile_curated",
+    "desktop_curated_filter",
+    "desktop_add_to_cart"
+   ],
+   "text_signal_states": [
+    "desktop_home_filter",
+    "desktop_curated"
+   ],
+   "reference_text_signals": [
+    "Curated Edit",
+    "Frost Poplin overshirt",
+    "Showing all"
+   ],
+   "visible_text_states": [
+    "desktop_home_filter"
+   ],
+   "visible_text_signals": [
+    "Showing all",
+    "Jackets"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_jackets"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_home_filter",
+    "mobile_curated",
+    "tablet_curated"
+   ],
+   "asset_path_signals": [
+    "images/shirt.png"
+   ],
+   "asset_path_states": [
+    "desktop_curated"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_curated"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_screenshot_bytes": 5000,
+   "min_canvas_screenshot_bytes": 5000,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_home_filter",
+    "mobile_home_filter",
+    "desktop_filter_jackets",
+    "desktop_curated",
+    "tablet_curated",
+    "mobile_curated",
+    "desktop_curated_filter",
+    "desktop_add_to_cart"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "/vendor/fonts/",
+    "fontawesome-webfont",
+    "lato-"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Curated Edit",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_curated",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_curated",
+     "text_contains": "Curated Edit",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_filter",
+     "text_contains": "Showing all",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_filter",
+     "text_contains": "Jackets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_curated_filter",
+     "text_contains": "Showing all",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_curated_filter",
+     "text_contains": "Trousers",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_curated",
+     "text_contains": "Trousers",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_filter",
+     "mobile_home_filter",
+     "desktop_filter_jackets"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.15,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.1,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_jackets",
+     "changed_from": "desktop_home_filter",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 6 of 36",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_home_filter",
+    "mobile_home_filter",
+    "desktop_filter_jackets",
+    "desktop_curated",
+    "tablet_curated",
+    "mobile_curated",
+    "desktop_curated_filter",
+    "desktop_add_to_cart"
+   ],
+   "completion_states": [
+    "desktop_home_filter",
+    "desktop_curated"
+   ],
+   "completion_text_signals": [
+    "Showing all",
+    "Curated Edit",
+    "Frost Poplin overshirt"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_home",
+    "desktop_filter_jackets"
+   ],
+   "regression_text_signals": [
+    "Filterable Product Grid",
+    "Jackets",
+    "Shirts",
+    "Dresses"
+   ],
+   "forbidden_states": [
+    "desktop_home_filter",
+    "mobile_home_filter",
+    "desktop_filter_jackets"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "Cheatsheet",
+    "coming soon",
+    "TODO",
+    "{{"
+   ]
+  }
+ ]
+}

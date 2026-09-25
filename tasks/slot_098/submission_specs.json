@@ -1,0 +1,286 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-personal__6a1ebcc76a93__signature_services_section",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_worklib",
+    "mobile_worklib",
+    "desktop_filter_branding",
+    "desktop_home_work",
+    "desktop_services",
+    "mobile_services",
+    "desktop_contact"
+   ],
+   "text_signal_states": [
+    "desktop_worklib"
+   ],
+   "reference_text_signals": [
+    "Work library",
+    "Filter the work",
+    "Marlow & Vane"
+   ],
+   "visible_text_states": [
+    "desktop_worklib"
+   ],
+   "visible_text_signals": [
+    "Work library"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_filter_branding"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_branding",
+     "changed_from": "desktop_worklib",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_worklib",
+     "mobile_worklib",
+     "desktop_filter_branding"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_worklib"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/profile",
+    "assets/"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_worklib",
+    "mobile_worklib",
+    "desktop_filter_branding",
+    "desktop_home_work",
+    "desktop_services",
+    "mobile_services",
+    "desktop_contact"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Work library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_work",
+     "text_contains": "Work library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_work",
+     "tag": "h4",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "nav-link",
+     "text_contains": "Services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "h4",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "h4",
+     "text_contains": "Northwind rebrand",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "button",
+     "text_contains": "Branding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "button",
+     "text_contains": "Websites",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "button",
+     "text_contains": "Growth",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_worklib",
+     "tag": "button",
+     "text_contains": "Content",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_worklib",
+     "text_contains": "Work library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Work library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "h4",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_services",
+     "text_contains": "Work library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_worklib",
+    "mobile_worklib",
+    "desktop_filter_branding",
+    "desktop_home_work",
+    "desktop_services",
+    "mobile_services",
+    "desktop_contact"
+   ],
+   "completion_states": [
+    "desktop_worklib"
+   ],
+   "completion_text_signals": [
+    "Work library",
+    "Northwind rebrand",
+    "Fern & Fold marque",
+    "Harbour Clinic site",
+    "Meridian storefront",
+    "Lumen launch push",
+    "Atlas launch story"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 7,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Home",
+    "Services",
+    "Resume",
+    "Projects",
+    "Contact"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Start Bootstrap",
+    "Personal",
+    "dummyimage.com",
+    "Cheatsheet"
+   ],
+   "visual_anchor_states": [
+    "desktop_worklib",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

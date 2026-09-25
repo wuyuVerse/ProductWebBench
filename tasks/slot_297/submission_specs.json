@@ -1,0 +1,205 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_technext__small-apps__c5b26fd87b90__demo_request_handoff",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_data",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_faq"
+   ],
+   "text_signal_states": [
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Find the right Small Apps feature",
+    "Easy Prototyping",
+    "Insight Charts",
+    "Task Relay"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Find the right Small Apps feature",
+    "Easy Prototyping"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_home_data"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_data",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "featfinder__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/logo",
+    "images/feature"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "featfinder__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "featfinder__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "featfinder__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Find the right Small Apps feature",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "class_contains": "featfinder__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Find the right Small Apps feature",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "class_contains": "featfinder__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "text_contains": "Find the right Small Apps feature",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_faq",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "regression_states": [
+    "desktop_home",
+    "desktop_faq"
+   ],
+   "regression_text_signals": [
+    "Showcase your app with Small Apps"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "mobile_home"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_faq"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "favicon"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_data",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_faq"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_data",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_faq"
+   ],
+   "completion_states": [
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "Find the right Small Apps feature",
+    "Showing 6 of 6",
+    "Easy Prototyping",
+    "Task Relay"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "forbidden_text_patterns": [
+    "404 \u2014 Not Found",
+    "placeholder text",
+    "TODO",
+    "FIXME"
+   ]
+  }
+ ]
+}

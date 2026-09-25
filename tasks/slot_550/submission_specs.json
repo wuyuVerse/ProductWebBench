@@ -1,0 +1,208 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_zerostaticthemes__gatsby-serif-theme__299366ec54d7__pricing",
+   "reference_states": [
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_services"
+   ],
+   "submission_states": [
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_services"
+   ],
+   "interaction_states": [
+    "desktop_pricing_annual"
+   ],
+   "completion_states": [
+    "desktop_pricing"
+   ],
+   "completion_text_signals": [
+    "Pricing Plans",
+    "Billed monthly, cancel anytime.",
+    "Choose Starter"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_pricing"
+   ],
+   "visible_text_signals": [
+    "Pricing Plans"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_pricing"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_pricing"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_pricing"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_pricing"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_services"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_pricing",
+     "tag": "h1",
+     "text_contains": "Pricing Plans",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Starter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Professional",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Enterprise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "button",
+     "text_contains": "Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "button",
+     "text_contains": "Annual",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "p",
+     "text_contains": "Billed monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "a",
+     "text_contains": "Choose Starter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h3",
+     "text_contains": "Gatsby Serif Theme",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "a",
+     "text_contains": "Services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "a",
+     "text_contains": "Team",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "h3",
+     "text_contains": "Gatsby Serif Theme",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "a",
+     "text_contains": "Services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "a",
+     "text_contains": "Team",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_pricing",
+     "tag": "h1",
+     "text_contains": "Pricing Plans",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_pricing",
+     "tag": "h3",
+     "text_contains": "Starter",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_annual",
+     "require_interaction": true,
+     "changed_from": "desktop_pricing",
+     "dom": {
+      "tag": "p",
+      "text_contains": "Billed annually",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 3
+  }
+ ]
+}

@@ -1,0 +1,206 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_wrappixel__Flexy-admin-Nextjs-Free__3291555a7640__fulfillment_ops_dashboard",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_scope",
+        "desktop_table",
+        "desktop_about",
+        "desktop_forms"
+      ],
+      "text_signal_states": [
+        "desktop_rail_home",
+        "desktop_rail_scope",
+        "desktop_table"
+      ],
+      "reference_text_signals": [
+        "Fulfillment focus",
+        "Elite Admin",
+        "Real Homes WP Theme",
+        "MedicalPro WP Theme",
+        "Hosting Press HTML",
+        "Showing"
+      ],
+      "visible_text_states": [
+        "desktop_rail_home"
+      ],
+      "visible_text_signals": [
+        "Fulfillment focus",
+        "Elite Admin",
+        "Showing"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_rail_scope"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_rail_scope",
+          "changed_from": "desktop_rail_home",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 1 of 4",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "mobile_rail_home"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 150,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "assets/images"
+      ],
+      "min_asset_path_signals": 1,
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_scope",
+        "desktop_table",
+        "desktop_about",
+        "desktop_forms"
+      ],
+      "completion_states": [
+        "desktop_rail_home"
+      ],
+      "completion_text_signals": [
+        "Fulfillment focus",
+        "Elite Admin",
+        "Hosting Press HTML",
+        "Showing"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 4,
+      "regression_states": [
+        "desktop_forms",
+        "desktop_table"
+      ],
+      "regression_text_signals": [
+        "Freightline"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_rail_home",
+          "desktop_table"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          }
+        }
+      },
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_rail_home"
+      ],
+      "mean_luminance_tolerance": 90,
+      "min_palette_overlap": 1,
+      "dom_assertions": [
+        {
+          "state": "desktop_rail_home",
+          "tag": "a",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_rail_home",
+          "tag": "p",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_rail_home",
+          "class_contains": "fulfillment-ops-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_rail_home",
+          "text_contains": "Fulfillment focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_rail_home",
+          "text_contains": "Critical",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_table",
+          "class_contains": "fulfillment-ops-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_table",
+          "text_contains": "Fulfillment focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_table",
+          "text_contains": "Critical",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "class_contains": "fulfillment-ops-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Fulfillment focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Critical",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_allowlist": [
+        "_vercel",
+        "favicon",
+        "gtag",
+        "gtm",
+        "google-analytics",
+        "analytics",
+        "insights",
+        "wrappixel.com"
+      ],
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_scope",
+        "desktop_table",
+        "desktop_about",
+        "desktop_forms"
+      ]
+    }
+  ]
+}

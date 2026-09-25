@@ -1,0 +1,200 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e__revenue_workspace_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_scope_regional",
+    "desktop_profile_rail",
+    "desktop_calendar_rail",
+    "desktop_blank_regression"
+   ],
+   "text_signal_states": [
+    "desktop_rail_home",
+    "desktop_scope_regional",
+    "desktop_profile_rail"
+   ],
+   "reference_text_signals": [
+    "Revenue Ops Rail",
+    "Revenue attainment",
+    "Pipeline coverage",
+    "At-risk orders",
+    "Fulfillment SLA",
+    "Scope: Global coverage"
+   ],
+   "visible_text_states": [
+    "desktop_rail_home"
+   ],
+   "visible_text_signals": [
+    "Revenue Ops Rail",
+    "Revenue attainment",
+    "Fulfillment SLA"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_scope_regional"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_scope_regional",
+     "changed_from": "desktop_rail_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Scope: Regional coverage",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_rail_home"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 150,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "product-0"
+   ],
+   "min_asset_path_signals": 1,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_scope_regional",
+    "desktop_profile_rail",
+    "desktop_calendar_rail",
+    "desktop_blank_regression"
+   ],
+   "completion_states": [
+    "desktop_rail_home"
+   ],
+   "completion_text_signals": [
+    "Revenue Ops Rail",
+    "Revenue attainment",
+    "Pipeline coverage",
+    "Fulfillment SLA"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_blank_regression",
+    "desktop_profile_rail",
+    "desktop_calendar_rail"
+   ],
+   "regression_text_signals": [
+    "Dashboard",
+    "Calendar",
+    "Profile"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "coming soon"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail_home",
+     "desktop_scope_regional"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_rail_home"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_rail_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "tag": "p",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_rail_home",
+     "class_contains": "revenue-ops-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "text_contains": "Revenue Ops Rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile_rail",
+     "class_contains": "revenue-ops-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile_rail",
+     "text_contains": "Revenue Ops Rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_calendar_rail",
+     "class_contains": "revenue-ops-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_calendar_rail",
+     "text_contains": "Revenue Ops Rail",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_allowlist": [
+    "_vercel",
+    "favicon",
+    "gtag",
+    "gtm",
+    "google-analytics",
+    "analytics",
+    "insights",
+    "tailadmin.com"
+   ],
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "desktop_scope_regional",
+    "desktop_profile_rail",
+    "desktop_calendar_rail",
+    "desktop_blank_regression"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,157 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_kizivat__saas-kit__b953870ee448__plans",
+   "reference_states": [
+    "desktop_plans",
+    "mobile_plans"
+   ],
+   "submission_states": [
+    "desktop_plans",
+    "mobile_plans"
+   ],
+   "interaction_states": [
+    "desktop_plans_annual"
+   ],
+   "completion_states": [
+    "desktop_plans"
+   ],
+   "completion_text_signals": [
+    "Plans & Pricing",
+    "Billed monthly — cancel anytime.",
+    "Get Starter"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_plans"
+   ],
+   "visible_text_signals": [
+    "Plans & Pricing",
+    "Billed monthly — cancel anytime."
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_plans"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_plans"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_plans"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_plans"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_plans",
+    "mobile_plans"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_plans",
+     "tag": "h1",
+     "text_contains": "Plans & Pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "button",
+     "text_contains": "Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "button",
+     "text_contains": "Annual",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "h3",
+     "text_contains": "Starter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "h3",
+     "text_contains": "Pro",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "h3",
+     "text_contains": "Enterprise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "tag": "p",
+     "text_contains": "Billed monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "text_contains": "Get Pro",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_plans"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_annual",
+     "require_interaction": true,
+     "changed_from": "desktop_plans",
+     "dom": {
+      "tag": "p",
+      "text_contains": "annual",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_plans"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

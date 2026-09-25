@@ -1,0 +1,237 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_StartBootstrap__startbootstrap-clean-blog__1ebc4f8f3b61__route_safe_reading_queue",
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_post",
+        "mobile_post",
+        "desktop_about",
+        "desktop_contact",
+        "desktop_home_filter"
+      ],
+      "required_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_post",
+        "mobile_post",
+        "desktop_about",
+        "desktop_contact",
+        "desktop_home_filter"
+      ],
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_post",
+        "mobile_post",
+        "desktop_about",
+        "desktop_contact",
+        "desktop_home_filter"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 0,
+      "overflow_tolerance_px": 24,
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_post"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "min_count": 10
+        },
+        {
+          "state": "desktop_home",
+          "tag": "h2",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_post",
+          "tag": "h1",
+          "text_contains": "Reading the salt marsh",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post",
+          "tag": "p",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_post",
+          "tag": "img",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "tag": "h1",
+          "text_contains": "About the Review",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_contact",
+          "tag": "h1",
+          "text_contains": "Write to the Review",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "text_contains": "Reading room",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Reading room",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post",
+          "text_contains": "Reading room",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_post",
+        "mobile_post",
+        "desktop_about",
+        "desktop_contact",
+        "desktop_home_filter"
+      ],
+      "completion_states": [
+        "desktop_home",
+        "desktop_post",
+        "desktop_about",
+        "desktop_contact"
+      ],
+      "completion_text_signals": [
+        "Tidemark Review",
+        "Marlow Renwick",
+        "Reading the salt marsh by the height of its grass",
+        "About the Review",
+        "Write to the Review",
+        "coastal and estuary science"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_signals": 5,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_post",
+        "desktop_about"
+      ],
+      "visible_text_signals": [
+        "Reading the salt marsh by the height of its grass",
+        "About the Review"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_signals": 2,
+      "min_visible_text_signals": 2,
+      "forbidden_text_patterns": [
+        "Clean Blog",
+        "A Blog Theme by Start Bootstrap",
+        "Man must explore",
+        "About Me",
+        "Contact Me",
+        "Lorem ipsum",
+        "Your Website"
+      ],
+      "forbidden_text_states": [
+        "desktop_home",
+        "desktop_post",
+        "desktop_about",
+        "desktop_contact"
+      ],
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Tidemark Review"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_home_filter"
+      ],
+      "mean_luminance_tolerance": 90,
+      "min_palette_overlap": 1,
+      "visual_regression": {
+        "states": [
+          "desktop_home",
+          "desktop_home_filter"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_states": [
+        "desktop_home_filter"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_home_filter",
+          "changed_from": "desktop_home",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 1 of 4 essays",
+            "min_count": 1
+          }
+        }
+      ],
+      "text_signal_states": [
+        "desktop_home",
+        "desktop_post",
+        "desktop_about"
+      ],
+      "reference_text_signals": [
+        "Tidemark Review",
+        "Marlow Renwick",
+        "Reading the salt marsh by the height of its grass"
+      ],
+      "asset_path_signals": [
+        "post.html",
+        "about.html",
+        "contact.html"
+      ],
+      "min_asset_path_signals": 3,
+      "asset_path_signal_states": [
+        "desktop_home"
+      ]
+    }
+  ]
+}

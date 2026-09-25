@@ -1,0 +1,220 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_PlainAdmin__plain-free-bootstrap-admin-template__dcb30e2bce6c__profile_asset_state_repair",
+   "reference_states": [
+    "desktop_products",
+    "mobile_products",
+    "tablet_products",
+    "desktop_home",
+    "mobile_home",
+    "desktop_cards",
+    "mobile_cards",
+    "tablet_cards",
+    "products_filter"
+   ],
+   "text_signal_states": [
+    "desktop_products",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "PlainAdmin",
+    "Product focus",
+    "Top Selling Products",
+    "Showing 6 of 6"
+   ],
+   "visible_text_states": [
+    "desktop_products"
+   ],
+   "visible_text_signals": [
+    "Product focus",
+    "Top Selling Products"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "products_filter"
+   ],
+   "responsive_states": [
+    "mobile_products",
+    "tablet_products",
+    "mobile_home",
+    "mobile_cards",
+    "tablet_cards"
+   ],
+   "asset_path_signals": [
+    "assets/images/products"
+   ],
+   "asset_path_states": [
+    "desktop_products"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_products"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_products",
+    "tablet_products",
+    "mobile_home",
+    "mobile_cards",
+    "tablet_cards"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_products",
+    "mobile_products",
+    "tablet_products",
+    "desktop_home",
+    "mobile_home",
+    "desktop_cards",
+    "mobile_cards",
+    "tablet_cards",
+    "products_filter"
+   ],
+   "console_error_allowlist": [
+    "fonts.googleapis.com",
+    "fonts.gstatic.com",
+    "favicon"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_products",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "class_contains": "prodfocus__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "class_contains": "prodfocus__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_products",
+     "class_contains": "prodfocus__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cards",
+     "class_contains": "prodfocus__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cards",
+     "class_contains": "prodfocus__tab",
+     "min_count": 4
+    },
+    {
+     "state": "mobile_cards",
+     "class_contains": "prodfocus__title",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_products"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "products_filter",
+     "changed_from": "desktop_products",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "prodfocus__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_products",
+    "mobile_products",
+    "tablet_products",
+    "desktop_home",
+    "mobile_home",
+    "desktop_cards",
+    "mobile_cards",
+    "tablet_cards",
+    "products_filter"
+   ],
+   "completion_states": [
+    "desktop_products",
+    "desktop_cards"
+   ],
+   "completion_text_signals": [
+    "Product focus",
+    "Top Selling Products",
+    "Interior",
+    "Lighting",
+    "Storage"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_products",
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "PlainAdmin",
+    "Top Selling Products"
+   ],
+   "forbidden_states": [
+    "desktop_products",
+    "mobile_products",
+    "desktop_cards"
+   ],
+   "forbidden_text_patterns": [
+    "From the operations desk",
+    "ops-state-band",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "placeholder implementation",
+    "TODO",
+    "{{"
+   ]
+  }
+ ]
+}

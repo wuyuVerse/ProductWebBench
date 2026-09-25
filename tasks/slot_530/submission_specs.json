@@ -1,0 +1,111 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_estevanmaito__windmill-dashboard-react__da542836f945__account",
+   "reference_states": [
+    "desktop_account",
+    "mobile_account"
+   ],
+   "submission_states": [
+    "desktop_account",
+    "mobile_account"
+   ],
+   "interaction_states": [
+    "desktop_account_security"
+   ],
+   "completion_states": [
+    "desktop_account"
+   ],
+   "completion_text_signals": [
+    "Account Settings",
+    "Profile Details",
+    "Save Changes"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_account"
+   ],
+   "visible_text_signals": [
+    "Profile Details"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_account"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_account"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_account"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_account"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_account",
+    "mobile_account"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_account", "tag": "h1", "text_contains": "Account Settings", "min_count": 1},
+    {"state": "desktop_account", "tag": "button", "text_contains": "Profile", "min_count": 1},
+    {"state": "desktop_account", "tag": "button", "text_contains": "Security", "min_count": 1},
+    {"state": "desktop_account", "tag": "button", "text_contains": "Notifications", "min_count": 1},
+    {"state": "desktop_account", "text_contains": "Profile Details", "min_count": 1},
+    {"state": "desktop_account", "tag": "button", "text_contains": "Save Changes", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_account"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_account_security",
+     "require_interaction": true,
+     "changed_from": "desktop_account",
+     "dom": {"text_contains": "Security Settings", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_account"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

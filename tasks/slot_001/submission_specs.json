@@ -1,0 +1,207 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_mh-rafi__react-landing__f21968d75253__ops_analytics_landing",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pricing",
+    "mobile_pricing",
+    "tablet_pricing",
+    "desktop_pricing_annual",
+    "desktop_demo_gallery",
+    "mobile_demo_gallery"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_pricing",
+    "desktop_demo_gallery"
+   ],
+   "reference_text_signals": [
+    "operations",
+    "Pricing that scales with operations",
+    "Team",
+    "Scale",
+    "Enterprise",
+    "Compare plans"
+   ],
+   "visible_text_states": [
+    "desktop_pricing",
+    "desktop_demo_gallery"
+   ],
+   "visible_text_signals": [
+    "Pricing that scales with operations",
+    "Compare plans",
+    "BILLING"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_pricing_annual"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_annual",
+     "changed_from": "desktop_pricing",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "planbar__readout",
+      "text_contains": "Showing Annual pricing",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_pricing"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/images"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_demo_gallery"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pricing",
+    "mobile_pricing",
+    "tablet_pricing",
+    "desktop_pricing_annual",
+    "desktop_demo_gallery",
+    "mobile_demo_gallery"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "class_contains": "plan-card__name",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_pricing",
+     "class_contains": "planbar__readout",
+     "text_contains": "Showing Monthly pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo_gallery",
+     "class_contains": "comparerail",
+     "text_contains": "Compare plans",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo_gallery",
+     "class_contains": "comparerail__item",
+     "min_count": 3
+    },
+    {
+     "state": "mobile_demo_gallery",
+     "class_contains": "comparerail",
+     "text_contains": "Compare plans",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing",
+     "mobile_pricing"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pricing",
+    "mobile_pricing",
+    "tablet_pricing",
+    "desktop_pricing_annual",
+    "desktop_demo_gallery",
+    "mobile_demo_gallery"
+   ],
+   "completion_states": [
+    "desktop_pricing",
+    "desktop_pricing_annual"
+   ],
+   "completion_text_signals": [
+    "Pricing that scales with operations",
+    "Team",
+    "Scale",
+    "Enterprise",
+    "Showing Annual pricing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "operations"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "Lorem Ipsum",
+    "Sample Features",
+    "Our Speakers",
+    "dolor sit amet",
+    "consectetur adipiscing"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

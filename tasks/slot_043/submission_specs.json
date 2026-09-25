@@ -1,0 +1,201 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_holger1411__brook-dev__dcad7333004f__studio_journal_editorial_system",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_toggled",
+    "desktop_journal",
+    "mobile_journal",
+    "desktop_about",
+    "desktop_post",
+    "desktop_post_color"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_home_toggled",
+    "desktop_journal"
+   ],
+   "reference_text_signals": [
+    "Editorial Ledger",
+    "Entries published",
+    "Studio contributors",
+    "Median reading time",
+    "Series in progress",
+    "Latest first"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Editorial Ledger",
+    "Entries published",
+    "Series in progress"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_home_toggled"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_toggled",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "By series",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 150,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/webp"
+   ],
+   "min_asset_path_signals": 1,
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_toggled",
+    "desktop_journal",
+    "mobile_journal",
+    "desktop_about",
+    "desktop_post",
+    "desktop_post_color"
+   ],
+   "completion_states": [
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "Editorial Ledger",
+    "Entries published",
+    "Studio contributors",
+    "Series in progress"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_post",
+    "desktop_about"
+   ],
+   "regression_text_signals": [
+    "Journal"
+   ],
+   "forbidden_text_patterns": [],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "mobile_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_journal"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Editorial Ledger",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Entries published",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "text_contains": "Editorial Ledger",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_journal",
+     "text_contains": "Entries published",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Editorial Ledger",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Entries published",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_allowlist": [
+    "_vercel",
+    "favicon",
+    "gtag",
+    "gtm",
+    "google-analytics",
+    "analytics",
+    "insights",
+    "templatedeck.com"
+   ],
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_home_toggled",
+    "desktop_journal",
+    "mobile_journal",
+    "desktop_about",
+    "desktop_post",
+    "desktop_post_color"
+   ]
+  }
+ ]
+}

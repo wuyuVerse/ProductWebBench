@@ -1,0 +1,45 @@
+{
+ "slot": 551,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_uses",
+   "dom_len": 87,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "b6a5f620d0976c8e1e6195898343249e",
+    "reference": "8d3ca5705d589d964b83f86d8ee9fdd3",
+    "bad": "b7a8229da3467333d7cf9aadd88b363d"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 17,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "chrismwilliams__astro-theme-cactus__543d7a055325",
+ "capability": "Build",
+ "capability_is_build": true
+}

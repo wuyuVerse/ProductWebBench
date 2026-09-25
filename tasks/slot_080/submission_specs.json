@@ -1,0 +1,267 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_SuccessfullSites__Agency-Website__b964fb262a6f__product_proof_layout_repair",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_features",
+        "mobile_features",
+        "desktop_metrics",
+        "mobile_metrics",
+        "desktop_pricing",
+        "desktop_faq",
+        "desktop_footer",
+        "desktop_coverage_filter"
+      ],
+      "text_signal_states": [
+        "desktop_home",
+        "desktop_features",
+        "desktop_pricing",
+        "desktop_faq"
+      ],
+      "reference_text_signals": [
+        "Smart Scheduling",
+        "Crew Dispatch",
+        "Parts Inventory",
+        "Field Analytics",
+        "Customer Invoicing"
+      ],
+      "visible_text_states": [
+        "desktop_home"
+      ],
+      "visible_text_signals": [
+        "Groundline",
+        "every field crew"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_coverage_filter"
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_features",
+        "mobile_metrics"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "Images/Base-feature-icon",
+        "Images/Client-logo"
+      ],
+      "asset_path_states": [
+        "desktop_features",
+        "desktop_home"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_home",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_features",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_features",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_pricing",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_pricing",
+          "tag": "li",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_faq",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_faq",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_metrics",
+          "class_contains": "coverage-rail--metrics",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_metrics",
+          "text_contains": "Dispatch coverage",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_footer",
+          "class_contains": "coverage-rail--footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_footer",
+          "text_contains": "Dispatch coverage",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_features",
+        "mobile_features",
+        "desktop_metrics",
+        "mobile_metrics",
+        "desktop_pricing",
+        "desktop_faq",
+        "desktop_footer",
+        "desktop_coverage_filter"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_features",
+        "mobile_features",
+        "desktop_metrics",
+        "mobile_metrics",
+        "desktop_pricing",
+        "desktop_faq",
+        "desktop_footer",
+        "desktop_coverage_filter"
+      ],
+      "completion_states": [
+        "desktop_home",
+        "desktop_features",
+        "desktop_pricing",
+        "desktop_faq"
+      ],
+      "completion_text_signals": [
+        "Smart Scheduling",
+        "Crew Dispatch",
+        "Parts Inventory",
+        "Field Analytics",
+        "Customer Invoicing"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Groundline"
+      ],
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_features",
+        "mobile_features",
+        "desktop_metrics",
+        "mobile_metrics",
+        "desktop_pricing",
+        "desktop_faq",
+        "desktop_footer",
+        "desktop_coverage_filter"
+      ],
+      "forbidden_text_patterns": [
+        "The easiest way to manage projects",
+        "Tailor-made features",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "Our 18 years of achievements",
+        "Easy integrations with 170+",
+        "Atlassian Talent",
+        "SuccessfullSite",
+        "Landify",
+        "Floyd Miles",
+        "Jane Cooper",
+        "GoPro",
+        "Airbnb"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_features"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "visual_regression": {
+        "states": [
+          "desktop_metrics",
+          "desktop_footer",
+          "desktop_coverage_filter"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_coverage_filter",
+          "changed_from": "desktop_metrics",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing: branch coverage",
+            "min_count": 1
+          }
+        }
+      ]
+    }
+  ]
+}

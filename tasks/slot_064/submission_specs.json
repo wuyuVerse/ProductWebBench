@@ -1,0 +1,250 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Nutlope__qrGPT__2993173bfe32__qr_generation_state_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_start",
+    "tablet_start",
+    "mobile_start",
+    "desktop_studio_browser",
+    "mobile_studio_browser",
+    "desktop_home_browser",
+    "desktop_studio_page",
+    "desktop_filter_ink",
+    "mobile_studio_cards"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_start",
+    "tablet_start",
+    "mobile_start",
+    "desktop_studio_browser",
+    "mobile_studio_browser",
+    "desktop_home_browser",
+    "desktop_studio_page",
+    "desktop_filter_ink",
+    "mobile_studio_cards"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_start",
+    "desktop_studio_browser"
+   ],
+   "reference_text_signals": [
+    "Glyphwright",
+    "Style studio",
+    "Generate a QR Code",
+    "Landscape"
+   ],
+   "visible_text_states": [
+    "desktop_studio_browser"
+   ],
+   "visible_text_signals": [
+    "Style studio",
+    "Landscape"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_ink"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_start",
+    "mobile_studio_browser",
+    "tablet_start"
+   ],
+   "overflow_tolerance_px": 24,
+   "asset_path_signals": [
+    "/1.png",
+    "/"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_start",
+    "tablet_start",
+    "mobile_start",
+    "desktop_studio_browser",
+    "mobile_studio_browser",
+    "desktop_home_browser",
+    "desktop_studio_page",
+    "desktop_filter_ink",
+    "mobile_studio_cards"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "completion_states": [
+    "desktop_start",
+    "desktop_studio_browser"
+   ],
+   "completion_text_signals": [
+    "Style studio",
+    "Landscape",
+    "Ink",
+    "Neon",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_start"
+   ],
+   "regression_text_signals": [
+    "Generate a QR Code",
+    "Prompt suggestions"
+   ],
+   "forbidden_text_patterns": [
+    "Nutlope",
+    "qrGPT",
+    "QrGPT",
+    "QRGPT",
+    "roomgpt",
+    "Site Shutdown",
+    "hassan@hey.com",
+    "v0.dev",
+    "Replicate"
+   ],
+   "visual_anchor_states": [
+    "desktop_start",
+    "desktop_studio_browser"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 1000,
+   "visual_regression": {
+    "states": [
+     "desktop_studio_browser",
+     "mobile_studio_cards"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_start",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "tag": "textarea",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_start",
+     "text_contains": "Generate a QR Code",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio_browser",
+     "class_contains": "style-studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio_browser",
+     "text_contains": "Style studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_browser",
+     "class_contains": "style-studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_browser",
+     "text_contains": "Style studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio_page",
+     "class_contains": "style-studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio_page",
+     "text_contains": "Style studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_studio_page",
+     "text_contains": "Glyphwright style library",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_ink",
+     "changed_from": "desktop_studio_browser",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ]
+  }
+ ]
+}

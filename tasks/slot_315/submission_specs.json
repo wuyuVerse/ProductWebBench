@@ -1,0 +1,263 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_abds4816__tableaura_ecommerce_website_template__f3a7c346d7ef__catalog_section_contract",
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_catalog",
+    "tablet_catalog",
+    "mobile_catalog",
+    "mobile_catalog_deep",
+    "desktop_detail",
+    "mobile_detail",
+    "desktop_basket",
+    "mobile_basket",
+    "desktop_collection_pick"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 400,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 12000,
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_catalog",
+    "tablet_catalog",
+    "mobile_catalog",
+    "mobile_catalog_deep",
+    "desktop_detail",
+    "desktop_basket",
+    "mobile_basket",
+    "desktop_collection_pick"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_catalog",
+    "tablet_catalog",
+    "mobile_catalog",
+    "mobile_catalog_deep",
+    "desktop_detail",
+    "mobile_detail",
+    "desktop_basket",
+    "mobile_basket",
+    "desktop_collection_pick"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "completion_states": [
+    "desktop_catalog",
+    "tablet_catalog",
+    "mobile_catalog",
+    "mobile_catalog_deep",
+    "desktop_detail",
+    "mobile_detail",
+    "desktop_basket",
+    "mobile_basket"
+   ],
+   "completion_text_signals": [
+    "The Full Collection",
+    "Pressed Botanicals",
+    "Meadow Fern Study",
+    "Sea Holly Panel",
+    "Wild Poppy Herbarium",
+    "Alpine Gentian Frame",
+    "Reed & Rush Diptych",
+    "Seedhead Grasses Panel",
+    "view the print",
+    "Wild Poppy Herbarium Panel",
+    "ADD TO BASKET",
+    "You May Also Like",
+    "Your Basket",
+    "back to the collection",
+    "go to checkout"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 12,
+   "visible_text_states": [
+    "desktop_catalog",
+    "desktop_detail"
+   ],
+   "visible_text_signals": [
+    "Verdelune",
+    "The Full Collection",
+    "Wild Poppy Herbarium Panel"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial"
+   ],
+   "regression_text_signals": [
+    "Verdelune",
+    "Home",
+    "Prints",
+    "Collections"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_catalog",
+    "tablet_catalog",
+    "mobile_catalog",
+    "mobile_catalog_deep",
+    "desktop_detail",
+    "mobile_detail",
+    "desktop_basket",
+    "mobile_basket",
+    "desktop_collection_pick"
+   ],
+   "forbidden_text_patterns": [
+    "Tableau Name",
+    "Tous Les Produits",
+    "voir les detais",
+    "Shop item template",
+    "Mon Panier",
+    "Produit 1",
+    "AJOUTER AU PANIER",
+    "Produits Connexes",
+    "lorem ipsum",
+    "Lorem ipsum",
+    "TODO"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_catalog",
+    "mobile_catalog"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "asset_path_signals": [
+    "tableaura_products/pro2.jpg"
+   ],
+   "asset_signal_states": [
+    "desktop_catalog"
+   ],
+   "min_asset_path_signals": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_catalog",
+     "class_contains": "collection-focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_detail",
+     "text_contains": "Browse Verdelune by collection",
+     "class_contains": "collection-focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_basket",
+     "text_contains": "Browse Verdelune by collection",
+     "class_contains": "collection-focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_catalog",
+     "tag": "h6",
+     "text_contains": "The Full Collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_catalog",
+     "text_contains": "Shop by collection",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_catalog",
+     "tag": "img",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_detail",
+     "tag": "h1",
+     "text_contains": "Wild Poppy Herbarium Panel",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_basket",
+     "tag": "table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_basket",
+     "tag": "th",
+     "text_contains": "Quantity",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_catalog",
+     "mobile_catalog",
+     "desktop_detail"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_states": [
+    "desktop_collection_pick"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_collection_pick",
+     "changed_from": "desktop_catalog",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 8 - Wildflowers",
+      "min_count": 1
+     }
+    }
+   ],
+   "min_canvas_screenshot_bytes": 12000
+  }
+ ]
+}

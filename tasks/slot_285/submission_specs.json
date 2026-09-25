@@ -1,0 +1,288 @@
+{
+ "tasks": [
+  {
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_content",
+    "mobile_content",
+    "desktop_footer",
+    "desktop_about",
+    "desktop_projfilter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_content"
+   ],
+   "reference_text_signals": [
+    "From the studio log",
+    "Why choose WebOnDemand?",
+    "Selected work",
+    "Newsletter"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Your ideas live in no-time!",
+    "Selected work"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_projfilter"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_content",
+    "mobile_content",
+    "desktop_footer",
+    "desktop_about"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 900,
+   "min_image_count": 4,
+   "asset_path_signals": [
+    "static/images/slide-one.png",
+    "static/images/slide-two.png",
+    "static/images/slide-three.png",
+    "static/images/ava.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "mobile_home"
+   ],
+   "min_asset_path_signals": 4,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_content",
+    "mobile_content",
+    "desktop_footer",
+    "desktop_about",
+    "desktop_projfilter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_home",
+     "tag": "main",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "projfilter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "projfilter__card",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_content",
+     "tag": "h2",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_content",
+     "tag": "main",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "a",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_about",
+     "class_contains": "projfilter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Selected work",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_content",
+     "mobile_content"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_projfilter",
+     "changed_from": "desktop_content",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "projfilter__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_content",
+    "mobile_content",
+    "desktop_footer",
+    "desktop_about",
+    "desktop_projfilter"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_content"
+   ],
+   "completion_text_signals": [
+    "From the studio log",
+    "designs delivered",
+    "years on the web",
+    "happy clients",
+    "people on the team",
+    "Selected work"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_content",
+    "desktop_footer"
+   ],
+   "regression_text_signals": [
+    "Home",
+    "About",
+    "Blog",
+    "Contact",
+    "Register",
+    "Log in",
+    "Your ideas live in no-time!",
+    "Design example",
+    "View more of this design",
+    "Why choose WebOnDemand?",
+    "Testimonials",
+    "Selected work",
+    "Request a design",
+    "Newsletter",
+    "Follow us:",
+    "From the studio log"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Lorem ipsum placeholder band",
+    "overflow-debug"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_footer"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "task_id": "dev_website-templates__webstudio_responsive-template__dbb498d9ee95__slider_metadata_repair"
+  }
+ ]
+}

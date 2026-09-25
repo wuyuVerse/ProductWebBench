@@ -1,0 +1,233 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_adrianhajdin__gsap_macbook_landing__5312059f07a5__macbook_asset_state_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_viewer",
+    "desktop_configurator",
+    "mobile_configurator",
+    "tablet_configurator",
+    "desktop_config_default",
+    "desktop_config_silver14",
+    "desktop_footer"
+   ],
+   "text_signal_states": [
+    "desktop_configurator"
+   ],
+   "reference_text_signals": [
+    "Configure your MacBook Pro",
+    "Finish",
+    "Display size",
+    "Space Black",
+    "16-inch"
+   ],
+   "interaction_states": [
+    "desktop_config_silver14"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_config_silver14",
+     "changed_from": "desktop_config_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "macconfig__readout",
+      "text_contains": "14-inch",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_config_silver14",
+     "changed_from": "desktop_config_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "macconfig__readout",
+      "text_contains": "Silver",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_configurator",
+    "tablet_configurator"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "logo.svg",
+    "title.png"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_viewer",
+    "desktop_configurator",
+    "mobile_configurator",
+    "tablet_configurator",
+    "desktop_config_default",
+    "desktop_config_silver14",
+    "desktop_footer"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_anchor_states": [
+    "desktop_configurator",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 20.0,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 8000,
+   "canvas_screenshot_states": [
+    "desktop_viewer"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_footer",
+     "class_contains": "macconfig__footer-proof",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_configurator",
+     "class_contains": "macconfig__footer-proof",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_configurator",
+     "class_contains": "macconfig__panel",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_configurator",
+     "class_contains": "macconfig__chip",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_configurator",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_viewer",
+     "tag": "section",
+     "min_count": 3
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_configurator",
+     "mobile_configurator",
+     "tablet_configurator"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_viewer",
+    "desktop_configurator",
+    "mobile_configurator",
+    "tablet_configurator",
+    "desktop_config_default",
+    "desktop_config_silver14",
+    "desktop_footer"
+   ],
+   "visible_text_states": [
+    "desktop_configurator"
+   ],
+   "visible_text_signals": [
+    "Configure your MacBook Pro",
+    "Finish",
+    "Display size"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "completion_states": [
+    "desktop_configurator"
+   ],
+   "completion_text_signals": [
+    "Configure your MacBook Pro",
+    "Finish",
+    "Display size",
+    "Space Black",
+    "16-inch"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "MacBook Pro",
+    "Take a closer look"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "PLACEHOLDER",
+    "undefined%",
+    "NaNpx",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

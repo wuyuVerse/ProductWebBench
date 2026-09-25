@@ -1,0 +1,137 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_LekoArts__gatsby-starter-portfolio-cara__d1061c7f5284__now",
+   "reference_states": [
+    "desktop_now",
+    "mobile_now"
+   ],
+   "submission_states": [
+    "desktop_now",
+    "mobile_now"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_now"
+   ],
+   "completion_text_signals": [
+    "Now",
+    "Work",
+    "Learning"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 0,
+   "visible_text_states": [
+    "desktop_now"
+   ],
+   "visible_text_signals": [],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_now"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_now"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": false,
+   "responsive_overflow_states": [],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_now"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_now",
+     "tag": "h1",
+     "text_contains": "Now",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "p",
+     "text_contains": "snapshot of what",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "h2",
+     "text_contains": "Work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "h2",
+     "text_contains": "Learning",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "h2",
+     "text_contains": "Life",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "p",
+     "text_contains": "design-systems studio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "p",
+     "text_contains": "going deep on Rust",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_now",
+     "tag": "p",
+     "text_contains": "quieter part of town",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_now"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_now"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

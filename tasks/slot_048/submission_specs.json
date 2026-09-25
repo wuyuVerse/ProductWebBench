@@ -1,0 +1,209 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_NextJSTemplates__startup-nextjs__e730b6a99c77__pricing_fit_interaction",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_companion",
+    "mobile_companion",
+    "desktop_fit_studio",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "text_signal_states": [
+    "desktop_companion",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Loomwright",
+    "Loomwright plans at a glance",
+    "Plan companion",
+    "Find your Loomwright pricing fit",
+    "Solo",
+    "Squad",
+    "Studio",
+    "Fleet"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_companion",
+    "desktop_fit_studio"
+   ],
+   "visible_text_signals": [
+    "weaves your busywork",
+    "Loomwright plans at a glance",
+    "Recommended fit"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_fit_studio"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_fit_studio",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Recommended fit: Studio",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_companion"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 150,
+   "min_image_count": 2,
+   "asset_path_signals": [
+    "/images/logo",
+    "/images/brands"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_companion",
+    "mobile_companion",
+    "desktop_fit_studio",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "completion_states": [
+    "desktop_companion"
+   ],
+   "completion_text_signals": [
+    "Loomwright plans at a glance",
+    "Plan companion",
+    "Starter",
+    "Team",
+    "Scale",
+    "Fit guide"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Loomwright",
+    "Loomwright plans at a glance"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem",
+    "consectetur",
+    "ipsum",
+    "Startup is free",
+    "Free and Open-Source",
+    "Get Pro",
+    "Star on GitHub",
+    "startups and SaaS",
+    "nextjstemplates",
+    "Crafted for Startups"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_companion",
+     "mobile_companion"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_companion"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_companion",
+     "text_contains": "Loomwright plans at a glance",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Loomwright plans at a glance",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "text_contains": "Loomwright plans at a glance",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "gtag",
+    "gtm"
+   ],
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_companion",
+    "mobile_companion",
+    "desktop_fit_studio",
+    "desktop_about",
+    "desktop_contact"
+   ]
+  }
+ ]
+}

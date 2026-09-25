@@ -1,0 +1,139 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_creativetimofficial__material-tailwind-dashboard-react__721f312c444e__pricing",
+   "reference_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "submission_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_pricing"
+   ],
+   "completion_text_signals": [
+    "Pricing Plans",
+    "Simple, transparent pricing",
+    "Most Popular"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_pricing"
+   ],
+   "visible_text_signals": [
+    "Simple, transparent pricing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_pricing"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_pricing"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_pricing"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_pricing"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_pricing",
+    "mobile_pricing"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "nepcha",
+    "creative-tim",
+    "font-awesome",
+    "fontawesome",
+    "api.github.com",
+    "github"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Simple, transparent pricing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Starter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Pro",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Enterprise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Start Free Trial",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Contact Sales",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "per month",
+     "min_count": 3
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

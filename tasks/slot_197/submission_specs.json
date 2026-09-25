@@ -1,0 +1,248 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_anse-app__chatgpt-demo__03b47a79d901325a812a03a5d6b12049a6005a6c__assistant_readiness_rail_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_models",
+    "mobile_models",
+    "desktop_prompts",
+    "desktop_thread_home",
+    "mobile_thread_home",
+    "desktop_thread_models",
+    "quick_prompt_home"
+   ],
+   "text_signal_states": [
+    "desktop_models",
+    "desktop_thread_home"
+   ],
+   "reference_text_signals": [
+    "Models",
+    "Starter conversation",
+    "Assistant",
+    "Conversation:"
+   ],
+   "visible_text_states": [
+    "desktop_models",
+    "desktop_thread_home"
+   ],
+   "visible_text_signals": [
+    "Models",
+    "Starter conversation"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "quick_prompt_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_models",
+    "mobile_thread_home"
+   ],
+   "asset_path_signals": [
+    "/models/",
+    "/prompts/",
+    "/models",
+    "/prompts"
+   ],
+   "asset_path_states": [
+    "desktop_models",
+    "desktop_prompts",
+    "desktop_thread_models"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_thread_home",
+    "desktop_models",
+    "desktop_prompts"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_models",
+    "mobile_models",
+    "desktop_prompts",
+    "desktop_thread_home",
+    "mobile_thread_home",
+    "desktop_thread_models",
+    "quick_prompt_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "gstatic",
+    "cdn.jsdelivr.net",
+    "esm.sh"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "assistant-nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_models",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_prompts",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_thread_home",
+     "class_contains": "starter-convo",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_thread_models",
+     "class_contains": "starter-convo",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_prompts",
+     "class_contains": "starter-convo",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_thread_home",
+     "text_contains": "Starter conversation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_thread_models",
+     "text_contains": "Starter conversation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_prompts",
+     "text_contains": "Starter conversation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_thread_home",
+     "class_contains": "quick-prompts__readout",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_thread_home",
+     "mobile_thread_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "quick_prompt_home",
+     "changed_from": "desktop_thread_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "quick-prompts__readout",
+      "text_contains": "Conversation: 2 turns",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_models",
+    "mobile_models",
+    "desktop_prompts",
+    "desktop_thread_home",
+    "mobile_thread_home",
+    "desktop_thread_models",
+    "quick_prompt_home"
+   ],
+   "completion_states": [
+    "desktop_models",
+    "desktop_prompts",
+    "desktop_thread_home",
+    "desktop_thread_models"
+   ],
+   "completion_text_signals": [
+    "Models",
+    "Starter conversation",
+    "Assistant",
+    "Prompts",
+    "Conversation:"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "ChatGPT",
+    "OpenAI API",
+    "Based on"
+   ],
+   "forbidden_states": [
+    "desktop_models",
+    "desktop_prompts",
+    "desktop_thread_home"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/StarterConversation.astro",
+     "src/components/QuickPrompts.tsx",
+     "src/config/thread.ts"
+    ],
+    "should_preserve": [
+     "src/pages/index.astro",
+     "src/components/Header.astro",
+     "src/components/Generator.tsx"
+    ]
+   }
+  }
+ ]
+}

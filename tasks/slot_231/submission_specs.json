@@ -1,0 +1,202 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_RyanFitzgerald__devportfolio__852d650fb0a8__project_stack_filter",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_home_shelf",
+    "tablet_home_shelf",
+    "mobile_home_shelf",
+    "desktop_work",
+    "desktop_about",
+    "desktop_home_filter_mobile"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_home_shelf",
+    "desktop_work"
+   ],
+   "reference_text_signals": [
+    "Priya Nair",
+    "Aperture Design System",
+    "Showing 6 of 6",
+    "Platform",
+    "Tideline Checkout"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_home_shelf"
+   ],
+   "visible_text_signals": [
+    "Priya Nair",
+    "Showing 6 of 6",
+    "Platform"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_home_filter_mobile"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_filter_mobile",
+     "changed_from": "desktop_home_shelf",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Mobile",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home_shelf"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/favicon.svg",
+    "/_astro/"
+   ],
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_home_shelf"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_home_shelf",
+    "tablet_home_shelf",
+    "mobile_home_shelf",
+    "desktop_work",
+    "desktop_about",
+    "desktop_home_filter_mobile"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "fonts.googleapis",
+    "fonts.gstatic"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_shelf",
+     "text_contains": "Projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_shelf",
+     "text_contains": "Aperture Design System",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Platform",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Platform",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_shelf",
+     "mobile_home_shelf"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_home_shelf",
+    "tablet_home_shelf",
+    "mobile_home_shelf",
+    "desktop_work",
+    "desktop_about",
+    "desktop_home_filter_mobile"
+   ],
+   "completion_states": [
+    "desktop_home_shelf",
+    "desktop_home_filter_mobile"
+   ],
+   "completion_text_signals": [
+    "Showing 6 of 6",
+    "All work",
+    "Web",
+    "Mobile",
+    "Platform"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Priya Nair"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "Lorem ipsum",
+    "TODO",
+    "placeholder text",
+    "Coming soon"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_home_shelf"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_screenshot_bytes": 6000
+  }
+ ]
+}

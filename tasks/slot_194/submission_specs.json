@@ -1,0 +1,271 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_BootstrapDash__StarAdmin-Free-Bootstrap-Admin-Template__7ab3570e1a87__top_performer_asset_roster",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_roster",
+    "desktop_roster_regional",
+    "mobile_roster",
+    "desktop_tables",
+    "mobile_tables",
+    "desktop_forms",
+    "desktop_charts"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_tables",
+    "desktop_charts"
+   ],
+   "reference_text_signals": [
+    "Loomcrest",
+    "Fleet Operations Overview",
+    "Top Operators",
+    "Vehicle Roster"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Loomcrest",
+    "Fleet Operations Overview",
+    "Top Operators"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_roster_regional"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_roster_regional",
+     "changed_from": "desktop_roster",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Regional",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_roster",
+     "mobile_roster"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_tables",
+    "mobile_roster"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/images/faces"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_roster",
+    "desktop_roster_regional",
+    "mobile_roster",
+    "desktop_tables",
+    "mobile_tables",
+    "desktop_forms",
+    "desktop_charts"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "tag": "table",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_tables",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Loomcrest",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h4",
+     "text_contains": "Fleet Utilization Overview",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "tag": "h4",
+     "text_contains": "Vehicle Roster",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables",
+     "tag": "h4",
+     "text_contains": "Live Dispatch Board",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_forms",
+     "tag": "h4",
+     "text_contains": "New Dispatch Request",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "tag": "h4",
+     "text_contains": "Fleet Throughput",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h4",
+     "text_contains": "Top Operators",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts",
+     "tag": "h4",
+     "text_contains": "Top Operators",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_roster",
+    "desktop_roster_regional",
+    "mobile_roster",
+    "desktop_tables",
+    "mobile_tables",
+    "desktop_forms",
+    "desktop_charts"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_tables",
+    "desktop_forms",
+    "desktop_charts"
+   ],
+   "completion_text_signals": [
+    "Loomcrest",
+    "Fleet Operations Overview",
+    "Fleet Utilization Overview",
+    "Top Operators",
+    "Active Vehicles",
+    "Vehicle Roster",
+    "Live Dispatch Board",
+    "New Dispatch Request",
+    "Fleet Throughput"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 9,
+   "regression_states": [
+    "desktop_home",
+    "desktop_tables"
+   ],
+   "regression_text_signals": [
+    "Loomcrest",
+    "Marta Kessler",
+    "Fleet Operations Lead"
+   ],
+   "forbidden_text_patterns": [
+    "Star Admin",
+    "Top Performer",
+    "Sales Statistics Overview",
+    "People Also Watch",
+    "Basic Table",
+    "Hoverable Table",
+    "Striped Table",
+    "Sales Performance",
+    "Site Traffic",
+    "Impressions"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_roster",
+    "desktop_roster_regional",
+    "mobile_roster",
+    "desktop_tables",
+    "mobile_tables",
+    "desktop_forms",
+    "desktop_charts"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_roster"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

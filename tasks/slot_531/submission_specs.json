@@ -1,0 +1,112 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_themeselection__sneat-vuetify-vuejs-admin-template-free__9f84e6c7eb78__preferences",
+   "reference_states": [
+    "desktop_preferences",
+    "mobile_preferences"
+   ],
+   "submission_states": [
+    "desktop_preferences",
+    "mobile_preferences"
+   ],
+   "interaction_states": [
+    "desktop_preferences_focused"
+   ],
+   "completion_states": [
+    "desktop_preferences"
+   ],
+   "completion_text_signals": [
+    "Workspace Preferences",
+    "workspace profile",
+    "Notification routing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_preferences"
+   ],
+   "visible_text_signals": [
+    "workspace profile"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_preferences"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_preferences"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_preferences"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_preferences"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_preferences",
+    "mobile_preferences"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "github"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_preferences", "tag": "h1", "text_contains": "Workspace Preferences", "min_count": 1},
+    {"state": "desktop_preferences", "tag": "button", "text_contains": "Focused", "min_count": 1},
+    {"state": "desktop_preferences", "tag": "button", "text_contains": "Balanced", "min_count": 1},
+    {"state": "desktop_preferences", "tag": "button", "text_contains": "Open", "min_count": 1},
+    {"state": "desktop_preferences", "tag": "h3", "text_contains": "workspace profile", "min_count": 1},
+    {"state": "desktop_preferences", "tag": "p", "text_contains": "focus", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_preferences"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_preferences_focused",
+     "require_interaction": true,
+     "changed_from": "desktop_preferences",
+     "dom": {"tag": "h3", "text_contains": "Focused workspace profile", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_preferences"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

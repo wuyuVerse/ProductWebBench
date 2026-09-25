@@ -1,0 +1,72 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_dunky11__react-saas-template__3fff0ba1ebd1__allocations",
+   "reference_states": ["desktop_allocations", "mobile_allocations"],
+   "submission_states": ["desktop_allocations", "mobile_allocations"],
+   "interaction_states": ["desktop_allocations_set", "desktop_allocations_persist"],
+   "completion_states": ["desktop_allocations"],
+   "completion_text_signals": ["Budget Allocation", "of $1000 allocated", "Remaining"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_allocations"],
+   "visible_text_signals": ["Budget Allocation"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_blog"],
+   "regression_text_signals": ["Home"],
+   "forbidden_states": ["desktop_allocations"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_allocations"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_allocations"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_allocations", "mobile_allocations"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts"],
+   "dom_assertions": [
+    {"state": "desktop_allocations", "text_contains": "Budget Allocation", "min_count": 1},
+    {"state": "desktop_allocations", "text_contains": "$400 of $1000 allocated", "min_count": 1},
+    {"state": "desktop_allocations", "text_contains": "Remaining: $600", "min_count": 1},
+    {"state": "desktop_allocations", "tag": "button", "text_contains": "Q1", "min_count": 1},
+    {"state": "desktop_allocations", "tag": "button", "text_contains": "Q4", "min_count": 1},
+    {"state": "desktop_allocations", "text_contains": "Engineering", "min_count": 1},
+    {"state": "desktop_allocations", "text_contains": "Operations", "min_count": 1},
+    {"state": "desktop_allocations", "tag": "button", "text_contains": "Home", "min_count": 1},
+    {"state": "desktop_allocations", "tag": "button", "text_contains": "Register", "min_count": 1},
+    {"state": "desktop_blog", "tag": "button", "text_contains": "Home", "min_count": 1},
+    {"state": "desktop_blog", "tag": "button", "text_contains": "Register", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_allocations"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_allocations_set",
+     "require_interaction": true,
+     "changed_from": "desktop_allocations",
+     "dom": {"text_contains": "$600 of $1000 allocated", "min_count": 1}
+    },
+    {
+     "state": "desktop_allocations_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_allocations",
+     "dom": {"text_contains": "$600 of $1000 allocated", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_allocations"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

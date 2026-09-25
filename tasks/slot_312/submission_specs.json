@@ -1,0 +1,298 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_front-end-by-rimantas__18-grupe-portfolio-saas-one__99b60aae532f__feature_rhythm_design_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feature",
+    "mobile_feature",
+    "tablet_feature",
+    "desktop_about",
+    "desktop_contact",
+    "feature_filter_creative"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feature",
+    "mobile_feature",
+    "tablet_feature",
+    "desktop_about",
+    "desktop_contact",
+    "feature_filter_creative"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feature",
+    "mobile_feature",
+    "tablet_feature",
+    "desktop_about",
+    "desktop_contact",
+    "feature_filter_creative"
+   ],
+   "state_plan": [
+    {
+     "state_id": "desktop_home",
+     "actions": [
+      {
+       "type": "goto"
+      }
+     ]
+    },
+    {
+     "state_id": "mobile_home",
+     "actions": [
+      {
+       "type": "goto"
+      }
+     ]
+    },
+    {
+     "state_id": "tablet_home",
+     "actions": [
+      {
+       "type": "goto"
+      }
+     ]
+    },
+    {
+     "state_id": "desktop_feature",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      }
+     ]
+    },
+    {
+     "state_id": "mobile_feature",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      }
+     ]
+    },
+    {
+     "state_id": "tablet_feature",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      }
+     ]
+    },
+    {
+     "state_id": "desktop_about",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      }
+     ]
+    },
+    {
+     "state_id": "desktop_contact",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      }
+     ]
+    },
+    {
+     "state_id": "feature_filter_creative",
+     "actions": [
+      {
+       "type": "goto"
+      },
+      {
+       "type": "scroll_to_selector",
+       "selector": "#feature_filter"
+      },
+      {
+       "type": "click",
+       "selector": ".ffilter__pill[data-ffilter-cat='creative']"
+      }
+     ]
+    }
+   ],
+   "text_signal_states": [
+    "desktop_feature"
+   ],
+   "reference_text_signals": [
+    "Filter features by discipline",
+    "Why you should choose our Saas"
+   ],
+   "visible_text_states": [
+    "desktop_feature"
+   ],
+   "visible_text_signals": [
+    "Filter features by discipline",
+    "Showing 6 of 6"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "feature_filter_creative"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 3,
+   "asset_signal_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feature",
+    "mobile_feature",
+    "tablet_feature",
+    "feature_filter_creative"
+   ],
+   "asset_path_signals": [
+    "img/",
+    ".png",
+    ".svg"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 2,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feature",
+    "mobile_feature",
+    "tablet_feature",
+    "desktop_about",
+    "desktop_contact",
+    "feature_filter_creative"
+   ],
+   "console_error_allowlist": [],
+   "dom_assertions": [
+    {
+     "state": "desktop_feature",
+     "text_contains": "Filter features by discipline",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Filter features by discipline",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "text_contains": "Filter features by discipline",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_feature",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_feature",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_feature",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_feature"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "regression_states": [
+    "desktop_feature"
+   ],
+   "regression_text_signals": [
+    "Filter features by discipline",
+    "Why you should choose our Saas"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "feature_filter_creative",
+     "changed_from": "desktop_feature",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "completion_states": [
+    "desktop_feature"
+   ],
+   "completion_text_signals": [
+    "Filter features by discipline",
+    "Why you should choose our Saas",
+    "Showing 6 of 6",
+    "All disciplines"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "forbidden_text_patterns": [],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_feature"
+   ],
+   "mean_luminance_tolerance": 0.3,
+   "min_palette_overlap": 0.35,
+   "min_screenshot_bytes": 6000
+  }
+ ]
+}

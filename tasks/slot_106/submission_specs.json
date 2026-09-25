@@ -1,0 +1,257 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_steven-tey__chathn__b5634ae80fe6__prompt_library_command_browser",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_home_explorer",
+        "mobile_home_explorer",
+        "desktop_filter_comments",
+        "desktop_examples",
+        "mobile_examples",
+        "desktop_about"
+      ],
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_home_explorer"
+      ],
+      "reference_text_signals": [
+        "Prompt library",
+        "Showing all 8 prompts",
+        "get_top_stories"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "desktop_home_explorer"
+      ],
+      "visible_text_signals": [
+        "Prompt library",
+        "Showing all 8 prompts",
+        "get_top_stories"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_filter_comments"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_home_explorer",
+        "mobile_home_explorer",
+        "desktop_filter_comments",
+        "desktop_examples",
+        "mobile_examples",
+        "desktop_about"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "promptlib",
+        "chathn"
+      ],
+      "asset_path_states": [
+        "desktop_initial"
+      ],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_home_explorer",
+        "mobile_home_explorer",
+        "desktop_filter_comments",
+        "desktop_examples",
+        "mobile_examples",
+        "desktop_about"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "form",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "a",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Showing all 8 prompts",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "a",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home_explorer",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_home_explorer",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_examples",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_examples",
+          "tag": "a",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_examples",
+          "text_contains": "Showing all 8 prompts",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_examples",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "get_",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_about",
+          "tag": "a",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_home_explorer",
+          "mobile_home_explorer"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_filter_comments",
+          "changed_from": "desktop_home_explorer",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 3 of 8 · Comments",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_home_explorer",
+        "mobile_home_explorer",
+        "desktop_filter_comments",
+        "desktop_examples",
+        "mobile_examples",
+        "desktop_about"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_home_explorer",
+        "desktop_examples"
+      ],
+      "completion_text_signals": [
+        "Prompt library",
+        "get_top_stories",
+        "summarize_top_story",
+        "Showing all 8 prompts",
+        "Comments"
+      ],
+      "require_all_completion_signals": false,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Welcome to ChatHN",
+        "Hacker News",
+        "Vercel AI SDK"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "desktop_home_explorer",
+        "desktop_examples"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Cheatsheet",
+        "Back to home"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_home_explorer"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

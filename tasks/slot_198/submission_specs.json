@@ -1,0 +1,238 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Klodovsky__CODIUX__d25f74ed548d__engagement_path_ladder",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "desktop_about",
+    "mobile_services",
+    "mobile_about",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "scope_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_services"
+   ],
+   "reference_text_signals": [
+    "CODIUX",
+    "Service focus",
+    "Secure",
+    "Operate"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_home_rail"
+   ],
+   "visible_text_signals": [
+    "Service focus",
+    "Operate"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "scope_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_home_rail",
+    "mobile_services",
+    "mobile_about"
+   ],
+   "asset_path_signals": [
+    "/_nuxt/img/",
+    "/img/logo/",
+    "/img/"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 12000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "desktop_about",
+    "mobile_services",
+    "mobile_about",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "scope_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Service focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Service focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Service focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Operate",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Operate",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home_rail",
+     "mobile_home_rail"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "scope_home",
+     "changed_from": "desktop_home_rail",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_services",
+    "desktop_about"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_services",
+    "desktop_about",
+    "mobile_services",
+    "mobile_about",
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "scope_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_services",
+    "desktop_about",
+    "desktop_home_rail"
+   ],
+   "completion_text_signals": [
+    "Service focus",
+    "Build",
+    "Secure",
+    "Operate",
+    "Showing",
+    "Product Design",
+    "Cloud services"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "CODIUX",
+    "Professional",
+    "Services"
+   ],
+   "forbidden_states": [
+    "desktop_home_rail",
+    "mobile_home_rail",
+    "desktop_services",
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "[sitecontinuum",
+    "{{",
+    "TODO_FILL"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "layouts/default.vue",
+     "static/css/svcfocus.css",
+     "static/js/svcfocus.js"
+    ],
+    "should_preserve": [
+     "pages/index.vue",
+     "pages/services.vue",
+     "pages/about.vue",
+     "components/Home/Header.vue",
+     "components/Home/Footer.vue"
+    ]
+   }
+  }
+ ]
+}

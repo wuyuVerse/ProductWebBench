@@ -1,0 +1,138 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_creativetimofficial__material-tailwind-dashboard-react__721f312c444e__contact",
+   "reference_states": [
+    "desktop_contact",
+    "mobile_contact"
+   ],
+   "submission_states": [
+    "desktop_contact",
+    "mobile_contact"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_contact"
+   ],
+   "completion_text_signals": [
+    "Contact Nexus Analytics",
+    "Ways to Reach Us",
+    "Our Offices"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 0,
+   "visible_text_states": [
+    "desktop_contact"
+   ],
+   "visible_text_signals": [],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_contact"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_contact"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_contact"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_contact"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_contact",
+    "mobile_contact"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "nepcha",
+    "creative-tim",
+    "font-awesome",
+    "fontawesome",
+    "api.github.com",
+    "github"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_contact",
+     "tag": "h3",
+     "text_contains": "Contact Nexus Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "h3",
+     "text_contains": "Ways to Reach Us",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "h3",
+     "text_contains": "Our Offices",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "h3",
+     "text_contains": "Support Hours",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "h3",
+     "text_contains": "Follow Us",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "button",
+     "text_contains": "Book a demo",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_contact"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_contact"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

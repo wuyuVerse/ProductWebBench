@@ -1,0 +1,261 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_Charca__astro-blog-template__478c018deff7__editorial_asset_reading_kit",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_about",
+        "desktop_kit",
+        "desktop_kit_component",
+        "mobile_kit_component",
+        "desktop_kit_writing",
+        "desktop_kit_close",
+        "mobile_kit",
+        "tablet_kit"
+      ],
+      "text_signal_states": [
+        "desktop_kit",
+        "desktop_home"
+      ],
+      "reference_text_signals": [
+        "Ashfield Review",
+        "Reading kit",
+        "The Margin Method",
+        "A Reader",
+        "The Working Outline",
+        "The Submission Ledger"
+      ],
+      "visible_text_states": [
+        "desktop_kit"
+      ],
+      "visible_text_signals": [
+        "Reading kit",
+        "The house tools",
+        "The Margin Method",
+        "A Reader"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 4,
+      "interaction_states": [
+        "desktop_kit_writing",
+        "desktop_kit_close"
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "mobile_kit",
+        "mobile_kit_component",
+        "tablet_kit"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "/kit-icons/",
+        "kit-icons"
+      ],
+      "asset_path_states": [
+        "desktop_kit"
+      ],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "dom_assertions": [
+        {
+          "state": "desktop_kit",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "button",
+          "text_contains": "All tools",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "button",
+          "text_contains": "For close reading",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "button",
+          "text_contains": "For the writing desk",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "text_contains": "Showing 8 of 8",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_kit",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "reading kit",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_kit",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "reading kit",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "reading kit",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "reading kit",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_about",
+        "desktop_kit",
+        "desktop_kit_component",
+        "mobile_kit_component",
+        "desktop_kit_writing",
+        "desktop_kit_close",
+        "mobile_kit",
+        "tablet_kit"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_about",
+        "desktop_kit",
+        "desktop_kit_component",
+        "mobile_kit_component",
+        "desktop_kit_writing",
+        "desktop_kit_close",
+        "mobile_kit",
+        "tablet_kit"
+      ],
+      "completion_states": [
+        "desktop_kit"
+      ],
+      "completion_text_signals": [
+        "The Margin Method",
+        "A Reader",
+        "Reading in Sequence",
+        "The Working Outline",
+        "The Proofing Pass",
+        "The Submission Ledger"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Ashfield Review",
+        "essays",
+        "close reading"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_kit_writing",
+          "changed_from": "desktop_kit_component",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 4 of 8",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_kit_component",
+          "mobile_kit_component"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "visual_anchor_states": [
+        "desktop_kit",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

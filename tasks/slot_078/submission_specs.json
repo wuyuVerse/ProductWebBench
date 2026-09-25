@@ -1,0 +1,254 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_chrisnmorrison__revista-astro-blog-magazine__33bb9d6c9054__category_hub_design_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_science",
+    "desktop_technology",
+    "desktop_science",
+    "mobile_technology"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_science",
+    "desktop_technology",
+    "desktop_science",
+    "mobile_technology"
+   ],
+   "text_signal_states": [
+    "desktop_finder",
+    "desktop_finder_science",
+    "desktop_technology"
+   ],
+   "reference_text_signals": [
+    "Editorial desk",
+    "Browse the whole magazine",
+    "Showing 13 of 13",
+    "All desks",
+    "Browse the desks",
+    "Technology",
+    "Science"
+   ],
+   "visible_text_states": [
+    "desktop_finder",
+    "desktop_finder_science"
+   ],
+   "visible_text_signals": [
+    "Browse the whole magazine",
+    "Showing 2 of 13"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_finder_science"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_finder",
+    "mobile_technology"
+   ],
+   "asset_path_signals": [
+    "_astro"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_science",
+    "desktop_technology",
+    "desktop_science",
+    "mobile_technology"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technology",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technology",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technology",
+     "tag": "h3",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_science",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_science",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topicfinder__rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topicfinder__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "desk-rail__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Browse the desks",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technology",
+     "class_contains": "desk-rail__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technology",
+     "text_contains": "Browse the desks",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_science",
+     "class_contains": "desk-rail__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_science",
+     "text_contains": "Browse the desks",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "mobile_finder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_finder_science",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "topicfinder__readout",
+      "text_contains": "Showing 2 of 13",
+      "min_count": 1
+     }
+    }
+   ],
+   "completion_states": [
+    "desktop_finder",
+    "desktop_finder_science",
+    "desktop_technology"
+   ],
+   "completion_text_signals": [
+    "Browse the whole magazine",
+    "Showing 2 of 13",
+    "Browse the desks"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "regression_states": [
+    "desktop_home",
+    "desktop_technology"
+   ],
+   "regression_text_signals": [
+    "Lanterna Review",
+    "Recent Articles",
+    "Read More"
+   ],
+   "forbidden_states": [
+    "desktop_finder",
+    "desktop_home"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "John Doe",
+    "[sitecontinuum",
+    "undefined",
+    "NaN"
+   ]
+  }
+ ]
+}

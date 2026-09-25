@@ -1,0 +1,267 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_spacemadev__Tailstore__63cabcff851b__commerce_state_continuity_system",
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_shop",
+    "tablet_shop",
+    "mobile_cart",
+    "tablet_cart"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "min_screenshot_bytes": 9000,
+   "asset_path_signals": [
+    "assets/images"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_shop"
+   ],
+   "min_asset_path_signals": 1,
+   "text_signal_states": [
+    "desktop_shop",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "The Driftmark Edit",
+    "Showing 6 of 6",
+    "Driftmark"
+   ],
+   "visible_text_states": [
+    "desktop_shop"
+   ],
+   "visible_text_signals": [
+    "The Driftmark Edit",
+    "All Products"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "completion_states": [
+    "desktop_shop"
+   ],
+   "completion_text_signals": [
+    "The Driftmark Edit",
+    "All Products",
+    "Women",
+    "Men",
+    "Accessories"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_cart",
+    "desktop_checkout"
+   ],
+   "regression_text_signals": [
+    "Shopping Cart",
+    "Summary"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "John Doe",
+    "Your shop's description goes here"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_shop",
+    "mobile_shop",
+    "tablet_shop",
+    "desktop_shop_filter",
+    "desktop_product",
+    "desktop_cart",
+    "mobile_cart",
+    "tablet_cart",
+    "desktop_checkout"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "cdn.tailwindcss.com"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_cart",
+     "tag": "table",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cart",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_checkout",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Showing 6 of 6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "button",
+     "text_contains": "Women",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "button",
+     "text_contains": "Men",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "tag": "button",
+     "text_contains": "Accessories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "text_contains": "Bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cart",
+     "text_contains": "Bag",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_shop",
+     "mobile_shop"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_states": [
+    "desktop_shop_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_shop_filter",
+     "changed_from": "desktop_shop",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_shop"
+   ],
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_shop",
+    "mobile_shop",
+    "tablet_shop",
+    "desktop_shop_filter",
+    "desktop_product",
+    "desktop_cart",
+    "mobile_cart",
+    "tablet_cart",
+    "desktop_checkout"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_shop",
+    "mobile_shop",
+    "tablet_shop",
+    "desktop_shop_filter",
+    "desktop_product",
+    "desktop_cart",
+    "mobile_cart",
+    "tablet_cart",
+    "desktop_checkout"
+   ]
+  }
+ ]
+}

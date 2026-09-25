@@ -1,0 +1,209 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Cveinnt__LiveTerm__1f2e543bdbfa__terminal_portfolio_flow_regression_repair",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_projects_page",
+    "desktop_stack_page",
+    "desktop_help",
+    "desktop_filter_rust"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "reference_text_signals": [
+    "Showing all 6 projects",
+    "glasswire-daemon",
+    "ferrytrace",
+    "tideglass-notebook",
+    "buoy-telemetry-cli"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "visible_text_signals": [
+    "Showing all 6 projects",
+    "glasswire-daemon",
+    "ferrytrace"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_rust"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_rust",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "2 of 6 projects",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/_next/static/"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_projects_page",
+    "desktop_stack_page",
+    "desktop_help",
+    "desktop_filter_rust"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "text_contains": "Showing all 6 projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "input",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "article",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "glasswire-daemon",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_projects_page",
+     "text_contains": "Showing all 6 projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "article",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_stack_page",
+     "text_contains": "Showing all 6 projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_stack_page",
+     "tag": "article",
+     "min_count": 6
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "mobile_projects"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_projects_page",
+    "desktop_stack_page",
+    "desktop_help",
+    "desktop_filter_rust"
+   ],
+   "completion_states": [
+    "desktop_projects",
+    "desktop_filter_rust"
+   ],
+   "completion_text_signals": [
+    "glasswire-daemon",
+    "saltmarsh-sched",
+    "ferrytrace",
+    "tideglass-notebook",
+    "buoy-telemetry-cli"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_help"
+   ],
+   "regression_text_signals": [
+    "available commands"
+   ],
+   "forbidden_text_patterns": [
+    "Terminal portfolio flow",
+    "Flow step 1",
+    "Flow step 2",
+    "lorem ipsum",
+    "Lorem Ipsum",
+    "PLACEHOLDER"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 0
+  }
+ ]
+}

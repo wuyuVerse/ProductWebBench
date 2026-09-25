@@ -1,0 +1,45 @@
+{
+ "slot": 583,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_entitlements",
+   "dom_len": 51594,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "efd738725c13a3a15720b6685c4579cf",
+    "reference": "d780bfe7ae2614f00b030f4094e0fdd8",
+    "bad": "15ef8a3d0e3bb1c90052afd0fda6a7f8"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 23,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "kizivat__saas-kit__b953870ee448",
+ "capability": "Build",
+ "capability_is_build": true
+}

@@ -1,0 +1,246 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_andrewwoan__codrops-fan-museum__d490ab979145__museum_asset_guide_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_wayfinder",
+    "mobile_wayfinder",
+    "desktop_hall_pick",
+    "desktop_hall_vault",
+    "desktop_hall_reading",
+    "desktop_hall_orrery"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_wayfinder",
+    "mobile_wayfinder",
+    "desktop_hall_pick",
+    "desktop_hall_vault",
+    "desktop_hall_reading",
+    "desktop_hall_orrery"
+   ],
+   "completion_states": [
+    "desktop_wayfinder",
+    "desktop_initial"
+   ],
+   "completion_text_signals": [
+    "Gallery wayfinding",
+    "Vellum Observatory",
+    "Charts on view",
+    "Halls open",
+    "All halls",
+    "Chart Vault"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "visible_text_states": [
+    "desktop_wayfinder"
+   ],
+   "visible_text_signals": [
+    "Gallery wayfinding",
+    "Chart Vault",
+    "Now guiding"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_wayfinder"
+   ],
+   "regression_text_signals": [
+    "Gallery wayfinding",
+    "Vellum Observatory"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_wayfinder",
+    "mobile_wayfinder",
+    "desktop_hall_pick",
+    "desktop_hall_vault",
+    "desktop_hall_reading",
+    "desktop_hall_orrery"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "dummy content",
+    "placeholder rail",
+    "coming soon",
+    "todo overflow",
+    "sitecontinuum removed"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_initial",
+    "mobile_wayfinder"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_initial",
+    "mobile_wayfinder"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "min_canvas_screenshot_bytes": 4500,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_wayfinder",
+    "mobile_wayfinder",
+    "desktop_hall_pick",
+    "desktop_hall_vault",
+    "desktop_hall_reading",
+    "desktop_hall_orrery"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "/audio/",
+    "background_music",
+    "background_ambience"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_wayfinder",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_wayfinder",
+     "class_contains": "wayfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_wayfinder",
+     "tag": "h2",
+     "text_contains": "Gallery wayfinding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_wayfinder",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_wayfinder",
+     "class_contains": "wayfinder__tile",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_hall_vault",
+     "class_contains": "wayfinder--vault",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_hall_vault",
+     "text_contains": "Gallery wayfinding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_hall_reading",
+     "class_contains": "wayfinder--reading",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_hall_reading",
+     "text_contains": "Gallery wayfinding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_hall_orrery",
+     "class_contains": "wayfinder--orrery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_hall_orrery",
+     "text_contains": "Gallery wayfinding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "wayfinder--entry",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_wayfinder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_hall_pick",
+     "changed_from": "desktop_wayfinder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "wayfinder__readout",
+      "text_contains": "Now guiding: Chart Vault",
+      "min_count": 1
+     }
+    }
+   ],
+   "interaction_states": [
+    "desktop_hall_pick"
+   ],
+   "submission_states_interaction": [
+    "desktop_hall_pick"
+   ],
+   "visual_anchor_states": [
+    "desktop_wayfinder",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6
+  }
+ ]
+}

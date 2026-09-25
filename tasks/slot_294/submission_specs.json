@@ -1,0 +1,288 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_jeyla-danishyanabuzar__Music-Blog-Website-Template__07df8c9b8c28__featured_listening_queue",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_featured_component",
+    "mobile_featured_component",
+    "desktop_tape_filter",
+    "desktop_hydrophone_filter",
+    "desktop_all_reset",
+    "mobile_tape_filter",
+    "desktop_featured_listening_queue",
+    "mobile_featured_listening_queue",
+    "desktop_blog_cards_regression",
+    "desktop_article_regression",
+    "desktop_side_posts_regression",
+    "desktop_inspiration_regression",
+    "desktop_footer_regression"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_featured_component",
+    "desktop_tape_filter",
+    "desktop_hydrophone_filter",
+    "desktop_article_regression",
+    "desktop_footer_regression"
+   ],
+   "reference_text_signals": [
+    "Tidepool Frequencies",
+    "Featured Listening Queue",
+    "Filter the Featured Listening Queue",
+    "Slack Tide",
+    "Salt Cedar",
+    "Foghorn Drone",
+    "Marisol Vantar"
+   ],
+   "visible_text_states": [
+    "desktop_featured_component",
+    "desktop_tape_filter"
+   ],
+   "visible_text_signals": [
+    "Filter the Featured Listening Queue",
+    "Now cued 1 recording"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_tape_filter",
+    "desktop_hydrophone_filter",
+    "desktop_all_reset",
+    "mobile_tape_filter"
+   ],
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_featured_component",
+    "mobile_tape_filter",
+    "mobile_featured_listening_queue"
+   ],
+   "asset_path_signals": [
+    "images/blog.img.jpg",
+    "images/blog-2.img.jpg",
+    "images/blog-3.img.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_blog_cards_regression"
+   ],
+   "min_asset_path_signals": 3,
+   "asset_signal_states": [
+    "desktop_blog_cards_regression"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_featured_component"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_featured_component",
+    "mobile_featured_component",
+    "desktop_tape_filter",
+    "desktop_hydrophone_filter",
+    "desktop_all_reset",
+    "mobile_tape_filter",
+    "desktop_featured_listening_queue",
+    "mobile_featured_listening_queue",
+    "desktop_blog_cards_regression",
+    "desktop_article_regression",
+    "desktop_side_posts_regression",
+    "desktop_inspiration_regression",
+    "desktop_footer_regression"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_featured_component",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_featured_component",
+     "text_contains": "Filter the Featured Listening Queue",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_featured_component",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_article_regression",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_footer_regression",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_featured_component",
+     "class_contains": "queue-rail--featured",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_side_posts_regression",
+     "class_contains": "queue-rail--sidebar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_regression",
+     "class_contains": "queue-rail--footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_side_posts_regression",
+     "text_contains": "LISTENING QUEUE RAIL",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_regression",
+     "text_contains": "LISTENING QUEUE RAIL",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_featured_component",
+     "mobile_featured_component"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_tape_filter",
+     "changed_from": "desktop_featured_component",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "queue-status",
+      "text_contains": "Now cued 1 recording",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_featured_component",
+    "mobile_featured_component",
+    "desktop_tape_filter",
+    "desktop_hydrophone_filter",
+    "desktop_all_reset",
+    "mobile_tape_filter",
+    "desktop_featured_listening_queue",
+    "mobile_featured_listening_queue",
+    "desktop_blog_cards_regression",
+    "desktop_article_regression",
+    "desktop_side_posts_regression",
+    "desktop_inspiration_regression",
+    "desktop_footer_regression"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_featured_component",
+    "desktop_article_regression",
+    "desktop_side_posts_regression",
+    "desktop_footer_regression"
+   ],
+   "completion_text_signals": [
+    "Tidepool Frequencies",
+    "Featured Listening Queue",
+    "Filter the Featured Listening Queue",
+    "Slack Tide",
+    "Foghorn Drone",
+    "About Marisol"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "TIDEPOOL FREQUENCIES",
+    "Marisol Vantar"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_featured_component",
+    "desktop_article_regression",
+    "desktop_side_posts_regression",
+    "desktop_footer_regression"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Ludovico",
+    "LUDOVICO",
+    "More Hats",
+    "John Doe",
+    "Fashion",
+    "Denim",
+    "Sweaters",
+    "MUSIC BLOG",
+    "Jeyla Danishyan-Abuzar",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{"
+   ]
+  }
+ ]
+}

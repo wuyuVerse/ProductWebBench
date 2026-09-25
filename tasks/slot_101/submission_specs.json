@@ -1,0 +1,227 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_daemon-bixia__Avian-Template__22b2444fd437__workspace_pulse_rail",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_signin",
+    "desktop_reset",
+    "desktop_pulse_home",
+    "mobile_pulse_home",
+    "desktop_pulse_signin",
+    "desktop_pulse_reset",
+    "tablet_pulse_home",
+    "mobile_pulse_signin",
+    "toggle_pulse_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_pulse_home"
+   ],
+   "reference_text_signals": [
+    "Workspace pulse",
+    "Unread",
+    "Groups",
+    "conversations"
+   ],
+   "visible_text_states": [
+    "desktop_pulse_home"
+   ],
+   "visible_text_signals": [
+    "Workspace pulse",
+    "conversations"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_pulse_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_pulse_home",
+    "tablet_pulse_home"
+   ],
+   "asset_path_signals": [
+    "ws-media-ph",
+    "vectors/",
+    ".svg"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_pulse_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_pulse_home",
+    "desktop_signin"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_signin",
+    "desktop_reset",
+    "desktop_pulse_home",
+    "mobile_pulse_home",
+    "desktop_pulse_signin",
+    "desktop_pulse_reset",
+    "tablet_pulse_home",
+    "mobile_pulse_signin",
+    "toggle_pulse_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Workspace pulse",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pulse_home",
+     "text_contains": "Unread",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pulse_home",
+     "text_contains": "Groups",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pulse_signin",
+     "text_contains": "Workspace pulse",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pulse_reset",
+     "text_contains": "Workspace pulse",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pulse_home",
+     "mobile_pulse_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_pulse_home",
+     "changed_from": "desktop_pulse_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 1 of 4 conversations",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_signin",
+    "desktop_reset",
+    "desktop_pulse_home",
+    "mobile_pulse_home",
+    "desktop_pulse_signin",
+    "desktop_pulse_reset",
+    "tablet_pulse_home",
+    "mobile_pulse_signin",
+    "toggle_pulse_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_pulse_home",
+    "desktop_pulse_signin"
+   ],
+   "completion_text_signals": [
+    "Workspace pulse",
+    "Unread",
+    "Groups",
+    "Showing",
+    "conversations"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Messages"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_signin",
+    "desktop_reset"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "Avian Messaging",
+    "daemon-bixia",
+    "REPLACE_ME",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/WorkspaceRail.vue",
+     "src/wsrail-mode.ts",
+     "src/wsrail-surfaces.ts"
+    ],
+    "should_preserve": [
+     "src/components/views/HomeView/HomeView.vue",
+     "src/components/views/AccessView/AccessView.vue",
+     "src/components/views/HomeView/Navigation/Navigation.vue",
+     "src/router.ts"
+    ]
+   }
+  }
+ ]
+}

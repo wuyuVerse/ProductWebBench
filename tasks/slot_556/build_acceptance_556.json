@@ -1,0 +1,45 @@
+{
+ "slot": 556,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_newsletter",
+   "dom_len": 127,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "7e44462e6e97f9d22153dc15ae750978",
+    "reference": "0902e1e052769d1400c704d0cfa384d2",
+    "bad": "37eed75f1c4f7a2f7143fdcc0ee89048"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 15,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "gndx__ev0-astro-theme__b1324c49e5d5",
+ "capability": "Build",
+ "capability_is_build": true
+}

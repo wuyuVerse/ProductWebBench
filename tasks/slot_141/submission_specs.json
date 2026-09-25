@@ -1,0 +1,291 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_brunoimbrizi__interactive-particles__efe300f9cd2b__particle_stage_control_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_panel_expanded",
+    "desktop_panel_hidden",
+    "desktop_second_sample",
+    "desktop_third_sample",
+    "desktop_particle_trail",
+    "desktop_links_focus",
+    "mobile_second_sample"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_panel_expanded",
+    "desktop_panel_hidden",
+    "desktop_second_sample",
+    "desktop_third_sample",
+    "desktop_particle_trail",
+    "desktop_links_focus",
+    "mobile_second_sample"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_second_sample"
+   ],
+   "completion_text_signals": [
+    "Ember Drift",
+    "Signal deck",
+    "Steer the drifting ember field",
+    "Tap the field to drift the embers onto the next signal plate.",
+    "Press G to unfold the drift console and retune the swarm.",
+    "All plates",
+    "Now drifting",
+    "Signal plates: plate-01.png through plate-05.png"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "visible_text_states": [
+    "desktop_second_sample"
+   ],
+   "visible_text_signals": [
+    "Signal deck",
+    "Plate 02",
+    "Now drifting"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_second_sample"
+   ],
+   "regression_text_signals": [
+    "Ember Drift",
+    "Signal deck",
+    "GitHub",
+    "Article"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_panel_expanded",
+    "desktop_panel_hidden",
+    "desktop_second_sample",
+    "desktop_third_sample",
+    "desktop_particle_trail",
+    "desktop_links_focus",
+    "mobile_second_sample"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "dummy content",
+    "placeholder rail",
+    "coming soon",
+    "todo overflow",
+    "sitecontinuum removed"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_initial",
+    "mobile_second_sample"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_initial",
+    "mobile_second_sample"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "min_canvas_screenshot_bytes": 4500,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_panel_expanded",
+    "desktop_panel_hidden",
+    "desktop_second_sample",
+    "desktop_third_sample",
+    "desktop_particle_trail",
+    "desktop_links_focus",
+    "mobile_second_sample"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "asset_path_signals": [
+    "images/sample-01.png",
+    "images/sample-02.png",
+    "images/sample-03.png",
+    "images/sample-04.png",
+    "images/sample-05.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "min_asset_path_signals": 5,
+   "image_alt_signals": [
+    "Signal plate 01 ember source",
+    "Signal plate 02 ember source",
+    "Signal plate 03 ember source",
+    "Signal plate 04 ember source",
+    "Signal plate 05 ember source"
+   ],
+   "image_alt_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "min_image_alt_signals": 5,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_second_sample",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "text_contains": "Signal deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "button",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "deck__chip",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "text_contains": "ember source",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "text_contains": "Ember Drift",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "h2",
+     "text_contains": "Signal deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_panel_expanded",
+     "class_contains": "deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_panel_expanded",
+     "text_contains": "Signal deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_panel_expanded",
+     "text_contains": "Now drifting",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_particle_trail",
+     "class_contains": "deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_particle_trail",
+     "text_contains": "Signal deck",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_particle_trail",
+     "text_contains": "Now drifting",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_second_sample",
+     "desktop_third_sample"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_second_sample",
+     "changed_from": "desktop_panel_hidden",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "deck__readout",
+      "text_contains": "Now drifting: Plate 02",
+      "min_count": 1
+     }
+    }
+   ],
+   "interaction_states": [
+    "desktop_second_sample",
+    "desktop_third_sample",
+    "mobile_second_sample"
+   ],
+   "submission_states_interaction": [
+    "desktop_second_sample"
+   ],
+   "visual_anchor_states": [
+    "desktop_second_sample",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6
+  }
+ ]
+}

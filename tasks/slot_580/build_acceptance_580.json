@@ -1,0 +1,45 @@
+{
+ "slot": 580,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_stock_levels",
+   "dom_len": 1121,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "6b256eb389d0e0a994e706b9ac29b360",
+    "reference": "d49e88a080b47f3db0d77a44afd1b2ae",
+    "bad": "74fceb7b0623785a288af140d83b4ccb"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 22,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "bloomui__tokyo-free-white-react-admin-dashboard__7537cfb92128",
+ "capability": "Build",
+ "capability_is_build": true
+}

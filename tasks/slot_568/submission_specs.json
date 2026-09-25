@@ -1,0 +1,223 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_codexfelis__paws-template__3be3cde37587__library",
+   "reference_states": [
+    "desktop_library",
+    "mobile_library"
+   ],
+   "submission_states": [
+    "desktop_library",
+    "mobile_library"
+   ],
+   "interaction_states": [
+    "desktop_library_dataset"
+   ],
+   "completion_states": [
+    "desktop_library"
+   ],
+   "completion_text_signals": [
+    "Resource Library",
+    "Old Bailey Online",
+    "Programming Historian"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_library"
+   ],
+   "visible_text_signals": [
+    "Resource Library",
+    "Hand-picked datasets"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_library"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_library"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_library"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_library"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_library",
+    "mobile_library"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_library",
+     "tag": "h1",
+     "text_contains": "Resource Library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "p",
+     "text_contains": "Hand-picked datasets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "button",
+     "text_contains": "Dataset",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "button",
+     "text_contains": "Tool",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "button",
+     "text_contains": "Tutorial",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "button",
+     "text_contains": "Reading",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "h3",
+     "text_contains": "Old Bailey Online",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "h3",
+     "text_contains": "Programming Historian",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "a",
+     "text_contains": "Blog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "a",
+     "text_contains": "Home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "a",
+     "text_contains": "GitHub",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "tag": "a",
+     "text_contains": "RSS",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "Blog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "Home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "GitHub",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "RSS",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_library",
+     "tag": "a",
+     "text_contains": "GitHub",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_about",
+     "tag": "a",
+     "text_contains": "GitHub",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_library"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_library_dataset",
+     "require_interaction": true,
+     "changed_from": "desktop_library",
+     "dom": {
+      "tag": "h3",
+      "exact_count": 3
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_library"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

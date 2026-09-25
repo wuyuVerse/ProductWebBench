@@ -1,0 +1,228 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Adrinlol__landy-react-template__8c3aa8bfc8fd__launch_plan_billing_flow",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans_default",
+    "mobile_plans_default",
+    "tablet_plans_default",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "plans_page",
+    "contact_strip"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_plans_default"
+   ],
+   "reference_text_signals": [
+    "Launch-ready landing systems",
+    "Launch plans",
+    "Billing",
+    "Launch Audit"
+   ],
+   "visible_text_states": [
+    "desktop_plans_default"
+   ],
+   "visible_text_signals": [
+    "Billing: Monthly",
+    "Launch plans"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plans_annual",
+    "mobile_plans_annual"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_plans_default",
+    "tablet_plans_default"
+   ],
+   "asset_path_signals": [
+    "img/svg/developer.svg",
+    "img/svg/logo.svg"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_plans_default"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans_default",
+    "mobile_plans_default",
+    "tablet_plans_default",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "plans_page",
+    "contact_strip"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "manifest.json",
+    "robots.txt",
+    "fonts/Motiva"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans_default",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans_default",
+     "class_contains": "plan-board--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans_default",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "plans_page",
+     "class_contains": "plan-board--plans",
+     "min_count": 1
+    },
+    {
+     "state": "plans_page",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "contact_strip",
+     "class_contains": "plan-board--contact",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_plans_annual",
+     "mobile_plans_annual"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_plans_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_plans_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "$40,320/yr",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans_default",
+    "mobile_plans_default",
+    "tablet_plans_default",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "plans_page",
+    "contact_strip"
+   ],
+   "completion_states": [
+    "desktop_plans_default",
+    "plans_page"
+   ],
+   "completion_text_signals": [
+    "Launch plans",
+    "Billing",
+    "Launch Audit",
+    "Implementation Sprint",
+    "Conversion Continuity"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Launch-ready landing systems",
+    "Launch plans"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_plans_default",
+    "mobile_plans_default",
+    "desktop_plans_annual"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "From the launch discovery board",
+    "yourdomain",
+    "TODO",
+    "Placeholder"
+   ]
+  }
+ ]
+}

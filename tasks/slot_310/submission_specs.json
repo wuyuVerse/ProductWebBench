@@ -1,0 +1,211 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_datastax__ragbot-starter__fc0e279dbb79__channel_asset_state_lock",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_library",
+    "desktop_help",
+    "desktop_home_vector"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_help"
+   ],
+   "reference_text_signals": [
+    "Prompt library",
+    "Browse starter prompts by topic",
+    "Vector Search",
+    "Astra DB",
+    "Showing 12 of 12"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_library"
+   ],
+   "visible_text_signals": [
+    "Prompt library",
+    "Vector Search",
+    "Astra DB",
+    "CassIO",
+    "Showing 12 of 12"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_home_vector"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_library"
+   ],
+   "asset_path_signals": [
+    "/library",
+    "/help"
+   ],
+   "asset_signal_states": [
+    "desktop_home",
+    "desktop_library"
+   ],
+   "min_asset_path_signals": 1,
+   "mean_luminance_tolerance": 0.28,
+   "min_palette_overlap": 0.4,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "dom.html",
+    "metrics.json"
+   ],
+   "min_text_length": 40,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_library",
+    "desktop_help",
+    "desktop_home_vector"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "favicon",
+    "insights/script",
+    "gtm",
+    "google-analytics"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "plib",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Prompt library",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "plib__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_library",
+     "class_contains": "plib",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_library",
+     "class_contains": "plib__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_library",
+     "text_contains": "Browse starter prompts by topic",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_help",
+     "class_contains": "plib",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_help",
+     "class_contains": "plib__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_help",
+     "text_contains": "Browse starter prompts by topic",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_home_vector",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plib__readout",
+      "text_contains": "Showing 3 of 12 \u00b7 Vector Search",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_library",
+    "desktop_help",
+    "desktop_home_vector"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_help"
+   ],
+   "completion_text_signals": [
+    "Prompt library",
+    "Browse starter prompts by topic",
+    "Vector Search",
+    "Astra DB",
+    "CassIO",
+    "FAQ",
+    "Showing 12 of 12"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Chatbot",
+    "Chatting with the Astra chatbot",
+    "Responses are sourced from Astra documentation"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_library",
+    "desktop_help"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "TODO",
+    "placeholder prompt"
+   ]
+  }
+ ]
+}

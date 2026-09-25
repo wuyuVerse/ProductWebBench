@@ -1,0 +1,252 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_alex-shpak__hugo-book__6d5d778e4b50__docs_release_channel_switcher",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_switcher",
+    "tablet_switcher",
+    "mobile_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization",
+    "desktop_search_focus"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_switcher",
+    "tablet_switcher",
+    "mobile_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization",
+    "desktop_search_focus"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_link_count": 3,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [
+    "desktop_switcher"
+   ],
+   "asset_path_signals": [
+    "channelnav/channelnav.css",
+    "channelnav/channelnav.js"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_switcher",
+    "tablet_switcher",
+    "mobile_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization",
+    "desktop_search_focus"
+   ],
+   "responsive_overflow_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_switcher",
+    "tablet_switcher",
+    "mobile_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization",
+    "desktop_search_focus"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_switcher",
+    "tablet_switcher",
+    "mobile_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization",
+    "desktop_search_focus"
+   ],
+   "console_error_allowlist": [
+    "_vercel",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "serviceWorker"
+   ],
+   "interaction_states": [
+    "desktop_switcher_beta",
+    "desktop_search_focus"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_switcher_beta",
+     "changed_from": "desktop_switcher",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "channelnav__readout",
+      "text_contains": "Showing 3 guides \u00b7 Beta v2.5",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_switcher",
+     "mobile_switcher",
+     "desktop_switcher_beta"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_getting_started",
+     "text_contains": "Release channels",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_content",
+     "text_contains": "Release channels",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_customization",
+     "text_contains": "Release channels",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_switcher",
+     "class_contains": "channelnav__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_switcher",
+     "class_contains": "channelnav__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_switcher",
+     "class_contains": "channelnav__card",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "book-menu",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "class_contains": "book-menu",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_content",
+     "class_contains": "book-menu",
+     "min_count": 1
+    }
+   ],
+   "text_signal_states": [
+    "desktop_switcher",
+    "desktop_getting_started",
+    "desktop_content"
+   ],
+   "reference_text_signals": [
+    "Verstack Docs",
+    "Release channel",
+    "Release channels",
+    "Stable v2.4",
+    "Beta v2.5",
+    "Edge nightly",
+    "Install the CLI",
+    "Configuration",
+    "Content model",
+    "Shortcodes",
+    "Showing"
+   ],
+   "completion_states": [
+    "desktop_switcher"
+   ],
+   "completion_text_signals": [
+    "Release channel",
+    "Showing 8 guides",
+    "Beta v2.5"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_switcher"
+   ],
+   "visible_text_signals": [
+    "Release channel",
+    "Install the CLI",
+    "Edge nightly"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_switcher"
+   ],
+   "regression_text_signals": [
+    "Verstack Docs",
+    "Getting Started",
+    "Customization"
+   ],
+   "forbidden_states": [
+    "desktop_switcher",
+    "desktop_switcher_beta",
+    "desktop_getting_started",
+    "desktop_content",
+    "desktop_customization"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO archetype",
+    "placeholder.png",
+    "data:image"
+   ],
+   "visual_anchor_states": [
+    "desktop_switcher",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

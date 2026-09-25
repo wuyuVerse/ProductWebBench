@@ -1,0 +1,263 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_ichsanputr__takeka__e273e47059b9__catalog_category_bag_flow",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_catalog",
+        "desktop_filter_electronics",
+        "desktop_add_to_cart",
+        "desktop_analytics"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_link_count": 3,
+      "min_screenshot_bytes": 9000,
+      "overflow_tolerance_px": 24,
+      "text_signal_states": [
+        "desktop_products",
+        "desktop_catalog",
+        "desktop_filter_electronics",
+        "desktop_add_to_cart"
+      ],
+      "reference_text_signals": [
+        "Accessories",
+        "Add to bag",
+        "All Products",
+        "Bag",
+        "Clothing",
+        "Electronics",
+        "Shop the Collection",
+        "Showing",
+        "Wearables",
+        "Your bag",
+        "in bag",
+        "in stock"
+      ],
+      "visible_text_states": [
+        "desktop_products",
+        "desktop_catalog",
+        "desktop_add_to_cart"
+      ],
+      "visible_text_signals": [
+        "Shop the Collection",
+        "Showing",
+        "Add to bag",
+        "Your bag"
+      ],
+      "require_all_visible_text_signals": false,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_add_to_cart"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_add_to_cart",
+          "changed_from": "desktop_catalog",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Bag (1)",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_products",
+        "tablet_products"
+      ],
+      "asset_signal_states": [
+        "desktop_products",
+        "desktop_catalog"
+      ],
+      "asset_path_signals": [
+        "/shop/",
+        "prod-1",
+        "prod-2",
+        "prod-3"
+      ],
+      "min_asset_path_signals": 3,
+      "visual_regression": {
+        "states": [
+          "desktop_products",
+          "mobile_products"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Showing",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Add to bag",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "All Products",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Electronics",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Wearables",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Clothing",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Accessories",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_products",
+          "text_contains": "Add to bag",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Bag (",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_catalog",
+          "text_contains": "Bag (",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Your bag",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_catalog",
+          "text_contains": "Your bag",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_analytics",
+          "text_contains": "Your bag",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_catalog",
+        "desktop_filter_electronics",
+        "desktop_add_to_cart",
+        "desktop_analytics"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_products"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_products",
+        "mobile_products",
+        "tablet_products",
+        "desktop_catalog",
+        "desktop_filter_electronics",
+        "desktop_add_to_cart",
+        "desktop_analytics"
+      ],
+      "completion_states": [
+        "desktop_products",
+        "desktop_catalog",
+        "desktop_filter_electronics",
+        "desktop_add_to_cart"
+      ],
+      "completion_text_signals": [
+        "Shop the Collection",
+        "All Products",
+        "Electronics",
+        "Showing",
+        "Add to bag",
+        "Your bag",
+        "in stock",
+        "in bag"
+      ],
+      "require_all_completion_signals": false,
+      "min_completion_text_signals": 6,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_products",
+        "desktop_catalog",
+        "desktop_analytics"
+      ],
+      "regression_text_signals": [
+        "Products",
+        "Analytics",
+        "Shop the Collection",
+        "Your bag"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "Lorem ipsum",
+        "TODO",
+        "placeholder product",
+        "coming soon",
+        "fake product",
+        "dummy catalog",
+        "unsplash.com",
+        "images.unsplash",
+        "api.dicebear.com",
+        "api.iconify.design",
+        "remote catalog service"
+      ]
+    }
+  ]
+}

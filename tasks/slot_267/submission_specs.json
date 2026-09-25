@@ -1,0 +1,346 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codeplay-code__Davis-Personal-Portfolio-ReactJs-Template__fd6111392776__portfolio_asset_rhythm_system",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_filter_brand",
+    "desktop_filter_product",
+    "desktop_portfolio_modal",
+    "desktop_about_regression",
+    "desktop_resume_regression",
+    "desktop_blog_regression",
+    "desktop_contact_regression",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_portfolio_asset_system",
+    "desktop_filter_brand",
+    "desktop_filter_product"
+   ],
+   "reference_text_signals": [
+    "Portfolio asset system",
+    "Asset rhythm: 6 image variants",
+    "Grid cadence",
+    "Image source",
+    "Showing",
+    "Brand System Poster"
+   ],
+   "visible_text_states": [
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_portfolio_modal"
+   ],
+   "visible_text_signals": [
+    "Portfolio asset system",
+    "Asset rhythm: 6 image variants",
+    "Visual system: dark gold portfolio grid",
+    "Grid cadence",
+    "3 columns desktop",
+    "Image source",
+    "local portfolio assets",
+    "Showing 6 of 6",
+    "All work",
+    "Brand System Poster",
+    "Mobile Commerce Frame",
+    "Editorial Cover Study",
+    "Dashboard Snapshot",
+    "Launch Visual Suite",
+    "Packaging Detail Grid",
+    "Asset detail handoff"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 15,
+   "image_alt_states": [
+    "desktop_portfolio_asset_system",
+    "desktop_portfolio_modal"
+   ],
+   "image_alt_signals": [
+    "Brand System Poster portfolio asset",
+    "Brand System Poster large portfolio asset"
+   ],
+   "min_image_alt_signals": 2,
+   "interaction_states": [
+    "desktop_filter_brand",
+    "desktop_filter_product",
+    "desktop_portfolio_modal",
+    "mobile_menu_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_brand",
+     "changed_from": "desktop_portfolio_asset_system",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "st-cadence-readout",
+      "text_contains": "Showing 2 of 6 \u00b7 Brand",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_filter_product",
+     "changed_from": "desktop_portfolio_asset_system",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "st-cadence-readout",
+      "text_contains": "Showing 2 of 6 \u00b7 Product",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "mobile_menu_open"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 180,
+   "min_image_count": 4,
+   "min_screenshot_bytes": 20000,
+   "mean_luminance_tolerance": 110,
+   "min_palette_overlap": 1,
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_portfolio_asset_system",
+    "desktop_portfolio_modal"
+   ],
+   "asset_path_signals": [
+    "/images/section/hero-img.jpg",
+    "/images/portfolio/portfolio1.jpg",
+    "/images/portfolio/portfolio2.jpg",
+    "/images/portfolio/portfolio3.jpg",
+    "/images/portfolio/portfolio4.jpg",
+    "/images/portfolio/portfolio5.jpg",
+    "/images/portfolio/portfolio6.jpg",
+    "/images/portfolio/portfolio1_lg.jpg",
+    "/images/blog/blog1.jpg"
+   ],
+   "min_asset_path_signals": 8,
+   "exact_asset_path_signals": [
+    "/images/portfolio/portfolio1.jpg",
+    "/images/portfolio/portfolio2.jpg",
+    "/images/portfolio/portfolio3.jpg",
+    "/images/portfolio/portfolio4.jpg",
+    "/images/portfolio/portfolio5.jpg",
+    "/images/portfolio/portfolio6.jpg"
+   ],
+   "min_exact_asset_path_signals": 6,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio_asset_system",
+     "tablet_portfolio_asset_system",
+     "mobile_portfolio_asset_system"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_portfolio_asset_system",
+     "class_contains": "st-portfolio-system-note--recap",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_portfolio_asset_system",
+     "class_contains": "st-portfolio-system-note--recap",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio_asset_system",
+     "class_contains": "st-cadence-readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio_asset_system",
+     "class_contains": "st-cadence-chip",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_portfolio_asset_system",
+     "class_contains": "st-portfolio-single",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_portfolio_asset_system",
+     "tag": "img",
+     "text_contains": "Brand System Poster",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio_modal",
+     "tag": "p",
+     "text_contains": "Asset detail handoff",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio_modal",
+     "tag": "img",
+     "text_contains": "Brand System Poster large",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_regression",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_regression",
+     "tag": "header",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_filter_brand",
+    "desktop_filter_product",
+    "desktop_portfolio_modal",
+    "desktop_about_regression",
+    "desktop_resume_regression",
+    "desktop_blog_regression",
+    "desktop_contact_regression",
+    "mobile_menu_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_about_regression",
+    "desktop_blog_regression",
+    "desktop_contact_regression"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_filter_brand",
+    "desktop_filter_product",
+    "desktop_portfolio_modal",
+    "desktop_about_regression",
+    "desktop_resume_regression",
+    "desktop_blog_regression",
+    "desktop_contact_regression",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_portfolio_modal"
+   ],
+   "completion_text_signals": [
+    "Portfolio asset system",
+    "Asset rhythm: 6 image variants",
+    "Visual system: dark gold portfolio grid",
+    "Grid cadence: 3 columns desktop, 2 tablet, 1 mobile",
+    "Image source: local portfolio assets",
+    "Showing 6 of 6",
+    "All work",
+    "Brand System Poster",
+    "Mobile Commerce Frame",
+    "Editorial Cover Study",
+    "Dashboard Snapshot",
+    "Launch Visual Suite",
+    "Packaging Detail Grid",
+    "Asset detail handoff"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 13,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_about_regression",
+    "desktop_resume_regression",
+    "desktop_blog_regression",
+    "desktop_contact_regression",
+    "mobile_menu_open"
+   ],
+   "regression_text_signals": [
+    "Edward Davis",
+    "Hello, I",
+    "Visual Designer",
+    "Hi There! I'm Edward Davis",
+    "Sketches",
+    "UI/UX Design",
+    "Experience",
+    "Senior UX/UI Designer",
+    "Richard Miles",
+    "Just Say Hello",
+    "Send Message",
+    "Home",
+    "About",
+    "Resume",
+    "Portfolio",
+    "Blog",
+    "Contact"
+   ],
+   "forbidden_text_patterns": [
+    "Design / Marketing",
+    "portfolio TODO",
+    "fake asset system",
+    "placeholder asset rhythm",
+    "screenshot-only portfolio",
+    "lorem portfolio asset"
+   ],
+   "forbidden_states": [
+    "desktop_portfolio_asset_system",
+    "tablet_portfolio_asset_system",
+    "mobile_portfolio_asset_system",
+    "desktop_portfolio_modal"
+   ]
+  }
+ ]
+}

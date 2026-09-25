@@ -1,0 +1,199 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__InteractivePoints__8419b6377dba__point_state_itinerary",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_point_pick",
+    "desktop_second_map",
+    "mobile_point_index"
+   ],
+   "text_signal_states": [
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "POINT INDEX",
+    "Rupert Street"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "POINT INDEX",
+    "Rupert Street"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_point_pick"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_point_pick",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "pidx__readout",
+      "text_contains": "Selecting: Bear Street",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/map.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow_states": [
+    "mobile_initial"
+   ],
+   "min_canvas_screenshot_bytes": 2000,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_point_pick",
+    "desktop_second_map",
+    "mobile_point_index"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "section",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "pidx--primary",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "pidx__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "POINT INDEX",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "class_contains": "pidx--primary",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "class_contains": "pidx__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_second_map",
+     "text_contains": "POINT INDEX",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_second_map",
+     "tag": "section",
+     "min_count": 2
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.8
+     },
+     "block_fidelity": {
+      "min_block_match": 0.35,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_point_pick",
+    "desktop_second_map",
+    "mobile_point_index"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "completion_text_signals": [
+    "POINT INDEX",
+    "Rupert Street",
+    "Swiss Court",
+    "Bear Street",
+    "Leicester Square",
+    "Haymarket"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_second_map"
+   ],
+   "regression_text_signals": [
+    "Interactive Points",
+    "Seeing the Past in a New Light"
+   ],
+   "forbidden_text_patterns": [
+    "overflow-x:hidden fix",
+    "clip to hide overflow",
+    "hardened strip",
+    "Coming soon",
+    "Index unavailable"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_second_map"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

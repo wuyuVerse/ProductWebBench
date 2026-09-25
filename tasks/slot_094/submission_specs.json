@@ -1,0 +1,272 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_frivizn__news-website-template__4ed6892d8c1f__world_article_asset_repair",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_article",
+    "tablet_article",
+    "mobile_article",
+    "desktop_deskfilter",
+    "mobile_deskfilter",
+    "desktop_deskfilter_world",
+    "desktop_deskfilter_politics",
+    "mobile_deskfilter_world",
+    "desktop_home_footer",
+    "desktop_article_footer",
+    "mobile_article_footer",
+    "desktop_article_comments"
+   ],
+   "text_signal_states": [
+    "desktop_deskfilter",
+    "desktop_deskfilter_world",
+    "desktop_deskfilter_politics",
+    "mobile_deskfilter",
+    "mobile_deskfilter_world"
+   ],
+   "reference_text_signals": [
+    "Browse the desk",
+    "World",
+    "Politics",
+    "Business",
+    "Sport",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_deskfilter",
+    "desktop_deskfilter_world",
+    "mobile_deskfilter_world"
+   ],
+   "visible_text_signals": [
+    "Browse the desk",
+    "World",
+    "Showing 3 of 19 stories",
+    "Politics"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_deskfilter_world",
+    "desktop_deskfilter_politics",
+    "mobile_deskfilter_world"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_article",
+    "tablet_article",
+    "mobile_article",
+    "mobile_deskfilter",
+    "mobile_deskfilter_world",
+    "mobile_article_footer"
+   ],
+   "asset_path_signals": [
+    "images/world5.jpg",
+    "images/world10.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_article_comments"
+   ],
+   "min_asset_path_signals": 1,
+   "asset_signal_states": [
+    "desktop_article_comments"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_deskfilter"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_article",
+    "tablet_article",
+    "mobile_article",
+    "desktop_deskfilter",
+    "mobile_deskfilter",
+    "desktop_deskfilter_world",
+    "desktop_deskfilter_politics",
+    "mobile_deskfilter_world",
+    "desktop_home_footer",
+    "desktop_article_footer",
+    "mobile_article_footer",
+    "desktop_article_comments"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "article",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "class_contains": "sidebar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article_comments",
+     "class_contains": "comments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "img",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_deskfilter",
+     "class_contains": "deskfilter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deskfilter",
+     "class_contains": "story",
+     "min_count": 3
+    },
+    {
+     "state": "mobile_article",
+     "text_contains": "Browse the desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deskfilter",
+     "text_contains": "Browse the desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "text_contains": "Browse the desk",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_deskfilter",
+     "mobile_deskfilter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_deskfilter_world",
+     "changed_from": "desktop_deskfilter",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "deskfilter__readout",
+      "text_contains": "Showing 3 of 19 stories",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_article",
+    "tablet_article",
+    "mobile_article",
+    "desktop_deskfilter",
+    "mobile_deskfilter",
+    "desktop_deskfilter_world",
+    "desktop_deskfilter_politics",
+    "mobile_deskfilter_world",
+    "desktop_home_footer",
+    "desktop_article_footer",
+    "mobile_article_footer",
+    "desktop_article_comments"
+   ],
+   "completion_states": [
+    "desktop_deskfilter",
+    "desktop_deskfilter_world"
+   ],
+   "completion_text_signals": [
+    "Browse the desk",
+    "World",
+    "Politics",
+    "Business",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_article",
+    "desktop_article_comments"
+   ],
+   "regression_text_signals": [
+    "Meridian Wire",
+    "Home",
+    "World",
+    "Most Read"
+   ],
+   "forbidden_states": [
+    "desktop_deskfilter",
+    "desktop_deskfilter_world",
+    "mobile_deskfilter"
+   ],
+   "forbidden_text_patterns": [
+    "zombie",
+    "vampire",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{",
+    "Lorem ipsum"
+   ]
+  }
+ ]
+}

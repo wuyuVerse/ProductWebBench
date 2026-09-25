@@ -1,0 +1,45 @@
+{
+ "slot": 555,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_projects",
+   "dom_len": 6746,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "260671316cb0a944ab63adf6e5972e86",
+    "reference": "d47f689bd0d374f5525cd3e5e641d126",
+    "bad": "017f2ba1361b6746effa644fbee80ef1"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 17,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "stackrole__gatsby-starter-foundation__0e6c2086f333",
+ "capability": "Build",
+ "capability_is_build": true
+}

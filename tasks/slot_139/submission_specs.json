@@ -1,0 +1,244 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_website-templates__simple-product_responsive-template__29953ee814fa__cart_decision_component",
+   "reference_states": [
+    "desktop_home_top",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "tablet_rail_home",
+    "desktop_rail_shop",
+    "mobile_rail_shop",
+    "desktop_shop_filter",
+    "desktop_shop_chargers",
+    "mobile_shop",
+    "desktop_rail_product",
+    "desktop_product_detail",
+    "desktop_footer"
+   ],
+   "text_signal_states": [
+    "desktop_rail_home",
+    "desktop_shop_filter"
+   ],
+   "reference_text_signals": [
+    "The Prechu promise",
+    "Free UK delivery",
+    "Two-year warranty",
+    "Shop Prechu"
+   ],
+   "visible_text_states": [
+    "desktop_rail_home",
+    "desktop_shop_filter"
+   ],
+   "visible_text_signals": [
+    "The Prechu promise",
+    "Shop Prechu"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_shop_chargers"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_shop_chargers",
+     "changed_from": "desktop_shop_filter",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "prechu-shop__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_rail_home",
+    "tablet_rail_home",
+    "mobile_rail_shop",
+    "mobile_shop"
+   ],
+   "no_horizontal_overflow": true,
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "static/images/iphone.png",
+    "static/images/card.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_home_top",
+    "desktop_shop_filter"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home_top",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "tablet_rail_home",
+    "desktop_rail_shop",
+    "mobile_rail_shop",
+    "desktop_shop_filter",
+    "desktop_shop_chargers",
+    "mobile_shop",
+    "desktop_rail_product",
+    "desktop_product_detail",
+    "desktop_footer"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home_top",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_top",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_top",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_top",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "class_contains": "prechu-promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_shop",
+     "class_contains": "prechu-promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_product",
+     "class_contains": "prechu-promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_home",
+     "text_contains": "The Prechu promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_shop",
+     "text_contains": "The Prechu promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_product",
+     "text_contains": "The Prechu promise",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_top",
+     "class_contains": "prechu-bag",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop_filter",
+     "class_contains": "prechu-shop__grid",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shop_filter",
+     "class_contains": "prechu-shop__readout",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home_top",
+    "desktop_rail_home",
+    "mobile_rail_home",
+    "tablet_rail_home",
+    "desktop_rail_shop",
+    "mobile_rail_shop",
+    "desktop_shop_filter",
+    "desktop_shop_chargers",
+    "mobile_shop",
+    "desktop_rail_product",
+    "desktop_product_detail",
+    "desktop_footer"
+   ],
+   "completion_states": [
+    "desktop_rail_home",
+    "desktop_shop_filter"
+   ],
+   "completion_text_signals": [
+    "The Prechu promise",
+    "Free UK delivery",
+    "Two-year warranty",
+    "30-day returns",
+    "Secure checkout",
+    "Shop Prechu"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home_top",
+    "desktop_footer"
+   ],
+   "regression_text_signals": [
+    "Prechu",
+    "Shop",
+    "Products"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Lorem Ipsum",
+    "dummy text"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail_home",
+     "mobile_rail_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_rail_home",
+    "desktop_shop_filter"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

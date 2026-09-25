@@ -1,0 +1,237 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b__guided_accessory_storefront",
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 8,
+      "overflow_tolerance_px": 24,
+      "reference_overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deal_picks",
+        "tablet_deal_picks",
+        "mobile_deal_picks",
+        "desktop_shop_grid",
+        "desktop_cart",
+        "desktop_deal_filter"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6,
+      "min_screenshot_bytes": 9000,
+      "text_signal_states": [
+        "desktop_deal_picks",
+        "desktop_shop_grid"
+      ],
+      "reference_text_signals": [
+        "Deal Picks",
+        "Curated Picks",
+        "Mobile Phones",
+        "Bonik"
+      ],
+      "completion_states": [
+        "desktop_deal_picks",
+        "desktop_shop_grid"
+      ],
+      "completion_text_signals": [
+        "Deal Picks",
+        "Curated Picks",
+        "Best seller",
+        "Under $100",
+        "Wearable",
+        "Bundle",
+        "Mobile Phones",
+        "Showing"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 8,
+      "visible_text_states": [
+        "desktop_deal_picks"
+      ],
+      "visible_text_signals": [
+        "Deal Picks",
+        "Curated Picks",
+        "Showing"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_shop_grid",
+        "desktop_cart"
+      ],
+      "regression_text_signals": [
+        "Bonik"
+      ],
+      "forbidden_states": [
+        "desktop_deal_picks",
+        "desktop_shop_grid",
+        "mobile_deal_picks"
+      ],
+      "forbidden_text_patterns": [
+        "Flash Delas",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "50% Off For Your First Shopping",
+        "via.placeholder",
+        "placehold.co",
+        "unsplash.com",
+        "pexels.com"
+      ],
+      "asset_signal_states": [
+        "desktop_deal_picks"
+      ],
+      "asset_path_signals": [
+        "images/flash/flash-1.png",
+        "images/flash/flash-2.png",
+        "images/flash/flash-3.png",
+        "images/flash/flash-4.png"
+      ],
+      "min_asset_path_signals": 4,
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_deal_picks",
+        "mobile_deal_picks",
+        "desktop_shop_grid",
+        "desktop_cart"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deal_picks",
+        "tablet_deal_picks",
+        "mobile_deal_picks",
+        "desktop_shop_grid",
+        "desktop_cart",
+        "desktop_deal_filter"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "class_contains": "search",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop_grid",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop_grid",
+          "tag": "img",
+          "min_count": 8
+        },
+        {
+          "state": "desktop_deal_picks",
+          "text_contains": "All picks",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deal_picks",
+          "text_contains": "Showing",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deal_picks",
+          "text_contains": "of 6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_deal_picks",
+          "text_contains": "Curated Picks",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop_grid",
+          "text_contains": "Curated Picks",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_cart",
+          "text_contains": "Curated Picks",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_deal_picks",
+          "mobile_deal_picks"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_states": [
+        "desktop_deal_filter"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_deal_filter",
+          "changed_from": "desktop_deal_picks",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "min_canvas_screenshot_bytes": 9000,
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deal_picks",
+        "tablet_deal_picks",
+        "mobile_deal_picks",
+        "desktop_shop_grid",
+        "desktop_cart",
+        "desktop_deal_filter"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_deal_picks",
+        "tablet_deal_picks",
+        "mobile_deal_picks",
+        "desktop_shop_grid",
+        "desktop_cart",
+        "desktop_deal_filter"
+      ]
+    }
+  ]
+}

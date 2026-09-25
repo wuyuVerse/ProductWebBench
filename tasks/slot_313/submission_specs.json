@@ -1,0 +1,201 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_DesignRevision__shards-dashboard__525efdca736a__editorial_handoff_workflow",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_blogposts",
+        "desktop_bulletins",
+        "mobile_bulletins",
+        "tablet_bulletins",
+        "desktop_bulletins_filter"
+      ],
+      "text_signal_states": [
+        "desktop_bulletins"
+      ],
+      "reference_text_signals": [
+        "Editorial Bulletins",
+        "Editorial focus",
+        "Fall editorial calendar is locked",
+        "Showing"
+      ],
+      "visible_text_states": [
+        "desktop_bulletins"
+      ],
+      "visible_text_signals": [
+        "Editorial Bulletins",
+        "Editorial focus"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_bulletins_filter"
+      ],
+      "responsive_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_blogposts",
+        "desktop_bulletins",
+        "mobile_bulletins",
+        "tablet_bulletins",
+        "desktop_bulletins_filter"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "images/bulletins"
+      ],
+      "asset_path_states": [
+        "desktop_bulletins"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_blogposts",
+        "desktop_bulletins",
+        "mobile_bulletins",
+        "tablet_bulletins",
+        "desktop_bulletins_filter"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_bulletins",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_bulletins",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_bulletins",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_bulletins",
+          "tag": "button",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_bulletins",
+          "text_contains": "Showing 6 of 6",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_bulletins",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "text_contains": "Editorial focus",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blogposts",
+          "text_contains": "Editorial focus",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_bulletins",
+          "mobile_bulletins"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_bulletins_filter",
+          "changed_from": "desktop_bulletins",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_blogposts",
+        "desktop_bulletins",
+        "mobile_bulletins",
+        "tablet_bulletins",
+        "desktop_bulletins_filter"
+      ],
+      "completion_states": [
+        "desktop_bulletins"
+      ],
+      "completion_text_signals": [
+        "Editorial Bulletins",
+        "Editorial focus",
+        "Showing 6 of 6"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 3,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Beacon Editorial",
+        "Blog Dashboard",
+        "Add New Post"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Cheatsheet"
+      ],
+      "visual_anchor_states": [
+        "desktop_bulletins",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "min_canvas_screenshot_bytes": 0
+    }
+  ]
+}

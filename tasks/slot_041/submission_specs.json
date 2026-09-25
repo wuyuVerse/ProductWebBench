@@ -1,0 +1,235 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themewagon__tailwind-bundle__5cb9fa3d8604__template_decision_navigator",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_navigator",
+    "tablet_navigator",
+    "mobile_navigator",
+    "desktop_hero",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_categories",
+    "desktop_guide",
+    "mobile_categories",
+    "desktop_cards2",
+    "mobile_cards2",
+    "desktop_filter"
+   ],
+   "text_signal_states": [
+    "desktop_navigator",
+    "desktop_rail"
+   ],
+   "reference_text_signals": [
+    "Tailwind Bundle Decision Navigator",
+    "Bundle navigator",
+    "Admin Dashboards"
+   ],
+   "visible_text_states": [
+    "desktop_rail"
+   ],
+   "visible_text_signals": [
+    "Bundle navigator",
+    "templates"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_navigator",
+    "mobile_navigator",
+    "mobile_rail",
+    "mobile_categories",
+    "mobile_cards2"
+   ],
+   "asset_path_signals": [
+    "assets/img/items",
+    "assets/img/themewagon-logo"
+   ],
+   "asset_path_states": [
+    "desktop_cards2",
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_cards2"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_navigator",
+    "tablet_navigator",
+    "mobile_navigator",
+    "desktop_hero",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_categories",
+    "desktop_guide",
+    "mobile_categories",
+    "desktop_cards2",
+    "mobile_cards2",
+    "desktop_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "web vitals",
+    "cdn.tailwindcss.com"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigator",
+     "text_contains": "Admin Dashboards",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigator",
+     "text_contains": "Landing & SaaS",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigator",
+     "text_contains": "Ecommerce & Crypto",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigator",
+     "text_contains": "Docs & Education",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigator",
+     "text_contains": "Showing: All 50 templates",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_categories",
+     "text_contains": "Bundle navigator",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "text_contains": "Bundle navigator",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail",
+     "text_contains": "Bundle navigator",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail",
+     "desktop_categories",
+     "mobile_rail"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter",
+     "changed_from": "desktop_navigator",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Admin Dashboards",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_navigator",
+    "tablet_navigator",
+    "mobile_navigator",
+    "desktop_hero",
+    "desktop_rail",
+    "mobile_rail",
+    "desktop_categories",
+    "desktop_guide",
+    "mobile_categories",
+    "desktop_cards2",
+    "mobile_cards2",
+    "desktop_filter"
+   ],
+   "completion_states": [
+    "desktop_navigator",
+    "desktop_rail",
+    "desktop_categories"
+   ],
+   "completion_text_signals": [
+    "Tailwind Bundle Decision Navigator",
+    "Bundle navigator",
+    "Showing:",
+    "templates"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_cards2"
+   ],
+   "regression_text_signals": [
+    "50",
+    "Tailwind CSS",
+    "Get the free bundle",
+    "Download Free"
+   ],
+   "forbidden_states": [
+    "desktop_rail",
+    "mobile_rail"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "REPLACE_ME",
+    "{{",
+    "TODO"
+   ]
+  }
+ ]
+}

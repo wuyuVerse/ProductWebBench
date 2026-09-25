@@ -1,0 +1,150 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_RiadhAdrani__slick-portfolio-svelte__4b2a94869a37__certifications",
+   "reference_states": [
+    "desktop_certifications",
+    "mobile_certifications"
+   ],
+   "submission_states": [
+    "desktop_certifications",
+    "mobile_certifications"
+   ],
+   "interaction_states": [
+    "desktop_certifications_cloud"
+   ],
+   "completion_states": [
+    "desktop_certifications"
+   ],
+   "completion_text_signals": [
+    "Certifications",
+    "Showing 7 certifications"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_certifications"
+   ],
+   "visible_text_signals": [
+    "Certifications",
+    "A curated set of professional"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_certifications"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_certifications"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_certifications"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_certifications"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_certifications",
+    "mobile_certifications"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_certifications",
+     "tag": "h1",
+     "text_contains": "Certifications",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "button",
+     "text_contains": "Cloud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "button",
+     "text_contains": "Security",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "button",
+     "text_contains": "Data",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "p",
+     "text_contains": "Showing 7",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_certifications",
+     "tag": "h3",
+     "min_count": 7
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_certifications"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_certifications_cloud",
+     "require_interaction": true,
+     "changed_from": "desktop_certifications",
+     "dom": {
+      "tag": "p",
+      "text_contains": "Cloud certifications",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_certifications"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

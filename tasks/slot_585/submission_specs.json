@@ -1,0 +1,116 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_adminmart__Matdash-vuetify-free__5486f500d01f__quotas",
+   "reference_states": [
+    "desktop_quotas",
+    "mobile_quotas",
+    "desktop_sample"
+   ],
+   "submission_states": [
+    "desktop_quotas",
+    "mobile_quotas",
+    "desktop_sample"
+   ],
+   "interaction_states": [
+    "desktop_quotas_capped",
+    "desktop_quotas_persist"
+   ],
+   "completion_states": [
+    "desktop_quotas"
+   ],
+   "completion_text_signals": [
+    "Resource Quotas",
+    "Capacity caps",
+    "Save plan"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_quotas"
+   ],
+   "visible_text_signals": [
+    "Resource Quotas"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_sample"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_quotas"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_quotas"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_quotas"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_quotas",
+    "mobile_quotas",
+    "desktop_sample"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_quotas", "tag": "h3", "text_contains": "Resource Quotas", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "p", "text_contains": "Set a capacity cap", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "button", "text_contains": "Save plan", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "button", "text_contains": "Monthly", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "button", "text_contains": "Annual", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "h3", "text_contains": "Capacity caps", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "p", "text_contains": "capacity units allocated", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "a", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_quotas", "tag": "a", "text_contains": "Sample Page", "min_count": 1},
+    {"state": "desktop_sample", "tag": "a", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_sample", "tag": "a", "text_contains": "Sample Page", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_quotas"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {"state": "desktop_quotas_capped", "require_interaction": true, "changed_from": "desktop_quotas", "dom": {"tag": "p", "text_contains": "Over capacity", "min_count": 1}},
+    {"state": "desktop_quotas_persist", "require_interaction": true, "changed_from": "desktop_quotas", "dom": {"tag": "p", "text_contains": "Over capacity", "min_count": 1}}
+   ],
+   "visual_anchor_states": [
+    "desktop_quotas"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

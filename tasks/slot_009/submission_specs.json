@@ -1,0 +1,263 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themefisher__revolve-bulma__579a378788b4__editorial_image_system",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_grid",
+    "tablet_grid",
+    "mobile_grid",
+    "desktop_slider",
+    "desktop_coast_signal",
+    "mobile_coast_signal",
+    "desktop_coast_signal_tidework",
+    "desktop_fashion",
+    "desktop_fashion_rail",
+    "desktop_about",
+    "desktop_about_rail"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_grid",
+    "tablet_grid",
+    "mobile_grid",
+    "desktop_slider",
+    "desktop_coast_signal",
+    "mobile_coast_signal",
+    "desktop_coast_signal_tidework",
+    "desktop_fashion",
+    "desktop_fashion_rail",
+    "desktop_about",
+    "desktop_about_rail"
+   ],
+   "text_signal_states": [
+    "desktop_grid",
+    "desktop_fashion",
+    "desktop_about"
+   ],
+   "reference_text_signals": [
+    "Saltmarsh"
+   ],
+   "visible_text_states": [
+    "desktop_grid"
+   ],
+   "visible_text_signals": [
+    "From the Coast",
+    "Tidework",
+    "consistent crops and descriptive captions"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_coast_signal_tidework"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_coast_signal"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "network.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 150,
+   "min_image_count": 1,
+   "image_alt_states": [
+    "desktop_grid",
+    "desktop_slider",
+    "desktop_fashion"
+   ],
+   "image_alt_signals": [
+    "saltmarsh",
+    "tidal",
+    "keeper"
+   ],
+   "min_image_alt_signals": 2,
+   "require_all_image_alt_signals": false,
+   "asset_path_signals": [
+    "images/"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_grid",
+    "tablet_grid",
+    "mobile_grid",
+    "desktop_slider",
+    "desktop_coast_signal",
+    "mobile_coast_signal",
+    "desktop_coast_signal_tidework",
+    "desktop_fashion",
+    "desktop_fashion_rail",
+    "desktop_about",
+    "desktop_about_rail"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_coast_signal",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coast_signal",
+     "tag": "img",
+     "min_count": 13
+    },
+    {
+     "state": "desktop_grid",
+     "tag": "h2",
+     "text_contains": "From the Coast",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_grid",
+     "tag": "figcaption",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_slider",
+     "tag": "img",
+     "min_count": 13
+    },
+    {
+     "state": "desktop_fashion",
+     "tag": "h2",
+     "text_contains": "Tidework",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fashion",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "p",
+     "text_contains": "Marina Holloway",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coast_signal",
+     "class_contains": "coast-signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_coast_signal",
+     "text_contains": "Coast Signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fashion_rail",
+     "class_contains": "coast-signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fashion_rail",
+     "text_contains": "Coast Signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fashion_rail",
+     "text_contains": "Saltmarsh & Signal watch",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_rail",
+     "class_contains": "coast-signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_rail",
+     "text_contains": "Coast Signal",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_rail",
+     "text_contains": "Saltmarsh & Signal watch",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_coast_signal"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_coast_signal_tidework",
+     "changed_from": "desktop_coast_signal",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "coast-signal",
+      "text_contains": "Tidework \u2014 creeks, channels and crossings",
+      "min_count": 1
+     }
+    }
+   ],
+   "completion_states": [
+    "desktop_grid",
+    "desktop_fashion",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Saltmarsh",
+    "Tidework",
+    "Marina Holloway",
+    "Coast Signal",
+    "From the Coast"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_slider"
+   ],
+   "regression_text_signals": [
+    "Trimming the Wick"
+   ],
+   "forbidden_text_patterns": [
+    "The best place to explore",
+    "chocolate chip cookies",
+    "Poor Alice",
+    "lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_grid"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,213 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_jgchenu__bootstrap-blog-template__2bd54b765f71__blog_media_asset_repair",
+      "reference_states": [
+        "desktop_blog",
+        "mobile_blog",
+        "tablet_blog",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_blog_tech"
+      ],
+      "submission_states": [
+        "desktop_blog",
+        "mobile_blog",
+        "tablet_blog",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_blog_tech"
+      ],
+      "interaction_states": [
+        "desktop_blog_tech"
+      ],
+      "completion_states": [
+        "desktop_blog"
+      ],
+      "completion_text_signals": [
+        "Filter posts",
+        "Showing 8 of 8",
+        "Tech",
+        "Design",
+        "Travel"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_blog"
+      ],
+      "visible_text_signals": [
+        "Filter posts",
+        "Tech",
+        "Design"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_blog"
+      ],
+      "regression_text_signals": [
+        "Filter posts",
+        "Blog"
+      ],
+      "forbidden_states": [
+        "desktop_blog",
+        "mobile_blog",
+        "tablet_blog",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_blog_tech"
+      ],
+      "forbidden_text_patterns": [
+        "TODO",
+        "pf broken",
+        "FIXME"
+      ],
+      "responsive_states": [
+        "desktop_blog",
+        "mobile_blog",
+        "tablet_blog",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_blog_tech"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 150,
+      "min_screenshot_bytes": 8000,
+      "asset_signal_states": [
+        "desktop_blog"
+      ],
+      "asset_path_signals": [
+        "images/blog/"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_blog",
+        "desktop_blog",
+        "tablet_blog"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_blog",
+        "mobile_blog",
+        "tablet_blog",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_blog_tech"
+      ],
+      "console_error_allowlist": [
+        "favicon",
+        "shapebootstrap.net",
+        "maps.google.com",
+        "maps.gstatic",
+        "google.com/maps",
+        "carousel is not a function"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_blog",
+          "text_contains": "Filter posts",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "text_contains": "Filter posts",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Filter posts",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "All",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Tech",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Design",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Travel",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Food",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Culture",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_blog",
+          "text_contains": "Showing 8 of 8",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_blog"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_blog_tech",
+          "changed_from": "desktop_blog",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 8",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_blog",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

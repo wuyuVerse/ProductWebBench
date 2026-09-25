@@ -1,0 +1,233 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_luluwux__Portfolio-V2__2cafd5b777f7__portfolio_status_panel",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_repositories",
+    "mobile_repositories",
+    "desktop_technologies",
+    "desktop_contact",
+    "desktop_log",
+    "desktop_filter_c"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_repositories",
+    "desktop_technologies"
+   ],
+   "reference_text_signals": [
+    "Sabine",
+    "embedded-systems and firmware engineer",
+    "tideglass-firmware",
+    "buoy-telemetry-sdk",
+    "coldchain-monitor"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_repositories"
+   ],
+   "visible_text_signals": [
+    "Sabine",
+    "embedded-systems",
+    "tideglass-firmware"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_c"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_c",
+     "changed_from": "desktop_repositories",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "2 of 6 projects",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "_next/static/media"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_technologies"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_repositories",
+    "mobile_repositories",
+    "desktop_technologies",
+    "desktop_contact",
+    "desktop_log",
+    "desktop_filter_c"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Featured projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_repositories",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_repositories",
+     "tag": "h3",
+     "text_contains": "tideglass-firmware",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_technologies",
+     "tag": "img",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "input",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_contact",
+     "text_contains": "Featured projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_log",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_log",
+     "text_contains": "Featured projects",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_repositories",
+     "mobile_repositories"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_repositories",
+    "mobile_repositories",
+    "desktop_technologies",
+    "desktop_contact",
+    "desktop_log",
+    "desktop_filter_c"
+   ],
+   "completion_states": [
+    "desktop_repositories",
+    "desktop_filter_c"
+   ],
+   "completion_text_signals": [
+    "Featured projects",
+    "tideglass-firmware",
+    "buoy-telemetry-sdk",
+    "coldchain-monitor",
+    "baremetal-scheduler"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Sabine"
+   ],
+   "forbidden_text_patterns": [
+    "I am Alp",
+    "Bu Siteye Sahip Ol",
+    "Github \u00fczerinden",
+    "\u015eablon",
+    "Sunucum",
+    "Portfolio-V2",
+    "Spotify-Refresh-Token",
+    "Lulu Official Website"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_repositories"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

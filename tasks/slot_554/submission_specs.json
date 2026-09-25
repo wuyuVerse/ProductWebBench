@@ -1,0 +1,169 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_Charca__astro-blog-template__478c018deff7__archive",
+   "reference_states": [
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "submission_states": [
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "interaction_states": [
+    "desktop_archive_2023"
+   ],
+   "completion_states": [
+    "desktop_archive"
+   ],
+   "completion_text_signals": [
+    "Archive",
+    "Ship It Friday",
+    "Showing all"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_archive"
+   ],
+   "visible_text_signals": [
+    "Archive"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_archive"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_archive"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_archive"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_archive"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_archive",
+    "mobile_archive"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_archive",
+     "tag": "h1",
+     "text_contains": "Archive",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "p",
+     "text_contains": "Browse every post",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "button",
+     "text_contains": "2023",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "button",
+     "text_contains": "2021",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "h2",
+     "text_contains": "2023",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "h3",
+     "text_contains": "Ship It Friday",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "p",
+     "text_contains": "Showing all",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "a",
+     "text_contains": "about",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_archive",
+     "tag": "a",
+     "text_contains": "Maxi Ferreira",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_archive"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_archive_2023",
+     "require_interaction": true,
+     "changed_from": "desktop_archive",
+     "dom": {
+      "tag": "p",
+      "text_contains": "2023",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_archive"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

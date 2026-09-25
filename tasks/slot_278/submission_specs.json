@@ -1,0 +1,301 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_leoMirandaa__shadcn-landing-page__ae3716dbce5c__launch_planner_page_interaction",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "desktop_features_regression",
+    "desktop_pricing_regression",
+    "desktop_faq_open",
+    "tablet_planner_growth",
+    "mobile_planner",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise"
+   ],
+   "reference_text_signals": [
+    "Launch Planner",
+    "Launch motion",
+    "Prototype Sprint",
+    "Growth Launch",
+    "Enterprise Rollout",
+    "Active launch path:",
+    "Recommended next step",
+    "Continue to pricing"
+   ],
+   "visible_text_states": [
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "tablet_planner_growth",
+    "mobile_planner",
+    "mobile_menu_open"
+   ],
+   "visible_text_signals": [
+    "Launch Planner",
+    "Launch motion",
+    "Prototype Sprint",
+    "Growth Launch",
+    "Enterprise Rollout",
+    "Recommended next step",
+    "Continue to pricing"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 6,
+   "interaction_states": [
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "desktop_faq_open",
+    "mobile_menu_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_planner_prototype",
+     "changed_from": "desktop_planner_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active launch path: Prototype Sprint",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_planner_enterprise",
+     "changed_from": "desktop_planner_default",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active launch path: Enterprise Rollout",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_planner",
+    "mobile_menu_open",
+    "tablet_planner_growth"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "growth",
+    "reflecting",
+    "looking-ahead"
+   ],
+   "asset_path_states": [
+    "desktop_features_regression",
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_planner_default",
+     "mobile_planner",
+     "tablet_planner_growth"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "section",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_planner_default",
+     "tag": "section",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_planner_default",
+     "tag": "button",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_planner_default",
+     "tag": "a",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_planner_default",
+     "class_contains": "launch-strip--planner",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner_default",
+     "class_contains": "launch-strip--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_planner",
+     "class_contains": "launch-strip--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features_regression",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_pricing_regression",
+     "tag": "button",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_faq_open",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "desktop_features_regression",
+    "desktop_pricing_regression",
+    "desktop_faq_open",
+    "tablet_planner_growth",
+    "mobile_planner",
+    "mobile_menu_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_planner_default",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "desktop_features_regression",
+    "desktop_pricing_regression",
+    "desktop_faq_open",
+    "tablet_planner_growth",
+    "mobile_planner",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_planner_default",
+    "desktop_planner_prototype",
+    "desktop_planner_enterprise",
+    "desktop_nav_planner",
+    "tablet_planner_growth",
+    "mobile_planner",
+    "mobile_menu_open"
+   ],
+   "completion_text_signals": [
+    "Launch Planner",
+    "Launch motion",
+    "Prototype Sprint",
+    "Growth Launch",
+    "Enterprise Rollout",
+    "Active launch path: Growth Launch",
+    "Active launch path: Prototype Sprint",
+    "Active launch path: Enterprise Rollout",
+    "Recommended next step",
+    "Continue to pricing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 10,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_features_regression",
+    "desktop_pricing_regression",
+    "desktop_faq_open",
+    "mobile_menu_open"
+   ],
+   "regression_text_signals": [
+    "Shadcn",
+    "React",
+    "Features",
+    "Testimonials",
+    "Pricing",
+    "FAQ",
+    "Frequently Asked Questions",
+    "Github"
+   ],
+   "forbidden_text_patterns": [
+    "TODO launch planner",
+    "placeholder planner",
+    "fake planner screenshot",
+    "external launch widget",
+    "backend launch service",
+    "dummy plan selector",
+    "coming soon planner"
+   ]
+  }
+ ]
+}

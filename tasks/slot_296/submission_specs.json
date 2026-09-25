@@ -1,0 +1,216 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_creativetimofficial__paper-dashboard__92e9e76885c3__profile_asset_state_repair",
+      "reference_states": [
+        "desktop_dashboard",
+        "tablet_dashboard",
+        "mobile_dashboard",
+        "desktop_console_focus",
+        "desktop_user",
+        "desktop_tables"
+      ],
+      "text_signal_states": [
+        "desktop_dashboard"
+      ],
+      "reference_text_signals": [
+        "Ops focus console",
+        "Paper Dashboard 2",
+        "Users Behavior",
+        "Uptime"
+      ],
+      "visible_text_states": [
+        "desktop_dashboard"
+      ],
+      "visible_text_signals": [
+        "Ops focus console",
+        "Uptime",
+        "Deploys"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_console_focus"
+      ],
+      "responsive_states": [
+        "desktop_dashboard",
+        "tablet_dashboard",
+        "mobile_dashboard",
+        "desktop_console_focus",
+        "desktop_user",
+        "desktop_tables"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 1,
+      "asset_path_signals": [
+        "assets/img/",
+        "assets/css/paper-dashboard.css"
+      ],
+      "asset_path_states": [
+        "desktop_dashboard"
+      ],
+      "min_asset_path_signals": 1,
+      "image_alt_signals": [],
+      "image_alt_states": [
+        "desktop_user"
+      ],
+      "min_image_alt_signals": 0,
+      "overflow_tolerance_px": 24,
+      "dom_assertions": [
+        {
+          "state": "desktop_dashboard",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_dashboard",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_dashboard",
+          "tag": "canvas",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_user",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_user",
+          "tag": "form",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_dashboard",
+          "class_contains": "ops-focus__title",
+          "text_contains": "Ops focus console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_user",
+          "class_contains": "ops-focus__title",
+          "text_contains": "Ops focus console",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_tables",
+          "class_contains": "ops-focus__title",
+          "text_contains": "Ops focus console",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_dashboard",
+          "mobile_dashboard"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_console_focus",
+          "changed_from": "desktop_dashboard",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "ops-focus__readout",
+            "text_contains": "This month",
+            "min_count": 1
+          }
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "favicon",
+        "google-analytics",
+        "googletagmanager",
+        "creative-tim.com",
+        "example.com"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_dashboard",
+        "tablet_dashboard",
+        "mobile_dashboard",
+        "desktop_console_focus",
+        "desktop_user",
+        "desktop_tables"
+      ],
+      "min_canvas_screenshot_bytes": 12000,
+      "submission_states": [
+        "desktop_dashboard",
+        "tablet_dashboard",
+        "mobile_dashboard",
+        "desktop_console_focus",
+        "desktop_user",
+        "desktop_tables"
+      ],
+      "completion_states": [
+        "desktop_dashboard"
+      ],
+      "completion_text_signals": [
+        "Ops focus console",
+        "Uptime",
+        "Latency",
+        "Alerts open",
+        "Deploys",
+        "Showing:",
+        "This week",
+        "Quarter"
+      ],
+      "require_all_completion_signals": false,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_dashboard",
+        "desktop_user"
+      ],
+      "regression_text_signals": [
+        "Paper Dashboard 2",
+        "Creative Tim",
+        "Users Behavior",
+        "Capacity",
+        "Revenue",
+        "Followers",
+        "NASDAQ: AAPL"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "placeholder-only",
+        "benchmark-only",
+        "npm install sitecontinuum",
+        "data:image/svg+xml;base64",
+        "ReactDOM.createRoot"
+      ],
+      "visual_anchor_states": [
+        "desktop_dashboard",
+        "desktop_user"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

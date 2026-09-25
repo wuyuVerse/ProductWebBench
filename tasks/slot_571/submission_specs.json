@@ -1,0 +1,190 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_W3Layouts__gatsby-starter-delog__f82baebf15d9__authors",
+   "reference_states": [
+    "desktop_authors",
+    "mobile_authors",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_authors",
+    "mobile_authors",
+    "desktop_home"
+   ],
+   "interaction_states": [
+    "desktop_authors_expanded"
+   ],
+   "completion_states": [
+    "desktop_authors"
+   ],
+   "completion_text_signals": [
+    "Authors",
+    "writers and makers behind the stories",
+    "Ada Whitfield"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_authors"
+   ],
+   "visible_text_signals": [
+    "Authors",
+    "Read bio"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_authors",
+    "desktop_home"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_authors"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_authors"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_authors"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_authors",
+    "mobile_authors"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_authors",
+     "tag": "h1",
+     "text_contains": "Authors",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "p",
+     "text_contains": "writers and makers behind the stories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "h3",
+     "text_contains": "Ada Whitfield",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "h3",
+     "text_contains": "Marco Reyes",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "h3",
+     "text_contains": "Priya Nair",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "h3",
+     "text_contains": "Sam Okafor",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "button",
+     "text_contains": "Read bio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "a",
+     "text_contains": "Contact",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "a",
+     "text_contains": "Delog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_authors",
+     "tag": "a",
+     "text_contains": "W3Layouts",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Contact",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "Delog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "text_contains": "W3Layouts",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_authors"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_authors_expanded",
+     "require_interaction": true,
+     "changed_from": "desktop_authors",
+     "dom": {
+      "tag": "p",
+      "text_contains": "Ada builds the component library",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_authors"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

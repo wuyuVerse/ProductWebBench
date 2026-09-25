@@ -1,0 +1,238 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_nuxt-ui-templates__chat__ec435def9390__prompt_asset_handoff_state",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_home_frameworks",
+        "desktop_prompts",
+        "mobile_prompts",
+        "desktop_model_menu"
+      ],
+      "text_signal_states": [
+        "desktop_initial"
+      ],
+      "reference_text_signals": [
+        "Prompt library",
+        "Starter prompts",
+        "Why use Nuxt UI?",
+        "Claude Haiku 4.5",
+        "Showing 7 of 7"
+      ],
+      "visible_text_states": [
+        "desktop_initial"
+      ],
+      "visible_text_signals": [
+        "Prompt library",
+        "Starter prompts",
+        "Showing 7 of 7"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_home_frameworks"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_home_frameworks",
+        "desktop_prompts",
+        "mobile_prompts",
+        "desktop_model_menu"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "favicon"
+      ],
+      "asset_path_states": [
+        "desktop_initial"
+      ],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_home_frameworks",
+        "desktop_prompts",
+        "mobile_prompts",
+        "desktop_model_menu"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "textarea",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "section",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "button",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_prompts",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_prompts",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_prompts",
+          "text_contains": "Prompt library",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_model_menu",
+          "tag": "button",
+          "min_count": 4
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_home_frameworks",
+        "desktop_prompts",
+        "mobile_prompts",
+        "desktop_model_menu"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_prompts"
+      ],
+      "completion_text_signals": [
+        "Prompt library",
+        "Starter prompts",
+        "Why use Nuxt UI?",
+        "Tailwind CSS best practices",
+        "Showing"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 4,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Chat",
+        "New chat",
+        "Search",
+        "Claude Haiku 4.5",
+        "Why use Nuxt UI?"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Cheatsheet"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_initial",
+          "mobile_initial"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_home_frameworks",
+          "changed_from": "desktop_initial",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 3 of 7",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "tablet_initial"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

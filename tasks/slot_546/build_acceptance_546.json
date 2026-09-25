@@ -1,0 +1,45 @@
+{
+ "slot": 546,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_catalog",
+   "dom_len": 961,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "e0326fdcf1e7db50bad58e8c1b078640",
+    "reference": "f4a567495e08ede452a5e2777436459f",
+    "bad": "697e5d03acf1d13c18854274c7468957"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 14,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "pjqdyd__Vue-bst-web__07ffde1fdc5f",
+ "capability": "Build",
+ "capability_is_build": true
+}

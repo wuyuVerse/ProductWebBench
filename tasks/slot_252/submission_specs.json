@@ -1,0 +1,238 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codebayu__template-portfolio__109c4fd0a502__project_path_selector_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "tablet_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "text_signal_states": [
+    "desktop_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "reference_text_signals": [
+    "Project Path Selector",
+    "All Work",
+    "Discovery",
+    "Prototype",
+    "Build",
+    "Launch",
+    "Showing",
+    "Selected Project",
+    "Active handoff"
+   ],
+   "visible_text_states": [
+    "desktop_portfolio",
+    "tablet_portfolio",
+    "mobile_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "visible_text_signals": [
+    "Project Path Selector",
+    "All Work",
+    "Discovery",
+    "Prototype",
+    "Build",
+    "Launch",
+    "Selected Project"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 5,
+   "interaction_states": [
+    "desktop_portfolio_filtered"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_filtered",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "path-selector__readout",
+      "text_contains": "Showing 2 of 5",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_portfolio",
+    "tablet_home",
+    "tablet_portfolio"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 180,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "portfolio",
+    "bayu-no-bg",
+    "webp"
+   ],
+   "asset_path_states": [
+    "desktop_portfolio",
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio",
+     "mobile_portfolio",
+     "desktop_portfolio_filtered"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "path-selector__segment",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "path-selector__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_portfolio",
+     "class_contains": "path-selector__segment",
+     "min_count": 5
+    },
+    {
+     "state": "tablet_portfolio",
+     "class_contains": "path-selector__segment",
+     "min_count": 5
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "favicon",
+    "vite.svg"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "tablet_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_portfolio",
+    "mobile_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_screenshot_bytes": 6000,
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "tablet_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "completion_states": [
+    "desktop_portfolio",
+    "tablet_portfolio",
+    "mobile_portfolio",
+    "desktop_portfolio_filtered"
+   ],
+   "completion_text_signals": [
+    "Project Path Selector",
+    "All Work",
+    "Discovery",
+    "Prototype",
+    "Build",
+    "Launch",
+    "Showing",
+    "Selected Project",
+    "Active handoff"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "desktop_home",
+    "mobile_home",
+    "desktop_portfolio"
+   ],
+   "regression_text_signals": [
+    "Marlow Ferris",
+    "Product Designer",
+    "Portfolio",
+    "About",
+    "Skills",
+    "Experience",
+    "Education",
+    "Contact"
+   ],
+   "forbidden_text_patterns": [
+    "TODO path selector",
+    "placeholder selector",
+    "fake selector screenshot",
+    "external filter widget",
+    "backend filter service",
+    "dummy stage picker",
+    "coming soon selector",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

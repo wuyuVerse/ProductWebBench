@@ -1,0 +1,260 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_tomjohnson1492__documentation-theme-jekyll__fa31ffc73c26__docs_route_repair",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_p1",
+    "desktop_intro",
+    "desktop_p1_landing",
+    "desktop_docs_page"
+   ],
+   "text_signal_states": [
+    "desktop_finder",
+    "desktop_intro",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Doc set browser",
+    "Getting started",
+    "Product 1 overview",
+    "Alerts & callouts",
+    "Documentation library"
+   ],
+   "visible_text_states": [
+    "desktop_finder",
+    "desktop_finder_p1"
+   ],
+   "visible_text_signals": [
+    "Doc set browser",
+    "Getting started",
+    "Product 1 overview",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_finder_p1"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "mobile_finder"
+   ],
+   "asset_path_signals": [
+    "images/company_logo.png"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "asset_signal_states": [
+    "desktop_home"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_p1",
+    "desktop_intro",
+    "desktop_p1_landing",
+    "desktop_docs_page"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "docfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "docfinder__tab",
+     "min_count": 5
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_intro",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_intro",
+     "class_contains": "docfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_intro",
+     "text_contains": "Doc set browser",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_p1_landing",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_p1_landing",
+     "class_contains": "docfinder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_p1_landing",
+     "text_contains": "Doc set browser",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs_page",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs_page",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "mobile_finder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_finder_p1",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "docfinder__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_finder_p1",
+    "desktop_intro",
+    "desktop_p1_landing",
+    "desktop_docs_page"
+   ],
+   "completion_states": [
+    "desktop_finder",
+    "desktop_finder_p1"
+   ],
+   "completion_text_signals": [
+    "Doc set browser",
+    "Getting started",
+    "Product 1 overview",
+    "Product 2 overview",
+    "Alerts & callouts",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_intro",
+    "desktop_docs_page"
+   ],
+   "regression_text_signals": [
+    "Jekyll Documentation Theme",
+    "All rights reserved"
+   ],
+   "forbidden_states": [
+    "desktop_finder",
+    "desktop_finder_p1",
+    "mobile_finder"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "REPLACE_ME"
+   ]
+  }
+ ]
+}

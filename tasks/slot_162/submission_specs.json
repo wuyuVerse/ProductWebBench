@@ -1,0 +1,242 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_fiduswriter__Simple-DataTables__6bd573d9fe15__docs_learning_path_layout",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_learning",
+    "mobile_learning",
+    "tablet_learning",
+    "desktop_track_data"
+   ],
+   "text_signal_states": [
+    "desktop_learning",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "DataForge",
+    "Learning Path",
+    "From an empty table to a shipped data view",
+    "Path tracks",
+    "Install and initialise",
+    "Load and update data"
+   ],
+   "visible_text_states": [
+    "desktop_learning"
+   ],
+   "visible_text_signals": [
+    "DataForge",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_track_data"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_track_data",
+     "changed_from": "desktop_learning",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 1 of 6 steps \u00b7 Data",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_learning"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "docs.css",
+    "lp-filter.css",
+    "favicon.svg"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 0,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_learning",
+    "mobile_learning",
+    "tablet_learning",
+    "desktop_track_data"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_learning",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_learning",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_learning",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_learning",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_learning",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Learning Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_learning",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_learning",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_learning",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Learning Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Learning Path",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Learning Path",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_learning",
+     "mobile_learning"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_learning",
+    "mobile_learning",
+    "tablet_learning",
+    "desktop_track_data"
+   ],
+   "completion_states": [
+    "desktop_learning"
+   ],
+   "completion_text_signals": [
+    "install",
+    "options",
+    "columns",
+    "events",
+    "load",
+    "validate"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "DataForge",
+    "Documentation",
+    "Demos"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_learning",
+    "mobile_learning",
+    "tablet_learning",
+    "desktop_track_data"
+   ],
+   "forbidden_text_patterns": [
+    "Learning Path Cheatsheet",
+    "Cheatsheet",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "visual_anchor_states": [
+    "desktop_learning",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

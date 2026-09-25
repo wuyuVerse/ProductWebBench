@@ -1,0 +1,197 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_MauCariApa-com__maucariapacom-church-starter__120721c2afd1__new_visitor_care_pathway",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pathway",
+    "mobile_pathway",
+    "desktop_pathway_serve",
+    "desktop_imnew",
+    "tablet_imnew",
+    "mobile_imnew",
+    "desktop_about"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_pathway",
+    "desktop_imnew"
+   ],
+   "reference_text_signals": [
+    "Grace Harbor",
+    "Find Your Place",
+    "Children's Ministry",
+    "Community Outreach",
+    "Small Groups"
+   ],
+   "visible_text_states": [
+    "desktop_pathway",
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Find Your Place",
+    "Children's Ministry",
+    "Small Groups"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_pathway_serve"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_pathway_serve",
+     "changed_from": "desktop_pathway",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Serve",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_pathway"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/uploads/",
+    "/ministries/"
+   ],
+   "asset_path_states": [
+    "desktop_imnew",
+    "desktop_about"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pathway",
+    "mobile_pathway",
+    "desktop_pathway_serve",
+    "desktop_imnew",
+    "tablet_imnew",
+    "mobile_imnew",
+    "desktop_about"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pathway",
+     "text_contains": "Find Your Place",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pathway",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_pathway",
+     "text_contains": "Community Outreach",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_imnew",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_imnew",
+     "text_contains": "Find Your Place",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_imnew",
+     "tag": "h3",
+     "min_count": 6
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pathway",
+     "mobile_pathway"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_pathway",
+    "mobile_pathway",
+    "desktop_pathway_serve",
+    "desktop_imnew",
+    "tablet_imnew",
+    "mobile_imnew",
+    "desktop_about"
+   ],
+   "completion_states": [
+    "desktop_pathway",
+    "desktop_pathway_serve"
+   ],
+   "completion_text_signals": [
+    "Find Your Place",
+    "Children's Ministry",
+    "Community Outreach",
+    "Worship Ministry",
+    "Small Groups"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Grace Harbor"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "TODO",
+    "placeholder text",
+    "Coming soon",
+    "Church Name"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_pathway"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

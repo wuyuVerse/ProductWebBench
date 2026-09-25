@@ -1,0 +1,226 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf__seasonal_edit_page",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_audio",
+    "desktop_seasonal",
+    "desktop_products"
+   ],
+   "text_signal_states": [
+    "desktop_shopfilter",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Shop by category",
+    "Audio",
+    "Wearables",
+    "Showing 8 of 8"
+   ],
+   "visible_text_states": [
+    "desktop_shopfilter"
+   ],
+   "visible_text_signals": [
+    "Shop by category",
+    "Audio"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_shopfilter_audio"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_shopfilter",
+    "tablet_home"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_shopfilter"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_audio",
+    "desktop_seasonal",
+    "desktop_products"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "cdn.tailwindcss.com",
+    "vendor/poppins",
+    ".ttf"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_shopfilter",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "button",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "button",
+     "text_contains": "Audio",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "button",
+     "text_contains": "Wearables",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "button",
+     "text_contains": "Cameras",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "tag": "button",
+     "text_contains": "Accessories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "text_contains": "Showing 8 of 8",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_seasonal",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Shop focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_seasonal",
+     "text_contains": "Shop focus",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "text_contains": "Shop focus",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_shopfilter"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_shopfilter_audio",
+     "changed_from": "desktop_shopfilter",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 8",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_shopfilter_audio",
+    "desktop_seasonal",
+    "desktop_products"
+   ],
+   "completion_states": [
+    "desktop_shopfilter",
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "Shop by category",
+    "Audio",
+    "Wearables",
+    "Cameras",
+    "Showing 8 of 8"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_shopfilter",
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Products",
+    "Featured Products"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO"
+   ],
+   "visual_anchor_states": [
+    "desktop_shopfilter",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

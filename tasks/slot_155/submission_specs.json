@@ -1,0 +1,258 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_olivier3lanc__Jekyll-LibDoc__8ee6e0c5fe20__mode_registry_contract_section",
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_grammar_filter",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo",
+        "desktop_manual",
+        "mobile_javascript_mode"
+      ],
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_grammar_filter",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo",
+        "desktop_manual",
+        "mobile_javascript_mode"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo"
+      ],
+      "completion_text_signals": [
+        "Prismline",
+        "Language grammars",
+        "Grammar loading contract",
+        "Grammar finder",
+        "Directory",
+        "Registration",
+        "Lookup helpers",
+        "CodeMirror.modeInfo",
+        "findModeByMIME(\"text/javascript\")",
+        "findModeByExtension(\"css\")",
+        "findModeByExtension(\"yaml\")",
+        "registry entries loaded from meta.js",
+        "JavaScript grammar",
+        "CSS grammar",
+        "TypeScript grammar"
+      ],
+      "min_completion_text_signals": 15,
+      "require_all_completion_signals": true,
+      "visible_text_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial"
+      ],
+      "visible_text_signals": [
+        "Prismline",
+        "Language grammars",
+        "Grammar finder"
+      ],
+      "min_visible_text_signals": 3,
+      "require_all_visible_text_signals": true,
+      "regression_states": [
+        "desktop_manual"
+      ],
+      "regression_text_signals": [
+        "Prismline"
+      ],
+      "forbidden_states": [
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo"
+      ],
+      "forbidden_text_patterns": [
+        "JavaScript mode",
+        "CSS mode",
+        "TypeScript mode"
+      ],
+      "asset_path_signals": [
+        "doc/logo.png",
+        "doc/manual.html",
+        "mode/meta.js",
+        "mode/javascript/index.html",
+        "mode/css/index.html"
+      ],
+      "asset_signal_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_manual"
+      ],
+      "min_asset_path_signals": 4,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_grammar_filter",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo",
+        "desktop_manual",
+        "mobile_javascript_mode"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "class_contains": "grammar-finder",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h3",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h2",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "section",
+          "class_contains": "grammar-finder",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "section",
+          "class_contains": "grammar-finder",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_javascript_mode",
+          "class_contains": "grammar-finder",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_css_mode",
+          "class_contains": "grammar-finder",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_javascript_mode",
+          "tag": "textarea",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_css_mode",
+          "tag": "textarea",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_manual",
+          "tag": "h2",
+          "min_count": 2
+        }
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_grammar_filter",
+          "require_interaction": true,
+          "changed_from": "desktop_initial",
+          "dom": {
+            "class_contains": "grammar-finder",
+            "text_contains": "Showing 22 of 130",
+            "min_count": 1
+          }
+        }
+      ],
+      "interaction_states": [
+        "desktop_grammar_filter",
+        "desktop_javascript_mode",
+        "desktop_css_mode",
+        "desktop_typescript_demo",
+        "desktop_manual",
+        "mobile_javascript_mode"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_initial",
+          "desktop_grammar_filter",
+          "mobile_initial"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.05,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "visual_anchor_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_javascript_mode"
+      ],
+      "mean_luminance_tolerance": 90,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 5,
+      "min_screenshot_bytes": 50000,
+      "source_change_expectations": {
+        "max_added_files": 4,
+        "max_changed_source_files": 8,
+        "max_deleted_files": 0,
+        "max_line_delta": 500,
+        "must_touch_one_of": [
+          "mode/index.html",
+          "doc/docs.css",
+          "doc/grammar-finder.css"
+        ],
+        "should_preserve": [
+          "mode/meta.js",
+          "lib/codemirror.js",
+          "doc/manual.html"
+        ]
+      }
+    }
+  ]
+}

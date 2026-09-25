@@ -1,0 +1,276 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_StartBootstrap__startbootstrap-agency__b2d5d5c6b139__agency_project_type_filter",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_portfolio",
+    "desktop_portfolio_boundary",
+    "mobile_portfolio",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects_page",
+    "desktop_about",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_portfolio"
+   ],
+   "reference_text_signals": [
+    "Rowan & Kestrel Land Surveying",
+    "Recent Projects",
+    "Filter projects by survey type"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Rowan & Kestrel Land Surveying",
+    "Boundaries drawn true"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_portfolio_boundary",
+    "mobile_menu_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_boundary",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "projfilter",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_portfolio_boundary",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "projfilter",
+      "text_contains": "· Boundary",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio",
+     "mobile_portfolio"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_portfolio"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_portfolio",
+    "desktop_portfolio_boundary",
+    "mobile_portfolio",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects_page",
+    "desktop_about",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "projfilter--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "projfilter",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "projfilter",
+     "text_contains": "Filter projects by survey type",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "class_contains": "projfilter--services",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "class_contains": "projfilter",
+     "text_contains": "Filter projects by survey type",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "class_contains": "projfilter",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_projects_page",
+     "class_contains": "projfilter--projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "class_contains": "projfilter",
+     "text_contains": "Filter projects by survey type",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "class_contains": "projfilter",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_services",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "input",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_portfolio",
+    "desktop_portfolio_boundary",
+    "mobile_portfolio",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects_page",
+    "desktop_about",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_portfolio",
+    "desktop_services"
+   ],
+   "completion_text_signals": [
+    "Filter projects by survey type",
+    "Showing all 6",
+    "Every survey type",
+    "All work",
+    "Boundary"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Services",
+    "Contact",
+    "Our Story"
+   ],
+   "forbidden_text_patterns": [
+    "Welcome To Our Studio",
+    "It's Nice To Meet You",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Parveen Anand",
+    "Diana Petersen",
+    "Larry Parker",
+    "Tell Me More"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_portfolio"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

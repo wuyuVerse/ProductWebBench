@@ -1,0 +1,45 @@
+{
+ "slot": 520,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_roadmap",
+   "dom_len": 1654,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "4b5d83a371c7c4926346f369e45fccf9",
+    "reference": "a498298e7c81753dc59812116f5fa7d3",
+    "bad": "c98d18e439496df6b5912e15499d54ce"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 10,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "creativetimofficial__material-tailwind-dashboard-react__721f312c444e",
+ "capability": "Build",
+ "capability_is_build": true
+}

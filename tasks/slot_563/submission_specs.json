@@ -1,0 +1,115 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_priyesh18__gatsby-portfolio__691ef344139c__timeline",
+   "reference_states": [
+    "desktop_timeline",
+    "mobile_timeline",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_timeline",
+    "mobile_timeline",
+    "desktop_home"
+   ],
+   "interaction_states": [
+    "desktop_timeline_expanded"
+   ],
+   "completion_states": [
+    "desktop_timeline"
+   ],
+   "completion_text_signals": [
+    "Timeline",
+    "Started BSc in Computer Science",
+    "milestones that shaped my journey"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_timeline"
+   ],
+   "visible_text_signals": [
+    "Timeline",
+    "Started BSc in Computer Science"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_timeline",
+    "desktop_home"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_timeline"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_timeline"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_timeline"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_timeline",
+    "mobile_timeline"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_timeline", "tag": "h2", "text_contains": "Timeline", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "p", "text_contains": "milestones that shaped my journey", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "h3", "text_contains": "Started BSc in Computer Science", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "h3", "text_contains": "First internship as a web developer", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "h3", "text_contains": "Published open-source portfolio starter", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "button", "text_contains": "2016", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "a", "text_contains": "Github", "min_count": 1},
+    {"state": "desktop_timeline", "tag": "a", "text_contains": "Twitter", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Github", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Twitter", "min_count": 1},
+    {"state": "desktop_home", "tag": "h1", "text_contains": "Priyesh Patel", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_timeline"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {"state": "desktop_timeline_expanded", "require_interaction": true, "changed_from": "desktop_timeline", "dom": {"tag": "p", "text_contains": "Spent a summer shipping features", "min_count": 1}}
+   ],
+   "visual_anchor_states": [
+    "desktop_timeline"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,242 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_brunosimon__folio-2019__540f13573a6d__scene_guide_hud",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_guide",
+        "tablet_guide",
+        "mobile_guide",
+        "desktop_jump_click"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_guide",
+        "tablet_guide",
+        "mobile_guide",
+        "desktop_jump_click"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_guide"
+      ],
+      "completion_text_signals": [
+        "DRIVE THE SCENE",
+        "Scene guide",
+        "Intro \u2014 Start the engine and roll out of the intro plaza.",
+        "Projects \u2014 Reach the project zone and open a project board.",
+        "Information \u2014 Explore the information desk beside the crossroads.",
+        "Playground \u2014 Find the playground, then finish the tour.",
+        "Active zone: Intro"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "visible_text_states": [
+        "desktop_initial"
+      ],
+      "visible_text_signals": [
+        "Scene guide",
+        "Next zone",
+        "Active zone: Intro"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_guide"
+      ],
+      "regression_text_signals": [
+        "Bruno Simon",
+        "Drive"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_guide",
+        "tablet_guide",
+        "mobile_guide",
+        "desktop_jump_click"
+      ],
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "dummy content",
+        "placeholder rail",
+        "coming soon",
+        "todo overflow",
+        "cheatsheet"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_guide",
+        "tablet_guide"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_image_count": 4,
+      "min_screenshot_bytes": 8000,
+      "min_canvas_screenshot_bytes": 8000,
+      "asset_signal_states": [
+        "desktop_initial"
+      ],
+      "asset_path_signals": [
+        "images/milestone-1.png",
+        "images/milestone-2.png"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_initial"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_guide",
+        "tablet_guide",
+        "mobile_guide",
+        "desktop_jump_click"
+      ],
+      "console_error_allowlist": [
+        "_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "class_contains": "sceneguide--home",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "class_contains": "sceneguide__zone",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "img",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "button",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "class_contains": "sceneguide--home",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "class_contains": "sceneguide--home",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_guide",
+          "tag": "canvas",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_guide",
+          "class_contains": "sceneguide--guide",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_guide",
+          "text_contains": "Scene guide",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_guide",
+          "class_contains": "sceneguide__zone",
+          "min_count": 4
+        },
+        {
+          "state": "mobile_guide",
+          "class_contains": "sceneguide--guide",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_guide",
+          "class_contains": "sceneguide--guide",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_initial"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_jump_click",
+          "changed_from": "desktop_initial",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "sceneguide__readout",
+            "text_contains": "Active zone: Projects",
+            "min_count": 1
+          }
+        }
+      ],
+      "interaction_states": [
+        "desktop_jump_click"
+      ],
+      "submission_states_interaction": [
+        "desktop_jump_click"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_guide"
+      ],
+      "mean_luminance_tolerance": 110,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6
+    }
+  ]
+}

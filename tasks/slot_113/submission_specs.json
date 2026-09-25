@@ -1,0 +1,312 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Malaika-Ali__Responsive-Blog-Website-Template__3d6667e2920b__reader_path_flow",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_guide_strip",
+    "mobile_guide_strip",
+    "desktop_path_default",
+    "desktop_path_travel",
+    "mobile_path_travel",
+    "desktop_guides",
+    "tablet_guides",
+    "mobile_guides",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_cards_regression"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_guides",
+    "desktop_guide_strip",
+    "desktop_path_default",
+    "mobile_guides"
+   ],
+   "reference_text_signals": [
+    "Field Guides",
+    "Reconnecting With Nature",
+    "Pick a reading path",
+    "Showing",
+    "Most Recent Posts"
+   ],
+   "visible_text_states": [
+    "desktop_guides",
+    "mobile_guides",
+    "tablet_guides"
+   ],
+   "visible_text_signals": [
+    "Field Guides",
+    "Reconnecting With Nature",
+    "Minding Your Mental Health"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_path_travel",
+    "mobile_path_travel"
+   ],
+   "responsive_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "mobile_guide_strip",
+    "mobile_path_travel",
+    "mobile_guides"
+   ],
+   "asset_path_signals": [
+    "card1.jpg",
+    "card3.jpg",
+    "blog-post4.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_guides"
+   ],
+   "min_asset_path_signals": 3,
+   "asset_signal_states": [
+    "desktop_guides"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_cards_regression"
+   ],
+   "mean_luminance_tolerance": 90,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_guide_strip",
+    "mobile_guide_strip",
+    "desktop_path_default",
+    "desktop_path_travel",
+    "mobile_path_travel",
+    "desktop_guides",
+    "tablet_guides",
+    "mobile_guides",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_cards_regression"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_cards_regression",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_guide_strip",
+     "class_contains": "path-status",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_strip",
+     "tag": "button",
+     "text_contains": "Nature",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_strip",
+     "tag": "button",
+     "text_contains": "Family",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_strip",
+     "tag": "button",
+     "text_contains": "Travel",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_strip",
+     "tag": "button",
+     "text_contains": "Mental health",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Field Guides",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Field Guides",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_blog",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Field Guides",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Field Guides",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides",
+     "tag": "h2",
+     "class_contains": "card_title",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_guides",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_guides",
+     "tag": "h2",
+     "class_contains": "card_title",
+     "min_count": 6
+    },
+    {
+     "state": "tablet_guides",
+     "tag": "h2",
+     "class_contains": "card_title",
+     "min_count": 6
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_guide_strip",
+     "mobile_guide_strip"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_path_travel",
+     "changed_from": "desktop_path_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "path-status",
+      "text_contains": "Travel",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_guide_strip",
+    "mobile_guide_strip",
+    "desktop_path_default",
+    "desktop_path_travel",
+    "mobile_path_travel",
+    "desktop_guides",
+    "tablet_guides",
+    "mobile_guides",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_cards_regression"
+   ],
+   "completion_states": [
+    "desktop_guides",
+    "mobile_guides"
+   ],
+   "completion_text_signals": [
+    "Reconnecting With Nature",
+    "Quality Time With Family",
+    "Living Well With Pets",
+    "Travelling On A Budget",
+    "The Art Of Happiness",
+    "Minding Your Mental Health"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_blog"
+   ],
+   "regression_text_signals": [
+    "Blogger",
+    "Most Recent Posts",
+    "Home"
+   ],
+   "forbidden_states": [
+    "desktop_guides",
+    "mobile_guides",
+    "tablet_guides"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "Back to home",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,141 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_manuelernestog__astro-modern-personal-website__9398dea0f2c0__speaking",
+   "reference_states": [
+    "desktop_speaking",
+    "mobile_speaking",
+    "desktop_speaking_keynotes"
+   ],
+   "submission_states": [
+    "desktop_speaking",
+    "mobile_speaking",
+    "desktop_speaking_keynotes"
+   ],
+   "interaction_states": [
+    "desktop_speaking_keynotes"
+   ],
+   "completion_states": [
+    "desktop_speaking"
+   ],
+   "completion_text_signals": [
+    "Astrofy Template",
+    "Developed by"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_speaking"
+   ],
+   "visible_text_signals": [
+    "Projects",
+    "Contact"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_speaking"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_speaking"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_speaking"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_speaking"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_speaking",
+    "mobile_speaking",
+    "desktop_speaking_keynotes"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_speaking",
+     "tag": "h1",
+     "text_contains": "Speaking",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_speaking",
+     "tag": "p",
+     "text_contains": "Conference talks",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_speaking",
+     "tag": "h3",
+     "text_contains": "Showing 5 talks",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_speaking",
+     "tag": "h3",
+     "text_contains": "Scaling Astro at the Edge",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_speaking",
+     "tag": "h3",
+     "text_contains": "From Blog to Platform",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_speaking"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_speaking_keynotes",
+     "require_interaction": true,
+     "changed_from": "desktop_speaking",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "Showing 2 talks",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_speaking"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

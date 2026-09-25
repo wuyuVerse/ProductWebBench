@@ -1,0 +1,250 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_creativetimofficial__notus-svelte__86099d192955__starter_kit_rollout_strip",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_landing",
+    "mobile_landing",
+    "desktop_profile",
+    "desktop_rollout_home",
+    "mobile_rollout_home",
+    "desktop_rollout_landing",
+    "desktop_rollout_profile",
+    "tablet_rollout_home",
+    "toggle_density_home"
+   ],
+   "text_signal_states": [
+    "desktop_rollout_home",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Browse the component kit",
+    "Buttons",
+    "variants",
+    "Showing 8 components"
+   ],
+   "visible_text_states": [
+    "desktop_rollout_home"
+   ],
+   "visible_text_signals": [
+    "Browse the component kit",
+    "variants"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_density_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_rollout_home",
+    "tablet_rollout_home"
+   ],
+   "asset_path_signals": [
+    "/assets/img/"
+   ],
+   "asset_path_states": [
+    "desktop_rollout_home"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_rollout_home"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_landing",
+    "mobile_landing",
+    "desktop_profile",
+    "desktop_rollout_home",
+    "mobile_rollout_home",
+    "desktop_rollout_landing",
+    "desktop_rollout_profile",
+    "tablet_rollout_home",
+    "toggle_density_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_landing",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_profile",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_home",
+     "text_contains": "Browse the component kit",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_home",
+     "text_contains": "Buttons",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_home",
+     "text_contains": "variants",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_rollout_landing",
+     "text_contains": "Browse the component kit",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_landing",
+     "text_contains": "Buttons",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_landing",
+     "text_contains": "variants",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_rollout_profile",
+     "text_contains": "Browse the component kit",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_profile",
+     "text_contains": "Buttons",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rollout_profile",
+     "text_contains": "variants",
+     "min_count": 4
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rollout_home",
+     "mobile_rollout_home"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_density_home",
+     "changed_from": "desktop_rollout_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 components",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_landing",
+    "mobile_landing",
+    "desktop_profile",
+    "desktop_rollout_home",
+    "mobile_rollout_home",
+    "desktop_rollout_landing",
+    "desktop_rollout_profile",
+    "tablet_rollout_home",
+    "toggle_density_home"
+   ],
+   "completion_states": [
+    "desktop_rollout_home",
+    "desktop_rollout_landing",
+    "desktop_rollout_profile"
+   ],
+   "completion_text_signals": [
+    "Browse the component kit",
+    "Buttons",
+    "Cards",
+    "variants"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Notus Svelte"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "Lorem ipsum",
+    "Lorem Ipsum",
+    "REPLACE_ME",
+    "TODO",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/components/KitBrowser.svelte",
+     "public/assets/kit/kit-browser.css",
+     "src/assets/kit/kit-browser-readout.js",
+     "src/assets/kit/kit-browser-surfaces.js"
+    ],
+    "should_preserve": [
+     "src/components/Navbars/IndexNavbar.svelte",
+     "src/views/Index.svelte",
+     "src/views/Landing.svelte",
+     "src/views/Profile.svelte"
+    ]
+   }
+  }
+ ]
+}

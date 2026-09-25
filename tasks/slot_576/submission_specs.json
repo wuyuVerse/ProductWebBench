@@ -1,0 +1,130 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_horizon-ui__horizon-ui-chakra__27a99f9fb391__segments",
+   "reference_states": [
+    "desktop_segments",
+    "mobile_segments"
+   ],
+   "submission_states": [
+    "desktop_segments",
+    "mobile_segments"
+   ],
+   "interaction_states": [
+    "desktop_segments_active_pro",
+    "desktop_segments_any",
+    "desktop_segments_removed"
+   ],
+   "completion_states": [
+    "desktop_segments"
+   ],
+   "completion_text_signals": [
+    "Audience Segments",
+    "Segment filters",
+    "Filter library",
+    "users match",
+    "Pro plan"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "visible_text_states": [
+    "desktop_segments"
+   ],
+   "visible_text_signals": [
+    "Audience Segments",
+    "Segment filters",
+    "Filter library"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_profile"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_segments"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_segments"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_segments"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_segments",
+    "mobile_segments"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    { "state": "desktop_segments", "tag": "h1", "text_contains": "Audience Segments", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "button", "text_contains": "Save segment", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "h3", "text_contains": "Segment filters", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "h3", "text_contains": "Filter library", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "button", "text_contains": "Active", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "button", "text_contains": "Pro plan", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "button", "text_contains": "US region", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "button", "text_contains": "Age 30+", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "h2", "text_contains": "40 users match", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "a", "text_contains": "Main Dashboard", "min_count": 1 },
+    { "state": "desktop_segments", "tag": "a", "text_contains": "NFT Marketplace", "min_count": 1 },
+    { "state": "desktop_profile", "tag": "a", "text_contains": "Main Dashboard", "min_count": 1 },
+    { "state": "desktop_profile", "tag": "a", "text_contains": "NFT Marketplace", "min_count": 1 }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_segments"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_segments_active_pro",
+     "require_interaction": true,
+     "changed_from": "desktop_segments",
+     "dom": { "tag": "h2", "text_contains": "11 users match", "min_count": 1 }
+    },
+    {
+     "state": "desktop_segments_any",
+     "require_interaction": true,
+     "changed_from": "desktop_segments",
+     "dom": { "tag": "h2", "text_contains": "32 users match", "min_count": 1 }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_segments"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

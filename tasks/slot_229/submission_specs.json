@@ -1,0 +1,210 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_TailAdmin__tailadmin-free-tailwind-dashboard-template__2fc65676619a__delivery_review_flow",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_delivery_queue",
+        "mobile_delivery_queue",
+        "desktop_dqfilter_sla",
+        "desktop_client_delivery_review",
+        "desktop_owner_profile",
+        "mobile_owner_profile"
+      ],
+      "text_signal_states": [
+        "desktop_delivery_queue",
+        "desktop_client_delivery_review",
+        "desktop_owner_profile"
+      ],
+      "visible_text_states": [
+        "desktop_client_delivery_review"
+      ],
+      "visible_text_signals": [
+        "Client Delivery Review",
+        "Asset-backed QA"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_dqfilter_sla"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_dqfilter_sla",
+          "changed_from": "desktop_delivery_queue",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "dqfilter__readout",
+            "text_contains": "Showing 1 of 5",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_delivery_queue",
+        "mobile_owner_profile"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "/images/product/product-01.jpg",
+        "/images/user/owner.jpg"
+      ],
+      "asset_path_states": [
+        "desktop_delivery_queue",
+        "desktop_owner_profile"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_delivery_queue",
+        "mobile_delivery_queue",
+        "desktop_dqfilter_sla",
+        "desktop_client_delivery_review",
+        "desktop_owner_profile",
+        "mobile_owner_profile"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "cdn.tailwindcss.com",
+        "fonts.googleapis.com",
+        "fonts.gstatic.com"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_delivery_queue",
+          "tag": "table",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_delivery_queue",
+          "class_contains": "dqfilter__title",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_delivery_queue",
+          "class_contains": "dqfilter__tab",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_client_delivery_review",
+          "class_contains": "dqfilter__title",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_client_delivery_review",
+          "tag": "table",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_client_delivery_review",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_owner_profile",
+          "tag": "nav",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_delivery_queue",
+          "mobile_delivery_queue"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_delivery_queue",
+        "mobile_delivery_queue",
+        "desktop_dqfilter_sla",
+        "desktop_client_delivery_review",
+        "desktop_owner_profile",
+        "mobile_owner_profile"
+      ],
+      "completion_states": [
+        "desktop_delivery_queue",
+        "desktop_client_delivery_review",
+        "desktop_owner_profile"
+      ],
+      "completion_text_signals": [
+        "Revenue delivery review flow",
+        "Content asset continuity",
+        "Delivery review filter",
+        "Client Delivery Review",
+        "Asset-backed QA",
+        "SLA risk",
+        "Review ready"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 7,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Revenue delivery review flow",
+        "Content asset continuity"
+      ],
+      "forbidden_text_patterns": [
+        "Recent Orders",
+        "Basic Table 1",
+        "See all"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_client_delivery_review"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

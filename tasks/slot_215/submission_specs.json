@@ -1,0 +1,245 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f__service_quote_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_services",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_footer",
+    "mobile_footer",
+    "desktop_work",
+    "mobile_work",
+    "mobile_menu_open",
+    "desktop_portfolio_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "reference_text_signals": [
+    "Azan Wahla",
+    "Latest Projects",
+    "Showing 13 of 13",
+    "All work"
+   ],
+   "visible_text_states": [
+    "desktop_portfolio"
+   ],
+   "visible_text_signals": [
+    "Latest Projects",
+    "Showing 13 of 13"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_portfolio_filter",
+    "mobile_menu_open"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_portfolio"
+   ],
+   "asset_path_signals": [
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_services",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_footer",
+    "mobile_footer",
+    "desktop_work",
+    "mobile_work",
+    "mobile_menu_open",
+    "desktop_portfolio_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_services",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "class_contains": "filter-buttons",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_portfolio",
+     "text_contains": "Showing 13 of 13",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "class_contains": "filter-buttons",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio",
+     "mobile_portfolio",
+     "desktop_portfolio_filter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_filter",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 13 \u00b7 Websites",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_services",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_footer",
+    "mobile_footer",
+    "desktop_work",
+    "mobile_work",
+    "mobile_menu_open",
+    "desktop_portfolio_filter"
+   ],
+   "completion_states": [
+    "desktop_portfolio",
+    "desktop_portfolio_filter"
+   ],
+   "completion_text_signals": [
+    "Latest Projects",
+    "Showing 13 of 13",
+    "All work",
+    "Websites",
+    "UI Designs"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_home",
+    "desktop_services",
+    "desktop_portfolio",
+    "desktop_contact"
+   ],
+   "regression_text_signals": [
+    "Azan Wahla",
+    "Web Development",
+    "Latest Projects",
+    "Contact"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_services",
+    "desktop_contact",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_footer",
+    "mobile_footer",
+    "desktop_work",
+    "mobile_work",
+    "mobile_menu_open",
+    "desktop_portfolio_filter"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "{{",
+    "undefined",
+    "Sable Marrow",
+    "Tidegrove"
+   ]
+  }
+ ]
+}

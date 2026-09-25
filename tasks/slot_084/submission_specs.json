@@ -1,0 +1,220 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ImageGridEffects__30c994b61290__preview_state_caption_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_ledger_shelf",
+    "mobile_ledger_shelf",
+    "desktop_ledger_plateledger",
+    "mobile_ledger_plateledger",
+    "desktop_ledger_tidewrack",
+    "mobile_ledger_tidewrack",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_plate_open",
+    "mobile_first_plate_open",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "text_signal_states": [
+    "desktop_ledger_shelf",
+    "desktop_initial"
+   ],
+   "reference_text_signals": [
+    "Umbra Salt",
+    "Archive ledger",
+    "Plates catalogued",
+    "Salt prints"
+   ],
+   "visible_text_states": [
+    "desktop_ledger_shelf"
+   ],
+   "visible_text_signals": [
+    "Archive ledger",
+    "Plates catalogued"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plate_lens"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_ledger_shelf",
+    "mobile_ledger_plateledger",
+    "mobile_ledger_tidewrack",
+    "mobile_first_plate_open"
+   ],
+   "asset_path_signals": [
+    "img/thumbs/1.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_ledger_shelf"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_ledger_shelf"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_ledger_shelf",
+    "mobile_ledger_shelf",
+    "desktop_ledger_plateledger",
+    "mobile_ledger_plateledger",
+    "desktop_ledger_tidewrack",
+    "mobile_ledger_tidewrack",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_plate_open",
+    "mobile_first_plate_open",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_ledger_shelf",
+     "text_contains": "Archive ledger",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_ledger_shelf",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_ledger_plateledger",
+     "text_contains": "Archive ledger",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_ledger_tidewrack",
+     "text_contains": "Archive ledger",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_ledger_shelf",
+     "mobile_ledger_shelf"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_plate_lens",
+     "changed_from": "desktop_ledger_shelf",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Tintypes",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_ledger_shelf",
+    "mobile_ledger_shelf",
+    "desktop_ledger_plateledger",
+    "mobile_ledger_plateledger",
+    "desktop_ledger_tidewrack",
+    "mobile_ledger_tidewrack",
+    "desktop_grid_hover_rhythm",
+    "desktop_lower_grid_scroll",
+    "desktop_first_plate_open",
+    "mobile_first_plate_open",
+    "desktop_close_back_to_grid",
+    "desktop_plate_lens"
+   ],
+   "completion_states": [
+    "desktop_ledger_shelf",
+    "desktop_ledger_plateledger"
+   ],
+   "completion_text_signals": [
+    "Archive ledger",
+    "Plates catalogued",
+    "Salt prints",
+    "Tintypes",
+    "Showing:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_first_plate_open",
+    "desktop_close_back_to_grid"
+   ],
+   "regression_text_signals": [
+    "Umbra Salt",
+    "The Salt Shelf",
+    "Tidewrack Room"
+   ],
+   "forbidden_states": [
+    "desktop_ledger_shelf",
+    "mobile_ledger_shelf"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "REPLACE_ME",
+    "coming soon",
+    "TODO",
+    "{{"
+   ]
+  }
+ ]
+}

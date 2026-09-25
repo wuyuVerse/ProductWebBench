@@ -1,0 +1,275 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_dli__flow__02884f0231fd__particle_state_deck",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_state_deck",
+        "mobile_state_deck",
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned",
+        "desktop_canvas_regression",
+        "desktop_footer_regression",
+        "desktop_flow_brief",
+        "mobile_flow_brief",
+        "desktop_preset_filter"
+      ],
+      "text_signal_states": [
+        "desktop_state_deck",
+        "desktop_density_524k"
+      ],
+      "reference_text_signals": [
+        "PARTICLE COUNT",
+        "SPEED",
+        "TURBULENCE",
+        "COLOR",
+        "Flow State Deck",
+        "Particle count: 66K",
+        "Speed scale: 2.00",
+        "Turbulence: 0.20",
+        "David.Li",
+        "Video",
+        "Flow brief",
+        "Flow lanes"
+      ],
+      "visible_text_states": [
+        "desktop_state_deck",
+        "mobile_state_deck"
+      ],
+      "visible_text_signals": [
+        "Flow State Deck",
+        "Particle count: 66K",
+        "Speed scale: 2.00"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned",
+        "desktop_preset_filter"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_state_deck",
+        "mobile_state_deck",
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned",
+        "desktop_canvas_regression",
+        "desktop_footer_regression",
+        "desktop_flow_brief",
+        "mobile_flow_brief",
+        "desktop_preset_filter"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_image_count": 0,
+      "min_canvas_screenshot_bytes": 30000,
+      "asset_path_signals": [],
+      "asset_path_states": [],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_state_deck",
+        "mobile_state_deck",
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned",
+        "desktop_canvas_regression",
+        "desktop_footer_regression",
+        "desktop_flow_brief",
+        "mobile_flow_brief",
+        "desktop_preset_filter"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "a",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "min_count": 2
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "section",
+          "min_count": 2
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "section",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_state_deck",
+          "class_contains": "flow-rail--deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_flow_brief",
+          "class_contains": "flow-rail--deck",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_flow_brief",
+          "class_contains": "flow-rail--brief",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_footer_regression",
+          "class_contains": "flow-rail--brief",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_footer_regression",
+          "class_contains": "flow-rail--footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_flow_brief",
+          "text_contains": "Flow lanes",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_footer_regression",
+          "text_contains": "Flow lanes",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_flow_brief",
+          "mobile_flow_brief",
+          "desktop_footer_regression"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_preset_filter",
+          "changed_from": "desktop_state_deck",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing: Balanced vortex",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_state_deck",
+        "desktop_flow_brief"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_state_deck",
+        "mobile_state_deck",
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned",
+        "desktop_canvas_regression",
+        "desktop_footer_regression",
+        "desktop_flow_brief",
+        "mobile_flow_brief",
+        "desktop_preset_filter"
+      ],
+      "completion_states": [
+        "desktop_state_deck",
+        "desktop_density_524k",
+        "desktop_density_speed_tuned",
+        "desktop_turbulence_tuned"
+      ],
+      "completion_text_signals": [
+        "Flow State Deck",
+        "Particle count: 66K",
+        "Speed scale: 2.00",
+        "Turbulence: 0.20",
+        "Particle count: 524K",
+        "Active preset: High density sweep",
+        "Speed scale: 4.00",
+        "Turbulence: 0.40"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 8,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_density_524k",
+        "desktop_footer_regression"
+      ],
+      "regression_text_signals": [
+        "PARTICLE COUNT",
+        "66K",
+        "524K",
+        "1M",
+        "2M",
+        "SPEED",
+        "TURBULENCE",
+        "COLOR",
+        "David.Li",
+        "Video"
+      ],
+      "forbidden_text_patterns": [
+        "cdn.tailwindcss.com",
+        "ReactDOM.createRoot",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "benchmark-only"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 0
+    }
+  ]
+}

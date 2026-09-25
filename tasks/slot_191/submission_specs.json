@@ -1,0 +1,232 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_antfu__vite-plugin-pwa__05670fc15e1dc717c847c806e1d46794cdd4cddc__release_readiness_rail_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guide",
+    "mobile_guide",
+    "desktop_frameworks",
+    "desktop_deployment",
+    "desktop_rail_guide",
+    "mobile_rail_guide",
+    "desktop_rail_frameworks",
+    "channel_toggle_guide"
+   ],
+   "text_signal_states": [
+    "desktop_guide",
+    "desktop_rail_guide"
+   ],
+   "reference_text_signals": [
+    "Getting Started",
+    "On this page",
+    "Release line",
+    "Following:"
+   ],
+   "visible_text_states": [
+    "desktop_guide",
+    "desktop_rail_guide"
+   ],
+   "visible_text_signals": [
+    "Getting Started",
+    "On this page"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "channel_toggle_guide"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_guide",
+    "mobile_rail_guide"
+   ],
+   "asset_path_signals": [
+    "/guide/",
+    "/frameworks/",
+    "/deployment/",
+    "/guide"
+   ],
+   "asset_path_states": [
+    "desktop_guide",
+    "desktop_frameworks",
+    "desktop_deployment"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_guide",
+    "desktop_frameworks",
+    "desktop_deployment"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guide",
+    "mobile_guide",
+    "desktop_frameworks",
+    "desktop_deployment",
+    "desktop_rail_guide",
+    "mobile_rail_guide",
+    "desktop_rail_frameworks",
+    "channel_toggle_guide"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "gstatic",
+    "cdn.jsdelivr.net",
+    "algolia",
+    "google",
+    "workbox",
+    "sw.js",
+    "manifest"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_frameworks",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deployment",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide",
+     "text_contains": "Release line",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_guide",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_rail_frameworks",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_deployment",
+     "text_contains": "On this page",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_rail_guide",
+     "mobile_rail_guide"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "channel_toggle_guide",
+     "changed_from": "desktop_rail_guide",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Next release line",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guide",
+    "mobile_guide",
+    "desktop_frameworks",
+    "desktop_deployment",
+    "desktop_rail_guide",
+    "mobile_rail_guide",
+    "desktop_rail_frameworks",
+    "channel_toggle_guide"
+   ],
+   "completion_states": [
+    "desktop_guide",
+    "desktop_frameworks",
+    "desktop_deployment",
+    "desktop_rail_guide"
+   ],
+   "completion_text_signals": [
+    "Getting Started",
+    "On this page",
+    "Release line",
+    "Frameworks",
+    "Following:"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_guide"
+   ],
+   "regression_text_signals": [
+    "Getting Started",
+    "PWA",
+    "service worker"
+   ],
+   "forbidden_states": [],
+   "forbidden_text_patterns": [],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     ".vitepress/theme/index.ts",
+     ".vitepress/theme/components/ReleaseReadinessRail.vue",
+     ".vitepress/theme/components/ReleaseChannelPicker.vue"
+    ],
+    "should_preserve": [
+     "guide/index.md",
+     "frameworks/index.md",
+     "deployment/index.md",
+     ".vitepress/config.ts"
+    ]
+   }
+  }
+ ]
+}

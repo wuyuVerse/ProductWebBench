@@ -1,0 +1,110 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_adminmart__Modernize-vuejs-free__96f58edc24f8__integrations",
+   "reference_states": [
+    "desktop_integrations",
+    "mobile_integrations"
+   ],
+   "submission_states": [
+    "desktop_integrations",
+    "mobile_integrations"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_integrations"
+   ],
+   "completion_text_signals": [
+    "Connect Nexus Analytics",
+    "Available Integrations",
+    "Why Connect Your Tools",
+    "How It Works"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_integrations"
+   ],
+   "visible_text_signals": [],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_integrations"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_integrations"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "404",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_integrations"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_integrations"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_integrations",
+    "mobile_integrations"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "adminmart",
+    "tabler-icons.io",
+    "avataaars",
+    "api.github.com",
+    "github",
+    ".vite/deps"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "Connect Nexus Analytics", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "Available Integrations", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "Why Connect Your Tools", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "How It Works", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "Slack", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "h3", "text_contains": "Stripe", "min_count": 1},
+    {"state": "desktop_integrations", "tag": "button", "text_contains": "Browse the catalog", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_integrations"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.8
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_integrations"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

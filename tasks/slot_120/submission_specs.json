@@ -1,0 +1,233 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themefisher__pinwheel-tailwind__95209bd0fb91__asset_backed_conversion_flow_restyle",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "desktop_features",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_pricing",
+    "desktop_about",
+    "desktop_features"
+   ],
+   "reference_text_signals": [
+    "Billing:",
+    "seat",
+    "Monthly",
+    "Annual"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_pricing"
+   ],
+   "visible_text_signals": [
+    "Billing:",
+    "seat"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_plans_annual",
+    "mobile_plans_annual"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_pricing"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/icons"
+   ],
+   "asset_path_states": [
+    "desktop_pricing",
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "desktop_features",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "billing-plans",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_features",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_annual",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "mobile_plans_annual",
+     "changed_from": "mobile_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Billing: Annual",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_plans_annual",
+     "mobile_plans_annual"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_plans_annual",
+    "mobile_plans_annual",
+    "desktop_features",
+    "desktop_pricing",
+    "mobile_pricing",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_pricing",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Billing:",
+    "seat",
+    "Monthly",
+    "Annual"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Billing:"
+   ],
+   "forbidden_text_patterns": [
+    "Avocode",
+    "Stytch",
+    "Habitify",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Live Caption",
+    "Smart Reply",
+    "Empower entrepreneurs",
+    "Everything in Basic plan Into This",
+    "themefisher",
+    "Themefisher",
+    "Pinwheel",
+    "Download The Theme"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

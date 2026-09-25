@@ -1,0 +1,247 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_merakiuilabs__botanical-garden-template__60b0645552262cb36a92e34e497873559312a5d1__collection_trail_habitat_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_visit",
+    "desktop_exhibitions",
+    "mobile_visit",
+    "mobile_exhibitions",
+    "desktop_gallery_home",
+    "mobile_gallery_home",
+    "toggle_habitat_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_gallery_home"
+   ],
+   "reference_text_signals": [
+    "Mist Gardens",
+    "In flower this week",
+    "Showing",
+    "Glasshouse"
+   ],
+   "visible_text_states": [
+    "desktop_gallery_home",
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "In flower this week",
+    "Glasshouse"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_habitat_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_gallery_home"
+   ],
+   "asset_path_signals": [
+    "/assets/hero-fern",
+    "/assets/grove",
+    "/assets/"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_visit",
+    "desktop_exhibitions"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 12000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_visit",
+    "desktop_exhibitions",
+    "mobile_visit",
+    "mobile_exhibitions",
+    "desktop_gallery_home",
+    "mobile_gallery_home",
+    "toggle_habitat_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "/src/assets/img/"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_visit",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_exhibitions",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_visit",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_exhibitions",
+     "text_contains": "Showing",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_visit",
+     "text_contains": "In flower this week",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_exhibitions",
+     "text_contains": "In flower this week",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_gallery_home",
+     "mobile_gallery_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_habitat_home",
+     "changed_from": "desktop_gallery_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "· Glasshouse",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_visit",
+    "desktop_exhibitions",
+    "mobile_visit",
+    "mobile_exhibitions",
+    "desktop_gallery_home",
+    "mobile_gallery_home",
+    "toggle_habitat_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_visit",
+    "desktop_exhibitions",
+    "desktop_gallery_home"
+   ],
+   "completion_text_signals": [
+    "Mist Gardens",
+    "In flower this week",
+    "Showing",
+    "Glasshouse",
+    "Fernery"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_gallery_home"
+   ],
+   "regression_text_signals": [
+    "Mist Gardens",
+    "In flower this week",
+    "Showing"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_visit",
+    "desktop_exhibitions"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "REPLACE_ME",
+    "TODO",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/data/gallery-config.js",
+     "src/assets/gallery.css",
+     "src/components/GalleryFilter.vue"
+    ],
+    "should_preserve": [
+     "src/pages/Home.vue",
+     "src/pages/Visit.vue",
+     "src/pages/Exhibitions.vue",
+     "src/components/SiteHeader.vue",
+     "src/components/SiteFooter.vue",
+     "src/components/GalleryBrowser.vue",
+     "src/data/collection.js"
+    ]
+   }
+  }
+ ]
+}

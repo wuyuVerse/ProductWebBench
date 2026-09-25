@@ -1,0 +1,237 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_website-templates__marketing-agency_one-page-template__bf943d94a03c__lead_capture_flow_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_crossinglog",
+    "mobile_crossinglog",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects",
+    "desktop_team",
+    "desktop_contacts",
+    "desktop_timetable_page",
+    "desktop_fares_page",
+    "mobile_timetable_page",
+    "desktop_sailing_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_crossinglog"
+   ],
+   "reference_text_signals": [
+    "Tidewheel Ferry Company",
+    "From the crossing log",
+    "years working the reach",
+    "Reaches we work"
+   ],
+   "visible_text_states": [
+    "desktop_crossinglog"
+   ],
+   "visible_text_signals": [
+    "From the crossing log",
+    "Reaches we work"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_sailing_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_crossinglog",
+    "mobile_services",
+    "mobile_timetable_page"
+   ],
+   "asset_path_signals": [
+    "static/images/projects",
+    "static/images/team"
+   ],
+   "asset_path_states": [
+    "desktop_projects"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_team"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_crossinglog",
+    "mobile_crossinglog",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects",
+    "desktop_team",
+    "desktop_contacts",
+    "desktop_timetable_page",
+    "desktop_fares_page",
+    "mobile_timetable_page",
+    "desktop_sailing_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_crossinglog",
+     "text_contains": "From the crossing log",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_crossinglog",
+     "class_contains": "cred-band__tile",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_crossinglog",
+     "class_contains": "reach-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_timetable_page",
+     "class_contains": "reach-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fares_page",
+     "class_contains": "reach-rail",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_timetable_page",
+     "text_contains": "Reaches we work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fares_page",
+     "text_contains": "Reaches we work",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_crossinglog",
+     "mobile_crossinglog",
+     "desktop_timetable_page"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_sailing_filter",
+     "changed_from": "desktop_crossinglog",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Early run",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_crossinglog",
+    "mobile_crossinglog",
+    "desktop_services",
+    "mobile_services",
+    "desktop_projects",
+    "desktop_team",
+    "desktop_contacts",
+    "desktop_timetable_page",
+    "desktop_fares_page",
+    "mobile_timetable_page",
+    "desktop_sailing_filter"
+   ],
+   "completion_states": [
+    "desktop_crossinglog",
+    "desktop_timetable_page"
+   ],
+   "completion_text_signals": [
+    "From the crossing log",
+    "years working the reach",
+    "bicycles carried on a busy day",
+    "Reaches we work",
+    "Showing:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_services",
+    "desktop_team",
+    "desktop_contacts"
+   ],
+   "regression_text_signals": [
+    "Tidewheel Ferry Company",
+    "Crossings",
+    "Our crew",
+    "quayside office"
+   ],
+   "forbidden_states": [
+    "desktop_crossinglog",
+    "mobile_crossinglog"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "Marketing Agency",
+    "Maxim Orlov",
+    "CompanyName",
+    "orlovmax",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

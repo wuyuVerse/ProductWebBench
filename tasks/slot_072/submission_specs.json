@@ -1,0 +1,233 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themewagon__iPortfolio__7a983e5865b5__portfolio_card_design_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_studio_log",
+    "mobile_studio_log",
+    "desktop_stats_regression",
+    "desktop_footer_regression",
+    "desktop_portfolio_initial",
+    "desktop_portfolio_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_studio_log",
+    "desktop_portfolio_initial"
+   ],
+   "reference_text_signals": [
+    "Marlowe Ashcroft",
+    "From the studio log",
+    "mechanisms built",
+    "escapements designed",
+    "Kinetic Sculptor"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_studio_log"
+   ],
+   "visible_text_signals": [
+    "Marlowe Ashcroft",
+    "From the studio log"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_portfolio_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_filter",
+     "changed_from": "desktop_portfolio_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Now viewing: Orreries",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_studio_log",
+     "mobile_studio_log",
+     "desktop_stats_regression"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "mobile_studio_log"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/img"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_portfolio_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_studio_log",
+    "mobile_studio_log",
+    "desktop_stats_regression",
+    "desktop_footer_regression",
+    "desktop_portfolio_initial",
+    "desktop_portfolio_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h2",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_about",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_portfolio_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_studio_log",
+     "text_contains": "Studio index",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_stats_regression",
+     "text_contains": "Studio index",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_regression",
+     "text_contains": "Studio index",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_about",
+    "desktop_studio_log",
+    "mobile_studio_log",
+    "desktop_stats_regression",
+    "desktop_footer_regression",
+    "desktop_portfolio_initial",
+    "desktop_portfolio_filter"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_studio_log"
+   ],
+   "completion_text_signals": [
+    "Marlowe Ashcroft",
+    "From the studio log",
+    "mechanisms built",
+    "years at the bench",
+    "escapements designed",
+    "commissions in progress"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "About",
+    "Portfolio",
+    "Contact"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Alex Smith",
+    "BootstrapMade",
+    "iPortfolio",
+    "Magnam",
+    "officiis"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_studio_log"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

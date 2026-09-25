@@ -1,0 +1,45 @@
+{
+ "slot": 540,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_services",
+   "dom_len": 45468,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "834b5fd78bf9560ceb6b66a17d4bbba9",
+    "reference": "c3ea023602959cefdbb36e9d7e62279f",
+    "bad": "95ee8469723014140b17e4c7506b2c3d"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 12,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "AkberJag__portfolio-template__c863458abdec",
+ "capability": "Build",
+ "capability_is_build": true
+}

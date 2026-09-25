@@ -1,0 +1,265 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_FlowFalcon__ModernShop__8c94ae32cca3__purchase_confidence_cards",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_product_cards",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_categories",
+    "desktop_newsletter",
+    "mobile_product_cards",
+    "desktop_filter_kopi",
+    "mobile_menu_toggle"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_product_cards",
+    "desktop_categories",
+    "desktop_shopfilter"
+   ],
+   "reference_text_signals": [
+    "Kopi Rimba",
+    "Kopi Single Origin",
+    "Gayo Honey",
+    "Belanja per Kategori"
+   ],
+   "visible_text_states": [
+    "desktop_shopfilter"
+   ],
+   "visible_text_signals": [
+    "Belanja per Kategori",
+    "Menampilkan 16 dari 16",
+    "Semua"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_kopi",
+    "mobile_menu_toggle"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_shopfilter",
+    "mobile_product_cards",
+    "mobile_menu_toggle"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_product_cards"
+   ],
+   "asset_path_signals": [
+    "img/",
+    "gayo-honey.svg"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_categories"
+   ],
+   "mean_luminance_tolerance": 100,
+   "min_palette_overlap": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_product_cards",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_categories",
+    "desktop_newsletter",
+    "mobile_product_cards",
+    "desktop_filter_kopi",
+    "mobile_menu_toggle"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "text_contains": "Kopi Rimba",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_cards",
+     "tag": "h3",
+     "text_contains": "Gayo Honey",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_cards",
+     "class_contains": "product-name",
+     "text_contains": "Cold Brew Rimba",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_cards",
+     "class_contains": "filter-btn",
+     "text_contains": "Kopi Single Origin",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_product_cards",
+     "tag": "h3",
+     "text_contains": "Kintamani Lava",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product_cards",
+     "class_contains": "shopfilter__readout",
+     "text_contains": "Menampilkan 16 dari 16",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shopfilter",
+     "class_contains": "shopfilter-summary--products",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_categories",
+     "class_contains": "shopfilter-summary--categories",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_newsletter",
+     "class_contains": "shopfilter-summary--newsletter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_categories",
+     "text_contains": "Belanja per Kategori",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_newsletter",
+     "text_contains": "Belanja per Kategori",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_shopfilter",
+     "mobile_shopfilter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_kopi",
+     "changed_from": "desktop_product_cards",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "shopfilter__readout",
+      "text_contains": "Menampilkan 4 dari 16",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_product_cards",
+    "desktop_shopfilter",
+    "mobile_shopfilter",
+    "desktop_categories",
+    "desktop_newsletter",
+    "mobile_product_cards",
+    "desktop_filter_kopi",
+    "mobile_menu_toggle"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_product_cards",
+    "desktop_categories",
+    "desktop_shopfilter",
+    "desktop_newsletter"
+   ],
+   "completion_text_signals": [
+    "Kopi Rimba",
+    "Kopi Single Origin & Rempah Nusantara",
+    "Seduh Cerita dari Kebun Nusantara",
+    "Jelajahi Rimba",
+    "Gayo Honey Process",
+    "Cold Brew Rimba",
+    "Kisah Rimba",
+    "Catatan Roasting Mingguan",
+    "Belanja per Kategori"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 9,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Kopi Rimba",
+    "Seduh Cerita dari Kebun Nusantara"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_product_cards",
+    "desktop_categories",
+    "desktop_newsletter",
+    "mobile_product_cards"
+   ],
+   "forbidden_text_patterns": [
+    "ModernShop",
+    "Style & Kualitas Premium",
+    "Temukan Gaya Hidup Modern Anda",
+    "Kategori Populer",
+    "Smart Wireless Earbuds",
+    "Smart Watch Pro",
+    "Kemeja Premium",
+    "Vitamin C Serum",
+    "Belanja Produk Terbaik",
+    "Nama Toko",
+    "lorem ipsum",
+    "{{"
+   ]
+  }
+ ]
+}

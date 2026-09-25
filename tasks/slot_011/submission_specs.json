@@ -1,0 +1,276 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_sreerag-rajan__developer-portfolio__edf50b5e1ef1__skill_toolkit_component",
+   "reference_states": [
+    "desktop_initial",
+    "desktop_about_skills",
+    "desktop_projects",
+    "desktop_contact",
+    "mobile_initial",
+    "mobile_about_skills",
+    "mobile_projects",
+    "mobile_contact",
+    "desktop_projects_design",
+    "desktop_projects_page",
+    "desktop_blog"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_about_skills",
+    "desktop_projects",
+    "desktop_contact"
+   ],
+   "reference_text_signals": [
+    "Marisol Enclave",
+    "Coastal & Tidal Data Cartographer",
+    "Tideline Atlas",
+    "Tideline Atlas Viewer",
+    "Estuary Sensor Mesh"
+   ],
+   "visible_text_states": [
+    "desktop_about_skills"
+   ],
+   "visible_text_signals": [
+    "Tideline Atlas"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_projects_design"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_projects_design",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "tag": "p",
+      "text_contains": "Showing 2 of 5",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "mobile_projects",
+     "desktop_projects_design"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_about_skills",
+    "mobile_projects",
+    "mobile_contact"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "static/media"
+   ],
+   "asset_signal_states": [
+    "desktop_projects",
+    "desktop_about_skills"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "desktop_about_skills",
+    "desktop_projects",
+    "desktop_contact",
+    "mobile_initial",
+    "mobile_about_skills",
+    "mobile_projects",
+    "mobile_contact",
+    "desktop_projects_design",
+    "desktop_projects_page",
+    "desktop_blog"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "desktop_about_skills",
+    "desktop_projects",
+    "desktop_contact",
+    "mobile_initial",
+    "mobile_about_skills",
+    "mobile_projects",
+    "mobile_contact",
+    "desktop_projects_design",
+    "desktop_projects_page",
+    "desktop_blog"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_about_skills",
+    "desktop_projects",
+    "desktop_contact"
+   ],
+   "completion_text_signals": [
+    "Marisol Enclave",
+    "Tideline Atlas",
+    "cartographer",
+    "Tideline Atlas Viewer",
+    "Estuary Sensor Mesh"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial"
+   ],
+   "regression_text_signals": [
+    "Marisol Enclave",
+    "Coastal & Tidal Data Cartographer"
+   ],
+   "forbidden_text_patterns": [
+    "Sreerag Rajan",
+    "Sreerag",
+    "aspiring web developer",
+    "Masai School",
+    "bibliophile",
+    "History Through Movies",
+    "Sportsjam",
+    "Educative Clone",
+    "Reliance Digital",
+    "sreerag.rajan5@gmail.com"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_skills",
+     "tag": "h2",
+     "text_contains": "Tideline Atlas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_skills",
+     "tag": "h3",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h2",
+     "text_contains": "Tideline Atlas Viewer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h2",
+     "text_contains": "Estuary Sensor Mesh",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_projects",
+     "tag": "h2",
+     "text_contains": "Saltmarsh Restoration Charts",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "p",
+     "text_contains": "@",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h2",
+     "text_contains": "Filter by stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "text_contains": "React",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "text_contains": "Python",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "button",
+     "text_contains": "Design",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "h2",
+     "text_contains": "Filter by stack",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "button",
+     "text_contains": "React",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "button",
+     "text_contains": "Python",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects_page",
+     "tag": "button",
+     "text_contains": "Design",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "h2",
+     "text_contains": "Filter by stack",
+     "min_count": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,241 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_biazo__codrops-animate-shaders-with-gsap__bdd17aa4cf4b__shader_rhythm_strip_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_console_deep",
+    "desktop_variation_02",
+    "desktop_variation_03",
+    "desktop_variation_04",
+    "desktop_tags_regression"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_console_deep",
+    "desktop_variation_02",
+    "desktop_variation_03",
+    "desktop_variation_04",
+    "desktop_tags_regression"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_console_deep",
+    "desktop_variation_02",
+    "desktop_tags_regression"
+   ],
+   "reference_text_signals": [
+    "Halcyon Field Lab",
+    "Motion Studies",
+    "MOTION-LAB",
+    "Field Notes",
+    "Render Console"
+   ],
+   "completion_text_signals": [
+    "Halcyon Field Lab",
+    "Render Console",
+    "Rendering:",
+    "Study route",
+    "Render mode",
+    "Field Notes"
+   ],
+   "min_completion_text_signals": 5,
+   "completion_text_states": [
+    "desktop_initial",
+    "desktop_variation_02"
+   ],
+   "visible_text_states": [
+    "desktop_initial"
+   ],
+   "visible_text_signals": [
+    "Halcyon Field Lab",
+    "Render Console",
+    "Rendering:",
+    "Study route",
+    "Render mode"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 5,
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "dummy content",
+    "placeholder console",
+    "coming soon",
+    "todo overflow",
+    "Animating Shaders with GSAP"
+   ],
+   "forbidden_text_states": [
+    "desktop_initial",
+    "desktop_variation_02"
+   ],
+   "interaction_states": [
+    "desktop_console_deep"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_console_deep",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "study-console__readout",
+      "text_contains": "Rendering: Study 01 \u00b7 DEEP",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial"
+   ],
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "desktop_tags_regression"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 60,
+   "min_image_count": 4,
+   "min_canvas_screenshot_bytes": 8000,
+   "asset_path_signals": [
+    "/images/01.webp",
+    "/images/10.webp",
+    "/images/14.webp",
+    "/images/06.webp",
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_variation_02",
+    "desktop_variation_03",
+    "desktop_variation_04"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_console_deep",
+    "desktop_variation_02",
+    "desktop_variation_03",
+    "desktop_variation_04",
+    "desktop_tags_regression"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "GL Driver Message",
+    "WebGL"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "study-console--01",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "study-console__readout",
+     "text_contains": "Render",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_variation_02",
+     "class_contains": "study-console--02",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_variation_02",
+     "class_contains": "study-console__readout",
+     "text_contains": "Rendering:",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_variation_02",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_variation_03",
+     "class_contains": "study-console--03",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_variation_04",
+     "class_contains": "study-console--04",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tags_regression",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tags_regression",
+     "class_contains": "study-console--01",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "class_contains": "study-console",
+     "min_count": 1
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_tags_regression"
+   ]
+  }
+ ]
+}

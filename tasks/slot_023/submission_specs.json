@@ -1,0 +1,231 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_getastrothemes__folex-lite-astro__593ac98d858d__agency_proof_system",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_portfolio_filter",
+    "mobile_portfolio_filter",
+    "desktop_home_fr",
+    "desktop_pricing",
+    "desktop_case",
+    "desktop_privacy"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "reference_text_signals": [
+    "Filter by discipline",
+    "Strategy",
+    "Branding",
+    "case studies"
+   ],
+   "visible_text_states": [
+    "desktop_home"
+   ],
+   "visible_text_signals": [
+    "Filter by discipline",
+    "case studies"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_portfolio_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_portfolio",
+    "mobile_portfolio_filter"
+   ],
+   "asset_path_signals": [
+    "/images/portfolio/",
+    "_astro/"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_pricing"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_portfolio_filter",
+    "mobile_portfolio_filter",
+    "desktop_home_fr",
+    "desktop_pricing",
+    "desktop_case",
+    "desktop_privacy"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "vercel web analytics"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_case",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "discipline-filter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "discipline-filter__grid",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Filter by discipline",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_fr",
+     "class_contains": "discipline-filter__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_fr",
+     "class_contains": "discipline-filter__grid",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_fr",
+     "text_contains": "Filter by discipline",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "discipline-filter__chip",
+     "min_count": 3
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "desktop_portfolio_filter"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_portfolio_filter",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "discipline-filter__readout",
+      "text_contains": "Branding",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_portfolio_filter",
+    "mobile_portfolio_filter",
+    "desktop_home_fr",
+    "desktop_pricing",
+    "desktop_case",
+    "desktop_privacy"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "completion_text_signals": [
+    "Filter by discipline",
+    "Strategy",
+    "Product Design",
+    "Branding",
+    "case studies"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_case"
+   ],
+   "regression_text_signals": [
+    "Let\u2019s Work Together",
+    "SEND MESSAGE"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "Cheatsheet"
+   ]
+  }
+ ]
+}

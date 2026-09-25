@@ -1,0 +1,270 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_mesinkasir__astronot-with-astro__8ea6534d5276__topic_filter_post_list",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_filter_bar",
+        "mobile_filter_bar",
+        "desktop_foraging_filter",
+        "desktop_tidepools_filter",
+        "desktop_all_reset",
+        "mobile_foraging_filter",
+        "desktop_post_foraging",
+        "desktop_post_tidepools",
+        "desktop_post_driftwood",
+        "desktop_post_shorebirds",
+        "desktop_cards_regression"
+      ],
+      "interaction_states": [
+        "desktop_foraging_filter",
+        "desktop_tidepools_filter",
+        "desktop_all_reset",
+        "mobile_foraging_filter"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_filter_bar",
+        "mobile_foraging_filter"
+      ],
+      "overflow_tolerance_px": 24,
+      "reference_overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_filter_bar",
+        "mobile_filter_bar",
+        "desktop_foraging_filter",
+        "desktop_tidepools_filter",
+        "desktop_all_reset",
+        "mobile_foraging_filter",
+        "desktop_post_foraging",
+        "desktop_post_tidepools",
+        "desktop_post_driftwood",
+        "desktop_post_shorebirds",
+        "desktop_cards_regression"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_filter_bar",
+          "mobile_filter_bar"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_foraging_filter",
+          "changed_from": "desktop_filter_bar",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "almanac-readout",
+            "text_contains": "Showing 2 of 5",
+            "min_count": 1
+          }
+        }
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "header",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_filter_bar",
+          "class_contains": "almanac-filter",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_filter_bar",
+          "class_contains": "almanac-tab",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_filter_bar",
+          "class_contains": "almanac-readout",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_cards_regression",
+          "class_contains": "almanac-card",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_filter_bar",
+          "class_contains": "almanac-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_foraging",
+          "class_contains": "almanac-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_tidepools",
+          "class_contains": "almanac-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_driftwood",
+          "class_contains": "almanac-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_shorebirds",
+          "class_contains": "almanac-rail",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_tidepools",
+          "text_contains": "ALMANAC TOPIC INDEX",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_driftwood",
+          "text_contains": "ALMANAC TOPIC INDEX",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_post_shorebirds",
+          "text_contains": "ALMANAC TOPIC INDEX",
+          "min_count": 1
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_filter_bar",
+        "desktop_cards_regression"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "palette_compare_limit": 6,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "dom.html",
+        "metrics.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "quality.json",
+        "crops.json",
+        "a11y.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "min_link_count": 2,
+      "min_screenshot_bytes": 9000,
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_filter_bar",
+        "mobile_filter_bar",
+        "desktop_foraging_filter",
+        "desktop_tidepools_filter",
+        "desktop_all_reset",
+        "mobile_foraging_filter",
+        "desktop_post_foraging",
+        "desktop_post_tidepools",
+        "desktop_post_driftwood",
+        "desktop_post_shorebirds",
+        "desktop_cards_regression"
+      ],
+      "completion_states": [
+        "desktop_filter_bar",
+        "desktop_foraging_filter",
+        "desktop_cards_regression",
+        "desktop_post_foraging"
+      ],
+      "completion_text_signals": [
+        "Showing 5 of 5 · All Topics",
+        "Showing 2 of 5 · Foraging",
+        "ALMANAC TOPIC INDEX",
+        "Foraging",
+        "Tidepools"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_filter_bar",
+        "desktop_foraging_filter"
+      ],
+      "visible_text_signals": [
+        "Showing 2 of 5 · Foraging"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 1,
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Tidewrack Almanac",
+        "Wren Halliday"
+      ],
+      "asset_path_signals": [
+        "covers/foraging.jpg",
+        "covers/tidepools.jpg",
+        "covers/driftwood.jpg"
+      ],
+      "min_asset_path_signals": 3,
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_filter_bar",
+        "mobile_filter_bar",
+        "desktop_foraging_filter",
+        "desktop_tidepools_filter",
+        "desktop_all_reset",
+        "mobile_foraging_filter",
+        "desktop_post_foraging",
+        "desktop_post_tidepools",
+        "desktop_post_driftwood",
+        "desktop_post_shorebirds",
+        "desktop_cards_regression"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "Astronot",
+        "astronot.axcora",
+        "REPLACE_ME",
+        "TODO",
+        "undefined",
+        "{{",
+        "John Doe",
+        "cuteblog",
+        "Blast Fast"
+      ]
+    }
+  ]
+}

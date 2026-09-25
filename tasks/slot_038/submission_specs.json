@@ -1,0 +1,237 @@
+{
+    "tasks": [
+        {
+            "task_id": "dev_jeantimex__geospatial__d166316ad38f__mission_control_demo_suite",
+            "reference_states": [
+                "desktop_home",
+                "mobile_home",
+                "tablet_home",
+                "desktop_status",
+                "desktop_ops",
+                "desktop_suite",
+                "desktop_suite_atmosphere"
+            ],
+            "text_signal_states": [
+                "desktop_home"
+            ],
+            "reference_text_signals": [
+                "Meridian Mission Control",
+                "Mission readiness",
+                "Render suite"
+            ],
+            "visible_text_states": [
+                "desktop_home"
+            ],
+            "visible_text_signals": [
+                "Meridian Mission Control",
+                "operations console for our Three.js geospatial render suite"
+            ],
+            "require_all_visible_text_signals": true,
+            "min_visible_text_signals": 2,
+            "interaction_states": [
+                "desktop_suite_atmosphere"
+            ],
+            "interaction_assertions": [
+                {
+                    "state": "desktop_suite_atmosphere",
+                    "changed_from": "desktop_suite",
+                    "require_interaction": true,
+                    "dom": {
+                        "class_contains": "scene-readout",
+                        "text_contains": "Showing 2 of 5",
+                        "min_count": 1
+                    }
+                }
+            ],
+            "responsive_states": [
+                "mobile_home",
+                "tablet_home"
+            ],
+            "required_state_artifacts": [
+                "screenshot.png",
+                "metrics.json",
+                "quality.json",
+                "dom.html",
+                "a11y.json",
+                "boxes.json",
+                "console.json",
+                "actions.json",
+                "crops.json"
+            ],
+            "min_text_length": 300,
+            "min_image_count": 0,
+            "min_screenshot_bytes": 6000,
+            "overflow_tolerance_px": 24,
+            "enforce_console_errors": true,
+            "max_console_errors": 0,
+            "console_error_states": [
+                "desktop_home",
+                "mobile_home",
+                "tablet_home",
+                "desktop_status",
+                "desktop_ops",
+                "desktop_suite",
+                "desktop_suite_atmosphere"
+            ],
+            "console_error_allowlist": [
+                "/_vercel/",
+                "google-analytics",
+                "googletagmanager",
+                "favicon",
+                "insights/script"
+            ],
+            "visual_regression": {
+                "states": [
+                    "desktop_home",
+                    "mobile_home"
+                ],
+                "metrics": {
+                    "pixelmatch": {
+                        "max_diff_ratio": 0.08,
+                        "tolerance": 30
+                    },
+                    "ssim": {
+                        "min_score": 0.85
+                    },
+                    "block_fidelity": {
+                        "min_block_match": 0.8,
+                        "max_color_delta_e": 15
+                    }
+                }
+            },
+            "dom_assertions": [
+                {
+                    "state": "desktop_home",
+                    "class_contains": "mission-rail",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_status",
+                    "class_contains": "mission-rail",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_ops",
+                    "class_contains": "mission-rail",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_status",
+                    "text_contains": "Mission readiness",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_ops",
+                    "text_contains": "Mission readiness",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_home",
+                    "tag": "h1",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_home",
+                    "tag": "nav",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_home",
+                    "tag": "h3",
+                    "min_count": 5
+                },
+                {
+                    "state": "desktop_home",
+                    "tag": "footer",
+                    "min_count": 1
+                },
+                {
+                    "state": "mobile_home",
+                    "tag": "nav",
+                    "min_count": 1
+                },
+                {
+                    "state": "mobile_home",
+                    "tag": "h3",
+                    "min_count": 5
+                },
+                {
+                    "state": "tablet_home",
+                    "tag": "h3",
+                    "min_count": 5
+                },
+                {
+                    "state": "desktop_status",
+                    "tag": "nav",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_status",
+                    "tag": "footer",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_ops",
+                    "tag": "nav",
+                    "min_count": 1
+                },
+                {
+                    "state": "desktop_suite",
+                    "tag": "h3",
+                    "min_count": 5
+                }
+            ],
+            "visual_anchor_states": [
+                "desktop_home",
+                "desktop_suite"
+            ],
+            "mean_luminance_tolerance": 95,
+            "min_palette_overlap": 1,
+            "min_canvas_screenshot_bytes": 12000,
+            "submission_states": [
+                "desktop_home",
+                "mobile_home",
+                "tablet_home",
+                "desktop_status",
+                "desktop_ops",
+                "desktop_suite",
+                "desktop_suite_atmosphere"
+            ],
+            "completion_states": [
+                "desktop_home"
+            ],
+            "completion_text_signals": [
+                "Mission readiness",
+                "Scenes holding signal lock",
+                "Terrain LOD levels cached",
+                "Precomputed LUT budget",
+                "Target frame budget"
+            ],
+            "require_all_completion_signals": true,
+            "min_completion_text_signals": 5,
+            "regression_states": [
+                "desktop_home"
+            ],
+            "regression_text_signals": [
+                "Render suite",
+                "About the suite"
+            ],
+            "forbidden_states": [
+                "desktop_home",
+                "mobile_home",
+                "tablet_home",
+                "desktop_status",
+                "desktop_ops",
+                "desktop_suite",
+                "desktop_suite_atmosphere"
+            ],
+            "forbidden_text_patterns": [
+                "Lorem ipsum",
+                "lorem ipsum",
+                "TODO",
+                "placeholder text",
+                "Insert copy here"
+            ]
+        }
+    ]
+}

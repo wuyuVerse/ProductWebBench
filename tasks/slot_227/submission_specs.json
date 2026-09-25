@@ -1,0 +1,252 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_emixs__ace-documentation__5812437b309b__docs_topic_finder_repair",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes",
+    "desktop_search_focus"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes",
+    "desktop_search_focus"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_link_count": 3,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [
+    "desktop_finder"
+   ],
+   "asset_path_signals": [
+    "css/topic-finder.css",
+    "plugins/topic-finder.js",
+    "js/bootstrap.min.js"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes",
+    "desktop_search_focus"
+   ],
+   "responsive_overflow_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes",
+    "desktop_search_focus"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes",
+    "desktop_search_focus"
+   ],
+   "console_error_allowlist": [
+    "_vercel",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "interaction_states": [
+    "desktop_finder_gettingstarted",
+    "desktop_search_focus"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_finder_gettingstarted",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "topic-finder__readout",
+      "text_contains": "Showing 2 of 8 topics",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "mobile_finder",
+     "desktop_finder_gettingstarted"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_getting_started",
+     "class_contains": "topic-quicknav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shortcodes",
+     "class_contains": "topic-quicknav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topic-finder__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topic-finder__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topic-finder__card",
+     "min_count": 8
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shortcodes",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_getting_started",
+     "text_contains": "Browse topics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_shortcodes",
+     "text_contains": "Browse topics",
+     "min_count": 1
+    }
+   ],
+   "text_signal_states": [
+    "desktop_finder",
+    "desktop_getting_started",
+    "desktop_shortcodes"
+   ],
+   "reference_text_signals": [
+    "Ledgerline Docs",
+    "Browse the docs by topic",
+    "Browse topics",
+    "Getting started",
+    "Components",
+    "Guides",
+    "Installation",
+    "Usage",
+    "Alerts",
+    "Buttons",
+    "Panels",
+    "Showing"
+   ],
+   "completion_states": [
+    "desktop_finder"
+   ],
+   "completion_text_signals": [
+    "Browse the docs by topic",
+    "Showing 8 of 8 topics",
+    "Getting started"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_finder"
+   ],
+   "visible_text_signals": [
+    "Browse the docs by topic",
+    "Installation",
+    "Components"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_finder"
+   ],
+   "regression_text_signals": [
+    "Ledgerline Docs",
+    "Getting started",
+    "Shortcodes"
+   ],
+   "forbidden_states": [
+    "desktop_finder",
+    "desktop_finder_gettingstarted",
+    "desktop_getting_started",
+    "desktop_shortcodes"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO archetype",
+    "placeholder.png",
+    "data:image"
+   ],
+   "visual_anchor_states": [
+    "desktop_finder",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

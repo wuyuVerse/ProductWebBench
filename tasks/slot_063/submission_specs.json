@@ -1,0 +1,238 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_technext__ThemeBlog__1aaeca2022a8__editorial_asset_picks_section",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feed_filter",
+    "mobile_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "reference_text_signals": [
+    "Theme Blog",
+    "Browse the feed",
+    "Corporate",
+    "Photography",
+    "READING PATH",
+    "Toolkits",
+    "Design Inspiration"
+   ],
+   "visible_text_states": [
+    "desktop_feed_filter",
+    "desktop_corporate_filter"
+   ],
+   "visible_text_signals": [
+    "Browse the feed",
+    "Showing 2 of 10"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_corporate_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_feed_filter"
+   ],
+   "asset_path_signals": [
+    "assets/img/corporate.jpg",
+    "assets/img/event.jpg",
+    "assets/img/restaurant.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 3,
+   "asset_signal_states": [
+    "desktop_home"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_feed_filter"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 3,
+   "min_link_count": 5,
+   "min_screenshot_bytes": 9000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feed_filter",
+    "mobile_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_feed_filter",
+     "class_contains": "feedfilter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_feed_filter",
+     "class_contains": "feedfilter__chip",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_toolkits",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "readpath-rail__step",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_design_inspiration",
+     "class_contains": "readpath-rail__step",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_toolkits",
+     "class_contains": "readpath-rail__step",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_design_inspiration",
+     "text_contains": "READING PATH",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_toolkits",
+     "text_contains": "READING PATH",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_feed_filter",
+     "mobile_feed_filter"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_corporate_filter",
+     "changed_from": "desktop_feed_filter",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "feedfilter__readout",
+      "text_contains": "Showing 2 of 10",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_feed_filter",
+    "mobile_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "completion_text_signals": [
+    "Browse the feed",
+    "Corporate",
+    "Photography",
+    "READING PATH",
+    "Toolkits",
+    "Design Inspiration"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Best Free Responsive",
+    "ThemeWagon"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_feed_filter",
+    "desktop_corporate_filter",
+    "desktop_design_inspiration",
+    "desktop_toolkits"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Cheatsheet",
+    "CHEATSHEET",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{",
+    "NaN"
+   ]
+  }
+ ]
+}

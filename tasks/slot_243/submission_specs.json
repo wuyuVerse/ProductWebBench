@@ -1,0 +1,297 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_nicremo__astro-multilingual-portfolio-template__87a89e7a56c1__portfolio_evidence_repair",
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_en_projects",
+        "desktop_de_projects",
+        "desktop_de_imprint",
+        "desktop_de_privacy",
+        "desktop_root_impressum",
+        "mobile_menu_open",
+        "projects_filter"
+      ],
+      "text_signal_states": [
+        "desktop_projects",
+        "desktop_en_projects",
+        "desktop_de_projects"
+      ],
+      "reference_text_signals": [
+        "Project focus",
+        "Selected Projects",
+        "Astro Multilingual Portfolio",
+        "CoreProtect WebUI"
+      ],
+      "visible_text_states": [
+        "desktop_projects",
+        "mobile_projects"
+      ],
+      "visible_text_signals": [
+        "Selected Projects",
+        "Astro Multilingual Portfolio"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "projects_filter"
+      ],
+      "responsive_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_en_projects",
+        "desktop_de_projects",
+        "desktop_de_imprint",
+        "desktop_de_privacy",
+        "desktop_root_impressum",
+        "mobile_menu_open",
+        "projects_filter"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "_astro"
+      ],
+      "asset_path_states": [
+        "desktop_projects"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_en_projects",
+        "desktop_de_projects",
+        "desktop_de_imprint",
+        "desktop_de_privacy",
+        "desktop_root_impressum",
+        "mobile_menu_open",
+        "projects_filter"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h2",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "section",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_projects",
+          "class_contains": "projfilter__title",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_projects",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "mobile_projects",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "tablet_projects",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_en_projects",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_en_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_de_projects",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_de_projects",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_de_imprint",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_root_impressum",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_menu_open",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_en_projects",
+          "class_contains": "projfilter__title",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_de_projects",
+          "class_contains": "projfilter__title",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_projects",
+          "mobile_projects"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "projects_filter",
+          "changed_from": "desktop_projects",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "projfilter__readout",
+            "text_contains": "Templates",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_en_projects",
+        "desktop_de_projects",
+        "desktop_de_imprint",
+        "desktop_de_privacy",
+        "desktop_root_impressum",
+        "mobile_menu_open",
+        "projects_filter"
+      ],
+      "completion_states": [
+        "desktop_projects",
+        "desktop_en_projects",
+        "desktop_de_projects"
+      ],
+      "completion_text_signals": [
+        "Project focus",
+        "Selected Projects",
+        "Astro Multilingual Portfolio",
+        "CoreProtect WebUI",
+        "Astro Template Collection"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_projects",
+        "desktop_de_imprint"
+      ],
+      "regression_text_signals": [
+        "Skills",
+        "Fabian Bitzer",
+        "Impressum"
+      ],
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "TODO",
+        "Cheatsheet",
+        "projects.tags.",
+        "projects.focus."
+      ],
+      "visual_anchor_states": [
+        "desktop_projects",
+        "desktop_en_projects"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

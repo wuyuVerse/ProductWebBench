@@ -1,0 +1,45 @@
+{
+ "slot": 512,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_roadmap",
+   "dom_len": 18559,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "40210b82b931f5bc930bf0adb96c3302",
+    "reference": "fba89cc701e36f60e5f72dadeb0bf79b",
+    "bad": "b4d857ce14323ffa7abcda7dbd6aed03"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 12,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "MekuHQ__convertly__747dbf84f4ae",
+ "capability": "Build",
+ "capability_is_build": true
+}

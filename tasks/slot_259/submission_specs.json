@@ -1,0 +1,206 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_manuelernestog__astro-modern-personal-website__9398dea0f2c0__project_field_filter",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_home_atlas",
+    "desktop_services",
+    "desktop_field_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "reference_text_signals": [
+    "Meridian Lines",
+    "Harbor Datum Survey",
+    "Tideline Wayfinding Kit",
+    "Contour Legend Redraw",
+    "Selected surveys"
+   ],
+   "visible_text_states": [
+    "desktop_projects"
+   ],
+   "visible_text_signals": [
+    "Selected surveys",
+    "Harbor Datum Survey",
+    "Tideline Wayfinding Kit"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_field_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_field_filter",
+     "changed_from": "desktop_projects",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_projects"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/meridian-logo.svg",
+    "/favicon.svg"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_home_atlas"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_home_atlas",
+    "desktop_services",
+    "desktop_field_filter"
+   ],
+   "console_error_allowlist": [
+    "favicon"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "class_contains": "menu",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Selected surveys",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h3",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Harbor Datum Survey",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home_atlas",
+     "text_contains": "Selected surveys",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "text_contains": "Selected surveys",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_services",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "mobile_projects"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_projects",
+    "mobile_projects",
+    "tablet_projects",
+    "desktop_home_atlas",
+    "desktop_services",
+    "desktop_field_filter"
+   ],
+   "completion_states": [
+    "desktop_projects",
+    "desktop_field_filter"
+   ],
+   "completion_text_signals": [
+    "Selected surveys",
+    "Harbor Datum Survey",
+    "Tideline Wayfinding Kit",
+    "Contour Legend Redraw",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Meridian Lines"
+   ],
+   "forbidden_text_patterns": [
+    "lorem ipsum",
+    "Demo Project",
+    "Services Header",
+    "Projects Header",
+    "generic portfolio redesign",
+    "new landing page",
+    "Project rhythm audit",
+    "metric rail",
+    "DESIGN CONTINUITY"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 110,
+   "min_palette_overlap": 1
+  }
+ ]
+}

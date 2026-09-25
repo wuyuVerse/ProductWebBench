@@ -1,0 +1,222 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_nisarhassan12__portfolio-template__f3ed88590be4__project_intake_flow",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_work_regression",
+    "mobile_work_regression",
+    "desktop_clients_regression",
+    "desktop_about_regression",
+    "desktop_contact_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_intake_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_work_regression"
+   ],
+   "reference_text_signals": [
+    "Rowan Ashcroft",
+    "Solar Irrigation Controller",
+    "Intake stages",
+    "Showing:"
+   ],
+   "visible_text_states": [
+    "desktop_work_regression"
+   ],
+   "visible_text_signals": [
+    "Intake stages",
+    "Showing:"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_intake_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_work_regression",
+    "mobile_footer_regression"
+   ],
+   "asset_path_signals": [
+    "project-1.png",
+    "project-2.png"
+   ],
+   "asset_path_states": [
+    "desktop_work_regression"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_clients_regression"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_work_regression",
+    "mobile_work_regression",
+    "desktop_clients_regression",
+    "desktop_about_regression",
+    "desktop_contact_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_intake_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "text_contains": "Rowan Ashcroft",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work_regression",
+     "tag": "h3",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_footer_regression",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work_regression",
+     "text_contains": "Intake stages",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about_regression",
+     "text_contains": "Intake stages",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer_regression",
+     "text_contains": "Intake stages",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_work_regression",
+     "mobile_work_regression",
+     "desktop_footer_regression"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_intake_filter",
+     "changed_from": "desktop_work_regression",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing: Firmware",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_work_regression",
+    "mobile_work_regression",
+    "desktop_clients_regression",
+    "desktop_about_regression",
+    "desktop_contact_regression",
+    "desktop_footer_regression",
+    "mobile_footer_regression",
+    "desktop_intake_filter"
+   ],
+   "completion_states": [
+    "desktop_work_regression",
+    "desktop_about_regression"
+   ],
+   "completion_text_signals": [
+    "Rowan Ashcroft",
+    "Solar Irrigation Controller",
+    "Intake stages",
+    "Scope",
+    "Showing:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_clients_regression",
+    "desktop_contact_regression"
+   ],
+   "regression_text_signals": [
+    "Rowan Ashcroft",
+    "Work",
+    "Clients",
+    "Contact"
+   ],
+   "forbidden_states": [
+    "desktop_work_regression",
+    "mobile_work_regression"
+   ],
+   "forbidden_text_patterns": [
+    "Syed Ali Hussnain",
+    "Lahore",
+    "Portfolio Template",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "REPLACE_ME",
+    "{{"
+   ]
+  }
+ ]
+}

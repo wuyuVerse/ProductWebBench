@@ -1,0 +1,77 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_coreui__coreui-free-react-admin-template__bdf27bcb90ee__tickets",
+   "reference_states": ["desktop_tickets", "mobile_tickets"],
+   "submission_states": ["desktop_tickets", "mobile_tickets"],
+   "interaction_states": ["desktop_tickets_selected", "desktop_tickets_persist"],
+   "completion_states": ["desktop_tickets"],
+   "completion_text_signals": ["Support Ticket Queue", "Open queue", "Ticket detail"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_tickets"],
+   "visible_text_signals": ["Open queue"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_tickets"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_tickets"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_tickets"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_tickets"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_tickets", "mobile_tickets"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts", "coreui", "manifest.json"],
+   "dom_assertions": [
+    {"state": "desktop_tickets", "text_contains": "Open queue", "min_count": 1},
+    {"state": "desktop_tickets", "tag": "p", "text_contains": "Triage incoming support tickets", "min_count": 1},
+    {"state": "desktop_tickets", "tag": "button", "text_contains": "View", "min_count": 3},
+    {"state": "desktop_tickets", "tag": "button", "text_contains": "In progress", "min_count": 1},
+    {"state": "desktop_tickets", "tag": "h3", "min_count": 1},
+    {"state": "desktop_tickets", "text_contains": "Status:", "min_count": 1},
+    {"state": "desktop_tickets", "tag": "a", "class_contains": "nav-link", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_tickets", "tag": "a", "text_contains": "CoreUI", "min_count": 1},
+    {"state": "desktop_dashboard", "tag": "a", "class_contains": "nav-link", "text_contains": "Dashboard", "min_count": 1},
+    {"state": "desktop_dashboard", "tag": "a", "text_contains": "CoreUI", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_tickets"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_tickets_selected",
+     "require_interaction": true,
+     "changed_from": "desktop_tickets",
+     "dom": {"tag": "h3", "text_contains": "Billing", "min_count": 1}
+    },
+    {
+     "state": "desktop_tickets_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_tickets",
+     "dom": {"tag": "p", "text_contains": "In progress", "min_count": 1}
+    },
+    {
+     "state": "desktop_tickets_persist",
+     "require_interaction": true,
+     "changed_from": "desktop_tickets",
+     "dom": {"tag": "h3", "text_contains": "Billing", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_tickets"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

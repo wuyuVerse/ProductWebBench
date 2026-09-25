@@ -1,0 +1,230 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_cullenwebber__three-skull__5c5d6f84c424__skeleton_stage_system_restyle",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_canvas_click",
+    "desktop_stage_focus",
+    "desktop_github_hover"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_canvas_click",
+    "desktop_github_hover"
+   ],
+   "reference_text_signals": [
+    "Ossario Atelier",
+    "anatomical vanitas studio",
+    "Ossario Stage System",
+    "Reliquary reveal chrome"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_canvas_click",
+    "desktop_github_hover"
+   ],
+   "visible_text_signals": [
+    "Ossario Atelier",
+    "anatomical vanitas studio"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_canvas_click",
+    "desktop_stage_focus",
+    "desktop_github_hover"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_stage_focus",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Now staging: Cast",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "desktop_home"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 60,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 5000,
+   "min_canvas_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_canvas_click",
+    "desktop_stage_focus",
+    "desktop_github_hover"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "CAST",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "VEIL",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "ROOM",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "tablet_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "text_contains": "CAST",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "tablet_home",
+     "text_contains": "VEIL",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "tablet_home",
+     "text_contains": "ROOM",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "desktop_canvas_click",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_canvas_click",
+     "text_contains": "CAST",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "desktop_canvas_click",
+     "text_contains": "VEIL",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    },
+    {
+     "state": "desktop_canvas_click",
+     "text_contains": "ROOM",
+     "min_count": 1,
+     "class_contains": "stage-system__rows"
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_canvas_click",
+    "desktop_stage_focus",
+    "desktop_github_hover"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_canvas_click",
+    "desktop_github_hover"
+   ],
+   "completion_text_signals": [
+    "Ossario Atelier",
+    "anatomical vanitas studio",
+    "Ossario Stage System",
+    "Reliquary reveal chrome",
+    "Cast",
+    "Veil",
+    "Room"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 7,
+   "regression_states": [
+    "desktop_home",
+    "desktop_github_hover"
+   ],
+   "regression_text_signals": [
+    "Ossario Atelier"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_canvas_click",
+    "desktop_stage_focus",
+    "desktop_github_hover"
+   ],
+   "forbidden_text_patterns": [
+    "Skeleton Fluid Reveal",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_canvas_click"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

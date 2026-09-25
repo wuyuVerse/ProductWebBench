@@ -1,0 +1,259 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_steven-tey__weathergpt__dabf3866fcf6__weather_asset_fallback_repair",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_london",
+    "desktop_tokyo",
+    "desktop_new_york",
+    "desktop_footer",
+    "mobile_london",
+    "desktop_explorer",
+    "mobile_explorer",
+    "desktop_explorer_travel"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_london",
+    "desktop_tokyo",
+    "desktop_new_york"
+   ],
+   "reference_text_signals": [
+    "WeatherGPT",
+    "Ask WeatherGPT",
+    "London",
+    "Tokyo"
+   ],
+   "visible_text_states": [
+    "desktop_explorer"
+   ],
+   "visible_text_signals": [
+    "WeatherGPT",
+    "Try a weather prompt"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_explorer_travel"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_explorer",
+    "tablet_initial",
+    "mobile_london"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 100,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_london",
+    "desktop_tokyo",
+    "desktop_new_york",
+    "desktop_footer",
+    "mobile_london",
+    "desktop_explorer",
+    "mobile_explorer",
+    "desktop_explorer_travel"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_london",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tokyo",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_new_york",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "ask-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Try a weather prompt",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_london",
+     "class_contains": "ask-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_london",
+     "text_contains": "Try a weather prompt",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tokyo",
+     "class_contains": "ask-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tokyo",
+     "text_contains": "Try a weather prompt",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_new_york",
+     "class_contains": "ask-explorer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_new_york",
+     "text_contains": "Try a weather prompt",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_explorer",
+     "class_contains": "ask-explorer",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_explorer",
+     "mobile_explorer"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_explorer_travel",
+     "changed_from": "desktop_explorer",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "ask-readout",
+      "text_contains": "Showing 3 \u00b7 Travel",
+      "min_count": 1
+     }
+    }
+   ],
+   "asset_path_signals": [
+    "logo.png",
+    "bg-light.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_london",
+    "mobile_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_london",
+    "desktop_tokyo",
+    "desktop_new_york",
+    "desktop_footer",
+    "mobile_london",
+    "desktop_explorer",
+    "mobile_explorer",
+    "desktop_explorer_travel"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_london",
+    "desktop_tokyo",
+    "desktop_new_york"
+   ],
+   "completion_text_signals": [
+    "WeatherGPT",
+    "Ask WeatherGPT",
+    "Your Location",
+    "Current Temperature",
+    "Vercel Edge Runtime"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_footer"
+   ],
+   "regression_text_signals": [
+    "WeatherGPT",
+    "Deploy your own to Vercel",
+    "Source"
+   ],
+   "forbidden_text_patterns": [
+    "Application error",
+    "Digest:",
+    "client-side exception",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_london"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

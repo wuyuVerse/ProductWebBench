@@ -1,0 +1,241 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_basehub-ai__help-center-template__2e0b2be69de1__help_search_feedback_recovery",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_category",
+    "mobile_category",
+    "desktop_article",
+    "mobile_article",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_topic_filter",
+    "mobile_topic_filter"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "text_signal_states": [
+    "desktop_finder",
+    "desktop_topic_filter"
+   ],
+   "reference_text_signals": [
+    "Browse help articles by topic",
+    "All topics",
+    "Showing 6 of 6",
+    "Team Management"
+   ],
+   "visible_text_states": [
+    "desktop_finder"
+   ],
+   "visible_text_signals": [
+    "Browse help articles by topic",
+    "All topics"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_topic_filter",
+    "mobile_topic_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_topic_filter",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "topic-finder__readout",
+      "text_contains": "Showing 3 of 6",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "mobile_topic_filter",
+     "changed_from": "mobile_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "topic-finder__readout",
+      "text_contains": "Showing 3 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_finder",
+    "mobile_topic_filter"
+   ],
+   "asset_signal_states": [
+    "desktop_article",
+    "mobile_article"
+   ],
+   "asset_path_signals": [
+    "assets.basehub.com"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_regression": {
+    "states": [
+     "desktop_finder",
+     "mobile_finder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.15,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.6
+     },
+     "block_fidelity": {
+      "min_block_match": 0.4,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "tag": "section",
+     "class_contains": "topic-finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topic-finder__tab",
+     "text_contains": "All topics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "topic-finder__readout",
+     "text_contains": "Showing 6 of 6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_category",
+     "tag": "section",
+     "class_contains": "topic-finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_category",
+     "class_contains": "topic-finder__title",
+     "text_contains": "Browse articles in this topic",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_category",
+     "class_contains": "topic-finder",
+     "text_contains": "Browse articles in this topic",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_category",
+    "mobile_category",
+    "desktop_article",
+    "mobile_article",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_topic_filter",
+    "mobile_topic_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "intercom"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_finder"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_category",
+    "mobile_category",
+    "desktop_article",
+    "mobile_article",
+    "desktop_finder",
+    "mobile_finder",
+    "desktop_topic_filter",
+    "mobile_topic_filter"
+   ],
+   "completion_states": [
+    "desktop_finder",
+    "desktop_category"
+   ],
+   "completion_text_signals": [
+    "Browse help articles by topic",
+    "All topics",
+    "Getting Started",
+    "Showing"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_article"
+   ],
+   "regression_text_signals": [
+    "Help Center",
+    "Getting"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "undefined",
+    "NaNpx",
+    "TODO",
+    "PLACEHOLDER"
+   ]
+  }
+ ]
+}

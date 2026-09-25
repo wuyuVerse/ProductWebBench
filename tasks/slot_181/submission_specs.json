@@ -1,0 +1,249 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_AkobirCoder__Art.Design-Portfolio-Template__e73c35c3c674__design_brief_studio_interaction",
+   "reference_states": [
+    "desktop_initial",
+    "desktop_design",
+    "desktop_design_grid",
+    "desktop_filter_editorial",
+    "desktop_blog",
+    "desktop_contact",
+    "tablet_design",
+    "mobile_initial",
+    "mobile_design_grid",
+    "mobile_sidebar_open"
+   ],
+   "text_signal_states": [
+    "desktop_design_grid",
+    "desktop_filter_editorial"
+   ],
+   "reference_text_signals": [
+    "Selected work",
+    "Illustration",
+    "Editorial",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_design_grid",
+    "desktop_filter_editorial"
+   ],
+   "visible_text_signals": [
+    "Selected work",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_filter_editorial",
+    "mobile_sidebar_open"
+   ],
+   "responsive_states": [
+    "tablet_design",
+    "mobile_design_grid",
+    "mobile_sidebar_open"
+   ],
+   "asset_path_signals": [
+    "design-images/"
+   ],
+   "asset_path_states": [
+    "desktop_design_grid",
+    "mobile_design_grid"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_design_grid",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "desktop_design",
+    "desktop_design_grid",
+    "desktop_filter_editorial",
+    "desktop_blog",
+    "desktop_contact",
+    "tablet_design",
+    "mobile_initial",
+    "mobile_design_grid",
+    "mobile_sidebar_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "text_contains": "Illustration",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "text_contains": "Branding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "text_contains": "Editorial",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "text_contains": "Motion",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_design_grid",
+     "class_contains": "designPageSectionCard",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Selected work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "text_contains": "Selected work",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_design_grid",
+     "mobile_design_grid"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_editorial",
+     "changed_from": "desktop_design_grid",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 4 of 16 \u00b7 Editorial",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "desktop_design",
+    "desktop_design_grid",
+    "desktop_filter_editorial",
+    "desktop_blog",
+    "desktop_contact",
+    "tablet_design",
+    "mobile_initial",
+    "mobile_design_grid",
+    "mobile_sidebar_open"
+   ],
+   "completion_states": [
+    "desktop_design_grid",
+    "desktop_filter_editorial"
+   ],
+   "completion_text_signals": [
+    "Selected work",
+    "Showing all 16",
+    "Illustration",
+    "Editorial",
+    "Motion"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_initial",
+    "desktop_blog",
+    "desktop_contact"
+   ],
+   "regression_text_signals": [
+    "Art.Design",
+    "home",
+    "blog",
+    "contact"
+   ],
+   "forbidden_states": [
+    "desktop_design_grid",
+    "desktop_filter_editorial",
+    "mobile_design_grid"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "zombie",
+    "vampire",
+    "REPLACE_ME",
+    "TODO",
+    "undefined",
+    "{{"
+   ]
+  }
+ ]
+}

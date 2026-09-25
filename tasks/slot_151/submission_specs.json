@@ -1,0 +1,220 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_AkberJag__portfolio-template__c863458abdec__localized_about_copy_repair",
+      "reference_states": [
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_home",
+        "desktop_about",
+        "desktop_fr_projects",
+        "desktop_projects_firebase"
+      ],
+      "submission_states": [
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_home",
+        "desktop_about",
+        "desktop_fr_projects",
+        "desktop_projects_firebase"
+      ],
+      "interaction_states": [
+        "desktop_projects_firebase"
+      ],
+      "completion_states": [
+        "desktop_projects"
+      ],
+      "completion_text_signals": [
+        "Filter projects",
+        "Showing 5 of 5",
+        "Vue.js",
+        "Firebase",
+        "Node.js"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_projects"
+      ],
+      "visible_text_signals": [
+        "Filter projects",
+        "Vue.js",
+        "Firebase"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_projects"
+      ],
+      "regression_text_signals": [
+        "Filter projects",
+        "My Projects"
+      ],
+      "forbidden_states": [
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_home",
+        "desktop_about",
+        "desktop_fr_projects",
+        "desktop_projects_firebase"
+      ],
+      "forbidden_text_patterns": [
+        "TODO",
+        "pf broken",
+        "FIXME"
+      ],
+      "responsive_states": [
+        "mobile_projects",
+        "desktop_projects"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_screenshot_bytes": 8000,
+      "asset_signal_states": [
+        "desktop_projects"
+      ],
+      "asset_path_signals": [
+        "/assets/"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_projects",
+        "desktop_projects"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_home",
+        "desktop_about",
+        "desktop_fr_projects",
+        "desktop_projects_firebase"
+      ],
+      "console_error_allowlist": [
+        "favicon",
+        "certification.png",
+        "react-certification",
+        "vue-certification",
+        "typescript-certification",
+        "nodejs-certification",
+        "mongodb-certification",
+        "docker-certification"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "text_contains": "Filter projects",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Filter projects",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Filter projects",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "All",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "Vue.js",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "Node.js",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "Tailwind",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "button",
+          "text_contains": "Firebase",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_projects",
+          "tag": "h3",
+          "text_contains": "Project",
+          "min_count": 5
+        },
+        {
+          "state": "desktop_projects",
+          "text_contains": "Showing 5 of 5",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_fr_projects",
+          "text_contains": "Filtrer les projets",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_projects"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_projects_firebase",
+          "changed_from": "desktop_projects",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 5",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_projects",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

@@ -1,0 +1,300 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_OzymaCode__Shoe-Store-Template__be8710b81f3d__shoe_card_fit_system",
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "tablet_products",
+    "mobile_products",
+    "desktop_products_deep",
+    "mobile_products_deep",
+    "desktop_footer",
+    "mobile_footer",
+    "mobile_menu_open",
+    "desktop_size_select"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 500,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "tablet_products",
+    "mobile_products",
+    "desktop_products_deep",
+    "mobile_products_deep",
+    "desktop_footer",
+    "mobile_footer",
+    "mobile_menu_open",
+    "desktop_size_select"
+   ],
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "tablet_products",
+    "mobile_products",
+    "desktop_products_deep",
+    "mobile_products_deep",
+    "desktop_footer",
+    "mobile_footer",
+    "mobile_menu_open",
+    "desktop_size_select"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "completion_states": [
+    "desktop_products",
+    "tablet_products",
+    "mobile_products",
+    "desktop_products_deep",
+    "mobile_products_deep",
+    "desktop_footer",
+    "mobile_footer",
+    "mobile_menu_open"
+   ],
+   "completion_text_signals": [
+    "Kestrel Flightpath 88",
+    "Talon Court High",
+    "Aerie Fastbreak",
+    "Merlin Low Suede",
+    "Peregrine Trail 2",
+    "Harrier Skate Pro",
+    "Falconer Mid Canvas",
+    "Kestrel Runner Retro",
+    "Sparrowhawk Trainer",
+    "Kite Pump Court",
+    "Osprey Force One",
+    "Harrier Dunk Low",
+    "Talk To The Court",
+    "hello@kestrelcourt.shop",
+    "Basketball",
+    "Retro Runners",
+    "The Drop List",
+    "Court Classics",
+    "Shop The Drop",
+    "Add to bag",
+    "Fit & shipping guide",
+    "Free shipping",
+    "Selected: US",
+    "$128.00",
+    "$112.00"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 22,
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_products"
+   ],
+   "visible_text_signals": [
+    "Kestrel Court",
+    "The Fall Hardwood Drop Is Live",
+    "Kestrel Flightpath 88"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial"
+   ],
+   "regression_text_signals": [
+    "Kestrel Court",
+    "The Fall Hardwood Drop Is Live"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_products",
+    "tablet_products",
+    "mobile_products",
+    "desktop_products_deep",
+    "mobile_products_deep",
+    "desktop_footer",
+    "mobile_footer",
+    "mobile_menu_open",
+    "desktop_size_select"
+   ],
+   "forbidden_text_patterns": [
+    "Joe's Clothes",
+    "joesclothes@gmail",
+    "Nike Zoom Turf",
+    "Air Jordans",
+    "Nike Dunk",
+    "New Arivals Coming Soon",
+    "Send Us A Message",
+    "Shirts",
+    "Dresses",
+    "Workout Clothes",
+    "Walter Payton",
+    "Reebok Pump",
+    "(244) 000-XXXX",
+    "lorem ipsum",
+    "TODO",
+    "placeholder"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_products",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "asset_path_signals": [
+    "img/shoe1.jpg"
+   ],
+   "asset_signal_states": [
+    "desktop_products"
+   ],
+   "min_asset_path_signals": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "text_contains": "Kestrel Court",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "section",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "fitguide-bar--hero",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "class_contains": "fitguide-bar--products",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "class_contains": "fitguide-bar--footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "p",
+     "text_contains": "Osprey Force One",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "p",
+     "text_contains": "Kestrel Flightpath 88",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_products",
+     "tag": "button",
+     "min_count": 12
+    },
+    {
+     "state": "desktop_products",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "h1",
+     "text_contains": "Talk To The Court",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_products",
+     "tag": "p",
+     "text_contains": "Harrier Dunk Low",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "tag": "a",
+     "text_contains": "Basketball",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "tag": "h3",
+     "text_contains": "Kestrel Court",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_products",
+     "desktop_footer",
+     "mobile_products"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_states": [
+    "mobile_menu_open",
+    "desktop_size_select"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_size_select",
+     "changed_from": "desktop_products",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Selected: US 9",
+      "min_count": 1
+     }
+    }
+   ],
+   "min_canvas_screenshot_bytes": 20000
+  }
+ ]
+}

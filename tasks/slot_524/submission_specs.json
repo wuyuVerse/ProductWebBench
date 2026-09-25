@@ -1,0 +1,146 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_JustGoodUI__ovidius-astro-theme__6731b180d99e__uses",
+   "reference_states": [
+    "desktop_uses",
+    "mobile_uses"
+   ],
+   "submission_states": [
+    "desktop_uses",
+    "mobile_uses"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_uses"
+   ],
+   "completion_text_signals": [
+    "Workstation",
+    "Editor & Terminal",
+    "Software",
+    "Read the blog"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_uses"
+   ],
+   "visible_text_signals": [
+    "Workstation"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_uses"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_uses"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": false,
+   "responsive_overflow_states": [],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_uses",
+    "mobile_uses"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_uses",
+     "tag": "h1",
+     "text_contains": "Uses",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "p",
+     "text_contains": "A living list of the gear",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "h2",
+     "text_contains": "Workstation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "h2",
+     "text_contains": "Software",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "p",
+     "text_contains": "The desk setup where most",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "h3",
+     "text_contains": "14-inch laptop",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "h3",
+     "text_contains": "VS Code",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "h3",
+     "text_contains": "Figma",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_uses",
+     "tag": "a",
+     "text_contains": "Read the blog",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_uses"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_uses"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

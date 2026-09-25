@@ -1,0 +1,55 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_robbins23__daisyui-admin-dashboard-template__0d119454b92b__faq",
+   "reference_states": ["desktop_faq", "mobile_faq"],
+   "submission_states": ["desktop_faq", "mobile_faq"],
+   "interaction_states": [],
+   "completion_states": ["desktop_faq"],
+   "completion_text_signals": ["Frequently Asked Questions", "Common Questions", "Contact Support"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_faq"],
+   "visible_text_signals": ["Common Questions"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_faq"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_faq"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_faq"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_faq"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_faq", "mobile_faq"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts", "cloudflare", "cdnjs", "font-awesome", "fontawesome", "logo192", "intro.png", "manifest.json"],
+   "dom_assertions": [
+    {"state": "desktop_faq", "tag": "h1", "text_contains": "Frequently Asked Questions", "min_count": 1},
+    {"state": "desktop_faq", "text_contains": "Getting Started", "min_count": 1},
+    {"state": "desktop_faq", "tag": "h2", "text_contains": "Common Questions", "min_count": 1},
+    {"state": "desktop_faq", "tag": "h3", "text_contains": "password", "min_count": 1},
+    {"state": "desktop_faq", "tag": "h3", "text_contains": "team", "min_count": 1},
+    {"state": "desktop_faq", "tag": "p", "text_contains": "data", "min_count": 1},
+    {"state": "desktop_faq", "tag": "button", "text_contains": "Contact Support", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_faq"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": ["desktop_faq"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

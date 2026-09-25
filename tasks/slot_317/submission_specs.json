@@ -1,0 +1,288 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_codrops__LiquidDistortion__d8f91ae96e4a__distortion_asset_repair",
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_asset_repair",
+        "tablet_asset_repair",
+        "mobile_asset_repair",
+        "desktop_demo2_continuity",
+        "desktop_demo3_regression",
+        "desktop_demo4_regression",
+        "desktop_nav_click"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_asset_repair",
+        "tablet_asset_repair",
+        "mobile_asset_repair",
+        "desktop_demo2_continuity",
+        "desktop_demo3_regression",
+        "desktop_demo4_regression",
+        "desktop_nav_click"
+      ],
+      "completion_states": [
+        "desktop_asset_repair",
+        "mobile_asset_repair"
+      ],
+      "completion_text_signals": [
+        "REGRESSION CONTINUITY",
+        "Distortion asset repair",
+        "Canvas filter map restored",
+        "Displacement map kept: img/dmaps/2048x2048/clouds.jpg",
+        "Slides kept: img/1.jpg, img/2.jpg, img/3.jpg",
+        "PixiJS canvas and Demo 1-5 routes preserved."
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "visible_text_states": [
+        "desktop_asset_repair"
+      ],
+      "visible_text_signals": [
+        "REGRESSION CONTINUITY",
+        "Distortion asset repair",
+        "Canvas filter map restored while the original PixiJS canvas, scene navigation, and Demo 1-5 routes stay preserved."
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_demo3_regression",
+        "desktop_demo4_regression"
+      ],
+      "regression_text_signals": [
+        "Liquid Distortion Effects",
+        "Demo"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_asset_repair",
+        "tablet_asset_repair",
+        "mobile_asset_repair",
+        "desktop_demo2_continuity",
+        "desktop_demo3_regression",
+        "desktop_demo4_regression",
+        "desktop_nav_click"
+      ],
+      "forbidden_text_patterns": [
+        "asset-strip broken",
+        "TODO overflow",
+        "Lorem ipsum",
+        "lorem ipsum",
+        "placeholder-asset"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_asset_repair",
+        "tablet_asset_repair"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 200,
+      "min_image_count": 3,
+      "min_screenshot_bytes": 10000,
+      "min_canvas_screenshot_bytes": 10000,
+      "asset_signal_states": [
+        "desktop_asset_repair"
+      ],
+      "asset_path_signals": [
+        "img/dmaps/2048x2048/clouds.jpg",
+        "img/1.jpg"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_initial",
+        "mobile_asset_repair"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_asset_repair",
+        "tablet_asset_repair",
+        "mobile_asset_repair",
+        "desktop_demo2_continuity",
+        "desktop_demo3_regression",
+        "desktop_demo4_regression",
+        "desktop_nav_click"
+      ],
+      "console_error_allowlist": [
+        "_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_asset_repair",
+          "class_contains": "asset-repair--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_asset_repair",
+          "tag": "h2",
+          "text_contains": "Distortion asset repair",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_asset_repair",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "desktop_asset_repair",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_asset_repair",
+          "tag": "button",
+          "min_count": 2
+        },
+        {
+          "state": "mobile_asset_repair",
+          "class_contains": "asset-repair--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_asset_repair",
+          "tag": "img",
+          "min_count": 3
+        },
+        {
+          "state": "tablet_asset_repair",
+          "class_contains": "asset-repair--demo1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "button",
+          "min_count": 2
+        },
+        {
+          "state": "desktop_demo2_continuity",
+          "class_contains": "asset-repair--demo2",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2_continuity",
+          "text_contains": "Distortion asset repair",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo3_regression",
+          "class_contains": "asset-repair--demo3",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo3_regression",
+          "text_contains": "Distortion asset repair",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo4_regression",
+          "class_contains": "asset-repair--demo4",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2_continuity",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo2_continuity",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo3_regression",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo3_regression",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo4_regression",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_demo4_regression",
+          "tag": "nav",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_asset_repair"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.0,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_nav_click",
+          "changed_from": "desktop_asset_repair",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "next slide requested",
+            "min_count": 1
+          }
+        }
+      ],
+      "interaction_states": [
+        "desktop_nav_click"
+      ],
+      "submission_states_interaction": [
+        "desktop_nav_click"
+      ],
+      "visual_anchor_states": [
+        "desktop_asset_repair",
+        "desktop_initial"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 0
+    }
+  ]
+}

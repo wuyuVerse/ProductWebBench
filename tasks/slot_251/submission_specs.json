@@ -1,0 +1,243 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_itsDaiton__business-website-template__adf37c84bded__card_deal_copy_repair",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "tablet_plans",
+    "desktop_product",
+    "desktop_footer",
+    "desktop_plans_retail",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_plans",
+    "desktop_product"
+   ],
+   "reference_text_signals": [
+    "Solstice Pay",
+    "The Modern",
+    "Plans built for your business",
+    "settlement rail",
+    "Approval guard"
+   ],
+   "visible_text_states": [
+    "desktop_plans"
+   ],
+   "visible_text_signals": [
+    "Plans built for your business"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_plans_retail"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_plans_retail",
+     "changed_from": "desktop_plans",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "segfilter__readout",
+      "text_contains": "2 of 6 plans",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_plans",
+     "mobile_plans"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_plans"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_plans",
+    "tablet_plans"
+   ],
+   "overflow_tolerance_px": 24,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_product"
+   ],
+   "min_asset_path_signals": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "tablet_plans",
+    "desktop_product",
+    "desktop_footer",
+    "desktop_plans_retail",
+    "mobile_menu_open"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_plans",
+    "mobile_plans",
+    "tablet_plans",
+    "desktop_product",
+    "desktop_footer",
+    "desktop_plans_retail",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_plans",
+    "desktop_product"
+   ],
+   "completion_text_signals": [
+    "Instant Payouts",
+    "Fraud Shield",
+    "Ledger Sync",
+    "settlement rail",
+    "Approval guard",
+    "Plans built for your business"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_menu_open"
+   ],
+   "regression_text_signals": [
+    "Home",
+    "Features",
+    "Product",
+    "Clients"
+   ],
+   "forbidden_text_patterns": [
+    "HooBank",
+    "hoobank",
+    "The Next",
+    "Payment Method",
+    "You do the business",
+    "Balance Transfer",
+    "100% Secured",
+    "Herman Jensen",
+    "Steve Mark",
+    "Kenn Gallagher",
+    "Elit enim sed massa",
+    "tortor",
+    "Aliquet quis aliquet",
+    "Aliquet ultrices",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "segfilter__title",
+     "text_contains": "Plans built for your business",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "segfilter__card-name",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_plans",
+     "class_contains": "segfilter__card-name",
+     "text_contains": "Counter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "class_contains": "segfilter--product",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_product",
+     "class_contains": "segfilter__title",
+     "text_contains": "Plans built for your business",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "class_contains": "segfilter--footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "class_contains": "segfilter__title",
+     "text_contains": "Plans built for your business",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_plans",
+     "text_contains": "Approval guard",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "text_contains": "Home",
+     "min_count": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,45 @@
+{
+ "slot": 557,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_changelog",
+   "dom_len": 87,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "ab116ff3883e7f95185589deda5db14d",
+    "reference": "6ac1811f404706b3de32d279d86634bf",
+    "bad": "7c54c9fa7fd0acdb7ee5de9515396ee9"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 17,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "zeon-studio__astroplate__9f879e2e49d1",
+ "capability": "Build",
+ "capability_is_build": true
+}

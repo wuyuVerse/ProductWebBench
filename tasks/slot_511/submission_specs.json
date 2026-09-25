@@ -1,0 +1,110 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_themewagon__material-tailwind-dashboard-react__b1114fa925ef__team",
+   "reference_states": [
+    "desktop_team",
+    "mobile_team"
+   ],
+   "submission_states": [
+    "desktop_team",
+    "mobile_team"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_team"
+   ],
+   "completion_text_signals": [
+    "Meet the Team",
+    "Our People",
+    "Head of Product",
+    "Lead Engineer"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "visible_text_states": [
+    "desktop_team"
+   ],
+   "visible_text_signals": [
+    "Our People"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_team"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_team"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [
+    "mobile_team"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_team"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_team",
+    "mobile_team"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "cloudflare",
+    "cdnjs",
+    "nepcha",
+    "creative-tim",
+    "font-awesome",
+    "fontawesome",
+    "api.github.com",
+    "github"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_team", "text_contains": "Our People", "min_count": 1},
+    {"state": "desktop_team", "text_contains": "Head of Product", "min_count": 1},
+    {"state": "desktop_team", "text_contains": "Lead Engineer", "min_count": 1},
+    {"state": "desktop_team", "text_contains": "Design Director", "min_count": 1},
+    {"state": "desktop_team", "text_contains": "Data Science Lead", "min_count": 1},
+    {"state": "desktop_team", "tag": "img", "min_count": 4}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_team"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_team"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

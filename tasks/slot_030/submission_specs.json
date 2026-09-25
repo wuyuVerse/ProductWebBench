@@ -1,0 +1,300 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_ladunjexa__reactjs18-3d-portfolio__c62cc240b47b__spatial_product_portfolio",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_hero",
+    "desktop_about",
+    "tablet_about",
+    "mobile_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "desktop_work",
+    "mobile_work",
+    "desktop_projects",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "text_signal_states": [
+    "desktop_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship"
+   ],
+   "reference_text_signals": [
+    "Spatial delivery cadence",
+    "Prototype",
+    "Systemize",
+    "Ship",
+    "Active phase:",
+    "Recommended next step"
+   ],
+   "visible_text_states": [
+    "desktop_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "desktop_projects",
+    "tablet_cadence",
+    "mobile_cadence"
+   ],
+   "visible_text_signals": [
+    "Spatial delivery cadence",
+    "Prototype",
+    "Systemize",
+    "Ship",
+    "Recommended next step"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "mobile_menu_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_cadence_systemize",
+     "changed_from": "desktop_about",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active phase: Systemize",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_cadence_ship",
+     "changed_from": "desktop_about",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Active phase: Ship",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_about",
+    "mobile_cadence",
+    "mobile_work",
+    "tablet_cadence"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "carrent",
+    "jobit",
+    "tripguide"
+   ],
+   "asset_path_states": [
+    "desktop_projects",
+    "desktop_work"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_about",
+     "mobile_cadence",
+     "tablet_cadence"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "section",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_about",
+     "tag": "section",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_about",
+     "tag": "img",
+     "min_count": 3
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "tag": "section",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_menu_open",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Spatial delivery cadence",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Spatial delivery cadence",
+     "min_count": 6
+    },
+    {
+     "state": "mobile_cadence",
+     "text_contains": "Spatial delivery cadence",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Spatial delivery cadence",
+     "min_count": 6
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "WebGL",
+    "GL Driver",
+    "GL_INVALID",
+    "texSubImage2D",
+    "glTexImage2D",
+    "ReadPixels"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_hero",
+    "desktop_about",
+    "tablet_about",
+    "mobile_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "desktop_work",
+    "mobile_work",
+    "desktop_projects",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_about",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 6000,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_hero",
+    "desktop_about",
+    "tablet_about",
+    "mobile_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "desktop_work",
+    "mobile_work",
+    "desktop_projects",
+    "mobile_cadence",
+    "tablet_cadence",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "completion_states": [
+    "desktop_about",
+    "desktop_cadence_systemize",
+    "desktop_cadence_ship",
+    "desktop_projects",
+    "tablet_cadence",
+    "mobile_cadence"
+   ],
+   "completion_text_signals": [
+    "Spatial delivery cadence",
+    "Prototype",
+    "Systemize",
+    "Ship",
+    "Active phase: Prototype",
+    "Active phase: Systemize",
+    "Active phase: Ship",
+    "Recommended next step"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_hero",
+    "desktop_work",
+    "desktop_projects",
+    "desktop_contact",
+    "mobile_menu_open"
+   ],
+   "regression_text_signals": [
+    "About",
+    "Work",
+    "Contact",
+    "Overview",
+    "Projects",
+    "Work Experience",
+    "Testimonials"
+   ],
+   "forbidden_text_patterns": [
+    "TODO cadence",
+    "placeholder cadence",
+    "lorem ipsum",
+    "John Doe",
+    "coming soon",
+    "dummy phase"
+   ]
+  }
+ ]
+}

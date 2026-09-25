@@ -1,0 +1,255 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_importantimport__urara__2bc7a3abaa8e__transform_pipeline_evidence_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_post",
+    "mobile_post",
+    "desktop_elements",
+    "mobile_elements",
+    "desktop_toc",
+    "desktop_finder_home",
+    "mobile_finder_home",
+    "desktop_index_post",
+    "desktop_index_elements",
+    "toggle_filter_home"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_finder_home"
+   ],
+   "reference_text_signals": [
+    "Urara",
+    "Docs finder",
+    "Showing",
+    "Find docs by topic"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_finder_home"
+   ],
+   "visible_text_signals": [
+    "Urara",
+    "Docs finder"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "toggle_filter_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_finder_home",
+    "mobile_post",
+    "mobile_elements"
+   ],
+   "asset_path_signals": [
+    "urara"
+   ],
+   "asset_signal_states": [
+    "desktop_initial",
+    "desktop_post"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_post"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 1,
+   "min_screenshot_bytes": 8000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_post",
+    "mobile_post",
+    "desktop_elements",
+    "mobile_elements",
+    "desktop_toc",
+    "desktop_finder_home",
+    "mobile_finder_home",
+    "desktop_index_post",
+    "desktop_index_elements",
+    "toggle_filter_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "cdn.tailwindcss.com",
+    "compute-pressure",
+    "Permissions policy violation"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "docs-finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Docs finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_post",
+     "text_contains": "Hello World",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_elements",
+     "text_contains": "Elements",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index_post",
+     "class_contains": "finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index_elements",
+     "class_contains": "finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index_post",
+     "text_contains": "topic",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_index_elements",
+     "text_contains": "topic",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_initial",
+     "desktop_finder_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_filter_home",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_post",
+    "mobile_post",
+    "desktop_elements",
+    "mobile_elements",
+    "desktop_toc",
+    "desktop_finder_home",
+    "mobile_finder_home",
+    "desktop_index_post",
+    "desktop_index_elements",
+    "toggle_filter_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_post",
+    "desktop_elements",
+    "desktop_finder_home"
+   ],
+   "completion_text_signals": [
+    "Urara",
+    "Docs finder",
+    "Showing",
+    "Hello World",
+    "Find docs by topic"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Urara",
+    "Elements",
+    "Docs finder"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_post",
+    "desktop_elements"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "YOUR_ACCESS_KEY_HERE",
+    "REPLACE_ME",
+    "{{",
+    "TODO"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "src/routes/+page.svelte",
+     "src/lib/components/post_container.svelte",
+     "src/lib/components/finder_index.svelte",
+     "src/app.pcss"
+    ],
+    "should_preserve": [
+     "src/lib/components/header.svelte",
+     "src/lib/components/index_profile.svelte",
+     "src/lib/config/site.ts"
+    ]
+   }
+  }
+ ]
+}

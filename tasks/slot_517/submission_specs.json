@@ -1,0 +1,142 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_pbasiak__dev-fox-ui-mui-dashboard-theme__1cf161c56fa3__changelog",
+   "reference_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "submission_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "interaction_states": [],
+   "completion_states": [
+    "desktop_changelog"
+   ],
+   "completion_text_signals": [
+    "Changelog",
+    "Version 2.4.0",
+    "Dark mode toggle"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_changelog"
+   ],
+   "visible_text_signals": [
+    "Version 2.4.0"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_changelog"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_changelog"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found"
+   ],
+   "responsive_states": [],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": false,
+   "responsive_overflow_states": [],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "vercel",
+    "insights"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_changelog",
+     "tag": "h1",
+     "text_contains": "Changelog",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "p",
+     "text_contains": "Track every release",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "h3",
+     "text_contains": "Version 2.4.0",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "tag": "h3",
+     "text_contains": "Version",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_changelog",
+     "text_contains": "Dark mode toggle",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "text_contains": "Dashboard charts",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "text_contains": "Rich text editor",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "text_contains": "Recurring events",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_changelog",
+     "text_contains": "Field-level validation",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_changelog"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [],
+   "visual_anchor_states": [
+    "desktop_changelog"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

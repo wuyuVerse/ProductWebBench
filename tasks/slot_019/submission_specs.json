@@ -1,0 +1,232 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_ColorlibHQ__AdminLTE__3c9e9f4547a8__support_triage_chat",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_chat",
+        "mobile_chat",
+        "desktop_profile",
+        "desktop_home_night"
+      ],
+      "text_signal_states": [
+        "desktop_home",
+        "desktop_chat",
+        "desktop_profile"
+      ],
+      "reference_text_signals": [
+        "Northwind Ops",
+        "Operations Dashboard",
+        "Dispatch Desk",
+        "Crew Profile",
+        "Dispatch shift board"
+      ],
+      "visible_text_states": [
+        "desktop_home"
+      ],
+      "visible_text_signals": [
+        "Northwind Ops",
+        "Dispatch shift board"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 2,
+      "interaction_states": [
+        "desktop_home_night"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_home_night",
+          "require_interaction": true,
+          "changed_from": "desktop_home",
+          "dom": {
+            "class_contains": "shift-board__readout",
+            "text_contains": "Night board",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_chat"
+      ],
+      "overflow_tolerance_px": 24,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "assets/img"
+      ],
+      "asset_path_states": [
+        "desktop_chat",
+        "desktop_profile"
+      ],
+      "min_asset_path_signals": 1,
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "class_contains": "shift-board__title",
+          "text_contains": "Dispatch shift board",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_chat",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_chat",
+          "tag": "img",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_chat",
+          "tag": "h3",
+          "text_contains": "Dispatch Desk",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_chat",
+          "class_contains": "shift-board__title",
+          "text_contains": "Dispatch shift board",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_profile",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_profile",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_profile",
+          "tag": "h3",
+          "text_contains": "Crew Profile",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_profile",
+          "class_contains": "shift-board__title",
+          "text_contains": "Dispatch shift board",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_home",
+          "desktop_chat"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15.0
+          }
+        }
+      },
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_chat",
+        "mobile_chat",
+        "desktop_profile",
+        "desktop_home_night"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_chat",
+        "mobile_chat",
+        "desktop_profile",
+        "desktop_home_night"
+      ],
+      "completion_states": [
+        "desktop_home",
+        "desktop_chat",
+        "desktop_profile"
+      ],
+      "completion_text_signals": [
+        "Northwind Ops",
+        "Operations Dashboard",
+        "Dispatch Desk",
+        "Crew Profile",
+        "Dispatch shift board"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "regression_states": [
+        "desktop_home",
+        "desktop_chat"
+      ],
+      "regression_text_signals": [
+        "Northwind Ops"
+      ],
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_chat",
+        "mobile_chat",
+        "desktop_profile",
+        "desktop_home_night"
+      ],
+      "forbidden_text_patterns": [
+        "AdminLTE 4",
+        "AdminLTE v4",
+        "AdminLTE.io",
+        "New Orders",
+        "User Registrations",
+        "Unique Visitors",
+        "Product Designer"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_chat"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

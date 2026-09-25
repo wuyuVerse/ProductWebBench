@@ -1,0 +1,248 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_preetsuthar17__discord-bot-website-template__8604fad976fb__readiness_relay_cross_page",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_automations",
+    "mobile_automations",
+    "tablet_automations",
+    "automations_filter"
+   ],
+   "text_signal_states": [
+    "desktop_automations",
+    "desktop_home"
+   ],
+   "reference_text_signals": [
+    "Automations",
+    "Welcome New Members",
+    "Auto Moderation Filters",
+    "Ticket Support Threads",
+    "BOT"
+   ],
+   "visible_text_states": [
+    "desktop_automations"
+   ],
+   "visible_text_signals": [
+    "Automations",
+    "Welcome New Members",
+    "Auto Moderation Filters",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "automations_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "automations_filter",
+     "changed_from": "desktop_automations",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_automations",
+    "tablet_automations"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "automationGlyph",
+    "botStatus"
+   ],
+   "asset_path_states": [
+    "desktop_automations"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_automations",
+    "mobile_automations",
+    "tablet_automations",
+    "automations_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_automations",
+    "mobile_automations",
+    "tablet_automations",
+    "automations_filter"
+   ],
+   "completion_states": [
+    "desktop_automations"
+   ],
+   "completion_text_signals": [
+    "Welcome New Members",
+    "Auto Moderation Filters",
+    "Scheduled Announcements",
+    "Reaction Role Menus",
+    "Ticket Support Threads",
+    "Level and XP Rewards"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "BOT",
+    "Commands",
+    "Join"
+   ],
+   "forbidden_text_patterns": [
+    "Automations Cheatsheet",
+    "Cheatsheet",
+    "Back to home"
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_automations",
+     "mobile_automations"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_automations",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Automations",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Automations",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Automations",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_automations",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Automations",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "button",
+     "text_contains": "All",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "button",
+     "text_contains": "Onboarding",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "button",
+     "text_contains": "Moderation",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_automations",
+     "tag": "button",
+     "text_contains": "Engagement",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_automations",
+     "tag": "h3",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,221 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_langgptai__aurora-landing__85062040af45__ai_asset_showcase",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_asset_filter",
+        "desktop_showcase",
+        "mobile_showcase",
+        "tablet_showcase"
+      ],
+      "text_signal_states": [
+        "desktop_showcase",
+        "desktop_home"
+      ],
+      "reference_text_signals": [
+        "口袋AI",
+        "产品素材",
+        "Product asset showcase",
+        "对话主界面预览",
+        "landing_p1.png",
+        "download_qr.png"
+      ],
+      "visible_text_states": [
+        "desktop_showcase"
+      ],
+      "visible_text_signals": [
+        "产品素材",
+        "landing_p1.png",
+        "download_qr.png"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_asset_filter"
+      ],
+      "responsive_states": [
+        "mobile_home"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "landing_p1.png",
+        "p-1.png",
+        "download_qr.png"
+      ],
+      "asset_path_states": [
+        "desktop_showcase"
+      ],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "dom_assertions": [
+        {
+          "state": "desktop_showcase",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_showcase",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_showcase",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_showcase",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_showcase",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "产品素材",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_showcase",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "tablet_showcase",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "footer",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "产品素材",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_asset_filter",
+        "desktop_showcase",
+        "mobile_showcase",
+        "tablet_showcase"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_home",
+          "mobile_home"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_asset_filter",
+          "changed_from": "desktop_home",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "/ 6 · 界面",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_asset_filter",
+        "desktop_showcase",
+        "mobile_showcase",
+        "tablet_showcase"
+      ],
+      "completion_states": [
+        "desktop_showcase"
+      ],
+      "completion_text_signals": [
+        "产品素材",
+        "landing_p1.png",
+        "landing_p2.png",
+        "landing_p3.png",
+        "appshots.png",
+        "p-1.png",
+        "download_qr.png"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 7,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "口袋AI",
+        "产品特性",
+        "立即体验"
+      ],
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_asset_filter",
+        "desktop_showcase",
+        "mobile_showcase",
+        "tablet_showcase"
+      ],
+      "forbidden_text_patterns": [
+        "Showcase Cheatsheet",
+        "Cheatsheet"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_showcase"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

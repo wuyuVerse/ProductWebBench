@@ -1,0 +1,261 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__ProductComparison__0d4040cc1299__comparison_readiness_component",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_readiness",
+    "mobile_readiness",
+    "desktop_compare_page",
+    "desktop_guide_page",
+    "desktop_selected",
+    "desktop_select_ready",
+    "desktop_compare",
+    "mobile_selected"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_compare_page"
+   ],
+   "reference_text_signals": [
+    "Comparison readiness",
+    "Cellar readiness",
+    "12 wines",
+    "Saved comparisons"
+   ],
+   "visible_text_states": [
+    "desktop_home",
+    "desktop_guide_page"
+   ],
+   "visible_text_signals": [
+    "Cellar readiness",
+    "Comparison readiness"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_select_ready"
+   ],
+   "responsive_states": [
+    "tablet_home",
+    "mobile_home",
+    "mobile_readiness",
+    "mobile_selected"
+   ],
+   "asset_path_signals": [
+    "images/",
+    ".png"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_readiness"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_compare",
+    "desktop_selected"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_readiness",
+    "mobile_readiness",
+    "desktop_compare_page",
+    "desktop_guide_page",
+    "desktop_selected",
+    "desktop_select_ready",
+    "desktop_compare",
+    "mobile_selected"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_compare_page",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_page",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "ready-count",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_compare_page",
+     "class_contains": "ready-count",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_page",
+     "class_contains": "ready-count",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "readiness__tile",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Comparison readiness",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "readiness-bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_compare_page",
+     "class_contains": "readiness-bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_page",
+     "class_contains": "readiness-bar",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Cellar readiness",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guide_page",
+     "text_contains": "Cellar readiness",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_readiness",
+     "mobile_readiness"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_select_ready",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "ready-count",
+      "text_contains": "1 of 3 selected",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_readiness",
+    "mobile_readiness",
+    "desktop_compare_page",
+    "desktop_guide_page",
+    "desktop_selected",
+    "desktop_select_ready",
+    "desktop_compare",
+    "mobile_selected"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_compare_page"
+   ],
+   "completion_text_signals": [
+    "Comparison readiness",
+    "Cellar readiness",
+    "Saved comparisons",
+    "12 wines",
+    "of 3 selected"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home",
+    "desktop_compare_page",
+    "desktop_guide_page"
+   ],
+   "regression_text_signals": [
+    "Blueprint",
+    "Product Comparison Layout"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "desktop_readiness",
+    "mobile_home"
+   ],
+   "forbidden_text_patterns": [
+    "zombie",
+    "vampire",
+    "REPLACE_ME",
+    "TODO_",
+    "lorem ipsum",
+    "{{"
+   ]
+  }
+ ]
+}

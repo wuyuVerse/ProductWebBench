@@ -1,0 +1,298 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_amiradeu__threejs.amiradeuraseh.com__ba4606b5b909__asset_integrity_regression_panel",
+      "reference_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_entered_scene"
+      ],
+      "reference_text_signals": [
+        "ASSET INTEGRITY",
+        "46/46 loaded",
+        "GLB 5/5",
+        "TEXTURE 30/30",
+        "Mistwood Cottage",
+        "A Story in the Hills",
+        "Enter",
+        "Credits",
+        "Re-check integrity"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "mobile_initial"
+      ],
+      "visible_text_signals": [
+        "ASSET INTEGRITY",
+        "46/46 loaded",
+        "GLB 5/5"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "interaction_states": [
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 120,
+      "min_image_count": 0,
+      "min_canvas_screenshot_bytes": 20000,
+      "asset_path_signals": [],
+      "asset_path_states": [],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "speed-insights",
+        "sounds/summer-insects"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_initial",
+          "tag": "section",
+          "class_contains": "asset-integrity-strip",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "canvas",
+          "class_contains": "webgl",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "h1",
+          "text_contains": "Mistwood Cottage",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_initial",
+          "tag": "button",
+          "text_contains": "Re-check integrity",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "section",
+          "class_contains": "asset-integrity-strip",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_initial",
+          "tag": "canvas",
+          "class_contains": "webgl",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_initial",
+          "tag": "section",
+          "class_contains": "asset-integrity-strip",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_entered_scene",
+          "tag": "canvas",
+          "class_contains": "webgl",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_entered_scene",
+          "tag": "section",
+          "class_contains": "asset-integrity-strip",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_credits_open",
+          "class_contains": "asset-integrity-strip--credits",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_credits_open",
+          "tag": "section",
+          "class_contains": "asset-integrity-strip",
+          "min_count": 2
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_initial",
+          "mobile_initial",
+          "desktop_entered_scene"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_recheck",
+          "changed_from": "desktop_initial",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Verified 46/46",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_entered_scene"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "completion_text_signals": [
+        "ASSET INTEGRITY",
+        "46/46 loaded",
+        "0 failed / ready",
+        "GLB 5/5",
+        "TEXTURE 30/30",
+        "HDR 1/1",
+        "EXR 1/1",
+        "AUDIO 9/9",
+        "roomModel -> models/Room/Room.glb",
+        "cottageModel -> models/Cottage/Cottage.glb",
+        "environmentModel -> models/Environment/Environment.glb",
+        "terrainModel -> models/Terrain/Terrain.glb",
+        "coinModel -> models/Coin/Coin.glb",
+        "environmentMapTexture -> textures/EnvironmentMap/aerial-canadian-mountain-sunset_1K.exr",
+        "artImage0 -> textures/Arts/0.jpg",
+        "jazzSound -> ./sounds/jazz-piano.mp3"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 16,
+      "regression_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "regression_text_signals": [
+        "Mistwood Cottage",
+        "A Story in the Hills",
+        "Enter",
+        "Sunrise",
+        "Daylight",
+        "Pink Sunset",
+        "Night",
+        "Credits",
+        "Built and designed with Blender, Three.js, Rapier 3D",
+        "Camera Distance",
+        "Move",
+        "Jump"
+      ],
+      "forbidden_text_patterns": [
+        "Asset Integrity TODO",
+        "46 assets TODO",
+        "fakeAsset -> placeholder",
+        "generated screenshot only",
+        "mock asset manifest",
+        "placeholder asset count",
+        "static overlay screenshot",
+        "external asset audit service",
+        "fake resource accounting",
+        "Lorem ipsum",
+        "lorem ipsum"
+      ],
+      "forbidden_states": [
+        "desktop_initial",
+        "desktop_entered_scene",
+        "desktop_daylight_cycle",
+        "desktop_night_cycle",
+        "desktop_credits_open",
+        "desktop_recheck",
+        "tablet_initial",
+        "mobile_initial",
+        "mobile_entered_scene",
+        "mobile_night_cycle"
+      ],
+      "mean_luminance_tolerance": 90,
+      "min_palette_overlap": 0,
+      "min_screenshot_bytes": 25000
+    }
+  ]
+}

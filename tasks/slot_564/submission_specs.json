@@ -1,0 +1,118 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_nuxt-ui-templates__landing__92668e0c639b__solutions",
+   "reference_states": [
+    "desktop_solutions",
+    "mobile_solutions",
+    "desktop_home"
+   ],
+   "submission_states": [
+    "desktop_solutions",
+    "mobile_solutions"
+   ],
+   "interaction_states": [
+    "desktop_solutions_sre"
+   ],
+   "completion_states": [
+    "desktop_solutions"
+   ],
+   "completion_text_signals": [
+    "Solutions for every team",
+    "Ship with Confidence",
+    "Debug in Minutes",
+    "Own Your Services",
+    "Start for free"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 0,
+   "visible_text_states": [
+    "desktop_solutions"
+   ],
+   "visible_text_signals": [
+    "Solutions for every team"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 0,
+   "regression_states": [
+    "desktop_solutions"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_solutions"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_solutions"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_solutions"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_solutions",
+    "mobile_solutions"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_solutions", "tag": "h1", "text_contains": "Solutions for every team", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "button", "text_contains": "Engineering", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "button", "text_contains": "SRE", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "button", "text_contains": "Product", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "h3", "text_contains": "Ship with Confidence", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "h3", "text_contains": "Debug in Minutes", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "a", "text_contains": "Start for free", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "a", "text_contains": "Features", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "a", "text_contains": "Metrics", "min_count": 1},
+    {"state": "desktop_solutions", "tag": "p", "text_contains": "Built with Nuxt UI", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Features", "min_count": 1},
+    {"state": "desktop_home", "tag": "a", "text_contains": "Metrics", "min_count": 1},
+    {"state": "desktop_home", "tag": "p", "text_contains": "Built with Nuxt UI", "min_count": 1},
+    {"state": "mobile_solutions", "tag": "h1", "text_contains": "Solutions for every team", "min_count": 1},
+    {"state": "mobile_solutions", "tag": "button", "text_contains": "Engineering", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_solutions"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {"state": "desktop_solutions_sre", "require_interaction": true, "changed_from": "desktop_solutions", "dom": {"tag": "h3", "text_contains": "Defend Your SLOs", "min_count": 1}}
+   ],
+   "visual_anchor_states": [
+    "desktop_solutions"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

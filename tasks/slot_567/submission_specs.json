@@ -1,0 +1,125 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_sohamvsonar__portfolio-websitev1__fbdd5c78c6e2__reading",
+   "reference_states": [
+    "desktop_reading",
+    "mobile_reading",
+    "desktop_archive"
+   ],
+   "submission_states": [
+    "desktop_reading",
+    "mobile_reading",
+    "desktop_archive"
+   ],
+   "interaction_states": [
+    "desktop_reading_ml"
+   ],
+   "completion_states": [
+    "desktop_reading"
+   ],
+   "completion_text_signals": [
+    "Reading List",
+    "Designing Data-Intensive Applications",
+    "Books and papers shaping how I build software"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 2,
+   "visible_text_states": [
+    "desktop_reading"
+   ],
+   "visible_text_signals": [
+    "Reading List",
+    "Designing Data-Intensive Applications"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 1,
+   "regression_states": [
+    "desktop_reading"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_reading"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_reading"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_reading"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_reading",
+    "mobile_reading"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "google-analytics",
+    "googletagmanager"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_reading", "tag": "h1", "text_contains": "Reading List", "min_count": 1},
+    {"state": "desktop_reading", "tag": "button", "text_contains": "All", "min_count": 1},
+    {"state": "desktop_reading", "tag": "button", "text_contains": "Engineering", "min_count": 1},
+    {"state": "desktop_reading", "tag": "button", "text_contains": "ML", "min_count": 1},
+    {"state": "desktop_reading", "tag": "button", "text_contains": "Design", "min_count": 1},
+    {"state": "desktop_reading", "tag": "h3", "text_contains": "Designing Data-Intensive Applications", "min_count": 1},
+    {"state": "desktop_reading", "tag": "h3", "text_contains": "Hands-On Machine Learning", "min_count": 1},
+    {"state": "desktop_reading", "tag": "p", "text_contains": "Showing", "min_count": 1},
+    {"state": "desktop_reading", "tag": "p", "text_contains": "Books and papers shaping", "min_count": 1},
+    {"state": "desktop_reading", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_reading", "tag": "a", "text_contains": "Experience", "min_count": 1},
+    {"state": "desktop_reading", "tag": "a", "text_contains": "Contact", "min_count": 1},
+    {"state": "desktop_archive", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_archive", "tag": "a", "text_contains": "Experience", "min_count": 1},
+    {"state": "desktop_archive", "tag": "a", "text_contains": "Contact", "min_count": 1},
+    {"state": "mobile_reading", "tag": "h1", "text_contains": "Reading List", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_reading"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_reading_ml",
+     "require_interaction": true,
+     "changed_from": "desktop_reading",
+     "dom": {"tag": "p", "text_contains": "ML books", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_reading"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

@@ -1,0 +1,292 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themewagon__dental-pro__a9cb1d81bc0a__treatment_asset_guide_refresh",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_treatments",
+    "mobile_treatments",
+    "desktop_treatments_prevention",
+    "desktop_treatments_page",
+    "mobile_treatments_page",
+    "desktop_pricing_page",
+    "desktop_stories",
+    "desktop_notes",
+    "desktop_footer"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_treatments",
+    "desktop_stories",
+    "desktop_notes"
+   ],
+   "reference_text_signals": [
+    "Marrowbrook Family Dental",
+    "Gum & Perio Care",
+    "Why Alderbrook families choose Marrowbrook",
+    "Dental Notes"
+   ],
+   "visible_text_states": [
+    "desktop_treatments",
+    "desktop_stories"
+   ],
+   "visible_text_signals": [
+    "Gum & Perio Care",
+    "Why Alderbrook families choose Marrowbrook"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_treatments_prevention"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_treatments_prevention",
+     "changed_from": "desktop_treatments",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "treatfilter__readout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_treatments_prevention",
+     "changed_from": "desktop_treatments",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "treatfilter__readout",
+      "text_contains": "Prevention",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_treatments",
+     "desktop_treatments_page"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_treatments",
+    "mobile_treatments_page"
+   ],
+   "overflow_tolerance_px": 24,
+   "asset_path_signals": [
+    "images/cover-bg",
+    "images/teeth-whitening",
+    "images/periodontics"
+   ],
+   "asset_path_states": [
+    "desktop_home",
+    "desktop_treatments"
+   ],
+   "min_asset_path_signals": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_treatments",
+    "mobile_treatments",
+    "desktop_treatments_prevention",
+    "desktop_treatments_page",
+    "mobile_treatments_page",
+    "desktop_pricing_page",
+    "desktop_stories",
+    "desktop_notes",
+    "desktop_footer"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "text_contains": "Unhurried dental care",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_treatments",
+     "class_contains": "treatfilter__tab",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_treatments",
+     "class_contains": "treatfilter__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_treatments",
+     "tag": "img",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_treatments",
+     "class_contains": "treatfilter__readout",
+     "text_contains": "Showing 6 of 6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_treatments",
+     "text_contains": "Gum & Perio Care",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_treatments",
+     "class_contains": "carerail--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_treatments_page",
+     "class_contains": "carerail--treatments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_treatments_page",
+     "class_contains": "treatfilter__card",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_pricing_page",
+     "class_contains": "carerail--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_treatments_page",
+     "class_contains": "carerail--treatments",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_stories",
+     "tag": "h2",
+     "text_contains": "Why Alderbrook families choose Marrowbrook",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_notes",
+     "tag": "p",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_footer",
+     "tag": "form",
+     "min_count": 1
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_treatments",
+    "mobile_treatments",
+    "desktop_treatments_prevention",
+    "desktop_treatments_page",
+    "mobile_treatments_page",
+    "desktop_pricing_page",
+    "desktop_stories",
+    "desktop_notes",
+    "desktop_footer"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_treatments",
+    "desktop_stories",
+    "desktop_notes"
+   ],
+   "completion_text_signals": [
+    "Marrowbrook Family Dental",
+    "Dr. Priya Halvorsen",
+    "Gum & Perio Care",
+    "Why Alderbrook families choose Marrowbrook",
+    "Dental Notes"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Marrowbrook Family Dental"
+   ],
+   "forbidden_text_patterns": [
+    "Thomas Dooley",
+    "Mesothelioma",
+    "Card Title",
+    "Abby Sims",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "DentalPro",
+    "Painless Dentistry",
+    "Health Blog"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_treatments"
+   ],
+   "mean_luminance_tolerance": 8.0,
+   "min_palette_overlap": 0.0
+  }
+ ]
+}

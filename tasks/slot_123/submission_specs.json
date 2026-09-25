@@ -1,0 +1,237 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_NextJSTemplates__solid-nextjs__8e48747b93fb__launch_asset_proof_layout",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_docs",
+        "desktop_launch_proof",
+        "mobile_launch_proof",
+        "tablet_launch_proof",
+        "desktop_lp_pre",
+        "desktop_lp_filter_release"
+      ],
+      "text_signal_states": [
+        "desktop_launch_proof",
+        "desktop_home"
+      ],
+      "reference_text_signals": [
+        "Beacondeck",
+        "Launch proof",
+        "Press kit assets",
+        "Changelog entry",
+        "Rollback plan",
+        "Launch checklist sign-off"
+      ],
+      "visible_text_states": [
+        "desktop_launch_proof"
+      ],
+      "visible_text_signals": [
+        "Launch proof",
+        "Press kit assets",
+        "Changelog entry",
+        "Demo walkthrough"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 4,
+      "interaction_states": [
+        "desktop_lp_filter_release"
+      ],
+      "interaction_assertions": [
+        {
+          "state": "desktop_lp_filter_release",
+          "changed_from": "desktop_lp_pre",
+          "require_interaction": true,
+          "dom": {
+            "class_contains": "lp-filter__readout",
+            "text_contains": "Showing 3 of 8",
+            "min_count": 1
+          }
+        }
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "mobile_launch_proof",
+        "tablet_launch_proof"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_launch_proof",
+          "mobile_launch_proof",
+          "desktop_lp_filter_release"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "/_next/",
+        "/images/launch-proof/"
+      ],
+      "asset_path_states": [
+        "desktop_launch_proof"
+      ],
+      "min_asset_path_signals": 0,
+      "overflow_tolerance_px": 24,
+      "dom_assertions": [
+        {
+          "state": "desktop_home",
+          "class_contains": "lp-rail",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_docs",
+          "class_contains": "lp-rail",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_launch_proof",
+          "class_contains": "lp-rail",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_docs",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_launch_proof",
+          "tag": "a",
+          "class_contains": "nav-link",
+          "text_contains": "Launch proof",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_launch_proof",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_launch_proof",
+          "tag": "img",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "footer",
+          "min_count": 1
+        }
+      ],
+      "enforce_console_errors": true,
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "preload"
+      ],
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_docs",
+        "desktop_launch_proof",
+        "mobile_launch_proof",
+        "tablet_launch_proof",
+        "desktop_lp_pre",
+        "desktop_lp_filter_release"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_launch_proof"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_docs",
+        "desktop_launch_proof",
+        "mobile_launch_proof",
+        "tablet_launch_proof",
+        "desktop_lp_pre",
+        "desktop_lp_filter_release"
+      ],
+      "completion_states": [
+        "desktop_launch_proof"
+      ],
+      "completion_text_signals": [
+        "Press kit assets",
+        "Changelog entry",
+        "Demo walkthrough",
+        "Status page check",
+        "Support macros",
+        "Rollback plan"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 6,
+      "regression_states": [
+        "desktop_home"
+      ],
+      "regression_text_signals": [
+        "Beacondeck"
+      ],
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_docs",
+        "desktop_launch_proof",
+        "mobile_launch_proof",
+        "tablet_launch_proof",
+        "desktop_lp_pre",
+        "desktop_lp_filter_release"
+      ],
+      "forbidden_text_patterns": [
+        "Launch proof Cheatsheet",
+        "Cheatsheet",
+        "Back to home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

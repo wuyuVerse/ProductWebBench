@@ -1,0 +1,45 @@
+{
+ "slot": 525,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_now",
+   "dom_len": 11767,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "2f42a8c441163e942b42f1c4e9d6ac28",
+    "reference": "4176d301ea01afc97cff456933200c96",
+    "bad": "5dcc8271e5466abad6becfcfe7698af6"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 13,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "LekoArts__gatsby-starter-portfolio-cara__d1061c7f5284",
+ "capability": "Build",
+ "capability_is_build": true
+}

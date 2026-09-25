@@ -1,0 +1,229 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_MarketingPipeline__Simply-Docs__b50d2a8bf252__subpage_layout_path_repair",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_docs",
+    "mobile_docs",
+    "tablet_docs",
+    "desktop_news",
+    "desktop_author",
+    "docs_filter"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_docs",
+    "desktop_author"
+   ],
+   "reference_text_signals": [
+    "Simply Docs",
+    "Documentation",
+    "Filter docs by section",
+    "Docs quick-nav"
+   ],
+   "visible_text_states": [
+    "desktop_docs"
+   ],
+   "visible_text_signals": [
+    "Filter docs by section",
+    "Reference",
+    "Showing"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "docs_filter"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_docs",
+    "tablet_docs"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 400,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "assets/images"
+   ],
+   "asset_path_states": [
+    "desktop_author"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_docs",
+    "mobile_docs",
+    "tablet_docs",
+    "desktop_news",
+    "desktop_author",
+    "docs_filter"
+   ],
+   "max_console_errors": 0,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "text_contains": "Docs quick-nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "text_contains": "Docs quick-nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_news",
+     "text_contains": "Docs quick-nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "text_contains": "Filter docs by section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "tag": "button",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_docs",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_news",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_author",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_author",
+     "tag": "img",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_docs",
+     "mobile_docs"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "docs_filter",
+     "changed_from": "desktop_docs",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_docs",
+    "mobile_docs",
+    "tablet_docs",
+    "desktop_news",
+    "desktop_author",
+    "docs_filter"
+   ],
+   "completion_states": [
+    "desktop_docs"
+   ],
+   "completion_text_signals": [
+    "Filter docs by section",
+    "Reference",
+    "Guides",
+    "Examples",
+    "Showing",
+    "of 6"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_author"
+   ],
+   "regression_text_signals": [
+    "Docs",
+    "News"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "TODO",
+    "PLACEHOLDER"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_docs"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

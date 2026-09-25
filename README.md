@@ -68,9 +68,10 @@ figures/scripts/     the figure scripts; output lands in figures/
 tables/              regenerates the main results table (Table 1) from the cache
 baselines/pristine/  the 19 checks run on the *untouched* repository, per task
                      — this is what makes a regression exactly attributable
-tasks/               all 400 evaluated slots: manifest.json plus a per-slot
+tasks/               all 400 evaluated slots: manifest.json, a per-slot
                      specification (problem statement, rubric, required states,
-                     constraints)
+                     constraints), the frozen per-stage assertion spec, and the
+                     Build acceptance record for slots 506-585
 harbor/              Harbor integration guide
 tools/               reproduce.sh, sweep aggregator
 docs/                reproduce.md, scoring.md, tasks.md

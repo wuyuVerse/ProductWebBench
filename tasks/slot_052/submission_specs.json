@@ -1,0 +1,256 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_yasser-acc__Portfolio-websites-templates__f4d6215bdd03__project_asset_toolkit_section",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_blog",
+    "desktop_blog_grid",
+    "mobile_blog_grid",
+    "desktop_filter_seating"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "reference_text_signals": [
+    "Ansel Thorne",
+    "furniture maker",
+    "seating",
+    "tables",
+    "cabinets"
+   ],
+   "visible_text_states": [
+    "desktop_portfolio"
+   ],
+   "visible_text_signals": [
+    "Showing 6 of 6",
+    "seating",
+    "cabinets"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 3,
+   "interaction_states": [
+    "desktop_filter_seating"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "tablet_home",
+    "mobile_portfolio"
+   ],
+   "asset_path_signals": [
+    "images/portfolio"
+   ],
+   "asset_path_states": [
+    "desktop_portfolio"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_portfolio"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_blog",
+    "desktop_blog_grid",
+    "mobile_blog_grid",
+    "desktop_filter_seating"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h2",
+     "min_count": 2
+    },
+    {
+     "state": "desktop_portfolio",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "form",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_contact",
+     "tag": "input",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_portfolio",
+     "text_contains": "showing 6 of 6",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "more from the workshop",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_grid",
+     "text_contains": "more from the workshop",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_grid",
+     "text_contains": "seating",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_grid",
+     "text_contains": "cabinets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog_grid",
+     "tag": "img",
+     "min_count": 3
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_portfolio",
+     "mobile_portfolio"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_seating",
+     "changed_from": "desktop_portfolio",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "showing 3 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_blog",
+    "desktop_blog_grid",
+    "mobile_blog_grid",
+    "desktop_filter_seating"
+   ],
+   "completion_states": [
+    "desktop_portfolio",
+    "desktop_filter_seating"
+   ],
+   "completion_text_signals": [
+    "Selected Work",
+    "Showing 6 of 6",
+    "seating",
+    "tables",
+    "cabinets",
+    "restoration",
+    "commissions"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "desktop_portfolio",
+    "desktop_about",
+    "desktop_contact"
+   ],
+   "regression_text_signals": [
+    "Ansel Thorne",
+    "furniture maker",
+    "Selected Work",
+    "Commission a Piece"
+   ],
+   "forbidden_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_portfolio",
+    "mobile_portfolio",
+    "desktop_about",
+    "desktop_contact",
+    "desktop_blog",
+    "desktop_blog_grid",
+    "mobile_blog_grid",
+    "desktop_filter_seating"
+   ],
+   "forbidden_text_patterns": [
+    "Supernova",
+    "My Portfolio",
+    "GET IN TOUCH",
+    "WEB DESIGN",
+    "Lorem ipsum",
+    "lorem ipsum",
+    "Occidental",
+    "medsign",
+    "Copyrights Supernova",
+    "{{",
+    "undefined work"
+   ]
+  }
+ ]
+}

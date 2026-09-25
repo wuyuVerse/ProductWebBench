@@ -1,0 +1,251 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_withastro__starlight__67ba34451082__docs_section_browser_flow",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guides_overview",
+    "mobile_guides_overview",
+    "desktop_guides_installation",
+    "desktop_guides_example",
+    "desktop_reference_configuration",
+    "desktop_guides_reference_filter"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_guides_overview"
+   ],
+   "reference_text_signals": [
+    "Starlight Docs",
+    "Browse the docs",
+    "Getting started overview",
+    "Showing"
+   ],
+   "visible_text_states": [
+    "desktop_initial",
+    "desktop_guides_overview"
+   ],
+   "visible_text_signals": [
+    "Starlight Docs",
+    "Browse the docs"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_guides_reference_filter"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_guides_overview"
+   ],
+   "asset_path_signals": [
+    "/guides/",
+    "/reference/",
+    "houston"
+   ],
+   "asset_path_states": [
+    "desktop_guides_overview",
+    "desktop_reference_configuration"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_guides_installation"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 20000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guides_overview",
+    "mobile_guides_overview",
+    "desktop_guides_installation",
+    "desktop_guides_example",
+    "desktop_reference_configuration",
+    "desktop_guides_reference_filter"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_overview",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_overview",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_overview",
+     "class_contains": "dsb",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_installation",
+     "class_contains": "dsb",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_example",
+     "class_contains": "dsb",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reference_configuration",
+     "class_contains": "dsb",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_overview",
+     "text_contains": "Browse the docs",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_installation",
+     "text_contains": "Browse the docs",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_guides_example",
+     "text_contains": "Browse the docs",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_reference_configuration",
+     "text_contains": "Browse the docs",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_guides_overview",
+     "mobile_guides_overview"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_guides_reference_filter",
+     "changed_from": "desktop_guides_overview",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 3 of 6 · Reference",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_guides_overview",
+    "mobile_guides_overview",
+    "desktop_guides_installation",
+    "desktop_guides_example",
+    "desktop_reference_configuration",
+    "desktop_guides_reference_filter"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_guides_overview",
+    "desktop_guides_installation",
+    "desktop_reference_configuration"
+   ],
+   "completion_text_signals": [
+    "Starlight Docs",
+    "Browse the docs",
+    "Getting started overview",
+    "Configuration reference",
+    "Showing"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Starlight Docs",
+    "Welcome",
+    "Next steps"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_guides_overview",
+    "desktop_reference_configuration"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "{{",
+    "Lorem ipsum",
+    "TODO:"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "examples/basics/src/components/DocsSectionBrowser.astro",
+     "examples/basics/src/components/PageTitle.astro",
+     "examples/basics/src/components/dsb.js",
+     "examples/basics/src/components/dsb.css",
+     "examples/basics/src/components/dsb-routes.js"
+    ],
+    "should_preserve": [
+     "examples/basics/astro.config.mjs",
+     "examples/basics/src/content.config.ts",
+     "examples/basics/src/content/docs/index.mdx",
+     "examples/basics/src/content/docs/guides/example.md",
+     "examples/basics/src/content/docs/reference/configuration.md"
+    ]
+   }
+  }
+ ]
+}

@@ -1,0 +1,249 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_shadcn__next-contentlayer__5b32397c2034__reader_path_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_fieldbook_component",
+    "mobile_fieldbook_component",
+    "tablet_fieldbook",
+    "desktop_fieldbook_filter",
+    "desktop_fieldbook_estuary",
+    "desktop_fieldbook_all_reset",
+    "mobile_fieldbook_filter",
+    "desktop_about",
+    "desktop_home_feed"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_fieldbook_component",
+    "desktop_fieldbook_filter",
+    "desktop_about"
+   ],
+   "reference_text_signals": [
+    "Tidewatch",
+    "Fieldbook",
+    "Reading the tide table",
+    "Walking the wrack line",
+    "Estuary weather watch",
+    "Salt-marsh transects",
+    "A first shore-walk kit"
+   ],
+   "visible_text_states": [
+    "desktop_fieldbook_component",
+    "desktop_fieldbook_filter"
+   ],
+   "visible_text_signals": [
+    "All entries",
+    "Showing 2 of 6"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_fieldbook_filter",
+    "desktop_fieldbook_estuary",
+    "desktop_fieldbook_all_reset",
+    "mobile_fieldbook_filter"
+   ],
+   "responsive_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "mobile_fieldbook_component",
+    "mobile_fieldbook_filter",
+    "tablet_fieldbook"
+   ],
+   "asset_path_signals": [
+    "blog-post-1.jpg",
+    "blog-post-2.jpg",
+    "blog-post-3.jpg"
+   ],
+   "asset_path_states": [
+    "desktop_fieldbook_component"
+   ],
+   "min_asset_path_signals": 3,
+   "asset_signal_states": [
+    "desktop_fieldbook_component"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_fieldbook_component"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_image_count": 0,
+   "min_link_count": 2,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "reference_overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_fieldbook_component",
+    "mobile_fieldbook_component",
+    "tablet_fieldbook",
+    "desktop_fieldbook_filter",
+    "desktop_fieldbook_estuary",
+    "desktop_fieldbook_all_reset",
+    "mobile_fieldbook_filter",
+    "desktop_about",
+    "desktop_home_feed"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "/_next/static",
+    "data:"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fieldbook_component",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fieldbook_component",
+     "text_contains": "All entries",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fieldbook_component",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_fieldbook_component",
+     "tag": "button",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_about",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "nav-link",
+     "text_contains": "Fieldbook",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_fieldbook_component",
+     "class_contains": "nav-link",
+     "text_contains": "Fieldbook",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_fieldbook_component",
+     "mobile_fieldbook_component"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_fieldbook_filter",
+     "changed_from": "desktop_fieldbook_component",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_fieldbook_component",
+    "mobile_fieldbook_component",
+    "tablet_fieldbook",
+    "desktop_fieldbook_filter",
+    "desktop_fieldbook_estuary",
+    "desktop_fieldbook_all_reset",
+    "mobile_fieldbook_filter",
+    "desktop_about",
+    "desktop_home_feed"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_fieldbook_component",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Tidewatch",
+    "Fieldbook",
+    "Reading the tide table",
+    "Walking the wrack line",
+    "Estuary weather watch",
+    "A first shore-walk kit"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Tidewatch",
+    "coastal field journal"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_fieldbook_component",
+    "desktop_about"
+   ],
+   "forbidden_text_patterns": [
+    "REPLACE_ME",
+    "TODO_FIXME",
+    "{{",
+    "Cheatsheet",
+    "Back to home"
+   ]
+  }
+ ]
+}

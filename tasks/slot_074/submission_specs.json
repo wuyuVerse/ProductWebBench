@@ -1,0 +1,216 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themewagon__dockit__d7847a4f1912__docs_path_picker_interaction",
+   "text_signal_states": [
+    "desktop_overview"
+   ],
+   "reference_text_signals": [
+    "Choose your install path",
+    "Node package manager",
+    "Fast, disk-efficient",
+    "Workspaces friendly",
+    "Zero local toolchain"
+   ],
+   "interaction_states": [
+    "desktop_overview_docker"
+   ],
+   "responsive_states": [
+    "mobile_overview"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "_astro/",
+    "/dockit/"
+   ],
+   "asset_path_states": [
+    "desktop_overview"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_overview",
+    "mobile_overview",
+    "tablet_overview",
+    "desktop_overview_docker",
+    "desktop_quickstart",
+    "desktop_navigation"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_anchor_states": [
+    "desktop_overview",
+    "desktop_home"
+   ],
+   "mean_luminance_tolerance": 6.0,
+   "min_palette_overlap": 1,
+   "dom_assertions": [
+    {
+     "state": "desktop_overview",
+     "class_contains": "path-picker__seg",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_overview",
+     "class_contains": "path-picker__readout",
+     "text_contains": "Choose",
+     "min_count": 0
+    },
+    {
+     "state": "mobile_overview",
+     "class_contains": "path-picker__seg",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_overview",
+     "class_contains": "doc-quicknav__link",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_quickstart",
+     "class_contains": "doc-quicknav__link",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_navigation",
+     "class_contains": "doc-quicknav__link",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_overview",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_overview",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_overview",
+     "mobile_overview"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_overview_docker",
+     "changed_from": "desktop_overview",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "path-picker__readout",
+      "text_contains": "Reading: Docker",
+      "min_count": 1
+     }
+    }
+   ],
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_overview",
+    "mobile_overview",
+    "tablet_overview",
+    "desktop_overview_docker",
+    "desktop_quickstart",
+    "desktop_navigation"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_overview",
+    "mobile_overview",
+    "tablet_overview",
+    "desktop_overview_docker",
+    "desktop_quickstart",
+    "desktop_navigation"
+   ],
+   "visible_text_states": [
+    "desktop_overview"
+   ],
+   "visible_text_signals": [
+    "Choose your install path",
+    "Node package manager"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "completion_states": [
+    "desktop_overview"
+   ],
+   "completion_text_signals": [
+    "Choose your install path",
+    "Node package manager",
+    "Fast, disk-efficient",
+    "Workspaces friendly",
+    "Zero local toolchain"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Getting Started",
+    "DocKit"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "TODO",
+    "PLACEHOLDER"
+   ]
+  }
+ ]
+}

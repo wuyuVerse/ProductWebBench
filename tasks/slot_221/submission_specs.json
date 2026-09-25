@@ -1,0 +1,266 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_Banana021s__Gallery-Template__971a38f77833__curated_collection_section_restyle",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_collection_panel",
+    "tablet_collection_panel",
+    "mobile_collection_panel",
+    "desktop_dropdown_topic",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "mobile_dropdown_nature",
+    "desktop_masonry_hover"
+   ],
+   "text_signal_states": [
+    "desktop_collection_panel",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space"
+   ],
+   "reference_text_signals": [
+    "CURATED COLLECTION RAIL",
+    "Design Continuity Edition",
+    "Masonry rhythm",
+    "Artist attribution",
+    "Green accent system",
+    "Curated collection rhythm",
+    "Now curating:",
+    "wallpapers"
+   ],
+   "visible_text_states": [
+    "desktop_collection_panel",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "tablet_collection_panel",
+    "mobile_collection_panel"
+   ],
+   "visible_text_signals": [
+    "CURATED COLLECTION RAIL",
+    "Design Continuity Edition",
+    "Masonry rhythm",
+    "Artist attribution",
+    "Green accent system",
+    "Curated collection rhythm"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 5,
+   "interaction_states": [
+    "desktop_dropdown_topic",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "mobile_dropdown_nature",
+    "desktop_masonry_hover"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_dropdown_nature",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Now curating: Nature Images",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_dropdown_space",
+     "changed_from": "desktop_initial",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Now curating: Space Images",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_collection_panel",
+    "mobile_dropdown_nature"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/wallpapers",
+    "img/profile"
+   ],
+   "asset_path_states": [
+    "desktop_collection_panel",
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_collection_panel",
+     "tablet_collection_panel",
+     "mobile_collection_panel"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h2",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "img",
+     "min_count": 6
+    },
+    {
+     "state": "desktop_collection_panel",
+     "tag": "section",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_collection_panel",
+     "tag": "button",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_collection_panel",
+     "text_contains": "Curated collection rhythm",
+     "min_count": 2
+    },
+    {
+     "state": "mobile_collection_panel",
+     "text_contains": "Curated collection rhythm",
+     "min_count": 2
+    },
+    {
+     "state": "mobile_initial",
+     "tag": "header",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_masonry_hover",
+     "tag": "img",
+     "min_count": 6
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_collection_panel",
+    "tablet_collection_panel",
+    "mobile_collection_panel",
+    "desktop_dropdown_topic",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "mobile_dropdown_nature",
+    "desktop_masonry_hover"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_collection_panel",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_collection_panel",
+    "tablet_collection_panel",
+    "mobile_collection_panel",
+    "desktop_dropdown_topic",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "mobile_dropdown_nature",
+    "desktop_masonry_hover"
+   ],
+   "completion_states": [
+    "desktop_collection_panel",
+    "desktop_dropdown_nature",
+    "desktop_dropdown_space",
+    "tablet_collection_panel",
+    "mobile_collection_panel",
+    "desktop_masonry_hover"
+   ],
+   "completion_text_signals": [
+    "CURATED COLLECTION RAIL",
+    "Design Continuity Edition",
+    "Masonry rhythm",
+    "Artist attribution",
+    "Green accent system",
+    "Curated collection rhythm",
+    "Now curating:",
+    "All images"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 8,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_dropdown_nature",
+    "desktop_masonry_hover"
+   ],
+   "regression_text_signals": [
+    "All images",
+    "All Images",
+    "Topic Images",
+    "Nature Images",
+    "NFT Images",
+    "Space Images"
+   ],
+   "forbidden_text_patterns": [
+    "TODO collection rail",
+    "placeholder gallery",
+    "fake gallery screenshot",
+    "external image feed",
+    "backend image service",
+    "dummy category selector",
+    "coming soon gallery",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

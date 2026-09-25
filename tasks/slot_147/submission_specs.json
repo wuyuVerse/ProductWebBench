@@ -1,0 +1,202 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_Creative-Md-Arif__Ecommerce-website__384dde1067c1__cart_review_page_repair",
+      "reference_states": [
+        "desktop_shop",
+        "mobile_shop",
+        "tablet_shop",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_shop_formal"
+      ],
+      "submission_states": [
+        "desktop_shop",
+        "mobile_shop",
+        "tablet_shop",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_shop_formal"
+      ],
+      "interaction_states": [
+        "desktop_shop_formal"
+      ],
+      "completion_states": [
+        "desktop_shop"
+      ],
+      "completion_text_signals": [
+        "Shop by category",
+        "Showing 16 of 16",
+        "Shirts",
+        "Formal",
+        "Casual"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 5,
+      "visible_text_states": [
+        "desktop_shop"
+      ],
+      "visible_text_signals": [
+        "Shop by category",
+        "Shirts",
+        "Formal"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 3,
+      "regression_states": [
+        "desktop_shop"
+      ],
+      "regression_text_signals": [
+        "Shop by category",
+        "Shop"
+      ],
+      "forbidden_states": [
+        "desktop_shop",
+        "mobile_shop",
+        "tablet_shop",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_shop_formal"
+      ],
+      "forbidden_text_patterns": [
+        "TODO",
+        "shf broken",
+        "FIXME"
+      ],
+      "responsive_states": [
+        "desktop_shop",
+        "mobile_shop",
+        "tablet_shop",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_shop_formal"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 150,
+      "min_screenshot_bytes": 8000,
+      "asset_signal_states": [
+        "desktop_shop"
+      ],
+      "asset_path_signals": [
+        "image/product/"
+      ],
+      "min_asset_path_signals": 1,
+      "overflow_tolerance_px": 24,
+      "no_horizontal_overflow": true,
+      "responsive_overflow_states": [
+        "mobile_shop",
+        "desktop_shop"
+      ],
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_shop",
+        "mobile_shop",
+        "tablet_shop",
+        "desktop_home",
+        "mobile_home",
+        "desktop_about",
+        "desktop_shop_formal"
+      ],
+      "console_error_allowlist": [
+        "favicon",
+        "fontawesome",
+        "kit.fontawesome",
+        "cdnjs",
+        "gstatic",
+        "fonts.googleapis"
+      ],
+      "dom_assertions": [
+        {
+          "state": "desktop_shop",
+          "text_contains": "Shop by category",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "text_contains": "Shop by category",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_about",
+          "text_contains": "Shop by category",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop",
+          "text_contains": "Shirts",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop",
+          "text_contains": "Formal",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop",
+          "text_contains": "Casual",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop",
+          "text_contains": "Outerwear",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_shop",
+          "text_contains": "of 16",
+          "min_count": 1
+        }
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_shop"
+        ],
+        "metrics": {
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_shop_formal",
+          "changed_from": "desktop_shop",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 4 of 16",
+            "min_count": 1
+          }
+        }
+      ],
+      "visual_anchor_states": [
+        "desktop_shop",
+        "desktop_home"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1
+    }
+  ]
+}

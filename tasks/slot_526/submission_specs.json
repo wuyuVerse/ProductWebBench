@@ -1,0 +1,61 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_themewagon__material-tailwind-dashboard-react__b1114fa925ef__reports",
+   "reference_states": ["desktop_reports", "mobile_reports"],
+   "submission_states": ["desktop_reports", "mobile_reports"],
+   "interaction_states": ["desktop_reports_yearly"],
+   "completion_states": ["desktop_reports"],
+   "completion_text_signals": ["Reports Overview", "Performance Summary", "Top Traffic Channels"],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 3,
+   "visible_text_states": ["desktop_reports"],
+   "visible_text_signals": ["Performance Summary"],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "regression_states": ["desktop_reports"],
+   "regression_text_signals": [],
+   "forbidden_states": ["desktop_reports"],
+   "forbidden_text_patterns": ["TODO", "FIXME", "Not Found"],
+   "responsive_states": ["mobile_reports"],
+   "required_state_artifacts": ["screenshot.png", "metrics.json", "dom.html", "console.json"],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": ["mobile_reports"],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": ["desktop_reports", "mobile_reports"],
+   "console_error_allowlist": ["favicon", "google", "gstatic", "fonts", "cloudflare", "cdnjs", "nepcha", "creative-tim", "font-awesome", "fontawesome", "api.github.com", "github"],
+   "dom_assertions": [
+    {"state": "desktop_reports", "tag": "button", "text_contains": "Weekly", "min_count": 1},
+    {"state": "desktop_reports", "tag": "button", "text_contains": "Monthly", "min_count": 1},
+    {"state": "desktop_reports", "tag": "button", "text_contains": "Yearly", "min_count": 1},
+    {"state": "desktop_reports", "text_contains": "Performance Summary", "min_count": 1},
+    {"state": "desktop_reports", "text_contains": "Revenue", "min_count": 1},
+    {"state": "desktop_reports", "text_contains": "Conversion", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": ["desktop_reports"],
+    "metrics": {
+     "ssim": {"min_score": 0.55}
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_reports_yearly",
+     "require_interaction": true,
+     "changed_from": "desktop_reports",
+     "dom": {"text_contains": "Yearly Performance Summary", "min_count": 1}
+    }
+   ],
+   "visual_anchor_states": ["desktop_reports"],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

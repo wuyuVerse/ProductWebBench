@@ -1,0 +1,215 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__Interactive3DMallMap__0e41a531fac6__mall_visit_planner_page",
+   "reference_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_filter_all",
+    "desktop_filter_learn",
+    "mobile_filter_home",
+    "desktop_level1_open",
+    "desktop_apple_detail",
+    "desktop_sort_alpha",
+    "desktop_planner",
+    "mobile_planner",
+    "tablet_planner"
+   ],
+   "required_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_filter_all",
+    "desktop_filter_learn",
+    "mobile_filter_home",
+    "desktop_level1_open",
+    "desktop_apple_detail",
+    "desktop_sort_alpha",
+    "desktop_planner",
+    "mobile_planner",
+    "tablet_planner"
+   ],
+   "interaction_states": [
+    "desktop_filter_learn"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "tablet_home",
+    "mobile_home",
+    "desktop_filter_all",
+    "desktop_filter_learn",
+    "mobile_filter_home",
+    "desktop_level1_open",
+    "desktop_apple_detail",
+    "desktop_sort_alpha",
+    "desktop_planner",
+    "mobile_planner",
+    "tablet_planner"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_filter_home",
+    "tablet_home"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "img/planner-01.svg",
+    "planner-0"
+   ],
+   "asset_path_states": [
+    "desktop_planner"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "min_screenshot_bytes": 9000,
+   "min_canvas_screenshot_bytes": 9000,
+   "enforce_console_errors": {
+    "max_console_errors": 0,
+    "states": [
+     "desktop_home",
+     "tablet_home",
+     "mobile_home",
+     "desktop_filter_all",
+     "desktop_filter_learn",
+     "mobile_filter_home",
+     "desktop_level1_open",
+     "desktop_apple_detail",
+     "desktop_sort_alpha",
+     "desktop_planner",
+     "mobile_planner",
+     "tablet_planner"
+    ],
+    "allowlist": [
+     "favicon",
+     "_vercel",
+     "gtag",
+     "google-analytics",
+     "gtm"
+    ]
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "text_contains": "Wayfinding filter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "button",
+     "text_contains": "Learn & Create",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Showing 31 of 31 spaces",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner",
+     "text_contains": "Wayfinding filter",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_planner",
+     "tag": "button",
+     "text_contains": "Swap & Give",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_planner",
+     "text_contains": "Wayfinding filter",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_planner",
+     "text_contains": "Wayfinding filter",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_filter_learn",
+     "changed_from": "desktop_filter_all",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 7 of 31 spaces",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_filter_all",
+     "desktop_home"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_filter_all"
+   ],
+   "completion_states": [
+    "desktop_filter_all",
+    "desktop_home"
+   ],
+   "completion_text_signals": [
+    "Wayfinding filter",
+    "Showing 31 of 31 spaces",
+    "Nourish & Refresh",
+    "Learn & Create",
+    "Swap & Give",
+    "Rest & Recharge"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 5,
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_planner"
+   ],
+   "reference_text_signals": [
+    "Wayfinding filter",
+    "Learn & Create",
+    "Nourish & Refresh",
+    "Interactive Mall Map",
+    "Apple Heart",
+    "Mall visit planner"
+   ],
+   "visible_text_states": [
+    "desktop_filter_all"
+   ],
+   "visible_text_signals": [
+    "Wayfinding filter",
+    "Showing 31 of 31 spaces",
+    "Learn & Create",
+    "Swap & Give"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4
+  }
+ ]
+}

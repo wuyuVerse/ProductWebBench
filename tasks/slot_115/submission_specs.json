@@ -1,0 +1,211 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_once-ui-system__magic-portfolio__2a55890c38f1__work_discipline_filter_flow",
+   "reference_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "tablet_work",
+    "desktop_about",
+    "desktop_work_filter"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 200,
+   "min_link_count": 3,
+   "min_screenshot_bytes": 6000,
+   "overflow_tolerance_px": 24,
+   "text_signal_states": [
+    "desktop_work",
+    "desktop_work_filter",
+    "desktop_home",
+    "desktop_about"
+   ],
+   "reference_text_signals": [
+    "Wren Calloway",
+    "Filter work",
+    "All",
+    "Product",
+    "Design System",
+    "Automation",
+    "Open Source",
+    "Showing",
+    "projects",
+    "Projects"
+   ],
+   "completion_states": [
+    "desktop_work",
+    "desktop_work_filter",
+    "desktop_home",
+    "desktop_about"
+   ],
+   "completion_text_signals": [
+    "Filter work",
+    "Showing all 6 projects",
+    "Showing 2 of 6 \u00b7 Automation",
+    "Automation",
+    "Open Source"
+   ],
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_work",
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Wren Calloway",
+    "Projects",
+    "Filter work"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum",
+    "[fill",
+    "TODO",
+    "template_only"
+   ],
+   "visible_text_states": [
+    "desktop_work",
+    "desktop_home",
+    "desktop_about"
+   ],
+   "visible_text_signals": [
+    "Filter work",
+    "Showing",
+    "Automation"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_work_filter"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_work_filter",
+     "changed_from": "desktop_work",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "wfReadout",
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_work",
+    "tablet_home",
+    "tablet_work"
+   ],
+   "asset_signal_states": [
+    "desktop_work"
+   ],
+   "asset_path_signals": [
+    "/images/",
+    "cover",
+    "avatar"
+   ],
+   "min_asset_path_signals": 1,
+   "visual_regression": {
+    "states": [
+     "desktop_work",
+     "desktop_work_filter",
+     "mobile_work"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     },
+     "block_fidelity": {
+      "min_block_match": 0.1,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "class_contains": "wfTab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_about",
+     "class_contains": "wfTab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_work",
+     "class_contains": "wfTab",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Filter work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "text_contains": "Filter work",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_work",
+     "text_contains": "Projects",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "text_contains": "Wren Calloway",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "tablet_work",
+    "desktop_about",
+    "desktop_work_filter"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "mobile_home",
+    "desktop_work"
+   ],
+   "min_palette_overlap": 0,
+   "mean_luminance_tolerance": 65,
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_work",
+    "mobile_work",
+    "tablet_work",
+    "desktop_about",
+    "desktop_work_filter"
+   ]
+  }
+ ]
+}

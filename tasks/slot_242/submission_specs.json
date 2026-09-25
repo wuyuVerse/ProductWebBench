@@ -1,0 +1,206 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_TailGrids__play-tailwind__05f872b02662__launch_path_layout",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "desktop_pricing_yearly",
+    "desktop_pricing_page",
+    "mobile_pricing_page",
+    "mobile_nav_open"
+   ],
+   "text_signal_states": [
+    "desktop_initial",
+    "desktop_pricing_default"
+   ],
+   "reference_text_signals": [
+    "Awesome Pricing Plan",
+    "Monthly",
+    "Yearly"
+   ],
+   "visible_text_states": [
+    "desktop_pricing_default"
+   ],
+   "visible_text_signals": [
+    "Billing: Monthly"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "desktop_pricing_yearly",
+    "mobile_nav_open"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_pricing_default"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 300,
+   "min_image_count": 1,
+   "asset_path_signals": [
+    "assets/images/logo/logo",
+    "assets/images/favicon.png"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "class_contains": "plan-billing--home",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_default",
+     "text_contains": "Billing: Monthly",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_pricing_page",
+     "class_contains": "plan-billing--pricing",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_pricing_page",
+     "class_contains": "plan-billing--pricing",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_pricing_default",
+     "mobile_pricing_default"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_pricing_yearly",
+     "changed_from": "desktop_pricing_default",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "plan-billing__readout",
+      "text_contains": "Billing: Yearly",
+      "min_count": 1
+     }
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "desktop_pricing_yearly",
+    "desktop_pricing_page",
+    "mobile_pricing_page",
+    "mobile_nav_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_pricing_default"
+   ],
+   "mean_luminance_tolerance": 100,
+   "min_palette_overlap": 1,
+   "min_screenshot_bytes": 25000,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "tablet_initial",
+    "desktop_pricing_default",
+    "mobile_pricing_default",
+    "desktop_pricing_yearly",
+    "desktop_pricing_page",
+    "mobile_pricing_page",
+    "mobile_nav_open"
+   ],
+   "completion_states": [
+    "desktop_pricing_default",
+    "desktop_pricing_page"
+   ],
+   "completion_text_signals": [
+    "Monthly",
+    "Yearly",
+    "Billing",
+    "Awesome Pricing Plan"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "Awesome Pricing Plan",
+    "Our Creative Team"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_pricing_default",
+    "mobile_pricing_default"
+   ],
+   "forbidden_text_patterns": [
+    "Benchmarks Cheatsheet",
+    "Quorra Cheatsheet",
+    "Play Pro admin console"
+   ]
+  }
+ ]
+}

@@ -1,0 +1,224 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_themefisher__godocs-bulma__7ec287748456__docs_health_section",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_single",
+    "mobile_single",
+    "tablet_single",
+    "desktop_list",
+    "desktop_single_notices",
+    "mobile_nav_open"
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_single",
+    "mobile_single",
+    "tablet_single",
+    "desktop_list",
+    "desktop_single_notices",
+    "mobile_nav_open"
+   ],
+   "text_signal_states": [
+    "desktop_single"
+   ],
+   "reference_text_signals": [
+    "On this page",
+    "Reading:",
+    "Overview",
+    "Notices",
+    "Tables"
+   ],
+   "visible_text_states": [
+    "desktop_single"
+   ],
+   "visible_text_signals": [
+    "On this page",
+    "Overview",
+    "Notices",
+    "Tables"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 4,
+   "completion_states": [
+    "desktop_single"
+   ],
+   "completion_text_signals": [
+    "On this page",
+    "Overview",
+    "Emphasis",
+    "Links",
+    "Lists",
+    "Notices"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_single"
+   ],
+   "regression_text_signals": [
+    "Elements",
+    "Blockquote"
+   ],
+   "interaction_states": [
+    "desktop_single_notices"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_single",
+    "tablet_single"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 120,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/"
+   ],
+   "asset_path_states": [
+    "desktop_single"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Overview",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Notices",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_list",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Overview",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_list",
+     "text_contains": "On this page",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_single",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Overview",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_single",
+     "tag": "a",
+     "class_contains": "nav-link",
+     "text_contains": "Tables",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_single",
+     "text_contains": "Reading:",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_single_notices",
+     "changed_from": "desktop_single",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Reading: Notices",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "mobile_single",
+     "desktop_single"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "compute-pressure"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_single",
+    "mobile_single",
+    "tablet_single",
+    "desktop_list",
+    "desktop_single_notices",
+    "mobile_nav_open"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_single",
+    "mobile_single",
+    "tablet_single",
+    "desktop_list",
+    "desktop_single_notices",
+    "mobile_nav_open"
+   ],
+   "forbidden_text_patterns": [
+    "Cheatsheet",
+    "lorem ipsum cheatsheet"
+   ],
+   "visual_anchor_states": [
+    "desktop_single",
+    "desktop_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

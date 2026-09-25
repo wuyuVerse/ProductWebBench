@@ -1,0 +1,190 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_codrops__InteractiveLandscape__8d840044b3e1__landscape_palette_atlas_layout",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_atlas",
+    "desktop_atlas",
+    "palette_pick",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "text_signal_states": [
+    "desktop_atlas",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "reference_text_signals": [
+    "Palette atlas",
+    "Interactive Landscape",
+    "Version 5.5",
+    "Upgrade"
+   ],
+   "visible_text_states": [
+    "desktop_atlas"
+   ],
+   "visible_text_signals": [
+    "Palette atlas",
+    "Now painting"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_atlas"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 40,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "min_canvas_screenshot_bytes": 3000,
+   "canvas_screenshot_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_atlas",
+    "desktop_atlas",
+    "palette_pick",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_atlas",
+    "desktop_atlas",
+    "palette_pick",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "fonts/barlow",
+    ".woff2"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_atlas"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 0,
+   "dom_assertions": [
+    {
+     "state": "desktop_atlas",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_atlas",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo3",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_atlas",
+     "class_contains": "palette-atlas__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo2",
+     "class_contains": "palette-atlas__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_demo3",
+     "class_contains": "palette-atlas__title",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_atlas",
+     "mobile_atlas"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_states": [
+    "palette_pick"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "palette_pick",
+     "changed_from": "desktop_atlas",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "palette-atlas__readout",
+      "text_contains": "palette 2 of 4",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_atlas",
+    "desktop_atlas",
+    "palette_pick",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "completion_states": [
+    "desktop_atlas",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "completion_text_signals": [
+    "Palette atlas",
+    "Shader palette atlas",
+    "Now painting",
+    "Interactive Landscape",
+    "Upgrade"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "regression_states": [
+    "desktop_atlas",
+    "desktop_demo2",
+    "desktop_demo3"
+   ],
+   "regression_text_signals": [
+    "demo 1",
+    "demo 2",
+    "demo 3"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem ipsum",
+    "lorem ipsum"
+   ]
+  }
+ ]
+}

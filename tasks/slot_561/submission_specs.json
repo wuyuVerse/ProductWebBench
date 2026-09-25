@@ -1,0 +1,182 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_sunil9813__Education-Website-Using-ReactJS__b2f7e1db1f99__events",
+   "reference_states": [
+    "desktop_events",
+    "mobile_events",
+    "desktop_about"
+   ],
+   "submission_states": [
+    "desktop_events",
+    "mobile_events"
+   ],
+   "interaction_states": [
+    "desktop_events_seminar"
+   ],
+   "completion_states": [
+    "desktop_events"
+   ],
+   "completion_text_signals": [
+    "Campus Events",
+    "Upcoming Events",
+    "React Fundamentals Workshop",
+    "Workshops",
+    "Seminars",
+    "Bootcamps"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "visible_text_states": [
+    "desktop_events"
+   ],
+   "visible_text_signals": [
+    "Campus Events",
+    "Upcoming Events"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_events"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_events"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_events"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_events"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_events",
+    "mobile_events"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts",
+    "fontawesome",
+    "use.fontawesome.com"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_events",
+     "tag": "h1",
+     "text_contains": "Campus Events",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "h1",
+     "text_contains": "Upcoming Events",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "p",
+     "text_contains": "Browse our upcoming",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "button",
+     "text_contains": "Workshops",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "button",
+     "text_contains": "Seminars",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "button",
+     "text_contains": "Bootcamps",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "h3",
+     "text_contains": "React Fundamentals Workshop",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "a",
+     "text_contains": "All Courses",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_events",
+     "tag": "h3",
+     "text_contains": "Explore",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "a",
+     "text_contains": "All Courses",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_about",
+     "tag": "h3",
+     "text_contains": "Explore",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_events"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_events_seminar",
+     "require_interaction": true,
+     "changed_from": "desktop_events",
+     "dom": {
+      "tag": "h3",
+      "text_contains": "AI Research Seminar",
+      "min_count": 1
+     }
+    }
+   ],
+   "visual_anchor_states": [
+    "desktop_events"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}

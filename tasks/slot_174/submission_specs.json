@@ -1,0 +1,281 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_mdrathik__nuxtjs-tailwind-blog__303d827594bf__studio_bench_footer_repair",
+   "reference_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_article",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_projects",
+    "desktop_footer_article",
+    "toggle_bench_home"
+   ],
+   "text_signal_states": [
+    "desktop_projects"
+   ],
+   "reference_text_signals": [
+    "The Fold & Press",
+    "PRESS CATALOGUE",
+    "Studio catalogue",
+    "Showing 6 of 6"
+   ],
+   "visible_text_states": [
+    "desktop_projects"
+   ],
+   "visible_text_signals": [
+    "PRESS CATALOGUE"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 1,
+   "interaction_states": [
+    "toggle_bench_home"
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "tablet_initial",
+    "mobile_projects",
+    "mobile_footer_home"
+   ],
+   "asset_path_signals": [
+    "press-cover-registration",
+    "press-cover-binding",
+    "author.png"
+   ],
+   "asset_path_states": [
+    "desktop_article",
+    "desktop_blog",
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 2,
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_blog",
+    "desktop_projects"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1,
+   "palette_compare_limit": 6,
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "min_screenshot_bytes": 12000,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_article",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_projects",
+    "desktop_footer_article",
+    "toggle_bench_home"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "footer",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "tag": "article",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "img",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_article",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Bookwork",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Stationery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "Editions",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_projects",
+     "text_contains": "PRESS CATALOGUE",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "Bookwork",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "Stationery",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "Editions",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_blog",
+     "text_contains": "PRESS CATALOGUE",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_projects",
+     "mobile_projects"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "toggle_bench_home",
+     "changed_from": "desktop_footer_home",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_blog",
+    "mobile_blog",
+    "desktop_article",
+    "desktop_projects",
+    "mobile_projects",
+    "desktop_footer_home",
+    "mobile_footer_home",
+    "desktop_footer_projects",
+    "desktop_footer_article",
+    "toggle_bench_home"
+   ],
+   "completion_states": [
+    "desktop_initial",
+    "desktop_projects",
+    "desktop_footer_home"
+   ],
+   "completion_text_signals": [
+    "The Fold & Press",
+    "PRESS CATALOGUE",
+    "Studio catalogue",
+    "Showing 6 of 6",
+    "Bookwork",
+    "Stationery"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 4,
+   "regression_states": [
+    "desktop_initial"
+   ],
+   "regression_text_signals": [
+    "The Fold & Press",
+    "Marren Vale",
+    "press operator"
+   ],
+   "forbidden_states": [
+    "desktop_initial",
+    "desktop_blog",
+    "desktop_article"
+   ],
+   "forbidden_text_patterns": [
+    "Lorem Ipsum",
+    "lorem ipsum",
+    "kohlrabi",
+    "Mondongo",
+    "Md Solaiman",
+    "Md Rathik",
+    "FANG",
+    "REPLACE_ME",
+    "{{"
+   ],
+   "source_change_expectations": {
+    "must_touch_one_of": [
+     "components/PressCatalogue.vue",
+     "data/catalogue-surfaces.js",
+     "assets/css/main.css"
+    ],
+    "should_preserve": [
+     "pages/blog/index.vue",
+     "pages/projects.vue",
+     "pages/index.vue",
+     "layouts/default.vue",
+     "content/articles"
+    ]
+   }
+  }
+ ]
+}

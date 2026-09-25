@@ -1,0 +1,252 @@
+{
+  "tasks": [
+    {
+      "task_id": "dev_sujoyduttajad__Landing-Page-React__f72bde06dbc2__launch_path_planner",
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_connectors",
+        "mobile_connectors",
+        "tablet_connectors",
+        "desktop_connectors_ads"
+      ],
+      "text_signal_states": [
+        "desktop_connectors",
+        "mobile_connectors",
+        "tablet_connectors"
+      ],
+      "reference_text_signals": [
+        "Connectors",
+        "Plug ULTRA into the marketing stack",
+        "Salesforce CRM Sync",
+        "HubSpot Campaign Bridge",
+        "Google Ads Import",
+        "Meta Lead Ads Intake",
+        "Slack Alert Hooks",
+        "Zapier Automation",
+        "Every ULTRA connector uses the same secure lead pipeline"
+      ],
+      "visible_text_states": [
+        "desktop_connectors"
+      ],
+      "visible_text_signals": [
+        "Connectors",
+        "Salesforce CRM Sync",
+        "HubSpot Campaign Bridge",
+        "Google Ads Import"
+      ],
+      "require_all_visible_text_signals": true,
+      "min_visible_text_signals": 4,
+      "interaction_states": [
+        "desktop_connectors_ads"
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_connectors",
+        "tablet_connectors"
+      ],
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "min_text_length": 300,
+      "min_image_count": 0,
+      "asset_path_signals": [
+        "svg-1",
+        "svg-2",
+        "svg-3",
+        "profile"
+      ],
+      "asset_path_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home"
+      ],
+      "min_asset_path_signals": 4,
+      "overflow_tolerance_px": 24,
+      "enforce_console_errors": true,
+      "max_console_errors": 0,
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_connectors",
+        "mobile_connectors",
+        "tablet_connectors",
+        "desktop_connectors_ads"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "visual_regression": {
+        "states": [
+          "desktop_connectors",
+          "mobile_connectors",
+          "desktop_connectors_ads"
+        ],
+        "metrics": {
+          "ssim": {
+            "min_score": 0.55
+          },
+          "block_fidelity": {
+            "min_block_match": 0.8,
+            "max_color_delta_e": 15
+          }
+        }
+      },
+      "interaction_assertions": [
+        {
+          "state": "desktop_connectors_ads",
+          "changed_from": "desktop_connectors",
+          "require_interaction": true,
+          "dom": {
+            "text_contains": "Showing 2 of 6",
+            "min_count": 1
+          }
+        }
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_connectors",
+        "mobile_connectors",
+        "tablet_connectors",
+        "desktop_connectors_ads"
+      ],
+      "completion_states": [
+        "desktop_connectors"
+      ],
+      "completion_text_signals": [
+        "Connectors",
+        "Plug ULTRA into the marketing stack",
+        "Salesforce CRM Sync",
+        "HubSpot Campaign Bridge",
+        "Google Ads Import",
+        "Meta Lead Ads Intake",
+        "Slack Alert Hooks",
+        "Zapier Automation",
+        "Every ULTRA connector uses the same secure lead pipeline"
+      ],
+      "require_all_completion_signals": true,
+      "min_completion_text_signals": 9,
+      "regression_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home"
+      ],
+      "regression_text_signals": [
+        "ULTRA",
+        "Marketing Agency",
+        "Our Services",
+        "Starter Pack",
+        "Gold Rush",
+        "Diamond Kings"
+      ],
+      "forbidden_text_patterns": [
+        "Cheatsheet",
+        "ULTRA Connectors Cheatsheet",
+        "Back to home"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_connectors"
+      ],
+      "mean_luminance_tolerance": 95,
+      "min_palette_overlap": 1,
+      "dom_assertions": [
+        {
+          "state": "desktop_connectors",
+          "tag": "h1",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "button",
+          "text_contains": "All",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "button",
+          "text_contains": "CRM",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "button",
+          "text_contains": "Ads",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "button",
+          "text_contains": "Automation",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_connectors",
+          "tag": "a",
+          "text_contains": "Connectors",
+          "min_count": 1
+        },
+        {
+          "state": "mobile_connectors",
+          "tag": "h3",
+          "min_count": 6
+        },
+        {
+          "state": "mobile_connectors",
+          "tag": "a",
+          "text_contains": "Connectors",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "nav",
+          "min_count": 1
+        },
+        {
+          "state": "desktop_home",
+          "tag": "img",
+          "min_count": 4
+        },
+        {
+          "state": "desktop_home",
+          "tag": "a",
+          "text_contains": "Connectors",
+          "min_count": 1
+        },
+        {
+          "state": "tablet_home",
+          "tag": "a",
+          "text_contains": "Connectors",
+          "min_count": 1
+        }
+      ]
+    }
+  ]
+}

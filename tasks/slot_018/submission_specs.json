@@ -1,0 +1,265 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_NextAdminHQ__nextjs-admin-dashboard__8913468e1d00__signal_desk_window_workflow",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month",
+    "desktop_tables_route",
+    "desktop_charts_route",
+    "tablet_signal_focus",
+    "mobile_signal_focus"
+   ],
+   "text_signal_states": [
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month"
+   ],
+   "reference_text_signals": [
+    "Signal desk",
+    "Open incidents",
+    "Sync latency",
+    "Live sessions",
+    "Error rate",
+    "Reading window:"
+   ],
+   "visible_text_states": [
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month",
+    "desktop_tables_route",
+    "tablet_signal_focus",
+    "mobile_signal_focus"
+   ],
+   "visible_text_signals": [
+    "Signal desk",
+    "Open incidents",
+    "Sync latency",
+    "Live sessions",
+    "Error rate",
+    "Reading window:"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_signal_week",
+    "desktop_signal_month"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_signal_week",
+     "changed_from": "desktop_signal_focus",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Reading window: 7-day",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_signal_month",
+     "changed_from": "desktop_signal_focus",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Reading window: 30-day",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_signal_focus"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "/images/",
+    "logo"
+   ],
+   "asset_path_states": [
+    "desktop_initial"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_signal_focus",
+     "mobile_signal_focus",
+     "tablet_signal_focus"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Signal desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "text_contains": "Open incidents",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "text_contains": "Sync latency",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "text_contains": "Live sessions",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "text_contains": "Error rate",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "tag": "button",
+     "text_contains": "Today",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "tag": "button",
+     "text_contains": "7-day",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_signal_focus",
+     "tag": "button",
+     "text_contains": "30-day",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_tables_route",
+     "text_contains": "Signal desk",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts_route",
+     "text_contains": "Signal desk",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "text_contains": "Signal desk",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script",
+    "_rsc=",
+    "/profile",
+    "/pages/settings"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month",
+    "desktop_tables_route",
+    "desktop_charts_route",
+    "tablet_signal_focus",
+    "mobile_signal_focus"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_signal_focus",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month",
+    "desktop_tables_route",
+    "desktop_charts_route",
+    "tablet_signal_focus",
+    "mobile_signal_focus"
+   ],
+   "completion_states": [
+    "desktop_signal_focus",
+    "desktop_signal_week",
+    "desktop_signal_month",
+    "desktop_tables_route",
+    "tablet_signal_focus",
+    "mobile_signal_focus"
+   ],
+   "completion_text_signals": [
+    "Signal desk",
+    "Open incidents",
+    "Sync latency",
+    "Live sessions",
+    "Error rate",
+    "Reading window:"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_tables_route",
+    "desktop_charts_route"
+   ],
+   "regression_text_signals": [
+    "Dashboard",
+    "Total Views",
+    "Total Profit",
+    "Tables",
+    "Payments Overview"
+   ],
+   "forbidden_text_patterns": [
+    "TODO signal desk",
+    "placeholder signal",
+    "fake incident screenshot",
+    "external signal widget",
+    "backend signal service",
+    "dummy range selector",
+    "coming soon signal"
+   ]
+  }
+ ]
+}

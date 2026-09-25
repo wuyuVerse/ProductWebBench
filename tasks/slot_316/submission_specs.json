@@ -1,0 +1,214 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_JugglerX__hugo-whisper-theme__511dcd7dca62__reading_flow_state",
+   "reference_states": [
+    "desktop_home",
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_setup",
+    "desktop_install_cli",
+    "desktop_anchor_regression"
+   ],
+   "text_signal_states": [
+    "desktop_home",
+    "desktop_initial",
+    "desktop_finder",
+    "desktop_anchor_regression"
+   ],
+   "reference_text_signals": [
+    "Meridian Vault",
+    "Browse the handbook",
+    "Handbook tracks",
+    "Install the CLI"
+   ],
+   "visible_text_states": [
+    "desktop_finder"
+   ],
+   "visible_text_signals": [
+    "Browse the handbook",
+    "Showing 5 of 5"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 2,
+   "interaction_states": [
+    "desktop_finder_setup"
+   ],
+   "responsive_states": [
+    "tablet_initial",
+    "mobile_initial",
+    "tablet_finder",
+    "mobile_finder"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 250,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "images/terminal.gif"
+   ],
+   "asset_path_states": [
+    "desktop_home"
+   ],
+   "min_asset_path_signals": 1,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_setup",
+    "desktop_install_cli",
+    "desktop_anchor_regression"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "visual_regression": {
+    "states": [
+     "mobile_finder"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_finder",
+     "class_contains": "docs-finder",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "docs-finder__chip",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "docs-finder__card",
+     "min_count": 5
+    },
+    {
+     "state": "desktop_finder",
+     "class_contains": "docs-finder__readout",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_install_cli",
+     "class_contains": "docs-finder-nav__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "docs-finder-nav__title",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_anchor_regression",
+     "class_contains": "docs-menu",
+     "min_count": 1
+    }
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_finder_setup",
+     "changed_from": "desktop_finder",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "docs-finder__readout",
+      "text_contains": "Showing 2 of 5",
+      "min_count": 1
+     }
+    }
+   ],
+   "submission_states": [
+    "desktop_home",
+    "desktop_initial",
+    "tablet_initial",
+    "mobile_initial",
+    "desktop_finder",
+    "tablet_finder",
+    "mobile_finder",
+    "desktop_finder_setup",
+    "desktop_install_cli",
+    "desktop_anchor_regression"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "completion_text_signals": [
+    "Meridian Vault",
+    "Browse the handbook",
+    "Handbook tracks",
+    "Install the CLI",
+    "Set Up the Vault",
+    "Showing 5 of 5"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 6,
+   "regression_states": [
+    "desktop_home"
+   ],
+   "regression_text_signals": [
+    "Meridian Vault"
+   ],
+   "forbidden_text_patterns": [
+    "Hugo Whisper",
+    "Whisper Theme",
+    "Whisper",
+    "Zerostatic Themes",
+    "Zerostatic",
+    "zerostatic",
+    "Free Hugo theme",
+    "Lorem ipsum",
+    "lorem ipsum"
+   ],
+   "forbidden_text_states": [
+    "desktop_home",
+    "desktop_initial",
+    "desktop_finder",
+    "desktop_anchor_regression"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_finder"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "min_canvas_screenshot_bytes": 0
+  }
+ ]
+}

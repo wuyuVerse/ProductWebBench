@@ -1,0 +1,271 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_kellymilligan__codrops-oct-2021-final__bb7683f53a4d__webgl_lab_chrome_layout_restyle",
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 80,
+   "min_image_count": 0,
+   "overflow_tolerance_px": 24,
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_controls",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression",
+    "desktop_preset_diamond",
+    "desktop_specimen",
+    "desktop_material",
+    "mobile_specimen"
+   ],
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "min_canvas_screenshot_bytes": 200000,
+   "canvas_screenshot_states": [
+    "desktop_home",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression"
+   ],
+   "dom_assertions": [
+    {
+     "state": "desktop_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "tag": "a",
+     "min_count": 2
+    },
+    {
+     "state": "mobile_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_home",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "tablet_home",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_controls",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_canvas_regression",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_canvas_regression",
+     "tag": "canvas",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "preset-hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_home",
+     "class_contains": "preset-hud__strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_specimen",
+     "class_contains": "preset-hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_specimen",
+     "class_contains": "preset-hud__strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_specimen",
+     "text_contains": "Material presets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_material",
+     "class_contains": "preset-hud",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_material",
+     "class_contains": "preset-hud__strip",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_material",
+     "text_contains": "Material presets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_specimen",
+     "tag": "h1",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_material",
+     "tag": "h1",
+     "min_count": 1
+    }
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_home",
+     "desktop_specimen",
+     "desktop_material"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "interaction_assertions": [
+    {
+     "state": "desktop_preset_diamond",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "preset-hud__readout",
+      "text_contains": "Diamond",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_preset_diamond",
+     "changed_from": "desktop_home",
+     "require_interaction": true,
+     "dom": {
+      "class_contains": "preset-hud__readout",
+      "text_contains": "IOR 2.42",
+      "min_count": 1
+     }
+    }
+   ],
+   "interaction_states": [
+    "desktop_preset_diamond"
+   ],
+   "responsive_states": [
+    "mobile_home",
+    "mobile_canvas_regression"
+   ],
+   "visual_anchor_states": [
+    "desktop_home",
+    "desktop_controls",
+    "desktop_canvas_regression"
+   ],
+   "submission_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home",
+    "desktop_controls",
+    "desktop_canvas_regression",
+    "mobile_canvas_regression",
+    "desktop_preset_diamond",
+    "desktop_specimen",
+    "desktop_material",
+    "mobile_specimen"
+   ],
+   "completion_states": [
+    "desktop_home",
+    "tablet_home",
+    "desktop_controls"
+   ],
+   "completion_text_signals": [
+    "Halcyon Optics Lab",
+    "Transmission Material Studio",
+    "Dial in transmission",
+    "Drag to orbit",
+    "Specimen notes",
+    "Material reference",
+    "Light Transmission",
+    "Refractive Index",
+    "Optical Thickness",
+    "Bloom Response",
+    "Material presets"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 11,
+   "visible_text_states": [
+    "desktop_home",
+    "tablet_home",
+    "desktop_controls"
+   ],
+   "visible_text_signals": [
+    "Halcyon Optics Lab",
+    "Transmission Material Studio",
+    "Dial in transmission",
+    "Drag to orbit",
+    "Material presets",
+    "Clear Glass"
+   ],
+   "require_all_visible_text_signals": true,
+   "min_visible_text_signals": 6,
+   "regression_states": [
+    "desktop_home",
+    "mobile_home",
+    "tablet_home"
+   ],
+   "regression_text_signals": [
+    "Halcyon Optics Lab"
+   ],
+   "forbidden_text_patterns": [
+    "Glass Effect in Three.js",
+    "Read the tutorial",
+    "Previous demo",
+    "Creating the Effect of Transparent Glass",
+    "Kelly Milligan",
+    "for Codrops",
+    "kellymilligan/codrops",
+    "Lorem ipsum"
+   ],
+   "mean_luminance_tolerance": 120,
+   "min_palette_overlap": 1
+  }
+ ]
+}

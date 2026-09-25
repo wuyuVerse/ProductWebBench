@@ -1,0 +1,45 @@
+{
+ "slot": 548,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_work",
+   "dom_len": 494,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "7cc960436902284965965cd616cb2055",
+    "reference": "73127a35329f3471bcdbd311b739e3f6",
+    "bad": "afbd91655a97d97fa628f4d3ba2d6abd"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 9,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "truethari__reactfolio__7429ed872c8b",
+ "capability": "Build",
+ "capability_is_build": true
+}

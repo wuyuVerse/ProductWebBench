@@ -1,0 +1,272 @@
+{
+ "tasks": [
+  {
+   "task_id": "dev_coreui__coreui-free-react-admin-template__bdf27bcb90ee__traffic_focus_section_workflow",
+   "reference_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "desktop_traffic_sales_table",
+    "tablet_traffic_focus",
+    "mobile_traffic_focus",
+    "mobile_sidebar_open"
+   ],
+   "text_signal_states": [
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year"
+   ],
+   "reference_text_signals": [
+    "Station Focus",
+    "Showing",
+    "stations",
+    "monitored stations",
+    "Harbor Yield",
+    "usage"
+   ],
+   "visible_text_states": [
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "tablet_traffic_focus",
+    "mobile_traffic_focus"
+   ],
+   "visible_text_signals": [
+    "Station Focus",
+    "Showing",
+    "stations",
+    "monitored stations",
+    "Harbor Yield"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 4,
+   "interaction_states": [
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "mobile_sidebar_open"
+   ],
+   "interaction_assertions": [
+    {
+     "state": "desktop_traffic_day",
+     "changed_from": "desktop_traffic_focus",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 4 of 6 \u00b7 New stations",
+      "min_count": 1
+     }
+    },
+    {
+     "state": "desktop_traffic_year",
+     "changed_from": "desktop_traffic_focus",
+     "require_interaction": true,
+     "dom": {
+      "text_contains": "Showing 2 of 6 \u00b7 Recurring stations",
+      "min_count": 1
+     }
+    }
+   ],
+   "responsive_states": [
+    "mobile_initial",
+    "mobile_traffic_focus",
+    "tablet_traffic_focus"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "quality.json",
+    "dom.html",
+    "a11y.json",
+    "boxes.json",
+    "console.json",
+    "actions.json",
+    "crops.json"
+   ],
+   "min_text_length": 220,
+   "min_image_count": 0,
+   "asset_path_signals": [
+    "avatars",
+    "flags"
+   ],
+   "asset_path_states": [
+    "desktop_initial",
+    "desktop_traffic_sales_table"
+   ],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "visual_regression": {
+    "states": [
+     "desktop_traffic_focus",
+     "mobile_traffic_focus",
+     "tablet_traffic_focus"
+    ],
+    "metrics": {
+     "pixelmatch": {
+      "max_diff_ratio": 0.08,
+      "tolerance": 30
+     },
+     "ssim": {
+      "min_score": 0.85
+     },
+     "block_fidelity": {
+      "min_block_match": 0.8,
+      "max_color_delta_e": 15
+     }
+    }
+   },
+   "dom_assertions": [
+    {
+     "state": "desktop_initial",
+     "tag": "nav",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "tag": "h4",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "text_contains": "Tidepool Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_initial",
+     "class_contains": "station-focus--dashboard",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_traffic_focus",
+     "class_contains": "station-focus__tile",
+     "min_count": 4
+    },
+    {
+     "state": "desktop_traffic_focus",
+     "tag": "button",
+     "min_count": 3
+    },
+    {
+     "state": "desktop_charts_route",
+     "class_contains": "station-focus--charts",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_widgets_route",
+     "class_contains": "station-focus--widgets",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_charts_route",
+     "tag": "p",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_initial",
+     "text_contains": "Tidepool Analytics",
+     "min_count": 1
+    },
+    {
+     "state": "desktop_traffic_sales_table",
+     "text_contains": "Harbor Yield",
+     "min_count": 1
+    },
+    {
+     "state": "mobile_sidebar_open",
+     "tag": "nav",
+     "min_count": 1
+    }
+   ],
+   "enforce_console_errors": true,
+   "console_error_allowlist": [
+    "/_vercel/",
+    "google-analytics",
+    "googletagmanager",
+    "favicon",
+    "insights/script"
+   ],
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "desktop_traffic_sales_table",
+    "tablet_traffic_focus",
+    "mobile_traffic_focus",
+    "mobile_sidebar_open"
+   ],
+   "visual_anchor_states": [
+    "desktop_initial",
+    "desktop_traffic_focus",
+    "mobile_initial"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1,
+   "submission_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "desktop_traffic_sales_table",
+    "tablet_traffic_focus",
+    "mobile_traffic_focus",
+    "mobile_sidebar_open"
+   ],
+   "completion_states": [
+    "desktop_traffic_focus",
+    "desktop_traffic_day",
+    "desktop_traffic_year",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "tablet_traffic_focus",
+    "mobile_traffic_focus"
+   ],
+   "completion_text_signals": [
+    "Station Focus",
+    "Showing",
+    "stations",
+    "monitored stations",
+    "Harbor Yield",
+    "Tide Charts",
+    "Station Widgets"
+   ],
+   "require_all_completion_signals": true,
+   "min_completion_text_signals": 7,
+   "regression_states": [
+    "desktop_initial",
+    "mobile_initial",
+    "desktop_traffic_sales_table",
+    "desktop_charts_route",
+    "desktop_widgets_route",
+    "mobile_sidebar_open"
+   ],
+   "regression_text_signals": [
+    "Tidepool",
+    "Tide Overview",
+    "Dashboard",
+    "Charts",
+    "Widgets"
+   ],
+   "forbidden_text_patterns": [
+    "TODO station focus",
+    "placeholder station",
+    "fake station screenshot",
+    "external station widget",
+    "backend station service",
+    "dummy status filter",
+    "coming soon station"
+   ]
+  }
+ ]
+}

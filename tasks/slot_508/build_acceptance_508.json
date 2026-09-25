@@ -1,0 +1,45 @@
+{
+ "slot": 508,
+ "checks": {
+  "A_baseline_empty": {
+   "pass": true,
+   "target_state": "desktop_faq",
+   "dom_len": 673,
+   "has_metrics": false,
+   "is_loading_like": false,
+   "text_length": 0,
+   "verdict": "empty/404 (从零成立)"
+  },
+  "B_reference_selfcert": {
+   "pass": true,
+   "gates_passed": 19,
+   "gates_total": 19,
+   "overall_pass": true
+  },
+  "C_bad_discriminates": {
+   "pass": true,
+   "bad_overall_pass": false,
+   "expect": "False(该失的失)"
+  },
+  "D_md5_distinct": {
+   "pass": true,
+   "md5": {
+    "baseline": "bc460a3d3cad296b62486d000843abf6",
+    "reference": "c5f7bc754bf130fe9beacbb96d4e93b9",
+    "bad": "2bef7e7387cb2108e2051452730abf98"
+   },
+   "distinct": true
+  },
+  "E_stageplan_solvable": {
+   "pass": true,
+   "v5_pass": true,
+   "n_checks": 10,
+   "n_fail": 0,
+   "fails": []
+  }
+ },
+ "accepted": true,
+ "repo_id": "adminmart__modernize-react-lite__4de5f2a10f6b",
+ "capability": "Build",
+ "capability_is_build": true
+}

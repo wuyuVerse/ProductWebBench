@@ -1,0 +1,115 @@
+{
+ "tasks": [
+  {
+   "task_id": "build_zeon-studio__astroplate__9f879e2e49d1__changelog",
+   "reference_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "submission_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "interaction_states": [
+    "desktop_changelog_fixes"
+   ],
+   "completion_states": [
+    "desktop_changelog"
+   ],
+   "completion_text_signals": [
+    "Changelog",
+    "Every release",
+    "Showing 5 updates",
+    "v2.4.0"
+   ],
+   "require_all_completion_signals": false,
+   "min_completion_text_signals": 3,
+   "visible_text_states": [
+    "desktop_changelog"
+   ],
+   "visible_text_signals": [
+    "Changelog",
+    "Every release"
+   ],
+   "require_all_visible_text_signals": false,
+   "min_visible_text_signals": 2,
+   "regression_states": [
+    "desktop_changelog"
+   ],
+   "regression_text_signals": [],
+   "forbidden_states": [
+    "desktop_changelog"
+   ],
+   "forbidden_text_patterns": [
+    "TODO",
+    "FIXME",
+    "Not Found",
+    "undefined"
+   ],
+   "responsive_states": [
+    "mobile_changelog"
+   ],
+   "required_state_artifacts": [
+    "screenshot.png",
+    "metrics.json",
+    "dom.html",
+    "console.json"
+   ],
+   "min_text_length": 120,
+   "min_screenshot_bytes": 8000,
+   "asset_signal_states": [],
+   "asset_path_signals": [],
+   "min_asset_path_signals": 0,
+   "overflow_tolerance_px": 24,
+   "no_horizontal_overflow": true,
+   "responsive_overflow_states": [
+    "mobile_changelog"
+   ],
+   "enforce_console_errors": true,
+   "max_console_errors": 0,
+   "console_error_states": [
+    "desktop_changelog",
+    "mobile_changelog"
+   ],
+   "console_error_allowlist": [
+    "favicon",
+    "google",
+    "gstatic",
+    "fonts"
+   ],
+   "dom_assertions": [
+    {"state": "desktop_changelog", "tag": "h1", "text_contains": "Changelog", "min_count": 1},
+    {"state": "desktop_changelog", "tag": "p", "text_contains": "Every release", "min_count": 1},
+    {"state": "desktop_changelog", "text_contains": "Showing 5 updates", "min_count": 1},
+    {"state": "desktop_changelog", "tag": "button", "text_contains": "Features", "min_count": 1},
+    {"state": "desktop_changelog", "tag": "button", "text_contains": "Fixes", "min_count": 1},
+    {"state": "desktop_changelog", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_changelog", "tag": "a", "text_contains": "Privacy Policy", "min_count": 1},
+    {"state": "mobile_changelog", "tag": "h1", "text_contains": "Changelog", "min_count": 1},
+    {"state": "mobile_changelog", "tag": "a", "text_contains": "Elements", "min_count": 1},
+    {"state": "mobile_changelog", "tag": "a", "text_contains": "Privacy Policy", "min_count": 1},
+    {"state": "desktop_about", "tag": "a", "text_contains": "About", "min_count": 1},
+    {"state": "desktop_about", "tag": "a", "text_contains": "Privacy Policy", "min_count": 1},
+    {"state": "desktop_about", "tag": "a", "text_contains": "Elements", "min_count": 1}
+   ],
+   "visual_regression": {
+    "states": [
+     "desktop_changelog"
+    ],
+    "metrics": {
+     "ssim": {
+      "min_score": 0.55
+     }
+    }
+   },
+   "interaction_assertions": [
+    {"state": "desktop_changelog_fixes", "require_interaction": true, "changed_from": "desktop_changelog", "dom": {"text_contains": "Showing 2 updates", "min_count": 1}}
+   ],
+   "visual_anchor_states": [
+    "desktop_changelog"
+   ],
+   "mean_luminance_tolerance": 95,
+   "min_palette_overlap": 1
+  }
+ ]
+}
