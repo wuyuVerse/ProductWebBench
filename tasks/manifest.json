@@ -2593,7 +2593,7 @@
   {
    "slot": "slot_200",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "mearashadowfax__ScrewFast__3d230b0f89a1",
    "upstream": "https://github.com/mearashadowfax/ScrewFast",
    "commit": "3d230b0f89a1",
@@ -2606,7 +2606,7 @@
   {
    "slot": "slot_201",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
    "upstream": "https://github.com/nuxt-ui-templates/starter",
    "commit": "ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1",
@@ -2619,7 +2619,7 @@
   {
    "slot": "slot_202",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Repair",
    "repo_id": "technext__pizza__a8e2a6f4ee2f",
    "upstream": "https://github.com/technext/pizza",
    "commit": "a8e2a6f4ee2f",
@@ -2632,7 +2632,7 @@
   {
    "slot": "slot_203",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "Abenezer-Tilahun__Microverse-Portfolio-Website__b73e93597963",
    "upstream": "https://github.com/Abenezer-Tilahun/Microverse-Portfolio-Website",
    "commit": "b73e93597963",
@@ -2645,7 +2645,7 @@
   {
    "slot": "slot_204",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Edit",
    "repo_id": "technext__windmill-dashboard__1a684deb0bd5",
    "upstream": "https://github.com/technext/windmill-dashboard",
    "commit": "1a684deb0bd5",
@@ -2658,7 +2658,7 @@
   {
    "slot": "slot_205",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Repair",
    "repo_id": "tailwindtoolbox__Landing-Page__545f89eb26e09",
    "upstream": "https://github.com/tailwindtoolbox/Landing-Page",
    "commit": "545f89eb26e09",
@@ -2671,7 +2671,7 @@
   {
    "slot": "slot_206",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Edit",
    "repo_id": "11ty__eleventy-base-blog__676834f55c86",
    "upstream": "https://github.com/11ty/eleventy-base-blog",
    "commit": "676834f55c86",
@@ -2684,7 +2684,7 @@
   {
    "slot": "slot_207",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "AlpayC__portfolio_site__2677889a6f23",
    "upstream": "https://github.com/AlpayC/portfolio_site",
    "commit": "2677889a6f23",
@@ -2697,7 +2697,7 @@
   {
    "slot": "slot_208",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "SamwitAdhikary__Ecommerce__05583c6dae8e",
    "upstream": "https://github.com/SamwitAdhikary/Ecommerce",
    "commit": "05583c6dae8e",
@@ -2710,7 +2710,7 @@
   {
    "slot": "slot_209",
    "group": "Change",
-   "capability": "Unknown",
+   "capability": "Consistency",
    "repo_id": "facebook__regenerator__cb755fd82c64",
    "upstream": "https://github.com/facebook/regenerator",
    "commit": "cb755fd82c64",
