@@ -76,7 +76,7 @@ async function runAction(page, action, artifactDir = null) {
       }, action.y || 0);
       await page.waitForTimeout(action.wait_ms || 500);
     } else if (action.type === "scroll_to_selector") {
-      // Framing action (not a D4 verdict — the doc treats scroll as "取景"): if the
+      // Framing action (not a D4 verdict — the spec treats scroll as framing): if the
       // target anchor is absent (e.g. the solver did not build that section), do NOT
       // abort the whole state. Degrade to a best-effort scroll so a full-page
       // screenshot is still captured and the visual/DOM gates judge the miss —

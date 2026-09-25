@@ -99,14 +99,17 @@ Workspaces extracted before the change carry a `.sitecontinuum_workspace.json`
 marker; the package writes the new name but still accepts the old one, so
 those workspaces keep working.
 
-Forty-one occurrences of the old name survive on purpose, because they are
+Fifty-six occurrences of the old name survive on purpose, because they are
 bound to the frozen repository snapshots rather than to the package:
 
 | what | count | why it cannot be renamed |
 |---|--:|---|
-| `forbidden_text_patterns` entries containing `sitecontinuum` | 20 | the gate catches a placeholder marker that is literally present in the frozen baseline; renaming the pattern would stop it matching |
-| `[data-sitecontinuum-crop]` selectors | 11 | an attribute baked into the snapshot HTML that the state plans and the capture script select on |
+| `forbidden_text_patterns` entries containing `sitecontinuum`, in `tasks/` | 32 | the gate catches a placeholder marker that is literally present in the frozen baseline; renaming the pattern would stop it matching |
+| the same patterns quoted back in the E2 rating shards | 2 | the shards record the criterion each card was rated against, verbatim |
+| `[data-sitecontinuum-crop]` selectors in `tasks/` | 8 | an attribute baked into the snapshot HTML that the state plans select on |
+| the same selector in `tools/playwright_capture.js` | 3 | the capture script has to select the attribute the snapshots actually carry |
 | `assets/css/sitecontinuum-state.css`, `assets/js/sitecontinuum-state.js` | 10 | real files inside two task snapshots; the paths appear in `required_content` |
+| `.sitecontinuum_workspace.json` in `core/config.py` | 1 | read-only fallback so workspaces extracted before the rename still resolve |
 
 Renaming any of these would change what the benchmark measures, so they are
 left exactly as they were scored.

@@ -84,9 +84,11 @@ class RunnerConfig:
     max_files: int = 10
     max_context_chars: int = 28000
     max_tokens: int = 5000
-    # api_timeout 之前是 900s → 单请求容忍 15 分钟。sidecar 实测直连 1-4s,15min 是异常挂断的兜底,
-    # 但 3 retry × 900s = 46min/次 API call → 6 连败 4.6h/cell wall clock。缩到 180s 后 6 连败降到 ~40min/cell。
-    # 允许 env override 应对个别慢模型。
+    # api_timeout used to be 900s, i.e. 15 minutes per request. Measured sidecar
+    # latency is 1-4s, so 15 minutes only ever caught a hung connection, but
+    # 3 retries x 900s = 46 min per API call, and six consecutive failures cost
+    # 4.6 h of wall clock per cell. At 180s the same six failures cost ~40 min.
+    # The env override is there for the occasional genuinely slow model.
     api_timeout: int = int(__import__("os").environ.get("MB_API_TIMEOUT", "180"))
     api_retries: int = int(__import__("os").environ.get("MB_API_RETRIES", "1"))
     eval_skip_build: bool = False
@@ -1117,7 +1119,8 @@ def add_evaluate_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--max-files", type=int, default=10)
     parser.add_argument("--max-context-chars", type=int, default=28000)
     parser.add_argument("--max-tokens", type=int, default=5000)
-    # argparse defaults 会覆盖 dataclass field defaults → 必须也从 env 读,否则 shard_runner 传 900.
+    # argparse defaults override the dataclass field defaults, so this has to read
+    # the env as well; otherwise shard_runner would still pass 900.
     parser.add_argument("--api-timeout", type=int, default=int(os.environ.get("MB_API_TIMEOUT", "180")))
     parser.add_argument("--api-retries", type=int, default=int(os.environ.get("MB_API_RETRIES", "1")))
     parser.add_argument("--eval-skip-build", action="store_true")

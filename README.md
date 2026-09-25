@@ -31,7 +31,8 @@ Actually *running* agents against tasks additionally needs Node, Chromium and
 ## Reproduce every number in the paper
 
 ```bash
-bash tools/reproduce.sh          # → 35 ok, 0 failed, 9 skipped
+bash tools/reproduce.sh          # → 36 ok, 0 failed, 9 skipped
+python3 analysis/check_paper_numbers.py   # → 58 passed, 0 failed
 ```
 
 This regenerates every table and figure from the frozen evaluation cache
@@ -97,7 +98,7 @@ the whole trajectory rather than at its endpoint.
 ## What you can and cannot do with this repository
 
 **You can** reproduce every number, table and figure in the paper
-(`bash tools/reproduce.sh`), read the full specification of 390 tasks, and read
+(`bash tools/reproduce.sh`), read the full specification of all 400 tasks, and read
 and extend the benchmark code — the construction pipeline, the 19-gate
 verifier, the scoring, and the Harbor adapter.
 
