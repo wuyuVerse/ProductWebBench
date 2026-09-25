@@ -1,0 +1,185 @@
+{
+ "yasser-acc__Portfolio-websites-templates__f4d6215bdd03": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#about",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#contact",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog-single.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog_grid",
+   "path": "/blog-single.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".portfolio-more",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog_grid",
+   "path": "/blog-single.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".portfolio-more",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_seating",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "#portfolio-flters li[data-filter=\".branding\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 900
+    }
+   ]
+  }
+ ]
+}

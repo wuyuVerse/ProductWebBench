@@ -1,0 +1,259 @@
+{
+  "cullenwebber__three-html-to-canvas__bad1a7c78c5b": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_console",
+      "path": "/index.html",
+      "viewport": "desktop_console",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_console",
+      "path": "/index.html",
+      "viewport": "mobile_console",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_stage_pick",
+      "path": "/index.html",
+      "viewport": "desktop_stage_pick",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        },
+        {
+          "type": "click",
+          "selector": ".proj-console__stage[data-stage='raster']",
+          "force": true
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_mid_scroll",
+      "path": "/index.html",
+      "viewport": "desktop_mid_scroll",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        },
+        {
+          "type": "eval",
+          "script": "(function(){var s=document.querySelector('#scroll-spacer');var h=s?s.scrollHeight:document.documentElement.scrollHeight;window.scrollTo(0,Math.round(h*0.35));})()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.setContext('mid')"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_deep_scroll",
+      "path": "/index.html",
+      "viewport": "desktop_deep_scroll",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        },
+        {
+          "type": "eval",
+          "script": "(function(){var s=document.querySelector('#scroll-spacer');var h=s?s.scrollHeight:document.documentElement.scrollHeight;window.scrollTo(0,Math.round(h*0.7));})()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.setContext('deep')"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 400
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_scroll",
+      "path": "/index.html",
+      "viewport": "mobile_scroll",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 3000
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.reveal()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 200
+        },
+        {
+          "type": "eval",
+          "script": "(function(){var s=document.querySelector('#scroll-spacer');var h=s?s.scrollHeight:document.documentElement.scrollHeight;window.scrollTo(0,Math.round(h*0.35));})()"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "eval",
+          "script": "window.__proj && window.__proj.setContext('mid')"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 400
+        }
+      ]
+    }
+  ]
+}

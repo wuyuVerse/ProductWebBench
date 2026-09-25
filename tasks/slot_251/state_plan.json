@@ -1,0 +1,188 @@
+{
+ "itsDaiton__business-website-template__adf37c84bded": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans",
+   "path": "/",
+   "viewport": "desktop_plans",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--plans')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_plans",
+   "path": "/",
+   "viewport": "mobile_plans",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--plans')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_plans",
+   "path": "/",
+   "viewport": "tablet_plans",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--plans')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_product",
+   "path": "/",
+   "viewport": "desktop_product",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--product')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/",
+   "viewport": "desktop_footer",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--footer')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_retail",
+   "path": "/",
+   "viewport": "desktop_plans_retail",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "evaluate",
+     "expression": "document.querySelector('.segfilter--plans')?.scrollIntoView({block:'start'});",
+     "wait_ms": 700
+    },
+    {
+     "type": "click",
+     "selector": ".segfilter--plans [data-seg-tab='Retail']",
+     "optional": false,
+     "timeout_ms": 8000,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_menu_open",
+   "path": "/",
+   "viewport": "mobile_menu_open",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 15000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": "img[alt='menu']",
+     "optional": false,
+     "timeout_ms": 5000,
+     "wait_ms": 800
+    }
+   ]
+  }
+ ]
+}

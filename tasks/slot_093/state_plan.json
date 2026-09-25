@@ -1,0 +1,208 @@
+{
+ "StartBootstrap__startbootstrap-landing-page__247a46a2503c": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_default",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_default",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_pricing_default",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_yearly",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-plan-billing-period=\"yearly\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_yearly",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-plan-billing-period=\"yearly\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_page",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact_page",
+   "path": "/contact.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plan-billing__grid",
+     "block": "center",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

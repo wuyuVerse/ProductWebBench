@@ -1,0 +1,51 @@
+{
+ "themesberg__volt-react-dashboard__419e51539b8a": [
+  {
+   "state_id": "desktop_invoices",
+   "path": "#/invoices",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_invoices",
+   "path": "#/invoices",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_invoices_pending",
+   "path": "#/invoices",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "[data-tab=\"pending\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

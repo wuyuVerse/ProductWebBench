@@ -1,0 +1,194 @@
+{
+ "coreui__coreui-free-react-admin-template__bdf27bcb90ee": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/#/dashboard",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/#/dashboard",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_traffic_focus",
+   "path": "/#/dashboard",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--dashboard",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_traffic_day",
+   "path": "/#/dashboard",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--dashboard",
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".station-focus__chip[data-focus-filter=\"new\"]",
+     "wait_ms": 600,
+     "timeout_ms": 4000,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_traffic_year",
+   "path": "/#/dashboard",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--dashboard",
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".station-focus__chip[data-focus-filter=\"recurring\"]",
+     "wait_ms": 600,
+     "timeout_ms": 4000,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts_route",
+   "path": "/#/charts",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--charts",
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_widgets_route",
+   "path": "/#/widgets",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--widgets",
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_traffic_sales_table",
+   "path": "/#/dashboard",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#traffic-sales",
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_traffic_focus",
+   "path": "/#/dashboard",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--dashboard",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_traffic_focus",
+   "path": "/#/dashboard",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".station-focus--dashboard",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_sidebar_open",
+   "path": "/#/dashboard",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": ".header-toggler",
+     "wait_ms": 600,
+     "timeout_ms": 4000,
+     "optional": true
+    }
+   ]
+  }
+ ]
+}

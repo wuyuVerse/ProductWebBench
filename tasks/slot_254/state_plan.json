@@ -1,0 +1,145 @@
+{
+ "shuding__nextra-docs-template__7178f3676d2b": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_advanced",
+   "path": "/advanced",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_another",
+   "path": "/another",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gfinder-surface]",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_finder",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gfinder-surface]",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "finder_filter_guides",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gfinder-surface]",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "[data-gfinder-tab='guide']",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

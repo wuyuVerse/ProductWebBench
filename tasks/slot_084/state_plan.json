@@ -1,0 +1,313 @@
+{
+  "codrops__ImageGridEffects__30c994b61290": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_ledger_shelf",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--shelf",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_ledger_shelf",
+      "path": "/index.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--shelf",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_ledger_plateledger",
+      "path": "/index2.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--ledger",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_ledger_plateledger",
+      "path": "/index2.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--ledger",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_ledger_tidewrack",
+      "path": "/index3.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--tidewrack",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_ledger_tidewrack",
+      "path": "/index3.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".archive-ledger--tidewrack",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_grid_hover_rhythm",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "hover",
+          "selector": ".grid__item:nth-child(2)",
+          "timeout_ms": 5000,
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_lower_grid_scroll",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".grid__item:nth-child(12)",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_first_plate_open",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "click",
+          "selector": ".grid__item:nth-child(1)",
+          "timeout_ms": 5000,
+          "wait_ms": 2600
+        },
+        {
+          "type": "wait_for_selector",
+          "selector": ".preview--open",
+          "timeout_ms": 6000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_first_plate_open",
+      "path": "/index.html",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "click",
+          "selector": ".grid__item:nth-child(1)",
+          "timeout_ms": 5000,
+          "wait_ms": 2600
+        },
+        {
+          "type": "wait_for_selector",
+          "selector": ".preview--open",
+          "timeout_ms": 6000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_close_back_to_grid",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "click",
+          "selector": ".grid__item:nth-child(1)",
+          "timeout_ms": 5000,
+          "wait_ms": 2600
+        },
+        {
+          "type": "wait_for_selector",
+          "selector": ".preview--open",
+          "timeout_ms": 6000
+        },
+        {
+          "type": "click",
+          "selector": ".action--close",
+          "timeout_ms": 5000,
+          "wait_ms": 2600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_plate_lens",
+      "path": "/index.html",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".plate-filter",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        },
+        {
+          "type": "click",
+          "selector": ".plate-filter__btn[data-filter=\"Tintypes\"]",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

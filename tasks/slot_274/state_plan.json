@@ -1,0 +1,162 @@
+{
+ "codescandy__Dash-UI__394b933495a0": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_asset_register",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_asset_register",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_asset_register",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_table_regression",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_avatar_focus",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "click",
+     "selector": ".areg__tab[data-areg-tab=\"engineering\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_register",
+   "path": "/pages/tables.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_billing_register",
+   "path": "/pages/billing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#areg-card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

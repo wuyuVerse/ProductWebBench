@@ -1,0 +1,95 @@
+{
+ "horizon-ui__horizon-ui-chakra__27a99f9fb391": [
+  {
+   "state_id": "desktop_segments",
+   "path": "/segments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_segments",
+   "path": "/segments",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_segments_active_pro",
+   "path": "/segments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-filter=\"active\"]", "wait_ms": 900 },
+    { "type": "click", "selector": "button[data-filter=\"pro\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_segments_any",
+   "path": "/segments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-filter=\"active\"]", "wait_ms": 700 },
+    { "type": "click", "selector": "button[data-filter=\"pro\"]", "wait_ms": 700 },
+    { "type": "click", "selector": "button[data-mode=\"any\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_segments_removed",
+   "path": "/segments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-filter=\"active\"]", "wait_ms": 700 },
+    { "type": "click", "selector": "button[data-filter=\"pro\"]", "wait_ms": 700 },
+    { "type": "click", "selector": "button[data-chip=\"active\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_profile",
+   "path": "/admin/profile",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "mobile_profile",
+   "path": "/admin/profile",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  }
+ ]
+}

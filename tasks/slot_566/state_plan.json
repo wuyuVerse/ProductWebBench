@@ -1,0 +1,65 @@
+{
+ "ubaimutl__react-portfolio__470d81e4da37": [
+  {
+   "state_id": "desktop_testimonials",
+   "path": "/testimonials",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_testimonials",
+   "path": "/testimonials",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_testimonials_clients",
+   "path": "/testimonials",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-filter=\"clients\"]",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

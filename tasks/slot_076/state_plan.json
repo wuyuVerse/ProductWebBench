@@ -1,0 +1,230 @@
+{
+  "StartBootstrap__startbootstrap-creative__b1762d8c690a": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_services_scrolled",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": "#services"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": ".caskfilter--portfolio"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_filter",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": ".caskfilter--portfolio"
+        },
+        {
+          "type": "click",
+          "selector": ".caskfilter--portfolio [data-cask-tab='wine']"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_portfolio",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": ".caskfilter--portfolio"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_commission",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": "section.bg-dark"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_lightbox",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": "#portfolio"
+        },
+        {
+          "type": "click",
+          "selector": "#portfolio a.portfolio-box"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll",
+          "selector": "#contact"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_nav_open",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "click",
+          "selector": "button.navbar-toggler"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

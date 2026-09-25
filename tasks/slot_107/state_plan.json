@@ -1,0 +1,181 @@
+{
+ "davidfaure__horizontal-parallax-gallery-codrops__49c3ead7b70b": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".pfind"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_warm_filter",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".pfind"
+    },
+    {
+     "type": "click",
+     "selector": ".pfind__tab[data-pfind-tab=\"warm\"]"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_finder",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".pfind"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_warm_filter",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".pfind"
+    },
+    {
+     "type": "click",
+     "selector": ".pfind__tab[data-pfind-tab=\"warm\"]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_webgl",
+   "path": "/index2.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_webgl",
+   "path": "/index2.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  }
+ ]
+}

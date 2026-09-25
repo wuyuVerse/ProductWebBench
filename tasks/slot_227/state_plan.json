@@ -1,0 +1,179 @@
+{
+ "emixs__ace-documentation__5812437b309b": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_finder",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_finder",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder_gettingstarted",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-tab=\"getting-started\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getting_started",
+   "path": "/getting-started/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shortcodes",
+   "path": "/shortcodes/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_search_focus",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "fill",
+     "selector": "#search-by",
+     "value": "install"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

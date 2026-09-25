@@ -1,0 +1,51 @@
+{
+ "technext__v-dashboard__1d6fd95f5454": [
+  {
+   "state_id": "desktop_analytics",
+   "path": "/analytics",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_analytics",
+   "path": "/analytics",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_analytics_pages",
+   "path": "/analytics",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-tab=\"pages\"]",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,161 @@
+{
+ "themewagon__adminhmd__30ca36f2aef4": [
+  {
+   "state_id": "desktop_users",
+   "path": "/html/users.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_users",
+   "path": "/html/users.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_users",
+   "path": "/html/users.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_users_filter",
+   "path": "/html/users.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_users_filter",
+   "path": "/html/users.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/html/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-statuslegend]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_user_details",
+   "path": "/html/user-details.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-statuslegend]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_users_active",
+   "path": "/html/users.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-userfilter]",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".userfilter__chip[data-status=\"active\"]",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

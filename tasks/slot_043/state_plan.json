@@ -1,0 +1,135 @@
+{
+ "holger1411__brook-dev__dcad7333004f": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_toggled",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": "#ledger-view-toggle",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_journal",
+   "path": "/blog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_journal",
+   "path": "/blog.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/content.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post",
+   "path": "/post-designing-a-type-scale-that-survives-real-content.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post_color",
+   "path": "/post-notes-on-building-an-accessible-color-system.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  }
+ ]
+}

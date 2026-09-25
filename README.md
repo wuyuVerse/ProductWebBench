@@ -44,9 +44,13 @@ successful run must satisfy.
 ## Run an agent
 
 ```bash
-pwb catalog                              # the 400 frozen tasks
-pwb export-harbor-tasks --output-root out/harbor   # → Harbor task dirs
-pwb verify-submission --submission path/to/run     # → WCS / CCS / RCS / BES
+pwb validate-tasks tasks                           # schema-check all 400 frozen tasks
+pwb export-harbor-tasks --output-root out/harbor   # → 400 Harbor task dirs
+
+pwb verify-submission \
+  --tasks tasks/slot_007/task.jsonl \
+  --specs tasks/slot_007/submission_specs.json \
+  --states-root path/to/captured/states            # → WCS / CCS / RCS / BES
 ```
 
 Harbor is the supported runner and the one used for the paper's numbers:

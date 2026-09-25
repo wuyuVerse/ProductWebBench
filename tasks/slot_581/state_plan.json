@@ -1,0 +1,76 @@
+{
+ "dunky11__react-saas-template__3fff0ba1ebd1": [
+  {
+   "state_id": "desktop_allocations",
+   "path": "/allocations",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_allocations",
+   "path": "/allocations",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_allocations_set",
+   "path": "/allocations",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-alloc-inc=\"engineering\"]", "wait_ms": 600},
+    {"type": "click", "selector": "button[data-alloc-inc=\"engineering\"]", "wait_ms": 900}
+   ]
+  },
+  {
+   "state_id": "desktop_allocations_persist",
+   "path": "/allocations",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-alloc-inc=\"engineering\"]", "wait_ms": 500},
+    {"type": "click", "selector": "button[data-alloc-inc=\"engineering\"]", "wait_ms": 500},
+    {"type": "click", "selector": "button[data-quarter=\"Q2\"]", "wait_ms": 600},
+    {"type": "click", "selector": "button[data-quarter=\"Q1\"]", "wait_ms": 900}
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  }
+ ]
+}

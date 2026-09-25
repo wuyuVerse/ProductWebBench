@@ -29,6 +29,16 @@ REQUIRED_TASK_FIELDS = {
 
 
 VALID_INTENTS = {"add", "modify", "repair", "restyle", "extend_interaction"}
+# Build tasks are authored against their own vocabulary: one intent, page scope,
+# and a tier instead of an L1-L5 difficulty. They carry no state_constraints and
+# no four-part rubric, because acceptance is the build_acceptance record.
+BUILD_INTENT = "build"
+BUILD_REQUIRED_FIELDS = {
+    "task_id", "repo_id", "split", "intent", "scope", "difficulty",
+    "required_content", "design_constraints",
+    "target_route", "tier",
+}
+VALID_BUILD_TIERS = {"T1", "T2", "T3", "T4"}
 VALID_SCOPES = {"section", "component", "page", "flow", "asset", "layout", "cross_page"}
 VALID_DIFFICULTIES = {"L1", "L2", "L3", "L4", "L5"}
 PATH_LIST_FIELDS = {"assets_to_consider", "suggested_files"}
@@ -331,6 +341,48 @@ def select_candidates(
     return selected
 
 
+def validate_build_task(task: dict) -> list[str]:
+    """Schema check for a long-horizon Build task (slots 506-585)."""
+    errors: list[str] = []
+    missing = sorted(BUILD_REQUIRED_FIELDS - set(task))
+    if missing:
+        errors.append(f"missing fields: {', '.join(missing)}")
+    # A Build task must name at least one state to capture. One task states it
+    # entirely through hidden_states, so accept either key.
+    if not (task.get("required_states") or task.get("hidden_states")):
+        errors.append("neither required_states nor hidden_states names a state to capture")
+    if task.get("scope") not in VALID_SCOPES:
+        errors.append(f"invalid scope: {task.get('scope')}")
+    if task.get("tier") not in VALID_BUILD_TIERS:
+        errors.append(f"invalid tier: {task.get('tier')}")
+    if task.get("difficulty") != task.get("tier"):
+        errors.append(f"difficulty {task.get('difficulty')} does not match tier {task.get('tier')}")
+    route = task.get("target_route")
+    # Hash routing is a legitimate shape here: several SPA targets are "#/name".
+    if not isinstance(route, str) or not (route.startswith("/") or route.startswith("#/")):
+        errors.append(f"target_route must be a rooted or hash route: {route!r}")
+    if not problem_statement(task):
+        errors.append("missing problem_statement")
+    for field in ("required_content", "design_constraints"):
+        value = task.get(field)
+        if not isinstance(value, list) or len(value) < 2:
+            errors.append(f"{field} must contain at least two items")
+    for field in DUPLICATE_LIST_FIELDS:
+        value = task.get(field, [])
+        if isinstance(value, list):
+            duplicates = duplicate_entries(value, pathish=field in PATH_LIST_FIELDS)
+            if duplicates:
+                errors.append(f"{field} contains duplicate entries: {', '.join(map(str, duplicates))}")
+    return errors
+
+
+def validate_any_task(task: dict) -> list[str]:
+    """Dispatch to the Build or the Change schema by the task's own intent."""
+    if task.get("intent") == BUILD_INTENT:
+        return validate_build_task(task)
+    return validate_task(task)
+
+
 def validate_task(task: dict) -> list[str]:
     errors: list[str] = []
     if task.get("formal_task_record") is False:
@@ -382,11 +434,23 @@ def validate_task(task: dict) -> list[str]:
     return errors
 
 
+def iter_task_records(path: Path):
+    """Yield task records from a tasks JSONL, or from a per-slot task tree."""
+    path = Path(path)
+    if path.is_dir():
+        for slot_dir in sorted(path.glob("slot_*")):
+            task_file = slot_dir / "task.jsonl"
+            if task_file.is_file():
+                yield from read_jsonl(task_file)
+        return
+    yield from read_jsonl(path)
+
+
 def validate_tasks(path: Path, report_path: Path) -> dict:
     results = []
     ok = 0
-    for idx, task in enumerate(read_jsonl(path), start=1):
-        errors = validate_task(task)
+    for idx, task in enumerate(iter_task_records(path), start=1):
+        errors = validate_any_task(task)
         if not errors:
             ok += 1
         results.append({"line": idx, "task_id": task.get("task_id"), "errors": errors})
@@ -1378,7 +1442,7 @@ def build_strict_freeze_worklist(
             (
                 "python -m sitecontinuum audit-authoring-data "
                 "--require-freeze-audits --require-no-bulk-declarations "
-                "--report data/sitecontinuum/authoring_ledger/authoring_data_audit.strict_freeze.json"
+                "--report data/productwebbench/authoring_ledger/authoring_data_audit.strict_freeze.json"
             ),
         ]
         if "duplicate_repo_id" in blockers:

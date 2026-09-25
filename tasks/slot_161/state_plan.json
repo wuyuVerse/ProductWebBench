@@ -1,0 +1,300 @@
+{
+ "OzymaCode__Shoe-Store-Template__be8710b81f3d": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_products",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".products"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_products",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".products"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_products",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".products"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_products_deep",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".products .product:last-child"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_products_deep",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".products .product:last-child"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "footer"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_footer",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "footer"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_menu_open",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "click",
+     "selector": "#menuBtn"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_size_select",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sizePicker[data-card=\"0\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".sizeChip[data-card=\"0\"][data-size=\"9\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

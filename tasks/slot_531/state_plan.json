@@ -1,0 +1,51 @@
+{
+ "themeselection__sneat-vuetify-vuejs-admin-template-free__9f84e6c7eb78": [
+  {
+   "state_id": "desktop_preferences",
+   "path": "/preferences",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_preferences",
+   "path": "/preferences",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_preferences_focused",
+   "path": "/preferences",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button:has-text(\"Focused\")",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,32 @@
+{
+ "netlify-templates__tanstack-template__d50366271dbb": [
+  {
+   "state_id": "desktop_contact",
+   "path": "/contact",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_contact",
+   "path": "/contact",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

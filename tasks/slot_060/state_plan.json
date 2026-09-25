@@ -1,0 +1,124 @@
+{
+  "creativetimofficial__argon-design-system__eea29c587e6a": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs",
+      "path": "/docs.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_recipes",
+      "path": "/component-recipes.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_recipes",
+      "path": "/component-recipes.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_recipes",
+      "path": "/component-recipes.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_recipes_layout",
+      "path": "/component-recipes.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "click",
+          "selector": ".brb__tab[data-brb-tab=\"layout\"]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    }
+  ]
+}

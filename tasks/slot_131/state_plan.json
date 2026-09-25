@@ -1,0 +1,232 @@
+{
+ "StartBootstrap__startbootstrap-modern-business__7d297106cbda": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_default",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_default",
+   "path": "/pricing.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_pricing_default",
+   "path": "/pricing.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_annual",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#planBilling"
+    },
+    {
+     "type": "click",
+     "selector": "#planBilling .plan-billing__btn[data-billing='annual']"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_annual",
+   "path": "/pricing.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#planBilling"
+    },
+    {
+     "type": "click",
+     "selector": "#planBilling .plan-billing__btn[data-billing='annual']"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_monthly_back",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#planBilling"
+    },
+    {
+     "type": "click",
+     "selector": "#planBilling .plan-billing__btn[data-billing='annual']"
+    },
+    {
+     "type": "click",
+     "selector": "#planBilling .plan-billing__btn[data-billing='monthly']"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_faq",
+   "path": "/faq.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_faq",
+   "path": "/faq.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/contact.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/portfolio-overview.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": ".navbar-toggler"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,192 @@
+{
+  "J0SUKE__webgl-magazine__b93bd4f89c73": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_after_intro",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_advance",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        },
+        {
+          "type": "click",
+          "selector": "#atlas-flow-advance",
+          "wait_ms": 600,
+          "status": "succeeded"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_wheel_forward",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        },
+        {
+          "type": "evaluate",
+          "expression": "window.dispatchEvent(new WheelEvent('wheel', { deltaY: 820, bubbles: true, cancelable: true }));",
+          "wait_ms": 800
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_wheel_reverse",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        },
+        {
+          "type": "evaluate",
+          "expression": "window.dispatchEvent(new WheelEvent('wheel', { deltaY: 820, bubbles: true, cancelable: true }));",
+          "wait_ms": 500
+        },
+        {
+          "type": "evaluate",
+          "expression": "window.dispatchEvent(new WheelEvent('wheel', { deltaY: -520, bubbles: true, cancelable: true }));",
+          "wait_ms": 800
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_pointer_right",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        },
+        {
+          "type": "evaluate",
+          "expression": "window.dispatchEvent(new MouseEvent('mousemove', { clientX: 1180, clientY: 420, bubbles: true, cancelable: true }));",
+          "wait_ms": 700
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "mobile_after_intro",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "load",
+      "goto_timeout_ms": 45000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 5600
+        }
+      ],
+      "full_page": false
+    }
+  ]
+}

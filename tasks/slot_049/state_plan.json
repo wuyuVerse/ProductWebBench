@@ -1,0 +1,155 @@
+{
+ "luluwux__Portfolio-V2__2cafd5b777f7": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_repositories",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#repositories",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_repositories",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#repositories",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_technologies",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#technologies",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/contact",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_log",
+   "path": "/log",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_c",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#repositories",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-proj-tab='C']",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

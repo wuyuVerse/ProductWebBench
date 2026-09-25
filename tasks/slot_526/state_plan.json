@@ -1,0 +1,38 @@
+{
+ "themewagon__material-tailwind-dashboard-react__b1114fa925ef": [
+  {
+   "state_id": "desktop_reports",
+   "path": "/material-tailwind-dashboard-react/reports",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_reports",
+   "path": "/material-tailwind-dashboard-react/reports",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_reports_yearly",
+   "path": "/material-tailwind-dashboard-react/reports",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button:has-text(\"Yearly\")", "wait_ms": 1200}
+   ]
+  }
+ ]
+}

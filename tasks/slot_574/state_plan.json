@@ -1,0 +1,62 @@
+{
+ "themewagon__material-tailwind-dashboard-react__b1114fa925ef": [
+  {
+   "state_id": "desktop_audit_log",
+   "path": "/material-tailwind-dashboard-react/audit-log",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_audit_log",
+   "path": "/material-tailwind-dashboard-react/audit-log",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_audit_log_critical",
+   "path": "/material-tailwind-dashboard-react/audit-log",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-filter-severity=\"critical\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_audit_log_paged",
+   "path": "/material-tailwind-dashboard-react/audit-log",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-filter-severity=\"critical\"]", "wait_ms": 800},
+    {"type": "click", "selector": "button[data-page=\"next\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_home",
+   "path": "/material-tailwind-dashboard-react/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  }
+ ]
+}

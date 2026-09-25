@@ -1,0 +1,165 @@
+{
+ "technext__massively__9b38cbb6635f": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_stories",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".storyfilter__head",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_stories",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".storyfilter__head",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_generic",
+   "path": "/generic.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#main",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_elements",
+   "path": "/elements.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#main",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_generic",
+   "path": "/generic.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#main",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_topic_filter",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".storyfilter__head",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".storyfilter__tab[data-topic=\"systems\"]",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

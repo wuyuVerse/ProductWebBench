@@ -533,7 +533,7 @@ def construction_evidence_work_item(item: dict[str, Any], index: int, repair_pla
             "do not treat scaffold/template files as passing traces",
             "do not hand-write passing trajectory, trace, or metareval reports",
             "do not accept a construction task until strict precheck passes on the final attached task file",
-            "do not create or edit data/sitecontinuum/tasks/slot_*/task.jsonl from this worklist",
+            "do not create or edit data/productwebbench/tasks/slot_*/task.jsonl from this worklist",
         ],
     }
 

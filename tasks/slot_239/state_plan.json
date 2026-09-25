@@ -1,0 +1,155 @@
+{
+ "MdShahriarFerdous__TravelWebsite-HTML-Template__81fb49fe4a28": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getaways",
+   "path": "/getaways.html",
+   "viewport": "desktop_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".getaway-strip--page",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_getaways",
+   "path": "/getaways.html",
+   "viewport": "mobile_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".getaway-strip--page",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_getaways",
+   "path": "/getaways.html",
+   "viewport": "tablet_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".getaway-strip--page",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getaways_default",
+   "path": "/getaways.html",
+   "viewport": "desktop_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getaways_short",
+   "path": "/getaways.html",
+   "viewport": "desktop_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-getaway-dur=\"short-break\"]",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getaways_long",
+   "path": "/getaways.html",
+   "viewport": "desktop_getaways",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-getaway-dur=\"long-weekend\"]",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

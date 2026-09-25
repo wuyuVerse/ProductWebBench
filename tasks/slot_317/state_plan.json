@@ -1,0 +1,153 @@
+{
+ "codrops__LiquidDistortion__d8f91ae96e4a": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_asset_repair",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_asset_repair",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_asset_repair",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo2_continuity",
+   "path": "/index2.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo3_regression",
+   "path": "/index3.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo4_regression",
+   "path": "/index4.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_nav_click",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "click",
+     "selector": ".scene-nav--next",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

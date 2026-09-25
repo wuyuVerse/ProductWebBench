@@ -1,0 +1,197 @@
+{
+ "mesinkasir__astronot-with-astro__8ea6534d5276": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "desktop_filter_bar",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_filter_bar",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_foraging_filter",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-almanac-tab=\"foraging\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tidepools_filter",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-almanac-tab=\"tidepools\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_reset",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-almanac-tab=\"foraging\"]",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-almanac-tab=\"all\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_foraging_filter",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".almanac-filter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-almanac-tab=\"foraging\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post_foraging",
+   "path": "/posts/dulse-and-laver/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "desktop_post_tidepools",
+   "path": "/posts/anemone-clocks/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "desktop_post_driftwood",
+   "path": "/posts/driftwood-grain/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "desktop_post_shorebirds",
+   "path": "/posts/turnstone-counts/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": []
+  },
+  {
+   "state_id": "desktop_cards_regression",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".cards",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

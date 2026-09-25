@@ -1,0 +1,127 @@
+{
+ "HamishMW__portfolio__b7444bc16216": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollTo",
+     "target": "[class*=\"work\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollTo",
+     "target": "[class*=\"work\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollTo",
+     "target": "[class*=\"work\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_work_filter",
+   "path": "/",
+   "viewport": "desktop_work_filter",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollTo",
+     "target": "[class*=\"work\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "target": "button:has-text(\"WebGL\")",
+     "verb": "click"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_uses",
+   "path": "/uses",
+   "viewport": "desktop_uses",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_contact",
+   "path": "/contact",
+   "viewport": "mobile_contact",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project",
+   "path": "/projects/slice",
+   "viewport": "desktop_project",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

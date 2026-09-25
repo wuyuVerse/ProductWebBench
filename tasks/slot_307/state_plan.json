@@ -1,0 +1,171 @@
+{
+  "aksakalli__jekyll-doc-theme__469e1aa0c923": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_outline",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docs-outline",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_docs_outline",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docs-outline",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_status_after",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docs-outline",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".docsindex__chip[data-section=\"getting-started\"]",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_feature_cards",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature-cards",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_asset_regression",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#what-is-jekyll",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_home",
+      "path": "/docs/home/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_themes",
+      "path": "/docs/themes/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_docs_home",
+      "path": "/docs/home/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

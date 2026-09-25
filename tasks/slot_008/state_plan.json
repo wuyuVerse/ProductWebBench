@@ -1,0 +1,146 @@
+{
+ "TailAdmin__free-nextjs-admin-dashboard__d3526b35fb7e": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_home",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".revenue-ops-rail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rail_home",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".revenue-ops-rail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_scope_regional",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".revenue-ops-rail",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-scope-toggle]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_profile_rail",
+   "path": "/profile",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".revenue-ops-rail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_calendar_rail",
+   "path": "/calendar",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".revenue-ops-rail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blank_regression",
+   "path": "/blank",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  }
+ ]
+}

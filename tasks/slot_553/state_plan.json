@@ -1,0 +1,51 @@
+{
+ "incluud__accessible-astro-starter__1a957e9b2a01": [
+  {
+   "state_id": "desktop_resources",
+   "path": "/resources",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_resources",
+   "path": "/resources",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_resources_tooling",
+   "path": "/resources",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-tab=\"tooling\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

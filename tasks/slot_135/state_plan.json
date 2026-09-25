@@ -1,0 +1,136 @@
+{
+ "ByteGrad__portfolio-website__063ec660e1ed": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_work",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#work",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_work",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#work",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_frontend",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#work",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-pwork-tab='Frontend']",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_route_work",
+   "path": "/work",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_route_stack",
+   "path": "/stack",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  }
+ ]
+}

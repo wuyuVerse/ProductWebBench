@@ -1,0 +1,142 @@
+{
+ "Robpayot__webgl-distortion-bulge-effect__f5fd2420f989": [
+  {
+   "state_id": "desktop_demo1_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_demo1_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_demo1_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo1_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "wait_for_selector",
+     "selector": ".hud__tab[data-hud-cat=\"landscapes\"]",
+     "timeout_ms": 8000
+    },
+    {
+     "type": "click",
+     "target": ".hud__tab[data-hud-cat=\"landscapes\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo2_initial",
+   "path": "/index2.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_demo2_initial",
+   "path": "/index2.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_demo2_initial",
+   "path": "/index2.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo2_hover",
+   "path": "/index2.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "wait_for_selector",
+     "selector": ".card",
+     "timeout_ms": 8000
+    },
+    {
+     "type": "hover",
+     "target": ".card"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

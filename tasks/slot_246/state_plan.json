@@ -1,0 +1,196 @@
+{
+ "uzzii-21__astro-portfolio__8a4f4be9cf73": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fieldlog",
+   "path": "/field-log",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_instruments",
+   "path": "/instruments",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_instruments",
+   "path": "/instruments",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_grid_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_grid_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_grid_fieldlog",
+   "path": "/field-log",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_grid_instruments",
+   "path": "/instruments",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_grid_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "grid_filter_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".instrgrid",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "[data-instrgrid-tab='Calibration']",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

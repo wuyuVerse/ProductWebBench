@@ -1,0 +1,232 @@
+{
+ "website-templates__simple-product_responsive-template__29953ee814fa": [
+  {
+   "state_id": "desktop_home_top",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rail_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_rail_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_shop",
+   "path": "/shop.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rail_shop",
+   "path": "/shop.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_filter",
+   "path": "/shop.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-shop",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_chargers",
+   "path": "/shop.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-shop",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-prechu-tab=\"Chargers\"]",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shop",
+   "path": "/shop.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-shop",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_product",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#prechu-promise",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_product_detail",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".product",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".page-footer",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

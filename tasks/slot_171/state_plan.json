@@ -1,0 +1,263 @@
+{
+ "satnaing__astro-paper__3dd4bd54da8d": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tags",
+   "path": "/tags/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tags",
+   "path": "/tags/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tags_filter_gilding",
+   "path": "/tags/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-notebook-topic='Gilding']",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_posts",
+   "path": "/posts/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_footer_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_archives",
+   "path": "/archives/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tag_blog",
+   "path": "/tags/gilding/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post_top",
+   "path": "/posts/laying-loose-gold-leaf-on-glass/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_search",
+   "path": "/search/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  }
+ ]
+}

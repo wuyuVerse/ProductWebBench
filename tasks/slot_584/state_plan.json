@@ -1,0 +1,63 @@
+{
+ "themeselection__sneat-vuetify-vuejs-admin-template-free__9f84e6c7eb78": [
+  {
+   "state_id": "desktop_tags",
+   "path": "/tags",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "mobile_tags",
+   "path": "/tags",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "desktop_tags_tagged",
+   "path": "/tags",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-tag=\"i2:urgent\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_tags_persist",
+   "path": "/tags",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-tag=\"i2:urgent\"]", "wait_ms": 700 },
+    { "type": "fill", "selector": "input[data-search]", "value": "report", "wait_ms": 700 },
+    { "type": "fill", "selector": "input[data-search]", "value": "", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_typography",
+   "path": "/typography",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  }
+ ]
+}

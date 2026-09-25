@@ -1,0 +1,253 @@
+{
+ "Banana021s__Gallery-Template__971a38f77833": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "desktop_collection_panel",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-filterbar]",
+     "optional": true,
+     "wait_ms": 500
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "tablet_collection_panel",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-filterbar]",
+     "optional": true,
+     "wait_ms": 500
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "mobile_collection_panel",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-filterbar]",
+     "optional": true,
+     "wait_ms": 500
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "desktop_dropdown_topic",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-metrics]",
+     "optional": true,
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "tag": "button",
+     "text": "Topic Images",
+     "optional": true,
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gallery-readout]",
+     "optional": true,
+     "wait_ms": 400
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "desktop_dropdown_nature",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-metrics]",
+     "optional": true,
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "tag": "button",
+     "text": "Nature Images",
+     "optional": true,
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gallery-readout]",
+     "optional": true,
+     "wait_ms": 400
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "desktop_dropdown_space",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-metrics]",
+     "optional": true,
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "tag": "button",
+     "text": "Space Images",
+     "optional": true,
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gallery-readout]",
+     "optional": true,
+     "wait_ms": 400
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "mobile_dropdown_nature",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-collection-metrics]",
+     "optional": true,
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "tag": "button",
+     "text": "Nature Images",
+     "optional": true,
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-gallery-readout]",
+     "optional": true,
+     "wait_ms": 400
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  },
+  {
+   "state_id": "desktop_masonry_hover",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[class*=\"my-masonry\"]",
+     "optional": true,
+     "wait_ms": 400
+    },
+    {
+     "type": "hover",
+     "selector": "[class*=\"my-masonry\"]",
+     "optional": true,
+     "wait_ms": 400
+    }
+   ],
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000
+  }
+ ]
+}

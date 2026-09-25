@@ -1,0 +1,141 @@
+{
+ "website-templates__webstudio_responsive-template__dbb498d9ee95": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_content",
+   "path": "/",
+   "viewport": "desktop_content",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".projfilter",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_content",
+   "path": "/",
+   "viewport": "mobile_content",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".projfilter",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/",
+   "viewport": "desktop_footer",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".page-footer",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projfilter",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".projfilter",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".projfilter__tab[data-projfilter-tab=\"branding\"]",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

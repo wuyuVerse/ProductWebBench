@@ -1,0 +1,136 @@
+{
+  "ShuvoMallick01__SKYBER-eCommerce-Website-HTML-Template__0ee9bc9c63cf": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shopfilter",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".shopfilter",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_shopfilter",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".shopfilter",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shopfilter_audio",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".shopfilter",
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "[data-shopfilter-chip=\"audio\"]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_seasonal",
+      "path": "/seasonal-edit.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_products",
+      "path": "/product.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    }
+  ]
+}

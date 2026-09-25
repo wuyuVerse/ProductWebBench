@@ -1,0 +1,264 @@
+{
+ "withastro__docs__ea8c27b30d25": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/en/getting-started/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/getting-started/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/en/getting-started/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/getting-started/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/en/getting-started/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/getting-started/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_images_guide",
+   "path": "/en/guides/images/",
+   "viewport": "desktop_images_guide",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/images/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_channel_pre",
+   "path": "/en/guides/images/",
+   "viewport": "desktop_channel_pre",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/images/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_channel_beta",
+   "path": "/en/guides/images/",
+   "viewport": "desktop_channel_beta",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/images/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".guide-section-nav__ch[data-channel=\"Beta\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cms_guide",
+   "path": "/en/guides/cms/",
+   "viewport": "desktop_cms_guide",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/cms/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_deploy_guide",
+   "path": "/en/guides/deploy/",
+   "viewport": "desktop_deploy_guide",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/deploy/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_integrations_guide",
+   "path": "/en/guides/integrations/",
+   "viewport": "desktop_integrations_guide",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/integrations/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_content_collections",
+   "path": "/en/guides/content-collections/",
+   "viewport": "desktop_content_collections",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/content-collections/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-guide-section-nav]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_images_guide",
+   "path": "/en/guides/images/",
+   "viewport": "mobile_images_guide",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/en/guides/images/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

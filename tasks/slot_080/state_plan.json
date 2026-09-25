@@ -1,0 +1,230 @@
+{
+  "SuccessfullSites__Agency-Website__b964fb262a6f": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_features",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Features"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_features",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Features"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_metrics",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Metric"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_metrics",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Metric"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_pricing",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Pricing"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_faq",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#FAQ"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_footer",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Footer"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_coverage_filter",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#Metric"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        },
+        {
+          "type": "click",
+          "selector": ".coverage-filter__btn[data-scope=\"branch\"]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    }
+  ]
+}

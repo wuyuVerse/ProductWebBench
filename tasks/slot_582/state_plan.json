@@ -1,0 +1,89 @@
+{
+ "ivandi1980__ivandjoh-admin-panel__37a505740389": [
+  {
+   "state_id": "desktop_assignments",
+   "path": "/assignments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_assignments",
+   "path": "/assignments",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_assignments_assigned",
+   "path": "/assignments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-assign=\"t3:Ada\"]",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_assignments_sorted_persist",
+   "path": "/assignments",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-assign=\"t3:Ada\"]",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-sort=\"priority\"]",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

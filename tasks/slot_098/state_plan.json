@@ -1,0 +1,207 @@
+{
+  "StartBootstrap__startbootstrap-personal__6a1ebcc76a93": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_worklib",
+      "path": "/projects.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_worklib",
+      "path": "/projects.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_branding",
+      "path": "/projects.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        },
+        {
+          "type": "click",
+          "selector": "[data-worklib-tab='Branding']",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_work",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_services",
+      "path": "/services.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_services",
+      "path": "/services.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-worklib]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/contact.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,141 @@
+{
+  "edavidaja__docter__fa708f2782ae": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docfinder",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docfinder",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_docfinder",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docfinder",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docfinder_filtered",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#docfinder",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".docfinder__tab[data-docfinder-tab='reference']",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_getting_started",
+      "path": "/page/getting-started/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_advanced_use",
+      "path": "/page/advanced-use/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_getting_started",
+      "path": "/page/getting-started/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

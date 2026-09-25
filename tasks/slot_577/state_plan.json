@@ -1,0 +1,66 @@
+{
+ "themesberg__volt-react-dashboard__419e51539b8a": [
+  {
+   "state_id": "desktop_reconciliation",
+   "path": "#/reconciliation",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_reconciliation",
+   "path": "#/reconciliation",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_reconciliation_matched",
+   "path": "#/reconciliation",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "[data-item=\"b1\"]", "wait_ms": 500},
+    {"type": "click", "selector": "[data-item=\"l1\"]", "wait_ms": 500},
+    {"type": "click", "selector": "[data-action=\"match\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_reconciliation_persist",
+   "path": "#/reconciliation",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "[data-item=\"b1\"]", "wait_ms": 400},
+    {"type": "click", "selector": "[data-item=\"l1\"]", "wait_ms": 400},
+    {"type": "click", "selector": "[data-action=\"match\"]", "wait_ms": 700},
+    {"type": "click", "selector": "[data-nav=\"bank-next\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_transactions",
+   "path": "#/transactions",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  }
+ ]
+}

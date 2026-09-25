@@ -1,0 +1,197 @@
+{
+  "spacemadev__Tailstore__63cabcff851b": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shop",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#driftmark-edit",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_shop",
+      "path": "/shop.html",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#driftmark-edit",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_shop",
+      "path": "/shop.html",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#driftmark-edit",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shop_filter",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#driftmark-edit",
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": ".pfedit__tab[data-pf-tab=\"women\"]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_product",
+      "path": "/single-product-page.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cart",
+      "path": "/cart.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_cart",
+      "path": "/cart.html",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_cart",
+      "path": "/cart.html",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_checkout",
+      "path": "/checkout.html",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    }
+  ]
+}

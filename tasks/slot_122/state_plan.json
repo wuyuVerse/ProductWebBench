@@ -1,0 +1,234 @@
+{
+ "pjqdyd__Vue-bst-web__07ffde1fdc5f": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/#/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/#/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/#/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_software",
+   "path": "/#/software",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_software",
+   "path": "/#/software",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_hardware",
+   "path": "/#/hardware",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_promote",
+   "path": "/#/promote",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_home",
+   "path": "/#/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rail_home",
+   "path": "/#/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_software",
+   "path": "/#/software",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_hardware",
+   "path": "/#/hardware",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_promote",
+   "path": "/#/promote",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "toggle_pulse_home",
+   "path": "/#/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pulse-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "#pulse-mode-btn",
+     "timeout_ms": 5000,
+     "wait_ms": 800
+    }
+   ]
+  }
+ ]
+}

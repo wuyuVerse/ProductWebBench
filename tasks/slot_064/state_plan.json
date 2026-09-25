@@ -1,0 +1,214 @@
+{
+ "Nutlope__qrGPT__2993173bfe32": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_start",
+   "path": "/start",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_start",
+   "path": "/start",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_start",
+   "path": "/start",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_studio_browser",
+   "path": "/start",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_studio_browser",
+   "path": "/start",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_browser",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_studio_page",
+   "path": "/studio",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_ink",
+   "path": "/start",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "selector": ".studio__tab[data-category=\"Ink\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_studio_cards",
+   "path": "/start",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#style-studio",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,136 @@
+{
+ "sharetribe__dev-docs__736e650d945b": [
+  {
+   "state_id": "desktop_home",
+   "path": "/docs/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/docs/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/docs/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_intro",
+   "path": "/docs/introduction/",
+   "viewport": "desktop_intro",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_intro",
+   "path": "/docs/introduction/",
+   "viewport": "mobile_intro",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "channel_toggle_home",
+   "path": "/docs/",
+   "viewport": "channel_toggle_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-section-nav",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "[data-channel=\"edge\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,142 @@
+{
+ "langgptai__aurora-landing__85062040af45": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_asset_filter",
+   "path": "/",
+   "viewport": "desktop_showcase",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-asset-tab='界面']",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_showcase",
+   "path": "/showcase",
+   "viewport": "desktop_showcase",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_showcase",
+   "path": "/showcase",
+   "viewport": "mobile_showcase",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_showcase",
+   "path": "/showcase",
+   "viewport": "tablet_showcase",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#showcase",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,183 @@
+{
+ "matcornic__hugo-theme-learn__3202533a746f": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/en/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/en/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/en/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_archetypes",
+   "path": "/en/cont/archetypes/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-spec-rail"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_archetypes",
+   "path": "/en/cont/archetypes/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-spec-rail"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_archetypes",
+   "path": "/en/cont/archetypes/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-spec-rail"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_markdown",
+   "path": "/en/cont/markdown/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shortcodes",
+   "path": "/en/shortcodes/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "edition_toggle_home",
+   "path": "/en/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": ".docs-edition__chip[data-edition=\"beta\"]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_search_focus",
+   "path": "/en/cont/archetypes/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "fill",
+     "selector": "#search-by",
+     "value": "archetypes"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/en/cont/archetypes/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": "#sidebar-toggle"
+    }
+   ]
+  }
+ ]
+}

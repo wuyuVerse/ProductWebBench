@@ -1,0 +1,51 @@
+{
+ "Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b": [
+  {
+   "state_id": "desktop_wishlist",
+   "path": "/wishlist",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_wishlist",
+   "path": "/wishlist",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_wishlist_luxury",
+   "path": "/wishlist",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-filter=\"luxury-collection\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

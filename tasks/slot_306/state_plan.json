@@ -1,0 +1,165 @@
+{
+ "ahmed-abd-alalim__ShopGrids__e1db1099b1c7": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog_layout",
+   "path": "/index.html",
+   "viewport": "desktop_catalog_layout",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#sellers .catalog-layout",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_catalog_layout",
+   "path": "/index.html",
+   "viewport": "tablet_catalog_layout",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#sellers .catalog-layout",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_catalog_layout",
+   "path": "/index.html",
+   "viewport": "mobile_catalog_layout",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#sellers .catalog-layout",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_product_grid_regression",
+   "path": "/index.html",
+   "viewport": "desktop_product_grid_regression",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#sellers .product-grid",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collection_footer_regression",
+   "path": "/index.html",
+   "viewport": "desktop_collection_footer_regression",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".up_footer",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_add_to_cart",
+   "path": "/index.html",
+   "viewport": "desktop_add_to_cart",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#sellers .catalog-product .fieldcart-add",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "#sellers .catalog-product .fieldcart-add",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

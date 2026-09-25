@@ -1,0 +1,285 @@
+{
+ "game-selection__fire-trails__ba7b93272d2e": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_inspector",
+   "path": "/index.html",
+   "viewport": "desktop_inspector",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pass_fire",
+   "path": "/index.html",
+   "viewport": "desktop_pass_fire",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-pass-filter='fire']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pass_ground",
+   "path": "/index.html",
+   "viewport": "desktop_pass_ground",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-pass-filter='ground']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pass_particles",
+   "path": "/index.html",
+   "viewport": "desktop_pass_particles",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-pass-filter='particles']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_canvas_center",
+   "path": "/index.html",
+   "viewport": "desktop_canvas_center",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "click",
+     "selector": "canvas",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_canvas_corner",
+   "path": "/index.html",
+   "viewport": "desktop_canvas_corner",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "click",
+     "selector": "canvas",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_inspector",
+   "path": "/index.html",
+   "viewport": "mobile_inspector",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-pass-inspector]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  }
+ ]
+}

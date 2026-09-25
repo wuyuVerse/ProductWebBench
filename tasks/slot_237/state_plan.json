@@ -1,0 +1,216 @@
+{
+  "amiradeu__threejs.amiradeuraseh.com__ba4606b5b909": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": true,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".asset-integrity-strip",
+          "optional": true,
+          "timeout_ms": 20000,
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_entered_scene",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": true,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".enter-button",
+          "timeout_ms": 90000,
+          "wait_ms": 500,
+          "state": "attached"
+        },
+        {
+          "type": "evaluate",
+          "expression": "(()=>{const b=document.querySelector('.enter-button'); if(b){b.style.display='block'; b.style.opacity='1'; b.click();} return !!b;})()",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_daylight_cycle",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".enter-button",
+          "timeout_ms": 90000,
+          "wait_ms": 500,
+          "state": "attached"
+        },
+        {
+          "type": "evaluate",
+          "expression": "(()=>{const b=document.querySelector('.enter-button'); if(b){b.style.display='block'; b.style.opacity='1'; b.click();} return !!b;})()",
+          "wait_ms": 1200
+        },
+        {
+          "type": "evaluate",
+          "expression": "document.querySelector('.cycles-item-button[data-index=\"1\"]')?.click()",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_night_cycle",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".enter-button",
+          "timeout_ms": 90000,
+          "wait_ms": 500,
+          "state": "attached"
+        },
+        {
+          "type": "evaluate",
+          "expression": "(()=>{const b=document.querySelector('.enter-button'); if(b){b.style.display='block'; b.style.opacity='1'; b.click();} return !!b;})()",
+          "wait_ms": 1200
+        },
+        {
+          "type": "evaluate",
+          "expression": "document.querySelector('.cycles-item-button[data-index=\"3\"]')?.click()",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_credits_open",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "evaluate",
+          "expression": "document.querySelector('.credits-button')?.click()",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_recheck",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".asset-integrity-strip__recheck",
+          "timeout_ms": 20000,
+          "wait_ms": 500
+        },
+        {
+          "type": "evaluate",
+          "expression": "document.querySelector('.asset-integrity-strip__recheck')?.click()",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".asset-integrity-strip",
+          "optional": true,
+          "timeout_ms": 20000,
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "capture_crops": true,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".asset-integrity-strip",
+          "optional": true,
+          "timeout_ms": 20000,
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_entered_scene",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "capture_crops": true,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".enter-button",
+          "timeout_ms": 90000,
+          "wait_ms": 500,
+          "state": "attached"
+        },
+        {
+          "type": "evaluate",
+          "expression": "(()=>{const b=document.querySelector('.enter-button'); if(b){b.style.display='block'; b.style.opacity='1'; b.click();} return !!b;})()",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_night_cycle",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "capture_crops": false,
+      "screenshot_timeout_ms": 120000,
+      "actions": [
+        {
+          "type": "wait_for_selector",
+          "selector": ".enter-button",
+          "timeout_ms": 90000,
+          "wait_ms": 500,
+          "state": "attached"
+        },
+        {
+          "type": "evaluate",
+          "expression": "(()=>{const b=document.querySelector('.enter-button'); if(b){b.style.display='block'; b.style.opacity='1'; b.click();} return !!b;})()",
+          "wait_ms": 1200
+        },
+        {
+          "type": "evaluate",
+          "expression": "document.querySelector('.cycles-item-button[data-index=\"3\"]')?.click()",
+          "wait_ms": 1200
+        }
+      ]
+    }
+  ]
+}

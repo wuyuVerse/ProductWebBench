@@ -1,0 +1,121 @@
+{
+  "vercel-labs__markdown-to-agents__4bcca00493f8": [
+    {
+      "state_id": "desktop_home",
+      "path": "/docs/getting-started",
+      "viewport": "desktop_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/docs/getting-started",
+      "viewport": "mobile_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/docs/getting-started",
+      "viewport": "tablet_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_configuration",
+      "path": "/docs/configuration",
+      "viewport": "desktop_configuration",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_api_reference",
+      "path": "/docs/api-reference",
+      "viewport": "desktop_api_reference",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_examples",
+      "path": "/docs/examples",
+      "viewport": "desktop_examples",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_configuration",
+      "path": "/docs/configuration",
+      "viewport": "mobile_configuration",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "channel_toggle_home",
+      "path": "/docs/getting-started",
+      "viewport": "channel_toggle_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "[data-channel-btn='edge']:visible",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

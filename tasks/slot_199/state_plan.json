@@ -1,0 +1,160 @@
+{
+  "StartBootstrap__startbootstrap-sb-admin__adde34b9616b": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_review_queue",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scrollIntoView",
+          "selector": "[data-ops-review-board]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_queue_finance",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scrollIntoView",
+          "selector": "[data-ops-review-board]"
+        },
+        {
+          "type": "click",
+          "selector": "[data-ops-review-target=\"finance\"]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_tables_queue",
+      "path": "/tables.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scrollIntoView",
+          "selector": "[data-ops-review-board]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_review_queue",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scrollIntoView",
+          "selector": "[data-ops-review-board]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_sidebar_open",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "#sidebarToggle"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    }
+  ]
+}

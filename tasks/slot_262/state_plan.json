@@ -1,0 +1,200 @@
+{
+  "FlowFalcon__ModernShop__8c94ae32cca3": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "desktop_product_cards",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#product-section",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "desktop_shopfilter",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#product-section",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "mobile_shopfilter",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#product-section",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "desktop_categories",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#featured-categories",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "desktop_newsletter",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".newsletter-section",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "mobile_product_cards",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#product-section",
+          "timeout_ms": 7000,
+          "wait_ms": 800
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "desktop_filter_kopi",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".shopfilter",
+          "timeout_ms": 7000,
+          "wait_ms": 600
+        },
+        {
+          "type": "click",
+          "selector": ".filter-btn[data-category=\"kopi\"]",
+          "timeout_ms": 10000,
+          "wait_ms": 1000,
+          "force": true
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    },
+    {
+      "state_id": "mobile_menu_toggle",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1600
+        },
+        {
+          "type": "click",
+          "selector": ".menu-toggle",
+          "timeout_ms": 10000,
+          "wait_ms": 800,
+          "optional": true
+        }
+      ],
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 12000
+    }
+  ]
+}

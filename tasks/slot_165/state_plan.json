@@ -1,0 +1,193 @@
+{
+ "ryanbalieiro__vue-agency-landing-page-template__e48b179ba405": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/",
+   "viewport": "desktop_portfolio",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/",
+   "viewport": "mobile_portfolio",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_focus",
+   "path": "/",
+   "viewport": "desktop_focus",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-pffocus-tab='Productivity']",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_featured",
+   "path": "/",
+   "viewport": "desktop_featured",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#featured",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/",
+   "viewport": "desktop_contact",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#contact",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_contact",
+   "path": "/",
+   "viewport": "mobile_contact",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#contact",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

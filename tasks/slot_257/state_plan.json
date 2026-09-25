@@ -1,0 +1,200 @@
+{
+ "epicmaxco__vuestic-admin__9c5b44f3674d": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/dashboard",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": ".pfocus__bar"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/projects",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": ".pfocus__bar"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_users",
+   "path": "/users",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "projects_filter_completed",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": ".pfocus__chip:text-is(\"Completed\")"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": ".pfocus__bar"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "projects_filter_important",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": ".pfocus__chip:text-is(\"Important\")"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": ".pfocus__bar"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard",
+   "path": "/dashboard",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects_scrolled",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": ".pfocus__grid"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

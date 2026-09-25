@@ -1,0 +1,187 @@
+{
+ "Ibaliqbal__grid-layout-transition__c0f44dba1bf8": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_flow_guide",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".flowguide",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_flow_guide",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".flowguide",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_flow_guide",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".flowguide",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_route_initial",
+   "path": "/index2.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_route_guide",
+   "path": "/index2.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".flowguide",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_route_guide",
+   "path": "/index2.html",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".flowguide",
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dense_scan",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "click",
+     "selector": ".flowguide__step[data-guide-size=\"50%\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 1600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_full_read",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "click",
+     "selector": ".flowguide__step[data-guide-size=\"100%\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 1600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_wide_focus",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "click",
+     "selector": ".flowguide__step[data-guide-size=\"150%\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 1600,
+     "optional": true
+    }
+   ]
+  }
+ ]
+}

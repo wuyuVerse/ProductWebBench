@@ -1,0 +1,304 @@
+{
+ "MisterPrada__logo-particles-template__f5a335f40aca": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_deck",
+   "path": "/index.html",
+   "viewport": "desktop_deck",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_deck",
+   "path": "/index.html",
+   "viewport": "mobile_deck",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_channel_pick",
+   "path": "/index.html",
+   "viewport": "desktop_channel_pick",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".signal-deck__channel[data-channel='emblem']"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_ch_emblem",
+   "path": "/index.html",
+   "viewport": "desktop_ch_emblem",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.setChannelContext('emblem')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_ch_depth",
+   "path": "/index.html",
+   "viewport": "desktop_ch_depth",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.setChannelContext('depth')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_ch_trail",
+   "path": "/index.html",
+   "viewport": "desktop_ch_trail",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.setChannelContext('trail')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_start",
+   "path": "/index.html",
+   "viewport": "desktop_start",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 3200
+    },
+    {
+     "type": "eval",
+     "script": "window.__stage && window.__stage.reveal()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "eval",
+     "script": "(function(){var b=[].slice.call(document.querySelectorAll('#debug-panel button')).find(function(x){return (x.textContent||'').trim()==='Start';}); if(b) b.click();})()"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

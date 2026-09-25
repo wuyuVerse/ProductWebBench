@@ -1,0 +1,180 @@
+{
+ "juliangarnier__anime__308c09346ffc": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/examples/clock-playback-controls/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/examples/clock-playback-controls/",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/examples/clock-playback-controls/",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_clock_slowmo",
+   "path": "/examples/clock-playback-controls/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "click",
+     "selector": "[data-hud-mode=\"slowmo\"]",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_clock_frozen",
+   "path": "/examples/clock-playback-controls/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "click",
+     "selector": "[data-hud-mode=\"frozen\"]",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_stagger_grid",
+   "path": "/examples/stagger/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_stagger_grid",
+   "path": "/examples/stagger/",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_draggable_playground",
+   "path": "/examples/draggable-playground/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_draggable_drawer",
+   "path": "/examples/draggable-playground/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "click",
+     "selector": "#toggle-drawer",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_draggable_drawer",
+   "path": "/examples/draggable-playground/",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "click",
+     "selector": "#toggle-drawer",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,126 @@
+{
+ "MatthewGreenberg__shoe-finder__7c91437d3324": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dunk_filter",
+   "path": "/",
+   "viewport": "desktop_dunk_filter",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "text": "Dunk",
+     "exact": true,
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_new_balance",
+   "path": "/",
+   "viewport": "desktop_new_balance",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "text": "New Balance",
+     "exact": true,
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_under_150",
+   "path": "/",
+   "viewport": "desktop_under_150",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "text": "Under $150",
+     "exact": true,
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_under_150",
+   "path": "/",
+   "viewport": "mobile_under_150",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "text": "Under $150",
+     "exact": true,
+     "wait_ms": 900
+    }
+   ]
+  }
+ ]
+}

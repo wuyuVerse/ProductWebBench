@@ -1,0 +1,122 @@
+{
+ "ashutosh1919__masterPortfolio__33b04a568a92": [
+  {
+   "state_id": "desktop_home",
+   "path": "/home",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/home",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/home",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_impact_route",
+   "path": "/impact",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_impact_filter",
+   "path": "/impact",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "click",
+     "selector": ".discipline-chip[Performance]",
+     "click_text": "Performance",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_impact_route",
+   "path": "/impact",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_impact_route",
+   "path": "/impact",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  }
+ ]
+}

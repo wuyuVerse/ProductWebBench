@@ -1,0 +1,79 @@
+{
+ "codexfelis__paws-template__3be3cde37587": [
+  {
+   "state_id": "desktop_library",
+   "path": "/library",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_library",
+   "path": "/library",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_library_dataset",
+   "path": "/library",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-tag=\"Dataset\"]",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_about",
+   "path": "/about",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  }
+ ]
+}

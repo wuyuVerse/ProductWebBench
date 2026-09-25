@@ -1,0 +1,171 @@
+{
+ "technext__brandi-Onepage-HTML5-Business-Template__e1a813229d9e": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_works",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#works",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_works",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-toolbar",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_facts",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#facts",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#footer",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#contact",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_team",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#team",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_gallery_filter",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-toolbar",
+     "timeout_ms": 5000,
+     "wait_ms": 900,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".gallery-pills a[data-filter=\".branding\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 1100
+    }
+   ]
+  }
+ ]
+}

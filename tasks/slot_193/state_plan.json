@@ -1,0 +1,127 @@
+{
+ "codrops__ImageToContent__b4bbdc7b1809": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_path",
+   "path": "/gallery-path.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-mineral-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_path",
+   "path": "/gallery-path.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-mineral-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_path",
+   "path": "/gallery-path.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-mineral-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_path_family",
+   "path": "/gallery-path.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-mineral-filter]",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-mineral-family='Volcanic']",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

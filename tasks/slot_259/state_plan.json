@@ -1,0 +1,151 @@
+{
+ "manuelernestog__astro-modern-personal-website__9398dea0f2c0": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-atlas",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/projects",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-atlas",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_projects",
+   "path": "/projects",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-atlas",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_atlas",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-summary",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/services",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-summary",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_field_filter",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#field-atlas",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-fieldfilter-tab='Wayfinding']",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,203 @@
+{
+ "codrops__InteractiveColoringConcept__92cc1956c004": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_flow",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_flow",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_grab",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    },
+    {
+     "type": "dispatch",
+     "selector": ".color-tool .color-1 .drag-element",
+     "event": "mousedown",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_reset",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "click",
+     "selector": "button.info-close",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    },
+    {
+     "type": "click",
+     "selector": "button.reset-button",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  }
+ ]
+}

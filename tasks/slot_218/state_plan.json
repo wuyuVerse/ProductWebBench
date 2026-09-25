@@ -1,0 +1,205 @@
+{
+ "themewagon__famms__90c24ed54976": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_product",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog",
+   "path": "/catalog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collfind_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_collfind_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collfind_products",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collfind_catalog",
+   "path": "/catalog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_collfind_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_men_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".collfind__tab[data-cat=\"men\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "add_to_bag_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collfind__bar",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "[data-add-to-bag]",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

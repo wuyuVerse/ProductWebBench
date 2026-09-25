@@ -1,0 +1,115 @@
+{
+  "NextJSTemplates__solid-nextjs__8e48747b93fb": [
+    {
+      "state_id": "desktop_home",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "desktop_docs",
+      "path": "/docs",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "desktop_launch_proof",
+      "path": "/launch-proof",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".lp-filter__bar",
+          "block": "start",
+          "wait_ms": 600,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_launch_proof",
+      "path": "/launch-proof",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "tablet_launch_proof",
+      "path": "/launch-proof",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": []
+    },
+    {
+      "state_id": "desktop_lp_pre",
+      "path": "/launch-proof",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".lp-filter__bar",
+          "block": "start",
+          "wait_ms": 600,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_lp_filter_release",
+      "path": "/launch-proof",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".lp-filter__bar",
+          "block": "start",
+          "wait_ms": 400,
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "[data-lp-tab='release']",
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    }
+  ]
+}

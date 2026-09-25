@@ -1,0 +1,218 @@
+{
+ "netlify-templates__auto-annotated-portfolio__dd15f5ece3f4": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plate-filter, h2"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_info_filter",
+   "path": "/info/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plate-filter, h2"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects_index",
+   "path": "/projects/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plate-filter__tabs, .plate-filter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects_index",
+   "path": "/projects/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_plates_filter",
+   "path": "/projects/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plate-filter__tabs, .plate-filter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plates_filter_rangemaps",
+   "path": "/projects/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".plate-filter__tabs, .plate-filter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-plate-tab=\"Range maps\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project_one",
+   "path": "/projects/project-one/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project_two",
+   "path": "/projects/project-two/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project_three",
+   "path": "/projects/project-three/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact_scroll",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "scroll_fraction": 1.0
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  }
+ ]
+}

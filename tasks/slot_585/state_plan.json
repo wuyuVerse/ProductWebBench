@@ -1,0 +1,65 @@
+{
+ "adminmart__Matdash-vuetify-free__5486f500d01f": [
+  {
+   "state_id": "desktop_quotas",
+   "path": "/quotas",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_quotas",
+   "path": "/quotas",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_quotas_capped",
+   "path": "/quotas",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-cap-dec=\"compute\"]", "wait_ms": 500},
+    {"type": "click", "selector": "button[data-cap-dec=\"compute\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_quotas_persist",
+   "path": "/quotas",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-cap-dec=\"compute\"]", "wait_ms": 400},
+    {"type": "click", "selector": "button[data-cap-dec=\"compute\"]", "wait_ms": 600},
+    {"type": "click", "selector": "button[data-period=\"annual\"]", "wait_ms": 600},
+    {"type": "click", "selector": "button[data-period=\"monthly\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_sample",
+   "path": "/sample-page",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  }
+ ]
+}

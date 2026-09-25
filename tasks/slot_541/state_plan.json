@@ -1,0 +1,51 @@
+{
+ "BobsProgrammingAcademy__enterprise-website-template__71f47e06de23": [
+  {
+   "state_id": "desktop_careers",
+   "path": "/careers",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_careers",
+   "path": "/careers",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_careers_sales",
+   "path": "/careers",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-dept=\"sales\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

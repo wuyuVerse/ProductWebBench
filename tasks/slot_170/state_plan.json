@@ -1,0 +1,164 @@
+{
+ "akella__webGLImageTransitions__498d8fb48426": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_deck",
+   "path": "/index.html",
+   "viewport": "desktop_deck",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_deck",
+   "path": "/index.html",
+   "viewport": "tablet_deck",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_deck",
+   "path": "/index.html",
+   "viewport": "mobile_deck",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo2",
+   "path": "/index2.html",
+   "viewport": "desktop_demo2",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo6",
+   "path": "/index6.html",
+   "viewport": "desktop_demo6",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo8",
+   "path": "/index8.html",
+   "viewport": "desktop_demo8",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/article.html",
+   "viewport": "desktop_article",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cycle_click",
+   "path": "/index.html",
+   "viewport": "desktop_cycle_click",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    },
+    {
+     "type": "click",
+     "selector": "#deck-cycle",
+     "wait_ms": 700,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

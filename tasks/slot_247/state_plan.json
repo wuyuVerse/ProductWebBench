@@ -1,0 +1,178 @@
+{
+  "surjithctly__astroship__1a844c57df3a": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_blog",
+      "path": "/blog/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".postfinder"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_blog",
+      "path": "/blog/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".postfinder"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_blog",
+      "path": "/blog/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".postfinder"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_post",
+      "path": "/blog/rail-yard-slotting-fundamentals/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_about",
+      "path": "/about/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/contact/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "blog_filter_operations",
+      "path": "/blog/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".postfinder"
+        },
+        {
+          "type": "click",
+          "selector": ".postfinder__chip[data-postfinder-cat=\"Operations\"]"
+        }
+      ]
+    }
+  ]
+}

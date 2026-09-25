@@ -1,0 +1,217 @@
+{
+ "themewagon__kaiadmin-lite__c5f41045d5d9": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard_center",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms_pin",
+   "path": "/forms/forms.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_memory",
+   "path": "/tables/tables.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts_memory",
+   "path": "/charts/charts.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_widgets_memory",
+   "path": "/widgets.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard_return",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".sc-state-pin",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_tables_memory",
+   "path": "/tables/tables.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_forms_pin",
+   "path": "/forms/forms.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tables_memory",
+   "path": "/tables/tables.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_charts_memory",
+   "path": "/charts/charts.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".sc-state-center",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

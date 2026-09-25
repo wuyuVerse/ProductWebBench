@@ -1,0 +1,216 @@
+{
+ "dli__flow__02884f0231fd": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_state_deck",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_state_deck",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_density_524k",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#count-19",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_density_speed_tuned",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#count-19",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    },
+    {
+     "type": "click",
+     "selector": "#speed-slider",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_turbulence_tuned",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#turbulence-slider",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_canvas_regression",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_regression",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#footer",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_flow_brief",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#flow-brief",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_flow_brief",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#flow-brief",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_preset_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#state-deck",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".preset-filter-btn[data-preset=\"Balanced vortex\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

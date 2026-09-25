@@ -29,16 +29,16 @@ file rather than inferred from which gates happened to fail.
 
 The **repository snapshots and reference captures are not in this repository.**
 They are large, and they embed third-party sites under their own licences.
-`pwb catalog` lists what a full task package contains, and
-`pwb export-task-packages` builds them from a snapshot root.
+`pwb export-task-packages` builds them from a snapshot root; `pwb catalog`
+indexes a directory of repository archives into the manifest that step reads.
 
 ## Inspecting a task
 
 ```bash
-pwb catalog                       # the 400 tasks with split and capability
-pwb validate-tasks                # schema + admission invariants
-pwb task-template --slot 7        # the staged requirement text
-pwb score-report --help           # how a scored run is summarised
+python3 -m json.tool tasks/manifest.json   # the 400 tasks with group and capability
+pwb validate-tasks tasks                  # schema + admission invariants, all 400
+pwb validate-tasks tasks/slot_007/task.jsonl        # or one slot
+pwb score-report --report submission_results.json   # summarise a scored run
 ```
 
 ## Gate families

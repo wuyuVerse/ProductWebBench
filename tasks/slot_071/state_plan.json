@@ -1,0 +1,261 @@
+{
+ "SubhanRaj__News-Website-Template__b1a9ef4f6c24": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tideboard",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tideboard",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fleet_filter",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "selector": "[data-desk-filter=\"fleet\"]",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_weather_filter",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "selector": "[data-desk-filter=\"weather\"]",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_desks_reset",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "selector": "[data-desk-filter=\"fleet\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-desk-filter=\"all\"]",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_fleet_filter",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "selector": "[data-desk-filter=\"fleet\"]",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/single-news-1.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_article",
+   "path": "/single-news-1.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_archive",
+   "path": "/archive.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_archive",
+   "path": "/archive.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".tide-board",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

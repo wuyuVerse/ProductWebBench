@@ -1,0 +1,139 @@
+{
+ "danurbanowicz__eleventy-netlify-boilerplate__234a880e5e56": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook-filter]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook-filter]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog_filter",
+   "path": "/blog/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook-filter]",
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "selector": ".notebook-filter__chip[data-topic='foraging']",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post",
+   "path": "/posts/foraging-the-first-spring-sea-lettuce/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tag_foraging",
+   "path": "/tags/foraging/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-notebook]",
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,65 @@
+{
+ "Gr33nW33n__nuxtship-template__3e45a0a09e6c": [
+  {
+   "state_id": "desktop_features",
+   "path": "/features",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_features",
+   "path": "/features",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_features_deploy",
+   "path": "/features",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "button[data-cat=\"deploy\"]",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

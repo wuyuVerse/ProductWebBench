@@ -1,0 +1,278 @@
+{
+ "Temitayo-spec__Raft-Landing-Page__6aba4ee8e855": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_offers",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.24
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_freedom_banner",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.4
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_future_cards",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.52
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_default",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#plans"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_yearly",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#plans"
+    },
+    {
+     "type": "click",
+     "selector": ".plan-billing--plans .plan-billing__toggle button:nth-child(2)"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_monthly_back",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#plans"
+    },
+    {
+     "type": "click",
+     "selector": ".plan-billing--plans .plan-billing__toggle button:nth-child(2)"
+    },
+    {
+     "type": "click",
+     "selector": ".plan-billing--plans .plan-billing__toggle button:nth-child(1)"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_plans_yearly",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollIntoView",
+     "selector": "#plans"
+    },
+    {
+     "type": "click",
+     "selector": ".plan-billing--plans .plan-billing__toggle button:nth-child(2)"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_intro_cards",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.72
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_faq_footer",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.96
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_offers",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.24
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_future_cards",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.52
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_faq_footer",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scrollTo",
+     "fraction": 0.96
+    }
+   ]
+  }
+ ]
+}

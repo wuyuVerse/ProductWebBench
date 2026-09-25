@@ -1,0 +1,51 @@
+{
+ "Kiran1689__Kiran1689.github.io__ae16d35c4604": [
+  {
+   "state_id": "desktop_achievements",
+   "path": "/achievements",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_achievements",
+   "path": "/achievements",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_achievements_certifications",
+   "path": "/achievements",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-cat=\"certifications\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,320 @@
+{
+ "davidgrzyb__tailwind-admin-template__37c4c6106c77": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_focus_revenue",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_focus_support",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".opsfocus__tab[data-ops-tab=\"support\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_focus_risk",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".opsfocus__tab[data-ops-tab=\"risk\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_focus_revenue",
+   "path": "/index.html",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_focus_revenue",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_table_regression",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "table",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_route",
+   "path": "/tables.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms_route",
+   "path": "/forms.html",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-ops-focus]",
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_sidebar_toggle",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "header.sm\\:hidden button",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,148 @@
+{
+ "ichsanputr__takeka__e273e47059b9": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_products",
+   "path": "/products",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_products",
+   "path": "/products",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_products",
+   "path": "/products",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog",
+   "path": "/products",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_electronics",
+   "path": "/products",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    },
+    {
+     "type": "click",
+     "selector": "[data-shopbag-tab=\"Electronics\"]",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_add_to_cart",
+   "path": "/products",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Products",
+     "wait_ms": 1100
+    },
+    {
+     "type": "click",
+     "selector": ".shopbag__add:not([disabled])",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_analytics",
+   "path": "/analytics",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3800
+    },
+    {
+     "type": "navigate",
+     "target": "Analytics",
+     "wait_ms": 1100
+    }
+   ]
+  }
+ ]
+}

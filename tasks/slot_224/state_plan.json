@@ -1,0 +1,137 @@
+{
+ "technext__cleaning-company__74aa2d8cbc39": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/services.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".svc",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_services",
+   "path": "/services.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".svc",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_index",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".svc",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".svc",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services_interior_filter",
+   "path": "/services.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".svc",
+     "timeout_ms": 5000,
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".svc__tab[data-svc-tab=\"interior\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

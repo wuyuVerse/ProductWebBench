@@ -1,0 +1,153 @@
+{
+  "ThePratham28__E-Commerce-Website-Template__2f069161cfd7": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_bagprep",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".bag-prep",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_bagprep",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".bag-prep",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shop",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_shop",
+      "path": "/shop.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".bag-prep",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_product",
+      "path": "/sproduct.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_add_to_cart",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".add-to-cart",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".add-to-cart",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cart",
+      "path": "/cart.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

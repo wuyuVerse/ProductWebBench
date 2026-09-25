@@ -1,0 +1,38 @@
+{
+ "dunky11__react-saas-template__3fff0ba1ebd1": [
+  {
+   "state_id": "desktop_members",
+   "path": "/members",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_members",
+   "path": "/members",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_members_engineering",
+   "path": "/members",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button[data-role=\"engineering\"]", "wait_ms": 1200}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,238 @@
+{
+ "AzanWahla__Portfolio-Website-Using-HTML-CSS-and-JavaScript__180e18abdc7f": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1300
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#about",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#services",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#contact",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".footer",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_footer",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".footer",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_work",
+   "path": "/work.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#work",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_work",
+   "path": "/work.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#work",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_menu_open",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#menu-icon",
+     "timeout_ms": 5000,
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio_filter",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "timeout_ms": 5000,
+     "wait_ms": 1200,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".filter-buttons .btnp[data-filter=\".web\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 900
+    }
+   ]
+  }
+ ]
+}

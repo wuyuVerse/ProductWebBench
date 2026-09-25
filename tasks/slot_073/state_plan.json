@@ -1,0 +1,272 @@
+{
+ "themewagon__cozastore__951062d13613": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--home"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--home"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--home"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--shop"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_shop",
+   "path": "/product.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--shop"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shop",
+   "path": "/product.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--shop"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shop_deep",
+   "path": "/product.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pos-promise-shop-anchor"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cart",
+   "path": "/shoping-cart.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/shoping-cart.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--cart"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_cart",
+   "path": "/shoping-cart.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/shoping-cart.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-promise--cart"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_add_to_bag",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pos-add[data-card=\"0\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".pos-add[data-card=\"0\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "RSurya99__nefa__2714a64e2ee8b6ccf7efbc8a6d551f5188c8ec06": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_markets",
+   "path": "/markets",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_markets",
+   "path": "/markets",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/pricing",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_ladder_home",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".access-ladder",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_ladder_home",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".access-ladder",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "toggle_tier_home",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#tier-cycle-btn",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

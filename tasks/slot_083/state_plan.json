@@ -1,0 +1,95 @@
+{
+ "Kirilbt__interactive-map__b84b9e49d0ea": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_museums_filter",
+   "path": "/",
+   "viewport": "desktop_museums_filter",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    },
+    {
+     "type": "click",
+     "selector": ".venue-hud__tab[data-hud-cat=\"museum\"]",
+     "force": true,
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_mcba_deeplink",
+   "path": "/#mcba",
+   "viewport": "desktop_mcba_deeplink",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_arcadia_deeplink",
+   "path": "/#arcadia",
+   "viewport": "desktop_arcadia_deeplink",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 7500
+    }
+   ]
+  }
+ ]
+}

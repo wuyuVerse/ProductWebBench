@@ -1,0 +1,222 @@
+{
+  "google__docsy-example__1da9a9028841": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_home",
+      "path": "/workflow-map/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_docs_overview",
+      "path": "/docs/overview/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_getting_started",
+      "path": "/docs/getting-started/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_tasks",
+      "path": "/docs/tasks/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_tutorials",
+      "path": "/docs/tutorials/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_reference",
+      "path": "/docs/reference/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_search",
+      "path": "/search/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_docs",
+      "path": "/workflow-map/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_sidebar_open",
+      "path": "/workflow-map/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".td-sidebar"
+        }
+      ]
+    },
+    {
+      "state_id": "wfmap_filter",
+      "path": "/workflow-map/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-wfmap]"
+        },
+        {
+          "type": "click",
+          "selector": ".wfmap__chip[data-wfmap-chip=\"operate\"]"
+        }
+      ]
+    }
+  ]
+}

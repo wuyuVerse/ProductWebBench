@@ -1,0 +1,63 @@
+{
+ "kizivat__saas-kit__b953870ee448": [
+  {
+   "state_id": "desktop_entitlements",
+   "path": "/entitlements",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 3000}
+   ]
+  },
+  {
+   "state_id": "mobile_entitlements",
+   "path": "/entitlements",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 3000}
+   ]
+  },
+  {
+   "state_id": "desktop_entitlements_toggled",
+   "path": "/entitlements",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 3000},
+    {"type": "click", "selector": "button[data-toggle=\"sso:pro\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_entitlements_persist",
+   "path": "/entitlements",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 3000},
+    {"type": "click", "selector": "button[data-toggle=\"sso:pro\"]", "wait_ms": 900},
+    {"type": "click", "selector": "button[data-col-filter=\"hide-free\"]", "wait_ms": 900},
+    {"type": "click", "selector": "button[data-col-filter=\"show-all\"]", "wait_ms": 1200}
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/contact",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 3000}
+   ]
+  }
+ ]
+}

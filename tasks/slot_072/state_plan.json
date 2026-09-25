@@ -1,0 +1,216 @@
+{
+  "themewagon__iPortfolio__7a983e5865b5": [
+    {
+      "state_id": "desktop_home",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#about"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_studio_log",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#studio-log"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "mobile_studio_log",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#studio-log"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_stats_regression",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#stats"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_footer_regression",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#footer"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_portfolio_initial",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": "#portfolio"
+        }
+      ],
+      "full_page": false
+    },
+    {
+      "state_id": "desktop_portfolio_filter",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 900
+      },
+      "goto_wait_until": "networkidle",
+      "goto_timeout_ms": 30000,
+      "ready_timeout_ms": 15000,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scrollTo",
+          "selector": ".portfolio-filters"
+        },
+        {
+          "type": "click",
+          "selector": ".portfolio-filters li[data-filter=\".filter-product\"]"
+        }
+      ],
+      "full_page": false
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+ "jgchenu__bootstrap-blog-template__2bd54b765f71": [
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_blog",
+   "path": "/blog.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about-us.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog_tech",
+   "path": "/blog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-pf-tab=\"Tech\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

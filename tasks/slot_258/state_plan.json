@@ -1,0 +1,152 @@
+{
+  "ttntm__11ty-landing-page__42a060fad323": [
+    {
+      "state_id": "desktop_home",
+      "path": "/",
+      "viewport": "desktop_home",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/",
+      "viewport": "mobile_home",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/",
+      "viewport": "tablet_home",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_highlights",
+      "path": "/highlights/",
+      "viewport": "desktop_highlights",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_highlights",
+      "path": "/highlights/",
+      "viewport": "mobile_highlights",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_highlights",
+      "path": "/highlights/",
+      "viewport": "tablet_highlights",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_nav_open",
+      "path": "/",
+      "viewport": "mobile_nav_open",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "click",
+          "selector": "#menuBtn"
+        }
+      ]
+    },
+    {
+      "state_id": "features_filter",
+      "path": "/",
+      "viewport": "features_filter",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#features"
+        },
+        {
+          "type": "click",
+          "selector": ".featfilter__tab[data-featfilter-tab=\"automate\"]"
+        }
+      ]
+    }
+  ]
+}

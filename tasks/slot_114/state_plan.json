@@ -1,0 +1,212 @@
+{
+ "themewagon__dental-pro__a9cb1d81bc0a": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_treatments",
+   "path": "/index.html",
+   "viewport": "desktop_treatments",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_treatments",
+   "path": "/index.html",
+   "viewport": "mobile_treatments",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_treatments_prevention",
+   "path": "/index.html",
+   "viewport": "desktop_treatments_prevention",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    },
+    {
+     "type": "click",
+     "selector": ".treatfilter__tab[data-treat-tab=\"prevention\"]"
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_treatments_page",
+   "path": "/treatments.html",
+   "viewport": "desktop_treatments_page",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_treatments_page",
+   "path": "/treatments.html",
+   "viewport": "mobile_treatments_page",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#treatments"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_page",
+   "path": "/pricing.html",
+   "viewport": "desktop_pricing_page",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_stories",
+   "path": "/index.html",
+   "viewport": "desktop_stories",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#patient-stories"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_notes",
+   "path": "/index.html",
+   "viewport": "desktop_notes",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#dental-notes"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/index.html",
+   "viewport": "desktop_footer",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#contact-us"
+    }
+   ]
+  }
+ ]
+}

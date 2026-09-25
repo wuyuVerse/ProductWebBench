@@ -1,0 +1,194 @@
+{
+ "steven-tey__weathergpt__dabf3866fcf6": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_london",
+   "path": "/London",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tokyo",
+   "path": "/Tokyo",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_new_york",
+   "path": "/New%20York",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/London",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "footer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_london",
+   "path": "/London",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_explorer",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ask-explorer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_explorer",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ask-explorer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_explorer_travel",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ask-explorer",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".ask-tab[data-group=\"travel\"]",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

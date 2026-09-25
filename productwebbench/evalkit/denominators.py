@@ -14,7 +14,7 @@ from ..core.io_utils import ensure_dir, write_json
 ARTIFACT_TYPE = "denominator_consistency_audit"
 DEFAULT_COVERAGE_REPORT = DEFAULT_OUTPUT_ROOT / "authoring_ledger" / "coverage_gaps.json"
 DEFAULT_OUTPUT = DEFAULT_OUTPUT_ROOT / "eval_protocol" / "denominator_consistency_audit.json"
-EVALUABLE_DENOMINATOR_SOURCE = "data/sitecontinuum/tasks/slot_*/task.jsonl"
+EVALUABLE_DENOMINATOR_SOURCE = "data/productwebbench/tasks/slot_*/task.jsonl"
 PUBLISHABLE_DENOMINATOR_SOURCE = "strict_freeze_authoring_audit.strict_clean_task_count"
 
 

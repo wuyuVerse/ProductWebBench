@@ -1,0 +1,204 @@
+{
+    "shadcn__next-contentlayer__5b32397c2034": [
+        {
+            "state_id": "desktop_initial",
+            "path": "/",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "tablet_initial",
+            "path": "/",
+            "viewport": "tablet",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_initial",
+            "path": "/",
+            "viewport": "mobile",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_fieldbook_component",
+            "path": "/fieldbook",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_fieldbook_component",
+            "path": "/fieldbook",
+            "viewport": "mobile",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "tablet_fieldbook",
+            "path": "/fieldbook",
+            "viewport": "tablet",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_fieldbook_filter",
+            "path": "/fieldbook",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 500
+                },
+                {
+                    "type": "click",
+                    "selector": "[data-fb-tab=\"log\"]",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_fieldbook_estuary",
+            "path": "/fieldbook",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 500
+                },
+                {
+                    "type": "click",
+                    "selector": "[data-fb-tab=\"estuary\"]",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_fieldbook_all_reset",
+            "path": "/fieldbook",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 500
+                },
+                {
+                    "type": "click",
+                    "selector": "[data-fb-tab=\"log\"]",
+                    "wait_ms": 400
+                },
+                {
+                    "type": "click",
+                    "selector": "[data-fb-tab=\"all\"]",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_fieldbook_filter",
+            "path": "/fieldbook",
+            "viewport": "mobile",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".fb__controls",
+                    "wait_ms": 500
+                },
+                {
+                    "type": "click",
+                    "selector": "[data-fb-tab=\"log\"]",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_about",
+            "path": "/about",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 800
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_home_feed",
+            "path": "/",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "scroll_to_selector",
+                    "selector": "article",
+                    "wait_ms": 700
+                }
+            ]
+        }
+    ]
+}

@@ -1,0 +1,62 @@
+{
+ "coreui__coreui-free-react-admin-template__bdf27bcb90ee": [
+  {
+   "state_id": "desktop_tickets",
+   "path": "#/tickets",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "mobile_tickets",
+   "path": "#/tickets",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "desktop_tickets_selected",
+   "path": "#/tickets",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-select=\"tk-1043\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_tickets_persist",
+   "path": "#/tickets",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "button[data-select=\"tk-1043\"]", "wait_ms": 900 },
+    { "type": "click", "selector": "button[data-status-set=\"tk-1043:inprogress\"]", "wait_ms": 1200 }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "#/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  }
+ ]
+}

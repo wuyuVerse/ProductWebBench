@@ -1,0 +1,201 @@
+{
+  "Klodovsky__CODIUX__d25f74ed548d": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_services",
+      "path": "/services",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_services",
+      "path": "/services",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_about",
+      "path": "/about",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_rail",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home_rail",
+      "path": "/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 500,
+          "optional": true
+        }
+      ]
+    },
+    {
+      "state_id": "scope_home",
+      "path": "/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".svcfocus",
+          "timeout_ms": 5000,
+          "wait_ms": 400,
+          "optional": true
+        },
+        {
+          "type": "click",
+          "selector": ".svcfocus__tab[data-svcfocus-focus=\"secure\"]",
+          "timeout_ms": 5000,
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+ "zerostaticthemes__gatsby-serif-theme__299366ec54d7": [
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/pricing",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_annual",
+   "path": "/pricing",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "button[data-billing=\"annual\"]",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/services",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

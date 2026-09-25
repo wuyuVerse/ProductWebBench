@@ -1,0 +1,226 @@
+{
+ "BootstrapDash__Kapella-Free-Bootstrap-Admin-Template__6f1dba397288": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard_route_recovery",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard_route_recovery",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_route_recovery",
+   "path": "/pages/tables/basic-table.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms_route_recovery",
+   "path": "/pages/forms/basic_elements.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts_route_recovery",
+   "path": "/pages/charts/chartjs.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_recovery_mode_detail",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".route-recovery-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".route-recovery-mode[data-mode=\"Detail\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_body_regression",
+   "path": "/pages/tables/basic-table.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".table-responsive",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_regression",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".footer",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tables_route_recovery",
+   "path": "/pages/tables/basic-table.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  }
+ ]
+}

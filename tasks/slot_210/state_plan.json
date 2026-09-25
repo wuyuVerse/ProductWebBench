@@ -1,0 +1,108 @@
+{
+ "codrops__InteractivePoints__8419b6377dba": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_point_pick",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pidx--primary",
+     "wait_ms": 350
+    },
+    {
+     "type": "click",
+     "selector": ".pidx--primary .pidx__card[data-pidx-index=\"3\"]",
+     "wait_ms": 450
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_second_map",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#interactive-2",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_point_index",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pidx--primary",
+     "wait_ms": 350
+    }
+   ]
+  }
+ ]
+}

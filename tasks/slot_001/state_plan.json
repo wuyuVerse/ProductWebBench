@@ -1,0 +1,141 @@
+{
+ "mh-rafi__react-landing__f21968d75253": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/#/landing13",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/#/landing13",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/#/landing13",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing13",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/#/landing13",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing13",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_pricing",
+   "path": "/#/landing13",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing13",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_annual",
+   "path": "/#/landing13",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing13",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".planbar__chip[data-period=\"annual\"]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo_gallery",
+   "path": "/#/demos",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_demo_gallery",
+   "path": "/#/demos",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

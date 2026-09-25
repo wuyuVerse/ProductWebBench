@@ -1,0 +1,146 @@
+{
+ "NextMerce__nextjs-ecommerce-template__e2aa8103bffc": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog_finder",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".catalogfinder__bar",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_catalog_finder",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".catalogfinder__bar",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".catalogfinder__bar",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-catalogfinder-tab=\"Accessories\"]",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_without_finder",
+   "path": "/shop-without-sidebar",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".catalogfinder__bar",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_with_finder",
+   "path": "/shop-with-sidebar",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".catalogfinder__bar",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

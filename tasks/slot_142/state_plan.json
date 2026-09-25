@@ -1,0 +1,189 @@
+{
+ "hakimov-dev__landing-template__f115148716a4": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_customers",
+   "path": "/customers",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/pricing",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rail_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_rail_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_region_eu",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".launchrail",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".launchrail__chip[data-region=\"eu\"]",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

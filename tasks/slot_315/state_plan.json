@@ -1,0 +1,300 @@
+{
+ "abds4816__tableaura_ecommerce_website_template__f3a7c346d7ef": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/index.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog",
+   "path": "/products.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/products.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_catalog",
+   "path": "/products.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/products.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_catalog",
+   "path": "/products.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/products.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_catalog_deep",
+   "path": "/products.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/products.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#products .shopcard:last-child"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_detail",
+   "path": "/product.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collection-focus--detail"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_detail",
+   "path": "/product.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/product.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collection-focus--detail"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_basket",
+   "path": "/cart.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/cart.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collection-focus--basket"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_basket",
+   "path": "/cart.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/cart.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".collection-focus--basket"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collection_pick",
+   "path": "/products.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "path": "/products.html"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".shopfilter__chip[data-collection=\"wildflowers\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

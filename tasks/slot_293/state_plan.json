@@ -1,0 +1,174 @@
+{
+ "technext__robot_factory__556ac5208da3": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_catalog",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".robot-catalog",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home_catalog",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".robot-catalog",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop",
+   "path": "/shop.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shop",
+   "path": "/shop.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_shop",
+   "path": "/shop.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_catalog",
+   "path": "/shop.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".robot-catalog",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".navbar-toggle",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_logistics",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".robot-catalog",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".cat-tab[data-line=\"logistics\"]",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

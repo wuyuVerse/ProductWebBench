@@ -1,0 +1,159 @@
+{
+ "hymhub__css-to-tailwind__2defeb68332a": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/css-to-tailwind/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/css-to-tailwind/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/css-to-tailwind/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_spacing",
+   "path": "/css-to-tailwind/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".output-filter__tab[data-of-cat=\"spacing\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_spacing",
+   "path": "/css-to-tailwind/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".output-filter__tab[data-of-cat=\"spacing\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_config",
+   "path": "/css-to-tailwind/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "text=SetConfig",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_light",
+   "path": "/css-to-tailwind/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "section > div button:nth-of-type(2)",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_result_scroll",
+   "path": "/css-to-tailwind/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".simplebar-content-wrapper",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 400,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

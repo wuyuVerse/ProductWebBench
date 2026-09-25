@@ -1,0 +1,14 @@
+{
+ "JugglerX__hugo-whisper-theme__511dcd7dca62": [
+  { "state_id": "desktop_home", "path": "/", "viewport": "desktop_home", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] },
+  { "state_id": "desktop_initial", "path": "/docs/", "viewport": "desktop_initial", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] },
+  { "state_id": "tablet_initial", "path": "/docs/", "viewport": "tablet_initial", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] },
+  { "state_id": "mobile_initial", "path": "/docs/", "viewport": "mobile_initial", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] },
+  { "state_id": "desktop_finder", "path": "/docs/", "viewport": "desktop_finder", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "scroll_to_selector", "target": "#docs-finder" }, { "type": "wait", "wait_ms": 400 } ] },
+  { "state_id": "tablet_finder", "path": "/docs/", "viewport": "tablet_finder", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "scroll_to_selector", "target": "#docs-finder" }, { "type": "wait", "wait_ms": 400 } ] },
+  { "state_id": "mobile_finder", "path": "/docs/", "viewport": "mobile_finder", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "scroll_to_selector", "target": "#docs-finder" }, { "type": "wait", "wait_ms": 400 } ] },
+  { "state_id": "desktop_finder_setup", "path": "/docs/", "viewport": "desktop_finder_setup", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "scroll_to_selector", "target": "#docs-finder" }, { "type": "click", "target": ".docs-finder__chip[data-docs-cat=\"setup\"]", "text": "setup" }, { "type": "wait", "wait_ms": 500 } ] },
+  { "state_id": "desktop_install_cli", "path": "/docs/install-hugo/", "viewport": "desktop_install_cli", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] },
+  { "state_id": "desktop_anchor_regression", "path": "/docs/configure/#main-menu", "viewport": "desktop_anchor_regression", "goto_wait_until": "networkidle", "ready_timeout_ms": 20000, "full_page": false, "actions": [ { "type": "wait", "wait_ms": 900 } ] }
+ ]
+}

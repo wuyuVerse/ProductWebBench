@@ -1,0 +1,209 @@
+{
+ "AndrewJBateman__angular-website-example__6cae24f1bd75": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/#/about",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_about",
+   "path": "/#/about",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/#/services",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_footer_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_about",
+   "path": "/#/about",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_services",
+   "path": "/#/services",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_footer_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "toggle_ready_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ready-rail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "#ready-mode-btn",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

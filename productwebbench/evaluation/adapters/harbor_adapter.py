@@ -19,7 +19,7 @@ def toml_string(value: str) -> str:
 
 
 def task_name(task_id: str) -> str:
-    return "sitecontinuum/" + task_id
+    return "productwebbench/" + task_id
 
 
 def markdown_list(values: list[Any], *, empty: str) -> str:
@@ -50,7 +50,7 @@ def rubric_markdown(task: dict[str, Any]) -> str:
 
 def instruction_markdown(task: dict[str, Any], readme: str) -> str:
     sections = [
-        "# SiteContinuum Task\n\n"
+        "# ProductWebBench Task\n\n"
         "Modify the website in the repository workspace to satisfy the requested change. "
         "Edit files in place using the repository's existing framework, routes, components, assets, and styling conventions.\n\n"
         "Do not edit generated outputs, dependency folders, lockfiles, verifier files, or benchmark metadata. "
@@ -72,14 +72,14 @@ def instruction_markdown(task: dict[str, Any], readme: str) -> str:
 
 def task_toml(task: dict[str, Any], *, agent_timeout_sec: int, verifier_timeout_sec: int) -> str:
     difficulty = task.get("difficulty", "unknown")
-    tags = ["sitecontinuum", task.get("split", "dev"), task.get("scope", "web")]
+    tags = ["productwebbench", task.get("split", "dev"), task.get("scope", "web")]
     tags_text = ", ".join(toml_string(str(tag)) for tag in tags)
     return (
         'version = "1.0"\n\n'
         "[task]\n"
         f"name = {toml_string(task_name(task['task_id']))}\n\n"
         "[metadata]\n"
-        f"author_name = {toml_string('SiteContinuum authors')}\n"
+        f"author_name = {toml_string('ProductWebBench authors')}\n"
         f"author_email = {toml_string('unknown')}\n"
         f"difficulty = {toml_string(str(difficulty))}\n"
         f"category = {toml_string('web_frontend')}\n"
@@ -104,11 +104,11 @@ def test_script(task: dict[str, Any]) -> str:
     return f"""#!/usr/bin/env bash
 set -euo pipefail
 
-ROOT="${{SITECONTINUUM_ROOT:-/workspace}}"
-OUT="${{SITECONTINUUM_VERIFY_OUT:-/tmp/sitecontinuum_verify}}"
+ROOT="${{PWB_ROOT:-/workspace}}"
+OUT="${{PWB_VERIFY_OUT:-/tmp/pwb_verify}}"
 TASK_DIR="$(cd "$(dirname "${{BASH_SOURCE[0]}}")/.." && pwd)"
 mkdir -p "$OUT" /logs/verifier
-export SITECONTINUUM_VERIFY_OUT="$OUT"
+export PWB_VERIFY_OUT="$OUT"
 
 python3 -m productwebbench capture-states {repo_id} \\
   --workspace-root "$ROOT" \\
@@ -116,8 +116,8 @@ python3 -m productwebbench capture-states {repo_id} \\
   --state-plan "$TASK_DIR/state_plan.json" \\
   --skip-install \\
   --skip-build \\
-  --server-timeout "${{SITECONTINUUM_SERVER_TIMEOUT:-120}}" \\
-  --capture-timeout "${{SITECONTINUUM_CAPTURE_TIMEOUT:-360}}" \\
+  --server-timeout "${{PWB_SERVER_TIMEOUT:-120}}" \\
+  --capture-timeout "${{PWB_CAPTURE_TIMEOUT:-360}}" \\
   --no-server-lock
 
 python3 -m productwebbench verify-submission \\
@@ -131,7 +131,7 @@ python3 - <<'PY'
 import json
 import os
 from pathlib import Path
-out = Path(os.environ["SITECONTINUUM_VERIFY_OUT"])
+out = Path(os.environ["PWB_VERIFY_OUT"])
 report = json.loads((out / "submission_results.json").read_text())
 passed = int(report.get("passed", 0))
 total = int(report.get("total", 1)) or 1
@@ -189,29 +189,79 @@ def export_one(
     )
     (task_dir / "task.jsonl").write_text(json.dumps(task, ensure_ascii=False) + "\n", encoding="utf-8")
     write_json(task_dir / "submission_spec.normalized.json", {"tasks": [spec]})
-    shutil.copyfile(state_plan, task_dir / "state_plan.json")
-    shutil.copyfile(design_anchors, task_dir / "design_anchors.json")
+    if state_plan is not None and Path(state_plan).is_file():
+        shutil.copyfile(state_plan, task_dir / "state_plan.json")
+    if design_anchors is not None and Path(design_anchors).is_file():
+        shutil.copyfile(design_anchors, task_dir / "design_anchors.json")
+    else:
+        # The anchor bundle indexes the reference screenshots, which are not
+        # distributed with this repository. Emit an empty index so the verifier
+        # runs; visual_anchor_similarity then has nothing to compare against.
+        write_json(task_dir / "design_anchors.json", {"items": [], "total": 0})
     return task_dir
+
+
+def read_slot_tree(root: Path) -> list[dict[str, Any]]:
+    """Read the per-slot task layout this repository ships.
+
+    Each `slot_NNN/` holds `task.jsonl`, `submission_specs.json` and
+    `state_plan.json`. Returns one entry per slot, in slot order.
+    """
+    entries = []
+    for slot_dir in sorted(root.glob("slot_*")):
+        task_file = slot_dir / "task.jsonl"
+        if not task_file.is_file():
+            continue
+        tasks = list(read_jsonl(task_file))
+        if not tasks:
+            continue
+        spec_file = slot_dir / "submission_specs.json"
+        spec = {}
+        if spec_file.is_file():
+            payload = json.loads(spec_file.read_text(encoding="utf-8"))
+            specs_by_id = {t.get("task_id"): t for t in (payload.get("tasks") or [])}
+            spec = specs_by_id.get(tasks[0].get("task_id")) or (payload.get("tasks") or [{}])[0]
+        anchors = slot_dir / "design_anchors.json"
+        entries.append(
+            {
+                "task": tasks[0],
+                "spec": spec,
+                "state_plan": slot_dir / "state_plan.json",
+                "design_anchors": anchors if anchors.is_file() else None,
+            }
+        )
+    return entries
 
 
 def export_harbor_tasks(args: argparse.Namespace) -> None:
     assert_not_under_formal_task_root(args.output_root, purpose="Harbor export")
-    tasks = list(read_jsonl(args.tasks))
+    if Path(args.tasks).is_dir():
+        entries = read_slot_tree(Path(args.tasks))
+    else:
+        specs = load_specs(args.specs)
+        entries = [
+            {
+                "task": task,
+                "spec": specs[task["task_id"]],
+                "state_plan": args.state_plan,
+                "design_anchors": args.design_anchors,
+            }
+            for task in read_jsonl(args.tasks)
+        ]
     if args.limit is not None:
-        tasks = tasks[: args.limit]
-    specs = load_specs(args.specs)
+        entries = entries[: args.limit]
     ensure_dir(args.output_root)
     exported = []
-    for task in tasks:
+    for entry in entries:
         exported.append(
             str(
                 export_one(
-                    task,
-                    specs[task["task_id"]],
+                    entry["task"],
+                    entry["spec"],
                     output_root=args.output_root,
                     bench_root=args.bench_root,
-                    state_plan=args.state_plan,
-                    design_anchors=args.design_anchors,
+                    state_plan=entry["state_plan"],
+                    design_anchors=entry["design_anchors"],
                     agent_timeout_sec=args.agent_timeout_sec,
                     verifier_timeout_sec=args.verifier_timeout_sec,
                 )
@@ -222,7 +272,8 @@ def export_harbor_tasks(args: argparse.Namespace) -> None:
 
 
 def add_export_harbor_args(parser: argparse.ArgumentParser) -> None:
-    parser.add_argument("--tasks", type=Path, default=DEFAULT_OUTPUT_ROOT / "tasks" / "dev_next.jsonl")
+    parser.add_argument("--tasks", type=Path, default=Path("tasks"),
+                        help="the per-slot task tree (default), or a single tasks JSONL")
     parser.add_argument("--specs", type=Path, default=DEFAULT_OUTPUT_ROOT / "tasks" / "dev_next_submission_specs.json")
     parser.add_argument("--bench-root", type=Path, default=DEFAULT_OUTPUT_ROOT / "tasks" / "packages" / "dev_next")
     parser.add_argument("--state-plan", type=Path, default=DEFAULT_OUTPUT_ROOT / "tasks" / "dev_next_state_plan.json")

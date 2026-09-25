@@ -1,0 +1,130 @@
+{
+  "saicaca__fuwari__6d39b0dec412": [
+    {
+      "state_id": "desktop_home",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_archive",
+      "path": "/archive/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_post",
+      "path": "/posts/markdown/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        }
+      ]
+    },
+    {
+      "state_id": "home_filter_fieldnotes",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".reading-room"
+        },
+        {
+          "type": "click",
+          "selector": ".reading-room__chip[data-reading-room-chip=\"Field Notes\"]"
+        }
+      ]
+    }
+  ]
+}

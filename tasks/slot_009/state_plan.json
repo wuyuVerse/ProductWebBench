@@ -1,0 +1,254 @@
+{
+ "themefisher__revolve-bulma__579a378788b4": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_grid",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "figcaption",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_grid",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "figcaption",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_grid",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "figcaption",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_slider",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_coast_signal",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".coast-signal",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_coast_signal",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".coast-signal",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_coast_signal_tidework",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".coast-signal",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".coast-signal__chip[data-section=\"Tidework\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fashion",
+   "path": "/fashion.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fashion_rail",
+   "path": "/fashion.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".coast-signal",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about_rail",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".coast-signal",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

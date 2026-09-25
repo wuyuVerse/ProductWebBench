@@ -1,0 +1,198 @@
+{
+ "themeselection__materio-bootstrap-html-laravel-admin-template-free__d19dd1e98919": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard_cards",
+   "path": "/",
+   "viewport": "desktop_dashboard_cards",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll",
+     "y": 620
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dispatch_rail",
+   "path": "/",
+   "viewport": "desktop_dispatch_rail",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_basic_cards",
+   "path": "/cards/basic",
+   "viewport": "desktop_basic_cards",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_buttons",
+   "path": "/ui/buttons",
+   "viewport": "desktop_buttons",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_account_settings",
+   "path": "/pages/account-settings-account",
+   "viewport": "desktop_account_settings",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_sidebar_open",
+   "path": "/",
+   "viewport": "mobile_sidebar_open",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": ".layout-menu-toggle a"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dispatch_rail",
+   "path": "/",
+   "viewport": "mobile_dispatch_rail",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_afternoon",
+   "path": "/",
+   "viewport": "desktop_rail_afternoon",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    },
+    {
+     "type": "click",
+     "selector": ".dispatch-rail__band[data-band=\"Afternoon\"]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rail_night",
+   "path": "/",
+   "viewport": "desktop_rail_night",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-dispatch-rail]"
+    },
+    {
+     "type": "click",
+     "selector": ".dispatch-rail__band[data-band=\"Night\"]"
+    }
+   ]
+  }
+ ]
+}

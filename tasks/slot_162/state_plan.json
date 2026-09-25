@@ -1,0 +1,142 @@
+{
+ "fiduswriter__Simple-DataTables__6bd573d9fe15": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_learning",
+   "path": "/learning-path/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_learning",
+   "path": "/learning-path/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_learning",
+   "path": "/learning-path/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_track_data",
+   "path": "/learning-path/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-lp-filter]",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-lp-track='Data']",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "sujoyduttajad__Landing-Page-React__f72bde06dbc2": [
+  {
+   "state_id": "desktop_features",
+   "path": "/features",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_features",
+   "path": "/features",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_features_expand_security",
+   "path": "/features",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button:has-text(\"Bank-Grade Security\")",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

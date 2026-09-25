@@ -1,0 +1,235 @@
+{
+ "daemon-bixia__Avian-Template__22b2444fd437": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signin",
+   "path": "/#/access/sign-in/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_reset",
+   "path": "/#/reset/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pulse_home",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pulse_home",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pulse_signin",
+   "path": "/#/access/sign-in/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pulse_reset",
+   "path": "/#/reset/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_pulse_home",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pulse_signin",
+   "path": "/#/access/sign-in/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "toggle_pulse_home",
+   "path": "/#/chat/",
+   "viewport": {
+    "width": 1440,
+    "height": 1000
+   },
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".wsrail",
+     "timeout_ms": 5000,
+     "wait_ms": 500,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": "#wsrail-mode-btn",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

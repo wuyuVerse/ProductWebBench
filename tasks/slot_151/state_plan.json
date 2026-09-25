@@ -1,0 +1,150 @@
+{
+ "AkberJag__portfolio-template__c863458abdec": [
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/projects",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_projects",
+   "path": "/projects",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home",
+   "path": "/home",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fr_projects",
+   "path": "/fr/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects_firebase",
+   "path": "/projects",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "[data-pf-grid]",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-pf-tab=\"Firebase\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

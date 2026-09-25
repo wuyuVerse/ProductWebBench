@@ -1,0 +1,207 @@
+{
+  "StartBootstrap__startbootstrap-stylish-portfolio__a658eb7130db": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_workfinder",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_workfinder",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_staircases",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        },
+        {
+          "type": "click",
+          "selector": "[data-workfinder-tab='Staircases']",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects",
+      "path": "/projects.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_projects",
+      "path": "/projects.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-workfinder]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    }
+  ]
+}

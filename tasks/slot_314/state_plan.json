@@ -1,0 +1,135 @@
+{
+ "naxeem__raalhu-blog__8ac01818efeb": [
+  {
+   "state_id": "desktop_articles",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".af",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_articles",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".af",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_articles",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".af",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_categories",
+   "path": "/categories.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/article-details.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_articles_food",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".af",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".af-chip[data-af-tab=\"Food\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

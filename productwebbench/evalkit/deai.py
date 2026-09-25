@@ -468,7 +468,7 @@ def build_deai_contrast_anchor_queue(
                         "do not batch-generate anchors",
                         "do not use TBD/unknown provider, model, model_family, or website_type",
                         "do not count this queue item as a contrast anchor",
-                        "do not write under data/sitecontinuum/tasks",
+                        "do not write under data/productwebbench/tasks",
                     ],
                 },
                 "append_command": (

@@ -1,0 +1,226 @@
+{
+ "coreui__coreui-free-bootstrap-admin-template__487cd57dcb54": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_overview_fabric",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_overview_fabric",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_widgets_fabric",
+   "path": "/widgets.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cards_fabric",
+   "path": "/components/cards.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms_fabric",
+   "path": "/forms/form-control.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_fabric_scope_regional",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".edge-fabric-strip",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".edge-fabric-view[data-scope=\"Regional\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_table_regression",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "table",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_regression",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "footer.footer",
+     "timeout_ms": 5000,
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_widgets_fabric",
+   "path": "/widgets.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,182 @@
+{
+ "themewagon__folio-tailwind__5874e9698671": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_work",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home_work",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/projects.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_case",
+   "path": "/case-study.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/blog-article.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_saas",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-work-browser]",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".work-browser__tab[data-cat=\"saas\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

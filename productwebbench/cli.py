@@ -318,7 +318,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     harbor_parser = subparsers.add_parser(
         "export-harbor-tasks",
-        help="Export SiteContinuum tasks into a Harbor-style task directory layout.",
+        help="Export ProductWebBench tasks into a Harbor-style task directory layout.",
     )
     harbor_adapter.add_export_harbor_args(harbor_parser)
     harbor_parser.set_defaults(func=harbor_adapter.export_harbor_tasks)

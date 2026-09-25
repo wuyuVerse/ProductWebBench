@@ -1,0 +1,244 @@
+{
+ "cruip__tailwind-landing-page-template__909e38e3249a": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_logo_constellation",
+   "path": "/",
+   "viewport": "desktop_logo_constellation",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "text=Trusted by design",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_planet_assets",
+   "path": "/",
+   "viewport": "desktop_planet_assets",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "text=Loomlet keeps every surface",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_testimonial_cta",
+   "path": "/",
+   "viewport": "desktop_testimonial_cta",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "text=ships everywhere at once",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_default",
+   "path": "/",
+   "viewport": "desktop_pricing_default",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pricing__billing",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_annual",
+   "path": "/",
+   "viewport": "desktop_pricing_annual",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "[data-pricing-tab=\"annual\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pricing__billing",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/",
+   "viewport": "mobile_pricing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pricing__billing",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signin_pricing",
+   "path": "/signin",
+   "viewport": "desktop_signin_pricing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pricing__billing",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signup_pricing",
+   "path": "/signup",
+   "viewport": "desktop_signup_pricing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".pricing__billing",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signin",
+   "path": "/signin",
+   "viewport": "desktop_signin",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signup",
+   "path": "/signup",
+   "viewport": "desktop_signup",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "pjqdyd__Vue-bst-web__07ffde1fdc5f": [
+  {
+   "state_id": "desktop_catalog",
+   "path": "#/catalog",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 4000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_catalog",
+   "path": "#/catalog",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 4000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_catalog_software",
+   "path": "#/catalog",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 4000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-cat=\"software\"]",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

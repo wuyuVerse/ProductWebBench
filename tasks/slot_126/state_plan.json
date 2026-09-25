@@ -1,0 +1,153 @@
+{
+ "kellymilligan__codrops-oct-2021-final__bb7683f53a4d": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_controls",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_canvas_regression",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_canvas_regression",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_preset_diamond",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": ".preset-hud__chip[data-preset=\"diamond\"]",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_specimen",
+   "path": "/specimen.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_material",
+   "path": "/material.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_specimen",
+   "path": "/specimen.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

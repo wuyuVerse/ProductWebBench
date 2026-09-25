@@ -1,0 +1,154 @@
+{
+  "Kuzma02__Fashion-eCommerce-Shop-in-React__aa49a544241b": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_filtered",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "click",
+          "selector": "[data-collfinder-tab=\"Luxury Collection\"]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home_filtered",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "click",
+          "selector": "[data-collfinder-tab=\"Luxury Collection\"]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_added",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "click",
+          "selector": "[data-collfinder-add]"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shop",
+      "path": "/shop",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_product",
+      "path": "/product/1",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cart",
+      "path": "/cart",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    }
+  ]
+}

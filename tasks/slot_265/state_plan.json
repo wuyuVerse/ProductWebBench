@@ -1,0 +1,198 @@
+{
+ "bedimcode__responsive-landing-page-headphones__ace1fa8fed74": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_specs",
+   "path": "/",
+   "viewport": "desktop_specs",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#specsReliabilityMatrix"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_specs",
+   "path": "/",
+   "viewport": "mobile_specs",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#specsReliabilityMatrix"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_specs",
+   "path": "/",
+   "viewport": "tablet_specs",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#specsReliabilityMatrix"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finish_default",
+   "path": "/",
+   "viewport": "desktop_finish_default",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#specsFinishSelector"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finish_marine",
+   "path": "/",
+   "viewport": "desktop_finish_marine",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#specsFinishSelector"
+    },
+    {
+     "type": "click",
+     "selector": ".specs__swatch[data-finish=\"Marine Edition\"]"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_case",
+   "path": "/",
+   "viewport": "desktop_case",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#case"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer",
+   "path": "/",
+   "viewport": "desktop_footer",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": ".footer"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_products",
+   "path": "/",
+   "viewport": "desktop_products",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#products"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_menu_open",
+   "path": "/",
+   "viewport": "mobile_menu_open",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "selector": "#nav-toggle"
+    }
+   ]
+  }
+ ]
+}

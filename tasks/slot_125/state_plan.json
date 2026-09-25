@@ -1,0 +1,182 @@
+{
+ "basehub-ai__help-center-template__2e0b2be69de1": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_category",
+   "path": "/getting-started",
+   "viewport": "desktop_category",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_category",
+   "path": "/getting-started",
+   "viewport": "mobile_category",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/getting-started/basic-terminology",
+   "viewport": "desktop_article",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_article",
+   "path": "/getting-started/basic-terminology",
+   "viewport": "mobile_article",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/",
+   "viewport": "desktop_finder",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_finder",
+   "path": "/",
+   "viewport": "mobile_finder",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-topic-finder]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_topic_filter",
+   "path": "/",
+   "viewport": "desktop_topic_filter",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-topic-tab=\"team-management\"]"
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-tab=\"team-management\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_topic_filter",
+   "path": "/",
+   "viewport": "mobile_topic_filter",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 45000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-topic-tab=\"team-management\"]"
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-tab=\"team-management\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  }
+ ]
+}

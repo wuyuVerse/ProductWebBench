@@ -1,0 +1,175 @@
+{
+ "HaiderAziz428__Wardrobe.com---Fashion-E-commerce-Website-HTML-Templates__9fbf847c4263": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_featured_products",
+   "path": "/index.html",
+   "viewport": "desktop_featured_products",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_latest_products",
+   "path": "/index.html",
+   "viewport": "desktop_latest_products",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to",
+     "y": 1600
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_featured_toolbar",
+   "path": "/index.html",
+   "viewport": "mobile_featured_toolbar",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_products",
+   "path": "/index2.html",
+   "viewport": "desktop_all_products",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_products_deep",
+   "path": "/index2.html",
+   "viewport": "desktop_all_products_deep",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to",
+     "y": 1400
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_all_products",
+   "path": "/index2.html",
+   "viewport": "mobile_all_products",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_category_filter",
+   "path": "/index.html",
+   "viewport": "desktop_category_filter",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shopfilter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".shopfilter__tab[data-cat=\"footwear\"]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/contacts.html",
+   "viewport": "desktop_contact",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  }
+ ]
+}

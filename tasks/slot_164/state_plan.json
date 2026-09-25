@@ -1,0 +1,194 @@
+{
+  "hhhrrrttt222111__developer-portfolio__fbb3b053a617": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_drawer_open",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "[aria-label=\"Menu\"]",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_drawer_open",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "[aria-label=\"Menu\"]",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_skills",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".skills",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_stack",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects",
+          "wait_ms": 700
+        },
+        {
+          "type": "click",
+          "selector": ".projFilter__tab[data-proj-tab=\"C++\"]",
+          "click_text": "C++",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects_route",
+      "path": "/projects",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_projects",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_blog_route",
+      "path": "/blog",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    }
+  ]
+}

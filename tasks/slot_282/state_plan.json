@@ -1,0 +1,200 @@
+{
+ "robin-dela__hover-effect__1938cbff22a0": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_gallery_all",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-filter",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_gallery_stills",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "[data-gallery-tab=\"stills\"]",
+     "wait_ms": 700,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-filter",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_gallery_displacement",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "[data-gallery-tab=\"displacement\"]",
+     "wait_ms": 700,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-filter",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_gallery_stills",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "[data-gallery-tab=\"stills\"]",
+     "wait_ms": 700,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-filter",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_gallery_stills",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": "[data-gallery-tab=\"stills\"]",
+     "wait_ms": 700,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gallery-filter",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_next_carousel",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "click",
+     "selector": ".next",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_hover_ny",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    },
+    {
+     "type": "hover",
+     "selector": ".div",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,135 @@
+{
+ "themewagon__dockit__d7847a4f1912": [
+  {
+   "state_id": "desktop_home",
+   "path": "/dockit/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/dockit/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/dockit/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_overview",
+   "path": "/dockit/getting-started/introduction/overview/",
+   "viewport": "desktop_overview",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_overview",
+   "path": "/dockit/getting-started/introduction/overview/",
+   "viewport": "mobile_overview",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_overview",
+   "path": "/dockit/getting-started/introduction/overview/",
+   "viewport": "tablet_overview",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_overview_docker",
+   "path": "/dockit/getting-started/introduction/overview/",
+   "viewport": "desktop_overview_docker",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": "[data-path-seg=\"docker\"]",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_quickstart",
+   "path": "/dockit/getting-started/introduction/quickstart/",
+   "viewport": "desktop_quickstart",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_navigation",
+   "path": "/dockit/getting-started/navigation/",
+   "viewport": "desktop_navigation",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  }
+ ]
+}

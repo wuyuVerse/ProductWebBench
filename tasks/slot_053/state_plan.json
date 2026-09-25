@@ -1,0 +1,133 @@
+{
+ "BrockAltug__chat-pwa-demo__b54dda87fce7": [
+  {
+   "state_id": "desktop_chat",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_chat",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_chat",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_discover",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "text=Discover",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_discover",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "text=Discover",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_chatserver",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "text=Gaming Hub",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_chat_finance",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-svf-tab=\"Finance\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,130 @@
+{
+ "themewagon__smart-home__1834c4539c48c1c00628f6033526f10f5f75e60d": [
+  {
+   "state_id": "desktop_devices",
+   "path": "/devices",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_devices",
+   "path": "/devices",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_devices",
+   "path": "/devices",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard",
+   "path": "/dashboard",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_statistics",
+   "path": "/statistics",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_statistics",
+   "path": "/statistics",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_devices_security",
+   "path": "/devices",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-shf-tab=\"Security\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

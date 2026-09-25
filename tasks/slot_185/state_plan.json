@@ -1,0 +1,190 @@
+{
+  "merakiuilabs__botanical-garden-template__60b0645552262cb36a92e34e497873559312a5d1": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_visit",
+      "path": "/visit.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_exhibitions",
+      "path": "/exhibitions.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_visit",
+      "path": "/visit.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_exhibitions",
+      "path": "/exhibitions.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_gallery_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".mg-gallery"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_gallery_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".mg-gallery"
+        }
+      ]
+    },
+    {
+      "state_id": "toggle_habitat_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": ".mg-gallery"
+        },
+        {
+          "type": "click",
+          "selector": ".mg-gallery__tab[data-mg-tab=\"Glasshouse\"]"
+        }
+      ]
+    }
+  ]
+}

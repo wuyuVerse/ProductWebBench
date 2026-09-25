@@ -1,0 +1,127 @@
+{
+ "lydiahallie__React-Ecommerce__10710c7750c3": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lookbook",
+   "path": "/lookbook",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lbk__controls",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_lookbook",
+   "path": "/lookbook",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lbk__controls",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_lookbook",
+   "path": "/lookbook",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lbk__controls",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lookbook_filter",
+   "path": "/lookbook",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lbk__controls",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".lbk__tab[data-lbk-tab=\"evening\"]",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

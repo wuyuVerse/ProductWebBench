@@ -1,0 +1,174 @@
+{
+ "BootstrapDash__StarAdmin-Free-Bootstrap-Admin-Template__7ab3570e1a87": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_roster",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-op-roster]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_roster_regional",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-op-segment='Regional']",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-op-roster]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_roster",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-op-roster]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables",
+   "path": "/pages/tables/basic-table.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tables",
+   "path": "/pages/tables/basic-table.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms",
+   "path": "/pages/forms/basic_elements.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts",
+   "path": "/pages/charts/chartjs.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

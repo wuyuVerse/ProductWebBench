@@ -1,0 +1,207 @@
+{
+  "sahrullahh__windzo__011c81f5fcfa": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_tables",
+      "path": "/#/tables",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_tables",
+      "path": "/#/tables",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_card",
+      "path": "/#/component/card",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_board_home",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_board_home",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_board_tables",
+      "path": "/#/tables",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_board_card",
+      "path": "/#/component/card",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_board_home",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "filter_completed_home",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2000
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-order-board]",
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "[data-order-tab='completed']",
+          "status": "succeeded"
+        }
+      ]
+    }
+  ]
+}

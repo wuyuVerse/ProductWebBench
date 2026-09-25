@@ -1,0 +1,218 @@
+{
+ "codrops__ProductComparison__0d4040cc1299": [
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_readiness",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".readiness",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "mobile_readiness",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".readiness",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_compare_page",
+   "path": "/compare.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_guide_page",
+   "path": "/guide.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_selected",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".product .action--compare-add input.check-hidden",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_select_ready",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".product .action--compare-add",
+     "wait_ms": 200
+    },
+    {
+     "type": "click",
+     "selector": ".product .action--compare-add input.check-hidden",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "desktop_compare",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".product .action--compare-add input.check-hidden",
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "selector": ".compare-basket .action--compare",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "goto_wait_until": "networkidle",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "state_id": "mobile_selected",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".product .action--compare-add input.check-hidden",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

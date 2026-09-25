@@ -1,0 +1,147 @@
+{
+ "timlrx__tailwind-nextjs-starter-blog__b45bef66b40c": [
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topic-browser",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_blog",
+   "path": "/blog/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topic-browser",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog_guides",
+   "path": "/blog/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topic-browser",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-tab=\"Guides\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog_releases",
+   "path": "/blog/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topic-browser",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-tab=\"Releases\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog_component",
+   "path": "/blog/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topic-browser",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tag",
+   "path": "/tags/writings/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".reading-rail",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post",
+   "path": "/blog/the-time-machine/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".reading-rail",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

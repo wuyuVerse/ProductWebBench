@@ -1,0 +1,38 @@
+{
+ "coreui__coreui-free-react-admin-template__bdf27bcb90ee": [
+  {
+   "state_id": "desktop_activity",
+   "path": "#/activity",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_activity",
+   "path": "#/activity",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_activity_mentions",
+   "path": "#/activity",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button:has-text(\"Mentions\")", "wait_ms": 1200}
+   ]
+  }
+ ]
+}

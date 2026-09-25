@@ -1,0 +1,169 @@
+{
+  "feroz39__snapfolio__5d6d907e32ed": [
+    {
+      "state_id": "desktop_home_initial",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home_initial",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home_initial",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about_initial",
+      "path": "/about.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_initial",
+      "path": "/portfolio.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_grid",
+      "path": "/portfolio.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_portfolio_grid",
+      "path": "/portfolio.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_react",
+      "path": "/portfolio.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-filter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".pf__tab[data-pf-cat=\"react\"]",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about_rail",
+      "path": "/about.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-rail",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_portfolio_rail",
+      "path": "/portfolio.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-rail",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_about_rail",
+      "path": "/about.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".pf-rail",
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

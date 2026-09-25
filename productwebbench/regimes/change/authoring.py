@@ -14,7 +14,7 @@ def validate_change_tasks(tasks_path: Path, report_path: Path) -> dict[str, Any]
         "artifact_type": "change_regime_task_validation",
         "formal_task_record": False,
         "regime": CHANGE_REGIME,
-        "wrapped_module": "sitecontinuum.construction.authoring.tasks",
+        "wrapped_module": "productwebbench.construction.authoring.tasks",
         "report": report,
     }
 
@@ -49,7 +49,7 @@ def audit_change_authoring_data(
         "artifact_type": "change_regime_authoring_audit",
         "formal_task_record": False,
         "regime": CHANGE_REGIME,
-        "wrapped_module": "sitecontinuum.construction.authoring.tasks",
+        "wrapped_module": "productwebbench.construction.authoring.tasks",
         "report": report,
     }
 
@@ -86,7 +86,7 @@ def export_change_task_packages(
         "artifact_type": "change_regime_package_export",
         "formal_task_record": False,
         "regime": CHANGE_REGIME,
-        "wrapped_module": "sitecontinuum.construction.authoring.task_packages",
+        "wrapped_module": "productwebbench.construction.authoring.task_packages",
         "report": report,
     }
 
@@ -133,6 +133,6 @@ def build_change_split_pipeline(
         "artifact_type": "change_regime_split_pipeline",
         "formal_task_record": False,
         "regime": CHANGE_REGIME,
-        "wrapped_module": "sitecontinuum.construction.authoring.pipeline",
+        "wrapped_module": "productwebbench.construction.authoring.pipeline",
         "report": report,
     }

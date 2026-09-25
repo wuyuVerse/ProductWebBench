@@ -1,0 +1,157 @@
+{
+  "billalben__evara-ecommerce__b61966797826": [
+    {
+      "state_id": "desktop_shop",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_footwear",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "[data-evarafinder-tab=\"footwear\"]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_shop",
+      "path": "/shop.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_filter_footwear",
+      "path": "/shop.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "[data-evarafinder-tab=\"footwear\"]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_shop_addcart",
+      "path": "/shop.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        },
+        {
+          "type": "click",
+          "selector": "[data-cart-add]",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 400
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_shop",
+      "path": "/shop.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_index",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_details",
+      "path": "/details.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cart",
+      "path": "/cart.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1500
+        }
+      ]
+    }
+  ]
+}

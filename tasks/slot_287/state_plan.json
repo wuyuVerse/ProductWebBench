@@ -1,0 +1,205 @@
+{
+ "m-i-n-a-r__sparky-portfolio__37305c467657": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project_atlas",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lane-filter",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_project_atlas",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lane-filter",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_project_cards",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".works-grid",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_late_projects",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".content-short",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_funfacts_regression",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#funfacts",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_infos_regression",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#infos",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_footer_regression",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#footer",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_footer_regression",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#footer",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lane_filter",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".lane-filter",
+     "timeout_ms": 5000,
+     "wait_ms": 700,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".lane-filter-btn[data-lane=\"design\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

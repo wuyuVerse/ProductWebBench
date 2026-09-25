@@ -1,0 +1,141 @@
+{
+ "J0SUKE__vortex-gallery__afe6d73390e0": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_navigator",
+   "path": "/index.html",
+   "viewport": "desktop_navigator",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_navigator",
+   "path": "/index.html",
+   "viewport": "mobile_navigator",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_group_pick",
+   "path": "/index.html",
+   "viewport": "desktop_group_pick",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "click",
+     "selector": ".fnav__group[data-group='finale']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_context_forward",
+   "path": "/index.html",
+   "viewport": "desktop_context_forward",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__vortex && window.__vortex.setContext('forward')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_context_reverse",
+   "path": "/index.html",
+   "viewport": "desktop_context_reverse",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__vortex && window.__vortex.setContext('reverse')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

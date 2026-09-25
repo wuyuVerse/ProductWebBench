@@ -1,0 +1,160 @@
+{
+ "sunil9813__Bonik-Ecommerice-Website-in-React__e84de829ae3b": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_deal_picks",
+   "path": "/",
+   "viewport": "desktop_deal_picks",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".curated-promise--home",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_deal_picks",
+   "path": "/",
+   "viewport": "tablet_deal_picks",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".curated-promise--home",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_deal_picks",
+   "path": "/",
+   "viewport": "mobile_deal_picks",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".dealpicks__filterbar",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_grid",
+   "path": "/",
+   "viewport": "desktop_shop_grid",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".shop",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cart",
+   "path": "/cart",
+   "viewport": "desktop_cart",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_deal_filter",
+   "path": "/",
+   "viewport": "desktop_deal_filter",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".curated-promise--home",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-dealpicks-tab=\"watch\"]",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,38 @@
+{
+ "bloomui__tokyo-free-white-react-admin-dashboard__7537cfb92128": [
+  {
+   "state_id": "desktop_support",
+   "path": "/support",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_support",
+   "path": "/support",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_support_billing",
+   "path": "/support",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button:has-text(\"Billing & Payments\")", "wait_ms": 1200}
+   ]
+  }
+ ]
+}

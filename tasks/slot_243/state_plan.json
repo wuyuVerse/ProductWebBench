@@ -1,0 +1,200 @@
+{
+  "nicremo__astro-multilingual-portfolio-template__87a89e7a56c1": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects",
+      "path": "/",
+      "viewport": "desktop_projects",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_projects",
+      "path": "/",
+      "viewport": "mobile_projects",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_projects",
+      "path": "/",
+      "viewport": "tablet_projects",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_en_projects",
+      "path": "/en/",
+      "viewport": "desktop_en_projects",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_de_projects",
+      "path": "/de/",
+      "viewport": "desktop_de_projects",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_de_imprint",
+      "path": "/de/imprint/",
+      "viewport": "desktop_de_imprint",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_de_privacy",
+      "path": "/de/privacy-policy/",
+      "viewport": "desktop_de_privacy",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_root_impressum",
+      "path": "/impressum/",
+      "viewport": "desktop_root_impressum",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_menu_open",
+      "path": "/",
+      "viewport": "mobile_menu_open",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "projects_filter",
+      "path": "/",
+      "viewport": "projects_filter",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#projects"
+        },
+        {
+          "type": "click",
+          "selector": ".projfilter__tab[data-projfilter-tab=\"template\"]"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,178 @@
+{
+ "demo007x__golang-blog__359c4a9ed062": [
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_initial",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "tablet_initial",
+   "viewport": {
+    "height": 1112,
+    "width": 834
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "mobile_initial",
+   "viewport": {
+    "height": 844,
+    "width": 390
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/editormd.js.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_source",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "deep"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/editormd.js.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_source_deep",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/examples/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_examples",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/examples/katex.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_katex_example",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/editormd.js.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "mobile_source",
+   "viewport": {
+    "height": 844,
+    "width": 390
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "click",
+     "selector": ".docindex__tab[data-docindex-tab=\"examples\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/docs/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_examples_filter",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  }
+ ]
+}

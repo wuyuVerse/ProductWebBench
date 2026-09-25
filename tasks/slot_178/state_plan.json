@@ -1,0 +1,229 @@
+{
+ "JosephASG__codrops-cinematic-scroll-animations__7a56d1fdc120": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_director",
+   "path": "/index.html",
+   "viewport": "desktop_director",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_chapter_pick",
+   "path": "/index.html",
+   "viewport": "desktop_chapter_pick",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".director__chapter[data-chapter='opening']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_chapter_ascent",
+   "path": "/index.html",
+   "viewport": "desktop_chapter_ascent",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".director__chapter[data-chapter='ascent']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_chapter_skyline",
+   "path": "/index.html",
+   "viewport": "desktop_chapter_skyline",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".director__chapter[data-chapter='skyline']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_demo2",
+   "path": "/index.html#/variant-2",
+   "viewport": "desktop_demo2",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_director",
+   "path": "/index.html",
+   "viewport": "mobile_director",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3600
+    },
+    {
+     "type": "eval",
+     "script": "window.__director = window.__director || {}; window.__director.captureRevealed = true; window.__director.reveal && window.__director.reveal();"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

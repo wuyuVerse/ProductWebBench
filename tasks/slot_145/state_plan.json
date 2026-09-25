@@ -1,0 +1,145 @@
+{
+  "nuxt-ui-templates__portfolio__265fa1c11e91": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects",
+      "path": "/projects",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_blog",
+      "path": "/blog",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_speaking",
+      "path": "/speaking",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_projects",
+      "path": "/projects",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_advising",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 40000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400,
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "[data-mode=\"advising\"]",
+          "wait_ms": 700,
+          "status": "succeeded"
+        }
+      ]
+    }
+  ]
+}

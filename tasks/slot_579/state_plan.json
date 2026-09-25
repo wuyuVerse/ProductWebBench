@@ -1,0 +1,66 @@
+{
+ "coreui__coreui-free-vue-admin-template__974ba0e3c30f": [
+  {
+   "state_id": "desktop_approvals",
+   "path": "/#/approvals",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "mobile_approvals",
+   "path": "/#/approvals",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  },
+  {
+   "state_id": "desktop_approvals_selected",
+   "path": "/#/approvals",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "input[data-select-row=\"r1\"]", "wait_ms": 300 },
+    { "type": "click", "selector": "input[data-select-row=\"r2\"]", "wait_ms": 300 },
+    { "type": "click", "selector": "input[data-select-row=\"r3\"]", "wait_ms": 500 }
+   ]
+  },
+  {
+   "state_id": "desktop_approvals_persist",
+   "path": "/#/approvals",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2000 },
+    { "type": "click", "selector": "input[data-select-row=\"r1\"]", "wait_ms": 300 },
+    { "type": "click", "selector": "input[data-select-row=\"r2\"]", "wait_ms": 300 },
+    { "type": "click", "selector": "input[data-select-row=\"r3\"]", "wait_ms": 400 },
+    { "type": "click", "selector": "button[data-filter=\"pending\"]", "wait_ms": 800 }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/#/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    { "type": "wait", "wait_ms": 2500 }
+   ]
+  }
+ ]
+}

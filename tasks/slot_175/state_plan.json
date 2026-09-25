@@ -1,0 +1,146 @@
+{
+ "Dorota1997__react-frontend-dev-portfolio__befb05c7704d": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/index.html",
+   "viewport": "desktop_portfolio",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/index.html",
+   "viewport": "mobile_portfolio",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_react",
+   "path": "/index.html",
+   "viewport": "desktop_react",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#portfolio",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-stack-tab='React']",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/index.html",
+   "viewport": "desktop_about",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#about",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_experience",
+   "path": "/index.html",
+   "viewport": "desktop_experience",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1400
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#resume",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

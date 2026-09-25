@@ -1,0 +1,222 @@
+{
+ "website-templates__portfolio_one-page-template__0fe7fdcc579c": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/index.html",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_projects",
+   "path": "/index.html",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_web",
+   "path": "/index.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".js-fit[data-filter=\"web\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_work",
+   "path": "/work.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_studio",
+   "path": "/studio.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "domcontentloaded",
+   "goto_timeout_ms": 60000,
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    },
+    {
+     "type": "scroll_to",
+     "selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

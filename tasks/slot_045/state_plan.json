@@ -1,0 +1,160 @@
+{
+  "mattverse__what-i-love__b1fe48034d3f": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_work_grid",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#experiments",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_work_grid",
+      "path": "/",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#experiments",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_post",
+      "path": "/",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#experiments",
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "[data-work-tab='post-processing']",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_good_time",
+      "path": "/project/good-time",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#experiments",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_reflective",
+      "path": "/project/reflective-cube",
+      "viewport": "desktop_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "type": "scroll_to_selector",
+          "selector": "#experiments",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_good_time",
+      "path": "/project/good-time",
+      "viewport": "tablet_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_good_time",
+      "path": "/project/good-time",
+      "viewport": "mobile_initial",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        }
+      ]
+    }
+  ]
+}

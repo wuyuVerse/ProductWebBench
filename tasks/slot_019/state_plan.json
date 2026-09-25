@@ -1,0 +1,114 @@
+{
+  "ColorlibHQ__AdminLTE__3c9e9f4547a8": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_chat",
+      "path": "/pages/chat.html",
+      "viewport": "desktop_chat",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_chat",
+      "path": "/pages/chat.html",
+      "viewport": "mobile_chat",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_profile",
+      "path": "/pages/profile.html",
+      "viewport": "desktop_profile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_night",
+      "path": "/index.html",
+      "viewport": "desktop_home_night",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-shift-board]",
+          "status": "succeeded"
+        },
+        {
+          "type": "click",
+          "selector": "button[data-bs-theme-value=\"dark\"]",
+          "status": "succeeded"
+        }
+      ]
+    }
+  ]
+}

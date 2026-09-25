@@ -1,0 +1,198 @@
+{
+  "Alvalens__Alvalens-porto-2-nextJs__20d64efb4b6f": [
+    {
+      "state_id": "desktop_home",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects",
+      "path": "/projects",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_projects",
+      "path": "/projects",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_projects",
+      "path": "/projects",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_projects_filter_web",
+      "path": "/projects",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "click",
+          "selector": ".work-radar__tab(Web Development)",
+          "status": "succeeded"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_about",
+      "path": "/about",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_project_detail",
+      "path": "/projects/intervyou",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 45000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 2200
+        },
+        {
+          "type": "scroll_sweep"
+        },
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

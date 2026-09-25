@@ -1,0 +1,51 @@
+{
+ "kizivat__saas-kit__b953870ee448": [
+  {
+   "state_id": "desktop_plans",
+   "path": "/plans",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_plans",
+   "path": "/plans",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_annual",
+   "path": "/plans",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-billing=\"annual\"]",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

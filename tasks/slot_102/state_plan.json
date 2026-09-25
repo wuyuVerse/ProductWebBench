@@ -1,0 +1,139 @@
+{
+ "codrops__ProductGridLayout__45e7db3d10c6": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collection",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "target_selector": "#collection-filter",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_collection",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "target_selector": "#collection-filter",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_prints",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "target_selector": ".collectionfilter__chip[data-category=\"prints\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "target_selector": "#collection-filter",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_filter_prints",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "target_selector": ".collectionfilter__chip[data-category=\"prints\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "target_selector": "#collection-filter",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

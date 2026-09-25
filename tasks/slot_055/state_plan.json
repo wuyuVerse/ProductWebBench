@@ -1,0 +1,266 @@
+{
+ "surjithctly__documentation-html-template__9b68730865da": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_guide_finder",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_guide_finder",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_configure_scope",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-guide-scope=\"configure\"]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_setup_scope",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-guide-scope=\"setup\"]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_reset",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-guide-scope=\"configure\"]",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-guide-scope=\"all\"]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_configure_scope",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-guide-scope=\"configure\"]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_sidebar_region",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".gfinder-rail--sidebar",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_intro_region",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".intro1",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_license_region",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#line11",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_getting_started",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#line1",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plugins",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#line4",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_support",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#line8",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_changelog",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#line10",
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

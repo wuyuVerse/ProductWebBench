@@ -1,0 +1,134 @@
+{
+ "codrops__ParticleEffectsButtons__f9f96d558104": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".finder",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".finder",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".finder",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder_commerce",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".finder",
+     "timeout_ms": 5000,
+     "wait_ms": 600,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".finder__chip[data-category=\"commerce\"]",
+     "timeout_ms": 5000,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_rehearsal",
+   "path": "/rehearsal.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_rehearsal",
+   "path": "/rehearsal.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_rehearsal",
+   "path": "/rehearsal.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

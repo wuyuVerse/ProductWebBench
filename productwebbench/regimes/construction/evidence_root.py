@@ -275,7 +275,7 @@ def scaffold_readme(task: dict[str, Any]) -> str:
             "- accepted benchmark data: no",
             "",
             "A real run must fill each milestone workspace and reports before a manifest or trace can be built.",
-            "The scaffold itself must never be copied into data/sitecontinuum/tasks or the construction ledger.",
+            "The scaffold itself must never be copied into data/productwebbench/tasks or the construction ledger.",
             "",
         ]
     )
@@ -598,7 +598,7 @@ def add_prepare_args(parser: argparse.ArgumentParser) -> None:
         "--output-root",
         type=Path,
         default=None,
-        help="Directory for the non-formal evidence scaffold. Defaults to data/sitecontinuum/construction_evidence_roots/<task_id>.",
+        help="Directory for the non-formal evidence scaffold. Defaults to data/productwebbench/construction_evidence_roots/<task_id>.",
     )
     parser.add_argument("--overwrite", action="store_true", help="Refresh scaffold files if they already exist.")
 

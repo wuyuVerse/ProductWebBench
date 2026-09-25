@@ -1,0 +1,174 @@
+{
+ "Vins2106__Free-Discord-Bot-Website__ad38f64c1e2a": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_explorer",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".command-explorer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home_explorer",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".command-explorer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_commands",
+   "path": "/commands.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_commands",
+   "path": "/commands.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_commands",
+   "path": "/commands.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_commands_explorer",
+   "path": "/commands.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".command-explorer",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": "#toggler i",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_moderation",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".command-explorer",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".cmd-tab[data-group=\"mod\"]",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

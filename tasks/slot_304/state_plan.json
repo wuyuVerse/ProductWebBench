@@ -1,0 +1,122 @@
+{
+    "technext__sulfer-multipage-business-html5-template__fdb18c6512c2": [
+        {
+            "state_id": "desktop_home",
+            "path": "/index.html",
+            "viewport": "desktop_home",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_home",
+            "path": "/index.html",
+            "viewport": "mobile_home",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "tablet_home",
+            "path": "/index.html",
+            "viewport": "tablet_home",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_portfolio",
+            "path": "/portfolio.html",
+            "viewport": "desktop_portfolio",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                },
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".pfilter"
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_portfolio",
+            "path": "/portfolio.html",
+            "viewport": "mobile_portfolio",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                },
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".pfilter"
+                }
+            ]
+        },
+        {
+            "state_id": "tablet_portfolio",
+            "path": "/portfolio.html",
+            "viewport": "tablet_portfolio",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                },
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".pfilter"
+                }
+            ]
+        },
+        {
+            "state_id": "portfolio_filter",
+            "path": "/portfolio.html",
+            "viewport": "portfolio_filter",
+            "goto_wait_until": "domcontentloaded",
+            "ready_timeout_ms": 20000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 900
+                },
+                {
+                    "type": "scroll_to_selector",
+                    "selector": ".pfilter"
+                },
+                {
+                    "type": "click",
+                    "selector": ".pfilter__tab button[data-pcat=\"web\"]"
+                }
+            ]
+        }
+    ]
+}

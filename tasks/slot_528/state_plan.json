@@ -1,0 +1,51 @@
+{
+ "coreui__coreui-free-vue-admin-template__974ba0e3c30f": [
+  {
+   "state_id": "desktop_profile",
+   "path": "/#/profile",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_profile",
+   "path": "/#/profile",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_profile_activity",
+   "path": "/#/profile",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button:has-text(\"Activity\")",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

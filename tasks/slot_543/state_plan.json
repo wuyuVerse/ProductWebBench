@@ -1,0 +1,51 @@
+{
+ "AdityaKumawat97__react-e-commerce-website__2e46ab9cbc36": [
+  {
+   "state_id": "desktop_orders",
+   "path": "/orders",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_orders",
+   "path": "/orders",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_orders_processing",
+   "path": "/orders",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-tab=\"processing\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

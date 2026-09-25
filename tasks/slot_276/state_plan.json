@@ -1,0 +1,203 @@
+{
+ "guangzhengli__nextjs-blog-template__c7f6154aa083": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_component",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_filter_component",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_sourcing_filter",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-roast-tab=\"Sourcing\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_technique_filter",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-roast-tab=\"Technique\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_reset",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-roast-tab=\"Sourcing\"]",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": "[data-roast-tab=\"All\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_sourcing_filter",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".roast-filter",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-roast-tab=\"Sourcing\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post",
+   "path": "/blog/intro/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  }
+ ]
+}

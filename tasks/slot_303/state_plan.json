@@ -1,0 +1,145 @@
+{
+ "RuchiraSachinthana__Portfolio-Website__4304df2e4897": [
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_portfolio",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_details",
+   "path": "/portfolio-details.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio_graphic",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2200,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#portfolio #portfolio-flters",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "#portfolio-flters li[data-pf-tab=\"Graphic Design\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

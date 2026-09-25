@@ -1,0 +1,251 @@
+{
+ "brunoimbrizi__interactive-particles__efe300f9cd2b": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_panel_expanded",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('tune')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_panel_hidden",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_second_sample",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    },
+    {
+     "type": "click",
+     "selector": ".deck__chip[data-plate='2']",
+     "timeout_ms": 5000
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_third_sample",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    },
+    {
+     "type": "click",
+     "selector": ".deck__chip[data-plate='3']",
+     "timeout_ms": 5000
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_particle_trail",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('trail')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_links_focus",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_second_sample",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "eval",
+     "script": "window.__ember && window.__ember.setContext('stage')"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 350
+    },
+    {
+     "type": "click",
+     "selector": ".deck__chip[data-plate='2']",
+     "timeout_ms": 5000
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

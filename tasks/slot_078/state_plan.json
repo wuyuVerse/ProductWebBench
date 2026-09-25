@@ -1,0 +1,193 @@
+{
+ "chrisnmorrison__revista-astro-blog-magazine__33bb9d6c9054": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topicfinder",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_finder",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topicfinder",
+     "wait_ms": 500,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_finder_science",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/",
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".topicfinder",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic=\"Science\"]",
+     "wait_ms": 700,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_technology",
+   "path": "/technology/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/technology/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_science",
+   "path": "/science/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/science/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_technology",
+   "path": "/technology/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "goto",
+     "url": "/technology/",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 800,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

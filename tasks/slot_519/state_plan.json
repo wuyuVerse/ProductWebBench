@@ -1,0 +1,32 @@
+{
+ "codedthemes__berry-free-vuetify-vuejs-admin-template__5c3fdd4aaa85": [
+  {
+   "state_id": "desktop_faq",
+   "path": "/faq",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_faq",
+   "path": "/faq",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

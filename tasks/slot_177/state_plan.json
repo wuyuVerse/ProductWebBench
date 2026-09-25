@@ -1,0 +1,181 @@
+{
+  "ita-design-system__eleventy-libdoc__7f64be7a84a2": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet_home",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_guide",
+      "path": "/hello-page/index.html",
+      "viewport": "desktop_guide",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_config",
+      "path": "/hello-page/hello-child/index.html",
+      "viewport": "desktop_config",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_blog",
+      "path": "/posts/index.html",
+      "viewport": "desktop_blog",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_post",
+      "path": "/posts/tideglass-2-1-faster-canvas-rendering/index.html",
+      "viewport": "desktop_post",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_search",
+      "path": "/search/index.html",
+      "viewport": "desktop_search",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_rail",
+      "path": "/index.html",
+      "viewport": "desktop_rail",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-route-context-rail]",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_rail",
+      "path": "/index.html",
+      "viewport": "mobile_rail",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-route-context-rail]",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_rail_before",
+      "path": "/index.html",
+      "viewport": "desktop_rail_before",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-route-context-rail]",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_release_filter",
+      "path": "/index.html",
+      "viewport": "desktop_release_filter",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "[data-route-context-rail]",
+          "wait_ms": 500
+        },
+        {
+          "type": "click",
+          "selector": "[data-route-context=\"release\"]",
+          "wait_ms": 700
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,274 @@
+{
+ "CloudCannon__sendit-astro-template__35f7fddc5c3f": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_billing_annual",
+   "path": "/",
+   "viewport": "desktop_billing_annual",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-pill[data-billing=\"annual\"]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".billing-plans__grid",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_billing_annual",
+   "path": "/",
+   "viewport": "mobile_billing_annual",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-pill[data-billing=\"annual\"]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".billing-plans__grid",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_billing_monthly_back",
+   "path": "/",
+   "viewport": "desktop_billing_monthly_back",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-pill[data-billing=\"annual\"]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-pill[data-billing=\"monthly\"]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_features_billing",
+   "path": "/features/",
+   "viewport": "desktop_features_billing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_features_billing",
+   "path": "/features/",
+   "viewport": "mobile_features_billing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_billing",
+   "path": "/pricing/",
+   "viewport": "desktop_pricing_billing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_billing",
+   "path": "/pricing/",
+   "viewport": "mobile_pricing_billing",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_faq_open",
+   "path": "/pricing/",
+   "viewport": "desktop_faq_open",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "details:not([open]) summary",
+     "wait_ms": 400,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "footer",
+     "wait_ms": 400,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/",
+   "viewport": "mobile_nav_open",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "button[aria-label=\"Open navigation menu\"]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

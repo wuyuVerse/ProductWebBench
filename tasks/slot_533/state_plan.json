@@ -1,0 +1,53 @@
+{
+ "horizon-ui__horizon-ui-chakra__27a99f9fb391": [
+  {
+   "state_id": "desktop_crm",
+   "path": "/crm",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_crm",
+   "path": "/crm",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_crm_negotiation",
+   "path": "/crm",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "tag": "button",
+     "text": "In Negotiation",
+     "exact": true,
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

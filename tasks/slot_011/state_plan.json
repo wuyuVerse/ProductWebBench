@@ -1,0 +1,239 @@
+{
+ "sreerag-rajan__developer-portfolio__edf50b5e1ef1": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about_skills",
+   "path": "/index.html",
+   "viewport": "desktop_about_skills",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#about"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_about_skills",
+   "path": "/index.html",
+   "viewport": "mobile_about_skills",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#about"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/index.html",
+   "viewport": "desktop_projects",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/index.html",
+   "viewport": "mobile_projects",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/index.html",
+   "viewport": "desktop_contact",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#contacts"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_contact",
+   "path": "/index.html",
+   "viewport": "mobile_contact",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#contacts"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects_design",
+   "path": "/index.html",
+   "viewport": "desktop_projects",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "#projects"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    },
+    {
+     "type": "click",
+     "target_selector": "[data-proj-tab='Design']",
+     "status": "succeeded"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects_page",
+   "path": "/projects",
+   "viewport": "desktop_projects",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "[data-proj-filter]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog",
+   "viewport": "desktop_projects",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scrollTo",
+     "target_selector": "[data-proj-filter]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 600
+    }
+   ]
+  }
+ ]
+}

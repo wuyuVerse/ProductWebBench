@@ -1,0 +1,170 @@
+{
+ "HamidRezaSepehr__Little-Shopper-E-Commerce-HTML-Template__56919113495c": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_merch_strip",
+   "path": "/index.html",
+   "viewport": "desktop_merch_strip",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_merch_strip",
+   "path": "/index.html",
+   "viewport": "mobile_merch_strip",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_grid",
+   "path": "/shop.html",
+   "viewport": "desktop_shop_grid",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shop_merch",
+   "path": "/shop.html",
+   "viewport": "desktop_shop_merch",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shop_grid",
+   "path": "/shop.html",
+   "viewport": "mobile_shop_grid",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_collection",
+   "path": "/collection.html",
+   "viewport": "desktop_collection",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_collection",
+   "path": "/collection.html",
+   "viewport": "mobile_collection",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".merch-strip",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_add_to_cart",
+   "path": "/shop.html",
+   "viewport": "desktop_add_to_cart",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".product-card .add-to-card",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".product-card .add-to-card",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

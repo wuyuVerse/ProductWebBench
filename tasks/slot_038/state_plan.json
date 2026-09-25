@@ -1,0 +1,126 @@
+{
+    "jeantimex__geospatial__d166316ad38f": [
+        {
+            "state_id": "desktop_home",
+            "path": "/index.html",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                }
+            ]
+        },
+        {
+            "state_id": "mobile_home",
+            "path": "/index.html",
+            "viewport": "mobile",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                }
+            ]
+        },
+        {
+            "state_id": "tablet_home",
+            "path": "/index.html",
+            "viewport": "tablet",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_status",
+            "path": "/status.html",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_ops",
+            "path": "/ops.html",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_suite",
+            "path": "/index.html",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                },
+                {
+                    "type": "scrollTo",
+                    "selector": "#suite"
+                },
+                {
+                    "type": "wait",
+                    "wait_ms": 400
+                }
+            ]
+        },
+        {
+            "state_id": "desktop_suite_atmosphere",
+            "path": "/index.html",
+            "viewport": "desktop",
+            "goto_wait_until": "networkidle",
+            "ready_timeout_ms": 30000,
+            "full_page": false,
+            "actions": [
+                {
+                    "type": "wait",
+                    "wait_ms": 1400
+                },
+                {
+                    "type": "scrollTo",
+                    "selector": "#suite"
+                },
+                {
+                    "type": "wait",
+                    "wait_ms": 400
+                },
+                {
+                    "type": "click",
+                    "selector": ".scene-filter__chip[data-scene=\"atmosphere\"]"
+                },
+                {
+                    "type": "wait",
+                    "wait_ms": 400
+                }
+            ]
+        }
+    ]
+}

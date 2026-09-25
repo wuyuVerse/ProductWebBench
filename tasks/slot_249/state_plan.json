@@ -1,0 +1,151 @@
+{
+ "houmahani__codrops-depth-gallery__28190e0920df": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_specimen_index",
+   "path": "/index.html",
+   "viewport": "desktop_specimen_index",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".specimen-strip"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_specimen_index",
+   "path": "/index.html",
+   "viewport": "tablet_specimen_index",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".specimen-strip"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_specimen_index",
+   "path": "/index.html",
+   "viewport": "mobile_specimen_index",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".specimen-strip"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_specimen_filter",
+   "path": "/index.html",
+   "viewport": "desktop_specimen_filter",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".specimen-strip"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".specimen-strip__tab[data-specimen-tone='warm']",
+     "force": true
+    },
+    {
+     "type": "wait",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_depth_scroll",
+   "path": "/index.html",
+   "viewport": "desktop_depth_scroll",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 40000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "scroll",
+     "target": "depth-gallery"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

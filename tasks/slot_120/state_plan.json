@@ -1,0 +1,178 @@
+{
+ "themefisher__pinwheel-tailwind__95209bd0fb91": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_plans_annual",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-plans__btn[data-billing=\"annual\"]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_plans_annual",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-billing-plans]",
+     "wait_ms": 500,
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".billing-plans__btn[data-billing=\"annual\"]",
+     "wait_ms": 600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_features",
+   "path": "/features.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing",
+   "path": "/pricing.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing",
+   "path": "/pricing.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/contact.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200,
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

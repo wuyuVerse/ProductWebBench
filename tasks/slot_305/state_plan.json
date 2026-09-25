@@ -1,0 +1,221 @@
+{
+ "Milosian__blog-template__010573e86462": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/index.html",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_reader_focus_component",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_reader_focus_component",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_travel_filter",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-filter=\"travel\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_studio_filter",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-filter=\"studio\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_posts_reset",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-filter=\"travel\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-filter=\"all\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_travel_filter",
+   "path": "/index.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-filter-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-topic-filter=\"travel\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post_cards_regression",
+   "path": "/index.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".post-container",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_blog",
+   "path": "/blog.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_blog",
+   "path": "/blog.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

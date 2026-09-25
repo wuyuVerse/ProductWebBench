@@ -1,0 +1,76 @@
+{
+ "bloomui__tokyo-free-white-react-admin-dashboard__7537cfb92128": [
+  {
+   "state_id": "desktop_stock_levels",
+   "path": "/stock-levels",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_stock_levels",
+   "path": "/stock-levels",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_stock_levels_incremented",
+   "path": "/stock-levels",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "[data-inc=\"p1\"]", "wait_ms": 500},
+    {"type": "click", "selector": "[data-inc=\"p1\"]", "wait_ms": 700}
+   ]
+  },
+  {
+   "state_id": "desktop_stock_levels_persist",
+   "path": "/stock-levels",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "[data-inc=\"p1\"]", "wait_ms": 500},
+    {"type": "click", "selector": "[data-inc=\"p1\"]", "wait_ms": 500},
+    {"type": "click", "selector": "[data-filter]", "wait_ms": 700},
+    {"type": "click", "selector": "[data-filter]", "wait_ms": 900}
+   ]
+  },
+  {
+   "state_id": "desktop_profile",
+   "path": "/management/profile/details",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_profile",
+   "path": "/management/profile/details",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  }
+ ]
+}

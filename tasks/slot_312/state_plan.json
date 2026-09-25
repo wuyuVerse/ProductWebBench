@@ -1,0 +1,141 @@
+{
+  "front-end-by-rimantas__18-grupe-portfolio-saas-one__99b60aae532f": [
+    {
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_feature",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_feature",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_feature",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about",
+      "path": "/about/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/contact/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "feature_filter_creative",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#feature_filter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".ffilter__pill[data-ffilter-cat='creative']",
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

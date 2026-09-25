@@ -311,11 +311,11 @@ def summarize_change_ledger_alignment(
         "ledger_accepted": len(accepted),
         "ledger_accepted_semantics": (
             "progress ledger only; a row with status=accepted is not evaluable or publishable unless a matching "
-            "data/sitecontinuum/tasks/slot_*/task.jsonl file exists and strict freeze/no-bulk gates pass"
+            "data/productwebbench/tasks/slot_*/task.jsonl file exists and strict freeze/no-bulk gates pass"
         ),
         "formal_task_rows": len(formal_records),
         "formal_task_files": len(set(formal_slots)),
-        "evaluable_denominator_source": "data/sitecontinuum/tasks/slot_*/task.jsonl",
+        "evaluable_denominator_source": "data/productwebbench/tasks/slot_*/task.jsonl",
         "evaluable_formal_task_count": len(formal_records),
         "publishable_denominator_source": "strict_freeze_authoring_audit.strict_clean_task_count",
         "publishable_formal_task_count": None,
@@ -2903,7 +2903,7 @@ def render_status(report: dict[str, Any]) -> str:
             "## Notes",
             "",
             "- Counts are generated from ledger files; do not hand-edit this status page.",
-            "- Formal benchmark tasks are only counted from `slot_*/task.jsonl`; draft/audit JSON files under `data/sitecontinuum/tasks` are intermediate artifacts.",
+            "- Formal benchmark tasks are only counted from `slot_*/task.jsonl`; draft/audit JSON files under `data/productwebbench/tasks` are intermediate artifacts.",
             "- Candidate ranking, capture, verifier runs, negative controls, and audits are evidence automation only; they must not mass-generate final task specs.",
             "- Primary metrics remain L-hard/L-metric only; L-soft/Judge Agreement is reported separately.",
         ]

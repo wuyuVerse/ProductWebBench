@@ -1,0 +1,162 @@
+{
+ "ColorlibHQ__gentelella__dca15d38bf6b": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/production/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/production/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_orders_filtered",
+   "path": "/production/orders.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to",
+     "selector": ".triage-board",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_orders_filter",
+   "path": "/production/orders.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to",
+     "selector": ".triage-board",
+     "wait_ms": 600
+    },
+    {
+     "type": "select",
+     "selector": "select[aria-label=\"Filter by fulfillment status\"]",
+     "value": "At risk",
+     "wait_ms": 700,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_orders",
+   "path": "/production/orders.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600
+    },
+    {
+     "type": "scroll_to",
+     "selector": ".triage-board",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/production/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to",
+     "selector": ".chart-area, [data-chart]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard",
+   "path": "/production/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1500
+    },
+    {
+     "type": "scroll_to",
+     "selector": ".chart-area, [data-chart]",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_ecommerce",
+   "path": "/production/e_commerce.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_ecommerce",
+   "path": "/production/e_commerce.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    }
+   ]
+  }
+ ]
+}

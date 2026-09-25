@@ -1,0 +1,159 @@
+{
+ "NextAdminHQ__nextjs-admin-dashboard__8913468e1d00": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signal_focus",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signal_week",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".signal-strip__range-btn[data-signal-range=\"week\"]",
+     "wait_ms": 700,
+     "timeout_ms": 5000,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signal_month",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 400,
+     "optional": true
+    },
+    {
+     "type": "click",
+     "selector": ".signal-strip__range-btn[data-signal-range=\"month\"]",
+     "wait_ms": 700,
+     "timeout_ms": 5000,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables_route",
+   "path": "/tables",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts_route",
+   "path": "/charts/basic-chart",
+   "viewport": "desktop_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 500,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_signal_focus",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_signal_focus",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".signal-strip",
+     "wait_ms": 700,
+     "optional": true
+    }
+   ]
+  }
+ ]
+}

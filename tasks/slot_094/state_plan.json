@@ -1,0 +1,298 @@
+{
+  "frivizn__news-website-template__4ed6892d8c1f": [
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "tablet_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_article",
+      "path": "/article.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "tablet_article",
+      "path": "/article.html",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "mobile_article",
+      "path": "/article.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_deskfilter",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".deskfilter",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "mobile_deskfilter",
+      "path": "/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".deskfilter",
+          "wait_ms": 800
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_deskfilter_world",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".deskfilter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": "[data-desk-filter=\"world\"]",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_deskfilter_politics",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".deskfilter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": "[data-desk-filter=\"politics\"]",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "mobile_deskfilter_world",
+      "path": "/index.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".deskfilter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": "[data-desk-filter=\"world\"]",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_home_footer",
+      "path": "/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_article_footer",
+      "path": "/article.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "mobile_article_footer",
+      "path": "/article.html",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "state_id": "desktop_article_comments",
+      "path": "/article.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".comments",
+          "wait_ms": 800
+        }
+      ]
+    }
+  ]
+}

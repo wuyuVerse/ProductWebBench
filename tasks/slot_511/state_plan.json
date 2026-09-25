@@ -1,0 +1,32 @@
+{
+ "themewagon__material-tailwind-dashboard-react__b1114fa925ef": [
+  {
+   "state_id": "desktop_team",
+   "path": "/material-tailwind-dashboard-react/team",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_team",
+   "path": "/material-tailwind-dashboard-react/team",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

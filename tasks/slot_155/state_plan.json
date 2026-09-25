@@ -1,0 +1,196 @@
+{
+  "olivier3lanc__Jekyll-LibDoc__8ee6e0c5fe20": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/mode/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/mode/",
+      "viewport": {
+        "width": 834,
+        "height": 1112
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/mode/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_grammar_filter",
+      "path": "/mode/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "selector": "[data-gf-cat=\"data\"]",
+          "type": "click",
+          "wait_ms": 1200
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_javascript_mode",
+      "path": "/mode/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "selector": "a[href=\"javascript/index.html\"]",
+          "type": "click",
+          "wait_ms": 1600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_css_mode",
+      "path": "/mode/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "selector": "a[href=\"css/index.html\"]",
+          "type": "click",
+          "wait_ms": 1600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_typescript_demo",
+      "path": "/mode/javascript/index.html",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "selector": "a[href=\"typescript.html\"]",
+          "type": "click",
+          "wait_ms": 1600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_manual",
+      "path": "/mode/",
+      "viewport": {
+        "width": 1440,
+        "height": 1000
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1200
+        },
+        {
+          "selector": "a[href=\"../doc/manual.html\"]",
+          "type": "click",
+          "wait_ms": 1600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_javascript_mode",
+      "path": "/mode/",
+      "viewport": {
+        "width": 390,
+        "height": 844
+      },
+      "goto_wait_until": "domcontentloaded",
+      "goto_timeout_ms": 60000,
+      "ready_timeout_ms": 20000,
+      "full_page": true,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1400
+        },
+        {
+          "selector": "a[href=\"javascript/index.html\"]",
+          "type": "click",
+          "wait_ms": 1800
+        }
+      ]
+    }
+  ]
+}

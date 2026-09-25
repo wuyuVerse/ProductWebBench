@@ -1,0 +1,102 @@
+{
+  "agno-agi__agent-ui__6dad9593fca6": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/",
+      "viewport": "tablet",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_transcript",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "scroll_to_top"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_transcript",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "scroll_to_top"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_channel_dispatch",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "networkidle",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1800
+        },
+        {
+          "type": "scroll_to_top"
+        },
+        {
+          "type": "click",
+          "target": "channel tab: Dispatch",
+          "selector": "[data-channel=\"dispatch\"].channelfilter__tab"
+        }
+      ]
+    }
+  ]
+}

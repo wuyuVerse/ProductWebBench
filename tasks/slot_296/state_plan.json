@@ -1,0 +1,118 @@
+{
+ "creativetimofficial__paper-dashboard__92e9e76885c3": [
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/examples/dashboard.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ops-focus",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_dashboard",
+   "path": "/examples/dashboard.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ops-focus",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard",
+   "path": "/examples/dashboard.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_console_focus",
+   "path": "/examples/dashboard.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ops-focus",
+     "wait_ms": 400
+    },
+    {
+     "type": "click",
+     "selector": ".ops-focus__seg[data-ops-range=\"month\"]",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_user",
+   "path": "/examples/user.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ops-focus",
+     "wait_ms": 400
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables",
+   "path": "/examples/tables.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".ops-focus",
+     "wait_ms": 400
+    }
+   ]
+  }
+ ]
+}

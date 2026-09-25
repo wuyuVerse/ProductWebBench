@@ -1,0 +1,38 @@
+{
+ "estevanmaito__windmill-dashboard-react__da542836f945": [
+  {
+   "state_id": "desktop_account",
+   "path": "/app/account",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "mobile_account",
+   "path": "/app/account",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2500}
+   ]
+  },
+  {
+   "state_id": "desktop_account_security",
+   "path": "/app/account",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {"type": "wait", "wait_ms": 2000},
+    {"type": "click", "selector": "button:has-text(\"Security\")", "wait_ms": 1200}
+   ]
+  }
+ ]
+}

@@ -1,0 +1,51 @@
+{
+ "KoustubhSahu__Personal-Website-Template__aeb8aa466bdb": [
+  {
+   "state_id": "desktop_portfolio",
+   "path": "/portfolio",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_portfolio",
+   "path": "/portfolio",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_portfolio_mobile_filter",
+   "path": "/portfolio",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-filter=\"mobile\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

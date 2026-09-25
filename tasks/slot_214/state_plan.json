@@ -1,0 +1,221 @@
+{
+ "leogodoyllg__News-Website-Template__8d631e5b4ca8": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_signal_component",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_signal_component",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_transit_filter",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-signal-filter=\"transit\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_infrastructure_filter",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-signal-filter=\"infrastructure\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_all_reset",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-signal-filter=\"transit\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-signal-filter=\"all\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_transit_filter",
+   "path": "/index.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#signal-panel",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": "[data-signal-filter=\"transit\"]",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cards_regression",
+   "path": "/index.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".articles-container",
+     "wait_ms": 800
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_article",
+   "path": "/article.html",
+   "viewport": "desktop_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_about",
+   "path": "/about.html",
+   "viewport": "mobile_home",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 20000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll",
+     "y": 99999,
+     "wait_ms": 700
+    }
+   ]
+  }
+ ]
+}

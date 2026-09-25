@@ -1,0 +1,51 @@
+{
+ "RiadhAdrani__slick-portfolio-svelte__4b2a94869a37": [
+  {
+   "state_id": "desktop_certifications",
+   "path": "/certifications",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_certifications",
+   "path": "/certifications",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_certifications_cloud",
+   "path": "/certifications",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 3000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-filter=\"Cloud\"]",
+     "wait_ms": 1500
+    }
+   ]
+  }
+ ]
+}

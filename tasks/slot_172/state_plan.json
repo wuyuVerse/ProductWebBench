@@ -1,0 +1,243 @@
+{
+ "Abhay557__Discord-Bot-Website__86f789217c45": [
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_initial",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "tablet_initial",
+   "viewport": {
+    "height": 1112,
+    "width": 834
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "mobile_initial",
+   "viewport": {
+    "height": 844,
+    "width": 390
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#features",
+     "wait_ms": 800
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_features",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#services",
+     "wait_ms": 800
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_services",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#explorer-commands",
+     "wait_ms": 500
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/Commands.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_commands",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#explorer-commands",
+     "wait_ms": 500
+    },
+    {
+     "type": "click",
+     "selector": ".explorer-chip[data-explorer-key='0']",
+     "wait_ms": 800
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/Commands.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_commands_explorer",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "fill",
+     "selector": ".search-box",
+     "value": "help",
+     "wait_ms": 800
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/Commands.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_commands_search_help",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "click",
+     "selector": "button[data-bs-target='#finvite']",
+     "wait_ms": 900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/Commands.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "desktop_command_invite_open",
+   "viewport": {
+    "height": 1000,
+    "width": 1440
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/Commands.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "mobile_commands",
+   "viewport": {
+    "height": 844,
+    "width": 390
+   }
+  },
+  {
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1900
+    },
+    {
+     "type": "click",
+     "selector": "#toggler",
+     "wait_ms": 900
+    }
+   ],
+   "full_page": false,
+   "goto_timeout_ms": 60000,
+   "goto_wait_until": "domcontentloaded",
+   "path": "/index.html",
+   "ready_timeout_ms": 30000,
+   "state_id": "mobile_nav_open",
+   "viewport": {
+    "height": 844,
+    "width": 390
+   }
+  }
+ ]
+}

@@ -1,0 +1,155 @@
+{
+  "AkobirCoder__Art.Design-Portfolio-Template__e73c35c3c674": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_design",
+      "path": "/design.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_design_grid",
+      "path": "/design.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".designPageSectionContent",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_filter_editorial",
+      "path": "/design.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".designPageSectionContent",
+          "wait_ms": 900
+        },
+        {
+          "type": "click",
+          "selector": ".worksort .worksort__tab[data-worksort-tab=\"Editorial\"]",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_blog",
+      "path": "/blog.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_contact",
+      "path": "/contact.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".worksort--compact",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_design",
+      "path": "/design.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".designPageSectionContent",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_design_grid",
+      "path": "/design.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".designPageSectionContent",
+          "wait_ms": 900
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_sidebar_open",
+      "path": "/design.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 30000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "click",
+          "selector": "#toggleSidebar",
+          "wait_ms": 900
+        }
+      ]
+    }
+  ]
+}

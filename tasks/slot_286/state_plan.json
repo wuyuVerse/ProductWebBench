@@ -1,0 +1,155 @@
+{
+  "StartBootstrap__startbootstrap-clean-blog-jekyll__1f8996f010af": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/index.html",
+      "viewport": "tablet",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_posts_filter",
+      "path": "/posts/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#dispatch-filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_posts_filter",
+      "path": "/posts/",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#dispatch-filter",
+          "wait_ms": 700
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_posts_science",
+      "path": "/posts/",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": "#dispatch-filter",
+          "wait_ms": 400
+        },
+        {
+          "type": "click",
+          "selector": ".dispatch-filter__tab[data-topic='science']",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_about_rail",
+      "path": "/about.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_home_rail",
+      "path": "/index.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_single_post_regression",
+      "path": "/2020/01/29/exploration.html",
+      "viewport": "desktop",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 600
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_home",
+      "path": "/index.html",
+      "viewport": "mobile",
+      "goto_wait_until": "domcontentloaded",
+      "ready_timeout_ms": 20000,
+      "full_page": false,
+      "actions": [
+        {
+          "type": "scroll",
+          "y": 99999,
+          "wait_ms": 600
+        }
+      ]
+    }
+  ]
+}

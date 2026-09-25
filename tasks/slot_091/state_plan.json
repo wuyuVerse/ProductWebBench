@@ -1,0 +1,234 @@
+{
+ "mckaywrigley__ai-code-translator__c7c9b71d6cbc": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_library",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".snippet-library",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home_library",
+   "path": "/",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".snippet-library",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_filter_data",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".snippet-library",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".snippet-tab[data-snippet-tab=\"Data\"]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_library",
+   "path": "/library",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_library",
+   "path": "/library",
+   "viewport": "mobile_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".snippet-library",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_library",
+   "path": "/library",
+   "viewport": "tablet_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_library_filter_web",
+   "path": "/library",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".snippet-library",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".snippet-tab[data-snippet-tab=\"Web\"]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_guide",
+   "path": "/guide",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_translate",
+   "path": "/",
+   "viewport": "desktop_home",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1600,
+     "status": "succeeded"
+    },
+    {
+     "type": "fill",
+     "selector": "input[type=\"password\"]",
+     "status": "succeeded"
+    },
+    {
+     "type": "type",
+     "selector": ".cm-content",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "button:has-text('Translate')",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

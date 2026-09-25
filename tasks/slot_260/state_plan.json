@@ -1,0 +1,154 @@
+{
+  "gabrielhazeredo__visionai-landing-page__d87df85f34d3": [
+    {
+      "state_id": "desktop_initial",
+      "path": "/visionai-landing-page/",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_initial",
+      "path": "/visionai-landing-page/",
+      "viewport": "mobile_initial",
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_initial",
+      "path": "/visionai-landing-page/",
+      "viewport": "tablet_initial",
+      "actions": [
+        {
+          "type": "wait",
+          "wait_ms": 1000,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_capabilities",
+      "path": "/visionai-landing-page/",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".capfilter",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "mobile_capabilities",
+      "path": "/visionai-landing-page/",
+      "viewport": "mobile_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".capfilter",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "tablet_capabilities",
+      "path": "/visionai-landing-page/",
+      "viewport": "tablet_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".capfilter",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cap_filter",
+      "path": "/visionai-landing-page/",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "click",
+          "selector": ".capfilter__chip[data-cap-track=\"inspection\"]",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_playbook",
+      "path": "/visionai-landing-page/playbook",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".capfilter",
+          "optional": true,
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_evidence",
+      "path": "/visionai-landing-page/evidence",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".capfilter",
+          "optional": true,
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_cta",
+      "path": "/visionai-landing-page/",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "scroll_to_selector",
+          "selector": ".cta",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    },
+    {
+      "state_id": "desktop_hero_modal",
+      "path": "/visionai-landing-page/",
+      "viewport": "desktop_initial",
+      "actions": [
+        {
+          "type": "click",
+          "selector": ".hero-figure a",
+          "timeout_ms": 7000,
+          "wait_ms": 900,
+          "status": "succeeded"
+        }
+      ]
+    }
+  ]
+}

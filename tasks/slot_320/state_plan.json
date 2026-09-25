@@ -1,0 +1,135 @@
+{
+ "themesberg__flowbite-admin-dashboard__229df7ff2580": [
+  {
+   "state_id": "desktop_products",
+   "path": "/crud/products/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#pf-bar",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_products",
+   "path": "/crud/products/",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#pf-bar",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_products",
+   "path": "/crud/products/",
+   "viewport": "tablet",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#pf-bar",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_users",
+   "path": "/crud/users/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_settings",
+   "path": "/settings/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_products_vue",
+   "path": "/crud/products/",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2600,
+     "status": "succeeded"
+    },
+    {
+     "type": "scrollTo",
+     "selector": "#pf-bar",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": ".pf-chip[data-pf-tab=\"Vue.js\"]",
+     "interaction_verb": "click",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}

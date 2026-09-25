@@ -1,0 +1,250 @@
+{
+ "biazo__codrops-add-to-cart__237fa79f3fd4": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shopfilter",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_shopfilter",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_shopfilter_ceramics",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".shopfilter__tab[data-collection=\"ceramics\"]",
+     "wait_ms": 500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lookbook",
+   "path": "/lookbook.html",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cart_badge",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cart_open",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    },
+    {
+     "type": "click",
+     "selector": ".cart-button",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_quantity_plus",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    },
+    {
+     "type": "click",
+     "selector": ".cart-button",
+     "wait_ms": 3000
+    },
+    {
+     "type": "click",
+     "selector": ".cart-item:first-child .cart-item__plus-button",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_remove_empty",
+   "path": "/",
+   "viewport": {
+    "width": 1440,
+    "height": 900
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    },
+    {
+     "type": "click",
+     "selector": ".cart-button",
+     "wait_ms": 3000
+    },
+    {
+     "type": "click",
+     "selector": ".cart-item:first-child .cart-item__remove-btn",
+     "wait_ms": 700
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_cart_open",
+   "path": "/",
+   "viewport": {
+    "width": 834,
+    "height": 1112
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    },
+    {
+     "type": "click",
+     "selector": ".cart-button",
+     "wait_ms": 3000
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_cart_open",
+   "path": "/",
+   "viewport": {
+    "width": 390,
+    "height": 844
+   },
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".products__item:first-child .products__cta",
+     "wait_ms": 3200
+    },
+    {
+     "type": "click",
+     "selector": ".cart-button",
+     "wait_ms": 3000
+    }
+   ]
+  }
+ ]
+}

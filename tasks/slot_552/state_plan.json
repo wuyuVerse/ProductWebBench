@@ -1,0 +1,51 @@
+{
+ "manuelernestog__astro-modern-personal-website__9398dea0f2c0": [
+  {
+   "state_id": "desktop_speaking",
+   "path": "/speaking",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_speaking",
+   "path": "/speaking",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_speaking_keynotes",
+   "path": "/speaking",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-filter=\"keynote\"]",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

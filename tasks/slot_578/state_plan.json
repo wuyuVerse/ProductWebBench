@@ -1,0 +1,70 @@
+{
+ "technext__v-dashboard__1d6fd95f5454": [
+  {
+   "state_id": "desktop_cohorts",
+   "path": "/cohorts",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_cohorts",
+   "path": "/cohorts",
+   "viewport": "mobile",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_cohorts_weekly_sorted",
+   "path": "/cohorts",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2000
+    },
+    {
+     "type": "click",
+     "selector": "button[data-bucket=\"weekly\"]",
+     "wait_ms": 1200
+    },
+    {
+     "type": "click",
+     "selector": "button[data-sort=\"retention\"]",
+     "wait_ms": 1500
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/dashboard",
+   "viewport": "desktop",
+   "goto_wait_until": "load",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 2500
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,166 @@
+{
+ "developer-portal__website__2d25a8e2df36": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tech",
+   "path": "/tech.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tech",
+   "path": "/tech.html",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_start",
+   "path": "/start.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_gettools",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": ".docs-onpage"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    },
+    {
+     "type": "click",
+     "selector": ".docs-onpage__chip[data-onpage-target=\"Get tools\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 300
+    }
+   ]
+  }
+ ]
+}

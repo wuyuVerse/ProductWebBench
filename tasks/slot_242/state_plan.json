@@ -1,0 +1,165 @@
+{
+ "TailGrids__play-tailwind__05f872b02662": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_initial",
+   "path": "/",
+   "viewport": "tablet_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_default",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_default",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_yearly",
+   "path": "/",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "selector": "#pricing .plan-billing__btn[data-billing=\"yearly\"]",
+     "wait_ms": 500
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_pricing_page",
+   "path": "/pricing.html",
+   "viewport": "desktop_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_pricing_page",
+   "path": "/pricing.html",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "#pricing",
+     "wait_ms": 600
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_nav_open",
+   "path": "/",
+   "viewport": "mobile_initial",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 900
+    },
+    {
+     "type": "click",
+     "selector": "#navbarToggler",
+     "wait_ms": 500
+    }
+   ]
+  }
+ ]
+}

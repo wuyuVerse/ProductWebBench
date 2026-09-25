@@ -1,0 +1,142 @@
+{
+ "pavel-mazhuga__portfolio__8bfb23d26e46": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/projects/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lab",
+   "path": "/lab/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_lab",
+   "path": "/lab/",
+   "viewport": "tablet",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_lab",
+   "path": "/lab/",
+   "viewport": "mobile",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_lab_webgl",
+   "path": "/lab/",
+   "viewport": "desktop",
+   "goto_wait_until": "networkidle",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1800
+    },
+    {
+     "type": "scroll_to_selector",
+     "selector": "[data-labfilter]",
+     "status": "succeeded"
+    },
+    {
+     "type": "click",
+     "selector": "[data-labfilter-topic='webgl']",
+     "status": "succeeded"
+    }
+   ]
+  }
+ ]
+}
