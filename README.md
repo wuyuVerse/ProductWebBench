@@ -67,7 +67,9 @@ analysis/            E1–E25: the paper's analyses. _data/cells_flat.jsonl is
 figures/scripts/     the figure scripts; output lands in figures/
 baselines/pristine/  the 19 checks run on the *untouched* repository, per task
                      — this is what makes a regression exactly attributable
-tasks/               per-task metadata for the 400 frozen slots
+tasks/               full task specifications (problem statement, rubric,
+                     required/hidden states, constraints) for 390 of the 400
+                     slots: 310/320 Change + 80/80 Build
 harbor/              Harbor integration guide
 tools/               reproduce.sh, sweep aggregator
 docs/                reproduce.md, scoring.md, tasks.md
@@ -86,17 +88,38 @@ assertions stay armed at every later checkpoint, so continuity is scored across
 the whole trajectory rather than at its endpoint.
 [`docs/scoring.md`](docs/scoring.md) has the rest.
 
-## What is *not* here
+## What you can and cannot do with this repository
 
-The **repository snapshots and reference browser captures** for the 400 tasks.
-They are large and they embed third-party sites under their own licences.
-`pwb export-task-packages` builds task packages from a snapshot root;
-[`docs/tasks.md`](docs/tasks.md) describes the format.
+**You can** reproduce every number, table and figure in the paper
+(`bash tools/reproduce.sh`), read the full specification of 390 tasks, and read
+and extend the benchmark code — the construction pipeline, the 19-gate
+verifier, the scoring, and the Harbor adapter.
+
+**You cannot yet run an agent on the 400 tasks from this repository alone.**
+Three pieces are missing, and they are missing because of size and third-party
+licensing, not by oversight:
+
+| missing | size | what it is |
+|---|---|---|
+| repository snapshots | GB | the runnable site handed to the agent, one per task |
+| reference browser captures | ~1.9 GB | the screenshots and DOM states the visual and layout gates compare against |
+| exported task packages | 44.6 MB | `submission_verifier.json` and friends — the frozen gate definitions, for the 310 Change slots (the 80 Build slots have none) |
+
+Each task's upstream provenance is recoverable from its `repo_id`, which is
+`owner__repo__commit`: `slot_007`'s `maharanasunil__E-Commerce-Website-Template__6e6d9c2dc855`
+is `github.com/maharanasunil/E-Commerce-Website-Template` at `6e6d9c2dc855`. A
+snapshot can therefore be re-fetched at the pinned commit, with the caveat that
+the evaluated snapshots vendor their `node_modules` and tool binaries for
+offline execution, so a fresh clone plus install is not guaranteed to be
+byte-identical; five tasks additionally need a pinned Hugo and one needs PHP.
+
+See [`docs/tasks.md`](docs/tasks.md) for the package format and
+`pwb export-task-packages` for building packages from a snapshot root.
 
 The **raw per-run artifact tree** (per-run DOM dumps, screenshots and
-transcripts, terabytes). `analysis/_data/cells_flat.jsonl` is the distilled
-form, and the four upstream scripts that produced it are shipped so the
-derivation is auditable.
+transcripts, terabytes) is also not here. `analysis/_data/cells_flat.jsonl` is
+the distilled form, and the four upstream scripts that produced it are shipped
+so the derivation is auditable.
 
 ## Citation
 
