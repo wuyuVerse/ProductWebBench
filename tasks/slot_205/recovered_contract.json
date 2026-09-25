@@ -1,0 +1,1262 @@
+{
+ "slot": "slot_205",
+ "task_id": "dev_tailwindtoolbox__Landing-Page__545f89eb26e09__launch_checklist_card_repair",
+ "repo_id": "tailwindtoolbox__Landing-Page__545f89eb26e09",
+ "upstream": "https://github.com/tailwindtoolbox/Landing-Page",
+ "commit": "545f89eb26e09",
+ "recovered_from": "the evaluation run's submission_results.json and checkpoint layout",
+ "complete": false,
+ "missing": [
+  "problem_statement",
+  "required_content",
+  "design_constraints",
+  "evaluation_rubric",
+  "hidden_states",
+  "suggested_files"
+ ],
+ "note": "This slot's authoring directory no longer exists, so its staged requirement text cannot be shipped. What is here is the frozen verification contract exactly as applied during evaluation, recovered from the run artifacts and cross-checked: the stage count matches this slot's cells in cells_flat.jsonl.",
+ "n_stages": 7,
+ "checkpoints": [
+  "qa_bug",
+  "requirement_change",
+  "s1",
+  "s2",
+  "s3",
+  "s4",
+  "s5",
+  "s6",
+  "s7"
+ ],
+ "checks": [
+  {
+   "name": "required_states",
+   "details": {
+    "missing": [],
+    "required": [
+     "desktop_initial",
+     "mobile_initial",
+     "tablet_initial",
+     "desktop_work",
+     "mobile_work",
+     "desktop_log",
+     "mobile_log",
+     "desktop_footer",
+     "desktop_pricing",
+     "desktop_checklist_filter"
+    ]
+   }
+  },
+  {
+   "name": "state_artifacts",
+   "details": {
+    "failures": [],
+    "required_files": [
+     "screenshot.png",
+     "metrics.json",
+     "quality.json",
+     "dom.html",
+     "a11y.json",
+     "boxes.json",
+     "console.json",
+     "actions.json",
+     "crops.json"
+    ],
+    "states": [
+     "desktop_initial",
+     "mobile_initial",
+     "tablet_initial",
+     "desktop_work",
+     "mobile_work",
+     "desktop_log",
+     "mobile_log",
+     "desktop_footer",
+     "desktop_pricing",
+     "desktop_checklist_filter"
+    ]
+   }
+  },
+  {
+   "name": "state_quality",
+   "details": {
+    "failures": [],
+    "summaries": {
+     "desktop_checklist_filter": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2173
+     },
+     "desktop_footer": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2178
+     },
+     "desktop_initial": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2178
+     },
+     "desktop_log": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2178
+     },
+     "desktop_pricing": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2178
+     },
+     "desktop_work": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4366,
+      "document_width": 1440,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2178
+     },
+     "mobile_initial": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 7693,
+      "document_width": 390,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2143
+     },
+     "mobile_log": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 7693,
+      "document_width": 390,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2143
+     },
+     "mobile_work": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 7693,
+      "document_width": 390,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2143
+     },
+     "tablet_initial": {
+      "action_failure_count": 0,
+      "button_count": 14,
+      "document_height": 4624,
+      "document_width": 834,
+      "horizontal_overflow_px": 0,
+      "image_count": 1,
+      "is_loading_like": false,
+      "link_count": 22,
+      "text_length": 2143
+     }
+    },
+    "warnings": []
+   }
+  },
+  {
+   "name": "action_history",
+   "details": {
+    "failures": [],
+    "states": [
+     "desktop_checklist_filter"
+    ],
+    "summaries": {
+     "desktop_checklist_filter": {
+      "action_count": 2,
+      "actions": [
+       {
+        "optional": true,
+        "selector": ".checklist-filter",
+        "status": "passed",
+        "type": "scroll_to_selector",
+        "x": null,
+        "y": null
+       },
+       {
+        "optional": false,
+        "selector": ".checklist-filter-btn[data-stage=\"Audit\"]",
+        "status": "passed",
+        "type": "click",
+        "x": null,
+        "y": null
+       }
+      ],
+      "failed_count": 0,
+      "skipped_required_count": 0
+     }
+    }
+   }
+  },
+  {
+   "name": "screenshot_files",
+   "details": {}
+  },
+  {
+   "name": "no_horizontal_overflow",
+   "details": {
+    "failures": []
+   }
+  },
+  {
+   "name": "completion_text_signals",
+   "details": {
+    "found_count": 7,
+    "min_found": 6,
+    "missing": [],
+    "require_all": true,
+    "signals": [
+     "Halyard",
+     "Ship launches that actually convert",
+     "Offer clarity audit",
+     "Responsive funnel QA",
+     "Conversion analytics handoff",
+     "From the launch log",
+     "Launch checklist"
+    ],
+    "states": [
+     "desktop_initial",
+     "desktop_work",
+     "desktop_log"
+    ]
+   }
+  },
+  {
+   "name": "visible_text_signals",
+   "details": {
+    "found_count": 2,
+    "min_found": 2,
+    "missing": [],
+    "require_all": true,
+    "signals": [
+     "Halyard",
+     "Ship launches that actually convert"
+    ],
+    "states": [
+     "desktop_initial"
+    ]
+   }
+  },
+  {
+   "name": "state_url_signals",
+   "details": {}
+  },
+  {
+   "name": "regression_text_signals",
+   "details": {
+    "missing": [],
+    "signals": [
+     "Work",
+     "Pricing",
+     "Contact",
+     "Free",
+     "Basic",
+     "Pro"
+    ],
+    "states": [
+     "desktop_initial",
+     "desktop_pricing"
+    ]
+   }
+  },
+  {
+   "name": "forbidden_text_patterns",
+   "details": {
+    "forbidden": [
+     "Lorem ipsum",
+     "lorem ipsum",
+     "xGETTING STARTED",
+     "Main Hero Message to sell yourself!",
+     "Sub-hero message",
+     "Call to Action",
+     "{{",
+     "undefined stage"
+    ],
+    "found": [],
+    "states": [
+     "desktop_initial",
+     "desktop_work",
+     "desktop_log"
+    ]
+   }
+  },
+  {
+   "name": "image_alt_signals",
+   "details": {
+    "found_count": 1,
+    "min_found": 1,
+    "missing": [],
+    "require_all": true,
+    "sample_alts": [
+     "Isometric illustration of a product launch dashboard",
+     "Isometric illustration of a product launch dashboard"
+    ],
+    "signals": [
+     "Isometric illustration"
+    ],
+    "states": [
+     "desktop_initial",
+     "mobile_initial"
+    ]
+   }
+  },
+  {
+   "name": "asset_path_signals",
+   "details": {
+    "found": [
+     "hero.png"
+    ],
+    "found_count": 1,
+    "ignored_source_signals": [],
+    "min_found": 1,
+    "missing": [],
+    "sample_paths": [
+     "http://127.0.0.1:3100/hero.png",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#work",
+     "http://127.0.0.1:3100/index.html#pricing",
+     "http://127.0.0.1:3100/index.html#contact",
+     "https://undraw.co/",
+     "https://undraw.co/",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#",
+     "http://127.0.0.1:3100/index.html#"
+    ],
+    "signals": [
+     "hero.png"
+    ],
+    "source_found": [],
+    "states": [
+     "desktop_initial",
+     "mobile_initial",
+     "tablet_initial",
+     "desktop_work",
+     "mobile_work",
+     "desktop_log",
+     "mobile_log",
+     "desktop_footer",
+     "desktop_pricing",
+     "desktop_checklist_filter"
+    ]
+   }
+  },
+  {
+   "name": "exact_asset_path_signals",
+   "details": {}
+  },
+  {
+   "name": "visual_anchor_similarity",
+   "details": {
+    "comparisons": {
+     "desktop_initial": {
+      "luminance_delta": 0.0,
+      "palette_overlap": 3,
+      "reference_luminance": 178.61,
+      "reference_palette": [
+       {
+        "count": 17325,
+        "hex": "#ffffff"
+       },
+       {
+        "count": 13123,
+        "hex": "#db8863"
+       },
+       {
+        "count": 10756,
+        "hex": "#d75465"
+       },
+       {
+        "count": 4858,
+        "hex": "#c76f66"
+       },
+       {
+        "count": 4408,
+        "hex": "#c63d66"
+       }
+      ],
+      "submission_luminance": 178.61,
+      "submission_palette": [
+       {
+        "count": 17326,
+        "hex": "#ffffff"
+       },
+       {
+        "count": 13159,
+        "hex": "#db8864"
+       },
+       {
+        "count": 10576,
+        "hex": "#d75465"
+       },
+       {
+        "count": 4855,
+        "hex": "#c76f66"
+       },
+       {
+        "count": 4578,
+        "hex": "#c73d66"
+       }
+      ]
+     },
+     "desktop_pricing": {
+      "luminance_delta": 0.05,
+      "palette_overlap": 4,
+      "reference_luminance": 241.19,
+      "reference_palette": [
+       {
+        "count": 23200,
+        "hex": "#f3f4f6"
+       },
+       {
+        "count": 22683,
+        "hex": "#ffffff"
+       },
+       {
+        "count": 4728,
+        "hex": "#d9ab9c"
+       },
+       {
+        "count": 3456,
+        "hex": "#fafbfc"
+       },
+       {
+        "count": 1888,
+        "hex": "#f3f4f5"
+       }
+      ],
+      "submission_luminance": 241.24,
+      "submission_palette": [
+       {
+        "count": 23198,
+        "hex": "#f3f4f6"
+       },
+       {
+        "count": 22696,
+        "hex": "#ffffff"
+       },
+       {
+        "count": 4711,
+        "hex": "#d9ab9c"
+       },
+       {
+        "count": 3458,
+        "hex": "#fafbfc"
+       },
+       {
+        "count": 1292,
+        "hex": "#f7f7f8"
+       }
+      ]
+     }
+    },
+    "failures": [],
+    "luminance_tolerance": 95,
+    "min_palette_overlap": 1,
+    "skipped_repair_states": [],
+    "states": [
+     "desktop_initial",
+     "desktop_pricing"
+    ]
+   }
+  },
+  {
+   "name": "visual_regression",
+   "details": {
+    "comparisons": {
+     "desktop_footer": {
+      "_scroll_align": {
+       "ref_scroll_y": 3479,
+       "sub_scroll_y": 3366,
+       "y_shift": 113
+      },
+      "block_fidelity": {
+       "available": true,
+       "block_match": 0.2857,
+       "blocks": 7,
+       "max_color_delta_e": 52.474,
+       "max_color_delta_e_allowed": 15.0,
+       "min_block_match": 0.8,
+       "per_block": [
+        {
+         "block_ssim": 0.7334,
+         "color_delta_e": 43.788,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          92,
+          0,
+          502,
+          120
+         ]
+        },
+        {
+         "block_ssim": 0.7065,
+         "color_delta_e": 51.274,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          208,
+          0,
+          1024,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.6733,
+         "color_delta_e": 49.326,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          80,
+          0,
+          1280,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.8312,
+         "color_delta_e": 6.215,
+         "kind": "image",
+         "match": true,
+         "rect": [
+          594,
+          0,
+          603,
+          520
+         ]
+        },
+        {
+         "block_ssim": 0.809,
+         "color_delta_e": 52.474,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          799,
+          0,
+          516,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.7784,
+         "color_delta_e": 7.816,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          462,
+          453,
+          516,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.8387,
+         "color_delta_e": 6.78,
+         "kind": "card",
+         "match": true,
+         "rect": [
+          365,
+          853,
+          710,
+          18
+         ]
+        }
+       ]
+      },
+      "pixelmatch": {
+       "available": true,
+       "changed_pixels": 142694,
+       "considered_pixels": 1277280,
+       "diff_ratio": 0.111717,
+       "max_diff_ratio": 0.08,
+       "tolerance": 30
+      },
+      "ssim": {
+       "available": true,
+       "min_score": 0.85,
+       "ssim": 0.85793
+      }
+     },
+     "desktop_work": {
+      "block_fidelity": {
+       "available": true,
+       "block_match": 1.0,
+       "blocks": 5,
+       "max_color_delta_e": 0.375,
+       "max_color_delta_e_allowed": 15.0,
+       "min_block_match": 0.8,
+       "per_block": [
+        {
+         "block_ssim": 0.9855,
+         "color_delta_e": 0.056,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          92,
+          0,
+          502,
+          120
+         ]
+        },
+        {
+         "block_ssim": 0.9944,
+         "color_delta_e": 0.01,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          208,
+          0,
+          1024,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.9791,
+         "color_delta_e": 0.131,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          80,
+          190,
+          1280,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.9874,
+         "color_delta_e": 0.093,
+         "kind": "image",
+         "match": true,
+         "rect": [
+          594,
+          0,
+          603,
+          520
+         ]
+        },
+        {
+         "block_ssim": 0.9488,
+         "color_delta_e": 0.375,
+         "kind": "card",
+         "match": true,
+         "rect": [
+          799,
+          299,
+          516,
+          18
+         ]
+        }
+       ]
+      },
+      "pixelmatch": {
+       "available": true,
+       "changed_pixels": 12633,
+       "considered_pixels": 1440000,
+       "diff_ratio": 0.008773,
+       "max_diff_ratio": 0.08,
+       "tolerance": 30
+      },
+      "ssim": {
+       "available": true,
+       "min_score": 0.85,
+       "ssim": 0.993268
+      }
+     },
+     "mobile_log": {
+      "_scroll_align": {
+       "ref_scroll_y": 6518,
+       "sub_scroll_y": 6368,
+       "y_shift": 150
+      },
+      "block_fidelity": {
+       "available": true,
+       "block_match": 0.3333,
+       "blocks": 6,
+       "max_color_delta_e": 61.703,
+       "max_color_delta_e_allowed": 15.0,
+       "min_block_match": 0.8,
+       "per_block": [
+        {
+         "block_ssim": 0.8606,
+         "color_delta_e": 8.19,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          12,
+          0,
+          366,
+          180
+         ]
+        },
+        {
+         "block_ssim": 0.8038,
+         "color_delta_e": 12.327,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          0,
+          0,
+          390,
+          120
+         ]
+        },
+        {
+         "block_ssim": 0.661,
+         "color_delta_e": 24.464,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          0,
+          0,
+          390,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.7539,
+         "color_delta_e": 4.763,
+         "kind": "image",
+         "match": false,
+         "rect": [
+          12,
+          0,
+          366,
+          316
+         ]
+        },
+        {
+         "block_ssim": 0.7493,
+         "color_delta_e": 61.703,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          25,
+          0,
+          340,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.612,
+         "color_delta_e": 9.39,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          41,
+          510,
+          308,
+          18
+         ]
+        }
+       ]
+      },
+      "pixelmatch": {
+       "available": true,
+       "changed_pixels": 32411,
+       "considered_pixels": 270660,
+       "diff_ratio": 0.119748,
+       "max_diff_ratio": 0.08,
+       "tolerance": 30
+      },
+      "ssim": {
+       "available": true,
+       "min_score": 0.85,
+       "ssim": 0.732191
+      }
+     }
+    },
+    "failures": [
+     {
+      "detail": {
+       "available": true,
+       "changed_pixels": 32411,
+       "considered_pixels": 270660,
+       "diff_ratio": 0.119748,
+       "max_diff_ratio": 0.08,
+       "tolerance": 30
+      },
+      "metric": "pixelmatch",
+      "state_id": "mobile_log"
+     },
+     {
+      "detail": {
+       "available": true,
+       "min_score": 0.85,
+       "ssim": 0.732191
+      },
+      "metric": "ssim",
+      "state_id": "mobile_log"
+     },
+     {
+      "detail": {
+       "available": true,
+       "block_match": 0.3333,
+       "blocks": 6,
+       "max_color_delta_e": 61.703,
+       "max_color_delta_e_allowed": 15.0,
+       "min_block_match": 0.8,
+       "per_block": [
+        {
+         "block_ssim": 0.8606,
+         "color_delta_e": 8.19,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          12,
+          0,
+          366,
+          180
+         ]
+        },
+        {
+         "block_ssim": 0.8038,
+         "color_delta_e": 12.327,
+         "kind": "heading",
+         "match": true,
+         "rect": [
+          0,
+          0,
+          390,
+          120
+         ]
+        },
+        {
+         "block_ssim": 0.661,
+         "color_delta_e": 24.464,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          0,
+          0,
+          390,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.7539,
+         "color_delta_e": 4.763,
+         "kind": "image",
+         "match": false,
+         "rect": [
+          12,
+          0,
+          366,
+          316
+         ]
+        },
+        {
+         "block_ssim": 0.7493,
+         "color_delta_e": 61.703,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          25,
+          0,
+          340,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.612,
+         "color_delta_e": 9.39,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          41,
+          510,
+          308,
+          18
+         ]
+        }
+       ]
+      },
+      "metric": "block_fidelity",
+      "state_id": "mobile_log"
+     },
+     {
+      "detail": {
+       "available": true,
+       "changed_pixels": 142694,
+       "considered_pixels": 1277280,
+       "diff_ratio": 0.111717,
+       "max_diff_ratio": 0.08,
+       "tolerance": 30
+      },
+      "metric": "pixelmatch",
+      "state_id": "desktop_footer"
+     },
+     {
+      "detail": {
+       "available": true,
+       "block_match": 0.2857,
+       "blocks": 7,
+       "max_color_delta_e": 52.474,
+       "max_color_delta_e_allowed": 15.0,
+       "min_block_match": 0.8,
+       "per_block": [
+        {
+         "block_ssim": 0.7334,
+         "color_delta_e": 43.788,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          92,
+          0,
+          502,
+          120
+         ]
+        },
+        {
+         "block_ssim": 0.7065,
+         "color_delta_e": 51.274,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          208,
+          0,
+          1024,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.6733,
+         "color_delta_e": 49.326,
+         "kind": "heading",
+         "match": false,
+         "rect": [
+          80,
+          0,
+          1280,
+          60
+         ]
+        },
+        {
+         "block_ssim": 0.8312,
+         "color_delta_e": 6.215,
+         "kind": "image",
+         "match": true,
+         "rect": [
+          594,
+          0,
+          603,
+          520
+         ]
+        },
+        {
+         "block_ssim": 0.809,
+         "color_delta_e": 52.474,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          799,
+          0,
+          516,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.7784,
+         "color_delta_e": 7.816,
+         "kind": "card",
+         "match": false,
+         "rect": [
+          462,
+          453,
+          516,
+          18
+         ]
+        },
+        {
+         "block_ssim": 0.8387,
+         "color_delta_e": 6.78,
+         "kind": "card",
+         "match": true,
+         "rect": [
+          365,
+          853,
+          710,
+          18
+         ]
+        }
+       ]
+      },
+      "metric": "block_fidelity",
+      "state_id": "desktop_footer"
+     }
+    ],
+    "metrics": [
+     "pixelmatch",
+     "ssim",
+     "block_fidelity"
+    ],
+    "states": [
+     "desktop_work",
+     "mobile_log",
+     "desktop_footer"
+    ]
+   }
+  },
+  {
+   "name": "console_errors",
+   "details": {
+    "failures": [],
+    "max_console_errors": 0,
+    "per_state": {
+     "desktop_checklist_filter": 0,
+     "desktop_footer": 0,
+     "desktop_initial": 0,
+     "desktop_log": 0,
+     "desktop_pricing": 0,
+     "desktop_work": 0,
+     "mobile_initial": 0,
+     "mobile_log": 0,
+     "mobile_work": 0,
+     "tablet_initial": 0
+    },
+    "states": [
+     "desktop_initial",
+     "mobile_initial",
+     "tablet_initial",
+     "desktop_work",
+     "mobile_work",
+     "desktop_log",
+     "mobile_log",
+     "desktop_footer",
+     "desktop_pricing",
+     "desktop_checklist_filter"
+    ]
+   }
+  },
+  {
+   "name": "dom_assertions",
+   "details": {
+    "failures": [],
+    "results": [
+     {
+      "index": 0,
+      "matched": 1,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_initial",
+       "tag": "nav"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 1,
+      "matched": 1,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_initial",
+       "tag": "h1"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 2,
+      "matched": 5,
+      "ok": true,
+      "rule": {
+       "min_count": 3,
+       "state": "desktop_initial",
+       "tag": "h2"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 3,
+      "matched": 1,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_initial",
+       "tag": "img"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 4,
+      "matched": 1,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_initial",
+       "tag": "footer"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 5,
+      "matched": 5,
+      "ok": true,
+      "rule": {
+       "min_count": 4,
+       "state": "desktop_initial",
+       "tag": "section"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 6,
+      "matched": 13,
+      "ok": true,
+      "rule": {
+       "min_count": 6,
+       "state": "desktop_initial",
+       "tag": "button"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 7,
+      "matched": 22,
+      "ok": true,
+      "rule": {
+       "min_count": 10,
+       "state": "desktop_initial",
+       "tag": "a"
+      },
+      "state_id": "desktop_initial"
+     },
+     {
+      "index": 8,
+      "matched": 3,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_work",
+       "text_contains": "What we do"
+      },
+      "state_id": "desktop_work"
+     },
+     {
+      "index": 9,
+      "matched": 5,
+      "ok": true,
+      "rule": {
+       "min_count": 4,
+       "state": "desktop_pricing",
+       "tag": "section"
+      },
+      "state_id": "desktop_pricing"
+     },
+     {
+      "index": 10,
+      "matched": 1,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_footer",
+       "tag": "footer"
+      },
+      "state_id": "desktop_footer"
+     },
+     {
+      "index": 11,
+      "matched": 7,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_work",
+       "text_contains": "Launch checklist"
+      },
+      "state_id": "desktop_work"
+     },
+     {
+      "index": 12,
+      "matched": 7,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_log",
+       "text_contains": "Launch checklist"
+      },
+      "state_id": "desktop_log"
+     },
+     {
+      "index": 13,
+      "matched": 7,
+      "ok": true,
+      "rule": {
+       "min_count": 1,
+       "state": "desktop_footer",
+       "text_contains": "Launch checklist"
+      },
+      "state_id": "desktop_footer"
+     }
+    ]
+   }
+  },
+  {
+   "name": "interaction_assertions",
+   "details": {
+    "failures": [],
+    "results": [
+     {
+      "before_matched": 0,
+      "before_state": "desktop_work",
+      "dom_matched": 4,
+      "index": 0,
+      "interaction_verbs": [
+       "click"
+      ],
+      "ok": true,
+      "state_id": "desktop_checklist_filter"
+     }
+    ]
+   }
+  }
+ ]
+}

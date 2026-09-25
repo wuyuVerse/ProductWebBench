@@ -113,16 +113,23 @@ repository and pinned commit, cell count, stage count, and three coverage flags.
 Its `n_cells` sum is exactly the 8,737 rows of
 `analysis/_data/cells_flat.jsonl`.
 
-Ten Change slots (`slot_200`–`slot_209`) carry `spec_in_repo: false`. They were
-evaluated like every other task, and their runs are in the cell cache, but their
-authoring package is not on hand, so this repository cannot ship their staged
-requirements. The paper states the same boundary from the other side: *"Of the
-320 Change tasks, 310 rebuild from the frozen package in the analysis
-environment and 224 of those also serve a capturable initial baseline."* Those
-are the same ten slots, and they are also ten of the twenty-six slots the paper
-reports as carrying no capability label. The manifest still records their
-upstream repository and commit, so they are identifiable even without the
-package.
+Ten Change slots (`slot_200`–`slot_209`) carry `spec_in_repo: "recovered"`.
+Their authoring directory no longer exists — the evaluation read it from a path
+that has since been removed — so their staged requirement *text* cannot be
+shipped. What each one does have is
+`tasks/slot_2NN/recovered_contract.json`: the frozen verification contract
+exactly as applied during evaluation, rebuilt from the run artifacts, with the
+task id, upstream repository and pinned commit, the required states, the stage
+and checkpoint layout, and all 19 checks with their details. Each recovered
+stage count was cross-checked against that slot's cells in
+`cells_flat.jsonl` and all ten match.
+
+This is the same boundary the paper states from the other side: *"Of the 320
+Change tasks, 310 rebuild from the frozen package in the analysis environment
+and 224 of those also serve a capturable initial baseline."* These are those ten
+slots, and they are also ten of the twenty-six the paper reports as carrying no
+capability label in the frozen manifest — the label is missing for exactly the
+same reason.
 
 Each task's upstream provenance is recoverable from its `repo_id`, which is
 `owner__repo__commit`: `slot_007`'s `maharanasunil__E-Commerce-Website-Template__6e6d9c2dc855`
