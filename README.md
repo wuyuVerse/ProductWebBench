@@ -31,7 +31,7 @@ Actually *running* agents against tasks additionally needs Node, Chromium and
 ## Reproduce every number in the paper
 
 ```bash
-bash tools/reproduce.sh          # → 34 ok, 0 failed, 9 skipped
+bash tools/reproduce.sh          # → 35 ok, 0 failed, 9 skipped
 ```
 
 This regenerates every table and figure from the frozen evaluation cache
@@ -65,6 +65,7 @@ productwebbench/     the benchmark package (task construction, capture,
 analysis/            E1–E25: the paper's analyses. _data/cells_flat.jsonl is
                      the evaluation cache every number derives from.
 figures/scripts/     the figure scripts; output lands in figures/
+tables/              regenerates the main results table (Table 1) from the cache
 baselines/pristine/  the 19 checks run on the *untouched* repository, per task
                      — this is what makes a regression exactly attributable
 tasks/               all 400 evaluated slots: manifest.json plus a per-slot
