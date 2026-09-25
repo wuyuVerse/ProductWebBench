@@ -1,0 +1,150 @@
+{
+ "technext__pizza__a8e2a6f4ee2f": [
+  {
+   "state_id": "desktop_home",
+   "path": "/index.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/index.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/index.html",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_menu",
+   "path": "/menu.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#menufinder"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_menu",
+   "path": "/menu.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#menufinder"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_services",
+   "path": "/services.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": ".picks-rail"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_menu_top",
+   "path": "/menu.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_menu_filter",
+   "path": "/menu.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#menufinder"
+    },
+    {
+     "type": "click",
+     "selector": ".menufinder__tab[data-menu-filter=\"pizza\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

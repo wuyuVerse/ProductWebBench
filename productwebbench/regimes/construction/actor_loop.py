@@ -49,16 +49,16 @@ def command_env(
     env = os.environ.copy()
     env.update(
         {
-            "SITECONTINUUM_TASK": str(task_path.resolve()),
-            "SITECONTINUUM_EVIDENCE_ROOT": str(evidence_root.resolve()),
-            "SITECONTINUUM_MILESTONE_ID": milestone_id,
-            "SITECONTINUUM_SOURCE_KIND": source_kind,
-            "SITECONTINUUM_MILESTONE_DIR": str(root.resolve()),
-            "SITECONTINUUM_ACTOR_INPUT": str((root / "actor_input.json").resolve()),
-            "SITECONTINUUM_WORKSPACE": str((root / "workspace").resolve()),
-            "SITECONTINUUM_CAPTURE_REPORT": str((root / "capture_report.json").resolve()),
-            "SITECONTINUUM_VERIFIER_REPORT": str((root / "verifier_report.json").resolve()),
-            "SITECONTINUUM_TRAJECTORY_REPORT": str((root / "trajectory_report.json").resolve()),
+            "PRODUCTWEBBENCH_TASK": str(task_path.resolve()),
+            "PRODUCTWEBBENCH_EVIDENCE_ROOT": str(evidence_root.resolve()),
+            "PRODUCTWEBBENCH_MILESTONE_ID": milestone_id,
+            "PRODUCTWEBBENCH_SOURCE_KIND": source_kind,
+            "PRODUCTWEBBENCH_MILESTONE_DIR": str(root.resolve()),
+            "PRODUCTWEBBENCH_ACTOR_INPUT": str((root / "actor_input.json").resolve()),
+            "PRODUCTWEBBENCH_WORKSPACE": str((root / "workspace").resolve()),
+            "PRODUCTWEBBENCH_CAPTURE_REPORT": str((root / "capture_report.json").resolve()),
+            "PRODUCTWEBBENCH_VERIFIER_REPORT": str((root / "verifier_report.json").resolve()),
+            "PRODUCTWEBBENCH_TRAJECTORY_REPORT": str((root / "trajectory_report.json").resolve()),
         }
     )
     return env
@@ -358,9 +358,9 @@ def add_run_args(parser: argparse.ArgumentParser) -> None:
     parser.add_argument("--task", type=Path, required=True)
     parser.add_argument("--evidence-root", type=Path, required=True)
     parser.add_argument("--source-kind", choices=SOURCE_KINDS, required=True)
-    parser.add_argument("--actor-command", default=None, help="External actor command. Receives SITECONTINUUM_* env vars.")
-    parser.add_argument("--capture-command", default=None, help="External capture command. Must write $SITECONTINUUM_CAPTURE_REPORT.")
-    parser.add_argument("--verifier-command", default=None, help="External verifier command. Must write $SITECONTINUUM_VERIFIER_REPORT.")
+    parser.add_argument("--actor-command", default=None, help="External actor command. Receives PRODUCTWEBBENCH_* env vars.")
+    parser.add_argument("--capture-command", default=None, help="External capture command. Must write $PRODUCTWEBBENCH_CAPTURE_REPORT.")
+    parser.add_argument("--verifier-command", default=None, help="External verifier command. Must write $PRODUCTWEBBENCH_VERIFIER_REPORT.")
     parser.add_argument("--command-cwd", choices=["workspace", "milestone", "evidence_root"], default="workspace")
     parser.add_argument("--actor-timeout", type=int, default=1800)
     parser.add_argument("--capture-timeout", type=int, default=600)

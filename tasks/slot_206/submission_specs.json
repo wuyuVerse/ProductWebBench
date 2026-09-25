@@ -1,0 +1,247 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "/feed/feed.xml"
+      ],
+      "asset_signal_states": [
+        "desktop_post",
+        "desktop_post_color"
+      ],
+      "completion_states": [
+        "desktop_home",
+        "desktop_journal",
+        "desktop_about",
+        "desktop_post"
+      ],
+      "completion_text_signals": [
+        "The Marginalia Review",
+        "The Shelf",
+        "What we look for in a well-set page",
+        "On typography and the rhythm of a paragraph",
+        "The book that taught me to read slowly",
+        "independent publication about the craft of reading"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_journal",
+        "mobile_journal",
+        "desktop_about",
+        "desktop_post",
+        "desktop_post_color",
+        "desktop_home_filter"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_home",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_home",
+          "tag": "h1"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_home",
+          "tag": "footer"
+        },
+        {
+          "class_contains": "shelf-filter__title",
+          "min_count": 1,
+          "state": "desktop_home",
+          "text_contains": "Browse the shelf"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_journal",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_journal",
+          "tag": "h1"
+        },
+        {
+          "class_contains": "shelf-filter__title",
+          "min_count": 1,
+          "state": "desktop_journal",
+          "text_contains": "Browse the shelf"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_about",
+          "tag": "nav"
+        },
+        {
+          "class_contains": "shelf-filter__title",
+          "min_count": 1,
+          "state": "desktop_about",
+          "text_contains": "Browse the shelf"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_post",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_post",
+          "tag": "img"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_post",
+          "tag": "footer"
+        },
+        {
+          "min_count": 3,
+          "state": "desktop_post_color",
+          "tag": "p"
+        },
+        {
+          "min_count": 2,
+          "state": "desktop_post_color",
+          "tag": "h2"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_text_patterns": [
+        "Eleventy Base Blog v9",
+        "This is my first post",
+        "This is my second post",
+        "This is my third post",
+        "This is my fourth post",
+        "I am a person that writes stuff",
+        "agile frameworks",
+        "Your Name Here",
+        "Lorem ipsum",
+        "lorem ipsum"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_home",
+          "dom": {
+            "class_contains": "shelf-filter__readout",
+            "min_count": 1,
+            "text_contains": "Showing 1 of 3 · Typography"
+          },
+          "require_interaction": true,
+          "state": "desktop_home_filter"
+        }
+      ],
+      "interaction_states": [
+        "desktop_home_filter"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 95,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 6,
+      "min_image_count": 0,
+      "min_palette_overlap": 1,
+      "min_text_length": 300,
+      "min_visible_text_signals": 2,
+      "overflow_tolerance_px": 24,
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_journal",
+        "mobile_journal",
+        "desktop_about",
+        "desktop_post",
+        "desktop_post_color",
+        "desktop_home_filter"
+      ],
+      "reference_text_signals": [
+        "The Marginalia Review",
+        "The Shelf",
+        "craft of reading",
+        "On typography and the rhythm of a paragraph"
+      ],
+      "regression_states": [
+        "desktop_home",
+        "desktop_journal"
+      ],
+      "regression_text_signals": [
+        "The Marginalia Review"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_journal"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_journal",
+        "mobile_journal",
+        "desktop_about",
+        "desktop_post",
+        "desktop_post_color",
+        "desktop_home_filter"
+      ],
+      "task_id": "dev_11ty__eleventy-base-blog__676834f55c86__editorial_home_layout_restyle",
+      "text_signal_states": [
+        "desktop_home",
+        "desktop_journal",
+        "desktop_about",
+        "desktop_post_color"
+      ],
+      "visible_text_signals": [
+        "The Marginalia Review",
+        "craft of reading"
+      ],
+      "visible_text_states": [
+        "desktop_home"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_journal"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "mobile_home",
+          "desktop_home_filter"
+        ]
+      }
+    }
+  ]
+}

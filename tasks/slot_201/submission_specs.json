@@ -1,0 +1,256 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "/guide/formatting",
+        "/guide/plurals",
+        "/guide"
+      ],
+      "asset_path_states": [
+        "desktop_formatting",
+        "desktop_plurals"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_formatting",
+        "desktop_plurals",
+        "desktop_rail_home"
+      ],
+      "completion_text_signals": [
+        "Overview",
+        "On this reference",
+        "Pluralization",
+        "Formatting",
+        "Showing:"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "gstatic"
+      ],
+      "console_error_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_formatting",
+        "mobile_formatting",
+        "desktop_plurals",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_formatting",
+        "version_toggle_home"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "h1"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "main"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "text_contains": "Formatting"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_formatting",
+          "tag": "h1"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_plurals",
+          "tag": "h1"
+        },
+        {
+          "class_contains": "api-version-switch",
+          "min_count": 1,
+          "state": "desktop_initial"
+        },
+        {
+          "class_contains": "api-section-nav",
+          "min_count": 1,
+          "state": "desktop_rail_home"
+        },
+        {
+          "class_contains": "api-section-nav",
+          "min_count": 1,
+          "state": "desktop_rail_formatting"
+        },
+        {
+          "class_contains": "api-section-nav",
+          "min_count": 1,
+          "state": "desktop_plurals"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_rail_home",
+          "text_contains": "On this reference"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_rail_formatting",
+          "text_contains": "On this reference"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_plurals",
+          "text_contains": "On this reference"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_states": [
+        "desktop_initial",
+        "desktop_formatting",
+        "desktop_plurals"
+      ],
+      "forbidden_text_patterns": [
+        "REPLACE_ME",
+        "{{",
+        "lorem ipsum",
+        "TODO"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_initial",
+          "dom": {
+            "class_contains": "api-version-switch__readout",
+            "min_count": 1,
+            "text_contains": "v1 API reference"
+          },
+          "require_interaction": true,
+          "state": "version_toggle_home"
+        }
+      ],
+      "interaction_states": [
+        "version_toggle_home"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 120,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 4,
+      "min_image_count": 0,
+      "min_palette_overlap": 1,
+      "min_screenshot_bytes": 8000,
+      "min_text_length": 80,
+      "min_visible_text_signals": 2,
+      "overflow_tolerance_px": 24,
+      "palette_compare_limit": 6,
+      "reference_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_formatting",
+        "mobile_formatting",
+        "desktop_plurals",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_formatting",
+        "version_toggle_home"
+      ],
+      "reference_text_signals": [
+        "Overview",
+        "On this reference",
+        "API version",
+        "Showing:"
+      ],
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Overview",
+        "Reference",
+        "PicoIntl"
+      ],
+      "require_all_completion_signals": false,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "tablet_initial",
+        "mobile_formatting",
+        "mobile_rail_home"
+      ],
+      "source_change_expectations": {
+        "must_touch_one_of": [
+          "app/app.vue",
+          "app/components/ApiSectionNav.vue",
+          "app/components/ApiVersionSwitch.vue"
+        ],
+        "should_preserve": [
+          "app/pages/index.vue",
+          "app/pages/guide/formatting.vue",
+          "app/pages/guide/plurals.vue",
+          "app/components/AppLogo.vue",
+          "nuxt.config.ts"
+        ]
+      },
+      "submission_states": [
+        "desktop_initial",
+        "tablet_initial",
+        "mobile_initial",
+        "desktop_formatting",
+        "mobile_formatting",
+        "desktop_plurals",
+        "desktop_rail_home",
+        "mobile_rail_home",
+        "desktop_rail_formatting",
+        "version_toggle_home"
+      ],
+      "task_id": "dev_nuxt-ui-templates__starter__ab10c50d0b4769c25d8a3a77916b82c6d0e18bf1__docs_section_nav_flow",
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_rail_home"
+      ],
+      "visible_text_signals": [
+        "Overview",
+        "On this reference"
+      ],
+      "visible_text_states": [
+        "desktop_initial",
+        "desktop_rail_home"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_formatting",
+        "desktop_plurals"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_rail_home",
+          "mobile_rail_home"
+        ]
+      }
+    }
+  ]
+}

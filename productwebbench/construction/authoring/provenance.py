@@ -7,7 +7,7 @@ import os
 from pathlib import Path
 from typing import Any
 
-from ...core.config import DEFAULT_OUTPUT_ROOT
+from ...core.config import DEFAULT_OUTPUT_ROOT, workspace_meta_path
 from ...core.io_utils import read_jsonl, write_json
 from ...core.task_files import task_file_patterns
 
@@ -37,7 +37,7 @@ def load_json(path: Path) -> dict[str, Any]:
 
 
 def workspace_meta(workspace_root: Path, repo_id: str) -> dict[str, Any]:
-    path = workspace_root / repo_id / ".sitecontinuum_workspace.json"
+    path = workspace_meta_path(workspace_root / repo_id)
     if not path.exists():
         return {"repo_id": repo_id, "missing": True}
     return load_json(path)

@@ -472,7 +472,7 @@ def build_deai_contrast_anchor_queue(
                     ],
                 },
                 "append_command": (
-                    "python -m sitecontinuum append-deai-contrast-anchor "
+                    "python -m productwebbench append-deai-contrast-anchor "
                     f"--contrast-set {contrast_set_path} "
                     f"--anchor-id {anchor_id} "
                     "--model-family <real_model_family> "

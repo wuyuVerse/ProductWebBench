@@ -792,7 +792,7 @@ def summarize_readiness_repair_plan(plan_path: Path, status_report: dict[str, An
         }
     issues: list[str] = []
     stale_issues: list[str] = []
-    if plan.get("artifact_type") != "sitecontinuum_0618_readiness_repair_plan":
+    if plan.get("artifact_type") != "productwebbench_0618_readiness_repair_plan":
         issues.append(f"0618 readiness repair plan has wrong artifact_type: {plan.get('artifact_type')}")
     if plan.get("formal_task_record") is not False:
         issues.append("0618 readiness repair plan must be formal_task_record=false")

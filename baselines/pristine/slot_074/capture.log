@@ -18,7 +18,7 @@
     "timed_out": false
   },
   "dev_server": {
-    "command": "python3 productwebbench/tools/static_server.py --directory .sitecontinuum_static_base 4000 --bind 127.0.0.1",
+    "command": "python3 productwebbench/tools/static_server.py --directory .productwebbench_static_base 4000 --bind 127.0.0.1",
     "message": "HTTP 404",
     "port": 4000,
     "ready": true

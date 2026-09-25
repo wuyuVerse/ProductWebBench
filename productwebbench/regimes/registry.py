@@ -58,15 +58,15 @@ def regime_module_wrappers(key: str) -> dict[str, bool]:
 
     if key == CHANGE_REGIME:
         return {
-            "authoring": has_module("sitecontinuum.regimes.change.authoring"),
-            "verifier": has_module("sitecontinuum.regimes.change.verifier"),
-            "scoring": has_module("sitecontinuum.regimes.change.scoring"),
+            "authoring": has_module("productwebbench.regimes.change.authoring"),
+            "verifier": has_module("productwebbench.regimes.change.verifier"),
+            "scoring": has_module("productwebbench.regimes.change.scoring"),
         }
     if key == CONSTRUCTION_REGIME:
         return {
-            "authoring": has_module("sitecontinuum.regimes.construction.authoring"),
-            "trajectory_verifier": has_module("sitecontinuum.regimes.construction.trajectory_verifier"),
-            "scoring": has_module("sitecontinuum.regimes.construction.scoring"),
+            "authoring": has_module("productwebbench.regimes.construction.authoring"),
+            "trajectory_verifier": has_module("productwebbench.regimes.construction.trajectory_verifier"),
+            "scoring": has_module("productwebbench.regimes.construction.scoring"),
         }
     return {}
 

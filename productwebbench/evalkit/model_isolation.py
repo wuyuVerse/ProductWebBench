@@ -485,7 +485,7 @@ def build_model_role_manifest(
         "schema_version": "2026-06-19",
         "artifact_type": MANIFEST_ARTIFACT_TYPE,
         "formal_task_record": False,
-        "intended_use": "Non-formal model role manifest for SiteContinuum MM publish gates.",
+        "intended_use": "Non-formal model role manifest for ProductWebBench MM publish gates.",
         "roles": roles,
     }
 
@@ -532,7 +532,7 @@ def base_model_role_manifest() -> dict[str, Any]:
         "schema_version": "2026-06-19",
         "artifact_type": MANIFEST_ARTIFACT_TYPE,
         "formal_task_record": False,
-        "intended_use": "Non-formal model role manifest for SiteContinuum MM publish gates.",
+        "intended_use": "Non-formal model role manifest for ProductWebBench MM publish gates.",
         "roles": [],
     }
 
@@ -650,7 +650,7 @@ def build_model_role_queue(
                     ],
                 },
                 "append_command": (
-                    "python -m sitecontinuum append-model-role "
+                    "python -m productwebbench append-model-role "
                     f"--manifest {manifest_path} "
                     f"--role {spec['role']} "
                     f"--kind {kind} "

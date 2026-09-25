@@ -1,0 +1,160 @@
+{
+ "technext__windmill-dashboard__1a684deb0bd5": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#acct-filter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_dashboard_filter_pending",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#acct-filter"
+    },
+    {
+     "type": "click",
+     "selector": ".acct-filter__tab[data-acct-status=\"Pending\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_dashboard",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_dashboard",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_tables",
+   "path": "/tables.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scroll_to_selector",
+     "selector": "#acct-filter"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_tables",
+   "path": "/tables.html",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_forms",
+   "path": "/forms.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_charts_route",
+   "path": "/charts.html",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

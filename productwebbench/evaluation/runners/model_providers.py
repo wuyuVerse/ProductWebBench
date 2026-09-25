@@ -95,7 +95,7 @@ class OpenAICompatibleProvider:
             return json.loads(response.read().decode("utf-8", "replace"))
 
     def _post_json_with_curl(self, payload: dict) -> dict:
-        marker = "\n__SITECONTINUUM_HTTP_STATUS__:"
+        marker = "\n__PRODUCTWEBBENCH_HTTP_STATUS__:"
         body = json.dumps(payload)
         command = [
             "curl",

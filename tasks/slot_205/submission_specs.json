@@ -1,0 +1,270 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "hero.png"
+      ],
+      "asset_path_states": [
+        "desktop_initial",
+        "mobile_initial"
+      ],
+      "completion_states": [
+        "desktop_initial",
+        "desktop_work",
+        "desktop_log"
+      ],
+      "completion_text_signals": [
+        "Halyard",
+        "Ship launches that actually convert",
+        "Offer clarity audit",
+        "Responsive funnel QA",
+        "Conversion analytics handoff",
+        "From the launch log",
+        "Launch checklist"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script"
+      ],
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_work",
+        "mobile_work",
+        "desktop_log",
+        "mobile_log",
+        "desktop_footer",
+        "desktop_pricing",
+        "desktop_checklist_filter"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "h1"
+        },
+        {
+          "min_count": 3,
+          "state": "desktop_initial",
+          "tag": "h2"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "img"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "footer"
+        },
+        {
+          "min_count": 4,
+          "state": "desktop_initial",
+          "tag": "section"
+        },
+        {
+          "min_count": 6,
+          "state": "desktop_initial",
+          "tag": "button"
+        },
+        {
+          "min_count": 10,
+          "state": "desktop_initial",
+          "tag": "a"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_work",
+          "text_contains": "What we do"
+        },
+        {
+          "min_count": 4,
+          "state": "desktop_pricing",
+          "tag": "section"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_footer",
+          "tag": "footer"
+        },
+        {
+          "class_contains": "launch-rail--work",
+          "min_count": 1,
+          "state": "desktop_work"
+        },
+        {
+          "class_contains": "launch-rail--log",
+          "min_count": 1,
+          "state": "desktop_log"
+        },
+        {
+          "class_contains": "launch-rail--footer",
+          "min_count": 1,
+          "state": "desktop_footer"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_log",
+          "text_contains": "Launch checklist"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_footer",
+          "text_contains": "Launch checklist"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_text_patterns": [
+        "Lorem ipsum",
+        "lorem ipsum",
+        "xGETTING STARTED",
+        "Main Hero Message to sell yourself!",
+        "Sub-hero message",
+        "Call to Action",
+        "{{",
+        "undefined stage"
+      ],
+      "image_alt_signals": [
+        "Isometric illustration"
+      ],
+      "image_alt_states": [
+        "desktop_initial",
+        "mobile_initial"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_work",
+          "dom": {
+            "min_count": 1,
+            "text_contains": "Showing: Audit"
+          },
+          "require_interaction": true,
+          "state": "desktop_checklist_filter"
+        }
+      ],
+      "interaction_states": [
+        "desktop_checklist_filter"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 95,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 6,
+      "min_image_alt_signals": 1,
+      "min_image_count": 1,
+      "min_palette_overlap": 1,
+      "min_text_length": 900,
+      "min_visible_text_signals": 2,
+      "overflow_tolerance_px": 24,
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_work",
+        "mobile_work",
+        "desktop_log",
+        "mobile_log",
+        "desktop_footer",
+        "desktop_pricing",
+        "desktop_checklist_filter"
+      ],
+      "reference_text_signals": [
+        "Halyard",
+        "Ship launches that actually convert",
+        "Offer clarity audit",
+        "Responsive funnel QA",
+        "Conversion analytics handoff",
+        "From the launch log",
+        "Launch checklist"
+      ],
+      "regression_states": [
+        "desktop_initial",
+        "desktop_pricing"
+      ],
+      "regression_text_signals": [
+        "Work",
+        "Pricing",
+        "Contact",
+        "Free",
+        "Basic",
+        "Pro"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_work",
+        "mobile_log"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_work",
+        "mobile_work",
+        "desktop_log",
+        "mobile_log",
+        "desktop_footer",
+        "desktop_pricing",
+        "desktop_checklist_filter"
+      ],
+      "task_id": "dev_tailwindtoolbox__Landing-Page__545f89eb26e09__launch_checklist_card_repair",
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_work",
+        "desktop_log"
+      ],
+      "visible_text_signals": [
+        "Halyard",
+        "Ship launches that actually convert"
+      ],
+      "visible_text_states": [
+        "desktop_initial"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_pricing"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_work",
+          "mobile_log",
+          "desktop_footer"
+        ]
+      }
+    }
+  ]
+}

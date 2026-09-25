@@ -1,0 +1,134 @@
+{
+ "11ty__eleventy-base-blog__676834f55c86": [
+  {
+   "state_id": "desktop_home",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_home",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_home",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_journal",
+   "path": "/blog/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_journal",
+   "path": "/blog/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_about",
+   "path": "/about/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post",
+   "path": "/blog/fourthpost/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_post_color",
+   "path": "/blog/thirdpost/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_home_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "click",
+     "selector": ".shelf-filter__tab[data-topic=\"typography\"]"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

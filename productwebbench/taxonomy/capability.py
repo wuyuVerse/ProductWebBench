@@ -314,7 +314,7 @@ def metric_schema() -> dict[str, Any]:
 def task_package_json_schema() -> dict[str, Any]:
     return {
         "$schema": "https://json-schema.org/draft/2020-12/schema",
-        "$id": "https://sitecontinuum.local/schema/task_package.schema.json",
+        "$id": "https://productwebbench.local/schema/task_package.schema.json",
         "title": "Website Continuity Task Package",
         "type": "object",
         "allOf": [

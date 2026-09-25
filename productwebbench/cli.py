@@ -56,7 +56,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     select_parser = subparsers.add_parser(
         "select-candidates",
-        help="Select high-value repos for SiteContinuum task authoring.",
+        help="Select high-value repos for ProductWebBench task authoring.",
     )
     tasks.add_select_args(select_parser)
     select_parser.set_defaults(func=tasks.run_select_from_args)

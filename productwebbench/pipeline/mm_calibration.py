@@ -703,7 +703,7 @@ def build_human_annotation_queue(
                 "label_set": item.get("label_set", ["match", "partial", "mismatch"]),
                 "annotation_notes": item.get("annotation_notes"),
                 "append_command": (
-                    "python -m sitecontinuum append-mm-human-annotation "
+                    "python -m productwebbench append-mm-human-annotation "
                     f"--sample {sample_path} "
                     f"--labels {labels_path} "
                     f"--checkpoint-id {checkpoint_id} "
@@ -913,7 +913,7 @@ def export_annotation_pack(sample_path: Path, output_dir: Path, *, regime: str |
     instructions_path.write_text(
         "\n".join(
             [
-                "# SiteContinuum MM Annotation Pack",
+                "# ProductWebBench MM Annotation Pack",
                 "",
                 "This directory is non-formal calibration evidence, not benchmark task data.",
                 "",

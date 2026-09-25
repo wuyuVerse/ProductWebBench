@@ -1,0 +1,213 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "/assets/",
+        "mockup"
+      ],
+      "asset_path_states": [
+        "desktop_projects",
+        "mobile_projects"
+      ],
+      "completion_states": [
+        "desktop_projects",
+        "desktop_work_filter"
+      ],
+      "completion_text_signals": [
+        "Selected work",
+        "Tasty App",
+        "Silentmoon",
+        "Furniture Organizer",
+        "Showing"
+      ],
+      "console_error_allowlist": [
+        "favicon"
+      ],
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_skills_de",
+        "desktop_contact",
+        "desktop_work_filter"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "h1"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "footer"
+        },
+        {
+          "class_contains": "workfilter__title",
+          "min_count": 1,
+          "state": "desktop_projects",
+          "text_contains": "Selected work"
+        },
+        {
+          "class_contains": "workfilter__card-name",
+          "min_count": 3,
+          "state": "desktop_projects"
+        },
+        {
+          "class_contains": "workfilter__card-name",
+          "min_count": 1,
+          "state": "desktop_projects",
+          "text_contains": "Tasty App"
+        },
+        {
+          "class_contains": "workfilter--summary",
+          "min_count": 1,
+          "state": "desktop_skills_de"
+        },
+        {
+          "class_contains": "workfilter--summary",
+          "min_count": 1,
+          "state": "desktop_contact"
+        },
+        {
+          "min_count": 3,
+          "state": "desktop_contact",
+          "tag": "input"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_contact",
+          "tag": "footer"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "generic portfolio redesign",
+        "replace swiper",
+        "placeholder icon",
+        "new landing page",
+        "remove project slider",
+        "Project rhythm audit",
+        "DESIGN CONTINUITY"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_projects",
+          "dom": {
+            "class_contains": "workfilter__readout",
+            "min_count": 1,
+            "text_contains": "Showing 2 of 3"
+          },
+          "require_interaction": true,
+          "state": "desktop_work_filter"
+        }
+      ],
+      "interaction_states": [
+        "desktop_work_filter"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 110,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 5,
+      "min_image_count": 0,
+      "min_palette_overlap": 1,
+      "min_text_length": 300,
+      "min_visible_text_signals": 3,
+      "overflow_tolerance_px": 24,
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_skills_de",
+        "desktop_contact",
+        "desktop_work_filter"
+      ],
+      "reference_text_signals": [
+        "Alpay",
+        "Tasty App",
+        "Silentmoon",
+        "Furniture Organizer",
+        "Selected work"
+      ],
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "Alpay"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_initial",
+        "mobile_projects"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "desktop_projects",
+        "mobile_projects",
+        "tablet_projects",
+        "desktop_skills_de",
+        "desktop_contact",
+        "desktop_work_filter"
+      ],
+      "task_id": "dev_AlpayC__portfolio_site__2677889a6f23__project_focus_filter",
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_projects"
+      ],
+      "visible_text_signals": [
+        "Selected work",
+        "Tasty App",
+        "Silentmoon"
+      ],
+      "visible_text_states": [
+        "desktop_projects"
+      ],
+      "visual_anchor_states": [
+        "desktop_initial",
+        "desktop_projects"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_projects",
+          "mobile_projects"
+        ]
+      }
+    }
+  ]
+}

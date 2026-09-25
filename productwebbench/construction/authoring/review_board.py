@@ -234,7 +234,7 @@ def render_html(items: list[dict[str, Any]]) -> str:
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>SiteContinuum Review Board</title>
+  <title>ProductWebBench Review Board</title>
   <style>
     body {{ font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; margin: 0; color: #1f2933; background: #f5f7fa; }}
     main {{ max-width: 1320px; margin: 0 auto; padding: 32px 20px 80px; }}
@@ -262,7 +262,7 @@ def render_html(items: list[dict[str, Any]]) -> str:
 </head>
 <body>
 <main>
-  <h1>SiteContinuum Review Board</h1>
+  <h1>ProductWebBench Review Board</h1>
   <p>Agent audit surface for repo-grounded website-change tasks. Each item shows the problem, evidence, reference states, component crops, curated assets, and anti-shortcut rationale.</p>
   {body}
 </main>
@@ -272,7 +272,7 @@ def render_html(items: list[dict[str, Any]]) -> str:
 
 
 def render_markdown(items: list[dict[str, Any]]) -> str:
-    sections = ["# SiteContinuum Review Board\n"]
+    sections = ["# ProductWebBench Review Board\n"]
     for item in items:
         sections.append(
             f"""## {item['task_id']}

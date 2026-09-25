@@ -207,7 +207,7 @@ def resolve_metadata_path(path_value: str | None) -> Path | None:
 
 
 def load_existing_workspace_metadata(destination: Path, repo_id: str, zip_path: Path) -> dict | None:
-    metadata_path = destination / ".sitecontinuum_workspace.json"
+    metadata_path = destination / ".productwebbench_workspace.json"
     if not metadata_path.exists():
         return None
     try:
@@ -255,7 +255,7 @@ def materialize_workspace(repo_record: dict, workspace_root: Path, clean: bool =
         "package_name": package_json.get("name"),
         "scripts": package_json.get("scripts", {}),
     }
-    write_json(destination / ".sitecontinuum_workspace.json", metadata)
+    write_json(destination / ".productwebbench_workspace.json", metadata)
     return metadata
 
 

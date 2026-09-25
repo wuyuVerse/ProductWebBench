@@ -1,0 +1,144 @@
+{
+ "AlpayC__portfolio_site__2677889a6f23": [
+  {
+   "state_id": "desktop_initial",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_initial",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_projects",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#selected-work"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "mobile_projects",
+   "path": "/",
+   "viewport": "mobile",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#selected-work"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "tablet_projects",
+   "path": "/",
+   "viewport": "tablet",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#selected-work"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_skills_de",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#skills"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_contact",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#contact"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  },
+  {
+   "state_id": "desktop_work_filter",
+   "path": "/",
+   "viewport": "desktop",
+   "goto_wait_until": "domcontentloaded",
+   "ready_timeout_ms": 30000,
+   "full_page": false,
+   "actions": [
+    {
+     "type": "scrollIntoView",
+     "selector": "#selected-work"
+    },
+    {
+     "type": "click",
+     "selector": "[data-workfilter-tab='Fullstack']"
+    },
+    {
+     "type": "wait",
+     "wait_ms": 1200
+    }
+   ]
+  }
+ ]
+}

@@ -335,7 +335,7 @@ def select_candidates(
         "per_framework": per_framework,
         "total_limit": total_limit,
         "frameworks": Counter(item.get("framework", "other") for item in selected),
-        "intended_use": "candidate pool for SiteContinuum task authoring",
+        "intended_use": "candidate pool for ProductWebBench task authoring",
     }
     write_json(output_path.with_suffix(".summary.json"), summary)
     return selected
@@ -1424,23 +1424,23 @@ def build_strict_freeze_worklist(
         blockers = sorted(str(blocker) for blocker in item.get("blockers", []) or [])
         commands = [
             (
-                "python -m sitecontinuum start-strict-authoring-repair "
+                "python -m productwebbench start-strict-authoring-repair "
                 f"--repair-plan {repair_plan_path} --slot-id {slot_id}"
             ),
             (
-                "python -m sitecontinuum no-bulk-declaration-template "
+                "python -m productwebbench no-bulk-declaration-template "
                 f"--slot-dir {slot_dir}"
             ),
             (
-                "python -m sitecontinuum audit-single-task-freeze "
+                "python -m productwebbench audit-single-task-freeze "
                 f"--slot-dir {slot_dir}"
             ),
             (
-                "python -m sitecontinuum audit-authoring-task "
+                "python -m productwebbench audit-authoring-task "
                 f"--progress {progress_path}"
             ),
             (
-                "python -m sitecontinuum audit-authoring-data "
+                "python -m productwebbench audit-authoring-data "
                 "--require-freeze-audits --require-no-bulk-declarations "
                 "--report data/productwebbench/authoring_ledger/authoring_data_audit.strict_freeze.json"
             ),

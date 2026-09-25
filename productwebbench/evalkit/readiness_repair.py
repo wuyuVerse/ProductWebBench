@@ -12,7 +12,7 @@ from ..core.formal_data_guard import assert_not_under_formal_task_root
 from ..core.io_utils import ensure_dir, write_json
 
 
-ARTIFACT_TYPE = "sitecontinuum_0618_readiness_repair_plan"
+ARTIFACT_TYPE = "productwebbench_0618_readiness_repair_plan"
 DEFAULT_COVERAGE_REPORT = DEFAULT_OUTPUT_ROOT / "coverage" / "status.json"
 DEFAULT_OUTPUT = DEFAULT_OUTPUT_ROOT / "eval_protocol" / "0618_readiness_repair_plan.json"
 

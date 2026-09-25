@@ -1,0 +1,278 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "yield_ahead"
+      ],
+      "asset_signal_states": [
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery"
+      ],
+      "completion_states": [
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery"
+      ],
+      "completion_text_signals": [
+        "Every generator pattern regenerator rewrites to ES5",
+        "Basic generator function",
+        "Two-way yield value",
+        "Delegated yield",
+        "Async generator",
+        "Await inside a generator",
+        "for-of over a generator"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon",
+        "insights/script",
+        "connect.facebook.net",
+        "s3.amazonaws.com",
+        "facebook.com"
+      ],
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery",
+        "desktop_gallery_filter"
+      ],
+      "dom_assertions": [
+        {
+          "class_contains": "nav-link",
+          "min_count": 1,
+          "state": "desktop_home",
+          "tag": "a",
+          "text_contains": "Transform gallery"
+        },
+        {
+          "class_contains": "nav-link",
+          "min_count": 1,
+          "state": "desktop_gallery",
+          "tag": "a",
+          "text_contains": "Transform gallery"
+        },
+        {
+          "class_contains": "nav-link",
+          "min_count": 1,
+          "state": "mobile_gallery",
+          "tag": "a",
+          "text_contains": "Transform gallery"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_gallery",
+          "tag": "h1"
+        },
+        {
+          "class_contains": "pattern-card",
+          "min_count": 6,
+          "state": "desktop_gallery",
+          "tag": "figure"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_gallery",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_gallery",
+          "tag": "footer"
+        },
+        {
+          "min_count": 1,
+          "state": "mobile_gallery",
+          "tag": "h1"
+        },
+        {
+          "class_contains": "pattern-card",
+          "min_count": 6,
+          "state": "mobile_gallery",
+          "tag": "figure"
+        },
+        {
+          "min_count": 1,
+          "state": "mobile_gallery",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "mobile_gallery",
+          "tag": "footer"
+        },
+        {
+          "min_count": 1,
+          "state": "tablet_gallery",
+          "tag": "h1"
+        },
+        {
+          "class_contains": "pattern-card",
+          "min_count": 6,
+          "state": "tablet_gallery",
+          "tag": "figure"
+        },
+        {
+          "min_count": 1,
+          "state": "tablet_gallery",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "tablet_gallery",
+          "tag": "footer"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery",
+        "desktop_gallery_filter"
+      ],
+      "forbidden_text_patterns": [
+        "Cheatsheet",
+        "Lorem ipsum",
+        "placeholder text"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_gallery",
+          "dom": {
+            "class_contains": "gallery-readout",
+            "min_count": 1,
+            "text_contains": "Showing 1 of 6"
+          },
+          "require_interaction": true,
+          "state": "desktop_gallery_filter"
+        }
+      ],
+      "interaction_states": [
+        "desktop_gallery_filter"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 120,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 7,
+      "min_image_count": 1,
+      "min_palette_overlap": 1,
+      "min_screenshot_bytes": 5000,
+      "min_text_length": 200,
+      "min_visible_text_signals": 3,
+      "overflow_tolerance_px": 24,
+      "palette_compare_limit": 6,
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery",
+        "desktop_gallery_filter"
+      ],
+      "reference_text_signals": [
+        "Every generator pattern regenerator rewrites to ES5",
+        "Basic generator function",
+        "Two-way yield value",
+        "Delegated yield",
+        "Async generator"
+      ],
+      "regression_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home"
+      ],
+      "regression_text_signals": [
+        "get serious about ES6 generator functions",
+        "Regenerator",
+        "Traceur",
+        "Input:",
+        "Output:"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_gallery",
+        "tablet_gallery"
+      ],
+      "source_change_expectations": {
+        "must_touch_one_of": [
+          "docs/gallery.html",
+          "docs/gallery.css",
+          "docs/gallery-filter.js",
+          "docs/nav-links.js"
+        ],
+        "should_preserve": [
+          "docs/sandbox.js",
+          "docs/bundle.js",
+          "docs/index.html"
+        ]
+      },
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery",
+        "desktop_gallery_filter"
+      ],
+      "task_id": "dev_facebook__regenerator__cb755fd82c64__docs_asset_map",
+      "text_signal_states": [
+        "desktop_gallery",
+        "mobile_gallery",
+        "tablet_gallery"
+      ],
+      "visible_text_signals": [
+        "Every generator pattern regenerator rewrites to ES5",
+        "Transform gallery",
+        "All patterns"
+      ],
+      "visible_text_states": [
+        "desktop_gallery"
+      ],
+      "visual_anchor_states": [
+        "desktop_gallery",
+        "desktop_home"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_gallery",
+          "mobile_gallery"
+        ]
+      }
+    }
+  ]
+}

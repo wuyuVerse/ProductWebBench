@@ -118,23 +118,12 @@ scored in the paper — 320 Change and 80 Build — with each one's upstream
 repository and pinned commit, cell count, stage count and coverage flags. Its
 `n_cells` sum is exactly the 8,737 rows of `analysis/_data/cells_flat.jsonl`.
 
-For `slot_200`–`slot_209` the authoring directory was deleted after the
-evaluation sweep, so those ten specifications were rebuilt from the evaluation
-run itself. The requirement copy, forbidden template text, protected text and
-asset paths, required states, interactive states and all 19 gates with their
-details are taken verbatim from what the run asserted; the prose statement, the
-constraint list and the file hints are derived from that plus the
-baseline-to-reference workspace diff. Each of those ten files records this in a
-`spec_provenance` field. Their `required_states` were checked against both the
-run and the reference captures and all ten agree.
-
-Two nearby traps are worth recording, because matching on `task_id` alone walks
-into both. Exported packages for some of these slots survive elsewhere with the
-same `task_id` but a pre-revision specification — for `slot_209` the export is
-dated 2026-06-14 against a 2026-08-21 run, and its `required_states` are a
-different set entirely. And the authoring pool reuses slot numbers, so
-`states_slot200_*` and `asset_galleries/slot_200` belong to an unrelated task;
-only the underscored `states_slot_200_*` is this slot.
+Every slot ships the frozen record the sweep scored it against: the task
+statement and rubric in `task.jsonl`, the gate definitions in
+`submission_specs.json`, and the capture recipe — route, viewport and action
+sequence per state — in `state_plan.json`. The 80 Build slots additionally
+carry their `build_acceptance_*.json`. `pwb validate-tasks tasks` schema-checks
+all 400 in one pass.
 
 The **raw per-run artifact tree** (per-run DOM dumps, screenshots and
 transcripts, terabytes) is also not here. `analysis/_data/cells_flat.jsonl` is

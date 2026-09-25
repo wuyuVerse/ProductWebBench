@@ -1,1 +1,1 @@
-"""SiteContinuum benchmark construction and evaluation tools."""
+"""ProductWebBench benchmark construction and evaluation tools."""

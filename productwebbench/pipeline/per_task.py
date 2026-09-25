@@ -12,7 +12,7 @@ from ..taxonomy.capability import CHANGE_REGIME, CONSTRUCTION_REGIME
 
 
 SCHEMA_VERSION = "2026-06-19"
-ARTIFACT_TYPE = "sitecontinuum_per_task_progress"
+ARTIFACT_TYPE = "productwebbench_per_task_progress"
 DEFAULT_LEDGER_ROOT = DEFAULT_OUTPUT_ROOT / "authoring_ledger"
 DEFAULT_PROGRESS_ROOT = DEFAULT_LEDGER_ROOT / "per_task_progress"
 DEFAULT_ACTIVE_LOCK = DEFAULT_LEDGER_ROOT / "active_authoring_task.json"
@@ -199,7 +199,7 @@ def initial_stages() -> dict[str, dict[str, Any]]:
 def active_lock_payload(progress_path: Path, progress: dict[str, Any]) -> dict[str, Any]:
     return {
         "schema_version": SCHEMA_VERSION,
-        "artifact_type": "sitecontinuum_active_authoring_lock",
+        "artifact_type": "productwebbench_active_authoring_lock",
         "formal_task_record": False,
         "active": True,
         "slot_id": progress.get("slot_id"),
@@ -563,7 +563,7 @@ def audit_progress(progress: dict[str, Any], progress_path: Path | None = None) 
                 )
     report = {
         "schema_version": SCHEMA_VERSION,
-        "artifact_type": "sitecontinuum_per_task_progress_audit",
+        "artifact_type": "productwebbench_per_task_progress_audit",
         "formal_task_record": False,
         "generated_at_utc": utc_now(),
         "progress_path": str(progress_path) if progress_path else None,
@@ -620,7 +620,7 @@ def audit_authoring_lock(
             issues.append(f"active lock does not match active progress files: {lock_path}")
     return {
         "schema_version": SCHEMA_VERSION,
-        "artifact_type": "sitecontinuum_authoring_lock_audit",
+        "artifact_type": "productwebbench_authoring_lock_audit",
         "formal_task_record": False,
         "generated_at_utc": utc_now(),
         "ledger_root": str(ledger_root),

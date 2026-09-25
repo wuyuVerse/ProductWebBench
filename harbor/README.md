@@ -83,16 +83,30 @@ emitter beside `harbor_adapter.py`.
 
 ## Known naming legacy
 
-`sitecontinuum` was this benchmark's working name. Everything the export
-writes now says `productwebbench`: the exported task name prefix, the
-`[metadata]` block in `task.toml`, the instruction heading, the tags, and the
-`PWB_ROOT` / `PWB_VERIFY_OUT` / `PWB_SERVER_TIMEOUT` / `PWB_CAPTURE_TIMEOUT`
-environment variables the generated `tests/test.sh` reads. The runs scored in
-the paper carried the old prefix; it is a Harbor display namespace and has no
-effect on capture, gating or scoring.
+`sitecontinuum` was this benchmark's working name. Everything the package
+writes and reads now says `productwebbench`: module paths, the CLI, the
+runtime output root, the exported task-name prefix, `task.toml` metadata, the
+instruction heading, the tags, and the `PWB_ROOT` / `PWB_VERIFY_OUT` /
+`PWB_SERVER_TIMEOUT` / `PWB_CAPTURE_TIMEOUT` variables the generated
+`tests/test.sh` reads. The runs scored in the paper carried the old task-name
+prefix; that prefix is a Harbor display namespace and has no effect on
+capture, gating or scoring.
 
-The old name still appears inside the package's own module paths and in some
-task-record fields. Re-export any task directories produced before this commit
-rather than patching them in place — an older `tests/test.sh` invokes
-`python3 -m sitecontinuum`, which cannot resolve, and reads the old
-`SITECONTINUUM_*` variables.
+Re-export any task directories produced before this change rather than
+patching them: an older `tests/test.sh` invokes `python3 -m sitecontinuum`,
+which cannot resolve, and reads the old `SITECONTINUUM_*` variables.
+Workspaces extracted before the change carry a `.sitecontinuum_workspace.json`
+marker; the package writes the new name but still accepts the old one, so
+those workspaces keep working.
+
+Forty-one occurrences of the old name survive on purpose, because they are
+bound to the frozen repository snapshots rather than to the package:
+
+| what | count | why it cannot be renamed |
+|---|--:|---|
+| `forbidden_text_patterns` entries containing `sitecontinuum` | 20 | the gate catches a placeholder marker that is literally present in the frozen baseline; renaming the pattern would stop it matching |
+| `[data-sitecontinuum-crop]` selectors | 11 | an attribute baked into the snapshot HTML that the state plans and the capture script select on |
+| `assets/css/sitecontinuum-state.css`, `assets/js/sitecontinuum-state.js` | 10 | real files inside two task snapshots; the paths appear in `required_content` |
+
+Renaming any of these would change what the benchmark measures, so they are
+left exactly as they were scored.

@@ -1423,7 +1423,7 @@ def run_verifier(
         task_path: path to task.jsonl (single-task or multi-task).
         spec_path: path to submission_specs.json (`{"tasks":[spec,...]}`).
         states_root: root directory of pre-captured states (per-repo subdirs). The caller is
-            responsible for running `sitecontinuum capture-states` beforehand — this function
+            responsible for running `productwebbench capture-states` beforehand — this function
             does NOT trigger capture (capture needs playwright/chromium + a live dev server and
             is best kept as a separate stage in the adapter's `tests/test.sh`).
         output_dir: where to write `verifier_report.json` and `score.json`.

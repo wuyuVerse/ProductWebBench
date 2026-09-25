@@ -13,7 +13,7 @@ from dataclasses import asdict, dataclass, field, fields
 from pathlib import Path
 from typing import Any
 
-from ...core.config import DEFAULT_OUTPUT_ROOT
+from ...core.config import DEFAULT_OUTPUT_ROOT, workspace_meta_path
 from ...core.formal_data_guard import assert_not_under_formal_task_root
 from ...core.io_utils import ensure_dir, read_jsonl, write_json
 from ...core.task_files import task_file_patterns
@@ -169,7 +169,7 @@ def load_existing_status(config: RunnerConfig, model_slug: str, task_id: str) ->
 
 
 def project_root_for_workspace(workspace: Path) -> Path:
-    meta_path = workspace / ".sitecontinuum_workspace.json"
+    meta_path = workspace_meta_path(workspace)
     if meta_path.exists():
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         project_root = Path(meta.get("project_root", ""))
@@ -192,7 +192,7 @@ def copy_workspace(source_workspace: Path, destination_parent: Path, repo_id: st
         return destination
     ensure_dir(destination_parent)
     subprocess.run(["cp", "-a", "--reflink=auto", str(source_workspace), str(destination)], check=True)
-    meta_path = destination / ".sitecontinuum_workspace.json"
+    meta_path = destination / ".productwebbench_workspace.json"
     if meta_path.exists():
         meta = json.loads(meta_path.read_text(encoding="utf-8"))
         meta["workspace"] = str(destination)
@@ -765,14 +765,14 @@ def evaluate_patch(config: RunnerConfig, task: dict, spec: dict, model_slug: str
     states_root = run_dir / "states"
     port_start = config.port_start + worker_index * config.port_stride
     env = {
-        "SITECONTINUUM_PORT_START": str(port_start),
-        "SITECONTINUUM_PORT_END": str(port_start + config.port_stride - 1),
+        "PRODUCTWEBBENCH_PORT_START": str(port_start),
+        "PRODUCTWEBBENCH_PORT_END": str(port_start + config.port_stride - 1),
     }
     skip_build = config.eval_skip_build or baseline_build_ok(config, task["repo_id"]) is False
     capture_command = [
         "python3",
         "-m",
-        "sitecontinuum",
+        "productwebbench",
         "capture-states",
         task["repo_id"],
         "--workspace-root",
@@ -814,7 +814,7 @@ def evaluate_patch(config: RunnerConfig, task: dict, spec: dict, model_slug: str
         verify_command = [
             "python3",
             "-m",
-            "sitecontinuum",
+            "productwebbench",
             "verify-submission",
             "--tasks",
             str(task_path),
@@ -833,7 +833,7 @@ def evaluate_patch(config: RunnerConfig, task: dict, spec: dict, model_slug: str
             report = json.loads(report_path.read_text(encoding="utf-8"))
             setattr(status, f"{label}_passed", int(report.get("passed", 0)))
         if report_path.exists():
-            run_command(["python3", "-m", "sitecontinuum", "score-report", "--report", str(report_path), "--output", str(score_path)], Path.cwd(), 120)
+            run_command(["python3", "-m", "productwebbench", "score-report", "--report", str(report_path), "--output", str(score_path)], Path.cwd(), 120)
             if score_path.exists():
                 score = json.loads(score_path.read_text(encoding="utf-8"))
                 setattr(status, f"{label}_wcs_rate", score.get("wcs_rate"))
@@ -1016,7 +1016,7 @@ def rescore_status(config: RunnerConfig, task: dict, spec: dict, model_slug: str
         verify_command = [
             "python3",
             "-m",
-            "sitecontinuum",
+            "productwebbench",
             "verify-submission",
             "--tasks",
             str(task_path),
@@ -1040,7 +1040,7 @@ def rescore_status(config: RunnerConfig, task: dict, spec: dict, model_slug: str
             setattr(status, f"{label}_passed", int(report.get("passed", 0)))
         if report_path.exists():
             rc, output = run_command(
-                ["python3", "-m", "sitecontinuum", "score-report", "--report", str(report_path), "--output", str(score_path)],
+                ["python3", "-m", "productwebbench", "score-report", "--report", str(report_path), "--output", str(score_path)],
                 Path.cwd(),
                 120,
             )

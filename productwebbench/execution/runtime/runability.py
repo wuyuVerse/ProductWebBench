@@ -25,8 +25,8 @@ STATIC_SERVER_SCRIPT = Path(__file__).resolve().parents[2] / "tools" / "static_s
 
 
 def find_free_port(start: int = 3100, end: int = 3999) -> int:
-    start = int(os.environ.get("SITECONTINUUM_PORT_START", start))
-    end = int(os.environ.get("SITECONTINUUM_PORT_END", end))
+    start = int(os.environ.get("PRODUCTWEBBENCH_PORT_START", start))
+    end = int(os.environ.get("PRODUCTWEBBENCH_PORT_END", end))
     for port in range(start, end + 1):
         with socket.socket(socket.AF_INET, socket.SOCK_STREAM) as sock:
             sock.setsockopt(socket.SOL_SOCKET, socket.SO_REUSEADDR, 1)
@@ -343,7 +343,7 @@ def static_site_serve_dir(repo_record: dict, project_root: Path, static_dir: Pat
     if not base:
         return static_dir
 
-    wrapper = project_root / ".sitecontinuum_static_base"
+    wrapper = project_root / ".productwebbench_static_base"
     if wrapper.exists():
         if wrapper.is_symlink() or wrapper.is_file():
             wrapper.unlink()
@@ -438,13 +438,13 @@ def prepare_node_environment(project_root: Path, port: int | None = None) -> Non
         "APP_URL": base_url,
         "BETTER_AUTH_URL": base_url,
         "NEXT_PUBLIC_APP_URL": base_url,
-        "BETTER_AUTH_SECRET": "sitecontinuum-local-secret",
-        "GOOGLE_CLIENT_ID": "sitecontinuum-local-client-id",
-        "GOOGLE_CLIENT_SECRET": "sitecontinuum-local-client-secret",
-        "DATABASE_URL": "postgresql://sitecontinuum:sitecontinuum@127.0.0.1:5432/sitecontinuum",
-        "SESSION_SECRET": "sitecontinuum-local-session-secret-000000",
+        "BETTER_AUTH_SECRET": "productwebbench-local-secret",
+        "GOOGLE_CLIENT_ID": "productwebbench-local-client-id",
+        "GOOGLE_CLIENT_SECRET": "productwebbench-local-client-secret",
+        "DATABASE_URL": "postgresql://productwebbench:productwebbench@127.0.0.1:5432/productwebbench",
+        "SESSION_SECRET": "productwebbench-local-session-secret-000000",
         "TURSO_DATABASE_URL": "file:.data/sqlite.db",
-        "TURSO_AUTH_TOKEN": "sitecontinuum-local-turso-token",
+        "TURSO_AUTH_TOKEN": "productwebbench-local-turso-token",
     }.items():
         if key in text:
             text = upsert_env_value(text, key, value)
@@ -950,9 +950,9 @@ def command_environment(cwd: Path, port: int | None = None) -> dict[str, str]:
     env.setdefault("VITE_FORCE_POLLING", "true")
     # Local benchmark captures should exercise the visible UI without requiring
     # optional production services to be configured.
-    env.setdefault("SESSION_SECRET", "sitecontinuum-local-session-secret-000000")
+    env.setdefault("SESSION_SECRET", "productwebbench-local-session-secret-000000")
     env.setdefault("TURSO_DATABASE_URL", "file:.data/sqlite.db")
-    env.setdefault("TURSO_AUTH_TOKEN", "sitecontinuum-local-turso-token")
+    env.setdefault("TURSO_AUTH_TOKEN", "productwebbench-local-turso-token")
     # Prepend local node_modules/.bin so `npm run dev` / `yarn dev` / `gatsby develop` etc.
     # can find bins even when node_modules is a symlink (npm 10 sometimes fails to add
     # symlinked node_modules/.bin to script PATH). Also try the resolved symlink target.

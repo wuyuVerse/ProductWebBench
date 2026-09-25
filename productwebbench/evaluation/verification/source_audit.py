@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-from ...core.config import DEFAULT_OUTPUT_ROOT
+from ...core.config import DEFAULT_OUTPUT_ROOT, workspace_meta_path
 from ...core.io_utils import read_jsonl, write_json
 from ...core.task_files import task_file_patterns
 
@@ -148,7 +148,7 @@ def file_index(root: Path) -> dict[str, dict[str, Any]]:
 
 def workspace_project_root(workspace_root: Path, repo_id: str) -> Path | None:
     repo_dir = workspace_root / repo_id
-    meta_path = repo_dir / ".sitecontinuum_workspace.json"
+    meta_path = workspace_meta_path(repo_dir)
     if meta_path.exists():
         meta = load_json(meta_path)
         project_root = Path(meta.get("project_root", ""))

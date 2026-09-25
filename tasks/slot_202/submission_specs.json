@@ -1,0 +1,216 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "images/bg"
+      ],
+      "asset_path_states": [
+        "desktop_home"
+      ],
+      "completion_states": [
+        "desktop_menu",
+        "desktop_services"
+      ],
+      "completion_text_signals": [
+        "Tonight",
+        "Menu Board",
+        "Showing 12 of 12",
+        "Chef",
+        "Pizzas"
+      ],
+      "console_error_allowlist": [
+        "/_vercel/",
+        "google-analytics",
+        "googletagmanager",
+        "favicon"
+      ],
+      "console_error_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_menu",
+        "mobile_menu",
+        "desktop_services",
+        "desktop_about",
+        "desktop_menu_top",
+        "desktop_menu_filter"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_home",
+          "tag": "nav"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_menu",
+          "text_contains": "Tonight"
+        },
+        {
+          "class_contains": "menufinder__tab",
+          "min_count": 5,
+          "state": "desktop_menu"
+        },
+        {
+          "class_contains": "menufinder__card",
+          "min_count": 12,
+          "state": "desktop_menu"
+        },
+        {
+          "class_contains": "picks-rail--index",
+          "min_count": 1,
+          "state": "desktop_home"
+        },
+        {
+          "class_contains": "picks-rail--menu",
+          "min_count": 1,
+          "state": "desktop_menu"
+        },
+        {
+          "class_contains": "picks-rail--services",
+          "min_count": 1,
+          "state": "desktop_services"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_services",
+          "text_contains": "Chef"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_menu",
+          "text_contains": "Chef"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_states": [
+        "desktop_menu",
+        "mobile_menu"
+      ],
+      "forbidden_text_patterns": [
+        "Far far away",
+        "Vokalia",
+        "Consonantia",
+        "Itallian Pizza",
+        "Lorem ipsum",
+        "REPLACE_ME",
+        "{{"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_menu",
+          "dom": {
+            "class_contains": "menufinder__readout",
+            "min_count": 1,
+            "text_contains": "Showing 3 of 12"
+          },
+          "require_interaction": true,
+          "state": "desktop_menu_filter"
+        }
+      ],
+      "interaction_states": [
+        "desktop_menu_filter"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 95,
+      "min_asset_path_signals": 1,
+      "min_canvas_screenshot_bytes": 0,
+      "min_completion_text_signals": 5,
+      "min_image_count": 0,
+      "min_palette_overlap": 1,
+      "min_text_length": 300,
+      "min_visible_text_signals": 2,
+      "overflow_tolerance_px": 24,
+      "reference_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_menu",
+        "mobile_menu",
+        "desktop_services",
+        "desktop_about",
+        "desktop_menu_top",
+        "desktop_menu_filter"
+      ],
+      "reference_text_signals": [
+        "Trattoria Vesuvio",
+        "Tonight",
+        "Menu Board",
+        "Showing 12 of 12"
+      ],
+      "regression_states": [
+        "desktop_home",
+        "desktop_menu_top"
+      ],
+      "regression_text_signals": [
+        "Menu",
+        "Services",
+        "About",
+        "Pizza"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_home",
+        "tablet_home",
+        "mobile_menu"
+      ],
+      "submission_states": [
+        "desktop_home",
+        "mobile_home",
+        "tablet_home",
+        "desktop_menu",
+        "mobile_menu",
+        "desktop_services",
+        "desktop_about",
+        "desktop_menu_top",
+        "desktop_menu_filter"
+      ],
+      "task_id": "dev_technext__pizza__a8e2a6f4ee2f__menu_finder_flow",
+      "text_signal_states": [
+        "desktop_menu"
+      ],
+      "visible_text_signals": [
+        "Tonight",
+        "Showing 12 of 12"
+      ],
+      "visible_text_states": [
+        "desktop_menu"
+      ],
+      "visual_anchor_states": [
+        "desktop_home",
+        "desktop_about"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_menu",
+          "mobile_menu"
+        ]
+      }
+    }
+  ]
+}

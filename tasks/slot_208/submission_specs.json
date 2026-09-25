@@ -1,0 +1,201 @@
+{
+  "tasks": [
+    {
+      "asset_path_signals": [
+        "images/",
+        "images/product"
+      ],
+      "asset_path_states": [
+        "desktop_initial",
+        "desktop_products"
+      ],
+      "completion_states": [
+        "desktop_products",
+        "desktop_cart"
+      ],
+      "completion_text_signals": [
+        "Shop the range",
+        "All products",
+        "Cart to checkout handoff",
+        "Continue to account checkout",
+        "RedStore"
+      ],
+      "console_error_allowlist": [
+        "favicon"
+      ],
+      "console_error_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_products",
+        "desktop_product_detail",
+        "desktop_cart",
+        "desktop_account",
+        "mobile_products",
+        "desktop_products_footwear"
+      ],
+      "dom_assertions": [
+        {
+          "min_count": 1,
+          "state": "desktop_initial",
+          "tag": "nav"
+        },
+        {
+          "class_contains": "rsfilter__title",
+          "min_count": 1,
+          "state": "desktop_initial",
+          "text_contains": "Shop the range"
+        },
+        {
+          "class_contains": "rsfilter__title",
+          "min_count": 1,
+          "state": "desktop_product_detail",
+          "text_contains": "Shop the range"
+        },
+        {
+          "class_contains": "rsfilter__title",
+          "min_count": 1,
+          "state": "desktop_products",
+          "text_contains": "Shop the range"
+        },
+        {
+          "class_contains": "rsfilter__tab",
+          "min_count": 4,
+          "state": "desktop_products"
+        },
+        {
+          "class_contains": "col-4",
+          "min_count": 12,
+          "state": "desktop_products"
+        },
+        {
+          "min_count": 1,
+          "state": "desktop_cart",
+          "tag": "table"
+        }
+      ],
+      "enforce_console_errors": true,
+      "forbidden_text_patterns": [
+        "lorem ipsum",
+        "TODO",
+        "placeholder text",
+        "Coming soon"
+      ],
+      "interaction_assertions": [
+        {
+          "changed_from": "desktop_products",
+          "dom": {
+            "class_contains": "rsfilter__readout",
+            "min_count": 1,
+            "text_contains": "Showing 3 of 12 · Footwear"
+          },
+          "require_interaction": true,
+          "state": "desktop_products_footwear"
+        }
+      ],
+      "interaction_states": [
+        "desktop_products_footwear"
+      ],
+      "max_console_errors": 0,
+      "mean_luminance_tolerance": 95,
+      "min_asset_path_signals": 1,
+      "min_completion_text_signals": 5,
+      "min_image_count": 0,
+      "min_palette_overlap": 1,
+      "min_text_length": 300,
+      "min_visible_text_signals": 3,
+      "overflow_tolerance_px": 24,
+      "reference_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_products",
+        "desktop_product_detail",
+        "desktop_cart",
+        "desktop_account",
+        "mobile_products",
+        "desktop_products_footwear"
+      ],
+      "reference_text_signals": [
+        "RedStore",
+        "Shop the range",
+        "All products",
+        "Red Printed T-Shirt",
+        "Cart to checkout handoff"
+      ],
+      "regression_states": [
+        "desktop_initial"
+      ],
+      "regression_text_signals": [
+        "RedStore"
+      ],
+      "require_all_completion_signals": true,
+      "require_all_visible_text_signals": true,
+      "required_state_artifacts": [
+        "screenshot.png",
+        "metrics.json",
+        "quality.json",
+        "dom.html",
+        "a11y.json",
+        "boxes.json",
+        "console.json",
+        "actions.json",
+        "crops.json"
+      ],
+      "responsive_states": [
+        "mobile_products",
+        "mobile_initial"
+      ],
+      "submission_states": [
+        "desktop_initial",
+        "mobile_initial",
+        "tablet_initial",
+        "desktop_products",
+        "desktop_product_detail",
+        "desktop_cart",
+        "desktop_account",
+        "mobile_products",
+        "desktop_products_footwear"
+      ],
+      "task_id": "dev_SamwitAdhikary__Ecommerce__05583c6dae8e__cart_checkout_handoff_flow",
+      "text_signal_states": [
+        "desktop_initial",
+        "desktop_products",
+        "desktop_cart",
+        "desktop_account"
+      ],
+      "visible_text_signals": [
+        "Shop the range",
+        "Cart to checkout handoff",
+        "RedStore"
+      ],
+      "visible_text_states": [
+        "desktop_products",
+        "desktop_cart"
+      ],
+      "visual_anchor_states": [
+        "desktop_products",
+        "desktop_cart"
+      ],
+      "visual_regression": {
+        "metrics": {
+          "block_fidelity": {
+            "max_color_delta_e": 15,
+            "min_block_match": 0.8
+          },
+          "pixelmatch": {
+            "max_diff_ratio": 0.08,
+            "tolerance": 30
+          },
+          "ssim": {
+            "min_score": 0.85
+          }
+        },
+        "states": [
+          "desktop_products",
+          "mobile_products"
+        ]
+      }
+    }
+  ]
+}

@@ -11,7 +11,7 @@ from pathlib import Path
 from typing import Any
 from urllib.parse import urlparse
 
-from ..core.config import DEFAULT_OUTPUT_ROOT
+from ..core.config import DEFAULT_OUTPUT_ROOT, workspace_meta_path
 from ..core.formal_data_guard import assert_not_under_formal_task_root
 from ..core.io_utils import ensure_dir, read_jsonl, write_json
 from ..construction.inventory.workspace import find_project_root
@@ -666,7 +666,7 @@ def source_candidates_for_missing_completion(task: dict[str, Any], spec: dict[st
 
 def comment_for_path(path: Path, control_id: str) -> str:
     suffix = path.suffix.lower()
-    marker = f"SiteContinuum negative control: {control_id}"
+    marker = f"ProductWebBench negative control: {control_id}"
     if suffix == ".mdx":
         return f"{{/* {marker} */}}\n"
     if suffix == ".md":
@@ -717,7 +717,7 @@ def apply_missing_completion_edit(task: dict[str, Any], spec: dict[str, Any], pr
 
 
 def replacement_for_signal(signal: str) -> str:
-    return "[sitecontinuum removed completion signal]"
+    return "[productwebbench removed completion signal]"
 
 
 def apply_completion_signal_removal_edit(task: dict[str, Any], spec: dict[str, Any], project_root: Path, control_id: str) -> dict[str, Any]:
@@ -786,8 +786,8 @@ def copy_baseline_workspace(baseline_workspace_root: Path, bad_workspace_root: P
                 "coverage",
             ),
         )
-    source_meta_path = source / ".sitecontinuum_workspace.json"
-    destination_meta_path = destination / ".sitecontinuum_workspace.json"
+    source_meta_path = workspace_meta_path(source)
+    destination_meta_path = destination / ".productwebbench_workspace.json"
     if source_meta_path.exists():
         metadata = load_json(source_meta_path)
         source_workspace = Path(metadata.get("workspace", source))
@@ -865,7 +865,7 @@ def infer_framework_from_project(project_root: Path) -> str:
 
 
 def repo_record_from_workspace(repo_id: str, workspace_root: Path, project_root: Path) -> dict[str, Any]:
-    metadata = load_json_if_exists(workspace_root / repo_id / ".sitecontinuum_workspace.json")
+    metadata = load_json_if_exists(workspace_root / repo_id / ".productwebbench_workspace.json")
     package = load_json_if_exists(project_root / "package.json")
     scripts = metadata.get("scripts") or package.get("scripts") or {}
     install_command = metadata.get("install_command")

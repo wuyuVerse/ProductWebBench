@@ -703,7 +703,7 @@ def build_mm_judge_prediction_queue(
                     "run_id": "TBD reproducible run id",
                 },
                 "append_command": (
-                    "python -m sitecontinuum append-mm-judge-prediction "
+                    "python -m productwebbench append-mm-judge-prediction "
                     f"--sample {sample_path} "
                     f"--predictions {predictions_path} "
                     f"--checkpoint-id {checkpoint_id} "
@@ -1171,7 +1171,7 @@ def build_mm_judge_perturbation_queue(
                         ],
                     },
                     "append_command": (
-                        "python -m sitecontinuum append-mm-judge-perturbation-group "
+                        "python -m productwebbench append-mm-judge-perturbation-group "
                         f"--perturbations {perturbations_path} "
                         f"--group-file {workitem_root / (group_id + '.json')} "
                         "--provider <provider> "

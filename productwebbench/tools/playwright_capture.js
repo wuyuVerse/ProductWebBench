@@ -471,7 +471,7 @@ async function captureState(page, state, outputDir) {
     const selectors = ["astro-dev-toolbar", ".stats-gl", ".tp-dfwv"];
     for (const selector of selectors) {
       for (const element of Array.from(document.querySelectorAll(selector))) {
-        element.setAttribute("data-sitecontinuum-hidden", "true");
+        element.setAttribute("data-productwebbench-hidden", "true");
         element.style.pointerEvents = "none";
         element.style.display = "none";
       }

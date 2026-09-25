@@ -49,7 +49,7 @@ class RepoRecord:
 
 
 @dataclass(frozen=True)
-class SiteContinuumTask:
+class ProductWebBenchTask:
     task_id: str
     repo_id: str
     split: str

@@ -431,8 +431,8 @@ def add_capture_args(parser: argparse.ArgumentParser) -> None:
 
 def load_prepared_workspace(workspace: Path, repo_id: str) -> dict:
     workspace = workspace.resolve()
-    paths = [p for p in (workspace / ".sitecontinuum_workspace.json",
-                          workspace / "app/.sitecontinuum_workspace.json") if p.is_file()]
+    paths = [p for p in (workspace / ".productwebbench_workspace.json",
+                          workspace / "app/.productwebbench_workspace.json") if p.is_file()]
     if len(paths) != 1:
         raise ValueError("Prepared workspace requires one explicit metadata file")
     metadata = json.loads(paths[0].read_text())

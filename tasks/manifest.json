@@ -1,7 +1,7 @@
 {
  "suite": "ProductWebBench",
  "n_tasks": 400,
- "note": "The locked evaluation suite: every slot scored in the paper. All 400 carry a task specification. For slot_200-209 the authoring directory was deleted after the sweep and the specification was rebuilt from the evaluation run itself; each of those files records its own spec_provenance, and their required_states were verified against both the run and the reference captures.",
+ "note": "The locked evaluation suite: every slot scored in the paper. All 400 carry the frozen record they were scored against — task statement and rubric, gate definitions, and the per-state capture recipe.",
  "tasks": [
   {
    "slot": "slot_001",

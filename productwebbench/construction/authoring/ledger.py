@@ -361,7 +361,7 @@ def ledger_summary(entries: list[dict[str, Any]], current_tasks_path: Path, mani
 
 def render_ledger_markdown(entries: list[dict[str, Any]], summary: dict[str, Any]) -> str:
     lines = [
-        "# SiteContinuum 400-Task Authoring Ledger",
+        "# ProductWebBench 400-Task Authoring Ledger",
         "",
         f"- Total slots: `{summary['total']}`",
         f"- Accepted slots: `{summary['accepted']}`",
@@ -662,7 +662,7 @@ def run_build_slots_from_args(args: argparse.Namespace) -> None:
     except ValueError as exc:
         raise SystemExit(str(exc)) from exc
     print(
-        f"built {summary['total']} SiteContinuum authoring slots "
+        f"built {summary['total']} ProductWebBench authoring slots "
         f"({summary['accepted']} accepted, {summary['open']} open)"
     )
 

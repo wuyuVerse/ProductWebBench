@@ -146,24 +146,24 @@ def draft_repair_item(task_path: Path, index: int) -> dict[str, Any]:
     blockers = strict_precheck.get("blocking_requirements", []) if strict_precheck else []
     blocker_keys = [item.get("key") for item in blockers if isinstance(item, dict)]
     commands = [
-        f"python -m sitecontinuum prepare-construction-evidence-root --task {task_path} --output-root {spec_root}",
-        f"python -m sitecontinuum run-construction-actor-loop --task {task_path} --evidence-root {spec_root} --source-kind spec_only_actor_run --actor-command '<actor-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {spec_run_report}",
-        f"python -m sitecontinuum build-construction-reference-actor-manifest --task {task_path} --evidence-root {spec_root} --output {reference_manifest}",
-        f"python -m sitecontinuum build-construction-reference-actor-trace --task {task_path} --manifest {reference_manifest} --output {reference_trace}",
-        f"python -m sitecontinuum finalize-construction-reference-evidence --task {task_path} --trace {reference_trace} --output {reference_task}",
-        f"python -m sitecontinuum prepare-construction-evidence-root --task {reference_task} --output-root {repeat_root}",
-        f"python -m sitecontinuum run-construction-actor-loop --task {reference_task} --evidence-root {repeat_root} --source-kind repeat_spec_only_actor_run --actor-command '<actor-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {repeat_run_report}",
-        f"python -m sitecontinuum prepare-construction-evidence-root --task {reference_task} --output-root {original_root}",
-        f"python -m sitecontinuum run-construction-actor-loop --task {reference_task} --evidence-root {original_root} --source-kind empty_baseline --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {original_run_report}",
-        f"python -m sitecontinuum prepare-construction-evidence-root --task {reference_task} --output-root {bad_root}",
-        f"python -m sitecontinuum run-construction-actor-loop --task {reference_task} --evidence-root {bad_root} --source-kind bad_solution --actor-command '<bad-solution-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {bad_run_report}",
-        f"python -m sitecontinuum build-construction-trajectory-evidence --trajectory {reference_task} --kind reference --task {reference_task} --output {reference_evidence}",
-        f"python -m sitecontinuum build-construction-trajectory-evidence --trajectory {original_root / 'trajectory_run.json'} --kind original --task {reference_task} --output {original_evidence}",
-        f"python -m sitecontinuum build-construction-trajectory-evidence --trajectory {bad_root / 'trajectory_run.json'} --kind bad_solution --task {reference_task} --output {bad_evidence}",
-        f"python -m sitecontinuum build-construction-trajectory-evidence --trajectory {repeat_root / 'trajectory_run.json'} --kind repeat --task {reference_task} --output {repeat_evidence}",
-        f"python -m sitecontinuum build-construction-metareval --task {reference_task} --reference {reference_evidence} --original {original_evidence} --bad-solution {bad_evidence} --repeat {repeat_evidence} --output {metareval_report}",
-        f"python -m sitecontinuum attach-construction-metareval --task {reference_task} --report {metareval_report} --output {metareval_task}",
-        f"python -m sitecontinuum precheck-construction-task --task {metareval_task} --output {strict_precheck_path}",
+        f"python -m productwebbench prepare-construction-evidence-root --task {task_path} --output-root {spec_root}",
+        f"python -m productwebbench run-construction-actor-loop --task {task_path} --evidence-root {spec_root} --source-kind spec_only_actor_run --actor-command '<actor-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {spec_run_report}",
+        f"python -m productwebbench build-construction-reference-actor-manifest --task {task_path} --evidence-root {spec_root} --output {reference_manifest}",
+        f"python -m productwebbench build-construction-reference-actor-trace --task {task_path} --manifest {reference_manifest} --output {reference_trace}",
+        f"python -m productwebbench finalize-construction-reference-evidence --task {task_path} --trace {reference_trace} --output {reference_task}",
+        f"python -m productwebbench prepare-construction-evidence-root --task {reference_task} --output-root {repeat_root}",
+        f"python -m productwebbench run-construction-actor-loop --task {reference_task} --evidence-root {repeat_root} --source-kind repeat_spec_only_actor_run --actor-command '<actor-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {repeat_run_report}",
+        f"python -m productwebbench prepare-construction-evidence-root --task {reference_task} --output-root {original_root}",
+        f"python -m productwebbench run-construction-actor-loop --task {reference_task} --evidence-root {original_root} --source-kind empty_baseline --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {original_run_report}",
+        f"python -m productwebbench prepare-construction-evidence-root --task {reference_task} --output-root {bad_root}",
+        f"python -m productwebbench run-construction-actor-loop --task {reference_task} --evidence-root {bad_root} --source-kind bad_solution --actor-command '<bad-solution-command>' --capture-command '<capture-command>' --verifier-command '<verifier-command>' --output {bad_run_report}",
+        f"python -m productwebbench build-construction-trajectory-evidence --trajectory {reference_task} --kind reference --task {reference_task} --output {reference_evidence}",
+        f"python -m productwebbench build-construction-trajectory-evidence --trajectory {original_root / 'trajectory_run.json'} --kind original --task {reference_task} --output {original_evidence}",
+        f"python -m productwebbench build-construction-trajectory-evidence --trajectory {bad_root / 'trajectory_run.json'} --kind bad_solution --task {reference_task} --output {bad_evidence}",
+        f"python -m productwebbench build-construction-trajectory-evidence --trajectory {repeat_root / 'trajectory_run.json'} --kind repeat --task {reference_task} --output {repeat_evidence}",
+        f"python -m productwebbench build-construction-metareval --task {reference_task} --reference {reference_evidence} --original {original_evidence} --bad-solution {bad_evidence} --repeat {repeat_evidence} --output {metareval_report}",
+        f"python -m productwebbench attach-construction-metareval --task {reference_task} --report {metareval_report} --output {metareval_task}",
+        f"python -m productwebbench precheck-construction-task --task {metareval_task} --output {strict_precheck_path}",
     ]
     return {
         "repair_index": index,
@@ -383,97 +383,97 @@ def construction_evidence_work_item(item: dict[str, Any], index: int, repair_pla
     blockers = sorted(str(key) for key in item.get("blocking_requirement_keys", []) or [])
     commands = [
         (
-            "python -m sitecontinuum prepare-construction-evidence-root "
+            "python -m productwebbench prepare-construction-evidence-root "
             f"--task {task_path} --output-root {spec_root}"
         ),
         (
-            "python -m sitecontinuum audit-construction-evidence-root "
+            "python -m productwebbench audit-construction-evidence-root "
             f"--task {task_path} --evidence-root {spec_root} --output {scaffold_audit}"
         ),
         (
-            "python -m sitecontinuum run-construction-actor-loop "
+            "python -m productwebbench run-construction-actor-loop "
             f"--task {task_path} --evidence-root {spec_root} --source-kind spec_only_actor_run "
             "--actor-command '<spec-only-actor-command>' "
-            "--capture-command '<capture-command-writing-$SITECONTINUUM_CAPTURE_REPORT>' "
-            "--verifier-command '<verifier-command-writing-$SITECONTINUUM_VERIFIER_REPORT>' "
+            "--capture-command '<capture-command-writing-$PRODUCTWEBBENCH_CAPTURE_REPORT>' "
+            "--verifier-command '<verifier-command-writing-$PRODUCTWEBBENCH_VERIFIER_REPORT>' "
             f"--output {expected_outputs.get('spec_only_actor_run', evidence_root / 'spec_only_actor_run.trajectory_run_report.json')}"
         ),
         (
-            "python -m sitecontinuum audit-construction-evidence-root "
+            "python -m productwebbench audit-construction-evidence-root "
             f"--task {task_path} --evidence-root {spec_root} --require-complete --output {complete_audit}"
         ),
         (
-            "python -m sitecontinuum build-construction-reference-actor-manifest "
+            "python -m productwebbench build-construction-reference-actor-manifest "
             f"--task {task_path} --evidence-root {spec_root} --output {manifest}"
         ),
         (
-            "python -m sitecontinuum build-construction-reference-actor-trace "
+            "python -m productwebbench build-construction-reference-actor-trace "
             f"--task {task_path} --manifest {manifest} --output {trace}"
         ),
         (
-            "python -m sitecontinuum finalize-construction-reference-evidence "
+            "python -m productwebbench finalize-construction-reference-evidence "
             f"--task {task_path} --trace {trace} --output {reference_task}"
         ),
         (
-            "python -m sitecontinuum prepare-construction-evidence-root "
+            "python -m productwebbench prepare-construction-evidence-root "
             f"--task {reference_task} --output-root {repeat_root}"
         ),
         (
-            "python -m sitecontinuum run-construction-actor-loop "
+            "python -m productwebbench run-construction-actor-loop "
             f"--task {reference_task} --evidence-root {repeat_root} --source-kind repeat_spec_only_actor_run "
             "--actor-command '<same-spec-only-actor-command>' "
-            "--capture-command '<capture-command-writing-$SITECONTINUUM_CAPTURE_REPORT>' "
-            "--verifier-command '<verifier-command-writing-$SITECONTINUUM_VERIFIER_REPORT>' "
+            "--capture-command '<capture-command-writing-$PRODUCTWEBBENCH_CAPTURE_REPORT>' "
+            "--verifier-command '<verifier-command-writing-$PRODUCTWEBBENCH_VERIFIER_REPORT>' "
             f"--output {expected_outputs.get('repeat_spec_only_actor_run', evidence_root / 'repeat_spec_only_actor_run.trajectory_run_report.json')}"
         ),
         (
-            "python -m sitecontinuum prepare-construction-evidence-root "
+            "python -m productwebbench prepare-construction-evidence-root "
             f"--task {reference_task} --output-root {empty_root}"
         ),
         (
-            "python -m sitecontinuum run-construction-actor-loop "
+            "python -m productwebbench run-construction-actor-loop "
             f"--task {reference_task} --evidence-root {empty_root} --source-kind empty_baseline "
-            "--capture-command '<capture-command-writing-$SITECONTINUUM_CAPTURE_REPORT>' "
-            "--verifier-command '<verifier-command-writing-$SITECONTINUUM_VERIFIER_REPORT>' "
+            "--capture-command '<capture-command-writing-$PRODUCTWEBBENCH_CAPTURE_REPORT>' "
+            "--verifier-command '<verifier-command-writing-$PRODUCTWEBBENCH_VERIFIER_REPORT>' "
             f"--output {expected_outputs.get('empty_baseline', evidence_root / 'empty_baseline.trajectory_run_report.json')}"
         ),
         (
-            "python -m sitecontinuum prepare-construction-evidence-root "
+            "python -m productwebbench prepare-construction-evidence-root "
             f"--task {reference_task} --output-root {bad_root}"
         ),
         (
-            "python -m sitecontinuum run-construction-actor-loop "
+            "python -m productwebbench run-construction-actor-loop "
             f"--task {reference_task} --evidence-root {bad_root} --source-kind bad_solution "
             "--actor-command '<bad-solution-command>' "
-            "--capture-command '<capture-command-writing-$SITECONTINUUM_CAPTURE_REPORT>' "
-            "--verifier-command '<verifier-command-writing-$SITECONTINUUM_VERIFIER_REPORT>' "
+            "--capture-command '<capture-command-writing-$PRODUCTWEBBENCH_CAPTURE_REPORT>' "
+            "--verifier-command '<verifier-command-writing-$PRODUCTWEBBENCH_VERIFIER_REPORT>' "
             f"--output {expected_outputs.get('bad_solution', evidence_root / 'bad_solution.trajectory_run_report.json')}"
         ),
         (
-            "python -m sitecontinuum build-construction-trajectory-evidence "
+            "python -m productwebbench build-construction-trajectory-evidence "
             f"--trajectory {reference_task} --kind reference --task {reference_task} "
             f"--output {expected_outputs.get('reference_evidence', evidence_root / 'reference.evidence.json')}"
         ),
         (
-            "python -m sitecontinuum build-construction-trajectory-evidence "
+            "python -m productwebbench build-construction-trajectory-evidence "
             f"--trajectory {empty_root / 'trajectory_run.json'} "
             f"--kind original --task {reference_task} "
             f"--output {expected_outputs.get('original_evidence', evidence_root / 'original.evidence.json')}"
         ),
         (
-            "python -m sitecontinuum build-construction-trajectory-evidence "
+            "python -m productwebbench build-construction-trajectory-evidence "
             f"--trajectory {bad_root / 'trajectory_run.json'} "
             f"--kind bad_solution --task {reference_task} "
             f"--output {expected_outputs.get('bad_solution_evidence', evidence_root / 'bad_solution.evidence.json')}"
         ),
         (
-            "python -m sitecontinuum build-construction-trajectory-evidence "
+            "python -m productwebbench build-construction-trajectory-evidence "
             f"--trajectory {repeat_root / 'trajectory_run.json'} "
             f"--kind repeat --task {reference_task} "
             f"--output {expected_outputs.get('repeat_evidence', evidence_root / 'repeat.evidence.json')}"
         ),
         (
-            "python -m sitecontinuum build-construction-metareval "
+            "python -m productwebbench build-construction-metareval "
             f"--task {reference_task} "
             f"--reference {expected_outputs.get('reference_evidence', evidence_root / 'reference.evidence.json')} "
             f"--original {expected_outputs.get('original_evidence', evidence_root / 'original.evidence.json')} "
@@ -482,18 +482,18 @@ def construction_evidence_work_item(item: dict[str, Any], index: int, repair_pla
             f"--output {expected_outputs.get('metareval_report', evidence_root / 'construction_metareval_report.json')}"
         ),
         (
-            "python -m sitecontinuum attach-construction-metareval "
+            "python -m productwebbench attach-construction-metareval "
             f"--task {reference_task} "
             f"--report {expected_outputs.get('metareval_report', evidence_root / 'construction_metareval_report.json')} "
             f"--output {metareval_task}"
         ),
         (
-            "python -m sitecontinuum precheck-construction-task "
+            "python -m productwebbench precheck-construction-task "
             f"--task {metareval_task} --output {strict_precheck_path}"
         ),
         (
             "# accept only after the strict precheck passes: "
-            "python -m sitecontinuum accept-construction-task "
+            "python -m productwebbench accept-construction-task "
             f"--task {metareval_task} --precheck {strict_precheck_path} --write-precheck {acceptance_precheck_path}"
         ),
     ]

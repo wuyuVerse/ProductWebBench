@@ -264,9 +264,9 @@ def build_queue_items(
                     "inspection_focus": archetype["inspection_focus"],
                     "why_candidate": archetype_reason(record, archetype),
                     "next_commands": [
-                        f"python3 -m sitecontinuum extract-repo {repo_id} --clean",
-                        f"python3 -m sitecontinuum runability {repo_id}",
-                        f"python3 -m sitecontinuum capture-states {repo_id} --skip-install",
+                        f"python3 -m productwebbench extract-repo {repo_id} --clean",
+                        f"python3 -m productwebbench runability {repo_id}",
+                        f"python3 -m productwebbench capture-states {repo_id} --skip-install",
                     ],
                 }
             )
@@ -277,7 +277,7 @@ def build_queue_items(
 
 def render_markdown(items: list[dict[str, Any]], coverage: dict[str, Any]) -> str:
     lines = [
-        "# SiteContinuum Authoring Queue",
+        "# ProductWebBench Authoring Queue",
         "",
         "This queue is gap-driven. Items are candidates for agent-led repo inspection and task construction, not final benchmark tasks.",
         "",
